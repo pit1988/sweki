@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Ciclo di vita - sweki</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Giorgio Giuffrè" />
+	<meta name="keywords" content="sweki, ingegneria, software, ciclo, vita, wiki" />
+	<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+
+	<div id="header">
+		<h1><a href="index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a></h1>
+		<h2>la <span xml:lang="en">wiki</span> di Ingegneria del <span xml:lang="en">Software</span></h2>
+	</div>
+
+	<div id="content">
+		<h1>Ciclo di vita di un progetto</h1>
+
+		<h2>Definizione</h2>
+		<p>Caratteristico di un prodotto di <abbr title="Ingegneria del Software">IS</abbr> è il suo ciclo di vita, cioè l'insieme degli <strong>stati</strong> che il prodotto assume dal concepimento al ritiro<sup><a id="txt1" href="#ftn1">[1]</a></sup>. Senza di esso non esisterebbe la figura dell'ingegnere del <span xml:lang="en">software</span>. Conviene vedere il ciclo di vita come una macchina a stati, in cui gli stati sono il grado di maturazione del prodotto e gli archi rappresentano attività (suddivise in processi) che servono a far avanzare il prodotto nel suo grado di maturazione. La durata temporale entro uno stato del ciclo di vita e un altro è detta <strong>fase</strong>. Misura del successo di un prodotto è un ciclo di vita lungo, speso per lo più in manutenzione, magari con un buon <span xml:lang="en">feedback</span> da parte degli utenti. Distinguiamo tre tipi di manutenzione:</p>
+		<ul>
+			<li>correttiva  :(  per correggere difetti;</li>
+			<li>di adattamento  :|  per adattare il sistema a variazioni di requisiti;</li>
+			<li>evolutiva  ;)  per aggiungere funzionalità al sistema.</li>
+		</ul>
+		<p>Esempio di manutenzione evolutiva è Firefox.</p>
+
+		<h2>Modelli di ciclo di vita</h2>
+		La qualità più difficile da soddisfare in <abbr title="Ingegneria del Software">IS</abbr> è la quantificabilità; per questo nascono i <strong>modelli</strong> di ciclo di vita. Esistono diversi possibili cicli di vita, che si distinguono non per numero o significato degli stati, bensì per le transizioni tra essi e le loro regole di attivazione. Alcuni modelli di ciclo di vita sono:
+		<ul>
+			<li>sequenziale &mdash; tipo catena di montaggio;</li>
+			<li>incrementale &mdash; realizzazione in più passi, con numero crescente di funzionalità;</li>
+			<li>evolutivo &mdash; con ripetute iterazioni interne;</li>
+			<li>a spirale &mdash; contesto allargato e modello astratto;</li>
+			<li>agile &mdash; dinamico, a cicli iterativi e incrementali.</li>
+		</ul>
+		<p>In genere un modello del ciclo di vita di un <em>prodotto</em><sup><a id="txt2" href="#ftn2">[2]</a></sup> include un modello del ciclo di vita dello <em>sviluppo</em><sup><a id="txt3" href="#ftn3">[3]</a></sup>, eventualmente diverso dal primo.</p>
+		<p>È bene tenere a mente che i vari modelli, per quanto differiscano tra di loro in questo o in quel dettaglio, si possono dividere in due grandi famiglie: quelli sequenziali e quelli iterativi; i modelli incrementale, evolutivo, a spirale e agile sono tutti esempi di modelli iterativi.</p>
+
+		<h2>Il modello sequenziale</h2>
+		<p>Nel 1970, grazie a Winston Royce, venne ideato il modello sequenziale (o a cascata), ispirato alle catene di montaggio. Il modello originale prevede che non si possa mai essere in due stati diversi allo stesso tempo e che non si possa tornare ad uno stato precedente. Il passaggio da una fase alla successiva è basato sulla documentazione poiché ogni fase produce documenti che la concretizzano e devono essere approvati per il passaggio alla fase successiva. Ha il pregio di individuare fasi distinte e ordinate nelle quali decomporre il progetto. Suo difetto principale è l'eccessiva <strong>rigidità</strong>. Tuttavia questo approccio può funzionare se il cliente è consapevole (e abbastanza sicuro) di ciò che vuole, pur tenendo conto che il modello genera <span xml:lang="en">software</span> vero e proprio molto tardi nel ciclo di vita.</p>
+		<p>Allora, si pensò di creare un modello &quot;ibrido&quot;, introducendo la possibilità di tornare ad uno stato precedente. Tuttavia risalire la cascata fa risalire il progetto nel tempo e genera iterazioni, non incrementi.</p>
+
+		<h2>Il modello incrementale</h2>
+		<p>Per superare le difficoltà del modello sequenziale ibrido, nacque il modello incrementale: in esso, i cicli non sono più iterazioni ma <strong>incrementi</strong> &mdash; con l'eccezione dell'analisi e della progettazione, che si affrontano all'inizio e non vengono ripetute. Il modello prevede rilasci multipli e successivi; ciascuno realizza un incremento di funzionalità, approssimando sempre meglio la soluzione. Un grande vantaggio è che le funzionalità più importanti vengono affrontante all'inizio. Questo modello è meno idealista ma più gentile.</p>
+
+		<h2>Il modello evolutivo</h2>
+		<p>Il modello evolutivo, che è incrementale, prevede che gli incrementi successivi siano versioni (prototipi) usabili dal cliente. Più versioni posso essere mantenute in parallelo e ogni fase ammette iterazioni multiple.</p> <!-- ?? -->
+
+		<h2>Il modello a spirale</h2>
+		<p>Nel 1988 Barry Boehm propose il modello a spirale, che introduce il concetto di &quot;rischio di progetto&quot; (cercando di contenere tali rischi). Lo sviluppo procede a cicli sempre più lenti; difatti i cicli esterni sono così lenti che possono aderire, ognuno, ad un altro modello di ciclo di vita. Ad ogni ciclo si analizzano i rischi e si compiono simulazioni. Misura del successo di un progetto è il diametro della spirale. Questo modello viene usato solo da chi intraprende progetti sperimentali, che nessuno ha mai realizzato, e richiede forte forte interazione tra committente e fornitore. Un ciclo si articola generalmente in quattro fasi:</p>
+		<ol>
+			<li>definizione degli obiettivi;</li>
+			<li>analisi dei rischi;</li>
+			<li>sviluppo e validazione;</li>
+			<li>pianificazione della successiva iterazione.</li>
+		</ol>
+
+		<h2>Il modello a componenti</h2>
+		<p>Più pragmatico è il modello a componenti, che prevede l'integrazione di componenti già implementati. L'idea nasce dal fatto che molto di quel che ci serve fare è già stato fatto e molto di quel che faremo ci potrà servire ancora.</p>
+
+		<h2>I metodi agili</h2>
+		<p>I metodi agili nascono alla fine degli anni '90 come reazione all'eccessiva rigidità dei modelli allora in vigore. Si basano su quattro princìpi:</p>
+		<ul>
+			<li><span xml:lang="en">Individuals and interactions over processes and tools</span></li>
+			<li><span xml:lang="en">Working software over comprehensive documentation</span></li>
+			<li><span xml:lang="en">Customer collaboration over contract negotiation</span></li>
+			<li><span xml:lang="en">Responding to change over following a plan</span></li>
+		</ul>
+	</div>
+
+	<div id="footnotes">
+		<ul>
+			<li><a id="ftn1" href="#txt1">[1]</a> Per ritiro s'intende il momento in cui il prodotto cessa di essere seguito dai creatori.</li>
+			<li><a id="ftn2" href="#txt2">[2]</a> <abbr xml:lang="en" title="Software Product Life Cycle">SPLC</abbr>, <span xml:lang="en">Software Product Life Cycle</span>.</li>
+			<li><a id="ftn3" href="#txt3">[3]</a> <abbr xml:lang="en" title="Software Development Life Cycle">SDLC</abbr>, <span xml:lang="en">Software Development Life Cycle</span>.</li>
+		</ul>
+	</div>
+
+</body>
+</html>

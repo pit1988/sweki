@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Documentazione - sweki</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Giorgio Giuffrè" />
+	<meta name="keywords" content="sweki, ingegneria, software, requisiti, wiki" />
+	<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+
+	<div id="header">
+		<h1><a href="index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a></h1>
+		<h2>la <span xml:lang="en">wiki</span> di Ingegneria del <span xml:lang="en">Software</span></h2>
+	</div>
+
+	<div id="content">
+		<h1>Documentazione</h1>
+
+		<h2>Definizione</h2>
+		<p>Documentazione è tutto il materiale che documenta le attività di un progetto (e i loro prodotti). <a href="https://en.wikibooks.org/wiki/General_Engineering_Introduction/Documentation">wikibooks.org</a> afferma che, in ingegneria, l'obiettivo primario della documentazione di un prodotto è la <em>replicabilità</em> di tale prodotto: <q xml:lang="en">You are not an engineer until others can replicate what you have done [...] without your presence [...] without your words [...] without your physical personality on the planet.</q> I documenti di un progetto software e del prodotto che si sta sviluppando hanno diversi motivi di esistere:</p>
+		<ul>
+			<li>per i membri del progetto, sono un mezzo di comunicazione;</li>
+			<li>per chi dovrà manutenere il prodotto, servono da <span xml:lang="en">repository</span> di informazioni sul sistema;</li>
+			<li>per l'amministrazione, forniscono informazioni che aiutano la pianificazione dello sviluppo;</li>
+			<li>per gli utenti del prodotto, alcuni documenti sono utili per capire come interfacciarsi con il prodotto.</li>
+		</ul>
+		<p>I principali documenti di progetto sono:</p>
+		<ul>
+			<li>analisi dei requisiti;</li>
+			<li>specifica <span xml:lang="en">software</span> (descrizione ad alto livello del sistema);</li>
+			<li>specifica tecnica (architettura logica);</li>
+			<li>definizione di prodotto (architettura di dettaglio);</li>
+			<li>manuale utente.</li>
+		</ul>
+
+		<!--
+		AGGIUNGERE:
+					   /==> di processo
+		documenti ====C 					 /==> di sistema
+					   \==> di prodotto ====C
+					   						 \==> utente
+		-->
+
+		<h2>Specifica <span xml:lang="en">software</span></h2>
+		<p>La specifica <span xml:lang="en">software</span> dev'essere una descrizione ad alto livello del sistema tramite rappresentazione gerarchica.</p>
+
+		<h2>Specifica tecnica</h2>
+		<p>La specifica tecnica (<abbr title="Specifica Tecnica">ST</abbr>) segue l'analisi dei requisiti e descrive l'<strong>architettura logica</strong> del sistema, mostrando ciò che il sistema deve fare senza però fissarne i dettagli implementativi; difatti, la specifica tecnica descrive l'<em>interfaccia</em> di ogni componente del sistema, attraverso più livelli gerarchici di decomposizione. In particolare, di ogni componente vengono specificati:</p>
+		<ul>
+			<li>funzione svolta;</li>
+			<li>tipo dei dati in ingresso;</li>
+			<li>tipo dei dati in uscita;</li>
+			<li>risorse necessarie per il suo funzionamento.</li>
+		</ul>
+
+		<h2>Definizione di prodotto</h2>
+		<p>Dall'architettura logica procede l'<strong>architettura di dettaglio</strong>, descritta dalla definizione di prodotto (<abbr title="Definizione di Prodotto">DP</abbr>). Questo documento decompone l'architettura in moduli a granda più fine, finché ogni modulo ha dimensione, coesione, complessità e accoppiamento tali per cui i moduli possano essere sviluppati in parallelo dai programmatori. La <abbr title="Definizione di Prodotto">DP</abbr> deve fornire tutti i dettagli necessari alla codifica e alla verifica di ciascun modulo<sup><a id="txt1" href="#ftn1">[1]</a></sup>. La <abbr title="Definizione di Prodotto">DP</abbr> consente di stimare costi e tempi di realizzazione.</p>
+
+		<h2>Analisi dei requisiti</h2>
+		<p>Una delle preoccupazioni maggiori nel documentare l'analisi dei requisiti (<abbr title="Analisi dei Requisiti">AR</abbr>) è il <strong>tracciamento dei requisiti</strong>. Tracciare un requisito significa motivarne l'esistenza, spiegando qual'è l'origine di tale requisito (che magari non era esplicito e quindi è stato dedotto da requisiti più espliciti) e badando a garantire la necessità e la sufficienza di ogni requisito. Per fare tutto questo si può usare una matrice, un grafo o una qualsiasi struttura dati appropriata. [... -> LUCIDI 19-20]</p>
+	</div>
+
+	<div id="footnotes">
+		<ul>
+			<li><a id="ftn1" href="#txt1">[1]</a> La natura del termine &quot;modulo&quot; è determinata dal linguaggio di programmazione che verrà usato.</li>
+		</ul>
+	</div>
+
+</body>
+</html>

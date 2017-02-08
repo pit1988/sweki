@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Processi software - sweki</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Giorgio Giuffrè" />
+	<meta name="keywords" content="sweki, ingegneria, software, processi, wiki" />
+	<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+
+	<div id="header">
+		<h1><a href="index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a></h1>
+		<h2>la <span xml:lang="en">wiki</span> di Ingegneria del <span xml:lang="en">Software</span></h2>
+	</div>
+
+	<div id="content">
+		<h1>Processi <span xml:lang="en">software</span></h1>
+
+		<h2>Definizione</h2>
+		<p>In ingegneria, secondo l'<abbr title="International Organitazion for Standardization">ISO</abbr>, un <strong>processo</strong> è un insieme di attività correlate e coese che trasformano ingressi in uscite, consumando risorse nel farlo. In particolare, un processo <span xml:lang="en">software</span> (d'ora in avanti solo &quot;processo&quot;) porta ad un <em>prodotto</em> <span xml:lang="en">software</span>.</p>
+
+		<h2>Anatomia</h2>
+		<p>Ogni processo si divide in più <strong>attività</strong>. Ogni attività si divide in <strong>compiti</strong>. Ogni compito si può svolgere usando qualche tecnica, cioè una sorta di ricetta applicata agli strumenti disponibili. Per strumento s'intende un insieme di concetti e di metodi, con delle tecnologie di supporto.</p>
+
+		<h2>Processi <span xml:lang="en">software</span>, aziende e progetti</h2>
+		<p>Distinguiamo le seguenti tre categorie principali di processi:</p>
+		<ul>
+			<li>processo standard &mdash; riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettività di casi afferenti ad un certo dominio applicativo (quindi una sorta di <span xml:lang="en">template</span>);</li>
+			<li>processo definito &mdash; specializzazione del processo standard necessaria per adattarlo ad esigenze specifiche di progetto;</li>
+			<li>processo di progetto &mdash; istanza di un processo definito che utilizza risorse aziendali per raggiungere obbiettivi prefissati (il processo viene calato nella realtà aziendale).</li>
+		</ul>
+		<p>L'organizzazione aziendale si struttura verticalmente in settori (orientati alla specializzazione) e orizzontalmente in processi (che abbracciano più settori specializzati).</p>
+
+		<h2><abbr title="International Organitazion for Standardization">ISO</abbr>/<abbr title="International Electrotechnical Commission">IEC</abbr> 12207</h2>
+		<p>Lo standard <abbr title="International Organitazion for Standardization">ISO</abbr>/<abbr title="International Electrotechnical Commission">IEC</abbr> 12207 è il più noto standard di processo. Esso divide i processi in tre famiglie.</p>
+		<ul>
+			<li>Processi primari:
+				<ul>
+					<li>acquisizione (gestione dei propri sotto-fornitori<sup><a id="txt1" href="#ftn1">[1]</a></sup>);</li>
+					<li>fornitura (gestione dei rapporti con il cliente &mdash; controparte dell'acquisizione);</li>
+					<li>sviluppo &mdash; affrontato con approccio costruttivo, non correttivo; svolto anche tramite appalto esterno; <em>non</em> solo programmazione (che tra l'altro va affiancata dal <span xml:lang="en">testing</span>)!</li>
+					<li>gestione operativa (installazione ed erogazione dei prodotti);</li>
+					<li>manutenzione (correzione, adattamento, evoluzione).</li>
+				</ul>
+			</li>
+			<li>Processi di supporto (delle specie di &quot;sottoprocedure&quot;):
+				<ul>
+					<li>documentazione;</li>
+					<li>accertamento della qualità;</li>
+					<li>gestione delle versioni e delle configurazioni;</li>
+					<li>qualifica: verifica e validazione (&quot;V&amp;V&quot;);</li>
+					<li>revisioni congiunte con il cliente;</li>
+					<li>verifiche ispettive interne;</li>
+					<li>risoluzione dei problemi.</li>
+				</ul>
+			</li>
+			<li>Processi organizzativi (l'&quot;ambiente&quot; del sistema):
+				<ul>
+					<li>gestione dei processi;</li>
+					<li>gestione delle infrastrutture;</li>
+					<li>miglioramento del processo;</li>
+					<li>formazione del personale;</li>
+					<li>riuso: l'IS è un insieme di <span xml:lang="en">best practices</span> che assembla cose già esistenti, più che crearle <span xml:lang="la">ex novo</span>.</li> <!-- riuso è un processo..? forse è da togliere -->
+				</ul>
+			</li>
+		</ul>
+		<p>Un ingegnere del <span xml:lang="en">software</span> sa fare qualsiasi processo tra i suddetti.</p>
+
+		<h2>Attività fondamentali di un processo <span xml:lang="en">software</span></h2>
+		<p>Ogni processo dovrebbe includere le seguenti attività:</p>
+		<ul>
+			<li>definizione delle specifiche del <span xml:lang="en">software</span>;</li>
+			<li>progetto e implementazione del <span xml:lang="en">software</span>;</li>
+			<li>validazione del <span xml:lang="en">software</span>;</li>
+			<li>evoluzione del <span xml:lang="en">software</span>.</li>
+		</ul>
+
+		<h2>Organizzazione di processo</h2>
+		<p>Per essere disciplinati si ha bisogno di una forma di standardizzazione, per &quot;tenere alta&quot; la qualità di un lavoro ripetitivo che rischia continuamente di degradare. Ecco perché un buon processo si auto-migliora, in modo continuo, secondo lo <strong>schema <abbr title="Plan, Do, Check, Act">PDCA</abbr></strong> (ciclo di Deming):</p>
+		<ol>
+			<li><span xml:lang="en">Plan</span> &mdash; individuare obiettivi di miglioramento;</li>
+			<li><span xml:lang="en">Do</span> &mdash; eseguire ciò che si è pianificato;</li>
+			<li><span xml:lang="en">Check</span> &mdash; verificare se ha funzionato;</li>
+			<li><span xml:lang="en">Act</span> &mdash; agire per correggersi.</li>
+		</ol>
+	</div>
+
+	<div id="footnotes">
+		<ul>
+			<li><a id="ftn1" href="#txt1">[1]</a> Gli acquirenti di <span xml:lang="en">software</span> non sono solo utenti &quot;laici&quot; ma anche (e soprattutto!) altre case di <span xml:lang="en">software</span>: il maggior acquirente di <span xml:lang="en">software</span> è Google.</li>
+		</ul>
+	</div>
+
+</body>
+</html>
