@@ -12,6 +12,7 @@ echo "\usepackage[utf8]{inputenc}" >> sweki.tex
 echo "\usepackage[english,italian]{babel}" >> sweki.tex
 echo "\usepackage{microtype}" >> sweki.tex
 echo "\usepackage{booktabs}" >> sweki.tex
+echo "\usepackage{hyperref}" >> sweki.tex
 echo "\title{sweki}" >> sweki.tex
 echo "\author{Giorgio Giuffrè}" >> sweki.tex
 echo "\date{}" >> sweki.tex
@@ -42,7 +43,7 @@ echo "\end{document}" >> sweki.tex
 echo "generazione del documento PDF..."
 # due invocazioni del comando, per indice e riferimenti incrociati:
 pdflatex -halt-on-error sweki.tex > _sweki_log && rm -f _sweki_log && pdflatex -halt-on-error sweki.tex > _sweki_log && rm -f _sweki_log && echo "File generato"
-rm -f *.log *.toc *.aux # pulizia
+rm -f *.log *.toc *.aux *.out # pulizia
 for x in ${texfiles[*]}; do
 	rm $x # pulizia
 done

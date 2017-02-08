@@ -71,14 +71,11 @@
 <!-- strong text -->
 <xsl:template match="strong">\textbf{<xsl:apply-templates />}</xsl:template>
 
-<!-- html entities -->
-<!-- <xsl:template match="text()">
-	<xsl:choose>
-		<xsl:when test="'&amp;sdot;'">$\cdot$</xsl:when>
-		<xsl:when test="'&amp;amp;'">\and </xsl:when>
-		<xsl:otherwise><xsl:value-of select="." /></xsl:otherwise>
-	</xsl:choose>
-</xsl:template> -->
+<!-- equations -->
+<xsl:template match="var">$<xsl:apply-templates />$</xsl:template>
+
+<!-- superscripts in equations -->
+<xsl:template match="var/sup">^{<xsl:apply-templates />}</xsl:template>
 
 
 
@@ -119,6 +116,11 @@
 <xsl:template match="td[last()]">
 	<xsl:value-of select="." /> \\
 </xsl:template>
+
+
+
+<!-- footnotes -->
+<xsl:template match="sup[@class='footnote']">*</xsl:template>
 
 
 
