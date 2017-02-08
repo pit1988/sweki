@@ -5,8 +5,8 @@ sweki è un progetto che raccoglie i miei appunti dal corso di Ingegneria del So
 
 Gli appunti sono disponibili in tre formati:
 * [.html](https://gigiobello.github.io/sweki/)
-* [.tex](sweki/tex/sweki.tex)
-* [.pdf](sweki/tex/sweki.pdf)
+* [.tex](tex/sweki.tex)
+* [.pdf](tex/sweki.pdf)
 
 la versione in .tex è derivata automaticamente da quella in html tramite dei template XSL e dei terribili script di shell (bash)
 
