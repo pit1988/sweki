@@ -1,8 +1,3 @@
-<?php
-	session_start();
-	require_once 'functions.php';
-?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
@@ -24,16 +19,18 @@
 	<div id="content">
 		<dl id="glossario">
 <?php
-	$query = queryMysql("SELECT * FROM Definizioni ORDER BY id");
-	while ($row = $query->fetch_row()) {
-		echo "<dt id='$row[0]'>$row[1]</dt>";
-		echo "<dd>$row[2].</dd>";
-	}
-	$query->close();
+
+require_once 'functions.php';
+$query = queryMysql("SELECT * FROM Definizioni ORDER BY id");
+while ($row = $query->fetch_row()) {
+	echo "<dt id='$row[0]'>$row[1]</dt>";
+	echo "<dd>$row[2].</dd>";
+}
+$query->close();
+
 ?>
 		</dl>
 	</div>
 
 </body>
 </html>
- 
