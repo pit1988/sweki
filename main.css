@@ -59,17 +59,10 @@ a:hover {
 
 #nav {
 	color: #004;
-	padding: 4em;
-	margin: 0;
-}
-
-#nav li {
-	list-style-type: none;
 }
 
 #nav a {
 	color: inherit;
-	text-decoration: none;
 }
 
 
