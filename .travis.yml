@@ -4,6 +4,8 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y texlive
   - sudo apt-get install -y xsltproc
+  - which pdflatex
+  - which xsltproc
 
 script:
-  - cd tex/ && ./maketex.sh
+  - cd tex/ && ./maketex.sh && cd ..
