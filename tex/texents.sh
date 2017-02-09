@@ -7,7 +7,7 @@ fi
 
 cat $1 > _sweki_tmp_0
 sed 's/&quot;/"/g' _sweki_tmp_0 > _sweki_tmp_1
-sed 's/&amp;/\and/g' _sweki_tmp_1 > _sweki_tmp_0
+sed 's/&amp;/\\and/g' _sweki_tmp_1 > _sweki_tmp_0
 sed 's/&lt;/</g' _sweki_tmp_0 > _sweki_tmp_1
 sed 's/&gt;/>/g' _sweki_tmp_1 > _sweki_tmp_0
 sed "s/&apos;/\'/g" _sweki_tmp_0 > _sweki_tmp_1
