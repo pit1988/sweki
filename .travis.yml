@@ -7,5 +7,4 @@ before_install:
 
 script:
   - xsltproc --html tex/html_tex.xsl 01_intro.html > prova.txt
-  - ls
-  # - cd tex/ && ./maketex.sh
+  - cd tex/ && ./maketex.sh
