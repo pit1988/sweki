@@ -8,4 +8,4 @@ before_install:
 script:
   - cd tex/
   - ./maketex.sh
-  - ls -l sweki.pdf
+  - pwd && ls -l sweki.pdf
