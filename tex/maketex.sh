@@ -38,7 +38,5 @@ echo "\end{document}" >> sweki.tex
 
 echo "generazione del documento PDF..."
 # due invocazioni del comando, per riferimenti incrociati:
-pdflatex sweki.tex
-pdflatex sweki.tex
-#pdflatex -halt-on-error sweki.tex > _sweki_log rm -f _sweki_log && pdflatex -halt-on-error sweki.tex > _sweki_log && rm -f _sweki_log && echo "File generato"
+pdflatex -halt-on-error sweki.tex > _sweki_log rm -f _sweki_log && pdflatex -halt-on-error sweki.tex > _sweki_log && rm -f _sweki_log && echo "File generato"
 rm -f *.log *.toc *.aux *.out *.tex # pulizia
