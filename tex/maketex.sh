@@ -32,8 +32,6 @@ while read f; do
 	./texents.sh $f > _sweki_entities_tmp
 	xsltproc --html html_tex.xsl _sweki_entities_tmp > $name.tex
 	rm -f _sweki_entities_tmp
-	texfiles[$i]="$name.tex"
-	i=$i+1
 	echo "\input{$name.tex}" >> sweki.tex
 done < _sweki_index
 rm -f _sweki_index
@@ -41,9 +39,5 @@ echo "\end{document}" >> sweki.tex
 
 echo "generazione del documento PDF..."
 # due invocazioni del comando, per indice e riferimenti incrociati:
-pdflatex sweki.tex
-#pdflatex -halt-on-error sweki.tex > _sweki_log && rm -f _sweki_log && pdflatex -halt-on-error sweki.tex > _sweki_log && rm -f _sweki_log && echo "File generato"
-rm -f *.log *.toc *.aux *.out # pulizia
-for x in ${texfiles[*]}; do
-	rm $x # pulizia
-done
+pdflatex -halt-on-error sweki.tex > _sweki_log rm -f _sweki_log && pdflatex -halt-on-error sweki.tex > _sweki_log && rm -f _sweki_log && echo "File generato"
+rm -f *.log *.toc *.aux *.out *.tex # pulizia
