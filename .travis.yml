@@ -1,3 +1,10 @@
 language: bash
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y texlive
+  - sudo apt-get install -y xsltproc
+
 script:
-  - cd tex/ && ./maketex.sh
+  - cd tex/ 
+  - ./maketex.sh
