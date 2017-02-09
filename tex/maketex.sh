@@ -2,7 +2,7 @@
 
 if [[ `basename \`pwd\`` != tex ]]; then
 	echo "devi essere nella directory tex/ per invocare questo script"
-	exit(1)
+	exit 1
 fi
 
 echo "\documentclass[a4paper]{article}" > sweki.tex
