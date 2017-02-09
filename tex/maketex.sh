@@ -6,7 +6,6 @@ if [[ `basename \`pwd\`` != tex ]]; then
 fi
 
 echo "\documentclass[a4paper]{article}" > sweki.tex
-echo "\usepackage{accanthis}" >> sweki.tex
 echo "\usepackage[T1]{fontenc}" >> sweki.tex
 echo "\usepackage[utf8]{inputenc}" >> sweki.tex
 echo "\usepackage[english,italian]{babel}" >> sweki.tex
