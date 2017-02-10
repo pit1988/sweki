@@ -6,4 +6,5 @@ Directory contenente un glossario di termini, nei seguenti formati:
 * PDF (come appendice di [`sweki.pdf`](https://github.com/gigiobello/sweki/raw/master/tex/sweki.pdf));
 * Markdown (il file che stai leggendo).
 
+Di seguito i termini del glossario:
 GLOSSARIO

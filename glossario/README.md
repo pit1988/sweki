@@ -6,6 +6,7 @@ Directory contenente un glossario di termini, nei seguenti formati:
 * PDF (come appendice di [`sweki.pdf`](https://github.com/gigiobello/sweki/raw/master/tex/sweki.pdf));
 * Markdown (il file che stai leggendo).
 
+Di seguito i termini del glossario:
 * __allocazione di risorse (per un progetto)__: assegnare attività a ruoli e, poi, ruoli a persone.
 * __ambiente di lavoro__: l'insieme di persone, di ruoli, di procedure e l'infrastruttura la cui qualità determina la produttività del progetto.
 * __amministratore di progetto (profilo professionale)__: chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione.
