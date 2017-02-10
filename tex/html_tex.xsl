@@ -35,6 +35,13 @@
 	\subsubsection{<xsl:value-of select="." />}
 </xsl:template>
 
+<!-- h1.appendix (appendix) -->
+<xsl:template match="div[@class='appendix']/h1">
+	\newpage
+	\appendix
+	\section{<xsl:value-of select="." />}
+</xsl:template>
+
 
 
 <!-- unordered list -->
@@ -51,6 +58,11 @@
 	\end{enumerate}
 </xsl:template>
 
+<!-- list item -->
+<xsl:template match="li">
+	\item <xsl:apply-templates />
+</xsl:template>
+
 <!-- definition list -->
 <xsl:template match="dl">
 	\begin{description}
@@ -58,9 +70,14 @@
 	\end{description}
 </xsl:template>
 
-<!-- list item -->
-<xsl:template match="li">
-	\item <xsl:apply-templates />
+<!-- definition term -->
+<xsl:template match="dt">
+	\item[<xsl:apply-templates />] 
+</xsl:template>
+
+<!-- definition derscription -->
+<xsl:template match="dd">
+	<xsl:apply-templates />
 </xsl:template>
 
 

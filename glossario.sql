@@ -116,4 +116,4 @@ INSERT INTO Definizioni VALUES
 ("architettura", "architettura", "la struttura organizzativa di un sistema o componente", "architecture"),
 ("coesione", "coesione", "caratteristica di un sistema per la quale parti associate concorrono agli stessi obiettivi", NULL),
 ("basso_accoppiamento", "basso accoppiamento", "minimizzazione delle dipendenze tra i vari componenti di un sistema", "loose coupling"),
-("coerenza", "coerenza", "l'esser composto da parti che non sono in disaccordo tra lorp, cioè non affermano cose che si contraddicano", "consistency");
+("coerenza", "coerenza", "l'esser composto da parti che non sono in disaccordo tra loro, cioè non affermano cose che si contraddicano", "consistency");

@@ -74,7 +74,7 @@ a:hover {
 #content {
 	margin: auto;
 	max-width: 52em;
-	padding: 0em 1em;
+	padding: 0em 1em 4em 1em;
 }
 
 #content h1 {
@@ -109,7 +109,7 @@ a:hover {
  ***/
 
 #footnotes {
-	margin-top: 4em;
+	margin: 1em 0em;
 }
 
 #footnotes ul {

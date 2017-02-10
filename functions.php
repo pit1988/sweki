@@ -1,17 +1,20 @@
 <?php
 
-$host   = 'localhost';
-$dbuser = 'root';
-$dbpass = 'root';
-$dbname = 'sweki';
-
-$connection = new mysqli($host, $dbuser, $dbpass, $dbname)
-or die("Connessione a MySQL fallita: (" . $connection->connect_errno . ") " . $connection->connect_error);
-
 function queryMysql($query) {
-	global $connection;
-	$result = $connection->query($query);
-	if (!$result) die("Query fallita: " . $connection->error);
+	$host   = 'localhost';
+	$dbuser = 'root';
+	$dbpass = 'root';
+	$dbname = 'sweki';
+
+	$conn = new mysqli($host, $dbuser, $dbpass, $dbname);
+	if ($conn->connect_errno)
+	echo 'Connessione a MySQL fallita (' . $conn->connect_errno . '): ' . $conn->connect_error;
+
+	$result = $conn->query($query);
+	if (!$result) die("Query fallita: " . $conn->error);
+	$result = $result->fetch_all(MYSQLI_ASSOC);
+
+	$conn->close();
 	return $result;
 }
 
