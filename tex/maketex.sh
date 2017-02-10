@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# trasforma un sito web statico in PDF
+
 if [[ `basename \`pwd\`` != tex ]]; then
 	echo "devi essere nella directory tex/ per invocare questo script"
 	exit 1

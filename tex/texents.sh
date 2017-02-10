@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# prende in input un file contenente entità HTML
+# e restituisce lo stesso file con simboli LaTeX
+# al posto delle entità
+
 if [[ $# != 1 ]]; then
 	echo "Uso: texents <file>"
 	exit
