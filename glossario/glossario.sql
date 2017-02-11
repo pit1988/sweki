@@ -63,7 +63,7 @@ INSERT INTO Definizioni VALUES
 ("controllore_della_qualità", "controllore della qualità (profilo professionale)", "funzione aziendale (e non ruolo di progetto) che accerta la qualità dei prodotti", NULL),
 ("pianificazione", "pianificazione", "organizzare e controllare tempo, risorse e risultati", NULL),
 ("analisi_dei_requisiti", "analisi dei requisiti", "definire cosa bisogna fare", "requirements analysis"),
-("progettazione", "progettazione", "processo di definizione dell'architettura, dei componenti, delle interfacce e delle altre caratteristiche di un sistema o componente", "design"),
+("progettazione", "progettazione", "definizione dell'architettura, dei componenti, delle interfacce e delle altre caratteristiche di un sistema o componente", "design"),
 ("diagramma_WBS", "diagramma WBS (Work Breakdown Structure)", "diagramma che decompone in modo gerarchico le attività di un progetto in sotto-attività (coese ma non necessariamente sequenziali)", NULL),
 ("diagramma_di_Gantt", "diagramma di Gantt", "diagramma che rappresenta la durata, la sequenzialità e il parallelismo delle attività di un progetto", NULL),
 ("diagramma_PERT", "diagramma PERT (Project Evaluation and Review Technique)", "rete che rappresenta le dipendenze temporali (e le criticità) tra attività di un progetto", NULL),
