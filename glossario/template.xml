@@ -19,7 +19,7 @@
 	<div id="content" class="appendix">
 		<h1>Glossario</h1>
 
-		<dl id="glossario"><glossario /></dl>
+		<dl class="gloss"><glossario /></dl>
 	</div>
 
 </body>
