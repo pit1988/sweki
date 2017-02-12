@@ -51,7 +51,7 @@ Di seguito i termini del glossario:
 * __ingegneria__: l'applicazione di princìpi scientifici e matematici per scopi pratici.
 * __ingegneria del software__: applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, al funzionamento e al mantenimento del software.
 * __integrazione continua__: pratica che consiste nell'allineamento frequente degli ambienti di lavoro degli sviluppatori verso l'ambiente condiviso.
-* __LATEX__: sistema di composizione tipografica che utilizza TEX come motore.
+* __LaTeX__: sistema di composizione tipografica che utilizza TeX come motore.
 * __legge della domanda__: Quanto più è grande qualcosa, tanto maggiore sarà la domanda per essa.
 * __legge di Parkinson__: Work expands to fill the time available.
 * __marcatore__: istruzione che un programma deve eseguire per trattare nel modo specificato dall'utente una porzione di testo specificata.
@@ -68,12 +68,13 @@ Di seguito i termini del glossario:
 * __processo software__: processo che porta ad un prodotto software.
 * __processo standard__: riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettività di casi afferenti ad un certo dominio applicativo.
 * __profilo professionale__: insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto.
-* __progettazione__: processo di definizione dell'architettura, dei componenti, delle interfacce e delle altre caratteristiche di un sistema o componente.
+* __progettazione__: definizione dell'architettura, dei componenti, delle interfacce e delle altre caratteristiche di un sistema o componente.
 * __progettista (profilo professionale)__: chi sintetizza una soluzione a partire dalle specifiche di un problema già analizzato.
 * __progetto__: insieme di compiti da svolgere in modo collaborativo a fronte di un incarico (che diventa poi un impegno).
 * __programmatore (profilo professionale)__: chi implementa una parte della soluzione dei progettisti.
 * __protocollo__: accordo di interfacce.
-* __qualifica__: verifica e validazione (&quot;V&amp;V&quot;).
+* __qualifica__: verifica e validazione ("V&V").
+* __qualità__: l'insieme delle caratteristiche di un'entità che ne determinano la capacità di soddisfare esigenze espresse e implicite.
 * __quantificabile__: esprimibile in modo quantitativo.
 * __raccomandazione__: norma di progetto suggerita, non sottoposta a verifica.
 * __ramo (di un repository)__: insieme di versioni di file sorgente in evoluzione.
@@ -104,7 +105,7 @@ Di seguito i termini del glossario:
 * __strumento__: insieme di concetti e di metodi, con delle tecnologie di supporto.
 * __tecnica__: ricetta applicata agli strumenti disponibili; modo con cui si usa uno strumento.
 * __tecnologia__: strumento sul quale si opera.
-* __TEX__: linguaggio formale di composizione tipografica.
+* __TeX__: linguaggio formale di composizione tipografica.
 * __UML (Unified Modelling Language)__: famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software.
 * __unità__: la più piccola quanità di software che conviene verificare da sola.
 * __verificatore (profilo professionale)__: chi verifica il lavoro dei programmatori.

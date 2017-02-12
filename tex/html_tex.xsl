@@ -137,7 +137,7 @@
 
 
 <!-- footnotes -->
-<xsl:template match="sup[@class='footnote']">*</xsl:template>
+<xsl:template match="sup[@class='footnote']"><xsl:variable name="ftn" select="'substring(a/@href, 5)'" />\footnote{<xsl:value-of select="/html/body/div[@id='footnotes']/ul/li[$ftn]" />}</xsl:template>
 
 
 
