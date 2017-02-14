@@ -22,24 +22,24 @@
 
 <!-- h1 (section) -->
 <xsl:template match="h1">
-	\section{<xsl:value-of select="." />}
+	\section{<xsl:apply-templates />}
 </xsl:template>
 
 <!-- h2 (subsection) -->
 <xsl:template match="h2">
-	\subsection{<xsl:value-of select="." />}
+	\subsection{<xsl:apply-templates />}
 </xsl:template>
 
 <!-- h3 (subsubsection) -->
 <xsl:template match="h3">
-	\subsubsection{<xsl:value-of select="." />}
+	\subsubsection{<xsl:apply-templates />}
 </xsl:template>
 
 <!-- h1.appendix (appendix) -->
 <xsl:template match="div[@class='appendix']/h1">
 	\newpage
 	\appendix
-	\section{<xsl:value-of select="." />}
+	\section{<xsl:apply-templates />}
 </xsl:template>
 
 
@@ -115,29 +115,29 @@
 
 <!-- table header element -->
 <xsl:template match="th[position() &lt; last()]">
-	<xsl:for-each select="."><xsl:value-of select="." /> &amp; </xsl:for-each>
+	<xsl:for-each select="."><xsl:apply-templates /> &amp; </xsl:for-each>
 </xsl:template>
 
 <!-- last table header element -->
 <xsl:template match="th[last()]">
-	<xsl:value-of select="." /> \\
+	<xsl:apply-templates /> \\
 	\midrule
 </xsl:template>
 
 <!-- table row element -->
 <xsl:template match="td[position() &lt; last()]">
-	<xsl:for-each select="."><xsl:value-of select="." /> &amp; </xsl:for-each>
+	<xsl:for-each select="."><xsl:apply-templates /> &amp; </xsl:for-each>
 </xsl:template>
 
 <!-- last table row element -->
 <xsl:template match="td[last()]">
-	<xsl:value-of select="." /> \\
+	<xsl:apply-templates /> \\
 </xsl:template>
 
 
 
 <!-- footnotes -->
-<xsl:template match="sup[@class='footnote']"><xsl:variable name="ftn" select="'substring(a/@href, 5)'" />\footnote{<xsl:value-of select="/html/body/div[@id='footnotes']/ul/li[$ftn]" />}</xsl:template>
+<xsl:template match="sup[@class='footnote']"><xsl:variable name="ftn" select="'substring(a/@href, 5)'" />\footnote{<xsl:value-of select="/html/body/div[@id='footnotes']/ul/li[$ftn]" />}</xsl:template><!-- bisognerebbe sostituire value-of con apply-templates ma c'è un bug... -->
 
 
 

@@ -14,6 +14,7 @@ echo "\usepackage[english,italian]{babel}" >> sweki.tex
 echo "\usepackage{microtype}" >> sweki.tex
 echo "\usepackage{booktabs}" >> sweki.tex
 echo "\usepackage{hyperref}" >> sweki.tex
+echo "\setcounter{section}{-1}" >> sweki.tex
 echo "\title{sweki}" >> sweki.tex
 echo "\author{Giorgio Giuffrè}" >> sweki.tex
 echo "\date{}" >> sweki.tex
@@ -26,15 +27,19 @@ echo "\newpage" >> sweki.tex
 echo "Consultazione dell'indice html..."
 xsltproc --html get_index.xsl ../index.html | grep html > _sweki_index
 
+echo "Generazione del sommario..."
+echo "\section{Sommario}" >> sweki.tex
+echo "\input{sommario.tex}" >> sweki.tex
+
 echo "trasformazione di XHTML in Latex..."
 while read f; do
 	f="../$f"
 	name=`basename $f`
 	name=${name%.*}
 	./texents.sh $f > _sweki_entities_tmp
-	xsltproc --html html_tex.xsl _sweki_entities_tmp > $name.tex
+	xsltproc --html html_tex.xsl _sweki_entities_tmp > _sweki_$name.tex
 	rm -f _sweki_entities_tmp
-	echo "\input{$name.tex}" >> sweki.tex
+	echo "\input{_sweki_$name.tex}" >> sweki.tex
 done < _sweki_index
 rm -f _sweki_index
 echo "\end{document}" >> sweki.tex
@@ -42,4 +47,4 @@ echo "\end{document}" >> sweki.tex
 echo "generazione del documento PDF..."
 # due invocazioni del comando, per riferimenti incrociati:
 pdflatex -halt-on-error sweki.tex > _sweki_log rm -f _sweki_log && pdflatex -halt-on-error sweki.tex > _sweki_log && rm -f _sweki_log && echo "File generato"
-rm -f *.log *.toc *.aux *.out *.tex # pulizia
+rm -f *.log *.toc *.aux *.out _sweki*.tex sweki.tex # pulizia
