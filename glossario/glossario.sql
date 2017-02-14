@@ -126,4 +126,5 @@ INSERT INTO Definizioni VALUES
 ('basso_accoppiamento', 'basso accoppiamento', 'minimizzazione delle dipendenze tra i vari componenti di un sistema', 'loose coupling'),
 ('coerenza', 'coerenza', 'l\'esser composto da parti che non sono in disaccordo tra loro, cioè non affermano cose che si contraddicano', 'consistency'),
 ('qualità', 'qualità', 'l\'insieme delle caratteristiche di un\'entità che ne determinano la capacità di soddisfare esigenze espresse e implicite', 'quality'),
-('valutazione', 'valutazione', 'verifica quantificata', NULL);
+('valutazione', 'valutazione', 'verifica quantificata', NULL),
+('metrica', 'metrica', 'l\'interpretazione di un sistema di unità di misura', NULL);
