@@ -1,5 +1,6 @@
 #############
 ### Database:
+
 DROP SCHEMA IF EXISTS sweki;
 CREATE SCHEMA IF NOT EXISTS sweki DEFAULT CHARACTER SET utf8;
 USE sweki;
@@ -11,7 +12,7 @@ USE sweki;
 
 DROP TABLE IF EXISTS Definizioni;
 CREATE TABLE Definizioni (
-	id		VARCHAR(50) PRIMARY KEY, # id univoco (per html)
+	id		VARCHAR(50) PRIMARY KEY, # id univoco (per HTML)
 	voce	VARCHAR(200) NOT NULL, # voce
 	def		VARCHAR(800), # definizione della voce
 	eng		VARCHAR(200) # traduzione inglese della voce
@@ -54,28 +55,30 @@ INSERT INTO Definizioni VALUES
 ('ruolo', 'ruolo', 'funzione aziendale assegnata a progetto; identifica capacità e compiti', NULL),
 ('allocazione_di_risorse', 'allocazione di risorse (per un progetto)', 'assegnare attività a ruoli e, poi, ruoli a persone', NULL),
 ('profilo_professionale', 'profilo professionale', 'insieme di competenze (tecnologiche e metodologiche) e un\'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l\'assunzione di un ruolo in un progetto', NULL),
-('analista', 'analista (profilo professionale)', 'chi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista; fa l\'analisi dei requisiti', NULL),
+('analista', 'analista (profilo professionale)', 'chi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista; fa l\'analisi dei requisiti', 'analyst'),
 ('progettista', 'progettista (profilo professionale)', 'chi sintetizza una soluzione a partire dalle specifiche di un problema già analizzato', 'designer'),
 ('programmatore', 'programmatore (profilo professionale)', 'chi implementa una parte della soluzione dei progettisti', 'programmer'),
 ('verificatore', 'verificatore (profilo professionale)', 'chi verifica il lavoro dei programmatori', NULL),
 ('responsabile_di_progetto', 'responsabile di progetto (profilo professionale)', 'chi pianifica il progetto, assegna le persone ai ruoli giusti e rappresenta il progetto presso il fornitore e il committente', 'project manager'),
 ('amministratore_di_progetto', 'amministratore di progetto (profilo professionale)', 'chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione', 'project administrator'),
 ('controllore_della_qualità', 'controllore della qualità (profilo professionale)', 'funzione aziendale (e non ruolo di progetto) che accerta la qualità dei prodotti', NULL),
-('pianificazione', 'pianificazione', 'organizzare e controllare tempo, risorse e risultati', NULL),
+('pianificazione', 'pianificazione', 'organizzare e controllare tempo, risorse e risultati', 'planning'),
 ('analisi_dei_requisiti', 'analisi dei requisiti', 'definire cosa bisogna fare', 'requirements analysis'),
 ('progettazione', 'progettazione', 'definizione dell\'architettura, dei componenti, delle interfacce e delle altre caratteristiche di un sistema o componente', 'design'),
-('diagramma_WBS', 'diagramma WBS (Work Breakdown Structure)', 'diagramma che decompone in modo gerarchico le attività di un progetto in sotto-attività (coese ma non necessariamente sequenziali)', NULL),
-('diagramma_di_Gantt', 'diagramma di Gantt', 'diagramma che rappresenta la durata, la sequenzialità e il parallelismo delle attività di un progetto', NULL),
-('diagramma_PERT', 'diagramma PERT (Project Evaluation and Review Technique)', 'rete che rappresenta le dipendenze temporali (e le criticità) tra attività di un progetto', NULL),
+('diagramma_WBS', 'diagramma WBS (Work Breakdown Structure)', 'diagramma che decompone in modo gerarchico le attività di un progetto in sotto-attività (coese ma non necessariamente sequenziali)', 'WBS diagram'),
+('diagramma_di_Gantt', 'diagramma di Gantt', 'diagramma che rappresenta la durata, la sequenzialità e il parallelismo delle attività di un progetto', 'Gantt diagram'),
+('diagramma_PERT', 'diagramma PERT (Project Evaluation and Review Technique)', 'rete che rappresenta le dipendenze temporali (e le criticità) tra attività di un progetto', 'PERT diagram'),
 ('revisione_esterna', 'revisione esterna', 'ispezione ufficiale di un documento condotta da un\'organizzazione indipendente da chi ha prodotto i documenti', 'audit'),
 ('revisione_interna', 'revisione interna', NULL, 'joint review'),
 ('rete', 'rete', 'grafo orientato', 'network'),
 ('slack_time', 'slack time (di un evento)', 'quantità di tempo tra la data minima a partire da cui un evento può accadere e la data massima oltre la quale esso ritarda gli eventi successivi', 'slack time'),
 ('criticità', 'criticità', 'distanza troppo breve tra attività dipendenti', NULL),
-('legge_di_Parkinson', 'legge di Parkinson', 'Work expands to fill the time available', NULL),
+('legge_di_Parkinson', 'legge di Parkinson', 'Work expands to fill the time available', 'Parkinson\'s law'),
 ('legge_della_domanda', 'legge della domanda', 'Quanto più è grande qualcosa, tanto maggiore sarà la domanda per essa', NULL),
 ('CoCoMo', 'CoCoMo (Constructive Cost Model)', 'modello per la stima dei costi di un progetto, in tempo/persona', 'CoCoMo'),
 ('qualifica', 'qualifica', 'verifica e validazione ("V&V")', NULL),
+('verifica', 'verifica', 'valutare se un prodotto soddisfa requisiti, regole o altre condizioni necessarie', 'verification'),
+('validazione', 'validazione', 'la garanzia che un prodotto soddisfi i requisiti da cui è nato', 'validation'),
 ('rischio', 'rischio', 'opposto di opportunità', 'risk'),
 ('organizzazione', 'organizzazione', 'aggregato di persone [?] che agiscono in modo sistematico, disciplinato e quantificabile; contrario di caos', 'organization'),
 ('caos', 'caos', 'contrario di organizzazione', 'chaos'),
@@ -84,8 +87,8 @@ INSERT INTO Definizioni VALUES
 ('SQL', 'SQL (Structured Query Language', 'linguaggio di programmazione dichiarativo basato sull\'algebra relazionale che serve a creare, manipolare e interrogare basi di dati relazionali', 'SQL'),
 ('scenario', 'scenario', 'sequenza di passi che descrive un esempio di interazione con un sistema', 'scenario'),
 ('caso_d_uso', 'caso d\'uso', 'insieme di scenari che hanno in comune un obiettivo per un utente', 'use case'),
-('diagramma_dei_casi_d_uso', 'diagramma dei casi d\'uso', 'grafo orientato in cui ogni nodo è un attore o un caso d\'uso e ogni arco è una comunicazione tra un attore e un caso d\'uso oppure una relazione (di estensione, inclusione o generalizzazione) tra due casi d\'uso o tra due attori', NULL),
-('documentazione', 'documentazione', 'tutto ciò che documenta le attività di un progetto', NULL),
+('diagramma_dei_casi_d_uso', 'diagramma dei casi d\'uso', 'grafo orientato in cui ogni nodo è un attore o un caso d\'uso e ogni arco è una comunicazione tra un attore e un caso d\'uso oppure una relazione (di estensione, inclusione o generalizzazione) tra due casi d\'uso o tra due attori', 'use case diagram'),
+('documentazione', 'documentazione', 'tutto ciò che documenta le attività di un progetto', 'documentation'),
 ('TeX', 'TeX', 'linguaggio formale di composizione tipografica', 'TeX'),
 ('LaTeX', 'LaTeX', 'sistema di composizione tipografica che utilizza TeX come motore', 'LaTeX'),
 ('marcatore', 'marcatore', 'istruzione che un programma deve eseguire per trattare nel modo specificato dall\'utente una porzione di testo specificata', 'mark-up'),
@@ -96,7 +99,7 @@ INSERT INTO Definizioni VALUES
 ('bibliografia', 'bibliografia', 'elenco delle fonti di un documento', 'bibliografy'),
 ('infrastruttura_di_progetto', 'infrastruttura (di un progetto)', 'tutte le risorse hardware e software del progetto', NULL),
 ('modello', 'modello', 'astrazione della realtà', 'model'),
-('framework', 'framework', 'struttura di supporto su cui un software può essere organizzato e progettato', NULL),
+('framework', 'framework', 'struttura di supporto su cui un software può essere organizzato e progettato', 'framework'),
 ('ambiente_di_lavoro', 'ambiente di lavoro', 'l\'insieme di persone, di ruoli, di procedure e l\'infrastruttura la cui qualità determina la produttività del progetto', NULL),
 ('metodo_di_lavoro', 'metodo di lavoro', 'metodo di lavoro', 'way of working'),
 ('configuration_item', 'configuration item (CI)', 'parte della configurazione di un software', 'configuration item'),
@@ -107,14 +110,14 @@ INSERT INTO Definizioni VALUES
 ('versione_di_CI', 'versione (di un CI)', 'istanza identificata di un CI nel tempo', 'version'),
 ('integrazione_continua', 'integrazione continua', 'pratica che consiste nell\'allineamento frequente degli ambienti di lavoro degli sviluppatori verso l\'ambiente condiviso', 'continuous integration'),
 ('regola', 'regola', 'norma di progetto sottoposta a verifica', NULL),
-('raccomandazione', 'raccomandazione', 'norma di progetto suggerita, non sottoposta a verifica', NULL),
-('protocollo', 'protocollo', 'accordo di interfacce', NULL),
-('design_pattern', 'design pattern', 'soluzione progettuale generale ad un problema ricorrente', NULL),
+('raccomandazione', 'raccomandazione', 'norma di progetto suggerita, non sottoposta a verifica', 'recommendation'),
+('protocollo', 'protocollo', 'accordo di interfacce', 'protocol'),
+('design_pattern', 'design pattern', 'soluzione progettuale generale ad un problema ricorrente', 'design pattern'),
 ('sistema', 'sistema', 'insieme di componenti organizzati per compiere una o più funzioni', 'system'),
 ('componente', 'componente', 'parte di un sistema', 'component'),
 ('unità', 'unità', 'la più piccola quanità di software che conviene verificare da sola', 'unity'),
 ('modulo', 'modulo', 'parte di un\'unità', 'module'),
-('requisito', 'requisito', 'bisogno da soddisfare o vincolo da rispettare', NULL),
+('requisito', 'requisito', 'bisogno da soddisfare o vincolo da rispettare', 'requiremement'),
 ('requisito_utente', 'requisito utente', 'richiesta generale, ad alto livello', NULL),
 ('requisito_di_sistema', 'requisito di sistema', 'definizione formale e dettagliata di una funzione del sistema', NULL),
 ('requisito_di_prodotto', 'requisito di prodotto', 'bisogno o vincolo sul prodotto da sviluppare', NULL),
