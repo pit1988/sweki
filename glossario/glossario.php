@@ -1,16 +1,39 @@
 <?php
 
+
+
+function def($term) {
+	if ($term != '')
+		return $term . '.';
+	return '';
+}
+
+function html_eng($term) {
+	if ($term != '')
+		return ' Inglese: <em xml:lang="en">' . $term . '</em>.';
+	return '';
+}
+
+function md_eng($term) {
+	if ($term != '')
+		return ' Inglese: _' . $term . '_.';
+	return '';
+}
+
+
+
 $output_html = file_get_contents('template.xml');
-$output_md = file_get_contents('template.md');
+$output_md   = file_get_contents('template.md');
 
 $gloss_html = '';
-$gloss_md = '';
+$gloss_md   = '';
+
 include_once '../functions.php';
-$termini = queryMysql("SELECT id, voce, def FROM Definizioni ORDER BY id");
+$termini = queryMysql("SELECT * FROM Definizioni ORDER BY id");
 foreach ($termini as $t) {
 	$gloss_html .= "\n\t\t\t<dt id=\"" . htmlentities($t['id']) . "\">" . htmlentities($t['voce']) . "</dt>\n";
-	$gloss_html .= "\t\t\t<dd>" . htmlentities($t['def']) . ".</dd>";
-	$gloss_md .=  "* __" . $t['voce'] . "__: " . $t['def'] . ".\n";
+	$gloss_html .= "\t\t\t<dd>" . def(htmlentities($t['def'])) . html_eng(htmlentities($t['eng'])) . "</dd>";
+	$gloss_md .=  "* __" . $t['voce'] . "__: " . def($t['def']) . md_eng($t['eng']) . "\n";
 }
 $gloss_html .= "\n\t\t";
 

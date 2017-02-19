@@ -115,7 +115,7 @@ INSERT INTO Definizioni VALUES
 ('design_pattern', 'design pattern', 'soluzione progettuale generale ad un problema ricorrente', 'design pattern'),
 ('sistema', 'sistema', 'insieme di componenti organizzati per compiere una o più funzioni', 'system'),
 ('componente', 'componente', 'parte di un sistema', 'component'),
-('unità', 'unità', 'la più piccola quanità di software che conviene verificare da sola', 'unity'),
+('unità', 'unità', 'la più piccola quanità di software che conviene verificare da sola', 'unit'),
 ('modulo', 'modulo', 'parte di un\'unità', 'module'),
 ('requisito', 'requisito', 'bisogno da soddisfare o vincolo da rispettare', 'requiremement'),
 ('requisito_utente', 'requisito utente', 'richiesta generale, ad alto livello', NULL),
