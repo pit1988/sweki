@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Appello luglio 2008 - sweki</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Giorgio Giuffrè" />
+	<meta name="keywords" content="sweki, ingegneria, software, esercizi, 2008" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../main.css" />
+	<link rel="prev" href="2008_03.html" />
+	<link rel="next" href="2009_04_01.html" />
+</head>
+
+<body>
+
+	<div id="header">
+		<h1><a href="index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a></h1>
+		<h2>la <span xml:lang="en">wiki</span> di Ingegneria del <span xml:lang="en">Software</span></h2>
+	</div>
+
+	<div id="content">
+		<h1>Appello di luglio 2008</h1>
+
+		<h2>Scelta multipla [1/30]</h2>
+		<p>Quando viene valutata una sentinella, in una macchina a stati finiti?</p>
+		<ul>
+			<li>Quando la macchina non è occupata con altri compiti.</li>
+			<li>Più volte durante l'attivazione di una transizione.</li>
+			<li>Una volta per ogni transizione, quando l'evento si verifica.</li>
+			<li>Prima che l'evento si verifichi, per determinare se la transizione può essere attivata.</li>
+			<li>Nessuna delle risposte precedenti è corretta.</li>
+		</ul>
+
+		<h2>Scelta multipla [1/30]</h2>
+		<p>Quale delle seguenti relazioni non appare normalmente in un diagramma delle classi?</p>
+		<ul>
+			<li>Una relazione di flusso.</li>
+			<li>Una dipendenza d'accesso.</li>
+			<li>Una relazione di generalizzazione.</li>
+			<li>Una relazione di <em xml:lang="en">realize</em>.</li>
+			<li>Tutte le risposte precedenti sono corrette.</li>
+			<li>Nessuna delle risposte precedenti è corretta.</li>
+		</ul>
+
+		<h2>Scelta multipla [1/30]</h2>
+		<p>In quale diagramma <abbr title="Unified Modeling Language">UML</abbr> sono usate le <em xml:lang="en">Swimlanes</em> (o partizioni)?</p>
+		<ul>
+			<li>Nei diagrammi dei casi d'uso per separare la responsabilità di attori e sistemi.</li>
+			<li>Nei diagrammi a stati, dove <span xml:lang="en">thread</span> differenti vengono eseguiti a velocità diverse.</li>
+			<li>Nei diagrammi di attività.</li>
+			<li>Tutte le risposte precedenti sono corrette.</li>
+			<li>Nessuna delle risposte precedenti è corretta.</li>
+		</ul>
+
+		<h2>Problema [5+5+5/30]</h2>
+		<p>Un sistema miniaturizzato di rifornimento automatico di insulina, controllato da un software, funziona utilizzando un microsensore inserito nel paziente per misurare un certo parametro del sangue che viene inviato al microcontrollore che calcola la quantità necessaria di insulina da pompare nel paziente. Il problema del giusto dosaggio di insulina è che il livello di insulina nel sangue non dipende solo dal livello degli zuccheri, ma è funzione del momento in cui è fatta l'iniezione di insulina, che può portare gli zuccheri nel sangue a livelli troppo bassi (se c'è troppa insulina) o molto alti (se ce n'è poca). La prima situazione è peggiore nel breve termine (perdita di conoscenza e morte); la seconda, nel lungo termine, porta danni a vari organi del paziente.</p>
+		<p>Si voglia progettare un sistema di simulazione &quot;paziente-macchina insulina&quot; per mettere a punto il sistema miniaturizzato di rifornimento automatico di insulina. Le specifiche sperimentali della macchina sono: misura del livello degli zuccheri nel sangue ogni dieci unità di tempo; la dose calcolata di insulina, funzione della misura fatta del livello degli zuccheri, chiamata DoseCalc, viene fornita se, ovviamente, è maggiore di zero e se il tasso di cambiamento è in crescita nelle ultime due misure e deve essere inferiore ad una DoseMax definita, altrimenti viene fornita una dose fissa chiamata DoseFix solo se la DoseCalc è maggiore di zero; la DoseFix è ovviamente inferiore alla DoseCalc; la DoseCumulativa fornita in un periodo di 24 ore, non deve superare la DoseMaxGiornaliera; la DoseCumulativa giornaliera viene azzerata alla mezzanotte.</p>
+		<p>Il paziente viene simulato da un oggetto che genera quasi casualmente un valore di zuccheri nel sangue; questa generazione è anche funzione del tempo trascorso e dell'insulina somministrata, il prototipo del metodo è: <em>int ValoreZuccheri(int tempo, int insulinaPompata);</em></p>
+		<p>L'unità di tempo nella realtà sarà il minuto, nella simulazione potrà essere impostato a piacere. Per le eventuali specifiche mancanti, fare le opportune ipotesi di lavoro.</p>
+		<p><strong>5/30</strong>: Disegnare il diagramma delle classi che risolve l'intero problema con tutti i dettagli necessari (diagrammi reali).</p>
+		<p><strong>5/30</strong>: Disegnare un diagramma di attività del metodo che restituisce il valore dell'insulina somministrato.</p>
+		<p><strong>5/30</strong>: Disegnare un diagramma di sequenza, che illustri la fase di test del sistema per un periodo di 48 ore.</p>
+	</div>
+
+</body>
+</html>
