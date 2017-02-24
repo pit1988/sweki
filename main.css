@@ -15,9 +15,7 @@ a:hover {
 
 
 
-/***
- ***   header
- ***/
+/*   header   */
 
 #header {
 	padding: 1em;
@@ -57,9 +55,7 @@ a:hover {
 
 
 
-/***
- ***   nav
- ***/
+/*   nav   */
 
 #nav {
 	list-style-type: circle;
@@ -71,9 +67,7 @@ a:hover {
 
 
 
-/***
- ***   content
- ***/
+/*   content   */
 
 #content {
 	margin: auto;
@@ -105,9 +99,7 @@ a:hover {
 
 
 
-/***
- ***   glossario
- ***/
+/*   glossario   */
 
 .gloss dt {
 	margin-top: 1em;
@@ -116,9 +108,11 @@ a:hover {
 
 
 
-/***
- ***   footnotes
- ***/
+/*   footnotes   */
+
+.footnote a {
+	text-decoration: none;
+}
 
 #footnotes {
 	margin: 1em;
@@ -126,9 +120,7 @@ a:hover {
 
 
 
-/***
- ***   404 page
- ***/
+/*   404 page   */
 
 .notFound {
 	text-align: center;
