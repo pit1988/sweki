@@ -53,6 +53,14 @@ a:hover {
 	}
 }
 
+#header .next, #header .prev {
+	opacity: 0.5;
+}
+
+#header a.next:hover, #header a.prev:hover {
+	opacity: 1.0;
+}
+
 
 
 /*   nav   */
