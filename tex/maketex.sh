@@ -28,8 +28,8 @@ echo "Consultazione dell'indice html..."
 xsltproc --html get_index.xsl ../index.html | grep html > _sweki_index
 
 echo "Generazione del sommario..."
-echo "\section{Sommario}" >> sweki.tex
-echo "\input{sommario.tex}" >> sweki.tex
+printf "\n\n" >> sweki.tex
+cat sommario.tex >> sweki.tex
 
 echo "trasformazione di XHTML in Latex..."
 while read f; do
@@ -37,14 +37,14 @@ while read f; do
 	name=`basename $f`
 	name=${name%.*}
 	./texents.sh $f > _sweki_entities_tmp
-	xsltproc --html html_tex.xsl _sweki_entities_tmp > _sweki_$name.tex
+	printf "\n\n" >> sweki.tex
+	xsltproc --html html_tex.xsl _sweki_entities_tmp >> sweki.tex
 	rm -f _sweki_entities_tmp
-	echo "\input{_sweki_$name.tex}" >> sweki.tex
 done < _sweki_index
 rm -f _sweki_index
-echo "\end{document}" >> sweki.tex
+printf "\n\\\end{document}" >> sweki.tex
 
 echo "generazione del documento PDF..."
 # due invocazioni del comando, per riferimenti incrociati:
 pdflatex -halt-on-error sweki.tex > _sweki_log rm -f _sweki_log && pdflatex -halt-on-error sweki.tex > _sweki_log && rm -f _sweki_log && echo "File generato"
-rm -f *.log *.toc *.aux *.out _sweki*.tex sweki.tex # pulizia
+rm -f *.log *.toc *.aux *.out _sweki*.tex # pulizia

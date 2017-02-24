@@ -26,11 +26,11 @@ a:hover {
 
 #header * {
 	color: #F1F1EF;
-	margin: 0.4em;
 }
 
 #header h1 {
 	font-size: 3em;
+	margin: 0.4em auto;
 }
 
 #header h1 a {
@@ -39,6 +39,7 @@ a:hover {
 
 #header h2 {
 	font-size: 1.2em;
+	margin: 0.4em auto;
 }
 
 @media screen and (max-width: 320px) {
@@ -49,16 +50,17 @@ a:hover {
 
 @media screen and (max-width: 680px) {
 	#header h1 {
-		font-size: 4em;
+		font-size: 3em;
 	}
 }
 
 #header .next, #header .prev {
-	opacity: 0.5;
+	opacity: 0.28;
 }
 
 #header a.next:hover, #header a.prev:hover {
-	opacity: 1.0;
+	opacity: 0.84;
+	transition: 0.2s;
 }
 
 

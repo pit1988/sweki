@@ -1,0 +1,1602 @@
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,italian]{babel}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\setcounter{section}{-1}
+\title{sweki}
+\author{Giorgio Giuffrè}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+
+\section{Sommario}
+sweki è un progetto che raccoglie i miei appunti dal corso di Ingegneria del Software tenuto dal prof. Tullio Vardanega nell'anno accademico 2016-2017. Gli appunti sono presi un po' dalle lezioni del professore, un po' da un riassunto anonimo trovato nella cartella condivisa del nostro corso, un po' dal libro di Sommerville e da SWEBOKv3.0\dots
+
+Gli appunti sono disponibili su GitHub all'indirizzo \url{https://github.com/gigiobello/sweki} in tre formati:
+\begin{itemize}
+	\item .html --- \url{https://github.com/gigiobello/sweki};
+	\item .pdf --- qui;
+	\item .tex --- \url{https://github.com/gigiobello/sweki/raw/master/tex/}.
+\end{itemize}
+
+la versione in PDF è derivata automaticamente da quella in XHTML tramite dei template XSLT e dei terribili script di shell (bash).
+
+Ad oggi gli appunti sono incompleti ma cercherò di migliorarli (ultime parole famose).
+
+
+
+		
+	\section{Introduzione all'ingegneria del software}
+
+
+		
+	\subsection{Cos'è l'ingegneria del software?}
+
+		Mentre la scienza è un insieme di princìpi interpretativi della realtà, l'\textbf{ingegneria} è un'\emph{applicazione} della scienza alla realtà (magari in modo originale, ingegnoso). Quindi l'ingegneria non crea nuova conoscenza, come invece fa la scienza. Il termine \textbf{software}, invece, si compone di due parti: ware significa "cosa inerte", oggetto; soft aggiunge una connotazione astratta, dato che il software non è altro che una costruzione del pensiero. L'ingegneria del software è l'applicazione dell'ingegneria al software, cioè l'applicazione di un approccio \textbf{sistematico}, \textbf{disciplinato} e \textbf{quantificabile} allo sviluppo, al funzionamento e al mantenimento del software. Sistematico nel senso che abbraccia un metodo; disciplinato poiché segue delle norme, anzi la best practice; quantificabile poiché si deve sapere a priori quanto si consumerà (in risorse). Le ingegnerie dell'hardware, del software e dei processi sono specializzazioni dell'ingegneria dei sistemi.
+
+		
+	\subsection{Cosa \emph{non} è l'ingegneria del software?}
+
+		L'ingegneria del software (d'ora in avanti "IS") non è un ramo dell'informatica; è una disciplina ingegneristica che fa affidamento solo in parte sull'informatica, allo stesso modo in cui l'ingegneria meccanica fa affidamento sulla fisica.
+
+		
+	\subsection{Software}
+
+		Per software s'intende il programma con la sua documentazione. A causa dell'assenza di vincoli fisici, il software ha un potenziale illimitato; tuttavia, per lo stesso motivo, esso può velocemente diventare complesso, difficile da capire e costoso da cambiare. Difatti, l'IS si confronta con progetti così impegnativi da richiedere necessariamente un lavoro di gruppo.
+
+		
+	\subsection{Efficacia ed efficienza}
+
+		I prodotti software devono presentare due qualità: \textbf{efficacia} (conformità alle attese) ed \textbf{efficienza} (contenimento dei costi per raggiungere un obiettivo). L'efficienza ha a che fare soprattutto con i bisogni e le risorse\footnote{Risorse: persone, tempo, denaro e materiale.}; l'efficacia, invece, riguarda il prodotto finale. Tuttavia i due termini confliggono: l'efficacia sottintende il verbo "fare", mentre la massima efficienza è proprio il non fare nulla! Bisogna dunque badare a trovare un compromesso, possibilmente in modo sistematico. Ma sappiamo che esiste un ciclo virtuoso tra sistematizzazione ed esperienza. Ecco allora che si ricorre alla best practice, la prassi che per esperienza e per studio abbia mostrato di garantire i migliori risultati in circostanze note e specifiche.
+
+		
+	\subsection{Come studiare}
+
+		Due sono i tipi di libri su cui si può studiare: i \textbf{libri teorici} espongono i princìpi ma non l'esperienza concreta; i \textbf{libri esperienziali} fanno l'opposto e servono soprattutto per risolvere dubbi. ingegneria del software va capita studiando con entrambi questi tipi di libri e, soprattutto, partecipando al \textbf{progetto didattico}. Inoltre, torna molto utile compilare un proprio \textbf{glossario} dei termini.
+	
+
+
+		
+	\section{Processi software}
+
+
+		
+	\subsection{Definizione}
+
+		In ingegneria, secondo l'ISO, un \textbf{processo} è un insieme di attività correlate e coese che trasformano ingressi in uscite, consumando risorse nel farlo. In particolare, un processo software (d'ora in avanti solo "processo") porta ad un \emph{prodotto} software.
+
+		
+	\subsection{Anatomia}
+
+		Ogni processo si divide in più \textbf{attività}. Ogni attività si divide in \textbf{compiti}. Ogni compito si può svolgere usando qualche tecnica, cioè una sorta di ricetta applicata agli strumenti disponibili. Per strumento s'intende un insieme di concetti e di metodi, con delle tecnologie di supporto.
+
+		
+	\subsection{Processi software, aziende e progetti}
+
+		Distinguiamo le seguenti tre categorie principali di processi:
+		
+	\begin{itemize}
+		
+			
+	\item processo standard — riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettività di casi afferenti ad un certo dominio applicativo (quindi una sorta di template);
+			
+	\item processo definito — specializzazione del processo standard necessaria per adattarlo ad esigenze specifiche di progetto;
+			
+	\item processo di progetto — istanza di un processo definito che utilizza risorse aziendali per raggiungere obbiettivi prefissati (il processo viene calato nella realtà aziendale).
+		
+	\end{itemize}
+
+		L'organizzazione aziendale si struttura verticalmente in settori (orientati alla specializzazione) e orizzontalmente in processi (che abbracciano più settori specializzati).
+
+		
+	\subsection{ISO/IEC 12207}
+
+		Lo standard ISO/IEC 12207 è il più noto standard di processo. Esso divide i processi in tre famiglie.
+		
+	\begin{itemize}
+		
+			
+	\item Processi primari:
+				
+	\begin{itemize}
+		
+					
+	\item acquisizione (gestione dei propri sotto-fornitori\footnote{Gli acquirenti di software non sono solo utenti "laici" ma anche (e soprattutto) altre case di software: il maggior acquirente di software è Google!});
+					
+	\item fornitura (gestione dei rapporti con il cliente — controparte dell'acquisizione);
+					
+	\item sviluppo — affrontato con approccio costruttivo, non correttivo; svolto anche tramite appalto esterno; \emph{non} solo programmazione (che tra l'altro va affiancata dal testing)!
+					
+	\item gestione operativa (installazione ed erogazione dei prodotti);
+					
+	\item manutenzione (correzione, adattamento, evoluzione).
+				
+	\end{itemize}
+
+			
+			
+	\item Processi di supporto (delle specie di "sottoprocedure"):
+				
+	\begin{itemize}
+		
+					
+	\item documentazione;
+					
+	\item accertamento della qualità;
+					
+	\item gestione delle versioni e delle configurazioni;
+					
+	\item qualifica: verifica e validazione ("V\&{}V");
+					
+	\item revisioni congiunte con il cliente;
+					
+	\item verifiche ispettive interne;
+					
+	\item risoluzione dei problemi.
+				
+	\end{itemize}
+
+			
+			
+	\item Processi organizzativi (l'"ambiente" del sistema):
+				
+	\begin{itemize}
+		
+					
+	\item gestione dei processi;
+					
+	\item gestione delle infrastrutture;
+					
+	\item miglioramento del processo;
+					
+	\item formazione del personale;
+					
+	\item riuso: l'IS è un insieme di best practices che assembla cose già esistenti, più che crearle ex novo. 
+				
+	\end{itemize}
+
+			
+		
+	\end{itemize}
+
+		Un ingegnere del software sa fare qualsiasi processo tra i suddetti.
+
+		
+	\subsection{Attività fondamentali di un processo software}
+
+		Ogni processo dovrebbe includere le seguenti attività:
+		
+	\begin{itemize}
+		
+			
+	\item definizione delle specifiche del software;
+			
+	\item progetto e implementazione del software;
+			
+	\item validazione del software;
+			
+	\item evoluzione del software.
+		
+	\end{itemize}
+
+
+		
+	\subsection{Organizzazione di processo}
+
+		Per essere disciplinati si ha bisogno di una forma di standardizzazione, per "tenere alta" la qualità di un lavoro ripetitivo che rischia continuamente di degradare. Ecco perché un buon processo si auto-migliora, in modo continuo, secondo lo \textbf{schema PDCA} (ciclo di Deming):
+		
+	\begin{enumerate}
+		
+			
+	\item Plan — individuare obiettivi di miglioramento;
+			
+	\item Do — eseguire ciò che si è pianificato;
+			
+	\item Check — verificare se ha funzionato;
+			
+	\item Act — agire per correggersi.
+		
+	\end{enumerate}
+
+	
+
+
+		
+	\section{Ciclo di vita di un progetto}
+
+
+		
+	\subsection{Definizione}
+
+		Caratteristico di un prodotto di IS è il suo ciclo di vita, cioè l'insieme degli \textbf{stati} che il prodotto assume dal concepimento al ritiro\footnote{Per ritiro s'intende il momento in cui il prodotto cessa di essere seguito dai creatori.}. Senza di esso non esisterebbe la figura dell'ingegnere del software. Conviene vedere il ciclo di vita come una macchina a stati, in cui gli stati sono il grado di maturazione del prodotto e gli archi rappresentano attività (suddivise in processi) che servono a far avanzare il prodotto nel suo grado di maturazione. La durata temporale entro uno stato del ciclo di vita e un altro è detta \textbf{fase}. Misura del successo di un prodotto è un ciclo di vita lungo, speso per lo più in manutenzione, magari con un buon feedback da parte degli utenti. Distinguiamo tre tipi di manutenzione:
+		
+	\begin{itemize}
+		
+			
+	\item correttiva  :(  per correggere difetti;
+			
+	\item di adattamento  :|  per adattare il sistema a variazioni di requisiti;
+			
+	\item evolutiva  ;)  per aggiungere funzionalità al sistema.
+		
+	\end{itemize}
+
+		Esempio di manutenzione evolutiva è Firefox.
+
+		
+	\subsection{Modelli di ciclo di vita}
+
+		La qualità più difficile da soddisfare in IS è la quantificabilità; per questo nascono i \textbf{modelli} di ciclo di vita. Esistono diversi possibili cicli di vita, che si distinguono non per numero o significato degli stati, bensì per le transizioni tra essi e le loro regole di attivazione. Alcuni modelli di ciclo di vita sono:
+		
+	\begin{itemize}
+		
+			
+	\item sequenziale — tipo catena di montaggio;
+			
+	\item incrementale — realizzazione in più passi, con numero crescente di funzionalità;
+			
+	\item evolutivo — con ripetute iterazioni interne;
+			
+	\item a spirale — contesto allargato e modello astratto;
+			
+	\item agile — dinamico, a cicli iterativi e incrementali.
+		
+	\end{itemize}
+
+		In genere un modello del ciclo di vita di un \emph{prodotto}\footnote{Per ritiro s'intende il momento in cui il prodotto cessa di essere seguito dai creatori.} include un modello del ciclo di vita dello \emph{sviluppo}\footnote{Per ritiro s'intende il momento in cui il prodotto cessa di essere seguito dai creatori.}, eventualmente diverso dal primo.
+		È bene tenere a mente che i vari modelli, per quanto differiscano tra di loro in questo o in quel dettaglio, si possono dividere in due grandi famiglie: quelli sequenziali e quelli iterativi; i modelli incrementale, evolutivo, a spirale e agile sono tutti esempi di modelli iterativi.
+
+		
+	\subsection{Il modello sequenziale}
+
+		Nel 1970, grazie a Winston Royce, venne ideato il modello sequenziale (o a cascata), ispirato alle catene di montaggio. Il modello originale prevede che non si possa mai essere in due stati diversi allo stesso tempo e che non si possa tornare ad uno stato precedente. Il passaggio da una fase alla successiva è basato sulla documentazione poiché ogni fase produce documenti che la concretizzano e devono essere approvati per il passaggio alla fase successiva. Ha il pregio di individuare fasi distinte e ordinate nelle quali decomporre il progetto. Suo difetto principale è l'eccessiva \textbf{rigidità}. Tuttavia questo approccio può funzionare se il cliente è consapevole (e abbastanza sicuro) di ciò che vuole, pur tenendo conto che il modello genera software vero e proprio molto tardi nel ciclo di vita.
+		Allora, si pensò di creare un modello "ibrido", introducendo la possibilità di tornare ad uno stato precedente. Tuttavia risalire la cascata fa risalire il progetto nel tempo e genera iterazioni, non incrementi.
+
+		
+	\subsection{Il modello incrementale}
+
+		Per superare le difficoltà del modello sequenziale ibrido, nacque il modello incrementale: in esso, i cicli non sono più iterazioni ma \textbf{incrementi} — con l'eccezione dell'analisi e della progettazione, che si affrontano all'inizio e non vengono ripetute. Il modello prevede rilasci multipli e successivi; ciascuno realizza un incremento di funzionalità, approssimando sempre meglio la soluzione. Un grande vantaggio è che le funzionalità più importanti vengono affrontante all'inizio. Questo modello è meno idealista ma più gentile.
+
+		
+	\subsection{Il modello evolutivo}
+
+		Il modello evolutivo, che è incrementale, prevede che gli incrementi successivi siano versioni (prototipi) usabili dal cliente. Più versioni posso essere mantenute in parallelo e ogni fase ammette iterazioni multiple. 
+
+		
+	\subsection{Il modello a spirale}
+
+		Nel 1988 Barry Boehm propose il modello a spirale, che introduce il concetto di "rischio di progetto" (cercando di contenere tali rischi). Lo sviluppo procede a cicli sempre più lenti; difatti i cicli esterni sono così lenti che possono aderire, ognuno, ad un altro modello di ciclo di vita. Ad ogni ciclo si analizzano i rischi e si compiono simulazioni. Misura del successo di un progetto è il diametro della spirale. Questo modello viene usato solo da chi intraprende progetti sperimentali, che nessuno ha mai realizzato, e richiede forte forte interazione tra committente e fornitore. Un ciclo si articola generalmente in quattro fasi:
+		
+	\begin{enumerate}
+		
+			
+	\item definizione degli obiettivi;
+			
+	\item analisi dei rischi;
+			
+	\item sviluppo e validazione;
+			
+	\item pianificazione della successiva iterazione.
+		
+	\end{enumerate}
+
+
+		
+	\subsection{Il modello a componenti}
+
+		Più pragmatico è il modello a componenti, che prevede l'integrazione di componenti già implementati. L'idea nasce dal fatto che molto di quel che ci serve fare è già stato fatto e molto di quel che faremo ci potrà servire ancora.
+
+		
+	\subsection{I metodi agili}
+
+		I metodi agili nascono alla fine degli anni '90 come reazione all'eccessiva rigidità dei modelli allora in vigore. Si basano su quattro princìpi:
+		
+	\begin{itemize}
+		
+			
+	\item Individuals and interactions over processes and tools
+			
+	\item Working software over comprehensive documentation
+			
+	\item Customer collaboration over contract negotiation
+			
+	\item Responding to change over following a plan
+		
+	\end{itemize}
+
+	
+
+
+		
+	\section{Gestione di progetto}
+
+
+		
+	\subsection{Progetto}
+
+		Un progetto è un insieme di \textbf{compiti} da svolgere a fronte di un assignement. Alcune \textbf{attività} (intese come insiemi di compiti) possono essere svolte individualmente ma il progetto è sempre collaborativo. Tutti i compiti sono pianificati dall'inizio alla fine, secondo specifici obiettivi e vincoli; i vincoli sono dati dal tempo disponibile, le risorse utilizzabili e i risultati attesi.
+
+		
+	\subsection{Responsabile di progetto}
+
+		La gestione di un progetto è compito del \textbf{responsabile di progetto}\footnote{Project manager.} e consiste di:
+		
+	\begin{itemize}
+		
+			
+	\item istanziare processi nel progetto;
+			
+	\item stimare i costi e le risorse necessarie;
+			
+	\item pianificare le attività e assegnarle alle persone;
+			
+	\item controllare le attività e verificare i risultati.
+		
+	\end{itemize}
+
+
+		
+	\subsection{Ruoli}
+
+		Ogni persona, in un progetto, ha un ruolo (o funzione, in azienda\footnote{Project manager.}). Il ruolo può essere di quattro tipi:
+		
+	\begin{itemize}
+		
+			
+	\item sviluppo (responsabilità tecnica e amministrativa);
+			
+	\item direzione (responsabilità decisionale);
+			
+	\item amministrazione (gestione dei processi);
+			
+	\item qualità (gestione della qualità).
+		
+	\end{itemize}
+
+		Allocare le risorse per un progetto significa assegnare attività a ruoli e ruoli a persone.
+
+		
+	\subsection{Profilo professionale}
+
+		Ogni persona ha un profilo professionale, cioè un insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto. Esistono vari profili professionali.
+		
+	\begin{itemize}
+		
+			
+	\item \textbf{Analista} — a partire dal bisogno del cliente, individua il problema (di cui conosce il dominio) da fornire al progettista; solitamente non segue il progetto fino alla fine. In un certo senso, l'analista è la giuntura che collega gli utenti agli sviluppatori.
+			
+	\item \textbf{Progettista} — ha competenze tecniche e tecnologiche\footnote{Project manager.} aggiornate e ha vasta esperienza professionale; a partire dalle specifiche del problema fornitogli, sviluppa una soluzione e rimane finché la soluzione non è stata implementata; spesso si assume la responsabilità di gestione del progetto.
+			
+	\item \textbf{Programmatore} — implementa (una parte de) la soluzione del progettista; sta a lungo nel progetto poiché può essere coinvolto nella manutenzione. Ha competenze specifiche; visione e responsabilità circoscritte.
+			
+	\item \textbf{Verificatore} — verifica il lavoro prodotto dai programmatori.
+			
+	\item \textbf{Responsabile di progetto} — pianifica il progetto, assegna le persone ai ruoli giusti e rappresenta il progetto presso il fornitore e il committente.
+			
+	\item \textbf{Amministratore di progetto} — ruolo "orizzontale": deve controllare che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione.
+			
+	\item \textbf{Controllore della qualità} — funzione aziendale (e non ruolo di progetto) che accerta la qualità dei prodotti.
+		
+	\end{itemize}
+
+
+		
+	\subsection{Pianificazione di progetto}
+
+		Il ruolo più importante del responsabile di progetto è quello di pianificare. La pianificazione è l'identificazione del da farsi e di come farlo. È bene notare come lo stato di avanzamento di un prodotto sia rilevante solo se dà informazioni sulla pianificazione. Tre strumenti notevoli per la pianificazione di un progetto sono:
+		
+	\begin{itemize}
+		
+			
+	\item I diagrammi WBS (Work Breakdown Structure) decompongono, in modo gerarchico, le attività in sottoattività; pur essendo fortemente coese, le sottoattività non sono necessariamente sequenziali.
+			
+	\item I diagrammi di Gantt sono ideali per rappresentare la durata, la sequenzialità e il parallelismo; si possono confrontare facilmente le stime con i progressi effettivi. Tuttavia, non sono particolarmente adatti per rappresentare le dipendenze tra attività.
+			
+	\item I diagrammi PERT (Project Evaluation and Review Technique) unificano le due tecniche precedenti e sono ideali per rappresentare le dipendenze temporali (e le criticità\footnote{Project manager.}) tra attività e, quindi, per ragionare sulle scadenze del progetto. Un tale diagramma è un grafo orientato dove gli archi rappresentano le attività, mentre i nodi sono degli eventi. Ogni evento ha una data minima a partire da cui può accadere e una data massima oltre la quale esso ritarda gli eventi successivi; la differenza tra questi due tempi è detta slack time\footnote{Project manager.}.
+		
+	\end{itemize}
+
+
+		
+	\subsection{Stima dei costi di progetto}
+
+		Un'altro compito importante del responsabile di progetto è quello di stimarne i costi. In particolare, il responsabile deve stimare il tempo/persona\footnote{Project manager.}, unità di misura delle risorse umane. In questo, utile caveat è la legge di Parkinson, una critica alla regolamentazione fine a se stessa: Work expands to fill the time available. Uno strumento per la stima del tempo/persona è CoCoMo (Constructive Cost Model), una funzione matematica che produce in uscita un valore in tempo/persona e prende in ingresso alcuni parametri relativi al progetto (fattore di complessità del progetto $C$, misura in KDSI\footnote{Project manager.} della dimensione stimata del prodotto software $D$, fattore di complessità $S$ e moltiplicatori di costo $M$): $x = C \cdot{} D^{S} \cdot{} M$, dove $x$ è misurato in mesi-persona.
+
+		
+	\subsection{Rischi di progetto}
+
+		I risultati di un progetto software possono portare costi eccessivi, non rispettare le scadenze o risultare insoddisfacenti. Un buon metodo per gestire i rischi è il seguente:
+		
+	\begin{enumerate}
+		
+			
+	\item identificazione dei rischi;
+			
+	\item analisi dei rischi (per ordinare i rischi secondo una priorità);
+			
+	\item pianificazione di come evitare i rischi;
+			
+	\item monitoraggio dei rischi e, eventualmente, ritorno al punto 2 per aggiornare le strategie.
+		
+	\end{enumerate}
+
+	
+
+
+		
+	\section{Amministrazione di progetto}
+
+
+		
+	\subsection{Amministratore di progetto}
+
+		Scopo dell'amministrare un progetto è quello di evitare conflitti che si manifestano quando ci sono sovrapposizioni di ruoli e di respondabilità. L'amministratore di un progetto\footnote{Project administrator, da non confondere con il project manager: il primo è sottoposto al secondo.} non dirige (non compie scelte gestionali) ma deve far sì che l'\textbf{infrastruttura} di lavoro sia operante; attua le scelte tecnologiche concordate con i responsabili aziendali e di progetto e si assicura che vengano seguite dai membri del progetto.
+
+		
+	\subsection{Documentazione di progetto}
+
+		Uno dei compiti dell'amministratore di progetto è quello di gestire la documentazione. I documenti devono essere chiaramente identificati, corretti nei contenuti, verificati, approvati, aggiornati (specificando la data) e dotati di versione. La loro diffusione dev'essere controllata: i destinatari devono essere chiaramente identificati e ogni documento ha una sua lista di distribuzione (oppure è pubblico). La documentazione raccoglie \textbf{tutto ciò che documenta le attività} e si divide nelle seguenti due categorie.
+		
+	\begin{itemize}
+		
+			
+	\item Documentazione di sviluppo:
+				
+	\begin{itemize}
+		
+					
+	\item documentazione fornita dal cliente;
+					
+	\item diagrammi di progettazione;
+					
+	\item codice;
+					
+	\item piani di qualifica e risultati delle prove;
+					
+	\item documentazione di accompagnamento del progetto.
+				
+	\end{itemize}
+
+			
+			
+	\item Documentazione di gestione del progetto:
+				
+	\begin{itemize}
+		
+					
+	\item documenti contrattuali;
+					
+	\item piani e consuntivi delle attività;
+					
+	\item piani di qualità.
+				
+	\end{itemize}
+
+			
+		
+	\end{itemize}
+
+		Ogni documento contiene un "diario delle modifiche", in cui vengono riportate tutte le modifiche rispetto alla versione precedente del documento.
+
+		
+	\subsection{Ambiente di lavoro}
+
+		L'amministratore di progetto si occupa dell'ambiente di lavoro, cioè l'insieme di persone, di ruoli, di procedure e l'infrastruttura\footnote{Project administrator, da non confondere con il project manager: il primo è sottoposto al secondo.} la cui qualità determina la produttività del progetto. L'ambiente di lavoro dev'essere:
+		
+	\begin{itemize}
+		
+			
+	\item completo (offre tutto il necessario per svolgere le attività previste);
+			
+	\item ordinato (è facile trovare ciò che vi si cerca);
+			
+	\item aggiornato (il materiale obsoleto non deve causare intralcio).
+		
+	\end{itemize}
+
+
+		
+	\subsection{Configurazione e versionamento di un prodotto}
+
+		Oltre all'aspetto temporale (cioè il ciclo di vita), ogni prodotto ha anche un aspetto più "spaziale", in quanto si compone di parti. Quali esse sono e il modo in cui stanno assieme è detto "configurazione". E ogni sistema composto di parti va gestito con:
+		
+	\begin{itemize}
+		
+			
+	\item controllo di configurazione;
+			
+	\item controllo di versione (versione non del prodotto ma di ogni \emph{parte} della configurazione del prodotto).
+		
+	\end{itemize}
+
+		Data la complessità di un prodotto software, la gestione della configurazione va automatizzata con strumenti adatti. Ogni parte della configurazione (configuration item, CI) dev'essere univocamente identificato (oltre ad avere nome, data, autore, registro delle modifiche e stato corrente). Due concetti centrali della gestione di configurazione sono i seguenti.
+		
+	\begin{itemize}
+		
+			
+	\item Quello di \textbf{baseline} indica un punto d'arrivo tecnico dal quale non si retrocede; la baseline è fatta di elementi della configurazione e, poiché ogni parte è versionata, possiamo conoscere la differenza tra una baseline e l'altra. Una baseline è qualcosa di stabile — non usa e getta! — e sta in un repository\footnote{Project administrator, da non confondere con il project manager: il primo è sottoposto al secondo.}; serve da base per gli avanzamenti futuri e può essere cambiata solo tramite procedure di controllo di cambiamento.
+			
+	\item Il concetto di \textbf{milestone} indica un punto nel tempo associato ad un valore strategico. Ogni milestone di calendario è associata a uno specifico insieme di baseline. Ogni milestone dev'essere: specifica, raggiungibile, misurabile (per quantità d'impegno necessario), traducibile in compiti assegnabili e dimostrabile agli stakeholders\footnote{Project administrator, da non confondere con il project manager: il primo è sottoposto al secondo.}.
+		
+	\end{itemize}
+
+		Anche il controllo di versione fa affidamento sul repository, per permettere di lavorare su vecchi e nuovi CI senza rischio di sovrascritture accidentali, di condividere il lavorato nello spazio comune e di poter verificare la bontà di ogni modifica di baseline. Ogni versione è una istanza di prodotto funzionalmente distinta dalle altre. Invece, si dice "variante" una istanza di prodotto funzionalmente identica ad altre ma diversa per caratteristiche non funzionali. Infine, si dice "rilascio" (release) una istanza di prodotto resa disponibile a utenti esterni.
+
+		
+	\subsection{Modifiche}
+
+		Anche nel corso del suo sviluppo, un progetto non è esente da richieste di modifiche (dagli utenti, dagli sviluppatori o semplicemente per competizione). Le richieste di modifica vanno sottoposte a un rigoroso processo di analisi, decisione, realizzazione e verifica; di ogni richiesta va tenuta traccia.
+
+		
+	\subsection{Norme di progetto}
+
+		Un progetto necessita di linee guida per le attività di sviluppo. Le norme — che vanno accertate dall'amministratore — comprendono:
+		
+	\begin{itemize}
+		
+			
+	\item organizzazione e uso delle risorse di sviluppo;
+			
+	\item convenzioni sull'uso degli strumenti di sviluppo;
+			
+	\item organizzazione della comunicazione e della cooperazione;
+			
+	\item norme di codifica;
+			
+	\item gestione dei cambiamenti.
+		
+	\end{itemize}
+
+		Le norme di progetto descrivono come dovrà essere il \textbf{way of working}. Individuiamo due categorie di norme: regole (sottoposte a verifica) e raccomandazioni (suggerimenti, senza verifica). Tra le norme di progetto, particolare rilevanza hanno le norme di codifica; queste hanno l'obiettivo di far sì che il codice sorgente sia leggibile (anche a distanza di tempo) e costituiscono una misura preventiva che garantisce verificabilità, manutenibilità e portabilità.
+	
+
+
+		
+	\section{Ingegneria dei requisiti}
+
+
+		
+	\subsection{Requisito}
+
+		I requisiti di un sistema sono le descrizioni di cosa il sistema deve fare, cioè i servizi che offre e i vincoli sul suo funzionamento. Due definizioni un po' più formali sono:
+		
+	\begin{itemize}
+		
+			
+	\item ponendoci dal punto di vista del bisogno, requisito è una condizione necessaria a un utente per risolvere un problema o raggiungere un obiettivo;
+			
+	\item dal punto di vista della soluzione, invece, requisito è una condizione che dev'essere soddisfatta da un sistema per adempiere a un obbligo.
+		
+	\end{itemize}
+
+		I requisiti hanno a che vedere con il processo di sviluppo del software; tuttavia la loro gestione è qualcosa di costante, che viene iterato lungo \emph{tutto} il ciclo di vita di un progetto.
+
+		
+	\subsection{Requisiti utente e di sistema}
+
+		"Requisito" è un termine leggermente ambiguo, in quanto viene usato per indicare sia una richiesta generale (astratta, di alto livello) sia una definizione formale e dettagliata di una funzione del sistema. È bene separare questi differenti livelli di descrizione; per questo, distinguiamo tra requisiti utente (di alto livello) e requisiti di sistema (più dettagliati).
+
+		
+	\subsection{Requisiti di prodotto e di processo}
+
+		È bene anche distinguere tra requisiti di prodotto (dei bisogni o dei vincoli sul software da sviluppare) e requisiti di processo (dei vincoli sullo sviluppo del software).
+
+		
+	\subsection{Requisiti funzionali e non}
+
+		Un'ulteriore distinzione viene fatta tra:
+		
+	\begin{itemize}
+		
+			
+	\item requisiti funzionali — i servizi che il sistema deve fornire (cioè la sua interfaccia);
+			
+	\item requisiti non funzionali — i \emph{vincoli} sui servizi che il sistema fornisce (requisiti su prestazioni, manutenibilità, sicurezza, affidabilità...).
+		
+	\end{itemize}
+
+		Ma tale distinzione non è sempre netta: ad esempio, il requisito di limitare l'accesso ai soli utenti autorizzati (apparentemente non funzionale) può essere sviluppato più in dettaglio fino a richiedere un servizio di autenticazione (requisito chiaramente funzionale)!
+
+		
+	\subsection{Piano di qualifica}
+
+		Per garantire il rispetto dei requisiti entra in gioco il piano di qualifica, che consiste nel definire le strategie di \textbf{verifica} e scegliere metodi, tecniche e procedure da usare per la \textbf{validazione}; ha quindi a che fare con due processi:
+		
+	\begin{itemize}
+		
+			
+	\item Verifica: accertare che l'esecuzione delle attività di processo non abbia introdotto errori (Did I build the system right?); rivolta ai processi (e svolta sui loro prodotti), per accertare il rispetto di norme e procedure.
+			
+	\item Validazione: accertare che il prodotto realizzato corrisponda alle attese (Did I build the right system?); rivolta ai prodotti finali.
+		
+	\end{itemize}
+
+		La validazione dev'essere una \emph{self fulfilling prophecy}, cioè bisogna essere certi che non fallirà; la verifica serve proprio a garantire questo. Infatti, il processo di verifica deve assicurarci che lavoriamo bene non a posteriori ma mentre lavoriamo. Se la verifica assicura i requisiti, la validazione li accerta. Il piano di qualifica nasce assieme ai requisiti.
+
+		
+	\subsection{Attività}
+
+		Il processo di ingegneria dei requisiti raggruppa quattro attività:
+		
+	\begin{enumerate}
+		
+			
+	\item \textbf{studio di fattibilità} (stabilire se il sistema in questione è redditizio);
+			
+	\item acquisizione\footnote{Requirements elicitation.} e \textbf{analisi} dei requisiti;
+			
+	\item \textbf{specifica} dei requisiti (cioè formalizzare i requisiti);
+			
+	\item \textbf{validazione} dei requisiti.
+		
+	\end{enumerate}
+
+		Tale processo riguarda tutti gli stakeholders. In genere non è possibile soddisfare i requisiti di ognuno di essi, quindi bisogna quindi trovare un buon compromesso; questo presuppone quindi che gli stakeholders vengano identificati, "pesati" e interpellati.
+
+		
+	\subsection{Studio di fattibilità}
+
+		Lo studio di fattibilità è uno studio breve e chiaro che consiste nel valutare \textbf{rischi}, \textbf{costi} e \textbf{benefici} legati al sistema da sviluppare: tale sistema contribuisce agli obiettivi generali dell'organizzazione? può essere sviluppato rispettando determinati vincoli economici, con la tecnologia corrente? può essere integrato con altri sistemi in uso? una risposta negativa in una qualunque tra queste domande inficia la fattibilità del sistema. Lo studio di fattibilità dovrebbe descrivere in modo chiaro gli \textbf{obiettivi} del progetto e valutare approcci alternativi, per capire se il progetto proposto è la migliore alternativa.
+
+		
+	\subsection{Acquisizione e analisi dei requisiti}
+
+		Dopo aver compiuto uno studio di fattibilità, gli ingegneri del software devono lavorare assieme a clienti e utenti per individuare il dominio di applicazione e i requisiti del sistema. In generale, tutti gli stakeholders sono coinvolti in questa attività, che prende il nome di "acquisizione e analisi dei requisiti" e si svolge a grandi linee nel seguente modo.
+		
+	\begin{enumerate}
+		
+			
+	\item Studio dei bisogni e delle fonti; si cerca di individuare un insieme (non strutturato) di requisiti. Per fare questo, si può:
+				
+	\begin{itemize}
+		
+					
+	\item interrogare gli stakeholders — con interviste chiuse (insieme predefinito di domande) o aperte;
+					
+	\item discutere con gli stakeholders alcuni scenari del sistema (uno scenario è la descrizione di un esempio di interazione col sistema);
+					
+	\item discutere con gli stakeholders i casi d'uso del sistema (tramite diagrammi che individuino le interazioni tra il sistema e i suoi utenti);
+					
+	\item studiare un prototipo del sistema;
+					
+	\item discutere in modo creativo, tramite brainstorming;
+					
+	\item osservare il sistema in modo etnografico, concentrandosi sul suo funzionamento abituale.
+				
+	\end{itemize}
+
+			Interviste e scenari (oltre al capitolato d'appalto, chiaramente) sono fonte di requisiti espliciti; per ricavare, invece, i requisiti impliciti, gli ingegneri del software devono capire il dominio di applicazione del sistema (magari creando un glossario dei termini chiave del dominio).
+			
+			
+	\item Classificazione e organizzazione dei requisiti; l'insieme dei requisiti viene strutturato, dividendo i requisiti in gruppi che rispecchino l'architettura del software (qui, progettazione e analisi procedono spesso insieme).
+			
+	\item Modellazione concettuale del sistema (ad esempio tramite un diagramma dei casi d'uso).
+			
+	\item Assegnazione dei requisiti a parti distinte del sistema.
+			
+	\item Negoziazione con il committente e con i sotto-fornitori: essendoci diversi stakeholders, è normale che alcuni requisiti siano in conflitto; bisogna dare una priorità ad ogni requisito e negoziare quelli incompatibili per trovare un compromesso.
+		
+	\end{enumerate}
+
+		I requisiti possono cambiare (a causa di condizioni esterne o anche solo perché l'analisi si è approfondita e ha introdotto nuovi requisiti); proprio per questo, è bene notare che la sequenza di passi riportata diventa spesso un ciclo che si ripete.
+
+		
+	\subsection{Specifica dei requisiti}
+ 
+		I requisiti vanno specificati in un documento, usando un linguaggio formale o grafico. [?? ...] Vanno ordinati per priorità, classificati e identificati univocamente.
+
+		
+	\subsection{Validazione dei requisiti}
+
+		Validare i requisiti vuol dire controllare che essi definiscano effettivamente il sistema che il cliente richiede. A partire dal documento generato durante la specifica dei requisiti, bisogna assicurarsi che questi siano:
+		
+	\begin{itemize}
+		
+			
+	\item non ambigui;
+			
+	\item necessari — ogni requisito deve soddisfare qualche bisogno esplicito (dal capitolato di appalto);
+			
+	\item sufficienti — ogni bisogno dev'essere soddisfatto da qualche requisito del documento;
+			
+	\item coerenti;
+			
+	\item realistici — i requisiti devono essere implementabili con la tecnologia a disposizione;
+			
+	\item verificabili — si dev'essere in grado di dimostrare che il sistema soddisfa i requisiti.
+		
+	\end{itemize}
+
+	
+
+
+		
+	\section{Progettazione}
+
+
+		
+	\subsection{Definizione}
+
+		La risoluzione di un problema attraversa due fasi: la prima è \textbf{analitica}, la seconda \textbf{sintetica}. Nella fase analitica il problema viene decomposto, approfondito nel dettaglio per capire di quali parti è formato (approccio \emph{top-down}); in quella sintetica, invece, si ricompongono i pezzi trovati al passo precedente e si sintetizza una soluzione per il problema (approccio \emph{bottom-up}). Se la fase analitica ("qual è il problema?") corrisponde grosso modo all'attività di analisi dei requisiti, quella sintetica ("come risolvere il problema?") è proprio la progettazione. Formalmente, la progettazione è la definizione\footnote{Il termine "definizione" va inteso sia come processo sia come il risultato di tale processo.} dell'architettura, dei componenti, delle interfacce e delle altre caratteristiche di un sistema o componente.
+
+		
+	\subsection{Progettazione architetturale e progettazione di dettaglio}
+
+		Il processo di progettazione passa attraverso due attività, che si situano tra l'analisi dei requisiti e l'implementazione:
+		
+	\begin{itemize}
+		
+			
+	\item \textbf{progettazione architetturale}, di alto livello, che descrive come il software viene organizzato in componenti;
+			
+	\item \textbf{progettazione dettagliata}, che descrive il comportamento di tali componenti.
+		
+	\end{itemize}
+
+		Nel piano di qualifica, se l'analisi è verificata  dal test di sistema, la progettazione architetturale è verificata dal test d'integrazione e quella di dettaglio dai test di unità. (Questo è il cosiddetto "modello a V".)
+
+		
+	\subsection{Architettura}
+
+		Obiettivo della progettazione è definire l'architettura del sistema. Per architettura s'intende la decomposizione di un sistema in componenti, l'organizzazione di tali componenti, le interfacce dei componenti e i loro paradigmi di composizione. In generale, una buona architettura deve rispettare i seguenti princìpi:
+		
+	\begin{itemize}
+		
+			
+	\item sufficienza — deve soddisfare tutti i requisiti;
+			
+	\item comprensibilità — può essere capita dagli stakeholders;
+			
+	\item modularità — le sue parti sono chiare e distinte, non si sovrappongono;
+			
+	\item robustezza — è capace di gestire un'ampia classe di input diversi;
+			
+	\item flessibilità — permette modifiche a costo contenuto;
+			
+	\item riusabilità — alcune sue parti possono essere utilmente impiegate in altre applicazioni;
+			
+	\item efficienza;
+			
+	\item affidabilità — è altamente probabile che svolga bene il suo compito;
+			
+	\item disponibilità — necessita di poco tempo di manutenzione fuori linea;
+			
+	\item sicurezza rispetto ai malfunzionamenti;
+			
+	\item sicurezza rispetto a intrusioni;
+			
+	\item semplicità — ogni parte contiene solo il necessario e niente di superfluo;
+			
+	\item incapsulamento — nasconde i dettagli implementativi;
+			
+	\item coesione — parti associate concorrono agli stessi obiettivi (l'approccio a oggetti aiuta molto a ottenere coesione);
+			
+	\item basso accoppiamento — parti distinte dipendono il meno possibile le une dalle altre.
+		
+	\end{itemize}
+
+		Tutte queste qualità devono essere misurabili. In particolare, l'accoppiamento è misurabile interpretando le componenti di un sistema come i nodi di un grafo orientato dove gli archi sono dipendenze di un componente nei confronti di un altro; il numero di archi entranti (\emph{fan-in}) è indice di utilità, mentre il numero di archi uscenti (\emph{fan-out}) è indice di dipendenza. Riguardo alla riusabilità, infine, è bene notare che costituisce un guadagno soltanto nel lungo termine, mentre nel breve termine è un puro costo.
+
+		
+	\subsection{\emph{Design patterns}}
+
+		Un \emph{design pattern} è una soluzione progettuale a un problema ricorrente. Per la progettazione esistono design patterns di alto livello (gli stili architetturali) e di basso livello.
+
+		
+	\subsection{Progettazione architetturale}
+
+		Esistono vari stili architetturali e aderire a uno di essi garantisce coerenza; alcuni stili sono:
+		
+	\begin{itemize}
+		
+			
+	\item strutture generali (livelli, oggetti, pipes e filtri, blackboard);
+			
+	\item sistemi distribuiti (\emph{client-server}, \emph{three-tiers}, \emph{peer-to-peer}, \emph{broker});
+			
+	\item sistemi interattivi (\emph{Model-View-Controller}, \emph{Presentation-Abstraction-Control});
+			
+	\item sistemi adattabili (microkernel, riflessione);
+			
+	\item altri (batch, interpreti...).
+		
+	\end{itemize}
+
+
+		
+	\subsection{Progettazione di dettaglio}
+
+		Uno stile architetturale è un design pattern di alto livello; per la progettazione di dettaglio, invece, si ricorre a pattern di più basso livello (pattern creazionali, strutturali e comportamentali). La progettazione di dettaglio deve definire delle unità il cui carico di lavoro sia realizzabile da un singolo programmatore, in parallelo con le altre unità. Quanto più piccolo è il compito tanto più piccolo è il rischio.
+	
+
+
+		
+	\section{Documentazione}
+
+
+		
+	\subsection{Definizione}
+
+		Documentazione è tutto il materiale che documenta le attività di un progetto (e i loro prodotti). wikibooks.org afferma che, in ingegneria, l'obiettivo primario della documentazione di un prodotto è la \emph{replicabilità} di tale prodotto: You are not an engineer until others can replicate what you have done [...] without your presence [...] without your words [...] without your physical personality on the planet. I documenti di un progetto software e del prodotto che si sta sviluppando hanno diversi motivi di esistere:
+		
+	\begin{itemize}
+		
+			
+	\item per i membri del progetto, sono un mezzo di comunicazione;
+			
+	\item per chi dovrà manutenere il prodotto, servono da repository di informazioni sul sistema;
+			
+	\item per l'amministrazione, forniscono informazioni che aiutano la pianificazione dello sviluppo;
+			
+	\item per gli utenti del prodotto, alcuni documenti sono utili per capire come interfacciarsi con il prodotto.
+		
+	\end{itemize}
+
+		I principali documenti di progetto sono:
+		
+	\begin{itemize}
+		
+			
+	\item analisi dei requisiti;
+			
+	\item specifica software (descrizione ad alto livello del sistema);
+			
+	\item specifica tecnica (architettura logica);
+			
+	\item definizione di prodotto (architettura di dettaglio);
+			
+	\item manuale utente.
+		
+	\end{itemize}
+
+
+		
+
+		
+	\subsection{Specifica software}
+
+		La specifica software dev'essere una descrizione ad alto livello del sistema tramite rappresentazione gerarchica.
+
+		
+	\subsection{Specifica tecnica}
+
+		La specifica tecnica (ST) segue l'analisi dei requisiti e descrive l'\textbf{architettura logica} del sistema, mostrando ciò che il sistema deve fare senza però fissarne i dettagli implementativi; difatti, la specifica tecnica descrive l'\emph{interfaccia} di ogni componente del sistema, attraverso più livelli gerarchici di decomposizione. In particolare, di ogni componente vengono specificati:
+		
+	\begin{itemize}
+		
+			
+	\item funzione svolta;
+			
+	\item tipo dei dati in ingresso;
+			
+	\item tipo dei dati in uscita;
+			
+	\item risorse necessarie per il suo funzionamento.
+		
+	\end{itemize}
+
+
+		
+	\subsection{Definizione di prodotto}
+
+		Dall'architettura logica procede l'\textbf{architettura di dettaglio}, descritta dalla definizione di prodotto (DP). Questo documento decompone l'architettura in moduli a granda più fine, finché ogni modulo ha dimensione, coesione, complessità e accoppiamento tali per cui i moduli possano essere sviluppati in parallelo dai programmatori. La DP deve fornire tutti i dettagli necessari alla codifica e alla verifica di ciascun modulo\footnote{La natura del termine "modulo" è determinata dal linguaggio di programmazione che verrà usato.}. La DP consente di stimare costi e tempi di realizzazione.
+
+		
+	\subsection{Analisi dei requisiti}
+
+		Una delle preoccupazioni maggiori nel documentare l'analisi dei requisiti (AR) è il \textbf{tracciamento dei requisiti}. Tracciare un requisito significa motivarne l'esistenza, spiegando qual'è l'origine di tale requisito (che magari non era esplicito e quindi è stato dedotto da requisiti più espliciti) e badando a garantire la necessità e la sufficienza di ogni requisito. Per fare tutto questo si può usare una matrice, un grafo o una qualsiasi struttura dati appropriata. [... -> LUCIDI 19-20]
+	
+
+
+		
+	\section{Progetto didattico}
+
+
+		
+	\subsection{Motivazioni}
+
+		Un corso di Ingegneria del Software sarebbe incompleto senza un progetto didattico: è bene che lo studente si scontri in prima persona con un progetto di gruppo che rispecchi la logica di relazione "cliente-fornitore". Nello specifico, le principali entità del progetto didattico sono:
+		
+	\begin{itemize}
+		
+			
+	\item Il cliente o \textbf{committente}, cioè chi ha commissionato il prodotto; generalmente è un'azienda o una startup, che pubblica un capitolato d'appalto in cui viene spiegato qual è il prodotto da realizzare.
+			
+	\item Il \textbf{fornitore}, cioè chi si impegna a fornire il prodotto richiesto dal committente; è un gruppo di sei o sette studenti che scelgono di rispondere ad un particolare capitolato d'appalto. Il gruppo è un'entità coesa provvista di nome, logo e e-mail per le comunicazioni ufficiali.
+			
+	\item Il docente, che nel nostro caso funge da \textbf{proponente}; il docente verifica e valuta\footnote{Nota bene: il docente valuta i documenti e il prodotto, non il codice; questo può essere guardato ma non viene valutato.} l'andamento dei vari progetti.
+		
+	\end{itemize}
+
+
+		
+	\subsection{Revisioni di avanzamento}
+
+		Il progetto si estende nell'arco di uno o due semestri. Il docente potrebbe scegliere tra due approcci: l'approccio "chiavi in mano" (i gruppi sono lasciati liberi e il docente torna il giorno della consegna del prodotto); l'approccio per revisioni (più interattivo). L'approccio adottato è il secondo, molto più didattico. Quindi la principale modalità d'interazione tra gruppi e docente sono le \textbf{revisioni di avanzamento}, che sono quattro:
+		
+	\begin{enumerate}
+		
+			
+	\item Revisione dei Requisiti (RR);
+			
+	\item Revisione di Progettazione (RP);
+			
+	\item Revisione di Qualifica (RQ);
+			
+	\item Revisione di Accettazione (RA).
+		
+	\end{enumerate}
+
+		È importante notare che la logica sequenziale delle revisioni di avanzamento non implica che il modello di sviluppo scelto dai gruppi debba essere anch'esso sequenziale\footnote{Nota bene: il docente valuta i documenti e il prodotto, non il codice; questo può essere guardato ma non viene valutato.}!
+		Ricordiamo che ISO/IEC 12207 prevede due diversi tipi di processi di revisione: l'audit process e il joint review process. Alla prima classe appartengono le due revisioni esterne con effetto bloccante: RR e RA; alla seconda classe appartengono le due revisioni interne con valenza informativa: RP e RQ.
+
+		
+	\subsection{Documentazione}
+
+		Tutto il progetto va documentato. In particolare, il fornitore deve documentare: le sue strategie di efficienza ed efficacia, nei documenti di strategia; le regole per attuare tali strategie, nelle Norme di Progetto. I documenti di strategia, che servono sia al fornitore sia al committente, sono:
+		
+	\begin{itemize}
+		
+			
+	\item Il \textbf{Piano di Progetto}, che tratta delle strategie che il gruppo sceglie di adottare per essere efficiente; esso presenta l'organigramma dettagliato del fornitore, lo schema proposto per l'assegnazione e la rotazione dei ruoli di progetto, l'impegno complessivo previsto per ogni ruolo e per ogni individuo, e il conto economico preventivo di realizzazione del prodotto.
+			
+	\item Il \textbf{Piano di Qualifica}, che tratta dell'efficacia e garantisce che le attese verranno rispettate; esso illustra la strategia complessiva di verifica e validazione proposta dal fornitore.
+		
+	\end{itemize}
+
+		Invece, le \textbf{Norme di Progetto} interessano solo il fornitore (e il docente) ma non il committente; esse servono a fissare il way of working.
+		In generale, i principali documenti del progetto didattico sono:
+		
+	\begin{itemize}
+		
+			
+	\item Documenti gestionali:
+				
+	\begin{itemize}
+		
+					
+	\item Studio di Fattibilità;
+					
+	\item Norme di Progetto;
+					
+	\item Piano di Progetto;
+					
+	\item Piano di Qualifica.
+				
+	\end{itemize}
+
+			
+			
+	\item Documenti tecnici:
+				
+	\begin{itemize}
+		
+					
+	\item Analisi dei Requisiti;
+					
+	\item Specifica Tecnica;
+					
+	\item Definizione di Prodotto;
+					
+	\item Manuale Utente.
+				
+	\end{itemize}
+
+			
+		
+	\end{itemize}
+
+		Possiamo suddividere i documenti anche tra interni (al gruppo) ed esterni. Documenti interni sono:
+		
+	\begin{itemize}
+		
+			
+	\item Studio di Fattibilità;
+			
+	\item Norme di Progetto.
+		
+	\end{itemize}
+
+		Documenti esterni sono:
+		
+	\begin{itemize}
+		
+			
+	\item Piano di Progetto;
+			
+	\item Piano di Qualifica;
+			
+	\item Analisi dei Requisiti;
+			
+	\item Specifica Tecnica;
+			
+	\item Definizione di Prodotto;
+			
+	\item Manuale Utente.
+		
+	\end{itemize}
+
+
+		
+	\subsection{Revisione dei Requisiti}
+
+		Questa revisione ha la funzione di concordare con il cliente una visione condivisa del prodotto atteso. Tale visione è documentata nel documento di Analisi dei Requisiti, che studia i requisiti e i casi d'uso del prodotto da realizzare. I documenti valutati sono:
+		
+	\begin{itemize}
+		
+			
+	\item Studio di Fattibilità;
+			
+	\item Norme di Progetto;
+			
+	\item Piano di Progetto;
+			
+	\item Piano di Qualifica;
+			
+	\item \textbf{Analisi dei Requisiti}.
+		
+	\end{itemize}
+
+
+		
+	\subsection{Revisione di Progettazione}
+
+		Questa revisione può avvenire in una (sola) delle seguenti modalità:
+		
+	\begin{enumerate}
+		
+			
+	\item Revisione di Progettazione \emph{minima};
+			
+	\item Revisione di Progettazione \emph{massima}.
+		
+	\end{enumerate}
+
+		La RP minima riguarda l'architettura del sistema \emph{ad alto livello}; essa ha la funzione di accertare la realizzabilità del prodotto. I documenti valutati sono:
+		
+	\begin{itemize}
+		
+			
+	\item Norme di Progetto;
+			
+	\item Piano di Progetto;
+			
+	\item Piano di Qualifica;
+			
+	\item \textbf{Specifica Tecnica}.
+		
+	\end{itemize}
+
+		La RP massima riguarda l'architettura \emph{di dettaglio} del sistema; essa ha la funzione di accordarsi sulle caratteristiche del prodotto da realizzare. I documenti valutati sono:
+		
+	\begin{itemize}
+		
+			
+	\item Norme di Progetto;
+			
+	\item Piano di Progetto;
+			
+	\item Piano di Qualifica;
+			
+	\item \textbf{Definizione di Prodotto}.
+		
+	\end{itemize}
+
+
+		
+	\subsection{Revisione di Qualifica}
+
+		Questa revisione ha la funzione di approvare l'esito finale delle verifiche e attivare quindi la validazione. I documenti valutati sono:
+		
+	\begin{itemize}
+		
+			
+	\item Norme di Progetto;
+			
+	\item Piano di Progetto;
+			
+	\item Piano di Qualifica;
+			
+	\item Definizione di Prodotto;
+			
+	\item versione preliminare del Manuale Utente.
+		
+	\end{itemize}
+
+
+		
+	\subsection{Revisione di Accettazione}
+
+		Questa revisione ha la funzione di collaudare il sistema e di accertare il soddisfacimento di tutti i requisiti utente stabiliti nell'Analisi dei Requisiti. I documenti valutati sono le versioni definitive di:
+		
+	\begin{itemize}
+		
+			
+	\item Piano di Progetto;
+			
+	\item Piano di Qualifica;
+			
+	\item Manuale Utente.
+		
+	\end{itemize}
+
+
+		
+	\subsection{Ore di lavoro}
+
+		Le ore di lavoro si contano solo \emph{dopo} la valutazione della RR; fino a quel momento, il tempo speso è tempo d'investimento non rendicontato (eventualmente registrato, ma non rendicontato). Le ore totali impiegate a progetto da ciascuna persona sono circa 25-30 ore di lavoro; a questo proposito, è bene notare come l'efficienza è proporzionale al rapporto tra ore di lavoro e ore effettive. L'impegno totale di ore rendicontabili presentate a consuntivo da ogni componente di un gruppo dovrà situarsi fra un minimo di 85 e un massimo di 105 ore produttive. Le ore rendicontabili non includono le attività di auto-formazione.
+	
+
+
+		
+	\newpage
+	\appendix
+	\section{Glossario}
+
+
+		
+	\begin{description}
+		
+			
+	\item[allocazione di risorse (per un progetto)] 
+
+			assegnare attività a ruoli e, poi, ruoli a persone.
+			
+	\item[ambiente di lavoro] 
+
+			l'insieme di persone, di ruoli, di procedure e l'infrastruttura la cui qualità determina la produttività del progetto.
+			
+	\item[amministratore di progetto (profilo professionale)] 
+
+			chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione. Inglese: \emph{project administrator}.
+			
+	\item[analisi dei requisiti] 
+
+			definire cosa bisogna fare. Inglese: \emph{requirements analysis}.
+			
+	\item[analista (profilo professionale)] 
+
+			chi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista; fa l'analisi dei requisiti. Inglese: \emph{analyst}.
+			
+	\item[architettura] 
+
+			la struttura organizzativa di un sistema o componente. Inglese: \emph{architecture}.
+			
+	\item[attività] 
+
+			parte di un processo. Inglese: \emph{activity}.
+			
+	\item[baseline] 
+
+			nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede. Inglese: \emph{baseline}.
+			
+	\item[basso accoppiamento] 
+
+			minimizzazione delle dipendenze tra i vari componenti di un sistema. Inglese: \emph{loose coupling}.
+			
+	\item[best practice] 
+
+			la prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche. Inglese: \emph{best practice}.
+			
+	\item[bibliografia] 
+
+			elenco delle fonti di un documento. Inglese: \emph{bibliografy}.
+			
+	\item[budget] 
+
+			tempo e denaro. Inglese: \emph{budget}.
+			
+	\item[caos] 
+
+			contrario di organizzazione. Inglese: \emph{chaos}.
+			
+	\item[caso d'uso] 
+
+			insieme di scenari che hanno in comune un obiettivo per un utente. Inglese: \emph{use case}.
+			
+	\item[ciclo di vita (di un prodotto)] 
+
+			insieme degli stati che il prodotto assume, dal concepimento al ritiro. Inglese: \emph{life cycle}.
+			
+	\item[CoCoMo (Constructive Cost Model)] 
+
+			modello per la stima dei costi di un progetto, in tempo/persona. Inglese: \emph{CoCoMo}.
+			
+	\item[coerenza] 
+
+			l'esser composto da parti che non sono in disaccordo tra loro, cioè non affermano cose che si contraddicano. Inglese: \emph{consistency}.
+			
+	\item[coesione] 
+
+			caratteristica di un sistema per la quale parti associate concorrono agli stessi obiettivi.
+			
+	\item[compito] 
+
+			parte di un'attività. Inglese: \emph{task}.
+			
+	\item[componente] 
+
+			parte di un sistema. Inglese: \emph{component}.
+			
+	\item[configuration item (CI)] 
+
+			parte della configurazione di un software. Inglese: \emph{configuration item}.
+			
+	\item[configurazione] 
+
+			di quali parti si compone un prodotto e il modo in cui esse stanno assieme. Inglese: \emph{configuration}.
+			
+	\item[controllore della qualità (profilo professionale)] 
+
+			funzione aziendale (e non ruolo di progetto) che accerta la qualità dei prodotti.
+			
+	\item[criticità] 
+
+			distanza troppo breve tra attività dipendenti.
+			
+	\item[design pattern] 
+
+			soluzione progettuale generale ad un problema ricorrente. Inglese: \emph{design pattern}.
+			
+	\item[diagramma dei casi d'uso] 
+
+			grafo orientato in cui ogni nodo è un attore o un caso d'uso e ogni arco è una comunicazione tra un attore e un caso d'uso oppure una relazione (di estensione, inclusione o generalizzazione) tra due casi d'uso o tra due attori. Inglese: \emph{use case diagram}.
+			
+	\item[diagramma di Gantt] 
+
+			diagramma che rappresenta la durata, la sequenzialità e il parallelismo delle attività di un progetto. Inglese: \emph{Gantt diagram}.
+			
+	\item[diagramma PERT (Project Evaluation and Review Technique)] 
+
+			rete che rappresenta le dipendenze temporali (e le criticità) tra attività di un progetto. Inglese: \emph{PERT diagram}.
+			
+	\item[diagramma WBS (Work Breakdown Structure)] 
+
+			diagramma che decompone in modo gerarchico le attività di un progetto in sotto-attività (coese ma non necessariamente sequenziali). Inglese: \emph{WBS diagram}.
+			
+	\item[disciplinato] 
+
+			che segue le norme (anzi, la best practice). Inglese: \emph{disciplined}.
+			
+	\item[documentazione] 
+
+			tutto ciò che documenta le attività di un progetto. Inglese: \emph{documentation}.
+			
+	\item[efficacia] 
+
+			conformità alle attese	. Inglese: \emph{effectiveness}.
+			
+	\item[efficienza] 
+
+			contenimento dei costi per raggiungere un obiettivo. Inglese: \emph{efficiency}.
+			
+	\item[fase (di un ciclo di vita)] 
+
+			durata temporale entro uno stato del ciclo di vita e un altro. Inglese: \emph{phase}.
+			
+	\item[framework] 
+
+			struttura di supporto su cui un software può essere organizzato e progettato. Inglese: \emph{framework}.
+			
+	\item[glossario] 
+
+			elenco dei significati dei termini più rilevanti di un documento. Inglese: \emph{glossary}.
+			
+	\item[impegno] 
+
+			 Inglese: \emph{commitment}.
+			
+	\item[incarico] 
+
+			 Inglese: \emph{assignment}.
+			
+	\item[indice analitico] 
+
+			elenco ordinato delle corrispondenze tra particolari termini importanti di un documento e la loro ubicazione in esso. Inglese: \emph{index}.
+			
+	\item[indice generale] 
+
+			elenco delle parti di un documento. Inglese: \emph{table of contents}.
+			
+	\item[infrastruttura (di un progetto)] 
+
+			tutte le risorse hardware e software del progetto.
+			
+	\item[ingegneria] 
+
+			l'applicazione di princìpi scientifici e matematici per scopi pratici. Inglese: \emph{engineering}.
+			
+	\item[ingegneria del software] 
+
+			applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, al funzionamento e al mantenimento del software. Inglese: \emph{software engineering}.
+			
+	\item[integrazione continua] 
+
+			pratica che consiste nell'allineamento frequente degli ambienti di lavoro degli sviluppatori verso l'ambiente condiviso. Inglese: \emph{continuous integration}.
+			
+	\item[LaTeX] 
+
+			sistema di composizione tipografica che utilizza TeX come motore. Inglese: \emph{LaTeX}.
+			
+	\item[legge della domanda] 
+
+			Quanto più è grande qualcosa, tanto maggiore sarà la domanda per essa.
+			
+	\item[legge di Parkinson] 
+
+			Work expands to fill the time available. Inglese: \emph{Parkinson's law}.
+			
+	\item[marcatore] 
+
+			istruzione che un programma deve eseguire per trattare nel modo specificato dall'utente una porzione di testo specificata. Inglese: \emph{mark-up}.
+			
+	\item[metodo di lavoro] 
+
+			metodo di lavoro. Inglese: \emph{way of working}.
+			
+	\item[metrica] 
+
+			l'interpretazione di un sistema di unità di misura.
+			
+	\item[milestone] 
+
+			punto nel tempo associato ad un valore strategico. Inglese: \emph{milestone}.
+			
+	\item[modello] 
+
+			astrazione della realtà. Inglese: \emph{model}.
+			
+	\item[modulo] 
+
+			parte di un'unità. Inglese: \emph{module}.
+			
+	\item[organizzazione] 
+
+			aggregato di persone [?] che agiscono in modo sistematico, disciplinato e quantificabile; contrario di caos. Inglese: \emph{organization}.
+			
+	\item[pianificazione] 
+
+			organizzare e controllare tempo, risorse e risultati. Inglese: \emph{planning}.
+			
+	\item[prassi] 
+
+			modo di fare.
+			
+	\item[processo (ingegneristico)] 
+
+			insieme di attività correlate e coese che trasformano ingressi in uscite, consumando risorse nel farlo. Inglese: \emph{process}.
+			
+	\item[processo definito] 
+
+			specializzazione del processo standard necessaria per adattarlo ad esigenze specifiche di progetto.
+			
+	\item[processo di progetto] 
+
+			istanza di un processo definito che utilizza risorse aziendali per raggiungere obiettivi prefissati (processo calato nella realtà aziendale).
+			
+	\item[processo software] 
+
+			processo che porta ad un prodotto software. Inglese: \emph{software process}.
+			
+	\item[processo standard] 
+
+			riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettività di casi afferenti ad un certo dominio applicativo.
+			
+	\item[profilo professionale] 
+
+			insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto.
+			
+	\item[progettazione] 
+
+			definizione dell'architettura, dei componenti, delle interfacce e delle altre caratteristiche di un sistema o componente. Inglese: \emph{design}.
+			
+	\item[progettista (profilo professionale)] 
+
+			chi sintetizza una soluzione a partire dalle specifiche di un problema già analizzato. Inglese: \emph{designer}.
+			
+	\item[progetto] 
+
+			insieme di compiti da svolgere in modo collaborativo a fronte di un incarico (che diventa poi un impegno). Inglese: \emph{project}.
+			
+	\item[programmatore (profilo professionale)] 
+
+			chi implementa una parte della soluzione dei progettisti. Inglese: \emph{programmer}.
+			
+	\item[protocollo] 
+
+			accordo di interfacce. Inglese: \emph{protocol}.
+			
+	\item[qualifica] 
+
+			verifica e validazione ("V\&{}V").
+			
+	\item[qualità] 
+
+			l'insieme delle caratteristiche di un'entità che ne determinano la capacità di soddisfare esigenze espresse e implicite. Inglese: \emph{quality}.
+			
+	\item[quantificabile] 
+
+			esprimibile in modo quantitativo. Inglese: \emph{quantifiable}.
+			
+	\item[raccomandazione] 
+
+			norma di progetto suggerita, non sottoposta a verifica. Inglese: \emph{recommendation}.
+			
+	\item[ramo (di un repository)] 
+
+			insieme di versioni di file sorgente in evoluzione. Inglese: \emph{branch}.
+			
+	\item[regola] 
+
+			norma di progetto sottoposta a verifica.
+			
+	\item[repository] 
+
+			base di dati centralizzata nella quale risiedono, individualmente, tutti i CI di ogni baseline nella loro storia completa. Inglese: \emph{repository}.
+			
+	\item[requisito] 
+
+			bisogno da soddisfare o vincolo da rispettare. Inglese: \emph{requiremement}.
+			
+	\item[requisito di processo] 
+
+			vincolo sullo sviluppo del prodotto.
+			
+	\item[requisito di prodotto] 
+
+			bisogno o vincolo sul prodotto da sviluppare.
+			
+	\item[requisito di sistema] 
+
+			definizione formale e dettagliata di una funzione del sistema.
+			
+	\item[requisito funzionale] 
+
+			(di un prodotto software) servizio che il prodotto deve fornire.
+			
+	\item[requisito non funzionale] 
+
+			(di un prodotto software) vincolo su uno o più servizi che il prodotto fornisce.
+			
+	\item[requisito utente] 
+
+			richiesta generale, ad alto livello.
+			
+	\item[responsabile di progetto (profilo professionale)] 
+
+			chi pianifica il progetto, assegna le persone ai ruoli giusti e rappresenta il progetto presso il fornitore e il committente. Inglese: \emph{project manager}.
+			
+	\item[rete] 
+
+			grafo orientato. Inglese: \emph{network}.
+			
+	\item[revisione esterna] 
+
+			ispezione ufficiale di un documento condotta da un'organizzazione indipendente da chi ha prodotto i documenti. Inglese: \emph{audit}.
+			
+	\item[revisione interna] 
+
+			 Inglese: \emph{joint review}.
+			
+	\item[rischio] 
+
+			opposto di opportunità. Inglese: \emph{risk}.
+			
+	\item[ritiro (di un prodotto)] 
+
+			momento in cui il prodotto cessa di essere seguito dai suoi creatori. Inglese: \emph{retirement}.
+			
+	\item[ruolo] 
+
+			funzione aziendale assegnata a progetto; identifica capacità e compiti.
+			
+	\item[scenario] 
+
+			sequenza di passi che descrive un esempio di interazione con un sistema. Inglese: \emph{scenario}.
+			
+	\item[schema PDCA (o ciclo di Deming)] 
+
+			schema iterativo di auto-miglioramento che consiste di quattro punti: Plan (individuare obiettivi di miglioramento), Do (eseguire ciò che si è pianificato), Check (verificare se ha funzionato) e Act (agire per correggersi).
+			
+	\item[sistema] 
+
+			insieme di componenti organizzati per compiere una o più funzioni. Inglese: \emph{system}.
+			
+	\item[sistematico] 
+
+			che abbraccia un metodo. Inglese: \emph{systematic}.
+			
+	\item[slack time (di un evento)] 
+
+			quantità di tempo tra la data minima a partire da cui un evento può accadere e la data massima oltre la quale esso ritarda gli eventi successivi. Inglese: \emph{slack time}.
+			
+	\item[sommario] 
+
+			breve riassunto del contenuto di un documento. Inglese: \emph{abstract}.
+			
+	\item[SQL (Structured Query Language] 
+
+			linguaggio di programmazione dichiarativo basato sull'algebra relazionale che serve a creare, manipolare e interrogare basi di dati relazionali. Inglese: \emph{SQL}.
+			
+	\item[stakeholder] 
+
+			persona a vario titolo coinvolta nel ciclo di vita di un software che ha influenza sul prodotto o sul processo. Inglese: \emph{stakeholder}.
+			
+	\item[strumento] 
+
+			insieme di concetti e di metodi, con delle tecnologie di supporto. Inglese: \emph{tool}.
+			
+	\item[tecnica] 
+
+			ricetta applicata agli strumenti disponibili; modo con cui si usa uno strumento. Inglese: \emph{technique}.
+			
+	\item[tecnologia] 
+
+			strumento sul quale si opera. Inglese: \emph{technology}.
+			
+	\item[TeX] 
+
+			linguaggio formale di composizione tipografica. Inglese: \emph{TeX}.
+			
+	\item[UML (Unified Modelling Language)] 
+
+			famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software. Inglese: \emph{UML}.
+			
+	\item[unità] 
+
+			la più piccola quanità di software che conviene verificare da sola. Inglese: \emph{unit}.
+			
+	\item[validazione] 
+
+			la garanzia che un prodotto soddisfi i requisiti da cui è nato. Inglese: \emph{validation}.
+			
+	\item[valutazione] 
+
+			verifica quantificata.
+			
+	\item[verifica] 
+
+			valutare se un prodotto soddisfa requisiti, regole o altre condizioni necessarie. Inglese: \emph{verification}.
+			
+	\item[verificatore (profilo professionale)] 
+
+			chi verifica il lavoro dei programmatori.
+			
+	\item[versione (di un CI)] 
+
+			istanza identificata di un CI nel tempo. Inglese: \emph{version}.
+		
+	\end{description}
+
+	
+
+
+		
+	\newpage
+	\appendix
+	\section{Esercizi da temi d'esame}
+
+		Elenco degli appelli d'esame degli anni passati (per ora disponibili solo in HTML):
+		
+	\begin{itemize}
+		
+			
+	\item 2008-03-??
+			
+	\item 2008-07-??
+			
+	\item 2009-04-01
+			
+	\item [...]
+		
+	\end{itemize}
+
+	
+\end{document}
