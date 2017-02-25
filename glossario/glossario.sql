@@ -30,7 +30,7 @@ INSERT INTO Definizioni VALUES
 ('sistematico', 'sistematico', 'che abbraccia un metodo', 'systematic'),
 ('disciplinato', 'disciplinato', 'che segue le norme (anzi, la best practice)', 'disciplined'),
 ('quantificabile', 'quantificabile', 'esprimibile in modo quantitativo', 'quantifiable'),
-('efficacia', 'efficacia', 'conformità alle attese	', 'effectiveness'),
+('efficacia', 'efficacia', 'conformità alle attese', 'effectiveness'),
 ('efficienza', 'efficienza', 'contenimento dei costi per raggiungere un obiettivo', 'efficiency'),
 ('best_practice', 'best practice', 'la prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche', NULL),
 ('prassi', 'prassi', 'modo di fare', NULL),
