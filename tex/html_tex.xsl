@@ -44,6 +44,14 @@
 
 
 
+<!-- paragraph -->
+<xsl:template match="p">
+	<xsl:text>&#xa;</xsl:text>
+	<xsl:apply-templates />
+</xsl:template>
+
+
+
 <!-- unordered list -->
 <xsl:template match="ul">
 	\begin{itemize}
