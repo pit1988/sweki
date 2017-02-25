@@ -14,24 +14,24 @@ Di seguito i termini del glossario:
 * __analista (profilo professionale)__: chi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista; fa l'analisi dei requisiti. Inglese: _analyst_.
 * __architettura__: la struttura organizzativa di un sistema o componente. Inglese: _architecture_.
 * __attività__: parte di un processo. Inglese: _activity_.
-* __baseline__: nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede. Inglese: _baseline_.
+* __baseline__: nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede.
 * __basso accoppiamento__: minimizzazione delle dipendenze tra i vari componenti di un sistema. Inglese: _loose coupling_.
-* __best practice__: la prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche. Inglese: _best practice_.
+* __best practice__: la prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche.
 * __bibliografia__: elenco delle fonti di un documento. Inglese: _bibliografy_.
-* __budget__: tempo e denaro. Inglese: _budget_.
+* __budget__: tempo e denaro.
 * __caos__: contrario di organizzazione. Inglese: _chaos_.
 * __caso d'uso__: insieme di scenari che hanno in comune un obiettivo per un utente. Inglese: _use case_.
 * __ciclo di vita (di un prodotto)__: insieme degli stati che il prodotto assume, dal concepimento al ritiro. Inglese: _life cycle_.
-* __CoCoMo (Constructive Cost Model)__: modello per la stima dei costi di un progetto, in tempo/persona. Inglese: _CoCoMo_.
+* __CoCoMo (Constructive Cost Model)__: modello per la stima dei costi di un progetto, in tempo/persona.
 * __coerenza__: l'esser composto da parti che non sono in disaccordo tra loro, cioè non affermano cose che si contraddicano. Inglese: _consistency_.
 * __coesione__: caratteristica di un sistema per la quale parti associate concorrono agli stessi obiettivi.
 * __compito__: parte di un'attività. Inglese: _task_.
 * __componente__: parte di un sistema. Inglese: _component_.
-* __configuration item (CI)__: parte della configurazione di un software. Inglese: _configuration item_.
+* __configuration item (CI)__: parte della configurazione di un software.
 * __configurazione__: di quali parti si compone un prodotto e il modo in cui esse stanno assieme. Inglese: _configuration_.
 * __controllore della qualità (profilo professionale)__: funzione aziendale (e non ruolo di progetto) che accerta la qualità dei prodotti.
 * __criticità__: distanza troppo breve tra attività dipendenti.
-* __design pattern__: soluzione progettuale generale ad un problema ricorrente. Inglese: _design pattern_.
+* __design pattern__: soluzione progettuale generale ad un problema ricorrente.
 * __diagramma dei casi d'uso__: grafo orientato in cui ogni nodo è un attore o un caso d'uso e ogni arco è una comunicazione tra un attore e un caso d'uso oppure una relazione (di estensione, inclusione o generalizzazione) tra due casi d'uso o tra due attori. Inglese: _use case diagram_.
 * __diagramma di Gantt__: diagramma che rappresenta la durata, la sequenzialità e il parallelismo delle attività di un progetto. Inglese: _Gantt diagram_.
 * __diagramma PERT (Project Evaluation and Review Technique)__: rete che rappresenta le dipendenze temporali (e le criticità) tra attività di un progetto. Inglese: _PERT diagram_.
@@ -41,7 +41,7 @@ Di seguito i termini del glossario:
 * __efficacia__: conformità alle attese	. Inglese: _effectiveness_.
 * __efficienza__: contenimento dei costi per raggiungere un obiettivo. Inglese: _efficiency_.
 * __fase (di un ciclo di vita)__: durata temporale entro uno stato del ciclo di vita e un altro. Inglese: _phase_.
-* __framework__: struttura di supporto su cui un software può essere organizzato e progettato. Inglese: _framework_.
+* __framework__: struttura di supporto su cui un software può essere organizzato e progettato.
 * __glossario__: elenco dei significati dei termini più rilevanti di un documento. Inglese: _glossary_.
 * __impegno__:  Inglese: _commitment_.
 * __incarico__:  Inglese: _assignment_.
@@ -51,13 +51,13 @@ Di seguito i termini del glossario:
 * __ingegneria__: l'applicazione di princìpi scientifici e matematici per scopi pratici. Inglese: _engineering_.
 * __ingegneria del software__: applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, al funzionamento e al mantenimento del software. Inglese: _software engineering_.
 * __integrazione continua__: pratica che consiste nell'allineamento frequente degli ambienti di lavoro degli sviluppatori verso l'ambiente condiviso. Inglese: _continuous integration_.
-* __LaTeX__: sistema di composizione tipografica che utilizza TeX come motore. Inglese: _LaTeX_.
+* __LaTeX__: sistema di composizione tipografica che utilizza TeX come motore.
 * __legge della domanda__: Quanto più è grande qualcosa, tanto maggiore sarà la domanda per essa.
 * __legge di Parkinson__: Work expands to fill the time available. Inglese: _Parkinson's law_.
 * __marcatore__: istruzione che un programma deve eseguire per trattare nel modo specificato dall'utente una porzione di testo specificata. Inglese: _mark-up_.
 * __metodo di lavoro__: metodo di lavoro. Inglese: _way of working_.
 * __metrica__: l'interpretazione di un sistema di unità di misura.
-* __milestone__: punto nel tempo associato ad un valore strategico. Inglese: _milestone_.
+* __milestone__: punto nel tempo associato ad un valore strategico.
 * __modello__: astrazione della realtà. Inglese: _model_.
 * __modulo__: parte di un'unità. Inglese: _module_.
 * __organizzazione__: aggregato di persone [?] che agiscono in modo sistematico, disciplinato e quantificabile; contrario di caos. Inglese: _organization_.
@@ -80,7 +80,7 @@ Di seguito i termini del glossario:
 * __raccomandazione__: norma di progetto suggerita, non sottoposta a verifica. Inglese: _recommendation_.
 * __ramo (di un repository)__: insieme di versioni di file sorgente in evoluzione. Inglese: _branch_.
 * __regola__: norma di progetto sottoposta a verifica.
-* __repository__: base di dati centralizzata nella quale risiedono, individualmente, tutti i CI di ogni baseline nella loro storia completa. Inglese: _repository_.
+* __repository__: base di dati centralizzata nella quale risiedono, individualmente, tutti i CI di ogni baseline nella loro storia completa.
 * __requisito__: bisogno da soddisfare o vincolo da rispettare. Inglese: _requiremement_.
 * __requisito di processo__: vincolo sullo sviluppo del prodotto.
 * __requisito di prodotto__: bisogno o vincolo sul prodotto da sviluppare.
@@ -95,19 +95,19 @@ Di seguito i termini del glossario:
 * __rischio__: opposto di opportunità. Inglese: _risk_.
 * __ritiro (di un prodotto)__: momento in cui il prodotto cessa di essere seguito dai suoi creatori. Inglese: _retirement_.
 * __ruolo__: funzione aziendale assegnata a progetto; identifica capacità e compiti.
-* __scenario__: sequenza di passi che descrive un esempio di interazione con un sistema. Inglese: _scenario_.
+* __scenario__: sequenza di passi che descrive un esempio di interazione con un sistema.
 * __schema PDCA (o ciclo di Deming)__: schema iterativo di auto-miglioramento che consiste di quattro punti: Plan (individuare obiettivi di miglioramento), Do (eseguire ciò che si è pianificato), Check (verificare se ha funzionato) e Act (agire per correggersi).
 * __sistema__: insieme di componenti organizzati per compiere una o più funzioni. Inglese: _system_.
 * __sistematico__: che abbraccia un metodo. Inglese: _systematic_.
 * __slack time (di un evento)__: quantità di tempo tra la data minima a partire da cui un evento può accadere e la data massima oltre la quale esso ritarda gli eventi successivi. Inglese: _slack time_.
 * __sommario__: breve riassunto del contenuto di un documento. Inglese: _abstract_.
-* __SQL (Structured Query Language__: linguaggio di programmazione dichiarativo basato sull'algebra relazionale che serve a creare, manipolare e interrogare basi di dati relazionali. Inglese: _SQL_.
-* __stakeholder__: persona a vario titolo coinvolta nel ciclo di vita di un software che ha influenza sul prodotto o sul processo. Inglese: _stakeholder_.
+* __SQL (Structured Query Language__: linguaggio di programmazione dichiarativo basato sull'algebra relazionale che serve a creare, manipolare e interrogare basi di dati relazionali.
+* __stakeholder__: persona a vario titolo coinvolta nel ciclo di vita di un software che ha influenza sul prodotto o sul processo.
 * __strumento__: insieme di concetti e di metodi, con delle tecnologie di supporto. Inglese: _tool_.
 * __tecnica__: ricetta applicata agli strumenti disponibili; modo con cui si usa uno strumento. Inglese: _technique_.
 * __tecnologia__: strumento sul quale si opera. Inglese: _technology_.
-* __TeX__: linguaggio formale di composizione tipografica. Inglese: _TeX_.
-* __UML (Unified Modelling Language)__: famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software. Inglese: _UML_.
+* __TeX__: linguaggio formale di composizione tipografica.
+* __UML (Unified Modelling Language)__: famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software.
 * __unità__: la più piccola quanità di software che conviene verificare da sola. Inglese: _unit_.
 * __validazione__: la garanzia che un prodotto soddisfi i requisiti da cui è nato. Inglese: _validation_.
 * __valutazione__: verifica quantificata.
