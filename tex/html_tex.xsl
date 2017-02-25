@@ -141,4 +141,10 @@
 
 
 
+<!-- comments -->
+<xsl:template match="comment()">% <xsl:value-of select="concat(normalize-space(.), '&#xA;')" />
+</xsl:template>
+
+
+
 </xsl:stylesheet>
