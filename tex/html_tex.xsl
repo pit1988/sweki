@@ -102,6 +102,15 @@
 <!-- superscripts in equations -->
 <xsl:template match="var/sup">^{<xsl:apply-templates />}</xsl:template>
 
+<!-- code -->
+<xsl:template match="code">\texttt{<xsl:apply-templates />}</xsl:template>
+
+<!-- preformatted text -->
+<xsl:template match="pre">\begin{verbatim}
+<xsl:apply-templates />
+\end{verbatim}
+</xsl:template>
+
 
 
 <!-- table -->

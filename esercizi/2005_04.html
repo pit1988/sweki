@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Appello aprile 2005 - sweki</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Giorgio Giuffrè" />
+	<meta name="keywords" content="sweki, ingegneria, software, esercizi, 2005" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../main.css" />
+	<link rel="next" href="2005_04.html" />
+</head>
+
+<body>
+
+	<div id="header">
+		<h1><a href="index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a></h1>
+		<h2>la <span xml:lang="en">wiki</span> di Ingegneria del <span xml:lang="en">Software</span></h2>
+	</div>
+
+	<div id="content">
+		<h1>Appello di aprile 2005</h1>
+
+		<h2>Domanda aperta [8/30]</h2>
+		<p>Descrivere, utilizzando un diagramma di sequenza, le fasi operative della creazione di un programma eseguibile partendo da un file sorgente sintatticamente corretto (per esempio un programma scritto in C++). Si supponga di avere a disposizione le classi: User, Compiler, Linker e FileSystem e gli oggetti prodotto delle varie fasi.</p>
+
+		<h2>Domanda aperta [12/30]</h2>
+		<p>Si voglia progettare un sistema di Agende molto flessibile e sofisticato per singoli utenti che condividono lo stesso server, con le seguenti caratteristiche: in una agenda possono esistere entità singole che chiameremo Contatti, con tutte le loro caratteristiche (si prenda spunto dalla porzione di documento <abbr title="Document Type Definition">DTD</abbr> più sotto e la tabella indicante il significato di certi simboli), possono esistere raggruppamenti di contatti con nome e descrizione (come ad esempio &quot;Amici&quot;, &quot;Lavoro&quot;, &quot;Ditte&quot;, &quot;Coro&quot;, &quot;Artisti&quot;, ...) dove non si esclude l'appartenenza di un contatto a più Gruppi, e di sottogruppi all'interno di un gruppo con un livello qualsiasi di annidamento. L'agenda è inoltre collegata con un Calendario dove si possono fissare appuntamenti ed anniversari (con relativa persona da contattare) ed annotare ricorrenze varie.</p>
+		<p>Realizzare uno schema concettuale, utilizzando diagrammi di classi <abbr title="Unified Modeling Language">UML</abbr>, di tutto il progetto, inserendo anche qualche metodo significativo come: <code>void FissaAppuntamentoCon( Persona u, Data d );</code> o <code>Persona ChiDevoContattareOggi( );</code></p>
+		<pre>
+DTD agenda.dtd
+&lt;!ELEMENT agenda (contatto*)&gt;
+&lt;!ELEMENT contatto (nome, indirizzo+, telefono*, email*, foto?)&gt;
+	&lt;!ELEMENT nome (#PCDATA)&gt;
+	&lt;!ELEMENT indirizzo (via, numero, citta, cap, provincia)&gt;
+	&lt;!ELEMENT via (#PCDATA)&gt;
+...</pre>
+	</div>
+
+</body>
+</html>
