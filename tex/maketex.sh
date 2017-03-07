@@ -27,7 +27,7 @@ echo "\newpage" >> sweki.tex
 echo "Consultazione dell'indice html..."
 xsltproc --html get_index.xsl ../index.html | grep html > _sweki_index
 
-echo "Generazione del sommario..."
+echo "Inserimento del sommario..."
 printf "\n\n" >> sweki.tex
 cat sommario.tex >> sweki.tex
 
@@ -42,7 +42,11 @@ while read f; do
 	rm -f _sweki_entities_tmp
 done < _sweki_index
 rm -f _sweki_index
-printf "\n\\\end{document}" >> sweki.tex
+
+echo "Inserimento della bibliografia..."
+printf "\n" >> sweki.tex
+cat biblio.tex >> sweki.tex
+printf "\n\\\end{document}\n" >> sweki.tex
 
 echo "generazione del documento PDF..."
 # due invocazioni del comando, per riferimenti incrociati:
