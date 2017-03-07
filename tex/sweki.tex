@@ -22,11 +22,11 @@ sweki è un progetto che raccoglie i miei appunti dal corso di Ingegneria del So
 Gli appunti sono disponibili su GitHub all'indirizzo \url{https://github.com/gigiobello/sweki} in tre formati:
 \begin{itemize}
 	\item .html --- \url{https://github.com/gigiobello/sweki};
-	\item .pdf --- qui;
-	\item .tex --- \url{https://github.com/gigiobello/sweki/raw/master/tex/}.
+	\item .tex --- \url{https://github.com/gigiobello/sweki/tex/sweki.tex};
+	\item .pdf --- qui.
 \end{itemize}
 
-la versione in PDF è derivata automaticamente da quella in XHTML tramite dei template XSLT e dei terribili script di shell (bash).
+la versione in \LaTeX è derivata automaticamente da quella in XHTML tramite dei template XSLT e dei terribili script di shell (bash).
 
 Ad oggi gli appunti sono incompleti ma cercherò di migliorarli (ultime parole famose).
 
@@ -93,7 +93,8 @@ Distinguiamo le seguenti tre categorie principali di processi:
 	\begin{itemize}
 		
 			
-	\item processo standard — riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettività di casi afferenti ad un certo dominio applicativo (quindi una sorta di template);
+	\item standard di processo — riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettività di casi afferenti ad un certo dominio applicativo (quindi una sorta di template); % "processo standard" o std di processo? forse da process standard in, inglese
+
 			
 	\item processo definito — specializzazione del processo standard necessaria per adattarlo ad esigenze specifiche di progetto;
 			
@@ -105,6 +106,8 @@ Distinguiamo le seguenti tre categorie principali di processi:
 L'organizzazione aziendale si struttura verticalmente in settori (orientati alla specializzazione) e orizzontalmente in processi (che abbracciano più settori specializzati).
 		
 Esiste il processo perfetto? Esiste l'insieme ideale di processi? No: nessun progetto è identico a un altro, quindi i processi vanno selezionati e adattati in modo critico, in base al progetto e/o all'organizzazione a cui servono. Selezionare, adattare, applicare e migliorare (evolvere) i processi è compito degli amministratori di progetto.
+		
+I processi software, di per sé, non seguono un ordinamento. Le relazioni temporali tra essi sono fornite da un modello di ciclo di vita.
 
 		
 	\subsection{ISO/IEC 12207}
@@ -115,7 +118,7 @@ Lo standard ISO/IEC 12207 è il più noto standard di processo. Esso divide i pr
 	\begin{itemize}
 		
 			
-	\item Processi primari:
+	\item \textbf{Processi primari}:
 				
 	\begin{itemize}
 		
@@ -134,22 +137,22 @@ Lo standard ISO/IEC 12207 è il più noto standard di processo. Esso divide i pr
 
 			
 			
-	\item Processi di supporto (delle specie di "sottoprocedure"):
+	\item \textbf{Processi di supporto} (delle specie di "sottoprocedure"):
 				
 	\begin{itemize}
 		
 					
 	\item documentazione;
 					
+	\item gestione delle versioni e della configurazione;
+					
 	\item accertamento della qualità;
 					
-	\item gestione delle versioni e delle configurazioni;
-					
-	\item qualifica: verifica e validazione ("V\&{}V");
+	\item qualifica: verifica e validazione ("V\&{}V"), due processi distinti ma collegati;
 					
 	\item revisioni congiunte con il cliente;
 					
-	\item verifiche ispettive interne;
+	\item verifiche ispettive esterne;
 					
 	\item risoluzione dei problemi.
 				
@@ -157,7 +160,7 @@ Lo standard ISO/IEC 12207 è il più noto standard di processo. Esso divide i pr
 
 			
 			
-	\item Processi organizzativi (l'"ambiente" del sistema):
+	\item \textbf{Processi organizzativi} (l'"ambiente" del sistema):
 				
 	\begin{itemize}
 		
@@ -168,10 +171,7 @@ Lo standard ISO/IEC 12207 è il più noto standard di processo. Esso divide i pr
 					
 	\item miglioramento del processo;
 					
-	\item formazione del personale;
-					
-	\item riuso: l'IS è un insieme di best practices che assembla cose già esistenti, più che crearle ex novo. % riuso è un processo..? forse è da togliere
-
+	\item formazione del personale.
 				
 	\end{itemize}
 
@@ -211,7 +211,7 @@ Un buon esempio di valutazione dell'efficienza e dell'efficacia è la misurazion
 
 
 		
-	\section{Ciclo di vita di un progetto}
+	\section{Ciclo di vita del software}
 
 
 		
@@ -223,11 +223,11 @@ Caratteristico di un prodotto di IS è il suo ciclo di vita, cioè l'insieme deg
 	\begin{itemize}
 		
 			
-	\item correttiva  :(  per correggere difetti;
+	\item correttiva  \texttt{:(}  per correggere difetti;
 			
-	\item di adattamento  :|  per adattare il sistema a variazioni di requisiti;
+	\item di adattamento  \texttt{:|}  per adattare il sistema a variazioni di requisiti;
 			
-	\item evolutiva  ;)  per aggiungere funzionalità al sistema.
+	\item evolutiva  \texttt{;)}  per aggiungere funzionalità al sistema.
 		
 	\end{itemize}
 
@@ -237,7 +237,8 @@ Esempio di manutenzione evolutiva è Firefox.
 		
 	\subsection{Modelli di ciclo di vita}
 
-		La qualità più difficile da soddisfare in IS è la quantificabilità; per questo nascono i \textbf{modelli} di ciclo di vita. Esistono diversi possibili cicli di vita, che si distinguono non per numero o significato degli stati, bensì per le transizioni tra essi e le loro regole di attivazione. Alcuni modelli di ciclo di vita sono:
+		
+I processi software, di per sé, non seguono un ordinamento; le relazioni temporali e logiche tra essi sono fornite da un \textbf{modello} di ciclo di vita. Esistono diversi possibili cicli di vita, che si distinguono non per numero o significato degli stati, bensì per le transizioni tra essi e le loro regole di attivazione. Alcuni modelli di ciclo di vita sono:
 		
 	\begin{itemize}
 		
@@ -255,9 +256,11 @@ Esempio di manutenzione evolutiva è Firefox.
 	\end{itemize}
 
 		
-In genere un modello del ciclo di vita di un \emph{prodotto}\footnote{Per ritiro s'intende il momento in cui il prodotto cessa di essere seguito dai creatori.} include un modello del ciclo di vita dello \emph{sviluppo}\footnote{Per ritiro s'intende il momento in cui il prodotto cessa di essere seguito dai creatori.}, eventualmente diverso dal primo.
-		
 È bene tenere a mente che i vari modelli, per quanto differiscano tra di loro in questo o in quel dettaglio, si possono dividere in due grandi famiglie: quelli sequenziali e quelli iterativi; i modelli incrementale, evolutivo, a spirale e agile sono tutti esempi di modelli iterativi.
+		
+In genere un modello del ciclo di vita di un \emph{prodotto}\footnote{Per ritiro s'intende il momento in cui il prodotto cessa di essere seguito dai creatori.} include un modello del ciclo di vita dello \emph{sviluppo}\footnote{Per ritiro s'intende il momento in cui il prodotto cessa di essere seguito dai creatori.} (più eventuali altri processi che riguardano fornitura, manutenzione, evoluzione...). Attenzione: il ciclo di vita dello sviluppo non deve per forza seguire lo stesso modello del ciclo di vita dell'intero prodotto!
+		
+I modelli di ciclo di vita nascono per perseguire la qualità più difficile da soddisfare in IS: la quantificabilità.
 
 		
 	\subsection{Il modello sequenziale}
@@ -304,7 +307,7 @@ Nel 1988 Barry Boehm propose il modello a spirale, che introduce il concetto di 
 	\subsection{Il modello a componenti}
 
 		
-Più pragmatico è il modello a componenti, che prevede l'integrazione di componenti già implementati. L'idea nasce dal fatto che molto di quel che ci serve fare è già stato fatto e molto di quel che faremo ci potrà servire ancora.
+Più pragmatico è il modello a componenti, che prevede l'integrazione di componenti già implementati. L'idea nasce dal fatto che molto di quel che ci serve fare è già stato fatto e molto di quel che faremo ci potrà servire ancora. Difatti, l'IS è un insieme di best practices che assembla cose già esistenti, più che crearle ex novo.
 
 		
 	\subsection{I metodi agili}
@@ -791,7 +794,7 @@ Il processo di progettazione passa attraverso due attività, che si situano tra 
 	\end{itemize}
 
 		
-Nel piano di qualifica, se l'analisi è verificata  dal test di sistema, la progettazione architetturale è verificata dal test d'integrazione e quella di dettaglio dai test di unità. (Questo è il cosiddetto "modello a V".)
+Nel piano di qualifica, se l'analisi è verificata dal test di sistema, la progettazione architetturale è verificata dai test d'integrazione e quella di dettaglio dai test di unità. (Questo è il cosiddetto "modello a V".)
 
 		
 	\subsection{Architettura}
@@ -1282,7 +1285,11 @@ Le ore di lavoro si contano solo \emph{dopo} la valutazione della RR; fino a que
 			
 	\item[ciclo di vita (di un prodotto)] 
 
-			insieme degli stati che il prodotto assume, dal concepimento al ritiro. Inglese: \emph{life cycle}.
+			insieme degli stati che il prodotto assume, dal concepimento al ritiro. Inglese: \emph{software product life cycle}.
+			
+	\item[ciclo di vita dello sviluppo (di un prodotto)] 
+
+			parte del ciclo di vita di un prodotto che riguarda il suo sviluppo. Inglese: \emph{software development life cycle}.
 			
 	\item[CoCoMo (Constructive Cost Model)] 
 
@@ -1350,7 +1357,7 @@ Le ore di lavoro si contano solo \emph{dopo} la valutazione della RR; fino a que
 			
 	\item[efficacia] 
 
-			conformità alle attese	. Inglese: \emph{effectiveness}.
+			conformità alle attese. Inglese: \emph{effectiveness}.
 			
 	\item[efficienza] 
 
@@ -1358,7 +1365,7 @@ Le ore di lavoro si contano solo \emph{dopo} la valutazione della RR; fino a que
 			
 	\item[fase (di un ciclo di vita)] 
 
-			durata temporale entro uno stato del ciclo di vita e un altro. Inglese: \emph{phase}.
+			durata temporale (che non si ripete) entro uno stato del ciclo di vita e un altro. Inglese: \emph{phase}.
 			
 	\item[framework] 
 
@@ -1668,13 +1675,49 @@ Elenco degli appelli d'esame degli anni passati (per ora disponibili solo in HTM
 	\begin{itemize}
 		
 			
-	\item 2008-03-??
+	\item 2005-04
 			
-	\item 2008-07-??
+	\item 2006-03
+			
+	\item 2007-09
+			
+	\item 2008-07
 			
 	\item 2009-04-01
 			
-	\item [...]
+	\item 2011-03-21
+			
+	\item 2011-03-31
+			
+	\item 2011-06-29
+			
+	\item 2011-07-13
+			
+	\item 2012-03-21
+			
+	\item 2012-04-05
+			
+	\item 2012-06-21
+			
+	\item 2012-07-24
+			
+	\item 2014-03
+			
+	\item 2014-04-03
+			
+	\item 2015-04-27
+			
+	\item 2015-05-29
+			
+	\item 2015-06-18
+			
+	\item 2015-07-06
+			
+	\item 2015-08-24
+			
+	\item 2016-01-29
+			
+	\item 2016-06-17
 		
 	\end{itemize}
 

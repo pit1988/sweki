@@ -21,7 +21,8 @@ Di seguito i termini del glossario:
 * __budget__: tempo e denaro.
 * __caos__: contrario di organizzazione. Inglese: _chaos_.
 * __caso d'uso__: insieme di scenari che hanno in comune un obiettivo per un utente. Inglese: _use case_.
-* __ciclo di vita (di un prodotto)__: insieme degli stati che il prodotto assume, dal concepimento al ritiro. Inglese: _life cycle_.
+* __ciclo di vita (di un prodotto)__: insieme degli stati che il prodotto assume, dal concepimento al ritiro. Inglese: _software product life cycle_.
+* __ciclo di vita dello sviluppo (di un prodotto)__: parte del ciclo di vita di un prodotto che riguarda il suo sviluppo. Inglese: _software development life cycle_.
 * __CoCoMo (Constructive Cost Model)__: modello per la stima dei costi di un progetto, in tempo/persona.
 * __coerenza__: l'esser composto da parti che non sono in disaccordo tra loro, cioè non affermano cose che si contraddicano. Inglese: _consistency_.
 * __coesione__: caratteristica di un sistema per la quale parti associate concorrono agli stessi obiettivi.
@@ -38,9 +39,9 @@ Di seguito i termini del glossario:
 * __diagramma WBS (Work Breakdown Structure)__: diagramma che decompone in modo gerarchico le attività di un progetto in sotto-attività (coese ma non necessariamente sequenziali). Inglese: _WBS diagram_.
 * __disciplinato__: che segue le norme (anzi, la best practice). Inglese: _disciplined_.
 * __documentazione__: tutto ciò che documenta le attività di un progetto. Inglese: _documentation_.
-* __efficacia__: conformità alle attese	. Inglese: _effectiveness_.
+* __efficacia__: conformità alle attese. Inglese: _effectiveness_.
 * __efficienza__: contenimento dei costi per raggiungere un obiettivo. Inglese: _efficiency_.
-* __fase (di un ciclo di vita)__: durata temporale entro uno stato del ciclo di vita e un altro. Inglese: _phase_.
+* __fase (di un ciclo di vita)__: durata temporale (che non si ripete) entro uno stato del ciclo di vita e un altro. Inglese: _phase_.
 * __framework__: struttura di supporto su cui un software può essere organizzato e progettato.
 * __glossario__: elenco dei significati dei termini più rilevanti di un documento. Inglese: _glossary_.
 * __impegno__:  Inglese: _commitment_.

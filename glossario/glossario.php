@@ -29,7 +29,7 @@ $gloss_html = '';
 $gloss_md   = '';
 
 include_once '../functions.php';
-$termini = queryMysql("SELECT * FROM Definizioni ORDER BY id");
+$termini = queryMysql("SELECT * FROM Definizioni ORDER BY voce");
 foreach ($termini as $t) {
 	$gloss_html .= "\n\t\t\t<dt id=\"" . htmlentities($t['id']) . "\">" . htmlentities($t['voce']) . "</dt>\n";
 	$gloss_html .= "\t\t\t<dd>" . def(htmlentities($t['def'])) . html_eng(htmlentities($t['eng'])) . "</dd>";
