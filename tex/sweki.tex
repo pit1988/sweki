@@ -266,9 +266,27 @@ I modelli di ciclo di vita nascono per perseguire la qualità più difficile da 
 	\subsection{Il modello sequenziale}
 
 		
-Nel 1970, grazie a Winston Royce, venne ideato il modello sequenziale (o a cascata), ispirato alle catene di montaggio. Il modello originale prevede che non si possa mai essere in due stati diversi allo stesso tempo e che non si possa tornare ad uno stato precedente. Il passaggio da una fase alla successiva è basato sulla documentazione poiché ogni fase produce documenti che la concretizzano e devono essere approvati per il passaggio alla fase successiva. Ha il pregio di individuare fasi distinte e ordinate nelle quali decomporre il progetto. Suo difetto principale è l'eccessiva \textbf{rigidità}. Tuttavia questo approccio può funzionare se il cliente è consapevole (e abbastanza sicuro) di ciò che vuole, pur tenendo conto che il modello genera software vero e proprio molto tardi nel ciclo di vita.
+Nel 1970, grazie a Winston Royce, venne ideato il modello sequenziale (o a cascata), ispirato alle catene di montaggio. Questo è una successione di \textbf{fasi} rigidamente sequenziali. Il modello originale prevede che non si possa mai essere in due stati diversi allo stesso tempo e che non si possa tornare ad uno stato precedente. Il passaggio da una fase alla successiva è basato sulla documentazione: ogni fase produce documenti che la concretizzano e devono essere approvati per il passaggio alla fase successiva. Nello specifico, ogni fase viene definita in termini di:
 		
-Allora, si pensò di creare un modello "ibrido", introducendo la possibilità di tornare ad uno stato precedente. Tuttavia risalire la cascata fa risalire il progetto nel tempo e genera iterazioni, non incrementi.
+	\begin{itemize}
+		
+			
+	\item attività previste;
+			
+	\item prodotti attesi in ingresso;
+			
+	\item prodotti attesi in uscita;
+			
+	\item ruoli coinvolti;
+			
+	\item scadenze di consegna.
+		
+	\end{itemize}
+
+		
+Questo modello ha il pregio di individuare fasi distinte e ordinate nelle quali decomporre il progetto. Suo difetto principale è l'eccessiva \textbf{rigidità}. Tuttavia questo approccio può funzionare se il cliente è consapevole (e abbastanza sicuro) di ciò che vuole, pur tenendo conto che il modello genera software vero e proprio molto tardi nel ciclo di vita.
+		
+Allora, si pensò di correggere il modello creando un "ibrido", introducendo dei prototipi "usa e getta" oppure la possibilità di tornare ad uno stato precedente. Tuttavia risalire la cascata fa risalire il progetto nel tempo e genera iterazioni, non incrementi.
 
 		
 	\subsection{Il modello incrementale}
@@ -318,13 +336,13 @@ I metodi agili nascono alla fine degli anni '90 come reazione all'eccessiva rigi
 	\begin{itemize}
 		
 			
-	\item Individuals and interactions over processes and tools
+	\item individuals and interactions over processes and tools;
 			
-	\item Working software over comprehensive documentation
+	\item working software over comprehensive documentation;
 			
-	\item Customer collaboration over contract negotiation
+	\item customer collaboration over contract negotiation;
 			
-	\item Responding to change over following a plan
+	\item responding to change over following a plan.
 		
 	\end{itemize}
 
@@ -370,7 +388,7 @@ Ogni persona, in un progetto, ha un ruolo (o funzione, in azienda\footnote{Proje
 	\begin{itemize}
 		
 			
-	\item sviluppo (responsabilità tecnica e amministrativa);
+	\item sviluppo (responsabilità tecnica e realizzativa);
 			
 	\item direzione (responsabilità decisionale);
 			
@@ -426,6 +444,8 @@ Il ruolo più importante del responsabile di progetto è quello di pianificare. 
 		
 	\end{itemize}
 
+		
+Il primo passo da fare nel gestire un progetto dovrebbe essere la selezione di un modello di ciclo di vita per lo sviluppo del prodotto.
 
 		
 	\subsection{Stima dei costi di progetto}
@@ -841,10 +861,10 @@ Obiettivo della progettazione è definire l'architettura del sistema. Per archit
 Tutte queste qualità devono essere misurabili. In particolare, l'accoppiamento è misurabile interpretando le componenti di un sistema come i nodi di un grafo orientato dove gli archi sono dipendenze di un componente nei confronti di un altro; il numero di archi entranti (\emph{fan-in}) è indice di utilità, mentre il numero di archi uscenti (\emph{fan-out}) è indice di dipendenza. Riguardo alla riusabilità, infine, è bene notare che costituisce un guadagno soltanto nel lungo termine, mentre nel breve termine è un puro costo.
 
 		
-	\subsection{\emph{Design patterns}}
+	\subsection{\emph{Design pattern} e stili architetturali}
 
 		
-Un \emph{design pattern} è una soluzione progettuale a un problema ricorrente. Per la progettazione esistono design patterns di alto livello (gli stili architetturali) e di basso livello.
+Un \emph{design pattern} è una soluzione progettuale a un problema ricorrente. Per la progettazione esistono soluzioni progettuali di alto livello (gli stili architetturali) e di basso livello (i design pattern).
 
 		
 	\subsection{Progettazione architetturale}
@@ -872,7 +892,21 @@ Esistono vari stili architetturali e aderire a uno di essi garantisce coerenza; 
 	\subsection{Progettazione di dettaglio}
 
 		
-Uno stile architetturale è un design pattern di alto livello; per la progettazione di dettaglio, invece, si ricorre a pattern di più basso livello (pattern creazionali, strutturali e comportamentali). La progettazione di dettaglio deve definire delle unità il cui carico di lavoro sia realizzabile da un singolo programmatore, in parallelo con le altre unità. Quanto più piccolo è il compito tanto più piccolo è il rischio.
+Uno stile architetturale è una soluzione progettuale di alto livello; per la progettazione di dettaglio, invece, si ricorre ai design pattern, che si dividono in tre famiglie:
+		
+	\begin{itemize}
+		
+			
+	\item design pattern creazionali, che cercano di rendere un sistema indipendente dall'implementazione concreta delle sue componenti;
+			
+	\item design pattern strutturali, che affrontano problemi riguardanti la composizione di classi e oggetti;
+			
+	\item design pattern comportamentali, che si occupano del comportamento degli oggetti e delle collaborazioni tra essi.
+		
+	\end{itemize}
+
+		
+La progettazione di dettaglio deve definire delle unità il cui carico di lavoro sia realizzabile da un singolo programmatore, in parallelo con le altre unità. Quanto più piccolo è il compito tanto più piccolo è il rischio.
 	
 
 
