@@ -50,8 +50,16 @@
 		<p>I modelli di ciclo di vita nascono per perseguire la qualità più difficile da soddisfare in <abbr title="Ingegneria del Software">IS</abbr>: la quantificabilità.</p>
 
 		<h2>Il modello sequenziale</h2>
-		<p>Nel 1970, grazie a Winston Royce, venne ideato il modello sequenziale (o a cascata), ispirato alle catene di montaggio. Il modello originale prevede che non si possa mai essere in due stati diversi allo stesso tempo e che non si possa tornare ad uno stato precedente. Il passaggio da una fase alla successiva è basato sulla documentazione poiché ogni fase produce documenti che la concretizzano e devono essere approvati per il passaggio alla fase successiva. Ha il pregio di individuare fasi distinte e ordinate nelle quali decomporre il progetto. Suo difetto principale è l'eccessiva <strong>rigidità</strong>. Tuttavia questo approccio può funzionare se il cliente è consapevole (e abbastanza sicuro) di ciò che vuole, pur tenendo conto che il modello genera <span xml:lang="en">software</span> vero e proprio molto tardi nel ciclo di vita.</p>
-		<p>Allora, si pensò di creare un modello &quot;ibrido&quot;, introducendo la possibilità di tornare ad uno stato precedente. Tuttavia risalire la cascata fa risalire il progetto nel tempo e genera iterazioni, non incrementi.</p>
+		<p>Nel 1970, grazie a Winston Royce, venne ideato il modello sequenziale (o a cascata), ispirato alle catene di montaggio. Questo è una successione di <strong>fasi</strong> rigidamente sequenziali. Il modello originale prevede che non si possa mai essere in due stati diversi allo stesso tempo e che non si possa tornare ad uno stato precedente. Il passaggio da una fase alla successiva è basato sulla documentazione: ogni fase produce documenti che la concretizzano e devono essere approvati per il passaggio alla fase successiva. Nello specifico, ogni fase viene definita in termini di:</p>
+		<ul>
+			<li>attività previste;</li>
+			<li>prodotti attesi in ingresso;</li>
+			<li>prodotti attesi in uscita;</li>
+			<li>ruoli coinvolti;</li>
+			<li>scadenze di consegna.</li>
+		</ul>
+		<p>Questo modello ha il pregio di individuare fasi distinte e ordinate nelle quali decomporre il progetto. Suo difetto principale è l'eccessiva <strong>rigidità</strong>. Tuttavia questo approccio può funzionare se il cliente è consapevole (e abbastanza sicuro) di ciò che vuole, pur tenendo conto che il modello genera <span xml:lang="en">software</span> vero e proprio molto tardi nel ciclo di vita.</p>
+		<p>Allora, si pensò di correggere il modello creando un &quot;ibrido&quot;, introducendo dei prototipi &quot;usa e getta&quot; oppure la possibilità di tornare ad uno stato precedente. Tuttavia risalire la cascata fa risalire il progetto nel tempo e genera iterazioni, non incrementi.</p>
 
 		<h2>Il modello incrementale</h2>
 		<p>Per superare le difficoltà del modello sequenziale ibrido, nacque il modello incrementale: in esso, i cicli non sono più iterazioni ma <strong>incrementi</strong> &mdash; con l'eccezione dell'analisi e della progettazione, che si affrontano all'inizio e non vengono ripetute. Il modello prevede rilasci multipli e successivi; ciascuno realizza un incremento di funzionalità, approssimando sempre meglio la soluzione. Un grande vantaggio è che le funzionalità più importanti vengono affrontante all'inizio. Questo modello è meno idealista ma più gentile.</p>
@@ -74,10 +82,10 @@
 		<h2>I metodi agili</h2>
 		<p>I metodi agili nascono alla fine degli anni '90 come reazione all'eccessiva rigidità dei modelli allora in vigore. Si basano su quattro princìpi:</p>
 		<ul>
-			<li><span xml:lang="en">Individuals and interactions over processes and tools</span></li>
-			<li><span xml:lang="en">Working software over comprehensive documentation</span></li>
-			<li><span xml:lang="en">Customer collaboration over contract negotiation</span></li>
-			<li><span xml:lang="en">Responding to change over following a plan</span></li>
+			<li><span xml:lang="en">individuals and interactions over processes and tools;</span></li>
+			<li><span xml:lang="en">working software over comprehensive documentation;</span></li>
+			<li><span xml:lang="en">customer collaboration over contract negotiation;</span></li>
+			<li><span xml:lang="en">responding to change over following a plan.</span></li>
 		</ul>
 	</div>
 
