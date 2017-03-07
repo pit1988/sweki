@@ -13,7 +13,7 @@
 
 <!-- MAIN TEMPLATE -->
 <xsl:template match="/html">
-<xsl:for-each select="//div[@id='content']">
+<xsl:for-each select="//div[@id='content' and not(@class='no_tex')]">
 <xsl:apply-templates />
 </xsl:for-each>
 </xsl:template>
