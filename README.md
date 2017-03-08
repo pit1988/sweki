@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/gigiobello/sweki.svg?branch=master)](https://travis-ci.org/gigiobello/sweki)
 # sweki
 ## La wiki di Ingegneria del Software
 
