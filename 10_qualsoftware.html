@@ -40,7 +40,7 @@
 		<p>Il sistema qualità è fissato nelle Norme di Progetto (il Piano di Qualifica fissa invece gli <em>obiettivi</em> di qualità: i piani fissano solo obiettivi e strategie per raggiungerli).</p><!-- ... boh?! -->
 
 		<h2>Modelli della qualità</h2>
-		<p>Per uniformare la percezione e la valutazione della qualità, è bene che committenti e fornitori si accordino su un <strong>modello</strong> da seguire per la qualità. Esistono vari modelli della qualità; ognuno di essi definisce le caratteristiche rilevanti che deve avere un prodotto di qualità e organizza tali caratteristiche in una struttura logica.</p>
+		<p>Per uniformare la percezione e la valutazione della qualità, è bene che committenti e fornitori si accordino su un <strong>modello</strong> da seguire per la qualità. Esistono vari modelli della qualità; ognuno di essi definisce le caratteristiche rilevanti che deve avere un prodotto &quot;di qualità&quot; e organizza tali caratteristiche in una struttura logica.</p>
 		<p>Ad esempio, <abbr title="International Organitazion for Standardization">ISO</abbr>/<abbr title="International Electrotechnical Commission">IEC</abbr> 9126 definisce 7 caratteristiche principali (suddivise poi in 31 sotto-caratteristiche):</p>
 		<ul>
 			<li>funzionalità;</li>
@@ -62,6 +62,35 @@
 			<li>Visione interna, relativa al prodotto <em>non</em> in esecuzione; è ciò che deriva dalle scelte di progettazione, codifica e verifica, quindi si può vedere solo attraverso una revisione critica del prodotto.</li>
 			<li>Visione in uso, relativa alla percezione dell'utente finale.</li>
 		</ul>
+		<p>Mentre le visioni interna ed esterna si riferiscono al prodotto <span xml:lang="en">software</span>, la visione in uso si riferisce agli <em>effetti</em> di tale prodotto.</p>
+
+		<h2>Qualità nel ciclo di vita</h2>
+		<p>Possiamo individuare una catena di dipendenze tra le varie visioni della qualità: la <strong>qualità di un processo</strong> influenza gli attributi della <strong>qualità interna</strong>, che influenza gli attributi della <strong>qualità esterna</strong>, che influenza gli attributi della <strong>qualità in uso</strong>.</p>
+		<p>È bene che i seguenti aspetti siano il meno distante possibile tra loro:</p>
+		<ol>
+			<li>qualità obiettivo;</li>
+			<li>qualità richiesta;</li>
+			<li>qualità progettata;</li>
+			<li>qualità stimata;</li>
+			<li>qualità consegnata.</li>
+		</ol>
+		<p>Il committente ha responsabilità sulle prime due; il fornitore su tutte quante tranne la prima.</p>
+
+		<h2>Metriche e misurazioni</h2>
+		<p>Una <strong>metrica</strong> è un modo per dare un significato a dei valori, quindi è l'interpretazione di un sistema di unità di misura. Una <strong>misurazione quantitativa</strong> è l'uso di una metrica per assegnare un valore su una scala predefinita.</p>
+		<p>Le metriche <span xml:lang="en">software</span> permettono di quantificare sia un prodotto (e quindi predire i suoi attributi) sia un processo (al fine di monitorarlo e migliorarlo).</p>
+		<p>L'uso di una metrica assume che:</p>
+		<ul>
+			<li>Si può misurare un certo attributo (o proprietà) del <span xml:lang="en">software</span>.</li>
+			<li>Esiste una relazione tra ciò che possiamo misurare e ciò che vogliamo sapere. Ad esempio, generalmente è possibile misurare solo attributi <em>interni</em> del <span xml:lang="en">software</span>, mentre ciò che più spesso ci interessa sono i suoi attributi <em>esterni</em>: per capire il grado di manutenibilità di un <span xml:lang="en">software</span> (attributo esterno), dobbiamo conoscere il numero di righe di codice, il numero di parametri per procedura, l'ampiezza del manuale utente... (attributi interni).</li>
+			<li>La suddetta relazione è stata formalizzata e validata.</li>
+		</ul>
+		<p>La selezione delle metriche (e la scelta dei criteri di accettazione) parte dall'analisi dei requisiti di qualità e dei vincoli di costo. Dopodiché:</p>
+		<ol>
+			<li>una volta selezionate le metriche, si può procedere alla misurazione;</li>
+			<li>poi si passa alla valutazione (che è una verifica quantificata);</li>
+			<li>e infine viene l'accettazione &mdash; basandosi, appunto, sui criteri di accettazione scelti.</li>
+		</ol>
 	</div>
 
 <!-- 	<div id="footnotes">

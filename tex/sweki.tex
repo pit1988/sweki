@@ -260,7 +260,7 @@ I processi software, di per sé, non seguono un ordinamento; le relazioni tempor
 		
 In genere un modello del ciclo di vita di un \emph{prodotto}\footnote{Per ritiro s'intende il momento in cui il prodotto cessa di essere seguito dai creatori.} include un modello del ciclo di vita dello \emph{sviluppo}\footnote{Per ritiro s'intende il momento in cui il prodotto cessa di essere seguito dai creatori.} (più eventuali altri processi che riguardano fornitura, manutenzione, evoluzione...). Attenzione: il ciclo di vita dello sviluppo non deve per forza seguire lo stesso modello del ciclo di vita dell'intero prodotto!
 		
-I modelli di ciclo di vita nascono per perseguire la qualità più difficile da soddisfare in IS: la quantificabilità.
+Tra le qualità che contraddistinguono l'IS — sistematicità, disciplina, quantificabilità — i modelli di ciclo di vita nascono con l'obiettivo di perseguire la \textbf{quantificabilità}, che è la più difficile da soddisfare.
 
 		
 	\subsection{Il modello sequenziale}
@@ -1248,6 +1248,157 @@ Questa revisione ha la funzione di collaudare il sistema e di accertare il soddi
 
 		
 Le ore di lavoro si contano solo \emph{dopo} la valutazione della RR; fino a quel momento, il tempo speso è tempo d'investimento non rendicontato (eventualmente registrato, ma non rendicontato). Le ore totali impiegate a progetto da ciascuna persona sono circa 25-30 ore di lavoro; a questo proposito, è bene notare come l'efficienza è proporzionale al rapporto tra ore di lavoro e ore effettive. L'impegno totale di ore rendicontabili presentate a consuntivo da ogni componente di un gruppo dovrà situarsi fra un minimo di 85 e un massimo di 105 ore produttive. Le ore rendicontabili non includono le attività di auto-formazione.
+	
+
+
+		
+	\section{Qualità del software}
+
+
+		
+	\subsection{Definizione di qualità}
+
+		
+Secondo ISO, la qualità è l'insieme delle caratteristiche di un'entità che ne determinano la capacità di soddisfare esigenze espresse e implicite. Valutare la qualità del software serve sia a chi lo ha realizzato (per migliorarlo), sia a chi lo usa (per avere garanzie), sia a chi valuta (per imparare). Tuttavia, quello di qualità è un concetto ambivalente: può riguardare la conformità ai requisiti (visione intrinseca della qualità), la soddisfazione del cliente (visione relativa) o la misura del livello di qualità (visione quantitativa); ad ogni modo, tutte queste sono aree in cui interviene il "sistema qualità".
+
+		
+	\subsection{Il sistema qualità}
+
+		
+ISO definisce il "sistema qualità" come la struttura organizzativa, le responsabilità, le procedure, i procedimenti e le risorse messe in atto per il perseguimento della qualità. Questo sistema gestisce la qualità in tre ambiti:
+		
+	\begin{itemize}
+		
+			
+	\item La \textbf{pianificazione}, cioè le attività del sistema qualità mirate a fissare gli obiettivi di qualità, con i processi e le risorse necessari per conseguire tali obiettivi; è una premessa al controllo della qualità.
+			
+	\item Il \textbf{controllo}, cioè le attività del sistema qualità pianificate e attuate affinché il prodotto soddisfi i requisiti attesi.
+			
+	\item Il \textbf{miglioramento continuo}, secondo lo schema PDCA.
+		
+	\end{itemize}
+
+		
+Il sistema qualità è fissato nelle Norme di Progetto (il Piano di Qualifica fissa invece gli \emph{obiettivi} di qualità: i piani fissano solo obiettivi e strategie per raggiungerli).% ... boh?!
+
+
+		
+	\subsection{Modelli della qualità}
+
+		
+Per uniformare la percezione e la valutazione della qualità, è bene che committenti e fornitori si accordino su un \textbf{modello} da seguire per la qualità. Esistono vari modelli della qualità; ognuno di essi definisce le caratteristiche rilevanti che deve avere un prodotto "di qualità" e organizza tali caratteristiche in una struttura logica.
+		
+Ad esempio, ISO/IEC 9126 definisce 7 caratteristiche principali (suddivise poi in 31 sotto-caratteristiche):
+		
+	\begin{itemize}
+		
+			
+	\item funzionalità;
+			
+	\item affidabilità;
+			
+	\item efficienza;
+			
+	\item usabilità;
+			
+	\item manutenibilità;
+			
+	\item portabilità;
+			
+	\item qualità in uso.
+		
+	\end{itemize}
+
+		
+Oltre a descriverle, il modello specifica anche come \emph{misurarle}, cioè assegna ad ogni caratteristica una metrica (che è un modo per dare un significato a dei valori). Un modello è quindi uno strumento di definizione e di valutazione:
+		
+	\begin{itemize}
+		
+			
+	\item \textbf{definizione} perché cataloga in modo sistematico delle caratteristiche rilevanti;
+			
+	\item \textbf{valutazione} perché definisce delle metriche per la misurazione di tali caratteristiche.
+		
+	\end{itemize}
+
+		
+Sempre in ISO/IEC 9126, vengono proposte tre visioni della qualità:
+		
+	\begin{itemize}
+		
+			
+	\item Visione esterna, relativa all'esecuzione del prodotto; è ciò che si osserva, quindi solo la punta dell'iceberg.
+			
+	\item Visione interna, relativa al prodotto \emph{non} in esecuzione; è ciò che deriva dalle scelte di progettazione, codifica e verifica, quindi si può vedere solo attraverso una revisione critica del prodotto.
+			
+	\item Visione in uso, relativa alla percezione dell'utente finale.
+		
+	\end{itemize}
+
+		
+Mentre le visioni interna ed esterna si riferiscono al prodotto software, la visione in uso si riferisce agli \emph{effetti} di tale prodotto.
+
+		
+	\subsection{Qualità nel ciclo di vita}
+
+		
+Possiamo individuare una catena di dipendenze tra le varie visioni della qualità: la \textbf{qualità di un processo} influenza gli attributi della \textbf{qualità interna}, che influenza gli attributi della \textbf{qualità esterna}, che influenza gli attributi della \textbf{qualità in uso}.
+		
+È bene che i seguenti aspetti siano il meno distante possibile tra loro:
+		
+	\begin{enumerate}
+		
+			
+	\item qualità obiettivo;
+			
+	\item qualità richiesta;
+			
+	\item qualità progettata;
+			
+	\item qualità stimata;
+			
+	\item qualità consegnata.
+		
+	\end{enumerate}
+
+		
+Il committente ha responsabilità sulle prime due; il fornitore su tutte quante tranne la prima.
+
+		
+	\subsection{Metriche e misurazioni}
+
+		
+Una \textbf{metrica} è un modo per dare un significato a dei valori, quindi è l'interpretazione di un sistema di unità di misura. Una \textbf{misurazione quantitativa} è l'uso di una metrica per assegnare un valore su una scala predefinita.
+		
+Le metriche software permettono di quantificare sia un prodotto (e quindi predire i suoi attributi) sia un processo (al fine di monitorarlo e migliorarlo).
+		
+L'uso di una metrica assume che:
+		
+	\begin{itemize}
+		
+			
+	\item Si può misurare un certo attributo (o proprietà) del software.
+			
+	\item Esiste una relazione tra ciò che possiamo misurare e ciò che vogliamo sapere. Ad esempio, generalmente è possibile misurare solo attributi \emph{interni} del software, mentre ciò che più spesso ci interessa sono i suoi attributi \emph{esterni}: per capire il grado di manutenibilità di un software (attributo esterno), dobbiamo conoscere il numero di righe di codice, il numero di parametri per procedura, l'ampiezza del manuale utente... (attributi interni).
+			
+	\item La suddetta relazione è stata formalizzata e validata.
+		
+	\end{itemize}
+
+		
+La selezione delle metriche (e la scelta dei criteri di accettazione) parte dall'analisi dei requisiti di qualità e dei vincoli di costo. Dopodiché:
+		
+	\begin{enumerate}
+		
+			
+	\item una volta selezionate le metriche, si può procedere alla misurazione;
+			
+	\item poi si passa alla valutazione (che è una verifica quantificata);
+			
+	\item e infine viene l'accettazione — basandosi, appunto, sui criteri di accettazione scelti.
+		
+	\end{enumerate}
+
 	
 
 
