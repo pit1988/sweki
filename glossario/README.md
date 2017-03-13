@@ -1,7 +1,7 @@
 # sweki/glossario
 
 Directory contenente un glossario di termini, nei seguenti formati:
-* MySQL (`glossario.sql`);
+* MySQL ([`glossario.sql`](glossario.sql));
 * XHTML ([`index.html`](https://fiup.github.io/sweki/glossario/index.html));
 * PDF (come appendice di [`sweki.pdf`](https://github.com/FIUP/sweki/raw/master/tex/sweki.pdf));
 * Markdown (il file che stai leggendo).
@@ -40,7 +40,7 @@ Di seguito i termini del glossario:
 * __disciplinato__: che segue le norme (anzi, la best practice). Inglese: _disciplined_.
 * __documentazione__: tutto ciò che documenta le attività di un progetto. Inglese: _documentation_.
 * __efficacia__: conformità alle attese. Inglese: _effectiveness_.
-* __efficienza__: contenimento dei costi per raggiungere un obiettivo. Inglese: _efficiency_.
+* __efficienza__: contenimento dei consumi per raggiungere un obiettivo. Inglese: _efficiency_.
 * __fase (di un ciclo di vita)__: durata temporale (che non si ripete) entro uno stato del ciclo di vita e un altro. Inglese: _phase_.
 * __framework__: struttura di supporto su cui un software può essere organizzato e progettato.
 * __glossario__: elenco dei significati dei termini più rilevanti di un documento. Inglese: _glossary_.
@@ -59,6 +59,7 @@ Di seguito i termini del glossario:
 * __metodo di lavoro__: metodo di lavoro. Inglese: _way of working_.
 * __metrica__: l'interpretazione di un sistema di unità di misura.
 * __milestone__: punto nel tempo associato ad un valore strategico.
+* __misurazione quantitativa__: l'uso di una metrica per assegnare un valore su una scala predefinita. Inglese: _quantitative measurement_.
 * __modello__: astrazione della realtà. Inglese: _model_.
 * __modulo__: parte di un'unità. Inglese: _module_.
 * __organizzazione__: aggregato di persone [?] che agiscono in modo sistematico, disciplinato e quantificabile; contrario di caos. Inglese: _organization_.
@@ -68,7 +69,6 @@ Di seguito i termini del glossario:
 * __processo definito__: specializzazione del processo standard necessaria per adattarlo ad esigenze specifiche di progetto.
 * __processo di progetto__: istanza di un processo definito che utilizza risorse aziendali per raggiungere obiettivi prefissati (processo calato nella realtà aziendale).
 * __processo software__: processo che porta ad un prodotto software. Inglese: _software process_.
-* __processo standard__: riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettività di casi afferenti ad un certo dominio applicativo.
 * __profilo professionale__: insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto.
 * __progettazione__: definizione dell'architettura, dei componenti, delle interfacce e delle altre caratteristiche di un sistema o componente. Inglese: _design_.
 * __progettista (profilo professionale)__: chi sintetizza una soluzione a partire dalle specifiche di un problema già analizzato. Inglese: _designer_.
@@ -104,6 +104,7 @@ Di seguito i termini del glossario:
 * __sommario__: breve riassunto del contenuto di un documento. Inglese: _abstract_.
 * __SQL (Structured Query Language__: linguaggio di programmazione dichiarativo basato sull'algebra relazionale che serve a creare, manipolare e interrogare basi di dati relazionali.
 * __stakeholder__: persona a vario titolo coinvolta nel ciclo di vita di un software che ha influenza sul prodotto o sul processo.
+* __standard di processo__: riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettività di casi afferenti ad un certo dominio applicativo. Inglese: _process standard_.
 * __strumento__: insieme di concetti e di metodi, con delle tecnologie di supporto. Inglese: _tool_.
 * __tecnica__: ricetta applicata agli strumenti disponibili; modo con cui si usa uno strumento. Inglese: _technique_.
 * __tecnologia__: strumento sul quale si opera. Inglese: _technology_.
@@ -111,7 +112,7 @@ Di seguito i termini del glossario:
 * __UML (Unified Modelling Language)__: famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software.
 * __unità__: la più piccola quanità di software che conviene verificare da sola. Inglese: _unit_.
 * __validazione__: la garanzia che un prodotto soddisfi i requisiti da cui è nato. Inglese: _validation_.
-* __valutazione__: verifica quantificata.
+* __valutazione__: verifica quantificata. Inglese: _evaluation_.
 * __verifica__: valutare se un prodotto soddisfa requisiti, regole o altre condizioni necessarie. Inglese: _verification_.
 * __verificatore (profilo professionale)__: chi verifica il lavoro dei programmatori.
 * __versione (di un CI)__: istanza identificata di un CI nel tempo. Inglese: _version_.
