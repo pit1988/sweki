@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Casi d'uso - sweki</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Giorgio Giuffrè" />
+	<meta name="keywords" content="sweki, ingegneria, software, casi, uso, use, case" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../main.css" />
+</head>
+
+<body>
+
+	<div id="header">
+		<h1>
+			<a class="prev" title="prev" href="#">&lt;</a>
+			<a href="index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a>
+			<a class="next" title="next" href="#">&gt;</a>
+		</h1>
+		<h2>la <span xml:lang="en">wiki</span> di Ingegneria del <span xml:lang="en">Software</span></h2>
+	</div>
+
+	<div id="content">
+		<h1>Casi d'uso</h1>
+
+		<h2>Definizione</h2>
+		<p>Un caso d'uso è una tecnica per catturare i <strong>requisiti funzionali</strong> di un sistema. Descrive le interazioni tipiche tra il sistema e gli utenti/elementi esterni al sistema, sottolineando le funzioni che il sistema espone (la sua interfaccia) senza però fornire alcun dettaglio implementativo.</p>
+		<p><abbr title="Unified Modeling Language">UML</abbr> prevede un tipo di diagramma per rappresentare i casi d'uso. Questo diagramma è un grafo orientato in cui i nodi sono attori e casi d'uso, mentre gli archi sono relazioni tra essi.</p>
+
+		<h2>Scenari</h2>
+		<p>Un caso d'uso è un insieme di scenari accomunati da un obiettivo. Uno <strong>scenario</strong> non è altro che una sequenza di passi che descrivono interazioni tra utente e sistema. Ogni passo dovrebbe essere una frase semplice e precisa con un soggetto, un predicato e magari dei complementi. Tutti gli scenari di un caso d'uso condividono uno scopo.</p>
+
+		<h2>Attori</h2>
+		<p>Nel linguaggio dei casi d'uso, gli utenti sono <em>attori</em>. Un <strong>attore</strong> è un ruolo che un utente assume nei riguardi del sistema. Il termine &quot;attore&quot; può sembrare strano; a questo proposito, Martin Fowler scrive: <q xml:lang="en"><em>Actor</em> isn't really the right term; <em>role</em> would be much better.</q></p>
+		<p>È bene sottolineare che un attore non dev'essere per forza umano: esempi di attori includono anche un altro sistema, il database del sistema (che va sempre visto come esterno!) e in generale qualsiasi entità esterna a cui il sistema fornisca un servizio. In ogni caso, un attore si indica in un diagramma come un omino stilizzato.</p>
+
+		<h2>Associazioni tra attori e casi d'uso</h2>
+		<p>Un attore può eseguire più casi d'uso, così come un caso d'uso può essere eseguito da più attori. Un'associazione tra un attore e un caso d'uso è detta <strong>partecipazione</strong> e dev'essere descritta anche in modo testuale; anzi, la descrizione testuale è più importante del diagramma stesso, come dice Fowler: <q xml:lang="en">Although the diagram is sometimes useful, it isn't mandatory. In your use case work, don't put too much effort into the diagram. Instead, concentrate on the textual content of the use cases.</q></p>
+
+		<h2>Relazioni tra casi d'uso</h2>
+		<p>I casi d'uso dell'interazione con un sistema possono stare tra loro in relazioni di diverso tipo:</p>
+		<ul>
+			<li><strong>Inclusione</strong>: in un caso d'uso <var>A</var>, un singolo passo <var>B</var> può essere così complicato da essere esso stesso un caso d'uso; in tal caso, <var>A</var> include il caso d'uso <var>B</var>, cioè ogni istanza di <var>A</var> esegue <var>B</var> in modo incondizionato.</li>
+			<li><strong>Estensione</strong>: un caso d'uso è composto da più scenari; uno tra essi è il principale, mentre gli altri sono sue <em>estensioni</em>, cioè variazioni dallo scenario principale. <var>A</var> estende <var>B</var> quando <var>A</var> esegue <var>B</var> in modo condizionato.</li>
+		</ul>
+
+		<h2>Relazioni tra attori</h2>
+		<p>Tra attori vi può essere una relazione di <strong>generalizzazione</strong>, simile all'ereditarietà in programmazione ad oggetti. L'attore <var>x</var> è generalizzazione dell'attore <var>y</var> quando <var>y</var> condivide <em>almeno</em> le funzionalità di <var>x</var>.</p>
+	</div>
+
+<!-- 	<div id="footnotes">
+		<ol>
+			<li id="ftn1">...</li>
+		</ol>
+	</div> -->
+
+</body>
+</html>
