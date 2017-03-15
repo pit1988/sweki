@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Appello 29 gennaio 2016 - sweki</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Giorgio Giuffrè" />
+	<meta name="keywords" content="sweki, ingegneria, software, esercizi, 2016" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../main.css" />
+	<link rel="prev" href="2015_08_24.html" />
+	<link rel="next" href="2016_06_17.html" />
+</head>
+
+<body>
+
+	<div id="header">
+		<h1><a href="index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a></h1>
+		<h2>la <span xml:lang="en">wiki</span> di Ingegneria del <span xml:lang="en">Software</span></h2>
+	</div>
+
+	<div id="content">
+		<h1>Appello del 29 gennaio 2016</h1>
+
+		<h2>Problema [6/30]</h2>
+		<p>Dzone è un <em>technical social blog</em>. Al suo interno, gli utenti registrati possono scrivere piccoli articoli (<em>post</em>), che riguardano il mondo dello sviluppo e della programmazione. Il sito fornisce a tutti gli utenti una pagina principale nella quale vengono riportati i titoli degli articoli più popolari del momento. È possibile visualizzare anche gli articoli pubblicati semplicemente nelle ultime 24 ore e negli ultimi 7 giorni. Selezionando uno dei titoli, l'utente può visualizzare la pagina di dettaglio dell'articolo, che può essere sia una pagina interna a Dzone, sia una pagina di un <em>blog</em> esterno, che viene aperta come sotto-pagina di Dzone. In entrambi i casi, un utente registrato può votare un articolo per farlo salire nella graduatoria, o può fornire un <em>feedback</em> negativo. Gli utenti registrati possono lasciare commenti sugli articoli interni a Dzone. Un commento può iniziare un nuovo <em>thread</em> o può essere in risposta ad un precedente commento. Chiunque può condividere l'articolo su Twitter. La registrazione di un utente a Dzone avviene inserendo la propria email (univoca all'interno del sistema) e decidendo una <em>password</em>. Il proprio profilo prevede un'immagine, un <em>nickname</em> e un collegamento al proprio account Twitter e Facebook. Ad ogni utente è associato un distintivo sulla base del numero di articoli che ha scritto. Al raggiungimento del decimo articolo, ad esempio, si raggiunge il distintivo di &quot;editore&quot;. Gli articoli sono suddivisi per argomenti, ad esempio Java, BigData, Mobile, NoSQL. Qualsiasi utente può ricercare un articolo per titolo o può semplicemente navigare le varie categorie messe a disposizione dal sistema.</p>
+		<p>Si utilizzino i <strong>diagrammi dei casi d'uso</strong> per modellare gli scenari descritti. Non è richiesta la descrizione testuale dei casi d'uso individuati.</p>
+
+		<h2>Problema [7/30]</h2>
+		<p>Google sta sviluppando in gran segreto un nuovo linguaggio di programmazione, Gle. L'utente interagisce direttamente con un programma testuale avviabile da shell <em>gle></em>. Una volta avviato <em>gle</em> è possibile fornirgli alcuni comandi, come ad esempio il comando di compilazione di un <em>file</em> di estensione .gle, il che si ottiente utilizzando l'opzione &quot;-c&quot;. La compilazione avviene in più fasi. Inizialmente il <em>file</em> viene letto e un modulo di <em>parsing</em> trasforma il testo in una struttura ad albero di ricerca. Successivamente, il compilatore vero e proprio genera il codice eseguibile a partire dalla struttura ad albero. Inizialmente, Google ha deciso di appoggiarsi sulla JVM per l'esecuzione dei programmi scritti in Gle. Il risultato della compilazione, quindi, è un <em>file</em> contenente <em>bytecode</em>, eseguibile successivamente su una normale JVM. Poiché il linguaggio è agli inizi la sua sintassi e le funzionalità offerte non sono ancora stabili, il modulo di parsing e il compilatore, vengono forniti in varie versioni. Dalla linea di comando è possibile selezionare la versione del linguaggio con la quale si intende compilare del codice sorgente, utilizzando l'opzione &quot;-v n&quot; dove 'n' è il numero di versione. Nel caso non venga specificata alcuna versione, verrà utilizzata l'ultima disponibile. Compilatore e <em>parser</em> vengono utilizzati sempre con versioni omogenee tra loro. Una volta prodotto il <em>bytecode</em>, è possibile eseguire il programma, utilizzando sempre la shell <em>gle></em>. Il modulo di esecuzione utilizza il programma 'java' della JVM, adattandone opportunamente alcune sue funzionalità.</p>
+		<p>Considerando il programma <em>gle></em> come una interfaccia utente basata sul pattern MVC, si modelli il sistema descritto utilizzando un <strong>diagramma delle classi</strong> e gli opportuni <em>design pattern</em>. Inoltre, utilizzando un <strong>diagramma di sequenza</strong>, si descriva l'intera operazione di compilazione.</p>
+
+		<h2>Problema [2/30]</h2>
+		<p>Riportare i diagrammi delle classi che caratterizzano le varianti del <em>pattern</em> Adapter, ossia Class Adapter e Object Adapter e completare le seguenti affermazioni inserendo la corretta variante del <em>pattern</em> negli appositi spazi.</p>
+		<ul>
+			<li>Il <em>pattern</em> <input type="text" name="pattern_1" /> permette di adattare più tipi (<em>Adaptee</em> e le sue sottoclassi)</li>
+			<li>Il <em>pattern</em> <input type="text" name="pattern_2" /> permette di modificare alcune caratteristiche dell'<em>Adaptee</em>.</li>
+		</ul>
+
+		<h2>Domanda aperta [5/30]</h2>
+		<p>Proporre concisamente una strategia di verifica tramite <em>test</em> sostenibile all'interno di un impegno di taglia analoga al progetto didattico, per dimensioni, livello di qualità atteso, disponibilità ed esperienza delle risorse. Concentrare la risposta sul tipo di test da prevedere, i loro obiettivi, il grado di automazione, e ogni altro fattore ritenuto di interesse. Corredare la risposta motivando ogni elemento della proposta.</p>
+
+		<h2>Domanda aperta [5/30]</h2>
+		<p>Fissando l'attenzione sulla definizione di processo associata allo standard ISO/IEC 12207, indicare <strong>quali processi</strong> sia possibile e opportuno istanziare su una attività di taglia analoga al progetto didattico, e con <strong>quale istanziazione</strong> concreta (cioè verso quale insieme di attività, obiettivi, e flussi di dipendenza).</p>
+
+		<h2>Domanda aperta [4/30]</h2>
+		<p>Spiegare concisamente la differenza tra il modello di sviluppo &quot;iterativo&quot; e quello &quot;incrementale&quot;, fornendo sufficienti elementi per comprendere sia l'uno che l'altro. Nella spiegazione, descrivere anche le condizioni al contorno che rendano preferibile l'uno o l'altro.</p>
+	</div>
+
+</body>
+</html>
