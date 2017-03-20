@@ -12,6 +12,7 @@ Di seguito i termini del glossario:
 * __amministratore di progetto (profilo professionale)__: Chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione. Inglese: _project administrator_.
 * __analisi dei requisiti__: Definire cosa bisogna fare. Inglese: _requirements analysis_.
 * __analista (profilo professionale)__: Chi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista; fa l'analisi dei requisiti. Inglese: _analyst_.
+* __application logic__: La parte di un software che è specifica di quel software e non è intesa per essere riusata in altri software. Inglese: _application logic_.
 * __architettura__: La struttura organizzativa di un sistema o componente. Inglese: _architecture_.
 * __attività__: Parte di un processo che dev'essere compiuta entro un determinato periodo di tempo. Inglese: _activity_.
 * __baseline__: Nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede. Inglese: _baseline_.
@@ -19,6 +20,7 @@ Di seguito i termini del glossario:
 * __best practice__: La prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche. Inglese: _best practice_.
 * __bibliografia__: Elenco delle fonti di un documento. Inglese: _bibliografy_.
 * __budget__: Tempo e denaro. Inglese: _budget_.
+* __business logic__: La parte di un software che ha a che fare con il dominio applicativo del software; questa parte è tipicamente riusabile e quindi condivisa tra diversi software che operano nello stesso dominio. Inglese: _business logic_.
 * __caos__: Contrario di organizzazione. Inglese: _chaos_.
 * __caso d'uso__: Insieme di scenari che hanno in comune un obiettivo per un utente. Inglese: _use case_.
 * __ciclo di vita (di un prodotto)__: Insieme degli stati che il prodotto assume, dal concepimento al ritiro. Inglese: _software product life cycle_.
@@ -111,7 +113,7 @@ Di seguito i termini del glossario:
 * __tecnologia__: Strumento sul quale si opera. Inglese: _technology_.
 * __TeX__: Linguaggio formale di composizione tipografica. Inglese: _TeX_.
 * __UML (Unified Modelling Language)__: Famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software. Inglese: _UML_.
-* __unità__: Un insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. La più piccola quanità di software che conviene verificare da sola. Inglese: _unit_.
+* __unità__: Insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. È anche la più piccola quantità di software che conviene verificare da sola. Inglese: _unit_.
 * __validazione__: La garanzia che un prodotto soddisfi i requisiti da cui è nato. Inglese: _validation_.
 * __valutazione__: Verifica quantificata. Inglese: _evaluation_.
 * __verifica__: Valutare se un prodotto soddisfa requisiti, regole o altre condizioni necessarie. Inglese: _verification_.

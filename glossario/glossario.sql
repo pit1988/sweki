@@ -487,7 +487,7 @@ NULL),
 
 ('unità',
 'unità',
-'Un insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. La più piccola quanità di software che conviene verificare da sola.',
+'Insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. È anche la più piccola quantità di software che conviene verificare da sola.',
 'unit'),
 
 ('modulo',
@@ -573,4 +573,14 @@ NULL),
 ('misura',
 'misura',
 'Risultato di una misurazione.',
-NULL);
+NULL),
+
+('business_logic',
+'business logic',
+'La parte di un software che ha a che fare con il dominio applicativo del software; questa parte è tipicamente riusabile e quindi condivisa tra diversi software che operano nello stesso dominio.',
+'business logic'),
+
+('application_logic',
+'application logic',
+'La parte di un software che è specifica di quel software e non è intesa per essere riusata in altri software.',
+'application logic');
