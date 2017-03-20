@@ -4,7 +4,7 @@
 
 function def($term) {
 	if ($term != '')
-		return $term . '.';
+		return $term;
 	return '';
 }
 
