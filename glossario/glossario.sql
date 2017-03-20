@@ -37,6 +37,7 @@ INSERT INTO Definizioni VALUES
 ('processo', 'processo (ingegneristico)', 'insieme di attività correlate e coese che trasformano ingressi in uscite, consumando risorse nel farlo', 'process'),
 ('processo_software', 'processo software', 'processo che porta ad un prodotto software', 'software process'),
 ('attività', 'attività', 'parte di un processo', 'activity'),
+('task', 'attività (task)', 'Nella gestione dei processi, un compito (task) è un attività che deve essere compiuta entro un determinato periodo di tempo. Può essere suddiviso in sotto attività. Uno o più assegnazioni del compito mette il compito in esecuzione. Al termine di tutte le sotto attività può essere considerata eseguita', 'task'),
 ('compito', 'compito', 'parte di un\'attività', 'task'),
 ('tecnica', 'tecnica', 'ricetta applicata agli strumenti disponibili; modo con cui si usa uno strumento', 'technique'),
 ('strumento', 'strumento', 'insieme di concetti e di metodi, con delle tecnologie di supporto', 'tool'),
