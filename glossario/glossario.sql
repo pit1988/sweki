@@ -162,11 +162,13 @@ NULL),
 
 ('incarico',
 'incarico',
-NULL, 'assignment'.),
+NULL,
+'assignment'),
 
 ('impegno',
 'impegno',
-NULL, 'commitment'.),
+NULL,
+'commitment'),
 
 ('ruolo',
 'ruolo',
@@ -255,7 +257,8 @@ NULL),
 
 ('revisione_interna',
 'revisione interna',
-NULL, 'joint review'.),
+NULL,
+'joint review'),
 
 ('rete',
 'rete',
@@ -479,7 +482,7 @@ NULL),
 
 ('componente',
 'componente',
-'Parte di un sistema. Un insieme di unità funzionalmente coese; in Java, rappresentabile da uno o più package.',
+'Parte di un sistema. Un insieme di unità funzionalmente coese; in Java, rappresentabile da uno o più package.',
 'component'),
 
 ('unità',
