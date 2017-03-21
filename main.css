@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300');
+
 body {
 	background-color: #F1F1EF;
 	color: #000036;
 	margin: auto;
-	font-family: Courier;
+	font-family: 'Source Code Pro', Courier;
 }
 
 a {
