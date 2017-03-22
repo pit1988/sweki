@@ -28,8 +28,6 @@ Gli appunti sono disponibili su GitHub all'indirizzo \url{https://github.com/FIU
 
 la versione in \LaTeX{} è derivata automaticamente da quella in XHTML tramite dei template XSLT e dei terribili script di shell (bash).
 
-Ad oggi gli appunti sono incompleti ma cercherò di migliorarli (ultime parole famose).
-
 
 
 		
@@ -1403,6 +1401,147 @@ La selezione delle metriche (e la scelta dei criteri di accettazione) parte dall
 
 
 		
+	\section{Qualità di processo}
+
+
+		
+	\subsection{Risalire dal prodotto al processo}
+
+		
+Da tubi sporchi non esce acqua pulita: per ottenere \emph{prodotti} di qualità, è necessario avere \emph{processi} di qualità. In altre parole, la \textbf{qualità di processo} sta a monte rispetto alla qualità di prodotto.
+		
+Un processo è una macchina che prende in input dei bisogni e dà in output dei prodotti, consumando risorse nel farlo. Come tutte le macchine, un processo va controllato; questo permette di assicurare che i prodotti che produce siano quelli desiderati. Per controllare un processo, come per controllare una \emph{self-driving car} in movimento, sono necessari dei sensori e degli attuatori: gli uni per conoscere lo stato del processo (la posizione della macchina), gli altri per modificare l'implementazione del processo (la direzione in cui va la macchina). In questo paragone il controllore del processo è la \textbf{\emph{quality assurance}}, i sensori sono delle \textbf{misurazioni} che vengono effettuate sul processo e gli attuatori sono \textbf{regole e decisioni} atte a migliorare il processo.
+		
+Tutto questo, per essere efficiente, va fatto con misurazioni preventive (e non a posteriori) il cui obiettivo è il continuo miglioramento del processo: la qualità di processo segue il ciclo PDCA.
+
+		
+	\subsection{ISO 9000}
+
+		
+Il concetto di qualità di processo fu introdotto dai \emph{big spender}, per avere delle classifiche oggettive di fornitori ed essere, quindi, più sereni. Nel 1987 nacque dunque ISO 9000, una famiglia di standard che riguardano i sistemi di gestione della qualità (QMS, Quality Management System). Questa famiglia di standard non si occupa solo di software ma astrae dal dominio di applicazione.
+		
+ISO 9000, come documento, introduce i fondamenti e un glossario; invece, ISO 9001 si occupa di calare la visione di ISO 9000 nei \textbf{sistemi produttivi}, introducendo dei requisiti ben specifici. Esistono enti che si occupano di certificare il rispetto di tali requisiti (ISO 9001 è quindi anche una \emph{certificazione}). Infine, ISO 9004 è una guida al miglioramento dei risultati.
+		
+Questa famiglia di standard si basa su 7 princìpi di gestione della qualità (QMP):
+		
+	\begin{itemize}
+		
+			
+	\item QMP 1 — customer focus
+			
+	\item QMP 2 — leadership
+			
+	\item QMP 3 — engagement of people
+			
+	\item QMP 4 — process approach
+			
+	\item QMP 5 — improvement
+			
+	\item QMP 6 — evidence-based decision making
+			
+	\item QMP 7 — relationship management
+		
+	\end{itemize}
+
+
+		
+	\subsection{Sistema di gestione della qualità}
+
+		
+La gestione della qualità, come funzione aziendale, dovrebbe essere al di sopra dei vari settori e dovrebbe riferire direttamente alla direzione; questa funzione deve infatti garantire la qualità in modo \emph{trasversale} ai vari settori.
+		
+Il sistema di gestione della qualità è documentato tramite:
+		
+	\begin{itemize}
+		
+			
+	\item Una \textbf{politica per la qualità}, cioè le motivazioni che stanno alla base delle scelte sulla qualità.
+			
+	\item Il \textbf{manuale della qualità}, che definisce il QMS di un'oraganizzazione. Adotta una visione \emph{operativa} (orizzontale, ad alto livello).
+			
+	\item Il \textbf{piano della qualità}, una concretizzazione del manuale della qualità che adotta una visione \emph{strategica} (verticale). Esso definisce gli elementi del QMS e le risorse che devono essere applicate in uno specifico caso (prodotto, processo o progetto). Può avere valenza contrattuale. Nel progetto didattico, il piano della qualità è integrato nel piano di qualifica.
+		
+	\end{itemize}
+
+
+		
+	\subsection{Strumenti di valutazione}
+
+		
+Alcuni strumenti per la valutazione della qualità di processo:
+		
+	\begin{itemize}
+		
+			
+	\item SPY (Software Process assessment and Improvement)
+			
+	\item CMMI (Capability Maturity Model with Integration)
+			
+	\item SPICE (Software Process Improvement Capability dEtermination)
+		
+	\end{itemize}
+
+		
+\textbf{SPY} si incentra sulla valutazione oggettiva dei processi di un'organizzazione. Esso fornisce un giudizio di maturità e individua azioni migliorative.
+		
+\textbf{CMMI} si basa su quattro termini:
+		
+	\begin{enumerate}
+		
+			
+	\item Capability — misura di quanto è adeguato un singolo processo, rispetto agli scopi per cui è stato definito. Un processo ad alto livello di capability è seguito da tutti in modo disciplinato, sistematico e quantificabile.
+			
+	\item Maturity — misura di quanto è governato l'intero sistema di processi dell'organizzazione. L'intelligenza dei processi di un'organizzazione si chiama \emph{governance}.
+			
+	\item Model — insieme di requisiti via via più stringenti per valutare il percorso di miglioramento dei processi dell'organizzazione.
+			
+	\item Integration — architettura di integrazione delle diverse discipline (sistema, hardware, software) e tipologie di attività delle organizzazioni.
+		
+	\end{enumerate}
+
+		
+È bene notare che mentre la capability è caratteristica di un singolo processo, la maturity è caratteristica di un insieme di processi.
+		
+La governance di un'organizzazione ha interesse ad alzare il livello di maturity dell'organizzazione, dato che questo influenza direttamente la capability. CMMI definisce cinque livelli di maturità:
+		
+	\begin{enumerate}
+		
+			
+	\item \textbf{initial} — i processi sono imprevedibili, poco controllati e poco reattivi;
+			
+	\item \textbf{managed} — l'organizzazione applica la "D" di PDCA: i processi sono caratterizzati per i progetti e sono spesso reattivi;
+			
+	\item \textbf{defined} — l'organizzazione applica la "P" di PDCA: i processi sono caratterizzati per l'organizzazione e sono proattivi;
+			
+	\item \textbf{quantitatively managed} — l'organizzazione applica "PC" di PDCA: i processi sono misurati e controllati;
+			
+	\item \textbf{optimized} — l'organizzazione applica PDCA in toto: l'organizzazione si concentra sul miglioramento dei processi.
+		
+	\end{enumerate}
+
+		
+Nota bene: la "P" di PDCA è pianificazione di \emph{miglioramento}, non pianificazione di progetto.
+		
+Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzialmente frustrante per le organizzazioni); un'eccessiva concentrazione sulle pratiche (cosa si fa e come); un'insufficiente attenzione agli obiettivi (perché lo si fa).
+		
+\textbf{SPICE} è nato nel 1992 per armonizzare SPY con ISO/IEC 12207 e ISO 9001; nel 1998 è confluito in ISO/IEC 15504 (creato da ISO a partire da CMMI. Qui scompare il concetto di maturity e, al posto dei cinque gradini di maturità, si usa una scala più fine. Le aziende vengono misurate secondo il fatturato e il personale. La sua metodologia di valutazione è la seguente:
+		
+	\begin{itemize}
+		
+			
+	\item identificazione dei portatori d'interesse (\emph{stakeholders}: utenti, sviluppatori, valutatori...);
+			
+	\item scelta tra valutazione e miglioramento;% mboh...
+
+			
+	\item definizione della portata (quali processi vanno inclusi nella valutazione?).
+		
+	\end{itemize}
+
+	
+
+
+		
 	\newpage
 	\appendix
 	\section{Glossario}
@@ -1432,6 +1571,10 @@ La selezione delle metriche (e la scelta dei criteri di accettazione) parte dall
 
 			Chi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista; fa l'analisi dei requisiti. Inglese: \emph{analyst}.
 			
+	\item[application logic] 
+
+			La parte di un software che è specifica di quel software e non è intesa per essere riusata in altri software. Inglese: \emph{application logic}.
+			
 	\item[architettura] 
 
 			La struttura organizzativa di un sistema o componente. Inglese: \emph{architecture}.
@@ -1459,6 +1602,10 @@ La selezione delle metriche (e la scelta dei criteri di accettazione) parte dall
 	\item[budget] 
 
 			Tempo e denaro. Inglese: \emph{budget}.
+			
+	\item[business logic] 
+
+			La parte di un software che ha a che fare con il dominio applicativo del software; questa parte è tipicamente riusabile e quindi condivisa tra diversi software che operano nello stesso dominio. Inglese: \emph{business logic}.
 			
 	\item[caos] 
 
@@ -1830,7 +1977,7 @@ La selezione delle metriche (e la scelta dei criteri di accettazione) parte dall
 			
 	\item[unità] 
 
-			Un insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. La più piccola quanità di software che conviene verificare da sola. Inglese: \emph{unit}.
+			Insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. È anche la più piccola quantità di software che conviene verificare da sola. Inglese: \emph{unit}.
 			
 	\item[validazione] 
 
