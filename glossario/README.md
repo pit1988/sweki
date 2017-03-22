@@ -8,7 +8,7 @@ Directory contenente un glossario di termini, nei seguenti formati:
 
 Di seguito i termini del glossario:
 * __allocazione di risorse (per un progetto)__: Assegnare attività a ruoli e, poi, ruoli a persone.
-* __ambiente di lavoro__: L'insieme di persone, di ruoli, di procedure e l'infrastruttura la cui qualità determina la produttività del progetto.
+* __ambiente di lavoro__: L'insieme di persone, di ruoli, di procedure e l'infrastruttura la cui qualità determina la produttività del progetto. Inglese: _work environment_.
 * __amministratore di progetto (profilo professionale)__: Chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione. Inglese: _project administrator_.
 * __analisi dei requisiti__: Definire cosa bisogna fare. Inglese: _requirements analysis_.
 * __analista (profilo professionale)__: Chi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista; fa l'analisi dei requisiti. Inglese: _analyst_.
@@ -54,7 +54,7 @@ Di seguito i termini del glossario:
 * __infrastruttura (di un progetto)__: Tutte le risorse hardware e software del progetto.
 * __ingegneria__: L'applicazione di princìpi scientifici e matematici per scopi pratici. Inglese: _engineering_.
 * __ingegneria del software__: Applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, al funzionamento e al mantenimento del software. Inglese: _software engineering_.
-* __integrazione continua__: Pratica che consiste nell'allineamento frequente degli ambienti di lavoro degli sviluppatori verso l'ambiente condiviso. Inglese: _continuous integration_.
+* __integrazione continua__: Pratica di sviluppo in cui i membri di un progetto integrano il loro lavoro frequentemente (quotidianamente) in modo automatizzato. Inglese: _continuous integration_.
 * __LaTeX__: Sistema di composizione tipografica che utilizza TeX come motore. Inglese: _LaTeX_.
 * __legge della domanda__: Quanto più è grande qualcosa, tanto maggiore sarà la domanda per essa.
 * __legge di Parkinson__: Work expands to fill the time available. Inglese: _Parkinson's law_.

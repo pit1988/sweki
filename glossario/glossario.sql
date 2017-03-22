@@ -413,7 +413,7 @@ NULL),
 ('ambiente_di_lavoro',
 'ambiente di lavoro',
 'L\'insieme di persone, di ruoli, di procedure e l\'infrastruttura la cui qualità determina la produttività del progetto.',
-NULL),
+'work environment'),
 
 ('metodo_di_lavoro',
 'metodo di lavoro',
@@ -452,7 +452,7 @@ NULL),
 
 ('integrazione_continua',
 'integrazione continua',
-'Pratica che consiste nell\'allineamento frequente degli ambienti di lavoro degli sviluppatori verso l\'ambiente condiviso.',
+'Pratica di sviluppo in cui i membri di un progetto integrano il loro lavoro frequentemente (quotidianamente) in modo automatizzato.',
 'continuous integration'),
 
 ('regola',
