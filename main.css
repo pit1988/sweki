@@ -1,10 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
 body {
 	background-color: #F1F1EF;
 	color: #000036;
 	margin: auto;
-	font-family: 'Source Code Pro', Courier;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 
@@ -61,12 +69,14 @@ body {
 
 /*   nav   */
 
-#nav {
-	list-style-type: circle;
+#nav li.app {
+	list-style-type: none;
+	margin-left: -1em;
 }
 
-#nav a {
-	text-decoration: none;
+#nav li.app:before {
+	content: "+ ";
+	color: green;
 }
 
 

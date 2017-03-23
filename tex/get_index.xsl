@@ -10,7 +10,7 @@
 <xsl:output method="text" version="1.0" encoding="UTF-8" />
 
 <xsl:template match="/">
-<xsl:for-each select="/html/body/div/ul[@id='nav']/li/a">
+<xsl:for-each select="/html/body/div/ol[@id='nav']/li/a">
 <xsl:value-of select="@href" />
 <xsl:text>&#xa;</xsl:text>
 </xsl:for-each>
