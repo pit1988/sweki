@@ -232,8 +232,18 @@ NULL),
 
 ('progettazione',
 'progettazione',
-'Definizione dell\'architettura, dei componenti, delle interfacce e delle altre caratteristiche di un sistema o componente.',
+'Definizione dell\'architettura, delle componenti, delle interfacce e delle altre caratteristiche di un sistema o componente.',
 'design'),
+
+('progettazione_architetturale',
+'progettazione architetturale',
+'Definizione delle componenti e di come esse sono organizzate in un sistema.',
+'architectural design'),
+
+('progettazione_di_dettaglio',
+'progettazione di dettaglio',
+'Definizione del comportamento delle componenti di un sistema, con un livello di dettaglio tale per cui le componenti possano essere implementate.',
+'detailed design'),
 
 ('diagramma_WBS',
 'diagramma WBS (Work Breakdown Structure)',
@@ -470,6 +480,11 @@ NULL),
 'Accordo di interfacce.',
 'protocol'),
 
+('algoritmo',
+'algoritmo',
+'Sequenza finita di passi per la risoluzione di un problema.',
+'algorithm'),
+
 ('design_pattern',
 'design pattern',
 'Soluzione progettuale generale ad un problema ricorrente.',
@@ -482,7 +497,7 @@ NULL),
 
 ('componente',
 'componente',
-'Parte di un sistema. Un insieme di unità funzionalmente coese; in Java, rappresentabile da uno o più package.',
+'Insieme di unità funzionalmente coese; parte di un sistema. In Java, rappresentabile da uno o più package.',
 'component'),
 
 ('unità',

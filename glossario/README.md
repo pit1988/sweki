@@ -7,6 +7,7 @@ Directory contenente un glossario di termini, nei seguenti formati:
 * Markdown (il file che stai leggendo).
 
 Di seguito i termini del glossario:
+* __algoritmo__: Sequenza finita di passi per la risoluzione di un problema. Inglese: _algorithm_.
 * __allocazione di risorse (per un progetto)__: Assegnare attività a ruoli e, poi, ruoli a persone.
 * __ambiente di lavoro__: L'insieme di persone, di ruoli, di procedure e l'infrastruttura la cui qualità determina la produttività del progetto. Inglese: _work environment_.
 * __amministratore di progetto (profilo professionale)__: Chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione. Inglese: _project administrator_.
@@ -30,7 +31,7 @@ Di seguito i termini del glossario:
 * __coerenza__: L'esser composto da parti che non sono in disaccordo tra loro, cioè non affermano cose che si contraddicano. Inglese: _consistency_.
 * __coesione__: Caratteristica di un sistema per la quale parti associate concorrono agli stessi obiettivi. Inglese: _cohesion_.
 * __compito__: Parte di un'attività. Inglese: _task_.
-* __componente__: Parte di un sistema. Un insieme di unità funzionalmente coese; in Java, rappresentabile da uno o più package. Inglese: _component_.
+* __componente__: Insieme di unità funzionalmente coese; parte di un sistema. In Java, rappresentabile da uno o più package. Inglese: _component_.
 * __configuration item (CI)__: Parte della configurazione di un software. Inglese: _configuration item_.
 * __configurazione__: Di quali parti si compone un prodotto e il modo in cui esse stanno assieme. Inglese: _configuration_.
 * __controllore della qualità (profilo professionale)__: Funzione aziendale (e non ruolo di progetto) che accerta la qualità dei prodotti.
@@ -74,7 +75,9 @@ Di seguito i termini del glossario:
 * __processo di progetto__: Istanza di un processo definito che utilizza risorse aziendali per raggiungere obiettivi prefissati (processo calato nella realtà aziendale).
 * __processo software__: Processo che porta ad un prodotto software. Inglese: _software process_.
 * __profilo professionale__: Insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto.
-* __progettazione__: Definizione dell'architettura, dei componenti, delle interfacce e delle altre caratteristiche di un sistema o componente. Inglese: _design_.
+* __progettazione__: Definizione dell'architettura, delle componenti, delle interfacce e delle altre caratteristiche di un sistema o componente. Inglese: _design_.
+* __progettazione architetturale__: Definizione delle componenti e di come esse sono organizzate in un sistema. Inglese: _architectural design_.
+* __progettazione di dettaglio__: Definizione del comportamento delle componenti di un sistema, con un livello di dettaglio tale per cui le componenti possano essere implementate. Inglese: _detailed design_.
 * __progettista (profilo professionale)__: Chi sintetizza una soluzione a partire dalle specifiche di un problema già analizzato. Inglese: _designer_.
 * __progetto__: Insieme di compiti da svolgere in modo collaborativo a fronte di un incarico (che diventa poi un impegno). Inglese: _project_.
 * __programmatore (profilo professionale)__: Chi implementa una parte della soluzione dei progettisti. Inglese: _programmer_.
