@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Verifica e validazione - sweki</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Giorgio Giuffrè" />
+	<meta name="keywords" content="sweki, ingegneria, software, verifica, validazione" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<link rel="prev" href="11_qualprocesso.html" />
+	<link rel="next" href="13_quantif.html" />
+</head>
+
+<body>
+
+	<div id="header">
+		<h1>
+			<a class="prev" title="prev" href="11_qualprocesso.html">&lt;</a>
+			<a href="index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a>
+			<a class="next" title="next" href="13_quantif.html">&gt;</a>
+		</h1>
+		<h2>la <span xml:lang="en">wiki</span> di Ingegneria del <span xml:lang="en">Software</span></h2>
+	</div>
+
+	<div id="content">
+		<h1>Verifica e validazione</h1>
+
+		<h2>Definizione</h2>
+		<p>Verifica e validazione sono due processi strettamente correlati. A questa coppia di processi si dà spesso il nome di &quot;<strong>qualifica</strong>&quot; o &quot;V&amp;V&quot;. Il loro obiettivo è assicurare la qualità del prodotto durante il suo ciclo di vita.</p>
+		<p>Questi due processi rispondono a due domande separate:</p>
+		<ul>
+			<li>Verifica: <q>Did I build the system right?</q></li>
+			<li>Validazione: <q>Did I build the right system?</q></li>
+		</ul>
+		<p>La <strong>verifica</strong> attiene alla coerenza, completezza e correttezza del prodotto. È un processo che si applica ad ogni &quot;segmento&quot; temporale di un progetto (ad ogni prodotto intermedio) per accertare che le attività svolte in tale segmento non abbiano introdotto errori nel prodotto.</p>
+		<p>La <strong>validazione</strong>, invece, non si applica ad un particolare segmento temporale ma è una conferma finale, una <em xml:lang="en">self-fulfilling prophecy</em> che accerta la conformità di un prodotto alle attese; essa fornisce una prova oggettiva di come le specifiche del prodotto siano conformi al suo scopo e alle esigenze degli utenti. La validazione, a differenza della verifica, coinvolge sempre il committente.</p>
+
+		<h2>Forme di verifica</h2>
+		<p>La verifica è un processo analitico. Si può fare in due forme:</p>
+		<ul>
+			<li>analisi statica (senza eseguire il <span xml:lang="en">software</span>);</li>
+			<li>analisi dinamica (con esecuzione del <span xml:lang="en">software</span>).</li>
+		</ul>
+		<p>L'analisi statica viene fatta prima di quella dinamica: quest'ultima necessita di un prodotto eseguibile, mentre l'analisi statica si può applicare già a <em>frammenti</em> di prodotto.</p>
+
+		<h2>Test</h2>
+		<p>L'analisi dinamica viene effettuata tramite prove (<em><strong>test</strong></em>). Un test, per essere utile, dev'essere facilmente ripetibile; per questo, bisogna sempre:</p>
+		<ul>
+			<li>tener conto dell'ambiente (non solo dell'input);</li>
+			<li>specificare le pre-condizioni e i comportamenti attesi;</li>
+			<li>descrivere le procedure per eseguire il test e per analizzarne i risultati.</li>
+		</ul>
+		<p>Per fare ciò, servono tre strumenti:</p>
+		<ul>
+			<li>Un <strong>logger</strong>, che scriva l'esito della prova in un file.</li>
+			<li>Un <strong>driver</strong>, cioè un &quot;pilota&quot; che guidi l'esecuzione del test. Ogni test di unità dev'essere chiamato da qualcuno: costui è il driver.</li>
+			<li>Uno <strong>stub</strong>, cioè un &quot;calco&quot; che sostituisca del codice non ancora scritto: una componente passiva fittizia che simula una parte del sistema<sup class="footnote"><a id="txt1" href="#ftn1">[1]</a></sup>.</li>
+		</ul>
+		<p>Lo stub è quindi il duale del driver: mentre il primo simula le dipendenze della procedura testata (quelle che accrescono il <em>fan-out</em>, per capirci), il secondo simula un chiamante di tale procedura (che contribuisce al <em>fan-in</em>).</p>
+
+		<h2>Tipi di test</h2>
+		<p>Distinguiamo quattro tipi di test, a seconda del livello a cui vengono eseguiti nell'architettura:</p>
+		<ul>
+			<li>test di unità;</li>
+			<li>test di integrazione;</li>
+			<li>test di sistema;</li>
+			<li>test di accettazione e collaudo.</li>
+		</ul>
+		<p>Nell'architettura di un <span xml:lang="en">software</span>, l'unità è la più piccola quantità di <span xml:lang="en">software</span> che conviene verificare da sola. Un <strong>test di unità</strong> è un'attività di analisi dinamica che verifica la correttezza del codice. Può essere responsabilità del programmatore che ha implementato l'unità, di un verificatore indipendente oppure (meglio!) di un automa.</p>
+		<p>I <strong>test di integrazione</strong> servono per verificare il sistema in modo <em>incrementale</em>. Questi test stanno a livello di componente e integrano il funzionamento di più unità.</p>
+		<p>Il <strong>test di sistema</strong> serve ad accertare la copertura dei requisiti. È un'attività interna all'organizzazione, mentre il <strong>collaudo</strong> è la corrispondente attività esterna (supervisionata dal committente). Al collaudo segue il rilascio del prodotto e la fine della commessa (con eventuale manutenzione).</p>
+		<p>Infine, esistono anche i <strong>test di regressione</strong>: a seguito di un test andato male e di una relativa correzione, i test di regressione sono l'insieme di test necessari ad accertare he la correzione non causi errori nelle parti del sistema che dipendono da essa. La regressione può essere complicata e dev'essere studiata <em xml:lang="la">ad hoc</em>.</p>
+
+		<p>[in costruzione...]</p>
+	</div>
+
+	<div id="footnotes">
+		<ol>
+			<li id="ftn1">La parte di sistema simulata dallo stub <strong>non</strong> è oggetto del test in esecuzione.</li>
+		</ol>
+	</div>
+
+</body>
+</html>

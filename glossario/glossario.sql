@@ -302,7 +302,7 @@ NULL),
 
 ('qualifica',
 'qualifica',
-'Verifica e validazione ("V&V").',
+'Verifica e validazione ("V&V"), cioè quei processi che assicurano la qualità di un prodotto durante il suo ciclo di vita.',
 NULL),
 
 ('verifica',
@@ -332,7 +332,7 @@ NULL),
 
 ('budget',
 'budget',
-'Tempo e denaro.',
+'Tempo e denaro a disposizione.',
 'budget'),
 
 ('UML',
@@ -497,7 +497,7 @@ NULL),
 
 ('componente',
 'componente',
-'Insieme di unità funzionalmente coese; parte di un sistema. In Java, rappresentabile da uno o più package.',
+'Insieme di unità funzionalmente coese; parte di un sistema. (In Java, rappresentabile da uno o più package.)',
 'component'),
 
 ('unità',
@@ -507,7 +507,7 @@ NULL),
 
 ('modulo',
 'modulo',
-'L\'elemento atomico della progettazione; tipicamente una classe o un interfaccia.',
+'L\'elemento atomico dell\'architettura di un software; tipicamente una classe o un interfaccia.',
 'module'),
 
 ('requisito',
@@ -570,6 +570,11 @@ NULL),
 'L\'insieme delle caratteristiche di un\'entità che ne determinano la capacità di soddisfare esigenze espresse e implicite.',
 'quality'),
 
+('gestione_della_qualità',
+'gestione della qualità',
+'L\'insieme dei processi che assicurano che prodotti e implementazioni di processi rispettino gli obiettivi di qualità (di un\'organizzazione) e soddisfino gli stakeholder.',
+'quality management'),
+
 ('valutazione',
 'valutazione',
 'Verifica quantificata.',
@@ -588,7 +593,7 @@ NULL),
 ('misura',
 'misura',
 'Risultato di una misurazione.',
-NULL),
+NULL), # non 'measurement', a quanto pare :|
 
 ('business_logic',
 'business logic',
@@ -598,4 +603,19 @@ NULL),
 ('application_logic',
 'application logic',
 'La parte di un software che è specifica di quel software e non è intesa per essere riusata in altri software.',
-'application logic');
+'application logic'),
+
+('guasto',
+'guasto',
+NULL,
+'fault'),
+
+('guasto',
+'guasto',
+NULL,
+'error'),
+
+('guasto',
+'guasto',
+NULL,
+'failure');
