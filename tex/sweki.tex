@@ -1781,7 +1781,43 @@ L'analisi statica costruisce modelli astratti del software in esame; questi mode
 	\section{Verifica e validazione: analisi dinamica}
 
 
-		[...]
+		
+	\subsection{Definizione e problemi}
+
+		
+L'analisi dinamica non è altro che l'esecuzione di \textbf{\emph{test}}, cioè prove su del codice in esecuzione. Purtroppo nello sviluppo di un software il codice nasce molto tardi; per questo, il \emph{testing} dev'essere rapido (efficiente) ed efficace\footnote{È interessante notare che il testing viene fatto sempre: se non lo fa il fornitore, lo farà l'utente. Ovviemante, dare all'utente un software non testato è una cosa che non va fatta.}. Un altro problema dei test è la loro \textbf{non esaustività}: è possibile eseguirli solo su un insieme finito di casi, che non sono quasi mai tutti i casi possibili.
+		
+La pianificazione del \emph{testing} deve quindi avvenire il prima possibile. Il primo momento utile è la progettazione del sistema.
+		
+Il debugging \emph{non} è verifica: esso nasce da un errore che si è manifestato inaspettatamente, mentre la verifica viene pianificata a monte dello sviluppo.
+
+		
+	\subsection{Terminologia}
+
+		
+Compito del test è trovare errori nel codice. Distinguiamo tre livelli di errore:
+		
+	\begin{itemize}
+		
+			
+	\item \textbf{Malfunzionamento} (\emph{failure}): l'esecuzione è difforme dalle attese. I malfunzionamenti riguardano il comportamento del software.
+			
+	\item \textbf{Errore} (\emph{error}): stato del sistema che, se attivato, produce un malfunzionamento; se l'errore non viene attivato, rimane nascosto ma esiste. Gli errori sono quindi stati del sistema.
+			
+	\item \textbf{Guasto} o difetto (\emph{fault}): causa dell'errore; può essere un guasto del computer o del software. I guasti possono essere malfunzionamenti di un sotto-sistema: i sistemi software sono sistemi gerarchici (annidati).
+		
+	\end{itemize}
+
+		
+Quindi: un guasto cause un errore, il quale può produrre un malfunzionamento. (Nota: il glossario IEEE non concorda pienamente con le definizioni sopra.)
+
+		
+	\subsection{Compromesso}
+
+		
+Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test sufficienti a verificare il prodotto e lo sforzo allocato a progetto. Sul \emph{testing} vale infatti la "legge del \textbf{rendimento decrescente}\footnote{È interessante notare che il testing viene fatto sempre: se non lo fa il fornitore, lo farà l'utente. Ovviemante, dare all'utente un software non testato è una cosa che non va fatta.}": man mano che aumento lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre più. Questo avviene, ad esempio, quando un produttore aumenta la produzione e, a un certo punto, oltrepassa la domanda: i profitti iniziano ad essere negativi. Così, arriva un tempo in cui fare altri test non aggiunge null, cioè non trova errori (e la funzione primaria dei test è trovare errori).
+
+		[In allestimento...]
 	
 
 
@@ -1789,7 +1825,7 @@ L'analisi statica costruisce modelli astratti del software in esame; questi mode
 	\section{Metodi e obiettivi di quantificazione}
 
 
-		[...]
+		[In allestimento...]
 	
 
 
@@ -1855,6 +1891,10 @@ L'analisi statica costruisce modelli astratti del software in esame; questi mode
 
 			Minimizzazione delle dipendenze tra i vari componenti di un sistema. Inglese: \emph{loose coupling}.
 			
+	\item[batteria di prove] 
+
+			 Inglese: \emph{test suite}.
+			
 	\item[best practice] 
 
 			La prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche.
@@ -1878,6 +1918,10 @@ L'analisi statica costruisce modelli astratti del software in esame; questi mode
 	\item[caso d'uso] 
 
 			Insieme di scenari che hanno in comune un obiettivo per un utente. Inglese: \emph{use case}.
+			
+	\item[caso di prova] 
+
+			 Inglese: \emph{test case}.
 			
 	\item[ciclo di vita (di un prodotto)] 
 
@@ -1965,7 +2009,7 @@ L'analisi statica costruisce modelli astratti del software in esame; questi mode
 			
 	\item[errore] 
 
-			 Inglese: \emph{error}.
+			Stato del sistema che, se attivato, produce un malfunzionamento. Inglese: \emph{error}.
 			
 	\item[fase (di un ciclo di vita)] 
 
@@ -1985,7 +2029,7 @@ L'analisi statica costruisce modelli astratti del software in esame; questi mode
 			
 	\item[guasto] 
 
-			 Inglese: \emph{fault}.
+			Causa di un errore. Inglese: \emph{fault}.
 			
 	\item[impegno] 
 
@@ -2037,7 +2081,7 @@ L'analisi statica costruisce modelli astratti del software in esame; questi mode
 			
 	\item[malfunzionamento] 
 
-			 Inglese: \emph{failure}.
+			Esecuzione di un software difforme dalle attese. Inglese: \emph{failure}.
 			
 	\item[marcatore] 
 

@@ -642,17 +642,17 @@ NULL), # non 'measurement', a quanto pare :|
 
 ('guasto',
 'guasto',
-NULL, # TODO
+'Causa di un errore.',
 'fault'),
 
 ('errore',
 'errore',
-NULL, # TODO
+'Stato del sistema che, se attivato, produce un malfunzionamento.',
 'error'),
 
 ('malfunzionamento',
 'malfunzionamento',
-NULL, # TODO
+'Esecuzione di un software difforme dalle attese.',
 'failure'),
 
 ('analisi_statica',
@@ -663,4 +663,14 @@ NULL, # TODO
 ('analisi_dinamica',
 'analisi dinamica',
 'Valutazione di un sistema (o di una sua componente) basata sul suo comportamento durante l\'esecuzione.',
-'dynamic analysis');
+'dynamic analysis'),
+
+('caso_di_prova',
+'caso di prova',
+NULL, # TODO
+'test case'),
+
+('batteria_di_prove',
+'batteria di prove',
+NULL, # TODO
+'test suite');

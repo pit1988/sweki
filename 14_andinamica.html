@@ -27,7 +27,31 @@
 	<div id="content">
 		<h1>Verifica e validazione: analisi dinamica</h1>
 
-		[...]
+		<h2>Definizione e problemi</h2>
+		<p>L'analisi dinamica non è altro che l'esecuzione di <strong><em>test</em></strong>, cioè prove su del codice in esecuzione. Purtroppo nello sviluppo di un <span xml:lang="en">software</span> il codice nasce molto tardi; per questo, il <em xml:lang="en">testing</em> dev'essere rapido (efficiente) ed efficace<sup class="footnote"><a id="txt1" href="#ftn1">[1]</a></sup>. Un altro problema dei test è la loro <strong>non esaustività</strong>: è possibile eseguirli solo su un insieme finito di casi, che non sono quasi mai tutti i casi possibili.</p>
+		<p>La pianificazione del <em xml:lang="en">testing</em> deve quindi avvenire il prima possibile. Il primo momento utile è la progettazione del sistema.</p>
+		<p>Il debugging <em>non</em> è verifica: esso nasce da un errore che si è manifestato inaspettatamente, mentre la verifica viene pianificata a monte dello sviluppo.</p>
+
+		<h2>Terminologia</h2>
+		<p>Compito del test è trovare errori nel codice. Distinguiamo tre livelli di errore:</p>
+		<ul>
+			<li><strong>Malfunzionamento</strong> (<em xml:lang="en">failure</em>): l'esecuzione è difforme dalle attese. I malfunzionamenti riguardano il comportamento del <span xml:lang="en">software</span>.</li>
+			<li><strong>Errore</strong> (<em xml:lang="en">error</em>): stato del sistema che, se attivato, produce un malfunzionamento; se l'errore non viene attivato, rimane nascosto ma esiste. Gli errori sono quindi stati del sistema.</li>
+			<li><strong>Guasto</strong> o difetto (<em xml:lang="en">fault</em>): causa dell'errore; può essere un guasto del computer o del <span xml:lang="en">software</span>. I guasti possono essere malfunzionamenti di un sotto-sistema: i sistemi <span xml:lang="en">software</span> sono sistemi gerarchici (annidati).</li>
+		</ul>
+		<p>Quindi: un guasto cause un errore, il quale può produrre un malfunzionamento. (Nota: il glossario IEEE non concorda pienamente con le definizioni sopra.)</p>
+
+		<h2>Compromesso</h2>
+		<p>Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test sufficienti a verificare il prodotto e lo sforzo allocato a progetto. Sul <em xml:lang="en">testing</em> vale infatti la &quot;legge del <strong>rendimento decrescente</strong><sup class="footnote"><a id="txt2" href="#ftn2">[2]</a></sup>&quot;: man mano che aumento lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre più. Questo avviene, ad esempio, quando un produttore aumenta la produzione e, a un certo punto, oltrepassa la domanda: i profitti iniziano ad essere negativi. Così, arriva un tempo in cui fare altri test non aggiunge null, cioè non trova errori (e la funzione primaria dei test è trovare errori).</p>
+
+		[In allestimento...]
+	</div>
+
+	<div id="footnotes">
+		<ol>
+			<li id="ftn1">È interessante notare che il <em xml:lang="en">testing</em> viene fatto sempre: se non lo fa il fornitore, lo farà l'utente. Ovviemante, dare all'utente un <span xml:lang="en">software</span> non testato è una cosa che non va fatta.</li>
+			<li id="ftn2">In inglese <em>diminishing returns</em>.</li>
+		</ol>
 	</div>
 
 </body>

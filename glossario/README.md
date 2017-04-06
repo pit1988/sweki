@@ -20,12 +20,14 @@ Di seguito i termini del glossario:
 * __attività__: Parte di un processo che dev'essere compiuta entro un determinato periodo di tempo. Inglese: _activity_.
 * __baseline__: Nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede.
 * __basso accoppiamento__: Minimizzazione delle dipendenze tra i vari componenti di un sistema. Inglese: _loose coupling_.
+* __batteria di prove__:  Inglese: _test suite_.
 * __best practice__: La prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche.
 * __bibliografia__: Elenco delle fonti di un documento. Inglese: _bibliografy_.
 * __budget__: Tempo e denaro a disposizione.
 * __business logic__: La parte di un software che ha a che fare con il dominio applicativo del software; questa parte è tipicamente riusabile e quindi condivisa tra diversi software che operano nello stesso dominio.
 * __caos__: Contrario di organizzazione. Inglese: _chaos_.
 * __caso d'uso__: Insieme di scenari che hanno in comune un obiettivo per un utente. Inglese: _use case_.
+* __caso di prova__:  Inglese: _test case_.
 * __ciclo di vita (di un prodotto)__: Insieme degli stati che il prodotto assume, dal concepimento al ritiro. Inglese: _software product life cycle_.
 * __ciclo di vita dello sviluppo (di un prodotto)__: Parte del ciclo di vita di un prodotto che riguarda il suo sviluppo. Inglese: _software development life cycle_.
 * __ciclo PDCA (o ciclo di Deming)__: Schema iterativo di auto-miglioramento che consiste di quattro punti: Plan (individuare obiettivi di miglioramento), Do (eseguire ciò che si è pianificato), Check (verificare se ha funzionato) e Act (agire per correggersi). Inglese: _PDCA cycle_.
@@ -47,12 +49,12 @@ Di seguito i termini del glossario:
 * __documentazione__: Tutto ciò che documenta le attività di un progetto. Inglese: _documentation_.
 * __efficacia__: Conformità alle attese. Inglese: _effectiveness_.
 * __efficienza__: Contenimento dei consumi per raggiungere un obiettivo. Inglese: _efficiency_.
-* __errore__:  Inglese: _error_.
+* __errore__: Stato del sistema che, se attivato, produce un malfunzionamento. Inglese: _error_.
 * __fase (di un ciclo di vita)__: Durata temporale (che non si ripete) entro uno stato del ciclo di vita e un altro. Inglese: _phase_.
 * __framework__: Struttura di supporto su cui un software può essere organizzato e progettato.
 * __gestione della qualità__: L'insieme dei processi che assicurano che prodotti e implementazioni di processi rispettino gli obiettivi di qualità (di un'organizzazione) e soddisfino gli stakeholder. Inglese: _quality management_.
 * __glossario__: Elenco dei significati dei termini più rilevanti di un documento. Inglese: _glossary_.
-* __guasto__:  Inglese: _fault_.
+* __guasto__: Causa di un errore. Inglese: _fault_.
 * __impegno__:  Inglese: _commitment_.
 * __incarico__:  Inglese: _assignment_.
 * __indice analitico__: Elenco ordinato delle corrispondenze tra particolari termini importanti di un documento e la loro ubicazione in esso. Inglese: _index_.
@@ -65,7 +67,7 @@ Di seguito i termini del glossario:
 * __LaTeX__: Sistema di composizione tipografica che utilizza TeX come motore.
 * __legge della domanda__: Quanto più è grande qualcosa, tanto maggiore sarà la domanda per essa.
 * __legge di Parkinson__: Work expands to fill the time available. Inglese: _Parkinson's law_.
-* __malfunzionamento__:  Inglese: _failure_.
+* __malfunzionamento__: Esecuzione di un software difforme dalle attese. Inglese: _failure_.
 * __marcatore__: Istruzione che un programma deve eseguire per trattare nel modo specificato dall'utente una porzione di testo specificata. Inglese: _mark-up_.
 * __metodo di lavoro__: Metodo di lavoro. Inglese: _way of working_.
 * __metrica__: L'interpretazione di un sistema di unità di misura.
