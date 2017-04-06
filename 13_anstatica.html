@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Verifica e validazione: analisi statica - sweki</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Giorgio Giuffrè" />
+	<meta name="keywords" content="sweki, ingegneria, software, verifica, validazione, analisi, statica" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<link rel="prev" href="12_qualifica.html" />
+	<link rel="next" href="14_andinamica.html" />
+</head>
+
+<body>
+
+	<div id="header">
+		<h1>
+			<a class="prev" title="prev" href="12_qualifica.html">&lt;</a>
+			<a href="index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a>
+			<a class="next" title="next" href="14_andinamica.html">&gt;</a>
+		</h1>
+		<h2>la <span xml:lang="en">wiki</span> di Ingegneria del <span xml:lang="en">Software</span></h2>
+	</div>
+
+	<div id="content">
+		<h1>Verifica e validazione: analisi statica</h1>
+
+		<h2>Premessa</h2>
+		<p>Un <span xml:lang="en">software</span> di buona qualità deve possedere le capacità funzionali specificate nei requisiti e le caratteristiche non funzionali<sup class="footnote"><a id="txt1" href="#ftn1">[1]</a></sup> necessarie al buon funzionamento del sistema. Bisogna quindi verificare che il <span xml:lang="en">software</span> posseggna determinate caratteristiche di costruzione (progettazione, codifica, integrazione), d'uso e di funzionamento.</p>
+		<p>Tanto più un linguaggio di programmazione è espressivo, tanto tanto meno è verificabile. Nel fissare il liguaggio di programmazione (e nel sceglierne i costrutti), occorre quindi trovare il giusto compromesso tra <strong>funzionalità</strong> (potere espressivo) e <strong>integrità</strong> (costo di verifica). Inoltre, è bene adottare uno standard di codifica che tenga conto delle esigenze di verifica (per esempio, vietando alcuni costrutti): così facendo, si rende possibile una verifica che non sia retrospettiva ma che accompagna la codifica.</p>
+		<p>Infatti, il costo di rilevazione e correzione di un errore è tanto maggiore quanto più avanzato è lo stadio di sviluppo. Ecco perché ci interessa accompagnare la produzione con la verifica, invece di posticipare la verifica il più tardi possibile.</p>
+
+		<h2>Tracciamento</h2>
+		<p>Parte fondamentale dell'analisi statica è il <strong>tracciamento</strong>. Il tracciamento è una verifica atta a dimostrare due caratteristiche di una soluzione:
+		<ul>
+			<li><strong>Completezza</strong> della soluzione: tutti i requisiti sono soddisfatti; matematicamente, vuol dire che la soluzione è <em>condizione sufficiente</em> per il problema.</li>
+			<li><strong>Economicità</strong> della soluzione: nessuna funzionalità superflua, nessun componente ingiustificato; matematicamente, vuol dire che la soluzione è <em>condizione necessaria</em> per il problema.</li>
+		</ul>
+		<p>Il tracciamento ha luogo su ogni passaggio dello sviluppo (ramo discendente del modello a &quot;V&quot;) e su ogni passaggio della verifica (ramo ascendente).</p>
+
+		<h2>Tipi di analisi statica</h2>
+		<p>L'analisi statica si effettua con diversi metodi:</p>
+		<ul>
+			<li>analisi di flusso di controllo;</li>
+			<li>analisi di flusso dei dati;</li>
+			<li>analisi di flusso dell'informazione;</li>
+			<li>esecuzione simbolica;</li>
+			<li>verifica formale del codice;</li>
+			<li>verifica di limite;</li>
+			<li>analisi d'uso dello stack;</li>
+			<li>analisi temporale;</li>
+			<li>analisi d'interferenza;</li>
+			<li>analisi del codice oggetto.</li>
+		</ul>
+		<p>L'analisi statica costruisce modelli astratti del <span xml:lang="en">software</span> in esame; questi modelli considerano ogni programma come un grafo orientato e ne studiano i cammini possibili.</p>
+	</div>
+
+	<div id="footnotes">
+		<ol>
+			<li id="ftn1">Oggigiorno, i requisiti non funzionali pesano anche più di quelli funzionali: non bisogna più soltanto &quot;fare dei conti&quot; ma anche farli bene, velocemente, in modo responsivo...</li>
+		</ol>
+	</div>
+
+</body>
+</html>

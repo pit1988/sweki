@@ -1574,7 +1574,7 @@ Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzial
 
 
 		
-	\section{Verifica e validazione}
+	\section{Verifica e validazione: introduzione}
 
 
 		
@@ -1706,6 +1706,90 @@ Tra i metodi di lettura, due importanti sono \emph{inspection} (cerco cose speci
 
 		
 Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality assurance} (cioè garanzia di qualità). Questa attività è un controllo che non viene fatto dopo ma \emph{prima} di fare, per assicurare la qualità tempestivamente; viene svolta sui processi con i quali si sviluppa il prodotto (non sul prodotto stesso) ma si basa su un modello di qualità di prodotto (ad esempio ISO/IEC 9126).
+	
+
+
+		
+	\section{Verifica e validazione: analisi statica}
+
+
+		
+	\subsection{Premessa}
+
+		
+Un software di buona qualità deve possedere le capacità funzionali specificate nei requisiti e le caratteristiche non funzionali\footnote{Oggigiorno, i requisiti non funzionali pesano anche più di quelli funzionali: non bisogna più soltanto "fare dei conti" ma anche farli bene, velocemente, in modo responsivo...} necessarie al buon funzionamento del sistema. Bisogna quindi verificare che il software posseggna determinate caratteristiche di costruzione (progettazione, codifica, integrazione), d'uso e di funzionamento.
+		
+Tanto più un linguaggio di programmazione è espressivo, tanto tanto meno è verificabile. Nel fissare il liguaggio di programmazione (e nel sceglierne i costrutti), occorre quindi trovare il giusto compromesso tra \textbf{funzionalità} (potere espressivo) e \textbf{integrità} (costo di verifica). Inoltre, è bene adottare uno standard di codifica che tenga conto delle esigenze di verifica (per esempio, vietando alcuni costrutti): così facendo, si rende possibile una verifica che non sia retrospettiva ma che accompagna la codifica.
+		
+Infatti, il costo di rilevazione e correzione di un errore è tanto maggiore quanto più avanzato è lo stadio di sviluppo. Ecco perché ci interessa accompagnare la produzione con la verifica, invece di posticipare la verifica il più tardi possibile.
+
+		
+	\subsection{Tracciamento}
+
+		
+Parte fondamentale dell'analisi statica è il \textbf{tracciamento}. Il tracciamento è una verifica atta a dimostrare due caratteristiche di una soluzione:
+		
+	\begin{itemize}
+		
+			
+	\item \textbf{Completezza} della soluzione: tutti i requisiti sono soddisfatti; matematicamente, vuol dire che la soluzione è \emph{condizione sufficiente} per il problema.
+			
+	\item \textbf{Economicità} della soluzione: nessuna funzionalità superflua, nessun componente ingiustificato; matematicamente, vuol dire che la soluzione è \emph{condizione necessaria} per il problema.
+		
+	\end{itemize}
+
+		
+Il tracciamento ha luogo su ogni passaggio dello sviluppo (ramo discendente del modello a "V") e su ogni passaggio della verifica (ramo ascendente).
+
+		
+	\subsection{Tipi di analisi statica}
+
+		
+L'analisi statica si effettua con diversi metodi:
+		
+	\begin{itemize}
+		
+			
+	\item analisi di flusso di controllo;
+			
+	\item analisi di flusso dei dati;
+			
+	\item analisi di flusso dell'informazione;
+			
+	\item esecuzione simbolica;
+			
+	\item verifica formale del codice;
+			
+	\item verifica di limite;
+			
+	\item analisi d'uso dello stack;
+			
+	\item analisi temporale;
+			
+	\item analisi d'interferenza;
+			
+	\item analisi del codice oggetto.
+		
+	\end{itemize}
+
+		
+L'analisi statica costruisce modelli astratti del software in esame; questi modelli considerano ogni programma come un grafo orientato e ne studiano i cammini possibili.
+	
+
+
+		
+	\section{Verifica e validazione: analisi dinamica}
+
+
+		[...]
+	
+
+
+		
+	\section{Metodi e obiettivi di quantificazione}
+
+
+		[...]
 	
 
 
