@@ -985,13 +985,43 @@ La specifica tecnica (ST) segue l'analisi dei requisiti e descrive l'\textbf{arc
 	\subsection{Definizione di prodotto}
 
 		
-Dall'architettura logica procede l'\textbf{architettura di dettaglio}, descritta dalla definizione di prodotto (DP). Questo documento decompone l'architettura in moduli a granda più fine, finché ogni modulo ha dimensione, coesione, complessità e accoppiamento tali per cui i moduli possano essere sviluppati in parallelo dai programmatori. La DP deve fornire tutti i dettagli necessari alla codifica e alla verifica di ciascun modulo\footnote{La natura del termine "modulo" è determinata dal linguaggio di programmazione che verrà usato.}. La DP consente di stimare costi e tempi di realizzazione.
+Dall'architettura logica procede l'\textbf{architettura di dettaglio}, descritta dalla definizione di prodotto (DP). Questo documento decompone l'architettura in moduli a grana più fine, finché ogni modulo ha dimensione, coesione, complessità e accoppiamento tali per cui i moduli possano essere sviluppati in parallelo dai programmatori. La DP deve fornire tutti i dettagli necessari alla codifica e alla verifica di ciascun modulo\footnote{La natura del termine "modulo" è determinata dal linguaggio di programmazione che verrà usato.}. La DP consente di stimare costi e tempi di realizzazione.
 
 		
 	\subsection{Analisi dei requisiti}
 
 		
-Una delle preoccupazioni maggiori nel documentare l'analisi dei requisiti (AR) è il \textbf{tracciamento dei requisiti}. Tracciare un requisito significa motivarne l'esistenza, spiegando qual'è l'origine di tale requisito (che magari non era esplicito e quindi è stato dedotto da requisiti più espliciti) e badando a garantire la necessità e la sufficienza di ogni requisito. Per fare tutto questo si può usare una matrice, un grafo o una qualsiasi struttura dati appropriata. [... -> LUCIDI 19-20]
+Una delle preoccupazioni maggiori nel documentare l'analisi dei requisiti (AR) è il \textbf{tracciamento dei requisiti}. Tracciare un requisito significa motivarne l'esistenza, spiegando qual è l'origine di tale requisito (che magari non era esplicito e quindi è stato dedotto da requisiti più espliciti) e badando a garantire la necessità e la sufficienza di ogni requisito. Per fare tutto questo si può usare una matrice, un grafo o una qualsiasi struttura dati appropriata.
+
+		
+	\subsection{Manuale utente}
+
+		
+Il manuale utente (MU) ha la funzione di spiegare all'utente come utilizzare il prodotto. Chi lo redige deve stare attento allo stile: deve preferire frasi brevi, paragrafi focalizzati, uso di liste, stile semplice, terminologia precisa e uso della forma attiva dei verbi. Può essere di diversi tipi, a seconda del grado di esperienza dell'utente (manuale introduttivo, manuale completo...) e in diversi formati (cartaceo, PDF, ipertestuale...).
+
+		
+	\subsection{Tracciamenti}
+
+		
+In generale, i principali tracciamenti all'interno di un prodotto sono:
+		
+	\begin{itemize}
+		
+			
+	\item tra requisiti utente (capitolato) e requisiti software (AR);
+			
+	\item tra requisiti software (AR) e descrizione dei componenti (ST);
+			
+	\item tra test di unità e moduli della progettazione di dettaglio (DP);
+			
+	\item tra test di integrazione e componenti architetturali (ST);
+			
+	\item tra test di sistema e requisiti software (AR);
+			
+	\item tra test di accettazione e requisiti utente (capitolato).
+		
+	\end{itemize}
+
 	
 
 
@@ -1723,7 +1753,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[application logic] 
 
-			La parte di un software che è specifica di quel software e non è intesa per essere riusata in altri software. Inglese: \emph{application logic}.
+			La parte di un software che è specifica di quel software e non è intesa per essere riusata in altri software.
 			
 	\item[architettura] 
 
@@ -1735,7 +1765,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[baseline] 
 
-			Nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede. Inglese: \emph{baseline}.
+			Nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede.
 			
 	\item[basso accoppiamento] 
 
@@ -1743,7 +1773,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[best practice] 
 
-			La prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche. Inglese: \emph{best practice}.
+			La prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche.
 			
 	\item[bibliografia] 
 
@@ -1751,11 +1781,11 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[budget] 
 
-			Tempo e denaro a disposizione. Inglese: \emph{budget}.
+			Tempo e denaro a disposizione.
 			
 	\item[business logic] 
 
-			La parte di un software che ha a che fare con il dominio applicativo del software; questa parte è tipicamente riusabile e quindi condivisa tra diversi software che operano nello stesso dominio. Inglese: \emph{business logic}.
+			La parte di un software che ha a che fare con il dominio applicativo del software; questa parte è tipicamente riusabile e quindi condivisa tra diversi software che operano nello stesso dominio.
 			
 	\item[caos] 
 
@@ -1815,7 +1845,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[design pattern] 
 
-			Soluzione progettuale generale ad un problema ricorrente. Inglese: \emph{design pattern}.
+			Soluzione progettuale generale ad un problema ricorrente.
 			
 	\item[diagramma dei casi d'uso] 
 
@@ -1859,7 +1889,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[framework] 
 
-			Struttura di supporto su cui un software può essere organizzato e progettato. Inglese: \emph{framework}.
+			Struttura di supporto su cui un software può essere organizzato e progettato.
 			
 	\item[gestione della qualità] 
 
@@ -1903,7 +1933,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[inspection] 
 
-			Tecnica di analisi statica che consiste nell'eseguire una lettura mirata, alla ricerca di errori noti. Inglese: \emph{inspection}.
+			Tecnica di analisi statica che consiste nell'eseguire una lettura mirata, alla ricerca di errori noti.
 			
 	\item[integrazione continua] 
 
@@ -1911,7 +1941,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[LaTeX] 
 
-			Sistema di composizione tipografica che utilizza TeX come motore. Inglese: \emph{LaTeX}.
+			Sistema di composizione tipografica che utilizza TeX come motore.
 			
 	\item[legge della domanda] 
 
@@ -1939,7 +1969,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[milestone] 
 
-			Punto nel tempo associato ad un valore strategico. Inglese: \emph{milestone}.
+			Punto nel tempo associato ad un valore strategico.
 			
 	\item[misura] 
 
@@ -2027,7 +2057,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[quality assurance] 
 
-			Insieme di attività che valutano i processi con i quali un prodotto viene sviluppato. Inglese: \emph{quality assurance}.
+			Insieme di attività che valutano i processi con i quali un prodotto viene sviluppato.
 			
 	\item[quantificabile] 
 
@@ -2047,7 +2077,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[repository] 
 
-			Base di dati centralizzata nella quale risiedono, individualmente, tutti i CI di ogni baseline nella loro storia completa. Inglese: \emph{repository}.
+			Base di dati centralizzata nella quale risiedono, individualmente, tutti i CI di ogni baseline nella loro storia completa.
 			
 	\item[requisito] 
 
@@ -2107,7 +2137,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[scenario] 
 
-			Sequenza di passi che descrive un esempio di interazione con un sistema. Inglese: \emph{scenario}.
+			Sequenza di passi che descrive un esempio di interazione con un sistema.
 			
 	\item[sistema] 
 
@@ -2119,7 +2149,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[slack time] 
 
-			Quantità di tempo tra la data minima a partire da cui un evento può accadere e la data massima oltre la quale esso ritarda gli eventi successivi. Inglese: \emph{slack time}.
+			Quantità di tempo tra la data minima a partire da cui un evento può accadere e la data massima oltre la quale esso ritarda gli eventi successivi.
 			
 	\item[sommario] 
 
@@ -2131,7 +2161,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[stakeholder] 
 
-			Persona a vario titolo coinvolta nel ciclo di vita di un software che ha influenza sul prodotto o sul processo. Inglese: \emph{stakeholder}.
+			Persona a vario titolo coinvolta nel ciclo di vita di un software che ha influenza sul prodotto o sul processo.
 			
 	\item[standard di processo] 
 
@@ -2167,7 +2197,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[TeX] 
 
-			Linguaggio formale di composizione tipografica. Inglese: \emph{TeX}.
+			Linguaggio formale di composizione tipografica.
 			
 	\item[UML (Unified Modelling Language)] 
 
@@ -2199,7 +2229,7 @@ Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality as
 			
 	\item[walkthrough] 
 
-			Tecnica di analisi statica che consiste nell'eseguire una lettura critica, ad ampio spettro, senza l'assunzione di presupposti. Inglese: \emph{walkthrough}.
+			Tecnica di analisi statica che consiste nell'eseguire una lettura critica, ad ampio spettro, senza l'assunzione di presupposti.
 		
 	\end{description}
 

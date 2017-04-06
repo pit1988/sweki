@@ -65,10 +65,24 @@
 		</ul>
 
 		<h2>Definizione di prodotto</h2>
-		<p>Dall'architettura logica procede l'<strong>architettura di dettaglio</strong>, descritta dalla definizione di prodotto (<abbr title="Definizione di Prodotto">DP</abbr>). Questo documento decompone l'architettura in moduli a granda più fine, finché ogni modulo ha dimensione, coesione, complessità e accoppiamento tali per cui i moduli possano essere sviluppati in parallelo dai programmatori. La <abbr title="Definizione di Prodotto">DP</abbr> deve fornire tutti i dettagli necessari alla codifica e alla verifica di ciascun modulo<sup class="footnote"><a id="txt1" href="#ftn1">[1]</a></sup>. La <abbr title="Definizione di Prodotto">DP</abbr> consente di stimare costi e tempi di realizzazione.</p>
+		<p>Dall'architettura logica procede l'<strong>architettura di dettaglio</strong>, descritta dalla definizione di prodotto (<abbr title="Definizione di Prodotto">DP</abbr>). Questo documento decompone l'architettura in moduli a grana più fine, finché ogni modulo ha dimensione, coesione, complessità e accoppiamento tali per cui i moduli possano essere sviluppati in parallelo dai programmatori. La <abbr title="Definizione di Prodotto">DP</abbr> deve fornire tutti i dettagli necessari alla codifica e alla verifica di ciascun modulo<sup class="footnote"><a id="txt1" href="#ftn1">[1]</a></sup>. La <abbr title="Definizione di Prodotto">DP</abbr> consente di stimare costi e tempi di realizzazione.</p>
 
 		<h2>Analisi dei requisiti</h2>
-		<p>Una delle preoccupazioni maggiori nel documentare l'analisi dei requisiti (<abbr title="Analisi dei Requisiti">AR</abbr>) è il <strong>tracciamento dei requisiti</strong>. Tracciare un requisito significa motivarne l'esistenza, spiegando qual'è l'origine di tale requisito (che magari non era esplicito e quindi è stato dedotto da requisiti più espliciti) e badando a garantire la necessità e la sufficienza di ogni requisito. Per fare tutto questo si può usare una matrice, un grafo o una qualsiasi struttura dati appropriata. [... -> LUCIDI 19-20]</p>
+		<p>Una delle preoccupazioni maggiori nel documentare l'analisi dei requisiti (<abbr title="Analisi dei Requisiti">AR</abbr>) è il <strong>tracciamento dei requisiti</strong>. Tracciare un requisito significa motivarne l'esistenza, spiegando qual è l'origine di tale requisito (che magari non era esplicito e quindi è stato dedotto da requisiti più espliciti) e badando a garantire la necessità e la sufficienza di ogni requisito. Per fare tutto questo si può usare una matrice, un grafo o una qualsiasi struttura dati appropriata.</p>
+
+		<h2>Manuale utente</h2>
+		<p>Il manuale utente (<abbr title="Manuale Utente">MU</abbr>) ha la funzione di spiegare all'utente come utilizzare il prodotto. Chi lo redige deve stare attento allo stile: deve preferire frasi brevi, paragrafi focalizzati, uso di liste, stile semplice, terminologia precisa e uso della forma attiva dei verbi. Può essere di diversi tipi, a seconda del grado di esperienza dell'utente (manuale introduttivo, manuale completo...) e in diversi formati (cartaceo, <abbr title="Portable Document Format">PDF</abbr>, ipertestuale...).</p>
+
+		<h2>Tracciamenti</h2>
+		<p>In generale, i principali tracciamenti all'interno di un prodotto sono:</p>
+		<ul>
+			<li>tra requisiti utente (capitolato) e requisiti <span xml:lang="en">software</span> (<abbr title="Analisi dei Requisiti">AR</abbr>);</li>
+			<li>tra requisiti <span xml:lang="en">software</span> (<abbr title="Analisi dei Requisiti">AR</abbr>) e descrizione dei componenti (<abbr title="Specifica Tecnica">ST</abbr>);</li>
+			<li>tra test di unità e moduli della progettazione di dettaglio (<abbr title="Definizione di Prodotto">DP</abbr>);</li>
+			<li>tra test di integrazione e componenti architetturali (<abbr title="Specifica Tecnica">ST</abbr>);</li>
+			<li>tra test di sistema e requisiti <span xml:lang="en">software</span> (<abbr title="Analisi dei Requisiti">AR</abbr>);</li>
+			<li>tra test di accettazione e requisiti utente (capitolato).</li>
+		</ul>
 	</div>
 
 	<div id="footnotes">

@@ -15,15 +15,15 @@ Di seguito i termini del glossario:
 * __analisi dinamica__: Valutazione di un sistema (o di una sua componente) basata sul suo comportamento durante l'esecuzione. Inglese: _dynamic analysis_.
 * __analisi statica__: Valutazione di un sistema (o di una sua componente) basata sulla sua forma, struttura, contenuto o documentazione. Inglese: _static analysis_.
 * __analista (profilo professionale)__: Chi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista; fa l'analisi dei requisiti. Inglese: _analyst_.
-* __application logic__: La parte di un software che è specifica di quel software e non è intesa per essere riusata in altri software. Inglese: _application logic_.
+* __application logic__: La parte di un software che è specifica di quel software e non è intesa per essere riusata in altri software.
 * __architettura__: La struttura organizzativa di un sistema o componente. Inglese: _architecture_.
 * __attività__: Parte di un processo che dev'essere compiuta entro un determinato periodo di tempo. Inglese: _activity_.
-* __baseline__: Nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede. Inglese: _baseline_.
+* __baseline__: Nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede.
 * __basso accoppiamento__: Minimizzazione delle dipendenze tra i vari componenti di un sistema. Inglese: _loose coupling_.
-* __best practice__: La prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche. Inglese: _best practice_.
+* __best practice__: La prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche.
 * __bibliografia__: Elenco delle fonti di un documento. Inglese: _bibliografy_.
-* __budget__: Tempo e denaro a disposizione. Inglese: _budget_.
-* __business logic__: La parte di un software che ha a che fare con il dominio applicativo del software; questa parte è tipicamente riusabile e quindi condivisa tra diversi software che operano nello stesso dominio. Inglese: _business logic_.
+* __budget__: Tempo e denaro a disposizione.
+* __business logic__: La parte di un software che ha a che fare con il dominio applicativo del software; questa parte è tipicamente riusabile e quindi condivisa tra diversi software che operano nello stesso dominio.
 * __caos__: Contrario di organizzazione. Inglese: _chaos_.
 * __caso d'uso__: Insieme di scenari che hanno in comune un obiettivo per un utente. Inglese: _use case_.
 * __ciclo di vita (di un prodotto)__: Insieme degli stati che il prodotto assume, dal concepimento al ritiro. Inglese: _software product life cycle_.
@@ -38,7 +38,7 @@ Di seguito i termini del glossario:
 * __configurazione__: Di quali parti si compone un prodotto e il modo in cui esse stanno assieme. Inglese: _configuration_.
 * __controllore della qualità (profilo professionale)__: Funzione aziendale (e non ruolo di progetto) che accerta la qualità dei prodotti.
 * __criticità__: Distanza troppo breve tra attività dipendenti.
-* __design pattern__: Soluzione progettuale generale ad un problema ricorrente. Inglese: _design pattern_.
+* __design pattern__: Soluzione progettuale generale ad un problema ricorrente.
 * __diagramma dei casi d'uso__: Grafo orientato che mostra gli attori, i casi d'uso e le relazioni tra essi: ogni nodo è un attore o un caso d'uso; ogni arco è una comunicazione tra un attore e un caso d'uso oppure una relazione (di estensione, inclusione o generalizzazione) tra due casi d'uso o tra due attori. Inglese: _use case diagram_.
 * __diagramma di Gantt__: Diagramma che rappresenta la durata, la sequenzialità e il parallelismo delle attività di un progetto. Inglese: _Gantt diagram_.
 * __diagramma PERT (Project Evaluation and Review Technique)__: Rete che rappresenta le dipendenze temporali (e le criticità) tra attività di un progetto. Inglese: _PERT diagram_.
@@ -49,7 +49,7 @@ Di seguito i termini del glossario:
 * __efficienza__: Contenimento dei consumi per raggiungere un obiettivo. Inglese: _efficiency_.
 * __errore__:  Inglese: _error_.
 * __fase (di un ciclo di vita)__: Durata temporale (che non si ripete) entro uno stato del ciclo di vita e un altro. Inglese: _phase_.
-* __framework__: Struttura di supporto su cui un software può essere organizzato e progettato. Inglese: _framework_.
+* __framework__: Struttura di supporto su cui un software può essere organizzato e progettato.
 * __gestione della qualità__: L'insieme dei processi che assicurano che prodotti e implementazioni di processi rispettino gli obiettivi di qualità (di un'organizzazione) e soddisfino gli stakeholder. Inglese: _quality management_.
 * __glossario__: Elenco dei significati dei termini più rilevanti di un documento. Inglese: _glossary_.
 * __guasto__:  Inglese: _fault_.
@@ -60,16 +60,16 @@ Di seguito i termini del glossario:
 * __infrastruttura (di un progetto)__: Tutte le risorse hardware e software del progetto.
 * __ingegneria__: L'applicazione di princìpi scientifici e matematici per scopi pratici. Inglese: _engineering_.
 * __ingegneria del software__: Applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, al funzionamento e al mantenimento del software. Inglese: _software engineering_.
-* __inspection__: Tecnica di analisi statica che consiste nell'eseguire una lettura mirata, alla ricerca di errori noti. Inglese: _inspection_.
+* __inspection__: Tecnica di analisi statica che consiste nell'eseguire una lettura mirata, alla ricerca di errori noti.
 * __integrazione continua__: Pratica di sviluppo in cui i membri di un progetto integrano il loro lavoro frequentemente (quotidianamente) in modo automatizzato. Inglese: _continuous integration_.
-* __LaTeX__: Sistema di composizione tipografica che utilizza TeX come motore. Inglese: _LaTeX_.
+* __LaTeX__: Sistema di composizione tipografica che utilizza TeX come motore.
 * __legge della domanda__: Quanto più è grande qualcosa, tanto maggiore sarà la domanda per essa.
 * __legge di Parkinson__: Work expands to fill the time available. Inglese: _Parkinson's law_.
 * __malfunzionamento__:  Inglese: _failure_.
 * __marcatore__: Istruzione che un programma deve eseguire per trattare nel modo specificato dall'utente una porzione di testo specificata. Inglese: _mark-up_.
 * __metodo di lavoro__: Metodo di lavoro. Inglese: _way of working_.
 * __metrica__: L'interpretazione di un sistema di unità di misura.
-* __milestone__: Punto nel tempo associato ad un valore strategico. Inglese: _milestone_.
+* __milestone__: Punto nel tempo associato ad un valore strategico.
 * __misura__: Risultato di una misurazione.
 * __misurazione quantitativa__: L'uso di una metrica per assegnare un valore su una scala predefinita. Inglese: _quantitative measurement_.
 * __modello__: Astrazione della realtà. Inglese: _model_.
@@ -91,12 +91,12 @@ Di seguito i termini del glossario:
 * __protocollo__: Accordo di interfacce. Inglese: _protocol_.
 * __qualifica__: Verifica e validazione ("V&V"), cioè quei processi che assicurano la qualità di un prodotto durante il suo ciclo di vita.
 * __qualità__: L'insieme delle caratteristiche di un'entità che ne determinano la capacità di soddisfare esigenze espresse e implicite. Inglese: _quality_.
-* __quality assurance__: Insieme di attività che valutano i processi con i quali un prodotto viene sviluppato. Inglese: _quality assurance_.
+* __quality assurance__: Insieme di attività che valutano i processi con i quali un prodotto viene sviluppato.
 * __quantificabile__: Esprimibile in modo quantitativo. Inglese: _quantifiable_.
 * __raccomandazione__: Norma di progetto suggerita, non sottoposta a verifica. Inglese: _recommendation_.
 * __ramo (di un repository)__: Insieme di versioni di file sorgente in evoluzione. Inglese: _branch_.
 * __regola__: Norma di progetto sottoposta a verifica. Inglese: _rule_.
-* __repository__: Base di dati centralizzata nella quale risiedono, individualmente, tutti i CI di ogni baseline nella loro storia completa. Inglese: _repository_.
+* __repository__: Base di dati centralizzata nella quale risiedono, individualmente, tutti i CI di ogni baseline nella loro storia completa.
 * __requisito__: Bisogno da soddisfare o vincolo da rispettare. Inglese: _requirement_.
 * __requisito di processo__: Vincolo sullo sviluppo del prodotto.
 * __requisito di prodotto__: Bisogno o vincolo sul prodotto da sviluppare.
@@ -111,13 +111,13 @@ Di seguito i termini del glossario:
 * __rischio__: Opposto di opportunità. Inglese: _risk_.
 * __ritiro (di un prodotto)__: Momento in cui il prodotto cessa di essere seguito dai suoi creatori. Inglese: _retirement_.
 * __ruolo__: Funzione aziendale assegnata a progetto; identifica capacità e compiti.
-* __scenario__: Sequenza di passi che descrive un esempio di interazione con un sistema. Inglese: _scenario_.
+* __scenario__: Sequenza di passi che descrive un esempio di interazione con un sistema.
 * __sistema__: Insieme di componenti organizzati per compiere una o più funzioni. Inglese: _system_.
 * __sistematico__: Che abbraccia un metodo. Inglese: _systematic_.
-* __slack time__: Quantità di tempo tra la data minima a partire da cui un evento può accadere e la data massima oltre la quale esso ritarda gli eventi successivi. Inglese: _slack time_.
+* __slack time__: Quantità di tempo tra la data minima a partire da cui un evento può accadere e la data massima oltre la quale esso ritarda gli eventi successivi.
 * __sommario__: Breve riassunto del contenuto di un documento. Inglese: _abstract_.
 * __SQL (Structured Query Language__: Linguaggio di programmazione dichiarativo basato sull'algebra relazionale che serve a creare, manipolare e interrogare basi di dati relazionali. Inglese: _SQL_.
-* __stakeholder__: Persona a vario titolo coinvolta nel ciclo di vita di un software che ha influenza sul prodotto o sul processo. Inglese: _stakeholder_.
+* __stakeholder__: Persona a vario titolo coinvolta nel ciclo di vita di un software che ha influenza sul prodotto o sul processo.
 * __standard di processo__: Riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettività di casi afferenti ad un certo dominio applicativo. Inglese: _process standard_.
 * __strumento__: Insieme di concetti e di metodi, con delle tecnologie di supporto. Inglese: _tool_.
 * __tecnica__: Ricetta applicata agli strumenti disponibili; modo con cui si usa uno strumento. Inglese: _technique_.
@@ -126,7 +126,7 @@ Di seguito i termini del glossario:
 * __test di sistema__: Test che verifica la copertura dei requisiti da parte del sistema in esame. Inglese: _system test_.
 * __test di unità__: Test che verifica la correttezza di una singola unità del sistema in esame. Inglese: _unit test_.
 * __test di validazione__: Test che verifica il soddisfacimento del capitolato d'appalto da parte del sistema in esame. Inglese: _validation test_.
-* __TeX__: Linguaggio formale di composizione tipografica. Inglese: _TeX_.
+* __TeX__: Linguaggio formale di composizione tipografica.
 * __UML (Unified Modelling Language)__: Famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software. Inglese: _UML_.
 * __unità__: Insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. È anche la più piccola quantità di software che conviene verificare da sola. Inglese: _unit_.
 * __validazione__: La garanzia che un prodotto soddisfi i requisiti da cui è nato. Inglese: _validation_.
@@ -134,5 +134,5 @@ Di seguito i termini del glossario:
 * __verifica__: Valutare se un prodotto soddisfa requisiti, regole o altre condizioni necessarie. Inglese: _verification_.
 * __verificatore (profilo professionale)__: Chi verifica il lavoro dei programmatori.
 * __versione (di un CI)__: Istanza identificata di un CI nel tempo. Inglese: _version_.
-* __walkthrough__: Tecnica di analisi statica che consiste nell'eseguire una lettura critica, ad ampio spettro, senza l'assunzione di presupposti. Inglese: _walkthrough_.
+* __walkthrough__: Tecnica di analisi statica che consiste nell'eseguire una lettura critica, ad ampio spettro, senza l'assunzione di presupposti.
 
