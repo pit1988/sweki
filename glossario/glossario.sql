@@ -605,17 +605,62 @@ NULL), # non 'measurement', a quanto pare :|
 'La parte di un software che è specifica di quel software e non è intesa per essere riusata in altri software.',
 'application logic'),
 
+('quality_assurance',
+'quality assurance',
+'Insieme di attività che valutano i processi con i quali un prodotto viene sviluppato.',
+'quality assurance'),
+
+('inspection',
+'inspection',
+'Tecnica di analisi statica che consiste nell\'eseguire una lettura mirata, alla ricerca di errori noti.',
+'inspection'),
+
+('walkthrough',
+'walkthrough',
+'Tecnica di analisi statica che consiste nell\'eseguire una lettura critica, ad ampio spettro, senza l\'assunzione di presupposti.',
+'walkthrough'),
+
+('test_di_unità',
+'test di unità',
+'Test che verifica la correttezza di una singola unità del sistema in esame.',
+'unit test'),
+
+('test_di_integrazione',
+'test di integrazione',
+'Test che verifica la correttezza dell\'integrazione di un insieme di unità in una componente del sistema in esame.',
+'integration test'),
+
+('test_di_sistema',
+'test di sistema',
+'Test che verifica la copertura dei requisiti da parte del sistema in esame.',
+'system test'),
+
+('test_di_validazione',
+'test di validazione',
+'Test che verifica il soddisfacimento del capitolato d\'appalto da parte del sistema in esame.',
+'validation test'),
+
 ('guasto',
 'guasto',
-NULL,
+NULL, # TODO
 'fault'),
 
-('guasto',
-'guasto',
-NULL,
+('errore',
+'errore',
+NULL, # TODO
 'error'),
 
-('guasto',
-'guasto',
-NULL,
-'failure');
+('malfunzionamento',
+'malfunzionamento',
+NULL, # TODO
+'failure'),
+
+('analisi_statica',
+'analisi statica',
+'Valutazione di un sistema (o di una sua componente) basata sulla sua forma, struttura, contenuto o documentazione.',
+'static analysis'),
+
+('analisi_dinamica',
+'analisi dinamica',
+'Valutazione di un sistema (o di una sua componente) basata sul suo comportamento durante l\'esecuzione.',
+'dynamic analysis');

@@ -41,9 +41,9 @@
 		<p>La verifica è un processo analitico. Si può fare in due forme:</p>
 		<ul>
 			<li>analisi statica (senza eseguire il <span xml:lang="en">software</span>);</li>
-			<li>analisi dinamica (con esecuzione del <span xml:lang="en">software</span>).</li>
+			<li>analisi dinamica (eseguendo il <span xml:lang="en">software</span> o una sua parte).</li>
 		</ul>
-		<p>L'analisi statica viene fatta prima di quella dinamica: quest'ultima necessita di un prodotto eseguibile, mentre l'analisi statica si può applicare già a <em>frammenti</em> di prodotto.</p>
+		<p>L'analisi statica viene fatta prima di quella dinamica: quest'ultima necessita di (una parte di) <span xml:lang="en">software</span> eseguibile, mentre l'analisi statica si può applicare già a <em>frammenti</em> di prodotto.</p>
 
 		<h2>Test</h2>
 		<p>L'analisi dinamica viene effettuata tramite prove (<em><strong>test</strong></em>). Un test, per essere utile, dev'essere facilmente ripetibile; per questo, bisogna sempre:</p>
@@ -58,27 +58,40 @@
 			<li>Un <strong>driver</strong>, cioè un &quot;pilota&quot; che guidi l'esecuzione del test. Ogni test di unità dev'essere chiamato da qualcuno: costui è il driver.</li>
 			<li>Uno <strong>stub</strong>, cioè un &quot;calco&quot; che sostituisca del codice non ancora scritto: una componente passiva fittizia che simula una parte del sistema<sup class="footnote"><a id="txt1" href="#ftn1">[1]</a></sup>.</li>
 		</ul>
-		<p>Lo stub è quindi il duale del driver: mentre il primo simula le dipendenze della procedura testata (quelle che accrescono il <em>fan-out</em>, per capirci), il secondo simula un chiamante di tale procedura (che contribuisce al <em>fan-in</em>).</p>
+		<p>Lo stub è quindi il duale del driver: mentre il primo simula le dipendenze della procedura testata (quelle che ne accrescono il <em>fan-out</em>, per capirci), il secondo simula un chiamante di tale procedura (che contribuisce al <em>fan-in</em>).</p>
 
 		<h2>Tipi di test</h2>
 		<p>Distinguiamo quattro tipi di test, a seconda del livello a cui vengono eseguiti nell'architettura:</p>
 		<ul>
-			<li>test di unità;</li>
-			<li>test di integrazione;</li>
-			<li>test di sistema;</li>
-			<li>test di accettazione e collaudo.</li>
+			<li>collaudo o test di accettazione (stabilito durante l'analisi del capitolato d'appalto);</li>
+			<li>test di sistema (stabiliti durante l'analisi dei requisiti);</li>
+			<li>test di integrazione (stabiliti durante la progettazione logica);</li>
+			<li>test di unità (stabiliti durante la progettazione di dettaglio).</li>
 		</ul>
-		<p>Nell'architettura di un <span xml:lang="en">software</span>, l'unità è la più piccola quantità di <span xml:lang="en">software</span> che conviene verificare da sola. Un <strong>test di unità</strong> è un'attività di analisi dinamica che verifica la correttezza del codice. Può essere responsabilità del programmatore che ha implementato l'unità, di un verificatore indipendente oppure (meglio!) di un automa.</p>
+		<p>Nell'architettura di un <span xml:lang="en">software</span>, l'unità è la più piccola quantità di <span xml:lang="en">software</span> che conviene verificare da sola. Un <strong>test di unità</strong> è un'attività di analisi dinamica che verifica la correttezza del codice. Può essere responsabilità del programmatore che ha implementato l'unità<sup class="footnote"><a id="txt2" href="#ftn2">[2]</a></sup>, di un verificatore indipendente oppure (meglio!) di un automa. Questi test vengono svolti con un alto grado di parallelismo (rispecchiando lo stesso parallelismo che caratterizza il lavoro dei programmatori).</p>
 		<p>I <strong>test di integrazione</strong> servono per verificare il sistema in modo <em>incrementale</em>. Questi test stanno a livello di componente e integrano il funzionamento di più unità.</p>
 		<p>Il <strong>test di sistema</strong> serve ad accertare la copertura dei requisiti. È un'attività interna all'organizzazione, mentre il <strong>collaudo</strong> è la corrispondente attività esterna (supervisionata dal committente). Al collaudo segue il rilascio del prodotto e la fine della commessa (con eventuale manutenzione).</p>
 		<p>Infine, esistono anche i <strong>test di regressione</strong>: a seguito di un test andato male e di una relativa correzione, i test di regressione sono l'insieme di test necessari ad accertare he la correzione non causi errori nelle parti del sistema che dipendono da essa. La regressione può essere complicata e dev'essere studiata <em xml:lang="la">ad hoc</em>.</p>
 
-		<p>[in costruzione...]</p>
+		<h2>Forme di analisi statica</h2>
+		<p>L'analisi statica si applica ad ogni prodotto intermedio (non solo <span xml:lang="en">software</span>) per tutti i processi attivi nel progetto. Distinguiamo due tecniche principali per fare analisi statica:</p>
+		<ul>
+			<li>Metodi di lettura (<em xml:lang="en">desk check</em>), svolti da un umano che controlla coerenza, completezza e correttezza; impiegati solo per prodotti semplici.</li>
+			<li>Metodi formali, svolti da macchine.</li>
+		</ul>
+		<p>Tra i metodi di lettura, due importanti sono <em xml:lang="en">inspection</em> (cerco cose specifiche) e <em xml:lang="en">walkthrough</em> (attraversamento a pettine: non so cosa cerco ma cerco ovunque), che si completano a vicenda.</p>
+		<p><strong><em xml:lang="en">Inspection</em></strong> consiste nell'eseguire una lettura mirata, alla ricerca di errori noti. Si basa sull'individuazione di errori presupposti e fa <em xml:lang="en">profiling</em> del prodotto in esame. Si suddivide nelle seguenti attività: pianificazione; definizione di una <em>lista di controllo</em><sup class="footnote"><a id="txt3" href="#ftn3">[3]</a></sup>; lettura; correzione dei difetti. È una tecnica molto più rapida del <em xml:lang="en">walkthrough</em>. In termini statistici, <em xml:lang="en">inspection</em> può generare falsi negativi.</p>
+		<p><strong><em xml:lang="en">Walkthrough</em></strong>, invece, consiste nell'eseguire una lettura critica del prodotto in esame. È una lettura &quot;a largo spettro&quot;, senza l'assunzione di presupposti. Si articola nelle seguenti attività: pianificazione; lettura; discussione; correzione dei difetti. Rispetto all'<em xml:lang="en">inspection</em>, richiede più attenzione. In termini statistici, <em xml:lang="en">walkthrough</em> può generare falsi positivi.</p>
+
+		<h2><em xml:lang="en">Quality assurance</em></h2>
+		<p>Analisi statica e analisi dinamica sono parte dell'attività di <em xml:lang="en">quality assurance</em> (cioè garanzia di qualità). Questa attività è un controllo che non viene fatto dopo ma <em>prima</em> di fare, per assicurare la qualità tempestivamente; viene svolta sui processi con i quali si sviluppa il prodotto (non sul prodotto stesso) ma si basa su un modello di qualità di prodotto (ad esempio <abbr title="International Organitazion for Standardization">ISO</abbr>/<abbr title="International Electrotechnical Commission">IEC</abbr> 9126).</p>
 	</div>
 
 	<div id="footnotes">
 		<ol>
 			<li id="ftn1">La parte di sistema simulata dallo stub <strong>non</strong> è oggetto del test in esecuzione.</li>
+			<li id="ftn2">Per le unità più semplici.</li>
+			<li id="ftn3">La lista di controllo (o <em xml:lang="en">checklist</em>) evolve nel tempo, in quanto viene continuamente migliorata.</li>
 		</ol>
 	</div>
 

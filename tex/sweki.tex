@@ -795,6 +795,8 @@ Validare i requisiti vuol dire controllare che essi definiscano effettivamente i
 
 		
 La risoluzione di un problema attraversa due fasi: la prima è \textbf{analitica}, la seconda \textbf{sintetica}. Nella fase analitica il problema viene decomposto, approfondito nel dettaglio per capire di quali parti è formato (approccio \emph{top-down}); in quella sintetica, invece, si ricompongono i pezzi trovati al passo precedente e si sintetizza una soluzione per il problema (approccio \emph{bottom-up}). Se la fase analitica ("qual è il problema?") corrisponde grosso modo all'attività di analisi dei requisiti, quella sintetica ("come risolvere il problema?") è proprio la progettazione. Formalmente, la progettazione è la definizione\footnote{Il termine "definizione" va inteso sia come processo sia come il risultato di tale processo.} dell'architettura, dei componenti, delle interfacce e delle altre caratteristiche di un sistema o componente.
+		
+L'architettura di un software è, tipicamente, un insieme di \textbf{moduli} che si raggruppano in \textbf{unità}, che a loro volta si raggruppano in \textbf{componenti}, che vanno a formare un \textbf{sistema}. Acronimo tattico per ricordarsi: SCUM.
 
 		
 	\subsection{Progettazione architetturale e progettazione di dettaglio}
@@ -1542,6 +1544,142 @@ Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzial
 
 
 		
+	\section{Verifica e validazione}
+
+
+		
+	\subsection{Definizione}
+
+		
+Verifica e validazione sono due processi strettamente correlati. A questa coppia di processi si dà spesso il nome di "\textbf{qualifica}" o "V\&{}V". Il loro obiettivo è assicurare la qualità del prodotto durante il suo ciclo di vita.
+		
+Questi due processi rispondono a due domande separate:
+		
+	\begin{itemize}
+		
+			
+	\item Verifica: Did I build the system right?
+			
+	\item Validazione: Did I build the right system?
+		
+	\end{itemize}
+
+		
+La \textbf{verifica} attiene alla coerenza, completezza e correttezza del prodotto. È un processo che si applica ad ogni "segmento" temporale di un progetto (ad ogni prodotto intermedio) per accertare che le attività svolte in tale segmento non abbiano introdotto errori nel prodotto.
+		
+La \textbf{validazione}, invece, non si applica ad un particolare segmento temporale ma è una conferma finale, una \emph{self-fulfilling prophecy} che accerta la conformità di un prodotto alle attese; essa fornisce una prova oggettiva di come le specifiche del prodotto siano conformi al suo scopo e alle esigenze degli utenti. La validazione, a differenza della verifica, coinvolge sempre il committente.
+
+		
+	\subsection{Forme di verifica}
+
+		
+La verifica è un processo analitico. Si può fare in due forme:
+		
+	\begin{itemize}
+		
+			
+	\item analisi statica (senza eseguire il software);
+			
+	\item analisi dinamica (eseguendo il software o una sua parte).
+		
+	\end{itemize}
+
+		
+L'analisi statica viene fatta prima di quella dinamica: quest'ultima necessita di (una parte di) software eseguibile, mentre l'analisi statica si può applicare già a \emph{frammenti} di prodotto.
+
+		
+	\subsection{Test}
+
+		
+L'analisi dinamica viene effettuata tramite prove (\emph{\textbf{test}}). Un test, per essere utile, dev'essere facilmente ripetibile; per questo, bisogna sempre:
+		
+	\begin{itemize}
+		
+			
+	\item tener conto dell'ambiente (non solo dell'input);
+			
+	\item specificare le pre-condizioni e i comportamenti attesi;
+			
+	\item descrivere le procedure per eseguire il test e per analizzarne i risultati.
+		
+	\end{itemize}
+
+		
+Per fare ciò, servono tre strumenti:
+		
+	\begin{itemize}
+		
+			
+	\item Un \textbf{logger}, che scriva l'esito della prova in un file.
+			
+	\item Un \textbf{driver}, cioè un "pilota" che guidi l'esecuzione del test. Ogni test di unità dev'essere chiamato da qualcuno: costui è il driver.
+			
+	\item Uno \textbf{stub}, cioè un "calco" che sostituisca del codice non ancora scritto: una componente passiva fittizia che simula una parte del sistema\footnote{La parte di sistema simulata dallo stub non è oggetto del test in esecuzione.}.
+		
+	\end{itemize}
+
+		
+Lo stub è quindi il duale del driver: mentre il primo simula le dipendenze della procedura testata (quelle che ne accrescono il \emph{fan-out}, per capirci), il secondo simula un chiamante di tale procedura (che contribuisce al \emph{fan-in}).
+
+		
+	\subsection{Tipi di test}
+
+		
+Distinguiamo quattro tipi di test, a seconda del livello a cui vengono eseguiti nell'architettura:
+		
+	\begin{itemize}
+		
+			
+	\item collaudo o test di accettazione (stabilito durante l'analisi del capitolato d'appalto);
+			
+	\item test di sistema (stabiliti durante l'analisi dei requisiti);
+			
+	\item test di integrazione (stabiliti durante la progettazione logica);
+			
+	\item test di unità (stabiliti durante la progettazione di dettaglio).
+		
+	\end{itemize}
+
+		
+Nell'architettura di un software, l'unità è la più piccola quantità di software che conviene verificare da sola. Un \textbf{test di unità} è un'attività di analisi dinamica che verifica la correttezza del codice. Può essere responsabilità del programmatore che ha implementato l'unità\footnote{La parte di sistema simulata dallo stub non è oggetto del test in esecuzione.}, di un verificatore indipendente oppure (meglio!) di un automa. Questi test vengono svolti con un alto grado di parallelismo (rispecchiando lo stesso parallelismo che caratterizza il lavoro dei programmatori).
+		
+I \textbf{test di integrazione} servono per verificare il sistema in modo \emph{incrementale}. Questi test stanno a livello di componente e integrano il funzionamento di più unità.
+		
+Il \textbf{test di sistema} serve ad accertare la copertura dei requisiti. È un'attività interna all'organizzazione, mentre il \textbf{collaudo} è la corrispondente attività esterna (supervisionata dal committente). Al collaudo segue il rilascio del prodotto e la fine della commessa (con eventuale manutenzione).
+		
+Infine, esistono anche i \textbf{test di regressione}: a seguito di un test andato male e di una relativa correzione, i test di regressione sono l'insieme di test necessari ad accertare he la correzione non causi errori nelle parti del sistema che dipendono da essa. La regressione può essere complicata e dev'essere studiata \emph{ad hoc}.
+
+		
+	\subsection{Forme di analisi statica}
+
+		
+L'analisi statica si applica ad ogni prodotto intermedio (non solo software) per tutti i processi attivi nel progetto. Distinguiamo due tecniche principali per fare analisi statica:
+		
+	\begin{itemize}
+		
+			
+	\item Metodi di lettura (\emph{desk check}), svolti da un umano che controlla coerenza, completezza e correttezza; impiegati solo per prodotti semplici.
+			
+	\item Metodi formali, svolti da macchine.
+		
+	\end{itemize}
+
+		
+Tra i metodi di lettura, due importanti sono \emph{inspection} (cerco cose specifiche) e \emph{walkthrough} (attraversamento a pettine: non so cosa cerco ma cerco ovunque), che si completano a vicenda.
+		
+\textbf{\emph{Inspection}} consiste nell'eseguire una lettura mirata, alla ricerca di errori noti. Si basa sull'individuazione di errori presupposti e fa \emph{profiling} del prodotto in esame. Si suddivide nelle seguenti attività: pianificazione; definizione di una \emph{lista di controllo}\footnote{La parte di sistema simulata dallo stub non è oggetto del test in esecuzione.}; lettura; correzione dei difetti. È una tecnica molto più rapida del \emph{walkthrough}. In termini statistici, \emph{inspection} può generare falsi negativi.
+		
+\textbf{\emph{Walkthrough}}, invece, consiste nell'eseguire una lettura critica del prodotto in esame. È una lettura "a largo spettro", senza l'assunzione di presupposti. Si articola nelle seguenti attività: pianificazione; lettura; discussione; correzione dei difetti. Rispetto all'\emph{inspection}, richiede più attenzione. In termini statistici, \emph{walkthrough} può generare falsi positivi.
+
+		
+	\subsection{\emph{Quality assurance}}
+
+		
+Analisi statica e analisi dinamica sono parte dell'attività di \emph{quality assurance} (cioè garanzia di qualità). Questa attività è un controllo che non viene fatto dopo ma \emph{prima} di fare, per assicurare la qualità tempestivamente; viene svolta sui processi con i quali si sviluppa il prodotto (non sul prodotto stesso) ma si basa su un modello di qualità di prodotto (ad esempio ISO/IEC 9126).
+	
+
+
+		
 	\newpage
 	\appendix
 	\section{Glossario}
@@ -1570,6 +1708,14 @@ Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzial
 	\item[analisi dei requisiti] 
 
 			Definire cosa bisogna fare. Inglese: \emph{requirements analysis}.
+			
+	\item[analisi dinamica] 
+
+			Valutazione di un sistema (o di una sua componente) basata sul suo comportamento durante l'esecuzione. Inglese: \emph{dynamic analysis}.
+			
+	\item[analisi statica] 
+
+			Valutazione di un sistema (o di una sua componente) basata sulla sua forma, struttura, contenuto o documentazione. Inglese: \emph{static analysis}.
 			
 	\item[analista (profilo professionale)] 
 
@@ -1605,7 +1751,7 @@ Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzial
 			
 	\item[budget] 
 
-			Tempo e denaro. Inglese: \emph{budget}.
+			Tempo e denaro a disposizione. Inglese: \emph{budget}.
 			
 	\item[business logic] 
 
@@ -1649,7 +1795,7 @@ Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzial
 			
 	\item[componente] 
 
-			Insieme di unità funzionalmente coese; parte di un sistema. In Java, rappresentabile da uno o più package. Inglese: \emph{component}.
+			Insieme di unità funzionalmente coese; parte di un sistema. (In Java, rappresentabile da uno o più package.) Inglese: \emph{component}.
 			
 	\item[configuration item (CI)] 
 
@@ -1703,6 +1849,10 @@ Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzial
 
 			Contenimento dei consumi per raggiungere un obiettivo. Inglese: \emph{efficiency}.
 			
+	\item[errore] 
+
+			 Inglese: \emph{error}.
+			
 	\item[fase (di un ciclo di vita)] 
 
 			Durata temporale (che non si ripete) entro uno stato del ciclo di vita e un altro. Inglese: \emph{phase}.
@@ -1711,9 +1861,17 @@ Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzial
 
 			Struttura di supporto su cui un software può essere organizzato e progettato. Inglese: \emph{framework}.
 			
+	\item[gestione della qualità] 
+
+			L'insieme dei processi che assicurano che prodotti e implementazioni di processi rispettino gli obiettivi di qualità (di un'organizzazione) e soddisfino gli stakeholder. Inglese: \emph{quality management}.
+			
 	\item[glossario] 
 
 			Elenco dei significati dei termini più rilevanti di un documento. Inglese: \emph{glossary}.
+			
+	\item[guasto] 
+
+			 Inglese: \emph{fault}.
 			
 	\item[impegno] 
 
@@ -1743,6 +1901,10 @@ Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzial
 
 			Applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, al funzionamento e al mantenimento del software. Inglese: \emph{software engineering}.
 			
+	\item[inspection] 
+
+			Tecnica di analisi statica che consiste nell'eseguire una lettura mirata, alla ricerca di errori noti. Inglese: \emph{inspection}.
+			
 	\item[integrazione continua] 
 
 			Pratica di sviluppo in cui i membri di un progetto integrano il loro lavoro frequentemente (quotidianamente) in modo automatizzato. Inglese: \emph{continuous integration}.
@@ -1758,6 +1920,10 @@ Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzial
 	\item[legge di Parkinson] 
 
 			Work expands to fill the time available. Inglese: \emph{Parkinson's law}.
+			
+	\item[malfunzionamento] 
+
+			 Inglese: \emph{failure}.
 			
 	\item[marcatore] 
 
@@ -1789,7 +1955,7 @@ Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzial
 			
 	\item[modulo] 
 
-			L'elemento atomico della progettazione; tipicamente una classe o un interfaccia. Inglese: \emph{module}.
+			L'elemento atomico dell'architettura di un software; tipicamente una classe o un interfaccia. Inglese: \emph{module}.
 			
 	\item[organizzazione] 
 
@@ -1853,11 +2019,15 @@ Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzial
 			
 	\item[qualifica] 
 
-			Verifica e validazione ("V\&{}V").
+			Verifica e validazione ("V\&{}V"), cioè quei processi che assicurano la qualità di un prodotto durante il suo ciclo di vita.
 			
 	\item[qualità] 
 
 			L'insieme delle caratteristiche di un'entità che ne determinano la capacità di soddisfare esigenze espresse e implicite. Inglese: \emph{quality}.
+			
+	\item[quality assurance] 
+
+			Insieme di attività che valutano i processi con i quali un prodotto viene sviluppato. Inglese: \emph{quality assurance}.
 			
 	\item[quantificabile] 
 
@@ -1979,6 +2149,22 @@ Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzial
 
 			Strumento sul quale si opera. Inglese: \emph{technology}.
 			
+	\item[test di integrazione] 
+
+			Test che verifica la correttezza dell'integrazione di un insieme di unità in una componente del sistema in esame. Inglese: \emph{integration test}.
+			
+	\item[test di sistema] 
+
+			Test che verifica la copertura dei requisiti da parte del sistema in esame. Inglese: \emph{system test}.
+			
+	\item[test di unità] 
+
+			Test che verifica la correttezza di una singola unità del sistema in esame. Inglese: \emph{unit test}.
+			
+	\item[test di validazione] 
+
+			Test che verifica il soddisfacimento del capitolato d'appalto da parte del sistema in esame. Inglese: \emph{validation test}.
+			
 	\item[TeX] 
 
 			Linguaggio formale di composizione tipografica. Inglese: \emph{TeX}.
@@ -2010,6 +2196,10 @@ Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzial
 	\item[versione (di un CI)] 
 
 			Istanza identificata di un CI nel tempo. Inglese: \emph{version}.
+			
+	\item[walkthrough] 
+
+			Tecnica di analisi statica che consiste nell'eseguire una lettura critica, ad ampio spettro, senza l'assunzione di presupposti. Inglese: \emph{walkthrough}.
 		
 	\end{description}
 
