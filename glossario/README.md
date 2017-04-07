@@ -20,14 +20,14 @@ Di seguito i termini del glossario:
 * __attività__: Parte di un processo che dev'essere compiuta entro un determinato periodo di tempo. Inglese: _activity_.
 * __baseline__: Nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede.
 * __basso accoppiamento__: Minimizzazione delle dipendenze tra i vari componenti di un sistema. Inglese: _loose coupling_.
-* __batteria di prove__:  Inglese: _test suite_.
+* __batteria di prove__: Insieme di casi di prova. Inglese: _test suite_.
 * __best practice__: La prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche.
 * __bibliografia__: Elenco delle fonti di un documento. Inglese: _bibliografy_.
 * __budget__: Tempo e denaro a disposizione.
 * __business logic__: La parte di un software che ha a che fare con il dominio applicativo del software; questa parte è tipicamente riusabile e quindi condivisa tra diversi software che operano nello stesso dominio.
 * __caos__: Contrario di organizzazione. Inglese: _chaos_.
 * __caso d'uso__: Insieme di scenari che hanno in comune un obiettivo per un utente. Inglese: _use case_.
-* __caso di prova__:  Inglese: _test case_.
+* __caso di prova__: Terna di valori (input, output, ambiente) che specifica il comportamento che un sistema (o parte di esso) deve avere in un caso specifico. Inglese: _test case_.
 * __ciclo di vita (di un prodotto)__: Insieme degli stati che il prodotto assume, dal concepimento al ritiro. Inglese: _software product life cycle_.
 * __ciclo di vita dello sviluppo (di un prodotto)__: Parte del ciclo di vita di un prodotto che riguarda il suo sviluppo. Inglese: _software development life cycle_.
 * __ciclo PDCA (o ciclo di Deming)__: Schema iterativo di auto-miglioramento che consiste di quattro punti: Plan (individuare obiettivi di miglioramento), Do (eseguire ciò che si è pianificato), Check (verificare se ha funzionato) e Act (agire per correggersi). Inglese: _PDCA cycle_.
@@ -65,12 +65,11 @@ Di seguito i termini del glossario:
 * __inspection__: Tecnica di analisi statica che consiste nell'eseguire una lettura mirata, alla ricerca di errori noti.
 * __integrazione continua__: Pratica di sviluppo in cui i membri di un progetto integrano il loro lavoro frequentemente (quotidianamente) in modo automatizzato. Inglese: _continuous integration_.
 * __LaTeX__: Sistema di composizione tipografica che utilizza TeX come motore.
-* __legge della domanda__: Quanto più è grande qualcosa, tanto maggiore sarà la domanda per essa.
 * __legge di Parkinson__: Work expands to fill the time available. Inglese: _Parkinson's law_.
 * __malfunzionamento__: Esecuzione di un software difforme dalle attese. Inglese: _failure_.
 * __marcatore__: Istruzione che un programma deve eseguire per trattare nel modo specificato dall'utente una porzione di testo specificata. Inglese: _mark-up_.
 * __metodo di lavoro__: Metodo di lavoro. Inglese: _way of working_.
-* __metrica__: L'interpretazione di un sistema di unità di misura.
+* __metrica__: L'interpretazione di un sistema di unità di misura. Inglese: _metric_.
 * __milestone__: Punto nel tempo associato ad un valore strategico.
 * __misura__: Risultato di una misurazione.
 * __misurazione quantitativa__: L'uso di una metrica per assegnare un valore su una scala predefinita. Inglese: _quantitative measurement_.
@@ -83,7 +82,7 @@ Di seguito i termini del glossario:
 * __processo definito__: Specializzazione del processo standard necessaria per adattarlo ad esigenze specifiche di progetto.
 * __processo di progetto__: Istanza di un processo definito che utilizza risorse aziendali per raggiungere obiettivi prefissati (processo calato nella realtà aziendale).
 * __processo software__: Processo che porta ad un prodotto software. Inglese: _software process_.
-* __profilo professionale__: Insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto.
+* __profilo professionale__: Insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto. Inglese: _professional profile_.
 * __progettazione__: Definizione dell'architettura, delle componenti, delle interfacce e delle altre caratteristiche di un sistema o componente. Inglese: _design_.
 * __progettazione architetturale__: Definizione delle componenti e di come esse sono organizzate in un sistema. Inglese: _architectural design_.
 * __progettazione di dettaglio__: Definizione del comportamento delle componenti di un sistema, con un livello di dettaglio tale per cui le componenti possano essere implementate. Inglese: _detailed design_.
@@ -98,6 +97,7 @@ Di seguito i termini del glossario:
 * __raccomandazione__: Norma di progetto suggerita, non sottoposta a verifica. Inglese: _recommendation_.
 * __ramo (di un repository)__: Insieme di versioni di file sorgente in evoluzione. Inglese: _branch_.
 * __regola__: Norma di progetto sottoposta a verifica. Inglese: _rule_.
+* __rendimento decrescente, legge del__: Man mano che si aumenta lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre più. Inglese: _diminishing returns_.
 * __repository__: Base di dati centralizzata nella quale risiedono, individualmente, tutti i CI di ogni baseline nella loro storia completa.
 * __requisito__: Bisogno da soddisfare o vincolo da rispettare. Inglese: _requirement_.
 * __requisito di processo__: Vincolo sullo sviluppo del prodotto.
@@ -108,11 +108,11 @@ Di seguito i termini del glossario:
 * __requisito utente__: Richiesta generale, ad alto livello. Inglese: _user requirement_.
 * __responsabile di progetto (profilo professionale)__: Chi pianifica il progetto, assegna le persone ai ruoli giusti e rappresenta il progetto presso il fornitore e il committente. Inglese: _project manager_.
 * __rete__: Grafo orientato. Inglese: _network_.
-* __revisione esterna__: Ispezione ufficiale di un documento condotta da un'organizzazione indipendente da chi ha prodotto i documenti. Inglese: _audit_.
-* __revisione interna__:  Inglese: _joint review_.
+* __revisione esterna__: Ispezione ufficiale di un prodotto condotta da un'organizzazione indipendente da chi ha sviluppato il prodotto. Inglese: _audit_.
+* __revisione interna__: Ispezione di un prodotto interna all'organizzazione che lo sviluppa. Inglese: _joint review_.
 * __rischio__: Opposto di opportunità. Inglese: _risk_.
 * __ritiro (di un prodotto)__: Momento in cui il prodotto cessa di essere seguito dai suoi creatori. Inglese: _retirement_.
-* __ruolo__: Funzione aziendale assegnata a progetto; identifica capacità e compiti.
+* __ruolo__: Funzione aziendale assegnata a progetto; identifica capacità e compiti. Inglese: _role_.
 * __scenario__: Sequenza di passi che descrive un esempio di interazione con un sistema.
 * __sistema__: Insieme di componenti organizzati per compiere una o più funzioni. Inglese: _system_.
 * __sistematico__: Che abbraccia un metodo. Inglese: _systematic_.
@@ -124,10 +124,13 @@ Di seguito i termini del glossario:
 * __strumento__: Insieme di concetti e di metodi, con delle tecnologie di supporto. Inglese: _tool_.
 * __tecnica__: Ricetta applicata agli strumenti disponibili; modo con cui si usa uno strumento. Inglese: _technique_.
 * __tecnologia__: Strumento sul quale si opera. Inglese: _technology_.
+* __test__: Attività di analisi dinamica che osserva i risultati dell'esecuzione di un sistema (o parte di esso) sotto determinate condizioni.
 * __test di integrazione__: Test che verifica la correttezza dell'integrazione di un insieme di unità in una componente del sistema in esame. Inglese: _integration test_.
 * __test di sistema__: Test che verifica la copertura dei requisiti da parte del sistema in esame. Inglese: _system test_.
 * __test di unità__: Test che verifica la correttezza di una singola unità del sistema in esame. Inglese: _unit test_.
 * __test di validazione__: Test che verifica il soddisfacimento del capitolato d'appalto da parte del sistema in esame. Inglese: _validation test_.
+* __test funzionale__: Test di unità che analizza la logica interna del codice di un'unità. Inglese: _functional test_.
+* __test strutturale__: Test di unità che analizza soltanto il comportamento dell'unità e non la sua logica interna. Inglese: _structural test_.
 * __TeX__: Linguaggio formale di composizione tipografica.
 * __UML (Unified Modelling Language)__: Famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software. Inglese: _UML_.
 * __unità__: Insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. È anche la più piccola quantità di software che conviene verificare da sola. Inglese: _unit_.

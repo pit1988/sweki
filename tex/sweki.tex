@@ -1810,6 +1810,20 @@ Compito del test è trovare errori nel codice. Distinguiamo tre livelli di error
 
 		
 Quindi: un guasto cause un errore, il quale può produrre un malfunzionamento. (Nota: il glossario IEEE non concorda pienamente con le definizioni sopra.)
+		
+Organizziamo il \emph{testing} nelle seguenti classi:
+		
+	\begin{itemize}
+		
+			
+	\item \textbf{caso di prova} (\emph{test case}) — una tripla \textless{}ingresso, uscita, ambiente\textgreater{};
+			
+	\item \textbf{batteria di prove} (\emph{test suite}) — un insieme di casi di prova;
+			
+	\item \textbf{prova} — una procedura di prova e una batteria di prove.
+		
+	\end{itemize}
+
 
 		
 	\subsection{Compromesso}
@@ -1817,7 +1831,71 @@ Quindi: un guasto cause un errore, il quale può produrre un malfunzionamento. (
 		
 Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test sufficienti a verificare il prodotto e lo sforzo allocato a progetto. Sul \emph{testing} vale infatti la "legge del \textbf{rendimento decrescente}\footnote{È interessante notare che il testing viene fatto sempre: se non lo fa il fornitore, lo farà l'utente. Ovviemante, dare all'utente un software non testato è una cosa che non va fatta.}": man mano che aumento lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre più. Questo avviene, ad esempio, quando un produttore aumenta la produzione e, a un certo punto, oltrepassa la domanda: i profitti iniziano ad essere negativi. Così, arriva un tempo in cui fare altri test non aggiunge null, cioè non trova errori (e la funzione primaria dei test è trovare errori).
 
-		[In allestimento...]
+		
+	\subsection{Criteri guida per i test}
+
+		
+Oggetto di una prova può essere:
+		
+	\begin{itemize}
+		
+			
+	\item il sistema nel suo complesso (per i test di sistema);
+			
+	\item parti del sistema in relazione funzionale, d'uso, di comportamento o di struttura (per i test di integrazione);
+			
+	\item singole unità (per i test di unità).
+		
+	\end{itemize}
+
+		
+L'obiettivo di ogni prova dev'essere specificato in modo chiaro per ogni caso di prova (\emph{test case}): un test è buono se è ripetibile. Per essere ripetibile, ogni test deve stare anche allo stato, all'ambiente. Il Piano di Qualifica specifica quali e quante sono le prove da effettuare. I test non sostituiscono la progettazione; piuttosto, sono speculari ad essa.
+		
+Un test deve cercare di far fallire il software: dev'essere "cinico"! I test che falliscono devono essere eseguiti sempre, dal momento in cui sono falliti e il software è stato corretto: Any failed execution must yield a test case, to be permanently included in the project's test suite (Bertrand Meyer).
+		
+All'origine, un test va specificato in fase di progettazione; dopo essere stato implementato ed eseguito, esso va tenuto in un archivio, come documentazione dell'attività di \emph{testing}.
+
+		
+	\subsection{Test di unità}
+
+		
+I test di unità sono naturalmente più numerosi dei test di integrazione e di unità: circa due terzi dei difetti rilevati tramite analisi dinamica sono dovuti ai test di unità.
+		
+Un concetto fondamentale nei test di unità è quello di \textbf{copertura} (\emph{coverage}).
+		
+[...]
+		
+Distinguiamo due categorie di test di unità:
+		
+	\begin{itemize}
+		
+			
+	\item Un \textbf{test funzionale} è un test a scatola chiusa (\emph{black box}). Fa riferimento alla specifica di un'unità e osserva il suo comportamento dal di fuori; dati in ingresso che producono un medesimo comportamento funzionale costituiscono una classe di equivalenza e sono un caso di prova.
+			
+	\item Un \textbf{test strutturale} è un test a scatola aperta (\emph{white box}): verifica la logica interna del codice dell'unità. Persegue la massima copertura\footnote{È interessante notare che il testing viene fatto sempre: se non lo fa il fornitore, lo farà l'utente. Ovviemante, dare all'utente un software non testato è una cosa che non va fatta.}; dati in ingresso che attivano un medesimo percorso costituiscono un caso di prova.
+		
+	\end{itemize}
+
+		
+Dobbiamo eseguire i test funzionali prima di quelli strutturali, se non vogliamo rischiare di analizzare una struttura che non svolge il compito giusto. I test funzionali vanno sempre integrati con test strutturali.
+		
+[...]
+
+		
+	\subsection{Test di integrazione}
+
+		% [strategie d'integrazione...]
+
+		% [test d'integrazione...]
+
+		
+[...]
+
+		
+	\subsection{Test di sistema}
+
+		
+[...]
 	
 
 
@@ -1893,7 +1971,7 @@ Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test s
 			
 	\item[batteria di prove] 
 
-			 Inglese: \emph{test suite}.
+			Insieme di casi di prova. Inglese: \emph{test suite}.
 			
 	\item[best practice] 
 
@@ -1921,7 +1999,7 @@ Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test s
 			
 	\item[caso di prova] 
 
-			 Inglese: \emph{test case}.
+			Terna di valori (input, output, ambiente) che specifica il comportamento che un sistema (o parte di esso) deve avere in un caso specifico. Inglese: \emph{test case}.
 			
 	\item[ciclo di vita (di un prodotto)] 
 
@@ -2071,10 +2149,6 @@ Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test s
 
 			Sistema di composizione tipografica che utilizza TeX come motore.
 			
-	\item[legge della domanda] 
-
-			Quanto più è grande qualcosa, tanto maggiore sarà la domanda per essa.
-			
 	\item[legge di Parkinson] 
 
 			Work expands to fill the time available. Inglese: \emph{Parkinson's law}.
@@ -2093,7 +2167,7 @@ Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test s
 			
 	\item[metrica] 
 
-			L'interpretazione di un sistema di unità di misura.
+			L'interpretazione di un sistema di unità di misura. Inglese: \emph{metric}.
 			
 	\item[milestone] 
 
@@ -2145,7 +2219,7 @@ Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test s
 			
 	\item[profilo professionale] 
 
-			Insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto.
+			Insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto. Inglese: \emph{professional profile}.
 			
 	\item[progettazione] 
 
@@ -2203,6 +2277,10 @@ Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test s
 
 			Norma di progetto sottoposta a verifica. Inglese: \emph{rule}.
 			
+	\item[rendimento decrescente, legge del] 
+
+			Man mano che si aumenta lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre più. Inglese: \emph{diminishing returns}.
+			
 	\item[repository] 
 
 			Base di dati centralizzata nella quale risiedono, individualmente, tutti i CI di ogni baseline nella loro storia completa.
@@ -2245,11 +2323,11 @@ Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test s
 			
 	\item[revisione esterna] 
 
-			Ispezione ufficiale di un documento condotta da un'organizzazione indipendente da chi ha prodotto i documenti. Inglese: \emph{audit}.
+			Ispezione ufficiale di un prodotto condotta da un'organizzazione indipendente da chi ha sviluppato il prodotto. Inglese: \emph{audit}.
 			
 	\item[revisione interna] 
 
-			 Inglese: \emph{joint review}.
+			Ispezione di un prodotto interna all'organizzazione che lo sviluppa. Inglese: \emph{joint review}.
 			
 	\item[rischio] 
 
@@ -2261,7 +2339,7 @@ Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test s
 			
 	\item[ruolo] 
 
-			Funzione aziendale assegnata a progetto; identifica capacità e compiti.
+			Funzione aziendale assegnata a progetto; identifica capacità e compiti. Inglese: \emph{role}.
 			
 	\item[scenario] 
 
@@ -2307,6 +2385,10 @@ Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test s
 
 			Strumento sul quale si opera. Inglese: \emph{technology}.
 			
+	\item[test] 
+
+			Attività di analisi dinamica che osserva i risultati dell'esecuzione di un sistema (o parte di esso) sotto determinate condizioni.
+			
 	\item[test di integrazione] 
 
 			Test che verifica la correttezza dell'integrazione di un insieme di unità in una componente del sistema in esame. Inglese: \emph{integration test}.
@@ -2322,6 +2404,14 @@ Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test s
 	\item[test di validazione] 
 
 			Test che verifica il soddisfacimento del capitolato d'appalto da parte del sistema in esame. Inglese: \emph{validation test}.
+			
+	\item[test funzionale] 
+
+			Test di unità che analizza la logica interna del codice di un'unità. Inglese: \emph{functional test}.
+			
+	\item[test strutturale] 
+
+			Test di unità che analizza soltanto il comportamento dell'unità e non la sua logica interna. Inglese: \emph{structural test}.
 			
 	\item[TeX] 
 

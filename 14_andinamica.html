@@ -40,17 +40,53 @@
 			<li><strong>Guasto</strong> o difetto (<em xml:lang="en">fault</em>): causa dell'errore; può essere un guasto del computer o del <span xml:lang="en">software</span>. I guasti possono essere malfunzionamenti di un sotto-sistema: i sistemi <span xml:lang="en">software</span> sono sistemi gerarchici (annidati).</li>
 		</ul>
 		<p>Quindi: un guasto cause un errore, il quale può produrre un malfunzionamento. (Nota: il glossario IEEE non concorda pienamente con le definizioni sopra.)</p>
+		<p>Organizziamo il <em xml:lang="en">testing</em> nelle seguenti classi:</p>
+		<ul>
+			<li><strong>caso di prova</strong> (<em xml:lang="en">test case</em>) &mdash; una tripla &lt;ingresso, uscita, ambiente&gt;;</li>
+			<li><strong>batteria di prove</strong> (<em xml:lang="en">test suite</em>) &mdash; un insieme di casi di prova;</li>
+			<li><strong>prova</strong> &mdash; una procedura di prova e una batteria di prove.</li>
+		</ul>
 
 		<h2>Compromesso</h2>
 		<p>Esiste un compromesso, come tra efficienza ed efficacia, tra il numero di test sufficienti a verificare il prodotto e lo sforzo allocato a progetto. Sul <em xml:lang="en">testing</em> vale infatti la &quot;legge del <strong>rendimento decrescente</strong><sup class="footnote"><a id="txt2" href="#ftn2">[2]</a></sup>&quot;: man mano che aumento lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre più. Questo avviene, ad esempio, quando un produttore aumenta la produzione e, a un certo punto, oltrepassa la domanda: i profitti iniziano ad essere negativi. Così, arriva un tempo in cui fare altri test non aggiunge null, cioè non trova errori (e la funzione primaria dei test è trovare errori).</p>
 
-		[In allestimento...]
+		<h2>Criteri guida per i test</h2>
+		<p>Oggetto di una prova può essere:</p>
+		<ul>
+			<li>il sistema nel suo complesso (per i test di sistema);</li>
+			<li>parti del sistema in relazione funzionale, d'uso, di comportamento o di struttura (per i test di integrazione);</li>
+			<li>singole unità (per i test di unità).</li>
+		</ul>
+		<p>L'obiettivo di ogni prova dev'essere specificato in modo chiaro per ogni caso di prova (<em>test case</em>): un test è buono se è ripetibile. Per essere ripetibile, ogni test deve stare anche allo stato, all'ambiente. Il Piano di Qualifica specifica quali e quante sono le prove da effettuare. I test non sostituiscono la progettazione; piuttosto, sono speculari ad essa.</p>
+		<p>Un test deve cercare di far fallire il <span xml:lang="en">software</span>: dev'essere &quot;cinico&quot;! I test che falliscono devono essere eseguiti sempre, dal momento in cui sono falliti e il <span xml:lang="en">software</span> è stato corretto: <q>Any failed execution must yield a test case, to be permanently included in the project's test suite</q> (Bertrand Meyer).</p>
+		<p>All'origine, un test va specificato in fase di progettazione; dopo essere stato implementato ed eseguito, esso va tenuto in un archivio, come documentazione dell'attività di <em xml:lang="en">testing</em>.</p>
+
+		<h2>Test di unità</h2>
+		<p>I test di unità sono naturalmente più numerosi dei test di integrazione e di unità: circa due terzi dei difetti rilevati tramite analisi dinamica sono dovuti ai test di unità.</p>
+		<p>Un concetto fondamentale nei test di unità è quello di <strong>copertura</strong> (<em xml:lang="en">coverage</em>).</p>
+		<p>[...]</p>
+		<p>Distinguiamo due categorie di test di unità:</p>
+		<ul>
+			<li>Un <strong>test funzionale</strong> è un test a scatola chiusa (<em xml:lang="en">black box</em>). Fa riferimento alla specifica di un'unità e osserva il suo comportamento dal di fuori; dati in ingresso che producono un medesimo comportamento funzionale costituiscono una classe di equivalenza e sono un caso di prova.</li>
+			<li>Un <strong>test strutturale</strong> è un test a scatola aperta (<em xml:lang="en">white box</em>): verifica la logica interna del codice dell'unità. Persegue la massima copertura<sup class="footnote"><a id="txt3" href="#ftn3">[3]</a></sup>; dati in ingresso che attivano un medesimo percorso costituiscono un caso di prova.</li>
+		</ul>
+		<p>Dobbiamo eseguire i test funzionali prima di quelli strutturali, se non vogliamo rischiare di analizzare una struttura che non svolge il compito giusto. I test funzionali vanno sempre integrati con test strutturali.</p>
+		<p>[...]</p>
+
+		<h2>Test di integrazione</h2>
+		<!-- [strategie d'integrazione...] -->
+		<!-- [test d'integrazione...] -->
+		<p>[...]</p>
+
+		<h2>Test di sistema</h2>
+		<p>[...]</p>
 	</div>
 
 	<div id="footnotes">
 		<ol>
 			<li id="ftn1">È interessante notare che il <em xml:lang="en">testing</em> viene fatto sempre: se non lo fa il fornitore, lo farà l'utente. Ovviemante, dare all'utente un <span xml:lang="en">software</span> non testato è una cosa che non va fatta.</li>
 			<li id="ftn2">In inglese <em>diminishing returns</em>.</li>
+			<li id="ftn3">La copertura interessa soltanto i test strutturali, non quelli funzionali.</li>
 		</ol>
 	</div>
 

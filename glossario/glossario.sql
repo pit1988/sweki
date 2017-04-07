@@ -173,7 +173,7 @@ NULL,
 ('ruolo',
 'ruolo',
 'Funzione aziendale assegnata a progetto; identifica capacità e compiti.',
-NULL),
+'role'),
 
 ('allocazione_di_risorse',
 'allocazione di risorse (per un progetto)',
@@ -183,7 +183,7 @@ NULL),
 ('profilo_professionale',
 'profilo professionale',
 'Insieme di competenze (tecnologiche e metodologiche) e un\'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l\'assunzione di un ruolo in un progetto.',
-NULL),
+'professional profile'),
 
 ('analista',
 'analista (profilo professionale)',
@@ -262,12 +262,12 @@ NULL),
 
 ('revisione_esterna',
 'revisione esterna',
-'Ispezione ufficiale di un documento condotta da un\'organizzazione indipendente da chi ha prodotto i documenti.',
+'Ispezione ufficiale di un prodotto condotta da un\'organizzazione indipendente da chi ha sviluppato il prodotto.',
 'audit'),
 
 ('revisione_interna',
 'revisione interna',
-NULL,
+'Ispezione di un prodotto interna all\'organizzazione che lo sviluppa.',
 'joint review'),
 
 ('rete',
@@ -289,11 +289,6 @@ NULL),
 'legge di Parkinson',
 'Work expands to fill the time available.',
 'Parkinson\'s law'),
-
-('legge_della_domanda',
-'legge della domanda',
-'Quanto più è grande qualcosa, tanto maggiore sarà la domanda per essa.',
-NULL),
 
 ('CoCoMo',
 'CoCoMo (Constructive Cost Model)',
@@ -583,7 +578,7 @@ NULL),
 ('metrica',
 'metrica',
 'L\'interpretazione di un sistema di unità di misura.',
-NULL),
+'metric'), # metric?
 
 ('misurazione_quantitativa',
 'misurazione quantitativa',
@@ -620,6 +615,11 @@ NULL), # non 'measurement', a quanto pare :|
 'Tecnica di analisi statica che consiste nell\'eseguire una lettura critica, ad ampio spettro, senza l\'assunzione di presupposti.',
 'walkthrough'),
 
+('test',
+'test',
+'Attività di analisi dinamica che osserva i risultati dell\'esecuzione di un sistema (o parte di esso) sotto determinate condizioni.',
+'test'),
+
 ('test_di_unità',
 'test di unità',
 'Test che verifica la correttezza di una singola unità del sistema in esame.',
@@ -639,6 +639,16 @@ NULL), # non 'measurement', a quanto pare :|
 'test di validazione',
 'Test che verifica il soddisfacimento del capitolato d\'appalto da parte del sistema in esame.',
 'validation test'),
+
+('test_strutturale',
+'test strutturale',
+'Test di unità che analizza soltanto il comportamento dell\'unità e non la sua logica interna.',
+'structural test'),
+
+('test_funzionale',
+'test funzionale',
+'Test di unità che analizza la logica interna del codice di un\'unità.',
+'functional test'),
 
 ('guasto',
 'guasto',
@@ -667,10 +677,15 @@ NULL), # non 'measurement', a quanto pare :|
 
 ('caso_di_prova',
 'caso di prova',
-NULL, # TODO
+'Terna di valori (input, output, ambiente) che specifica il comportamento che un sistema (o parte di esso) deve avere in un caso specifico.',
 'test case'),
 
 ('batteria_di_prove',
 'batteria di prove',
-NULL, # TODO
-'test suite');
+'Insieme di casi di prova.',
+'test suite'),
+
+('rendimento_decrescente',
+'rendimento decrescente, legge del',
+'Man mano che si aumenta lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre più.',
+'diminishing returns');
