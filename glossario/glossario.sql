@@ -420,6 +420,11 @@ NULL),
 'L\'insieme di persone, di ruoli, di procedure e l\'infrastruttura la cui qualità determina la produttività del progetto.',
 'work environment'),
 
+('produttività',
+'produttività',
+'Rapporto tra valore e costo.',
+'productivity'),
+
 ('metodo_di_lavoro',
 'metodo di lavoro',
 'Metodo di lavoro.',

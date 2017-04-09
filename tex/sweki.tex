@@ -1929,7 +1929,93 @@ I test di sistema verificano il comportamento del sistema rispetto ai suoi \text
 	\section{Metodi e obiettivi di quantificazione}
 
 
-		[In allestimento...]
+		
+	\subsection{Misurare}
+
+		
+Misurare è un'attività fondamentale che compiamo quotidianamente: You can't control what you can't measure afferma Tom DeMarco, informatico e ingegnere del software. Misurare serve a conoscere, a valutare e a decidere; è un'attività che è alla base della cibernetica\footnote{La cibernetica si occupa del controllo di attuatori, grazie a misurazioni raccolte da sensori.}.
+		
+Purtroppo le misure rischiano di essere distorte, a causa di semplificazioni e imprecisioni. Per accertare la bontà di una misura essa dev'essere oggettiva, cioè deve garantire:
+		
+	\begin{itemize}
+		
+			
+	\item ripetibilità
+			
+	\item confrontabilità
+			
+	\item confidenza
+		
+	\end{itemize}
+
+
+		
+	\subsection{Definizioni}
+
+		
+Definiziamo la \textbf{misurazione} come il processo che assegna numeri o simboli a entità del mondo reale. Risultato di una misurazione è una \textbf{misura}. Infine, definiamo una \textbf{metrica} come un insieme di regole atte all'interpretazione di un sistema di unità di misura; ogni metrica fornisce anche delle procedure per compiere misurazioni.
+
+		
+	\subsection{Misurazione del software}
+
+		
+Nella produzione di software, le metriche sono strumenti di valutazione e controllo. Cosa ci interessa misurare in questo ambito? ci interessa valutare lo stato di:
+		
+	\begin{itemize}
+		
+			
+	\item processi (per valutarne la qualità);
+			
+	\item progetti (per effettuare stime, preventivi e consuntivi);
+			
+	\item prodotti (per valutarne la qualità);
+			
+	\item risorse (per capirne il consumo).
+		
+	\end{itemize}
+
+		
+Gli attributi a cui le misurazioni assegnano valori stanno in due categorie:
+		
+	\begin{itemize}
+		
+			
+	\item gli attributi interni (riguardano la qualità interna) sono misurabili rispetto alle entità;
+			
+	\item gli attributi esterni (riguardano la qualità esterna) sono misurabili rispetto all'ambiente.
+		
+	\end{itemize}
+
+		
+La misurazione rischia di essere retrospettiva; ci interessa, invece, avere misure che siano il più vicino possibile al tempo di correzione: si deve misurare in modo \textbf{proattivo}, non reattivo.
+		
+Anche per la misurazione, ISO ha uno standard: ISO/IEC 15939. Questo standard afferma, a riguardo dei \textbf{bisogni informativi}, the information needs are based on goals, constraints, risks, and problems which originate from the technical and mgmt process. CMMI suggerisce di determinare tali bisogni nelle seguenti aree:
+		
+	\begin{itemize}
+		
+			
+	\item gestione dei requisiti;
+			
+	\item progettazione e implementazione;
+			
+	\item verifica e validazione;
+			
+	\item \emph{quality assurance};
+			
+	\item gestione della configurazione;
+			
+	\item gestione di progetto;
+			
+	\item analisi dei rischi e analisi delle decisioni;
+			
+	\item allenamento.
+		
+	\end{itemize}
+
+		
+Ad esempio, il responsabile di progetto può essere interessato a misurare il \emph{lead time} (cioè il tempo tra un ordine di sviluppo e la relativa consegna); e il \emph{lead time} è inversamente proporzionale alla grandezza di ogni requisito, per cui un analista può essere interessato a misurare quanto sono grandi i requisiti, oltre a sapere quanto sono verificabili o quanto il prodotto soddisfa i requisiti.
+		
+Quando si trova un difetto, l'istinto sarebbe di correggerlo subito. Tuttavia sarebbe bene, prima, valutare il modo migliore per correggere il difetto con un buon rapporto beneficio/costi; questa è una misurazione che interessa chi si occupa della gestione dei cambiamenti (\emph{change management}).
 	
 
 
@@ -2246,6 +2332,10 @@ I test di sistema verificano il comportamento del sistema rispetto ai suoi \text
 	\item[processo software] 
 
 			Processo che porta ad un prodotto software. Inglese: \emph{software process}.
+			
+	\item[produttività] 
+
+			Rapporto tra valore e costo. Inglese: \emph{productivity}.
 			
 	\item[profilo professionale] 
 

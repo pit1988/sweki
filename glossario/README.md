@@ -83,6 +83,7 @@ Di seguito i termini del glossario:
 * __processo definito__: Specializzazione del processo standard necessaria per adattarlo ad esigenze specifiche di progetto.
 * __processo di progetto__: Istanza di un processo definito che utilizza risorse aziendali per raggiungere obiettivi prefissati (processo calato nella realtà aziendale).
 * __processo software__: Processo che porta ad un prodotto software. Inglese: _software process_.
+* __produttività__: Rapporto tra valore e costo. Inglese: _productivity_.
 * __profilo professionale__: Insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto. Inglese: _professional profile_.
 * __progettazione__: Definizione dell'architettura, delle componenti, delle interfacce e delle altre caratteristiche di un sistema o componente. Inglese: _design_.
 * __progettazione architetturale__: Definizione delle componenti e di come esse sono organizzate in un sistema. Inglese: _architectural design_.
