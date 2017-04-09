@@ -16,7 +16,8 @@ sed 's/&lt;/\\textless{}/g' _sweki_tmp_0 > _sweki_tmp_1
 sed 's/&gt;/\\textgreater{}/g' _sweki_tmp_1 > _sweki_tmp_0
 sed "s/&apos;/\'/g" _sweki_tmp_0 > _sweki_tmp_1
 sed 's/&mdash;/---/g' _sweki_tmp_1 > _sweki_tmp_0
-sed 's/&sdot;/\\cdot{}/g' _sweki_tmp_1 > _sweki_tmp_0
+sed 's/&sdot;/\\cdot{}/g' _sweki_tmp_0 > _sweki_tmp_1
+sed 's/%/\\%/g' _sweki_tmp_1 > _sweki_tmp_0
 
 cat _sweki_tmp_0
 rm _sweki_tmp_0

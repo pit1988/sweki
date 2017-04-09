@@ -63,23 +63,34 @@
 
 		<h2>Test di unità</h2>
 		<p>I test di unità sono naturalmente più numerosi dei test di integrazione e di unità: circa due terzi dei difetti rilevati tramite analisi dinamica sono dovuti ai test di unità.</p>
-		<p>Un concetto fondamentale nei test di unità è quello di <strong>copertura</strong> (<em xml:lang="en">coverage</em>).</p>
-		<p>[...]</p>
+		<p>Un concetto fondamentale nei test di unità è quello di <strong>copertura</strong> (<em xml:lang="en">coverage</em>). Con questo termine si intende il la percentuale di codice che un caso di prova è in grado di eseguire, cioè quanto codice sorgente è stato effettivamente attraversato durante il caso di prova; ad esempio, una copertura del 100% indica che l'esecuzione di un test ha coperto tutti i casi possibili del codice in esame.</p>
+		<p>Alcuni criteri notevoli di copertura sono i seguenti:</p>
+		<ul>
+			<li><em xml:lang="en">function coverage</em> &mdash; quante funzioni (sottoprocedure) sono state eseguite?</li>
+			<li><em xml:lang="en">statement coverage</em> &mdash; quante istruzioni (righe di codice, all'incirca) sono state eseguite?</li>
+			<li><em xml:lang="en">branch coverage</em> &mdash; quanti rami<sup class="footnote"><a id="txt4" href="#ftn4">[4]</a></sup> del programma sono stati eseguiti?</li>
+			<li><em xml:lang="en">condition coverage</em> &mdash; quante espressioni logiche hanno assunto entrambi i valori possibili?</li>
+		</ul>
+		<p>Di queste, le più importanti sono lo <em xml:lang="en">statement coverage</em> e, ancor più, il <em xml:lang="en">branch coverage</em>. È sempre bene che i test di unità coprano il codice al 100% rispetto a questi ultimi due criteri; tuttavia, va ricordato che la copertura totale del codice non assicura l'assenza di difetti! Un criterio ancora più forte del <em xml:lang="en">branch coverage</em> è il <abbr title="Modified Condition/Decision Coverage">MC/DC</abbr> (<em xml:lang="en">Modified Condition/Decision Coverage</em>).</p>
 		<p>Distinguiamo due categorie di test di unità:</p>
 		<ul>
 			<li>Un <strong>test funzionale</strong> è un test a scatola chiusa (<em xml:lang="en">black box</em>). Fa riferimento alla specifica di un'unità e osserva il suo comportamento dal di fuori; dati in ingresso che producono un medesimo comportamento funzionale costituiscono una classe di equivalenza e sono un caso di prova.</li>
-			<li>Un <strong>test strutturale</strong> è un test a scatola aperta (<em xml:lang="en">white box</em>): verifica la logica interna del codice dell'unità. Persegue la massima copertura<sup class="footnote"><a id="txt3" href="#ftn3">[3]</a></sup>; dati in ingresso che attivano un medesimo percorso costituiscono un caso di prova.</li>
+			<li>Un <strong>test strutturale</strong> è un test a scatola aperta (<em xml:lang="en">white box</em>): verifica la logica interna del codice dell'unità. Persegue la massima copertura<sup class="footnote"><a id="txt3" href="#ftn3">[3]</a></sup> del codice sorgente; dati in ingresso che attivano un medesimo percorso costituiscono un caso di prova.</li>
 		</ul>
 		<p>Dobbiamo eseguire i test funzionali prima di quelli strutturali, se non vogliamo rischiare di analizzare una struttura che non svolge il compito giusto. I test funzionali vanno sempre integrati con test strutturali.</p>
-		<p>[...]</p>
 
 		<h2>Test di integrazione</h2>
-		<!-- [strategie d'integrazione...] -->
-		<!-- [test d'integrazione...] -->
-		<p>[...]</p>
+		<p>I test d'integrazione fanno parte di un processo più ampio che è quello dell'integrazione delle parti del sistema. Le parti vanno integrate secondo una strategia. Ad esempio è sempre bene assemblare le parti in modi incrementale (quindi reversibile), seguendo le dipendenze nell'architettura: aggiungendo una parte nuova ad un insieme ben verificato, i difetti rilevati in un test d'integrazione saranno probabilmente dovuti alla parte nuova, facilitando così la ricerca di quale parte sia da correggere.</p>
+		<p>Basandoci sul fatto che i sistemi <span xml:lang="en">software</span> sono (al giorno d'oggi) sistemi gerarchici, possiamo individuare due principali <strong>strategie d'integrazione</strong>:</p>
+		<ul>
+			<li>Dal basso (<span xml:lang="en">bottom-up</span>): si sviluppano e si integrano prima le parti con minore dipendenza funzionale (<em xml:lang="en">fan-out</em>) e maggiore utilità (<em xml:lang="en">fan-in</em>). Così facendo, si &quot;risale&quot; l'albero delle dipendenze. Si economizzano molti stub ma le funzionalità di alto livello compaiono più tardi.</li>
+			<li>Dall'alto (<span xml:lang="en">top-down</span>): si sviluppano prima le parti più esterne (di alto livello, con molte dipendenze) e poi si scende nell'albero delle dipendenze. Qui le funzionalità di alto livello vengono verificate sin da subito e si può mostrare al committente una bozza del sistema.</li>
+		</ul>
+		<p>I test d'integrazione si applicano alle componenti specificate in progettazione architetturale; perciò, questi test rilevano difetti di progettazione. L'integrazione delle componenti costituisce il sistema completo.</p>
+		<p>Quanti test d'integrazione è bene fare? tanti quante sono le interfacce nell'architettura del sistema: i test d'integrazione devono accertare che i dati scambiati attraverso ciascuna interfaccia siano conformi alla propria specifica.</p>
 
 		<h2>Test di sistema</h2>
-		<p>[...]</p>
+		<p>I test di sistema verificano il comportamento del sistema rispetto ai suoi <strong>requisiti</strong>. Essi sono inerentemente funzionali: non hanno bisogno di conoscere la logica interna del sistema.</p>
 	</div>
 
 	<div id="footnotes">
@@ -87,6 +98,7 @@
 			<li id="ftn1">È interessante notare che il <em xml:lang="en">testing</em> viene fatto sempre: se non lo fa il fornitore, lo farà l'utente. Ovviemante, dare all'utente un <span xml:lang="en">software</span> non testato è una cosa che non va fatta.</li>
 			<li id="ftn2">In inglese <em>diminishing returns</em>.</li>
 			<li id="ftn3">La copertura interessa soltanto i test strutturali, non quelli funzionali.</li>
+			<li id="ftn4">Qui stiamo studiando un programma come un albero.</li>
 		</ol>
 	</div>
 

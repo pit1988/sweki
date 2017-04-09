@@ -688,4 +688,9 @@ NULL), # non 'measurement', a quanto pare :|
 ('rendimento_decrescente',
 'rendimento decrescente, legge del',
 'Man mano che si aumenta lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre più.',
-'diminishing returns');
+'diminishing returns'),
+
+('copertura del codice',
+'copertura del codice',
+'Percentuale di codice sorgente eseguito durante un caso di prova.',
+'code coverage');

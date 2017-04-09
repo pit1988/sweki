@@ -39,6 +39,7 @@ Di seguito i termini del glossario:
 * __configuration item (CI)__: Parte della configurazione di un software. Inglese: _configuration item_.
 * __configurazione__: Di quali parti si compone un prodotto e il modo in cui esse stanno assieme. Inglese: _configuration_.
 * __controllore della qualità (profilo professionale)__: Funzione aziendale (e non ruolo di progetto) che accerta la qualità dei prodotti.
+* __copertura del codice__: Percentuale di codice sorgente eseguito durante un caso di prova. Inglese: _code coverage_.
 * __criticità__: Distanza troppo breve tra attività dipendenti.
 * __design pattern__: Soluzione progettuale generale ad un problema ricorrente.
 * __diagramma dei casi d'uso__: Grafo orientato che mostra gli attori, i casi d'uso e le relazioni tra essi: ogni nodo è un attore o un caso d'uso; ogni arco è una comunicazione tra un attore e un caso d'uso oppure una relazione (di estensione, inclusione o generalizzazione) tra due casi d'uso o tra due attori. Inglese: _use case diagram_.
