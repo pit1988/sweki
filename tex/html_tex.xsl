@@ -154,7 +154,7 @@
 
 
 <!-- footnotes -->
-<xsl:template match="sup[@class='footnote']"><xsl:variable name="ftn" select="'substring(a/@href, 5)'" />\footnote{<xsl:value-of select="/html/body/div[@id='footnotes']/ol/li[$ftn]" />}</xsl:template><!-- bisognerebbe sostituire value-of con apply-templates ma c'è un bug... -->
+<xsl:template match="sup[@class='footnote']"><xsl:variable name="ftn" select="'substring(a/@href, 5)'" /><!-- \footnote{<xsl:value-of select="/html/body/div[@id='footnotes']/ol/li[$ftn]" />} --></xsl:template><!-- issue #1: le variabili non si possono aggiornare in XSLT! -->
 
 
 
