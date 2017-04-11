@@ -7,6 +7,7 @@ Directory contenente un glossario di termini, nei seguenti formati:
 * Markdown (il file che stai leggendo).
 
 Di seguito i termini del glossario:
+* __accoppiamento__: Grado di dipendenza tra le varie componenti di un sistema. Inglese: _coupling_.
 * __algoritmo__: Sequenza finita di passi per la risoluzione di un problema. Inglese: _algorithm_.
 * __allocazione di risorse (per un progetto)__: Assegnare attività a ruoli e, poi, ruoli a persone.
 * __ambiente di lavoro__: L'insieme di persone, di ruoli, di procedure e l'infrastruttura la cui qualità determina la produttività del progetto. Inglese: _work environment_.
@@ -19,7 +20,6 @@ Di seguito i termini del glossario:
 * __architettura__: La struttura organizzativa di un sistema o componente. Inglese: _architecture_.
 * __attività__: Parte di un processo che dev'essere compiuta entro un determinato periodo di tempo. Inglese: _activity_.
 * __baseline__: Nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede.
-* __basso accoppiamento__: Minimizzazione delle dipendenze tra i vari componenti di un sistema. Inglese: _loose coupling_.
 * __batteria di prove__: Insieme di casi di prova. Inglese: _test suite_.
 * __best practice__: La prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche.
 * __bibliografia__: Elenco delle fonti di un documento. Inglese: _bibliografy_.
@@ -33,8 +33,9 @@ Di seguito i termini del glossario:
 * __ciclo PDCA (o ciclo di Deming)__: Schema iterativo di auto-miglioramento che consiste di quattro punti: Plan (individuare obiettivi di miglioramento), Do (eseguire ciò che si è pianificato), Check (verificare se ha funzionato) e Act (agire per correggersi). Inglese: _PDCA cycle_.
 * __CoCoMo (Constructive Cost Model)__: Modello per la stima dei costi di un progetto, in tempo/persona. Inglese: _CoCoMo_.
 * __coerenza__: L'esser composto da parti che non sono in disaccordo tra loro, cioè non affermano cose che si contraddicano. Inglese: _consistency_.
-* __coesione__: Caratteristica di un sistema per la quale parti associate concorrono agli stessi obiettivi. Inglese: _cohesion_.
+* __coesione__: Grado di relazione tra parti associate di un sistema che concorrono agli stessi obiettivi. Inglese: _cohesion_.
 * __compito__: Parte di un'attività. Inglese: _task_.
+* __complessità ciclomatica__: Misura quantitativa del numero di cammini linearmente indipendenti che il codice sorgente di un programma può percorrere. Inglese: _cyclomatic complexity_.
 * __componente__: Insieme di unità funzionalmente coese; parte di un sistema. (In Java, rappresentabile da uno o più package.) Inglese: _component_.
 * __configuration item (CI)__: Parte della configurazione di un software. Inglese: _configuration item_.
 * __configurazione__: Di quali parti si compone un prodotto e il modo in cui esse stanno assieme. Inglese: _configuration_.

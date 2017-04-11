@@ -552,13 +552,13 @@ NULL),
 
 ('coesione',
 'coesione',
-'Caratteristica di un sistema per la quale parti associate concorrono agli stessi obiettivi.',
+'Grado di relazione tra parti associate di un sistema che concorrono agli stessi obiettivi.',
 'cohesion'),
 
-('basso_accoppiamento',
-'basso accoppiamento',
-'Minimizzazione delle dipendenze tra i vari componenti di un sistema.',
-'loose coupling'),
+('accoppiamento',
+'accoppiamento',
+'Grado di dipendenza tra le varie componenti di un sistema.',
+'coupling'),
 
 ('coerenza',
 'coerenza',
@@ -593,7 +593,7 @@ NULL),
 ('misura',
 'misura',
 'Risultato di una misurazione.',
-NULL), # non 'measurement', a quanto pare :|
+NULL), # forse 'measurement'?
 
 ('business_logic',
 'business logic',
@@ -698,4 +698,9 @@ NULL), # non 'measurement', a quanto pare :|
 ('copertura del codice',
 'copertura del codice',
 'Percentuale di codice sorgente eseguito durante un caso di prova.',
-'code coverage');
+'code coverage'),
+
+('complessità_ciclomatica',
+'complessità ciclomatica',
+'Misura quantitativa del numero di cammini linearmente indipendenti che il codice sorgente di un programma può percorrere.',
+'cyclomatic complexity');
