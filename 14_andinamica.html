@@ -68,14 +68,14 @@
 		<ul>
 			<li><em xml:lang="en">function coverage</em> &mdash; quante funzioni (sottoprocedure) sono state eseguite?</li>
 			<li><em xml:lang="en">statement coverage</em> &mdash; quante istruzioni (righe di codice, all'incirca) sono state eseguite?</li>
-			<li><em xml:lang="en">branch coverage</em> &mdash; quanti rami<sup class="footnote"><a id="txt4" href="#ftn4">[4]</a></sup> del programma sono stati eseguiti?</li>
+			<li><em xml:lang="en">branch coverage</em> &mdash; quanti rami<sup class="footnote"><a id="txt3" href="#ftn3">[3]</a></sup> del programma sono stati eseguiti?</li>
 			<li><em xml:lang="en">condition coverage</em> &mdash; quante espressioni logiche hanno assunto entrambi i valori possibili?</li>
 		</ul>
 		<p>Di queste, le più importanti sono lo <em xml:lang="en">statement coverage</em> e, ancor più, il <em xml:lang="en">branch coverage</em>. È sempre bene che i test di unità coprano il codice al 100% rispetto a questi ultimi due criteri; tuttavia, va ricordato che la copertura totale del codice non assicura l'assenza di difetti! Un criterio ancora più forte del <em xml:lang="en">branch coverage</em> è il <abbr title="Modified Condition/Decision Coverage">MC/DC</abbr> (<em xml:lang="en">Modified Condition/Decision Coverage</em>).</p>
 		<p>Distinguiamo due categorie di test di unità:</p>
 		<ul>
 			<li>Un <strong>test funzionale</strong> è un test a scatola chiusa (<em xml:lang="en">black box</em>). Fa riferimento alla specifica di un'unità e osserva il suo comportamento dal di fuori; dati in ingresso che producono un medesimo comportamento funzionale costituiscono una classe di equivalenza e sono un caso di prova.</li>
-			<li>Un <strong>test strutturale</strong> è un test a scatola aperta (<em xml:lang="en">white box</em>): verifica la logica interna del codice dell'unità. Persegue la massima copertura<sup class="footnote"><a id="txt3" href="#ftn3">[3]</a></sup> del codice sorgente; dati in ingresso che attivano un medesimo percorso costituiscono un caso di prova.</li>
+			<li>Un <strong>test strutturale</strong> è un test a scatola aperta (<em xml:lang="en">white box</em>): verifica la logica interna del codice dell'unità. Persegue la massima copertura<sup class="footnote"><a id="txt4" href="#ftn4">[4]</a></sup> del codice sorgente; dati in ingresso che attivano un medesimo percorso costituiscono un caso di prova.</li>
 		</ul>
 		<p>Dobbiamo eseguire i test funzionali prima di quelli strutturali, se non vogliamo rischiare di analizzare una struttura che non svolge il compito giusto. I test funzionali vanno sempre integrati con test strutturali.</p>
 
@@ -97,8 +97,8 @@
 		<ol>
 			<li id="ftn1">È interessante notare che il <em xml:lang="en">testing</em> viene fatto sempre: se non lo fa il fornitore, lo farà l'utente. Ovviemante, dare all'utente un <span xml:lang="en">software</span> non testato è una cosa che non va fatta.</li>
 			<li id="ftn2">In inglese <em>diminishing returns</em>.</li>
-			<li id="ftn3">La copertura interessa soltanto i test strutturali, non quelli funzionali.</li>
-			<li id="ftn4">Qui stiamo studiando un programma come un albero.</li>
+			<li id="ftn3">Qui stiamo studiando un programma come un albero.</li>
+			<li id="ftn4">La copertura interessa soltanto i test strutturali, non quelli funzionali.</li>
 		</ol>
 	</div>
 
