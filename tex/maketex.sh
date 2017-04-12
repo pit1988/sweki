@@ -14,6 +14,7 @@ echo "\usepackage[english,italian]{babel}" >> sweki.tex
 echo "\usepackage{microtype}" >> sweki.tex
 echo "\usepackage{booktabs}" >> sweki.tex
 echo "\usepackage{hyperref}" >> sweki.tex
+echo "\usepackage{csquotes}" >> sweki.tex
 echo "\setcounter{section}{-1}" >> sweki.tex
 echo "\title{sweki}" >> sweki.tex
 echo "\author{Giorgio Giuffrè}" >> sweki.tex

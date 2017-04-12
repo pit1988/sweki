@@ -5,6 +5,7 @@
 \usepackage{microtype}
 \usepackage{booktabs}
 \usepackage{hyperref}
+\usepackage{csquotes}
 \setcounter{section}{-1}
 \title{sweki}
 \author{Giorgio Giuffrè}
@@ -449,7 +450,21 @@ Il primo passo da fare nel gestire un progetto dovrebbe essere la selezione di u
 	\subsection{Stima dei costi di progetto}
 
 		
-Un'altro compito importante del responsabile di progetto è quello di stimarne i costi. In particolare, il responsabile deve stimare il tempo/persona, unità di misura delle risorse umane. In questo, utile caveat è la legge di Parkinson, una critica alla regolamentazione fine a se stessa: Work expands to fill the time available. Uno strumento per la stima del tempo/persona è CoCoMo (Constructive Cost Model), una funzione matematica che produce in uscita un valore in tempo/persona e prende in ingresso alcuni parametri relativi al progetto (fattore di complessità del progetto $C$, misura in KDSI della dimensione stimata del prodotto software $D$, fattore di complessità $S$ e moltiplicatori di costo $M$): $x = C \cdot{} D^{S} \cdot{} M$, dove $x$ è misurato in mesi-persona.
+Un'altro compito importante del responsabile di progetto è quello di stimarne i costi. In particolare, il responsabile deve stimare il tempo/persona, unità di misura delle risorse umane. In questo, utile caveat è la legge di Parkinson, una critica alla regolamentazione fine a se stessa: \textquote{Work expands to fill the time available}. Uno strumento per la stima del tempo/persona è CoCoMo (Constructive Cost Model), una funzione matematica che produce in uscita un valore in tempo/persona e prende in ingresso alcuni parametri relativi al progetto; tale funzione matematica è $x = C \cdot{} D^{S} \cdot{} M$, dove $x$ è misurato in mesi-persona e i parametri sono:
+		
+	\begin{itemize}
+		
+			
+	\item fattore di complessità del progetto $C$;
+			
+	\item misura in KDSI della dimensione stimata del prodotto software $D$;
+			
+	\item fattore di complessità $S$;
+			
+	\item moltiplicatori di costo $M$.
+		
+	\end{itemize}
+
 
 		
 	\subsection{Rischi di progetto}
@@ -672,9 +687,9 @@ Per garantire il rispetto dei requisiti entra in gioco il piano di qualifica, ch
 	\begin{itemize}
 		
 			
-	\item Verifica: accertare che l'esecuzione delle attività di processo non abbia introdotto errori (Did I build the system right?); rivolta ai processi (e svolta sui loro prodotti), per accertare il rispetto di norme e procedure.
+	\item Verifica: accertare che l'esecuzione delle attività di processo non abbia introdotto errori (\textquote{Did I build the system right?}); rivolta ai processi (e svolta sui loro prodotti), per accertare il rispetto di norme e procedure.
 			
-	\item Validazione: accertare che il prodotto realizzato corrisponda alle attese (Did I build the right system?); rivolta ai prodotti finali.
+	\item Validazione: accertare che il prodotto realizzato corrisponda alle attese (\textquote{Did I build the right system?}); rivolta ai prodotti finali.
 		
 	\end{itemize}
 
@@ -918,7 +933,7 @@ La progettazione di dettaglio deve definire delle unità il cui carico di lavoro
 	\subsection{Definizione}
 
 		
-Documentazione è tutto il materiale che documenta le attività di un progetto (e i loro prodotti). wikibooks.org afferma che, in ingegneria, l'obiettivo primario della documentazione di un prodotto è la \emph{replicabilità} di tale prodotto: You are not an engineer until others can replicate what you have done [...] without your presence [...] without your words [...] without your physical personality on the planet. I documenti di un progetto software e del prodotto che si sta sviluppando hanno diversi motivi di esistere:
+Documentazione è tutto il materiale che documenta le attività di un progetto (e i loro prodotti). wikibooks.org afferma che, in ingegneria, l'obiettivo primario della documentazione di un prodotto è la \emph{replicabilità} di tale prodotto: \textquote{You are not an engineer until others can replicate what you have done [...] without your presence [...] without your words [...] without your physical personality on the planet.} I documenti di un progetto software e del prodotto che si sta sviluppando hanno diversi motivi di esistere:
 		
 	\begin{itemize}
 		
@@ -1588,9 +1603,9 @@ Questi due processi rispondono a due domande separate:
 	\begin{itemize}
 		
 			
-	\item Verifica: Did I build the system right?
+	\item Verifica: \textquote{Did I build the system right?}
 			
-	\item Validazione: Did I build the right system?
+	\item Validazione: \textquote{Did I build the right system?}
 		
 	\end{itemize}
 
@@ -1851,7 +1866,7 @@ Oggetto di una prova può essere:
 		
 L'obiettivo di ogni prova dev'essere specificato in modo chiaro per ogni caso di prova (\emph{test case}): un test è buono se è ripetibile. Per essere ripetibile, ogni test deve stare anche allo stato, all'ambiente. Il Piano di Qualifica specifica quali e quante sono le prove da effettuare. I test non sostituiscono la progettazione; piuttosto, sono speculari ad essa.
 		
-Un test deve cercare di far fallire il software: dev'essere "cinico"! I test che falliscono devono essere eseguiti sempre, dal momento in cui sono falliti e il software è stato corretto: Any failed execution must yield a test case, to be permanently included in the project's test suite (Bertrand Meyer).
+Un test deve cercare di far fallire il software: dev'essere "cinico"! I test che falliscono devono essere eseguiti sempre, dal momento in cui sono falliti e il software è stato corretto: \textquote{Any failed execution must yield a test case, to be permanently included in the project's test suite} (Bertrand Meyer).
 		
 All'origine, un test va specificato in fase di progettazione; dopo essere stato implementato ed eseguito, esso va tenuto in un archivio, come documentazione dell'attività di \emph{testing}.
 
@@ -1933,7 +1948,7 @@ I test di sistema verificano il comportamento del sistema rispetto ai suoi \text
 	\subsection{Misurare}
 
 		
-Misurare è un'attività fondamentale che compiamo quotidianamente: You can't control what you can't measure afferma Tom DeMarco, informatico e ingegnere del software. Misurare serve a conoscere, a valutare e a decidere; è un'attività che è alla base della cibernetica.
+Misurare è un'attività fondamentale che compiamo quotidianamente: \textquote{You can't control what you can't measure} afferma Tom DeMarco, informatico e ingegnere del software. Misurare serve a conoscere, a valutare e a decidere; è un'attività che è alla base della cibernetica.
 		
 Purtroppo le misure rischiano di essere distorte, a causa di semplificazioni e imprecisioni. Per accertare la bontà di una misura essa dev'essere oggettiva, cioè deve garantire:
 		
@@ -1989,7 +2004,7 @@ Gli attributi a cui le misurazioni assegnano valori stanno in due categorie:
 		
 La misurazione rischia di essere retrospettiva; ci interessa, invece, avere misure che siano il più vicino possibile al tempo di correzione: si deve misurare in modo \textbf{proattivo}, non reattivo.
 		
-Anche per la misurazione, ISO ha uno standard: ISO/IEC 15939. Questo standard afferma, a riguardo dei \textbf{bisogni informativi}, the information needs are based on goals, constraints, risks, and problems which originate from the technical and mgmt process. CMMI suggerisce di determinare tali bisogni nelle seguenti aree:
+Anche per la misurazione, ISO ha uno standard: ISO/IEC 15939. Questo standard afferma, a riguardo dei \textbf{bisogni informativi}, \textquote{the information needs are based on goals, constraints, risks, and problems which originate from the technical and mgmt process.} CMMI suggerisce di determinare tali bisogni nelle seguenti aree:
 		
 	\begin{itemize}
 		

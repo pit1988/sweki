@@ -28,10 +28,10 @@
 		<h1>Amministrazione di progetto</h1>
 
 		<h2>Amministratore di progetto</h2>
-		<p>Scopo dell'amministrare un progetto è quello di evitare conflitti che si manifestano quando ci sono sovrapposizioni di ruoli e di respondabilità. L'amministratore di un progetto<sup class="footnote"><a id="txt1" href="#ftn1">[1]</a></sup> non dirige (non compie scelte gestionali) ma deve far sì che l'<strong>infrastruttura</strong> di lavoro sia operante; attua le scelte tecnologiche concordate con i responsabili aziendali e di progetto e si assicura che vengano seguite dai membri del progetto.</p>
+		<p>Scopo dell'amministrare un progetto è quello di evitare conflitti che si manifestano quando ci sono sovrapposizioni di ruoli e di responsabilità. L'amministratore di un progetto<sup class="footnote"><a id="txt1" href="#ftn1">[1]</a></sup> non dirige (non compie scelte gestionali) ma deve far sì che l'<strong>infrastruttura</strong> di lavoro sia operante; attua le scelte tecnologiche concordate con i responsabili aziendali e di progetto e si assicura che vengano seguite dai membri del progetto.</p>
 
 		<h2>Documentazione di progetto</h2>
-		<p>Uno dei compiti dell'amministratore di progetto è quello di gestire la documentazione. I documenti devono essere chiaramente identificati, corretti nei contenuti, verificati, approvati, aggiornati (specificando la data) e dotati di versione. La loro diffusione dev'essere controllata: i destinatari devono essere chiaramente identificati e ogni documento ha una sua lista di distribuzione (oppure è pubblico). La documentazione raccoglie <strong>tutto ciò che documenta le attività</strong> e si divide nelle seguenti due categorie.</p>
+		<p>Uno dei compiti dell'amministratore di progetto è quello di gestire la documentazione. I documenti devono essere chiaramente identificati, corretti nei contenuti, verificati, approvati, aggiornati (specificandone la data) e dotati di versione. La loro diffusione dev'essere controllata: i destinatari devono essere chiaramente identificati e ogni documento ha una sua lista di distribuzione (oppure è pubblico). La documentazione raccoglie <strong>tutto ciò che documenta le attività</strong> e si divide nelle seguenti due categorie.</p>
 		<ul>
 			<li>Documentazione di sviluppo:
 				<ul>
@@ -50,7 +50,7 @@
 				</ul>
 			</li>
 		</ul>
-		<p>Ogni documento contiene un &quot;diario delle modifiche&quot;, in cui vengono riportate tutte le modifiche rispetto alla versione precedente del documento.</p>
+		<p>Ogni documento contiene un &quot;diario delle modifiche&quot;, in cui vengono riportate tutte le modifiche rispetto alla versione precedente del documento. Lo stile del diario delle modifiche dev'essere molto sintetico e, a questo scopo, è bene che si avvalga di riferimenti numerici all'interno del testo (numero della sezione modificata, ad esempio).</p>
 
 		<h2>Ambiente di lavoro</h2>
 		<p>L'amministratore di progetto si occupa dell'ambiente di lavoro, cioè l'insieme di persone, di ruoli, di procedure e l'infrastruttura<sup class="footnote"><a id="txt2" href="#ftn2">[2]</a></sup> la cui qualità determina la produttività del progetto. L'ambiente di lavoro dev'essere:</p>
@@ -68,16 +68,16 @@
 		</ul>
 		<p>Data la complessità di un prodotto <span xml:lang="en">software</span>, la gestione della configurazione va automatizzata con strumenti adatti. Ogni parte della configurazione (<span xml:lang="en">configuration item</span>, <abbr title="Configuration Item">CI</abbr>) dev'essere univocamente identificato (oltre ad avere nome, data, autore, registro delle modifiche e stato corrente). Due concetti centrali della gestione di configurazione sono i seguenti.</p>
 		<ul>
-			<li>Quello di <strong xml:lang="en">baseline</strong> indica un punto d'arrivo tecnico dal quale non si retrocede; la baseline è fatta di elementi della configurazione e, poiché ogni parte è versionata, possiamo conoscere la differenza tra una baseline e l'altra. Una baseline è qualcosa di stabile &mdash; non usa e getta! &mdash; e sta in un <span xml:lang="en">repository</span><sup class="footnote"><a id="txt3" href="#ftn3">[3]</a></sup>; serve da base per gli avanzamenti futuri e può essere cambiata solo tramite procedure di controllo di cambiamento.</li>
-			<li>Il concetto di <strong xml:lang="en">milestone</strong> indica un punto nel tempo associato ad un valore strategico. Ogni <span xml:lang="en">milestone</span> di calendario è associata a uno specifico insieme di <span xml:lang="en">baseline</span>. Ogni <span xml:lang="en">milestone</span> dev'essere: specifica, raggiungibile, misurabile (per quantità d'impegno necessario), traducibile in compiti assegnabili e dimostrabile agli <span xml:lang="en">stakeholders</span><sup class="footnote"><a id="txt4" href="#ftn4">[4]</a></sup>.</li>
+			<li>Quello di <strong><em xml:lang="en">baseline</em></strong> indica un punto d'arrivo tecnico dal quale non si retrocede; la <em xml:lang="en">baseline</em> è fatta di elementi della configurazione e, poiché ogni parte è versionata, possiamo conoscere la differenza tra una <em xml:lang="en">baseline</em> e l'altra. Una <em xml:lang="en">baseline</em> è qualcosa di stabile &mdash; non usa e getta! &mdash; e sta in un <span xml:lang="en">repository</span><sup class="footnote"><a id="txt3" href="#ftn3">[3]</a></sup>; serve da base per gli avanzamenti futuri e può essere cambiata solo tramite procedure di controllo di cambiamento.</li>
+			<li>Il concetto di <strong xml:lang="en">milestone</strong> indica un punto nel tempo associato ad un valore strategico. Ogni <span xml:lang="en">milestone</span> di calendario è associata a uno specifico insieme di <em xml:lang="en">baseline</em>. Ogni <span xml:lang="en">milestone</span> dev'essere: specifica, raggiungibile, misurabile (per quantità d'impegno necessario), traducibile in compiti assegnabili e dimostrabile agli <em xml:lang="en">stakeholder</em><sup class="footnote"><a id="txt4" href="#ftn4">[4]</a></sup>.</li>
 		</ul>
-		<p>Anche il controllo di versione fa affidamento sul <span xml:lang="en">repository</span>, per permettere di lavorare su vecchi e nuovi <abbr title="Configuration Item">CI</abbr> senza rischio di sovrascritture accidentali, di condividere il lavorato nello spazio comune e di poter verificare la bontà di ogni modifica di <span xml:lang="en">baseline</span>. Ogni versione è una istanza di prodotto funzionalmente distinta dalle altre. Invece, si dice &quot;variante&quot; una istanza di prodotto funzionalmente identica ad altre ma diversa per caratteristiche non funzionali. Infine, si dice &quot;rilascio&quot; (<span xml:lang="en">release</span>) una istanza di prodotto resa disponibile a utenti esterni.</p>
+		<p>Anche il controllo di versione fa affidamento sul <span xml:lang="en">repository</span>, per permettere di lavorare su vecchi e nuovi <abbr title="Configuration Item">CI</abbr> senza rischio di sovrascritture accidentali, di condividere il lavorato nello spazio comune e di poter verificare la bontà di ogni modifica di <em xml:lang="en">baseline</em>. Ogni versione è una istanza di prodotto funzionalmente distinta dalle altre. Invece, si dice &quot;variante&quot; una istanza di prodotto funzionalmente identica ad altre ma diversa per caratteristiche non funzionali. Infine, si dice &quot;rilascio&quot; (<em xml:lang="en">release</em>) una istanza di prodotto resa disponibile a utenti esterni.</p>
 
 		<h2>Modifiche</h2>
 		<p>Anche nel corso del suo sviluppo, un progetto non è esente da richieste di modifiche (dagli utenti, dagli sviluppatori o semplicemente per competizione). Le richieste di modifica vanno sottoposte a un rigoroso processo di analisi, decisione, realizzazione e verifica; di ogni richiesta va tenuta traccia.</p>
 
 		<h2>Norme di progetto</h2>
-		<p>Un progetto necessita di linee guida per le attività di sviluppo. Le norme &mdash; che vanno accertate dall'amministratore &mdash; comprendono:</p>
+		<p>Un progetto necessita di linee guida per le attività di sviluppo. Le norme &mdash; che vanno accertate dagli amministratori &mdash; comprendono:</p>
 		<ul>
 			<li>organizzazione e uso delle risorse di sviluppo;</li>
 			<li>convenzioni sull'uso degli strumenti di sviluppo;</li>
@@ -85,14 +85,14 @@
 			<li>norme di codifica;</li>
 			<li>gestione dei cambiamenti.</li>
 		</ul>
-		<p>Le norme di progetto descrivono come dovrà essere il <strong xml:lang="en">way of working</strong>. Individuiamo due categorie di norme: regole (sottoposte a verifica) e raccomandazioni (suggerimenti, senza verifica). Tra le norme di progetto, particolare rilevanza hanno le norme di codifica; queste hanno l'obiettivo di far sì che il codice sorgente sia leggibile (anche a distanza di tempo) e costituiscono una misura preventiva che garantisce verificabilità, manutenibilità e portabilità.</p>
+		<p>Le norme di progetto descrivono come dovrà essere il <strong><em xml:lang="en">way of working</em></strong>. Individuiamo due categorie di norme: regole (sottoposte a verifica) e raccomandazioni (suggerimenti, senza verifica). Tra le norme di progetto, particolare rilevanza hanno le norme di codifica; queste hanno l'obiettivo di far sì che il codice sorgente sia leggibile (anche a distanza di tempo) e costituiscono una misura preventiva che garantisce verificabilità, manutenibilità e portabilità.</p>
 	</div>
 
 	<div id="footnotes">
 		<ol>
 			<li id="ftn1"><span xml:lang="en">Project administrator</span>, da non confondere con il <span xml:lang="en">project manager</span>: il primo è sottoposto al secondo.</li>
 			<li id="ftn2">Tutte le risorse <span xml:lang="en">hardware</span> e <span xml:lang="en">software</span> del progetto.</li>
-			<li id="ftn3">Base di dati centralizzata nella quale risiedono &mdash; individualmente &mdash; tutti i <abbr title="Configuration Item">CI</abbr> di ogni <span xml:lang="en">baseline</span> nella loro storia completa.</li>
+			<li id="ftn3">Base di dati centralizzata nella quale risiedono (individualmente) tutti i <abbr title="Configuration Item">CI</abbr> di ogni <em xml:lang="en">baseline</em> nella loro storia completa.</li>
 			<li id="ftn4">Uno <span xml:lang="en">stakeholder</span> è una persona a vario titolo coinvolta nel ciclo di vita di un <span xml:lang="en">software</span>, che ha influenza sul prodotto o sul processo.</li>
 		</ol>
 	</div>

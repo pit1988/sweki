@@ -111,6 +111,9 @@
 \end{verbatim}
 </xsl:template>
 
+<!-- inline quotations -->
+<xsl:template match="q">\textquote{<xsl:apply-templates />}</xsl:template>
+
 
 
 <!-- table -->
