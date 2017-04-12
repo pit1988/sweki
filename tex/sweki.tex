@@ -687,14 +687,17 @@ Per garantire il rispetto dei requisiti entra in gioco il piano di qualifica, ch
 	\begin{itemize}
 		
 			
-	\item Verifica: accertare che l'esecuzione delle attività di processo non abbia introdotto errori (\textquote{Did I build the system right?}); rivolta ai processi (e svolta sui loro prodotti), per accertare il rispetto di norme e procedure.
+	\item Verifica: accertare che l'esecuzione delle attività di processo non abbia introdotto errori (\textquote{Did I build the system right?}). È rivolta ai processi ma viene svolta sui loro prodotti; accerta il rispetto di norme e procedure.
 			
-	\item Validazione: accertare che il prodotto realizzato corrisponda alle attese (\textquote{Did I build the right system?}); rivolta ai prodotti finali.
+	\item Validazione: accertare che il prodotto realizzato corrisponda alle attese (\textquote{Did I build the right system?}). È rivolta ai prodotti finali.
 		
 	\end{itemize}
 
 		
-La validazione dev'essere una \emph{self fulfilling prophecy}, cioè bisogna essere certi che non fallirà; la verifica serve proprio a garantire questo. Infatti, il processo di verifica deve assicurarci che lavoriamo bene non a posteriori ma mentre lavoriamo. Se la verifica assicura i requisiti, la validazione li accerta. Il piano di qualifica nasce assieme ai requisiti.
+La validazione dev'essere una \emph{self fulfilling prophecy}, cioè bisogna essere certi che non fallirà; la verifica serve proprio a garantire questo. Infatti, il processo di verifica deve assicurarci che lavoriamo bene non a posteriori ma \emph{mentre} lavoriamo. Se la verifica assicura i requisiti, la validazione li accerta. Il piano di qualifica nasce assieme ai requisiti.
+		
+Potremmo dire che se la validazione è una dimostrazione matematica, la verifica assomiglia più a una prova sperimentale.% idea mia, forse sbagliata
+
 
 		
 	\subsection{Attività}
@@ -709,14 +712,14 @@ Il processo di ingegneria dei requisiti raggruppa quattro attività:
 			
 	\item acquisizione\footnote{Requirements elicitation.} e \textbf{analisi} dei requisiti;
 			
-	\item \textbf{specifica} dei requisiti (cioè formalizzare i requisiti);
+	\item \textbf{specifica} dei requisiti (cioè formalizzare i requisiti e riportarli in un documento);
 			
 	\item \textbf{validazione} dei requisiti.
 		
 	\end{enumerate}
 
 		
-Tale processo riguarda tutti gli stakeholders. In genere non è possibile soddisfare i requisiti di ognuno di essi, quindi bisogna quindi trovare un buon compromesso; questo presuppone quindi che gli stakeholders vengano identificati, "pesati" e interpellati.
+Tale processo riguarda tutti gli \emph{stakeholder}. In genere non è possibile soddisfare i requisiti di ognuno di essi, quindi bisogna trovare un buon compromesso; questo presuppone che gli \emph{stakeholder} vengano identificati, "pesati" e interpellati.
 
 		
 	\subsection{Studio di fattibilità}
@@ -728,7 +731,7 @@ Lo studio di fattibilità è uno studio breve e chiaro che consiste nel valutare
 	\subsection{Acquisizione e analisi dei requisiti}
 
 		
-Dopo aver compiuto uno studio di fattibilità, gli ingegneri del software devono lavorare assieme a clienti e utenti per individuare il dominio di applicazione e i requisiti del sistema. In generale, tutti gli stakeholders sono coinvolti in questa attività, che prende il nome di "acquisizione e analisi dei requisiti" e si svolge a grandi linee nel seguente modo.
+Dopo aver compiuto uno studio di fattibilità, gli analisti devono lavorare assieme a clienti e utenti per individuare il dominio di applicazione e i requisiti del sistema. In generale, tutti gli \emph{stakeholder} sono coinvolti in questa attività, che prende il nome di "acquisizione e analisi dei requisiti" e si svolge a grandi linee nel seguente modo:
 		
 	\begin{enumerate}
 		
@@ -738,42 +741,68 @@ Dopo aver compiuto uno studio di fattibilità, gli ingegneri del software devono
 	\begin{itemize}
 		
 					
-	\item interrogare gli stakeholders --- con interviste chiuse (insieme predefinito di domande) o aperte;
+	\item interrogare gli \emph{stakeholder} --- con interviste chiuse (insieme predefinito di domande) o aperte;
 					
-	\item discutere con gli stakeholders alcuni scenari del sistema (uno scenario è la descrizione di un esempio di interazione col sistema);
+	\item discutere con gli \emph{stakeholder} alcuni scenari del sistema (uno scenario è la descrizione di un esempio di interazione col sistema);
 					
-	\item discutere con gli stakeholders i casi d'uso del sistema (tramite diagrammi che individuino le interazioni tra il sistema e i suoi utenti);
+	\item discutere con gli \emph{stakeholder} i casi d'uso del sistema (tramite diagrammi che individuino le interazioni tra il sistema e i suoi utenti);
 					
 	\item studiare un prototipo del sistema;
 					
-	\item discutere in modo creativo, tramite brainstorming;
+	\item discutere in modo creativo, tramite \emph{brainstorming};
 					
-	\item osservare il sistema in modo etnografico, concentrandosi sul suo funzionamento abituale.
+	\item osservare il sistema in modo etnografico, immergendosi nel suo funzionamento abituale.
 				
 	\end{itemize}
 
-			Interviste e scenari (oltre al capitolato d'appalto, chiaramente) sono fonte di requisiti espliciti; per ricavare, invece, i requisiti impliciti, gli ingegneri del software devono capire il dominio di applicazione del sistema (magari creando un glossario dei termini chiave del dominio).
+			Interviste e scenari (oltre al capitolato d'appalto, chiaramente) sono fonte di \textbf{requisiti espliciti}; per ricavare, invece, i \textbf{requisiti impliciti}, gli analisti devono capire il dominio di applicazione del sistema (magari creando un glossario dei termini chiave del dominio).
 			
 			
 	\item Classificazione e organizzazione dei requisiti; l'insieme dei requisiti viene strutturato, dividendo i requisiti in gruppi che rispecchino l'architettura del software (qui, progettazione e analisi procedono spesso insieme).
 			
-	\item Modellazione concettuale del sistema (ad esempio tramite un diagramma dei casi d'uso).
+	\item Modellazione concettuale del sistema (ad esempio tramite diagrammi dei casi d'uso).
 			
 	\item Assegnazione dei requisiti a parti distinte del sistema.
 			
-	\item Negoziazione con il committente e con i sotto-fornitori: essendoci diversi stakeholders, è normale che alcuni requisiti siano in conflitto; bisogna dare una priorità ad ogni requisito e negoziare quelli incompatibili per trovare un compromesso.
+	\item Negoziazione con il committente e con i sotto-fornitori: essendoci diversi \emph{stakeholder}, è normale che alcuni requisiti siano in conflitto; bisogna dare una priorità ad ogni requisito e negoziare quelli incompatibili, per trovare un compromesso.
 		
 	\end{enumerate}
 
 		
-I requisiti possono cambiare (a causa di condizioni esterne o anche solo perché l'analisi si è approfondita e ha introdotto nuovi requisiti); proprio per questo, è bene notare che la sequenza di passi riportata diventa spesso un ciclo che si ripete.
+I requisiti possono cambiare (a causa di condizioni esterne o anche solo perché un'analisi approfondita ha introdotto nuovi requisiti). Proprio per questo, è bene notare che la sequenza di passi che abbiamo riportato diventa spesso un ciclo che si ripete.
 
 		
 	\subsection{Specifica dei requisiti}
  % [...!]
 
 		
-I requisiti vanno specificati in un documento, usando un linguaggio formale o grafico. [?? ...] Vanno ordinati per priorità, classificati e identificati univocamente.
+I requisiti vanno specificati in un documento, usando un linguaggio formale e/o grafico. Vanno ordinati per priorità, classificati e identificati univocamente.
+		
+Lo standard IEEE 830-1998 raccomanda che la specifica dei requisiti sia:
+		
+	\begin{itemize}
+		
+			
+	\item priva di ambiguità
+			
+	\item corretta
+			
+	\item completa
+			
+	\item verificabile
+			
+	\item coerente
+			
+	\item modificabile
+			
+	\item tracciabile
+			
+	\item ordinata per rilevanza dei requisiti
+		
+	\end{itemize}
+
+		
+Lo stesso standard raccomanda, inoltre, che il documento di Analisi dei Requisiti (\emph{Software Requirements Specification}) rechi un'introduzione (con scopo del documento, scopo del prodotto, glossario, riferimenti, struttura del documento) e contenga una descrizione generale (con prospettive del prodotto, sue funzioni, caratteristiche degli utenti, vincoli generali, assunzioni e dipendenze).
 
 		
 	\subsection{Validazione dei requisiti}
@@ -794,7 +823,7 @@ Validare i requisiti vuol dire controllare che essi definiscano effettivamente i
 			
 	\item realistici --- i requisiti devono essere implementabili con la tecnologia a disposizione;
 			
-	\item verificabili --- si dev'essere in grado di dimostrare che il sistema soddisfa i requisiti.
+	\item verificabili --- si dovrà essere in grado di dimostrare che il sistema soddisfa i requisiti.
 		
 	\end{itemize}
 

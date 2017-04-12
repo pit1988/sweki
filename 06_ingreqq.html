@@ -52,47 +52,60 @@
 		<h2>Piano di qualifica</h2>
 		<p>Per garantire il rispetto dei requisiti entra in gioco il piano di qualifica, che consiste nel definire le strategie di <strong>verifica</strong> e scegliere metodi, tecniche e procedure da usare per la <strong>validazione</strong>; ha quindi a che fare con due processi:</p>
 		<ul>
-			<li>Verifica: accertare che l'esecuzione delle attività di processo non abbia introdotto errori (<q>Did I build the system right?</q>); rivolta ai processi (e svolta sui loro prodotti), per accertare il rispetto di norme e procedure.</li>
-			<li>Validazione: accertare che il prodotto realizzato corrisponda alle attese (<q>Did I build the right system?</q>); rivolta ai prodotti finali.</li>
+			<li>Verifica: accertare che l'esecuzione delle attività di processo non abbia introdotto errori (<q>Did I build the system right?</q>). È rivolta ai processi ma viene svolta sui loro prodotti; accerta il rispetto di norme e procedure.</li>
+			<li>Validazione: accertare che il prodotto realizzato corrisponda alle attese (<q>Did I build the right system?</q>). È rivolta ai prodotti finali.</li>
 		</ul>
-		<p>La validazione dev'essere una <em xml:lang="en">self fulfilling prophecy</em>, cioè bisogna essere certi che non fallirà; la verifica serve proprio a garantire questo. Infatti, il processo di verifica deve assicurarci che lavoriamo bene non <span xml:lang="la">a posteriori</span> ma mentre lavoriamo. Se la verifica assicura i requisiti, la validazione li accerta. Il piano di qualifica nasce assieme ai requisiti.</p>
+		<p>La validazione dev'essere una <em xml:lang="en">self fulfilling prophecy</em>, cioè bisogna essere certi che non fallirà; la verifica serve proprio a garantire questo. Infatti, il processo di verifica deve assicurarci che lavoriamo bene non <span xml:lang="la">a posteriori</span> ma <em>mentre</em> lavoriamo. Se la verifica assicura i requisiti, la validazione li accerta. Il piano di qualifica nasce assieme ai requisiti.</p>
+		<p>Potremmo dire che se la validazione è una dimostrazione matematica, la verifica assomiglia più a una prova sperimentale.<!-- idea mia, forse sbagliata --></p>
 
 		<h2>Attività</h2>
 		<p>Il processo di ingegneria dei requisiti raggruppa quattro attività:</p>
 		<ol>
 			<li><strong>studio di fattibilità</strong> (stabilire se il sistema in questione è redditizio);</li>
 			<li>acquisizione<sup class="footnote"><a id="txt1" href="#ftn1">[1]</a></sup> e <strong>analisi</strong> dei requisiti;</li>
-			<li><strong>specifica</strong> dei requisiti (cioè formalizzare i requisiti);</li>
+			<li><strong>specifica</strong> dei requisiti (cioè formalizzare i requisiti e riportarli in un documento);</li>
 			<li><strong>validazione</strong> dei requisiti.</li>
 		</ol>
-		<p>Tale processo riguarda tutti gli <span xml:lang="en">stakeholders</span>. In genere non è possibile soddisfare i requisiti di ognuno di essi, quindi bisogna quindi trovare un buon compromesso; questo presuppone quindi che gli <span xml:lang="en">stakeholders</span> vengano identificati, &quot;pesati&quot; e interpellati.</p>
+		<p>Tale processo riguarda tutti gli <em xml:lang="en">stakeholder</em>. In genere non è possibile soddisfare i requisiti di ognuno di essi, quindi bisogna trovare un buon compromesso; questo presuppone che gli <em xml:lang="en">stakeholder</em> vengano identificati, &quot;pesati&quot; e interpellati.</p>
 
 		<h2>Studio di fattibilità</h2>
 		<p>Lo studio di fattibilità è uno studio breve e chiaro che consiste nel valutare <strong>rischi</strong>, <strong>costi</strong> e <strong>benefici</strong> legati al sistema da sviluppare: tale sistema contribuisce agli obiettivi generali dell'organizzazione? può essere sviluppato rispettando determinati vincoli economici, con la tecnologia corrente? può essere integrato con altri sistemi in uso? una risposta negativa in una qualunque tra queste domande inficia la fattibilità del sistema. Lo studio di fattibilità dovrebbe descrivere in modo chiaro gli <strong>obiettivi</strong> del progetto e valutare approcci alternativi, per capire se il progetto proposto è la migliore alternativa.</p>
 
 		<h2>Acquisizione e analisi dei requisiti</h2>
-		<p>Dopo aver compiuto uno studio di fattibilità, gli ingegneri del <span xml:lang="en">software</span> devono lavorare assieme a clienti e utenti per individuare il dominio di applicazione e i requisiti del sistema. In generale, tutti gli <span xml:lang="en">stakeholders</span> sono coinvolti in questa attività, che prende il nome di &quot;acquisizione e analisi dei requisiti&quot; e si svolge a grandi linee nel seguente modo.</p>
+		<p>Dopo aver compiuto uno studio di fattibilità, gli analisti devono lavorare assieme a clienti e utenti per individuare il dominio di applicazione e i requisiti del sistema. In generale, tutti gli <em xml:lang="en">stakeholder</em> sono coinvolti in questa attività, che prende il nome di &quot;acquisizione e analisi dei requisiti&quot; e si svolge a grandi linee nel seguente modo:</p>
 		<ol>
 			<li>Studio dei bisogni e delle fonti; si cerca di individuare un insieme (non strutturato) di requisiti. Per fare questo, si può:
 				<ul>
-					<li>interrogare gli <span xml:lang="en">stakeholders</span> &mdash; con interviste chiuse (insieme predefinito di domande) o aperte;</li>
-					<li>discutere con gli <span xml:lang="en">stakeholders</span> alcuni scenari del sistema (uno scenario è la descrizione di un esempio di interazione col sistema);</li>
-					<li>discutere con gli <span xml:lang="en">stakeholders</span> i casi d'uso del sistema (tramite diagrammi che individuino le interazioni tra il sistema e i suoi utenti);</li>
+					<li>interrogare gli <em xml:lang="en">stakeholder</em> &mdash; con interviste chiuse (insieme predefinito di domande) o aperte;</li>
+					<li>discutere con gli <em xml:lang="en">stakeholder</em> alcuni scenari del sistema (uno scenario è la descrizione di un esempio di interazione col sistema);</li>
+					<li>discutere con gli <em xml:lang="en">stakeholder</em> i casi d'uso del sistema (tramite diagrammi che individuino le interazioni tra il sistema e i suoi utenti);</li>
 					<li>studiare un prototipo del sistema;</li>
-					<li>discutere in modo creativo, tramite <span xml:lang="en">brainstorming</span>;</li>
-					<li>osservare il sistema in modo etnografico, concentrandosi sul suo funzionamento abituale.</li>
+					<li>discutere in modo creativo, tramite <em xml:lang="en">brainstorming</em>;</li>
+					<li>osservare il sistema in modo etnografico, immergendosi nel suo funzionamento abituale.</li>
 				</ul>
-			Interviste e scenari (oltre al capitolato d'appalto, chiaramente) sono fonte di requisiti espliciti; per ricavare, invece, i requisiti impliciti, gli ingegneri del <span xml:lang="en">software</span> devono capire il dominio di applicazione del sistema (magari creando un glossario dei termini chiave del dominio).
+			Interviste e scenari (oltre al capitolato d'appalto, chiaramente) sono fonte di <strong>requisiti espliciti</strong>; per ricavare, invece, i <strong>requisiti impliciti</strong>, gli analisti devono capire il dominio di applicazione del sistema (magari creando un glossario dei termini chiave del dominio).
 			</li>
 			<li>Classificazione e organizzazione dei requisiti; l'insieme dei requisiti viene strutturato, dividendo i requisiti in gruppi che rispecchino l'architettura del <span xml:lang="en">software</span> (qui, progettazione e analisi procedono spesso insieme).</li>
-			<li>Modellazione concettuale del sistema (ad esempio tramite un diagramma dei casi d'uso).</li>
+			<li>Modellazione concettuale del sistema (ad esempio tramite diagrammi dei casi d'uso).</li>
 			<li>Assegnazione dei requisiti a parti distinte del sistema.</li>
-			<li>Negoziazione con il committente e con i sotto-fornitori: essendoci diversi <span xml:lang="en">stakeholders</span>, è normale che alcuni requisiti siano in conflitto; bisogna dare una priorità ad ogni requisito e negoziare quelli incompatibili per trovare un compromesso.</li>
+			<li>Negoziazione con il committente e con i sotto-fornitori: essendoci diversi <em xml:lang="en">stakeholder</em>, è normale che alcuni requisiti siano in conflitto; bisogna dare una priorità ad ogni requisito e negoziare quelli incompatibili, per trovare un compromesso.</li>
 		</ol>
-		<p>I requisiti possono cambiare (a causa di condizioni esterne o anche solo perché l'analisi si è approfondita e ha introdotto nuovi requisiti); proprio per questo, è bene notare che la sequenza di passi riportata diventa spesso un ciclo che si ripete.</p>
+		<p>I requisiti possono cambiare (a causa di condizioni esterne o anche solo perché un'analisi approfondita ha introdotto nuovi requisiti). Proprio per questo, è bene notare che la sequenza di passi che abbiamo riportato diventa spesso un ciclo che si ripete.</p>
 
 		<h2>Specifica dei requisiti</h2> <!-- [...!] -->
-		<p>I requisiti vanno specificati in un documento, usando un linguaggio formale o grafico. [?? ...] Vanno ordinati per priorità, classificati e identificati univocamente.</p>
+		<p>I requisiti vanno specificati in un documento, usando un linguaggio formale e/o grafico. Vanno ordinati per priorità, classificati e identificati univocamente.</p>
+		<p>Lo standard <abbr title="Institute of Electrical and Electronics Engineers">IEEE</abbr> 830-1998 raccomanda che la specifica dei requisiti sia:</p>
+		<ul>
+			<li>priva di ambiguità</li>
+			<li>corretta</li>
+			<li>completa</li>
+			<li>verificabile</li>
+			<li>coerente</li>
+			<li>modificabile</li>
+			<li>tracciabile</li>
+			<li>ordinata per rilevanza dei requisiti</li>
+		</ul>
+		<p>Lo stesso standard raccomanda, inoltre, che il documento di Analisi dei Requisiti (<em xml:lang="en">Software Requirements Specification</em>) rechi un'introduzione (con scopo del documento, scopo del prodotto, glossario, riferimenti, struttura del documento) e contenga una descrizione generale (con prospettive del prodotto, sue funzioni, caratteristiche degli utenti, vincoli generali, assunzioni e dipendenze).</p>
 
 		<h2>Validazione dei requisiti</h2>
 		<p>Validare i requisiti vuol dire controllare che essi definiscano effettivamente il sistema che il cliente richiede. A partire dal documento generato durante la specifica dei requisiti, bisogna assicurarsi che questi siano:</p>
@@ -102,13 +115,13 @@
 			<li>sufficienti &mdash; ogni bisogno dev'essere soddisfatto da qualche requisito del documento;</li>
 			<li>coerenti;</li>
 			<li>realistici &mdash; i requisiti devono essere implementabili con la tecnologia a disposizione;</li>
-			<li>verificabili &mdash; si dev'essere in grado di dimostrare che il sistema soddisfa i requisiti.</li>
+			<li>verificabili &mdash; si dovrà essere in grado di dimostrare che il sistema soddisfa i requisiti.</li>
 		</ul>
 	</div>
 
 	<div id="footnotes">
 		<ol>
-			<li id="ftn1"><span xml:lang="en">Requirements elicitation</span>.</li>
+			<li id="ftn1"><em xml:lang="en">Requirements elicitation</em>.</li>
 		</ol>
 	</div>
 
