@@ -35,6 +35,11 @@
 	\subsubsection{<xsl:apply-templates />}
 </xsl:template>
 
+<!-- h4 (paragraph) -->
+<xsl:template match="h4">
+	\paragraph{<xsl:apply-templates />}
+</xsl:template>
+
 <!-- h1.appendix (appendix) -->
 <xsl:template match="div[@class='appendix']/h1">
 	\newpage
@@ -102,17 +107,23 @@
 <!-- superscripts in equations -->
 <xsl:template match="var/sup">^{<xsl:apply-templates />}</xsl:template>
 
+<!-- subscripts in equations -->
+<xsl:template match="var/sub">_{<xsl:apply-templates />}</xsl:template>
+
 <!-- code -->
 <xsl:template match="code">\texttt{<xsl:apply-templates />}</xsl:template>
+
+<!-- inline quotations -->
+<xsl:template match="q">\textquote{<xsl:apply-templates />}</xsl:template>
+
+<!-- links -->
+<xsl:template match="a">\href{<xsl:value-of select="@href" />}{<xsl:apply-templates />}</xsl:template>
 
 <!-- preformatted text -->
 <xsl:template match="pre">\begin{verbatim}
 <xsl:apply-templates />
 \end{verbatim}
 </xsl:template>
-
-<!-- inline quotations -->
-<xsl:template match="q">\textquote{<xsl:apply-templates />}</xsl:template>
 
 
 
@@ -157,8 +168,7 @@
 
 <!-- footnotes -->
 <xsl:key name="foo" match="/html/body/div[@id='footnotes']/ol/li" use="@id" />
-<xsl:template match="sup[@class='footnote']">\footnote{<xsl:value-of select="key('foo', substring(a/@href, 2))" />}</xsl:template>
-
+<xsl:template match="sup[@class='footnote']">\footnote{<xsl:apply-templates select="key('foo', substring(a/@href, 2))/node()" />}</xsl:template>
 
 
 
