@@ -43,7 +43,7 @@
 		<p>Obiettivo della progettazione è definire l'architettura del sistema. Per architettura s'intende la decomposizione di un sistema in componenti, l'organizzazione di tali componenti, le interfacce dei componenti e i loro paradigmi di composizione. In generale, una buona architettura deve rispettare i seguenti princìpi:</p>
 		<ul>
 			<li>sufficienza &mdash; deve soddisfare tutti i requisiti;</li>
-			<li>comprensibilità &mdash; può essere capita dagli <span xml:lang="en">stakeholders</span>;</li>
+			<li>comprensibilità &mdash; può essere capita dagli <em xml:lang="en">stakeholder</em>;</li>
 			<li>modularità &mdash; le sue parti sono chiare e distinte, non si sovrappongono;</li>
 			<li>robustezza &mdash; è capace di gestire un'ampia classe di input diversi;</li>
 			<li>flessibilità &mdash; permette modifiche a costo contenuto;</li>
@@ -58,13 +58,13 @@
 			<li>coesione &mdash; parti associate concorrono agli stessi obiettivi (l'approccio a oggetti aiuta molto a ottenere coesione);</li>
 			<li>basso accoppiamento &mdash; parti distinte dipendono il meno possibile le une dalle altre.</li>
 		</ul>
-		<p>Tutte queste qualità devono essere misurabili. In particolare, l'accoppiamento è misurabile interpretando le componenti di un sistema come i nodi di un grafo orientato dove gli archi sono dipendenze di un componente nei confronti di un altro; il numero di archi entranti (<em xml:lang="en">fan-in</em>) è indice di utilità, mentre il numero di archi uscenti (<em xml:lang="en">fan-out</em>) è indice di dipendenza. Riguardo alla riusabilità, infine, è bene notare che costituisce un guadagno soltanto nel lungo termine, mentre nel breve termine è un puro costo.</p>
+		<p>Tutte queste qualità devono essere misurabili. In particolare, l'accoppiamento è misurabile interpretando le componenti di un sistema come i nodi di un grafo orientato dove gli archi sono dipendenze di una componente nei confronti di un'altra; il numero di archi entranti in una componente (<strong><em xml:lang="en">fan-in</em></strong>) è indice di utilità, mentre il numero di archi uscenti (<strong><em xml:lang="en">fan-out</em></strong>) è indice di dipendenza da altre componenti. Riguardo alla riusabilità, infine, è bene notare che costituisce un guadagno soltanto nel lungo termine, mentre nel breve termine è un puro costo.</p>
 
 		<h2><em xml:lang="en">Design pattern</em> e stili architetturali</h2>
 		<p>Un <em xml:lang="en">design pattern</em> è una soluzione progettuale a un problema ricorrente. Per la progettazione esistono soluzioni progettuali di alto livello (gli stili architetturali) e di basso livello (i <span xml:lang="en">design pattern</span>).</p>
 
 		<h2>Progettazione architetturale</h2>
-		<p>Esistono vari stili architetturali e aderire a uno di essi garantisce coerenza; alcuni stili sono:</p>
+		<p>Esistono vari <strong>stili architetturali</strong> e aderire a uno di essi garantisce coerenza; alcuni stili sono:</p>
 		<ul>
 			<li>strutture generali (livelli, oggetti, <span xml:lang="en">pipes</span> e filtri, <span xml:lang="en">blackboard</span>);</li>
 			<li>sistemi distribuiti (<em xml:lang="en">client-server</em>, <em xml:lang="en">three-tiers</em>, <em xml:lang="en">peer-to-peer</em>, <em xml:lang="en">broker</em>);</li>
@@ -74,7 +74,7 @@
 		</ul>
 
 		<h2>Progettazione di dettaglio</h2>
-		<p>Uno stile architetturale è una soluzione progettuale di alto livello; per la progettazione di dettaglio, invece, si ricorre ai <span xml:lang="en">design pattern</span>, che si dividono in tre famiglie:</p>
+		<p>Uno stile architetturale è una soluzione progettuale di alto livello; per la progettazione di dettaglio, invece, si ricorre ai <strong><em xml:lang="en">design pattern</em></strong>, che si dividono in tre famiglie:</p>
 		<ul>
 			<li><span xml:lang="en">design pattern</span> creazionali, che cercano di rendere un sistema indipendente dall'implementazione concreta delle sue componenti;</li>
 			<li><span xml:lang="en">design pattern</span> strutturali, che affrontano problemi riguardanti la composizione di classi e oggetti;</li>
