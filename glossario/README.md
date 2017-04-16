@@ -31,6 +31,7 @@ Di seguito i termini del glossario:
 * __ciclo di vita (di un prodotto)__: Insieme degli stati che il prodotto assume, dal concepimento al ritiro. Inglese: _software product life cycle_.
 * __ciclo di vita dello sviluppo (di un prodotto)__: Parte del ciclo di vita di un prodotto che riguarda il suo sviluppo. Inglese: _software development life cycle_.
 * __ciclo PDCA (o ciclo di Deming)__: Schema iterativo di auto-miglioramento che consiste di quattro punti: Plan (individuare obiettivi di miglioramento), Do (eseguire ciò che si è pianificato), Check (verificare se ha funzionato) e Act (agire per correggersi). Inglese: _PDCA cycle_.
+* __CMMI__: Standard per il miglioramento e la valutazione della qualità di processo.
 * __CoCoMo (Constructive Cost Model)__: Modello per la stima dei costi di un progetto, in tempo/persona. Inglese: _CoCoMo_.
 * __coerenza__: L'esser composto da parti che non sono in disaccordo tra loro, cioè non affermano cose che si contraddicano. Inglese: _consistency_.
 * __coesione__: Grado di relazione tra parti associate di un sistema che concorrono agli stessi obiettivi. Inglese: _cohesion_.
@@ -66,6 +67,11 @@ Di seguito i termini del glossario:
 * __ingegneria del software__: Applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, al funzionamento e al mantenimento del software. Inglese: _software engineering_.
 * __inspection__: Tecnica di analisi statica che consiste nell'eseguire una lettura mirata, alla ricerca di errori noti.
 * __integrazione continua__: Pratica di sviluppo in cui i membri di un progetto integrano il loro lavoro frequentemente (quotidianamente) in modo automatizzato. Inglese: _continuous integration_.
+* __ISO 9000__: Famiglia di standard internazionali per la gestione della qualità nei sistemi produttivi.
+* __ISO/IEC 12207__: Standard internazionale per il ciclo di vita del software.
+* __ISO/IEC 15504__: Standard internazionale per il miglioramento e la valutazione della qualità di processo.
+* __ISO/IEC 15939__: Standard internazionale per la misurazione del software.
+* __ISO/IEC 9126__: Standard internazionale per la qualità del software.
 * __LaTeX__: Sistema di composizione tipografica che utilizza TeX come motore.
 * __legge di Parkinson__: Work expands to fill the time available. Inglese: _Parkinson's law_.
 * __malfunzionamento__: Esecuzione di un software difforme dalle attese. Inglese: _failure_.
@@ -121,6 +127,8 @@ Di seguito i termini del glossario:
 * __sistematico__: Che abbraccia un metodo. Inglese: _systematic_.
 * __slack time__: Quantità di tempo tra la data minima a partire da cui un evento può accadere e la data massima oltre la quale esso ritarda gli eventi successivi.
 * __sommario__: Breve riassunto del contenuto di un documento. Inglese: _abstract_.
+* __SPICE__: Software Process Improvement Capability dEtermination, vedi ISO/IEC 15504.
+* __SPY__: Software Process Assessment and Improvement, standard per il miglioramento e la valutazione della qualità di processo.
 * __SQL (Structured Query Language__: Linguaggio di programmazione dichiarativo basato sull'algebra relazionale che serve a creare, manipolare e interrogare basi di dati relazionali. Inglese: _SQL_.
 * __stakeholder__: Persona a vario titolo coinvolta nel ciclo di vita di un software che ha influenza sul prodotto o sul processo.
 * __standard di processo__: Riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettività di casi afferenti ad un certo dominio applicativo. Inglese: _process standard_.

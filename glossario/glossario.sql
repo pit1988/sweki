@@ -695,7 +695,7 @@ NULL), # forse 'measurement'?
 'Man mano che si aumenta lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre più.',
 'diminishing returns'),
 
-('copertura del codice',
+('copertura_del_codice',
 'copertura del codice',
 'Percentuale di codice sorgente eseguito durante un caso di prova.',
 'code coverage'),
@@ -703,4 +703,44 @@ NULL), # forse 'measurement'?
 ('complessità_ciclomatica',
 'complessità ciclomatica',
 'Misura quantitativa del numero di cammini linearmente indipendenti che il codice sorgente di un programma può percorrere.',
-'cyclomatic complexity');
+'cyclomatic complexity'),
+
+('ISO_IEC 12207',
+'ISO/IEC 12207',
+'Standard internazionale per il ciclo di vita del software.',
+'ISO/IEC 12207'),
+
+('ISO 9000',
+'ISO 9000',
+'Famiglia di standard internazionali per la gestione della qualità nei sistemi produttivi.',
+'ISO 9000'),
+
+('SPY',
+'SPY',
+'Software Process Assessment and Improvement, standard per il miglioramento e la valutazione della qualità di processo.',
+'SPY'),
+
+('CMMI',
+'CMMI',
+'Standard per il miglioramento e la valutazione della qualità di processo.',
+'CMMI'),
+
+('ISO_IEC 15504',
+'ISO/IEC 15504',
+'Standard internazionale per il miglioramento e la valutazione della qualità di processo.',
+'ISO/IEC 15504'),
+
+('SPICE',
+'SPICE',
+'Software Process Improvement Capability dEtermination, vedi ISO/IEC 15504.',
+'SPICE'),
+
+('ISO_IEC 9126',
+'ISO/IEC 9126',
+'Standard internazionale per la qualità del software.',
+'ISO/IEC 9126'),
+
+('ISO_IEC 15939',
+'ISO/IEC 15939',
+'Standard internazionale per la misurazione del software.',
+'ISO/IEC 15939');
