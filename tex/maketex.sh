@@ -17,7 +17,7 @@ echo "\usepackage{hyperref}" >> sweki.tex
 echo "\usepackage{csquotes}" >> sweki.tex
 echo "\setcounter{section}{-1}" >> sweki.tex
 echo "\title{sweki}" >> sweki.tex
-echo "\author{Giorgio Giuffrè}" >> sweki.tex
+echo "\author{FIUP}" >> sweki.tex
 echo "\date{}" >> sweki.tex
 echo "" >> sweki.tex
 echo "\begin{document}" >> sweki.tex
