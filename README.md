@@ -10,4 +10,4 @@ Gli appunti sono disponibili in tre formati:
 
 la versione in Latex è derivata automaticamente da quella in XHTML tramite dei template XSL e dei terribili script di shell (bash).
 
-Per contribuire, modificate le pagine HTML ed eseguite lo script `maketex.sh` dalla cartella `tex`. In tal modo, PDF e sito sono sempre aggiornati.
+Per contribuire, modificate le pagine HTML ed eseguite lo script `maketex.sh` dalla cartella `tex`. In tal modo, PDF e sito sono sempre aggiornati. Per informazioni più dettagliate su come contribuire, seguite [queste istruzioni](https://github.com/FIUP/sweki/wiki).
