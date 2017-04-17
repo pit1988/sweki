@@ -21,23 +21,23 @@
 			<a href="index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a>
 			<a class="next" title="next" href="15_quantif.html">&gt;</a>
 		</h1>
-		<h2>la <span xml:lang="en">wiki</span> di Ingegneria del <span xml:lang="en">Software</span></h2>
+		<h2>la wiki di Ingegneria del Software</h2>
 	</div>
 
 	<div id="content">
 		<h1>Verifica e validazione: analisi dinamica</h1>
 
 		<h2>Definizione e problemi</h2>
-		<p>L'analisi dinamica non è altro che l'esecuzione di <strong><em>test</em></strong>, cioè prove su del codice in esecuzione. Purtroppo nello sviluppo di un <span xml:lang="en">software</span> il codice nasce molto tardi; per questo, il <em xml:lang="en">testing</em> dev'essere rapido (efficiente) ed efficace<sup class="footnote"><a id="txt1" href="#ftn1">[1]</a></sup>. Un altro problema dei test è la loro <strong>non esaustività</strong>: è possibile eseguirli solo su un insieme finito di casi, che non sono quasi mai tutti i casi possibili.</p>
+		<p>L'analisi dinamica non è altro che l'esecuzione di <strong><em>test</em></strong>, cioè prove su del codice in esecuzione. Purtroppo nello sviluppo di un software il codice nasce molto tardi; per questo, il <em xml:lang="en">testing</em> dev'essere rapido (efficiente) ed efficace<sup class="footnote"><a id="txt1" href="#ftn1">[1]</a></sup>. Un altro problema dei test è la loro <strong>non esaustività</strong>: è possibile eseguirli solo su un insieme finito di casi, che non sono quasi mai tutti i casi possibili.</p>
 		<p>La pianificazione del <em xml:lang="en">testing</em> deve quindi avvenire il prima possibile. Il primo momento utile è la progettazione del sistema.</p>
 		<p>Il debugging <em>non</em> è verifica: esso nasce da un errore che si è manifestato inaspettatamente, mentre la verifica viene pianificata a monte dello sviluppo.</p>
 
 		<h2>Terminologia</h2>
 		<p>Compito del test è trovare errori nel codice. Distinguiamo tre livelli di errore:</p>
 		<ul>
-			<li><strong>Malfunzionamento</strong> (<em xml:lang="en">failure</em>): l'esecuzione è difforme dalle attese. I malfunzionamenti riguardano il comportamento del <span xml:lang="en">software</span>.</li>
+			<li><strong>Malfunzionamento</strong> (<em xml:lang="en">failure</em>): l'esecuzione è difforme dalle attese. I malfunzionamenti riguardano il comportamento del software.</li>
 			<li><strong>Errore</strong> (<em xml:lang="en">error</em>): stato del sistema che, se attivato, produce un malfunzionamento; se l'errore non viene attivato, rimane nascosto ma esiste. Gli errori sono quindi stati del sistema.</li>
-			<li><strong>Guasto</strong> o difetto (<em xml:lang="en">fault</em>): causa dell'errore; può essere un guasto del computer o del <span xml:lang="en">software</span>. I guasti possono essere malfunzionamenti di un sotto-sistema: i sistemi <span xml:lang="en">software</span> sono sistemi gerarchici (annidati).</li>
+			<li><strong>Guasto</strong> o difetto (<em xml:lang="en">fault</em>): causa dell'errore; può essere un guasto del computer o del software. I guasti possono essere malfunzionamenti di un sotto-sistema: i sistemi software sono sistemi gerarchici (annidati).</li>
 		</ul>
 		<p>Quindi: un guasto cause un errore, il quale può produrre un malfunzionamento. (Nota: il glossario IEEE non concorda pienamente con le definizioni sopra.)</p>
 		<p>Organizziamo il <em xml:lang="en">testing</em> nelle seguenti classi:</p>
@@ -58,7 +58,7 @@
 			<li>singole unità (per i test di unità).</li>
 		</ul>
 		<p>L'obiettivo di ogni prova dev'essere specificato in modo chiaro per ogni caso di prova (<em>test case</em>): un test è buono se è ripetibile. Per essere ripetibile, ogni test deve stare anche allo stato, all'ambiente. Il Piano di Qualifica specifica quali e quante sono le prove da effettuare. I test non sostituiscono la progettazione; piuttosto, sono speculari ad essa.</p>
-		<p>Un test deve cercare di far fallire il <span xml:lang="en">software</span>: dev'essere &quot;cinico&quot;! I test che falliscono devono essere eseguiti sempre, dal momento in cui sono falliti e il <span xml:lang="en">software</span> è stato corretto: <q>Any failed execution must yield a test case, to be permanently included in the project's test suite</q> (Bertrand Meyer).</p>
+		<p>Un test deve cercare di far fallire il software: dev'essere &quot;cinico&quot;! I test che falliscono devono essere eseguiti sempre, dal momento in cui sono falliti e il software è stato corretto: <q>Any failed execution must yield a test case, to be permanently included in the project's test suite</q> (Bertrand Meyer).</p>
 		<p>All'origine, un test va specificato in fase di progettazione; dopo essere stato implementato ed eseguito, esso va tenuto in un archivio, come documentazione dell'attività di <em xml:lang="en">testing</em>.</p>
 
 		<h2>Test di unità</h2>
@@ -81,7 +81,7 @@
 
 		<h2>Test di integrazione</h2>
 		<p>I test d'integrazione fanno parte di un processo più ampio che è quello dell'integrazione delle parti del sistema. Le parti vanno integrate secondo una strategia. Ad esempio è sempre bene assemblare le parti in modi incrementale (quindi reversibile), seguendo le dipendenze nell'architettura: aggiungendo una parte nuova ad un insieme ben verificato, i difetti rilevati in un test d'integrazione saranno probabilmente dovuti alla parte nuova, facilitando così la ricerca di quale parte sia da correggere.</p>
-		<p>Basandoci sul fatto che i sistemi <span xml:lang="en">software</span> sono (al giorno d'oggi) sistemi gerarchici, possiamo individuare due principali <strong>strategie d'integrazione</strong>:</p>
+		<p>Basandoci sul fatto che i sistemi software sono (al giorno d'oggi) sistemi gerarchici, possiamo individuare due principali <strong>strategie d'integrazione</strong>:</p>
 		<ul>
 			<li>Dal basso (<span xml:lang="en">bottom-up</span>): si sviluppano e si integrano prima le parti con minore dipendenza funzionale (<em xml:lang="en">fan-out</em>) e maggiore utilità (<em xml:lang="en">fan-in</em>). Così facendo, si &quot;risale&quot; l'albero delle dipendenze. Si economizzano molti stub ma le funzionalità di alto livello compaiono più tardi.</li>
 			<li>Dall'alto (<span xml:lang="en">top-down</span>): si sviluppano prima le parti più esterne (di alto livello, con molte dipendenze) e poi si scende nell'albero delle dipendenze. Qui le funzionalità di alto livello vengono verificate sin da subito e si può mostrare al committente una bozza del sistema.</li>
@@ -95,7 +95,7 @@
 
 	<div id="footnotes">
 		<ol>
-			<li id="ftn1">È interessante notare che il <em xml:lang="en">testing</em> viene fatto sempre: se non lo fa il fornitore, lo farà l'utente. Ovviemante, dare all'utente un <span xml:lang="en">software</span> non testato è una cosa che non va fatta.</li>
+			<li id="ftn1">È interessante notare che il <em xml:lang="en">testing</em> viene fatto sempre: se non lo fa il fornitore, lo farà l'utente. Ovviemante, dare all'utente un software non testato è una cosa che non va fatta.</li>
 			<li id="ftn2">In inglese <em>diminishing returns</em>.</li>
 			<li id="ftn3">Qui stiamo studiando un programma come un albero.</li>
 			<li id="ftn4">La copertura interessa soltanto i test strutturali, non quelli funzionali.</li>

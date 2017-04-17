@@ -21,7 +21,7 @@
 			<a href="index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a>
 			<a class="next" title="next" href="13_anstatica.html">&gt;</a>
 		</h1>
-		<h2>la <span xml:lang="en">wiki</span> di Ingegneria del <span xml:lang="en">Software</span></h2>
+		<h2>la wiki di Ingegneria del Software</h2>
 	</div>
 
 	<div id="content">
@@ -40,10 +40,10 @@
 		<h2>Forme di verifica</h2>
 		<p>La verifica è un processo analitico. Si può fare in due forme:</p>
 		<ul>
-			<li>analisi statica (senza eseguire il <span xml:lang="en">software</span>);</li>
-			<li>analisi dinamica (eseguendo il <span xml:lang="en">software</span> o una sua parte).</li>
+			<li>analisi statica (senza eseguire il software);</li>
+			<li>analisi dinamica (eseguendo il software o una sua parte).</li>
 		</ul>
-		<p>L'analisi statica viene fatta prima di quella dinamica: quest'ultima necessita di (una parte di) <span xml:lang="en">software</span> eseguibile, mentre l'analisi statica si può applicare già a <em>frammenti</em> di prodotto.</p>
+		<p>L'analisi statica viene fatta prima di quella dinamica: quest'ultima necessita di (una parte di) software eseguibile, mentre l'analisi statica si può applicare già a <em>frammenti</em> di prodotto.</p>
 
 		<h2>Test</h2>
 		<p>L'analisi dinamica viene effettuata tramite prove (<em><strong>test</strong></em>). Un test, per essere utile, dev'essere facilmente ripetibile; per questo, bisogna sempre:</p>
@@ -68,13 +68,13 @@
 			<li>test di integrazione (stabiliti durante la progettazione logica);</li>
 			<li>test di unità (stabiliti durante la progettazione di dettaglio).</li>
 		</ul>
-		<p>Nell'architettura di un <span xml:lang="en">software</span>, l'unità è la più piccola quantità di <span xml:lang="en">software</span> che conviene verificare da sola. Un <strong>test di unità</strong> è un'attività di analisi dinamica che verifica la correttezza del codice. Può essere responsabilità del programmatore che ha implementato l'unità<sup class="footnote"><a id="txt2" href="#ftn2">[2]</a></sup>, di un verificatore indipendente oppure (meglio!) di un automa. Questi test vengono svolti con un alto grado di parallelismo (rispecchiando lo stesso parallelismo che caratterizza il lavoro dei programmatori).</p>
+		<p>Nell'architettura di un software, l'unità è la più piccola quantità di software che conviene verificare da sola. Un <strong>test di unità</strong> è un'attività di analisi dinamica che verifica la correttezza del codice. Può essere responsabilità del programmatore che ha implementato l'unità<sup class="footnote"><a id="txt2" href="#ftn2">[2]</a></sup>, di un verificatore indipendente oppure (meglio!) di un automa. Questi test vengono svolti con un alto grado di parallelismo (rispecchiando lo stesso parallelismo che caratterizza il lavoro dei programmatori).</p>
 		<p>I <strong>test di integrazione</strong> servono per verificare il sistema in modo <em>incrementale</em>. Questi test stanno a livello di componente e integrano il funzionamento di più unità.</p>
 		<p>Il <strong>test di sistema</strong> serve ad accertare la copertura dei requisiti. È un'attività interna all'organizzazione, mentre il <strong>collaudo</strong> è la corrispondente attività esterna (supervisionata dal committente). Al collaudo segue il rilascio del prodotto e la fine della commessa (con eventuale manutenzione).</p>
 		<p>Infine, esistono anche i <strong>test di regressione</strong>: a seguito di un test andato male e di una relativa correzione, i test di regressione sono l'insieme di test necessari ad accertare he la correzione non causi errori nelle parti del sistema che dipendono da essa. La regressione può essere complicata e dev'essere studiata <em xml:lang="la">ad hoc</em>.</p>
 
 		<h2>Forme di analisi statica</h2>
-		<p>L'analisi statica si applica ad ogni prodotto intermedio (non solo <span xml:lang="en">software</span>) per tutti i processi attivi nel progetto. Distinguiamo due tecniche principali per fare analisi statica:</p>
+		<p>L'analisi statica si applica ad ogni prodotto intermedio (non solo software) per tutti i processi attivi nel progetto. Distinguiamo due tecniche principali per fare analisi statica:</p>
 		<ul>
 			<li>Metodi di lettura (<em xml:lang="en">desk check</em>), svolti da un umano che controlla coerenza, completezza e correttezza; impiegati solo per prodotti semplici.</li>
 			<li>Metodi formali, svolti da macchine.</li>

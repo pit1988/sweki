@@ -21,14 +21,14 @@
 			<a href="index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a>
 			<a class="next" title="next" href="04_gestproj.html">&gt;</a>
 		</h1>
-		<h2>la <span xml:lang="en">wiki</span> di Ingegneria del <span xml:lang="en">Software</span></h2>
+		<h2>la wiki di Ingegneria del Software</h2>
 	</div>
 
 	<div id="content">
-		<h1>Ciclo di vita del <span xml:lang="en">software</span></h1>
+		<h1>Ciclo di vita del software</h1>
 
 		<h2>Definizione</h2>
-		<p>Caratteristico di un prodotto di <abbr title="Ingegneria del Software">IS</abbr> è il suo ciclo di vita, cioè l'insieme degli <strong>stati</strong> che il prodotto assume dal concepimento al ritiro<sup class="footnote"><a id="txt1" href="#ftn1">[1]</a></sup>. Senza di esso non esisterebbe la figura dell'ingegnere del <span xml:lang="en">software</span>. Conviene vedere il ciclo di vita come una macchina a stati, in cui gli stati sono il grado di maturazione del prodotto e gli archi rappresentano attività (raggruppate in processi) che servono a far avanzare il prodotto nel suo grado di maturazione. La durata temporale entro uno stato del ciclo di vita e un altro è detta <strong>fase</strong>. Misura del successo di un prodotto è un ciclo di vita lungo, speso per lo più in manutenzione, magari con un buon <span xml:lang="en">feedback</span> da parte degli utenti. Distinguiamo tre tipi di manutenzione:</p>
+		<p>Caratteristico di un prodotto di <abbr title="Ingegneria del Software">IS</abbr> è il suo ciclo di vita, cioè l'insieme degli <strong>stati</strong> che il prodotto assume dal concepimento al ritiro<sup class="footnote"><a id="txt1" href="#ftn1">[1]</a></sup>. Senza di esso non esisterebbe la figura dell'ingegnere del software. Conviene vedere il ciclo di vita come una macchina a stati, in cui gli stati sono il grado di maturazione del prodotto e gli archi rappresentano attività (raggruppate in processi) che servono a far avanzare il prodotto nel suo grado di maturazione. La durata temporale entro uno stato del ciclo di vita e un altro è detta <strong>fase</strong>. Misura del successo di un prodotto è un ciclo di vita lungo, speso per lo più in manutenzione, magari con un buon <span xml:lang="en">feedback</span> da parte degli utenti. Distinguiamo tre tipi di manutenzione:</p>
 		<ul>
 			<li>correttiva  <code>:(</code>  per correggere difetti;</li>
 			<li>di adattamento  <code>:|</code>  per adattare il sistema a variazioni di requisiti;</li>
@@ -37,7 +37,7 @@
 		<p>Esempio di manutenzione evolutiva è Firefox.</p>
 
 		<h2>Modelli di ciclo di vita</h2>
-		<p>I processi <span xml:lang="en">software</span>, di per sé, non seguono un ordinamento; le relazioni temporali e logiche tra essi sono fornite da un <strong>modello</strong> di ciclo di vita. Esistono diversi possibili cicli di vita, che si distinguono non per numero o significato degli stati, bensì per le transizioni tra essi e le loro regole di attivazione. Alcuni modelli di ciclo di vita sono:</p>
+		<p>I processi software, di per sé, non seguono un ordinamento; le relazioni temporali e logiche tra essi sono fornite da un <strong>modello</strong> di ciclo di vita. Esistono diversi possibili cicli di vita, che si distinguono non per numero o significato degli stati, bensì per le transizioni tra essi e le loro regole di attivazione. Alcuni modelli di ciclo di vita sono:</p>
 		<ul>
 			<li>sequenziale &mdash; tipo catena di montaggio;</li>
 			<li>incrementale &mdash; realizzazione in più passi, con numero crescente di funzionalità;</li>
@@ -58,11 +58,11 @@
 			<li>ruoli coinvolti;</li>
 			<li>scadenze di consegna.</li>
 		</ul>
-		<p>Questo modello ha il pregio di individuare fasi distinte e ordinate nelle quali decomporre il progetto. Suo difetto principale è l'eccessiva <strong>rigidità</strong>. Tuttavia questo approccio può funzionare se il cliente è consapevole (e abbastanza sicuro) di ciò che vuole, pur tenendo conto che il modello genera <span xml:lang="en">software</span> vero e proprio molto tardi nel ciclo di vita.</p>
+		<p>Questo modello ha il pregio di individuare fasi distinte e ordinate nelle quali decomporre il progetto. Suo difetto principale è l'eccessiva <strong>rigidità</strong>. Tuttavia questo approccio può funzionare se il cliente è consapevole (e abbastanza sicuro) di ciò che vuole, pur tenendo conto che il modello genera software vero e proprio molto tardi nel ciclo di vita.</p>
 		<p>Allora, si pensò di correggere il modello creando un &quot;ibrido&quot;, introducendo dei prototipi &quot;usa e getta&quot; oppure la possibilità di tornare ad uno stato precedente. Tuttavia risalire la cascata fa risalire il progetto nel tempo e genera iterazioni, non incrementi.</p>
 
 		<h2>Il modello incrementale</h2>
-		<p>Per superare le difficoltà del modello sequenziale ibrido, nacque il modello incrementale: qui i cicli non sono più iterazioni ma <strong>incrementi</strong>; ogni incremento attraversa tutte le fasi del modello sequenziale, dall'analisi alla verifica (anche se, nella variante <em xml:lang="en">Staged Delivery</em>, l'analisi e la progettazione si affrontano all'inizio e non vengono più ripetute). Il modello prevede rilasci multipli e successivi; ciascuno realizza un incremento di funzionalità, approssimando sempre meglio la soluzione. Un grande vantaggio è che le funzionalità più importanti vengono affrontante all'inizio; così facendo, queste vengono verificate più volte (dato che ogni ciclo prevede la verifica del <span xml:lang="en">software</span>). Ogni incremento ha il vantaggio di ridurre il rischio di fallimento.</p>
+		<p>Per superare le difficoltà del modello sequenziale ibrido, nacque il modello incrementale: qui i cicli non sono più iterazioni ma <strong>incrementi</strong>; ogni incremento attraversa tutte le fasi del modello sequenziale, dall'analisi alla verifica (anche se, nella variante <em xml:lang="en">Staged Delivery</em>, l'analisi e la progettazione si affrontano all'inizio e non vengono più ripetute). Il modello prevede rilasci multipli e successivi; ciascuno realizza un incremento di funzionalità, approssimando sempre meglio la soluzione. Un grande vantaggio è che le funzionalità più importanti vengono affrontante all'inizio; così facendo, queste vengono verificate più volte (dato che ogni ciclo prevede la verifica del software). Ogni incremento ha il vantaggio di ridurre il rischio di fallimento.</p>
 		<p>Questo modello è meno idealista ma più &quot;gentile&quot; del sequenziale, nel senso che sa adattarsi ai cambiamenti. Difatti, mentre il modello sequenziale segue un approccio <strong>predittivo</strong> (cioè basato su piani che devono essere rispettati), il modello incrementale segue un approccio <strong>adattativo</strong>, dove la realtà è considerata inerentemente imprevedibile. Sarebbe preferibile un approccio predittivo, che permette di stimare con precisione una data di consegna e un preventivo; tuttavia l'approccio adattativo può essere conveniente in uno scenario in cui i requisiti cambiano in corso d'opera.</p>
 
 		<h2>Il modello evolutivo</h2><!-- DA AMPLIARE -->
