@@ -69,9 +69,11 @@ Di seguito i termini del glossario:
 * __integrazione continua__: Pratica di sviluppo in cui i membri di un progetto integrano il loro lavoro frequentemente (quotidianamente) in modo automatizzato. Inglese: _continuous integration_.
 * __ISO 9000__: Famiglia di standard internazionali per la gestione della qualità nei sistemi produttivi.
 * __ISO/IEC 12207__: Standard internazionale per il ciclo di vita del software.
+* __ISO/IEC 14598__: Standard internazionale che fornisce un processo per la valutazione della qualità del software; integra ISO/IEC 9216.
 * __ISO/IEC 15504__: Standard internazionale per il miglioramento e la valutazione della qualità di processo.
 * __ISO/IEC 15939__: Standard internazionale per la misurazione del software.
-* __ISO/IEC 9126__: Standard internazionale per la qualità del software.
+* __ISO/IEC 25000__: Famiglia di standard internazionali che vogliono fornire un framework per la valutazione della qualità del software; discende da ISO/IEC 9126 e ISO/IEC 14598.
+* __ISO/IEC 9126__: Standard internazionale che fornisce un modello per la qualità del software.
 * __LaTeX__: Sistema di composizione tipografica che utilizza TeX come motore.
 * __legge di Parkinson__: Work expands to fill the time available. Inglese: _Parkinson's law_.
 * __malfunzionamento__: Esecuzione di un software difforme dalle attese. Inglese: _failure_.

@@ -737,8 +737,18 @@ NULL), # forse 'measurement'?
 
 ('ISO_IEC 9126',
 'ISO/IEC 9126',
-'Standard internazionale per la qualità del software.',
+'Standard internazionale che fornisce un modello per la qualità del software.',
 'ISO/IEC 9126'),
+
+('ISO_IEC 14598',
+'ISO/IEC 14598',
+'Standard internazionale che fornisce un processo per la valutazione della qualità del software; integra ISO/IEC 9216.',
+'ISO/IEC 14598'),
+
+('ISO_IEC 25000',
+'ISO/IEC 25000',
+'Famiglia di standard internazionali che vogliono fornire un framework per la valutazione della qualità del software; discende da ISO/IEC 9126 e ISO/IEC 14598.',
+'ISO/IEC 25000'),
 
 ('ISO_IEC 15939',
 'ISO/IEC 15939',
