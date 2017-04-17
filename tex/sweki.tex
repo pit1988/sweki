@@ -219,7 +219,7 @@ Un buon esempio di valutazione dell'efficienza e dell'efficacia è la misurazion
 	\subsection{Definizione}
 
 		
-Caratteristico di un prodotto di IS è il suo ciclo di vita, cioè l'insieme degli \textbf{stati} che il prodotto assume dal concepimento al ritiro\footnote{Per ritiro s'intende il momento in cui il prodotto cessa di essere seguito dai creatori.}. Senza di esso non esisterebbe la figura dell'ingegnere del software. Conviene vedere il ciclo di vita come una macchina a stati, in cui gli stati sono il grado di maturazione del prodotto e gli archi rappresentano attività (suddivise in processi) che servono a far avanzare il prodotto nel suo grado di maturazione. La durata temporale entro uno stato del ciclo di vita e un altro è detta \textbf{fase}. Misura del successo di un prodotto è un ciclo di vita lungo, speso per lo più in manutenzione, magari con un buon feedback da parte degli utenti. Distinguiamo tre tipi di manutenzione:
+Caratteristico di un prodotto di IS è il suo ciclo di vita, cioè l'insieme degli \textbf{stati} che il prodotto assume dal concepimento al ritiro\footnote{Per ritiro s'intende il momento in cui il prodotto cessa di essere seguito dai creatori.}. Senza di esso non esisterebbe la figura dell'ingegnere del software. Conviene vedere il ciclo di vita come una macchina a stati, in cui gli stati sono il grado di maturazione del prodotto e gli archi rappresentano attività (raggruppate in processi) che servono a far avanzare il prodotto nel suo grado di maturazione. La durata temporale entro uno stato del ciclo di vita e un altro è detta \textbf{fase}. Misura del successo di un prodotto è un ciclo di vita lungo, speso per lo più in manutenzione, magari con un buon feedback da parte degli utenti. Distinguiamo tre tipi di manutenzione:
 		
 	\begin{itemize}
 		
@@ -293,20 +293,22 @@ Allora, si pensò di correggere il modello creando un "ibrido", introducendo dei
 	\subsection{Il modello incrementale}
 
 		
-Per superare le difficoltà del modello sequenziale ibrido, nacque il modello incrementale: in esso, i cicli non sono più iterazioni ma \textbf{incrementi} --- con l'eccezione dell'analisi e della progettazione, che si affrontano all'inizio e non vengono ripetute. Il modello prevede rilasci multipli e successivi; ciascuno realizza un incremento di funzionalità, approssimando sempre meglio la soluzione. Un grande vantaggio è che le funzionalità più importanti vengono affrontante all'inizio. Questo modello è meno idealista ma più gentile.
+Per superare le difficoltà del modello sequenziale ibrido, nacque il modello incrementale: qui i cicli non sono più iterazioni ma \textbf{incrementi}; ogni incremento attraversa tutte le fasi del modello sequenziale, dall'analisi alla verifica (anche se, nella variante \emph{Staged Delivery}, l'analisi e la progettazione si affrontano all'inizio e non vengono più ripetute). Il modello prevede rilasci multipli e successivi; ciascuno realizza un incremento di funzionalità, approssimando sempre meglio la soluzione. Un grande vantaggio è che le funzionalità più importanti vengono affrontante all'inizio; così facendo, queste vengono verificate più volte (dato che ogni ciclo prevede la verifica del software). Ogni incremento ha il vantaggio di ridurre il rischio di fallimento.
+		
+Questo modello è meno idealista ma più "gentile" del sequenziale, nel senso che sa adattarsi ai cambiamenti. Difatti, mentre il modello sequenziale segue un approccio \textbf{predittivo} (cioè basato su piani che devono essere rispettati), il modello incrementale segue un approccio \textbf{adattativo}, dove la realtà è considerata inerentemente imprevedibile. Sarebbe preferibile un approccio predittivo, che permette di stimare con precisione una data di consegna e un preventivo; tuttavia l'approccio adattativo può essere conveniente in uno scenario in cui i requisiti cambiano in corso d'opera.
 
 		
 	\subsection{Il modello evolutivo}
+% DA AMPLIARE
 
 		
-Il modello evolutivo, che è incrementale, prevede che gli incrementi successivi siano versioni (prototipi) usabili dal cliente. Più versioni posso essere mantenute in parallelo e ogni fase ammette iterazioni multiple. % ??
-
+Il modello evolutivo, che è incrementale, prevede che gli incrementi successivi siano versioni (prototipi) usabili dal cliente. Più versioni posso essere mantenute in parallelo e ogni fase ammette iterazioni multiple.
 
 		
 	\subsection{Il modello a spirale}
 
 		
-Nel 1988 Barry Boehm propose il modello a spirale, che introduce il concetto di "rischio di progetto" (cercando di contenere tali rischi). Lo sviluppo procede a cicli sempre più lenti; difatti i cicli esterni sono così lenti che possono aderire, ognuno, ad un altro modello di ciclo di vita. Ad ogni ciclo si analizzano i rischi e si compiono simulazioni. Misura del successo di un progetto è il diametro della spirale. Questo modello viene usato solo da chi intraprende progetti sperimentali, che nessuno ha mai realizzato, e richiede forte interazione tra committente e fornitore. Un ciclo si articola generalmente in quattro momenti:
+Nel 1988 Barry Boehm propose il modello a spirale, che introduce il concetto di "rischio di progetto" (cercando di contenere tali rischi). Lo sviluppo procede a cicli inizialmente rapidi ma via via sempre più lenti; difatti i cicli esterni della spirale sono così lenti che possono aderire, ognuno, ad un diverso modello di ciclo di vita. Ad ogni ciclo si analizzano i rischi e si compiono simulazioni. Misura del successo di un progetto è il diametro della spirale. Questo modello viene usato solo da chi intraprende progetti sperimentali, che nessuno ha mai realizzato, e richiede forte interazione tra committente e fornitore. Un ciclo si articola generalmente in quattro momenti:
 		
 	\begin{enumerate}
 		
@@ -326,7 +328,7 @@ Nel 1988 Barry Boehm propose il modello a spirale, che introduce il concetto di 
 	\subsection{Il modello a componenti}
 
 		
-Più pragmatico è il modello a componenti, che prevede l'integrazione di componenti già implementati. L'idea nasce dal fatto che molto di quel che ci serve fare è già stato fatto e molto di quel che faremo ci potrà servire ancora. Difatti, l'IS è un insieme di best practices che assembla componenti già esistenti, più che crearle ex novo.
+Più pragmatico è il modello a componenti, che prevede l'integrazione di componenti già implementati. L'idea nasce dal fatto che molto di quel che ci serve fare è già stato fatto e molto di quel che faremo ci potrà servire ancora. Difatti, l'IS è un insieme di \emph{best practices} che assembla componenti già esistenti, più che crearle ex novo.
 
 		
 	\subsection{I metodi agili}
