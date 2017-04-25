@@ -34,7 +34,6 @@ a:hover {
 #header {
 	padding: 1em;
 	background-color: #000036;
-	color: #F1F1EF;
 	text-align: center;
 }
 
@@ -63,18 +62,12 @@ a:hover {
 	}
 }
 
-@media screen and (max-width: 680px) {
-	#header h1 {
-		font-size: 3em;
-	}
-}
-
 #header .next, #header .prev {
 	opacity: 0.28;
 }
 
 #header a.next:hover, #header a.prev:hover {
-	opacity: 0.84;
+	opacity: 0.78;
 	transition: 0.2s;
 }
 
@@ -99,7 +92,7 @@ a:hover {
 #content {
 	margin: auto;
 	max-width: 52em;
-	padding: 0em 2em 4em 2em;
+	padding: 0 2em 4em 2em;
 }
 
 #content h1 {
