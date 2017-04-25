@@ -74,7 +74,6 @@ Di seguito i termini del glossario:
 * __ISO/IEC 15939__: Standard internazionale per la misurazione del software.
 * __ISO/IEC 25000__: Famiglia di standard internazionali che vogliono fornire un framework per la valutazione della qualità del software; discende da ISO/IEC 9126 e ISO/IEC 14598.
 * __ISO/IEC 9126__: Standard internazionale che fornisce un modello per la qualità del software.
-* __LaTeX__: Sistema di composizione tipografica che utilizza TeX come motore.
 * __legge di Parkinson__: Work expands to fill the time available. Inglese: _Parkinson's law_.
 * __malfunzionamento__: Esecuzione di un software difforme dalle attese. Inglese: _failure_.
 * __marcatore__: Istruzione che un programma deve eseguire per trattare nel modo specificato dall'utente una porzione di testo specificata. Inglese: _mark-up_.
@@ -144,7 +143,6 @@ Di seguito i termini del glossario:
 * __test di validazione__: Test che verifica il soddisfacimento del capitolato d'appalto da parte del sistema in esame. Inglese: _validation test_.
 * __test funzionale__: Test di unità che analizza la logica interna del codice di un'unità. Inglese: _functional test_.
 * __test strutturale__: Test di unità che analizza soltanto il comportamento dell'unità e non la sua logica interna. Inglese: _structural test_.
-* __TeX__: Linguaggio formale di composizione tipografica.
 * __UML (Unified Modelling Language)__: Famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software. Inglese: _UML_.
 * __unità__: Insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. È anche la più piccola quantità di software che conviene verificare da sola. Inglese: _unit_.
 * __validazione__: La garanzia che un prodotto soddisfi i requisiti da cui è nato. Inglese: _validation_.

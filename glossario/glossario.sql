@@ -360,16 +360,6 @@ NULL),
 'Tutto ciò che documenta le attività di un progetto.',
 'documentation'),
 
-('TeX',
-'TeX',
-'Linguaggio formale di composizione tipografica.',
-'TeX'),
-
-('LaTeX',
-'LaTeX',
-'Sistema di composizione tipografica che utilizza TeX come motore.',
-'LaTeX'),
-
 ('marcatore',
 'marcatore',
 'Istruzione che un programma deve eseguire per trattare nel modo specificato dall\'utente una porzione di testo specificata.',
