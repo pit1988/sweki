@@ -157,7 +157,7 @@ NULL),
 
 ('progetto',
 'progetto',
-'Insieme di compiti da svolgere in modo collaborativo a fronte di un incarico (che diventa poi un impegno).',
+'Nasce da una richiesta (e/o pagamento) che diventa poi un impegno se accettato. Porta dei vincoli : di costo, di risorse, di tempo. Spesso insieme di attività da svolgere in modo collaborativo',
 'project'),
 
 ('incarico',
