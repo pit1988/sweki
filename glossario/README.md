@@ -97,7 +97,7 @@ Di seguito i termini del glossario:
 * __progettazione architetturale__: Definizione delle componenti e di come esse sono organizzate in un sistema. Inglese: _architectural design_.
 * __progettazione di dettaglio__: Definizione del comportamento delle componenti di un sistema, con un livello di dettaglio tale per cui le componenti possano essere implementate. Inglese: _detailed design_.
 * __progettista (profilo professionale)__: Chi sintetizza una soluzione a partire dalle specifiche di un problema già analizzato. Inglese: _designer_.
-* __progetto__: Insieme di compiti da svolgere in modo collaborativo a fronte di un incarico (che diventa poi un impegno). Inglese: _project_.
+* __progetto__: Nasce da una richiesta (e/o pagamento) che diventa poi un impegno se accettato. Porta dei vincoli : di costo, di risorse, di tempo. Spesso insieme di attività da svolgere in modo collaborativo. Inglese: _project_.
 * __programmatore (profilo professionale)__: Chi implementa una parte della soluzione dei progettisti. Inglese: _programmer_.
 * __protocollo__: Accordo di interfacce. Inglese: _protocol_.
 * __qualifica__: Verifica e validazione ("V&V"), cioè quei processi che assicurano la qualità di un prodotto durante il suo ciclo di vita.
