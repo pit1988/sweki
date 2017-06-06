@@ -11,7 +11,9 @@ Di seguito i termini del glossario:
 * __algoritmo__: Sequenza finita di passi per la risoluzione di un problema. Inglese: _algorithm_.
 * __allocazione di risorse (per un progetto)__: Assegnare attività a ruoli e, poi, ruoli a persone. Inglese: _null_.
 * __ambiente di lavoro__: L'insieme di persone, di ruoli, di procedure e l'infrastruttura la cui qualità determina la produttività del progetto. Inglese: _work environment_.
-* __amministratore di progetto (profilo professionale)__: Chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione. Inglese: _project administrator_.
+* __Amministrare un progetto__: Equipaggiare, organizzare e gestire l’ambiente di lavoro e di produzione (regole+procedure+strumenti&servizi; supporto di tutti i processi istanziati nel prj). Inglese: _Project administration_.
+* __amministratore di progetto (profilo professionale)__: Chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione.
+Non compie scelte gestionali ma attua le scelte tecnologiche concordate coi responsabili aziendali e del progetto Inglese: _project administrator_.
 * __analisi dei requisiti__: Definire cosa bisogna fare. Inglese: _requirements analysis_.
 * __analisi dinamica__: Valutazione di un sistema (o di una sua componente) basata sul suo comportamento durante l'esecuzione. Inglese: _dynamic analysis_.
 * __analisi statica__: Valutazione di un sistema (o di una sua componente) basata sulla sua forma, struttura, contenuto o documentazione. Inglese: _static analysis_.
@@ -48,9 +50,10 @@ Di seguito i termini del glossario:
 * __design pattern__: Soluzione progettuale generale ad un problema ricorrente.
 * __Development team__: Chi realizza il prodotto: il luogo di appartenenza dei software engineer
 * __diagramma dei casi d'uso__: Grafo orientato che mostra gli attori, i casi d'uso e le relazioni tra essi: ogni nodo è un attore o un caso d'uso; ogni arco è una comunicazione tra un attore e un caso d'uso oppure una relazione (di estensione, inclusione o generalizzazione) tra due casi d'uso o tra due attori. Inglese: _use case diagram_.
-* __diagramma di Gantt__: Diagramma che rappresenta la durata, la sequenzialità e il parallelismo delle attività di un progetto. Inglese: _Gantt diagram_.
+* __diagramma di Gantt__: Diagramma che rappresenta la durata, la sequenzialità e il parallelismo delle attività di un progetto.
+Si basa sulla dislocazione temporale delle attività, per rappresentarne la durata, la sequenzialità ed il parallelismo e confrontare stime e progressi. Inglese: _Gantt diagram_.
 * __diagramma PERT (Project Evaluation and Review Technique)__: Rete che rappresenta le dipendenze temporali (e le criticità) tra attività di un progetto. Inglese: _PERT diagram_.
-* __diagramma WBS (Work Breakdown Structure)__: Diagramma che decompone in modo gerarchico le attività di un progetto in sotto-attività (coese ma non necessariamente sequenziali). Inglese: _WBS diagram_.
+* __diagramma WBS (Work Breakdown Structure)__: Diagramma che decompone in modo gerarchico le attività di un progetto in sotto-attività (coese ma non necessariamente sequenziali ed univocamente identificate). Inglese: _WBS diagram_.
 * __disciplinato__: Che segue le norme (anzi, la best practice). Inglese: _disciplined_.
 * __documentazione__: Tutto ciò che documenta le attività di un progetto. Inglese: _documentation_.
 * __efficacia__: Conformità alle attese. Determinata dal grado di conformità del prodotto rispetto alle norme vigenti e agli obiettivi prefissati. Inglese: _effectiveness_.
@@ -61,6 +64,17 @@ Di seguito i termini del glossario:
 * __fase (di un ciclo di vita)__: Durata temporale (che non si ripete) entro uno stato del ciclo di vita e un altro. Inglese: _phase_.
 * __framework__: Struttura di supporto su cui un software può essere organizzato e progettato.
 * __gestione della qualità__: L'insieme dei processi che assicurano che prodotti e implementazioni di processi rispettino gli obiettivi di qualità (di un'organizzazione) e soddisfino gli stakeholder. Inglese: _quality management_.
+* __Gestione dei rischi__: Durante la pianificazione del progetto:
+>Identificazione (nel progetto, prodotto, mercato)
+>Analisi (prob. d'occorrenza, conseguenze)
+>Pianificazione (valutare come evitarli/mitigarli, conseguenze?)
+Durante il progetto:
+>Controllo e mitigazione (attenzione continua del livello, tramite rilevazione d'indicatori; riconosciemnto, trattamento ad aggiornamento strategie).
+Fonti: tecnologie, rapporti int.pers., org. lavoro, requisiti+rapporti stakeholders, tempi e costi
+Verifica livello di rischio: 
+>da effettuare regolarmente per determinare il livello corrente di rischio (non sempre è costante)
+>valutare se gli effetti dei rischi possono essere cambiati (non sono sempre costati nel tempo)
+>riportare sempre ogni rischio serio all'attenzione del mgmt Inglese: _Risk management_.
 * __glossario__: Elenco dei significati dei termini più rilevanti di un documento. Inglese: _glossary_.
 * __guasto__: Causa di un errore. Inglese: _fault_.
 * __impegno__: null Inglese: _commitment_.
@@ -90,6 +104,14 @@ Modello ad alto livello.
 Adattativa: per adattare il sistema alla variazione dei requisiti;
 Evolutiva: per aggiungere funzionalità al sistema Inglese: _maintenance, upkeep_.
 * __marcatore__: Istruzione che un programma deve eseguire per trattare nel modo specificato dall'utente una porzione di testo specificata. Inglese: _mark-up_.
+* __Metodi agili__: > 4 principi fondamentali:
+1.Individuals and interactions over processes and tools (L’eccessiva rigidità ostacola l’emergere del valore)
+2. Working sofware over comprehensive documentation 
+3. Customer collaboration over contract negotiation
+4. Responding to change over following a plan
+L'idea di base è il concetto di "user story" (compito significativo che l'utente vuole svolgere con il sw richiesto; definita da: documento di descrizione, minuta di converszioni con il cliente per fissare la comprensione comune, strategia da utilizzare per confermare che il sw soddisfi gli obiettivi).
+Scrum (caos organizzato), Kanban (just-in-time), Scrumban
+ Inglese: _Agile methods_.
 * __metodo di lavoro__: Metodo di lavoro. Inglese: _way of working_.
 * __metrica__: L'interpretazione di un sistema di unità di misura. Inglese: _metric_.
 * __milestone__: Punto nel tempo associato ad un valore strategico.
@@ -132,6 +154,15 @@ Grande attenzione sugli aspetti gestionali (pianificazione delle fasi, analisi d
 * __organizzazione__: Aggregato di persone [?] che agiscono in modo sistematico, disciplinato e quantificabile; contrario di caos. Inglese: _organization_.
 * __People__: Business management; Project management; Development team; Customers; End users
 * __pianificazione__: Organizzare e controllare tempo, risorse e risultati. Inglese: _planning_.
+* __Pianificazione di progetto__: >Definizione delle attività
+  [pianificarne lo svolgimento + controllarne l'attuzione; avere una base su cui gestire l'allocazione delle risorse; stimare e controllare scadenze e costi]
+> Strumenti di pianificazione: diagr. Gantt, Programme Evaluation and Review Technique (PERT), Work Breakdown Structure (WBS) Inglese: _Project pianification_.
+* __Piano di progetto__: Fissa: risorse disponibili, suddivisione attività, calendario attività.
+Obiettivi: org. att. in modo da produrre ris. utili per valutare con efficacia il piano d'avanzamento del lavoro + fissare milestone come punti critici/finali delle attività.
+Struttura: Introduzione, org. prj, analisi dei rischi, risorse necessarie e disponibili (hw, sw), suddivisione del lavoro (work breakdown structure). calendario delle attività (prj schedule), meccanismi di controllo e rendicontazione)
+* __Piano di progetto__: Fissa: risorse disponibili, suddivisione attività, calendario attività.
+Obiettivi: org. att. in modo da produrre ris. utili per valutare con efficacia il piano d'avanzamento del lavoro + fissare milestone come punti critici/finali delle attività.
+Struttura: Introduzione, org. prj, analisi dei rischi, risorse necessarie e disponibili (hw, sw), suddivisione del lavoro (work breakdown structure). calendario delle attività (prj schedule), meccanismi di controllo e rendicontazione)
 * __prassi__: Modo di fare. Inglese: _practice_.
 * __Processi di Sviluppo (ISO 12207)__: Documentazione;
 Accertamento della qualità;
@@ -161,7 +192,7 @@ Pacchetto: forma, contenuto e funzione idonee alla replicazione;
 Componente: forma, contenuto e funzione adatte alla composizione;
 Servizio: forma, contenuto e funzione fissate dal problema. Inglese: _software product_.
 * __produttività__: Rapporto tra valore e costo. Inglese: _productivity_.
-* __profilo professionale__: Insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto. Inglese: _professional profile_.
+* __profilo professionale__: Requisiti per l'assunzione di un ruolo in un progetto; insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto. Inglese: _professional profile_.
 * __progettazione__: Definizione dell'architettura, delle componenti, delle interfacce e delle altre caratteristiche di un sistema o componente. Inglese: _design_.
 * __progettazione architetturale__: Definizione delle componenti e di come esse sono organizzate in un sistema. Inglese: _architectural design_.
 * __progettazione di dettaglio__: Definizione del comportamento delle componenti di un sistema, con un livello di dettaglio tale per cui le componenti possano essere implementate. Inglese: _detailed design_.
@@ -201,8 +232,10 @@ di incremento (baseline). Inglese: _Prototype_.
 impatto.
 Sistematico (per progetto, per prodotto, per azienda) a maggior costo
 ma maggior impatto. Inglese: _Reuse_.
-* __ruolo__: Funzione aziendale assegnata a progetto; identifica capacità e compiti. Inglese: _role_.
+* __Ruolo__: Funzione aziendale assegnata a progetto; identifica capacità e compiti.
+Es. Sviluppo -> responsabilità tecnica e realizzativa. Inglese: _role_.
 * __scenario__: Sequenza di passi che descrive un esempio di interazione con un sistema.
+* __Servizio (amministrazione di progetto)__: Mezzo per aiutare l'utente a raggiungere i suoi obiettivi riducendo costi e rischi. Inglese: _Service_.
 * __sistema__: Insieme di componenti organizzati per compiere una o più funzioni. Inglese: _system_.
 * __sistematico__: Che abbraccia un metodo. Inglese: _systematic_.
 * __slack time__: Quantità di tempo tra la data minima a partire da cui un evento può accadere e la data massima oltre la quale esso ritarda gli eventi successivi.

@@ -137,23 +137,11 @@
         "def": "null",
         "eng": "commitment"
     },
-    "29": {
-        "id": "ruolo",
-        "voce": "ruolo",
-        "def": "Funzione aziendale assegnata a progetto; identifica capacit\u00e0 e compiti.",
-        "eng": "role"
-    },
     "30": {
         "id": "allocazione_di_risorse",
         "voce": "allocazione di risorse (per un progetto)",
         "def": "Assegnare attivit\u00e0 a ruoli e, poi, ruoli a persone.",
         "eng": "null"
-    },
-    "31": {
-        "id": "profilo_professionale",
-        "voce": "profilo professionale",
-        "def": "Insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto.",
-        "eng": "professional profile"
     },
     "32": {
         "id": "analista",
@@ -184,12 +172,6 @@
         "voce": "responsabile di progetto (profilo professionale)",
         "def": "Chi pianifica il progetto, assegna le persone ai ruoli giusti e rappresenta il progetto presso il fornitore e il committente.",
         "eng": "project manager"
-    },
-    "37": {
-        "id": "amministratore_di_progetto",
-        "voce": "amministratore di progetto (profilo professionale)",
-        "def": "Chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione.",
-        "eng": "project administrator"
     },
     "38": {
         "id": "controllore_della_qualit\u00e0",
@@ -226,18 +208,6 @@
         "voce": "progettazione di dettaglio",
         "def": "Definizione del comportamento delle componenti di un sistema, con un livello di dettaglio tale per cui le componenti possano essere implementate.",
         "eng": "detailed design"
-    },
-    "44": {
-        "id": "diagramma_WBS",
-        "voce": "diagramma WBS (Work Breakdown Structure)",
-        "def": "Diagramma che decompone in modo gerarchico le attivit\u00e0 di un progetto in sotto-attivit\u00e0 (coese ma non necessariamente sequenziali).",
-        "eng": "WBS diagram"
-    },
-    "45": {
-        "id": "diagramma_di_Gantt",
-        "voce": "diagramma di Gantt",
-        "def": "Diagramma che rappresenta la durata, la sequenzialit\u00e0 e il parallelismo delle attivit\u00e0 di un progetto.",
-        "eng": "Gantt diagram"
     },
     "46": {
         "id": "diagramma_PERT",
@@ -994,5 +964,77 @@
         "voce": "Modello a componenti",
         "def": "Molto di quello che serve \u00e8 gi\u00e0 stato fatto & molto di quello che faremo potr\u00e0 ancora servire.\r\nMassima attenzione al riuso sistematico di componenti preesistenti\/off-the-shelf.\r\nAnalisi requisiti -> Analisi componenti -> Adattamento requisiti -> Progettazione con riuso -> Sviluppo ed integrazione -> Validazione di sistema",
         "eng": "Model at component"
+    },
+    "179": {
+        "id": "metodi_agili",
+        "voce": "Metodi agili",
+        "def": "> 4 principi fondamentali:\r\n1.Individuals and interactions over processes and tools (L\u2019eccessiva rigidit\u00e0 ostacola l\u2019emergere del valore)\r\n2. Working sofware over comprehensive documentation \r\n3. Customer collaboration over contract negotiation\r\n4. Responding to change over following a plan\r\nL'idea di base \u00e8 il concetto di \"user story\" (compito significativo che l'utente vuole svolgere con il sw richiesto; definita da: documento di descrizione, minuta di converszioni con il cliente per fissare la comprensione comune, strategia da utilizzare per confermare che il sw soddisfi gli obiettivi).\r\nScrum (caos organizzato), Kanban (just-in-time), Scrumban\r\n",
+        "eng": "Agile methods"
+    },
+    "180": {
+        "id": "ruolo",
+        "voce": "Ruolo",
+        "def": "Funzione aziendale assegnata a progetto; identifica capacit\u00e0 e compiti.\r\nEs. Sviluppo -> responsabilit\u00e0 tecnica e realizzativa.",
+        "eng": "role"
+    },
+    "181": {
+        "id": "profilo_professionale",
+        "voce": "profilo professionale",
+        "def": "Requisiti per l'assunzione di un ruolo in un progetto; insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto.",
+        "eng": "professional profile"
+    },
+    "182": {
+        "id": "diagramma_di_Gantt",
+        "voce": "diagramma di Gantt",
+        "def": "Diagramma che rappresenta la durata, la sequenzialit\u00e0 e il parallelismo delle attivit\u00e0 di un progetto.\r\nSi basa sulla dislocazione temporale delle attivit\u00e0, per rappresentarne la durata, la sequenzialit\u00e0 ed il parallelismo e confrontare stime e progressi.",
+        "eng": "Gantt diagram"
+    },
+    "183": {
+        "id": "pianificazione_progetto",
+        "voce": "Pianificazione di progetto",
+        "def": ">Definizione delle attivit\u00e0\r\n  [pianificarne lo svolgimento + controllarne l'attuzione; avere una base su cui gestire l'allocazione delle risorse; stimare e controllare scadenze e costi]\r\n> Strumenti di pianificazione: diagr. Gantt, Programme Evaluation and Review Technique (PERT), Work Breakdown Structure (WBS)",
+        "eng": "Project pianification"
+    },
+    "184": {
+        "id": "diagramma_WBS",
+        "voce": "diagramma WBS (Work Breakdown Structure)",
+        "def": "Diagramma che decompone in modo gerarchico le attivit\u00e0 di un progetto in sotto-attivit\u00e0 (coese ma non necessariamente sequenziali ed univocamente identificate).",
+        "eng": "WBS diagram"
+    },
+    "185": {
+        "id": "piano_di_progetto",
+        "voce": "Piano di progetto",
+        "def": "Fissa: risorse disponibili, suddivisione attivit\u00e0, calendario attivit\u00e0.\r\nObiettivi: org. att. in modo da produrre ris. utili per valutare con efficacia il piano d'avanzamento del lavoro + fissare milestone come punti critici\/finali delle attivit\u00e0.\r\nStruttura: Introduzione, org. prj, analisi dei rischi, risorse necessarie e disponibili (hw, sw), suddivisione del lavoro (work breakdown structure). calendario delle attivit\u00e0 (prj schedule), meccanismi di controllo e rendicontazione)",
+        "eng": ""
+    },
+    "186": {
+        "id": "piano_di_progetto",
+        "voce": "Piano di progetto",
+        "def": "Fissa: risorse disponibili, suddivisione attivit\u00e0, calendario attivit\u00e0.\r\nObiettivi: org. att. in modo da produrre ris. utili per valutare con efficacia il piano d'avanzamento del lavoro + fissare milestone come punti critici\/finali delle attivit\u00e0.\r\nStruttura: Introduzione, org. prj, analisi dei rischi, risorse necessarie e disponibili (hw, sw), suddivisione del lavoro (work breakdown structure). calendario delle attivit\u00e0 (prj schedule), meccanismi di controllo e rendicontazione)",
+        "eng": ""
+    },
+    "189": {
+        "id": "gestione_rischi",
+        "voce": "Gestione dei rischi",
+        "def": "Durante la pianificazione del progetto:\r\n>Identificazione (nel progetto, prodotto, mercato)\r\n>Analisi (prob. d'occorrenza, conseguenze)\r\n>Pianificazione (valutare come evitarli\/mitigarli, conseguenze?)\r\nDurante il progetto:\r\n>Controllo e mitigazione (attenzione continua del livello, tramite rilevazione d'indicatori; riconosciemnto, trattamento ad aggiornamento strategie).\r\nFonti: tecnologie, rapporti int.pers., org. lavoro, requisiti+rapporti stakeholders, tempi e costi\r\nVerifica livello di rischio: \r\n>da effettuare regolarmente per determinare il livello corrente di rischio (non sempre \u00e8 costante)\r\n>valutare se gli effetti dei rischi possono essere cambiati (non sono sempre costati nel tempo)\r\n>riportare sempre ogni rischio serio all'attenzione del mgmt",
+        "eng": "Risk management"
+    },
+    "190": {
+        "id": "servizio",
+        "voce": "Servizio (amministrazione di progetto)",
+        "def": "Mezzo per aiutare l'utente a raggiungere i suoi obiettivi riducendo costi e rischi.",
+        "eng": "Service"
+    },
+    "191": {
+        "id": "amministrare_progetto",
+        "voce": "Amministrare un progetto",
+        "def": "Equipaggiare, organizzare e gestire l\u2019ambiente di lavoro e di produzione (regole+procedure+strumenti&servizi; supporto di tutti i processi istanziati nel prj).",
+        "eng": "Project administration"
+    },
+    "192": {
+        "id": "amministratore_di_progetto",
+        "voce": "amministratore di progetto (profilo professionale)",
+        "def": "Chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione.\r\nNon compie scelte gestionali ma attua le scelte tecnologiche concordate coi responsabili aziendali e del progetto",
+        "eng": "project administrator"
     }
 }
