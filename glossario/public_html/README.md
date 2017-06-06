@@ -98,6 +98,13 @@ Evolutiva: per aggiungere funzionalità al sistema Inglese: _maintenance, upkeep
 * __Modelli di ciclo di vita__: Descrivono come i processi si relazionano tra loro nel tempo rispetto agli stati di ciclo di vita.
 Base concettuale intorno alla quale pianificare, organizzare, eseguire e controllare lo svolgimento delle attività necessarie. Inglese: _Life cycle models_.
 * __modello__: Astrazione della realtà. Inglese: _model_.
+* __Modello a componenti__: Molto di quello che serve è già stato fatto & molto di quello che faremo potrà ancora servire.
+Massima attenzione al riuso sistematico di componenti preesistenti/off-the-shelf.
+Analisi requisiti -> Analisi componenti -> Adattamento requisiti -> Progettazione con riuso -> Sviluppo ed integrazione -> Validazione di sistema Inglese: _Model at component_.
+* __Modello evolutivo__: Aiuta a riposndere a bisogni non preventivabili inizialmente; può richiedere rilascio e mantenimento di più versioni esterne in parallelo; comporta il riattraversamento di più fasi del ciclo di vita.
+1.Analisi preliminare (identificare req. di massima; definire architattura di massima; pianificare i passi d'analisi e realizzazione evolutiva)
+2. Analisi&realizzazione d'una evoluzione (come raffinamento + estensione dell'analisi o per progettazione, codifica, prove ed integrazione)
+3. Rilascio di prototipi, poi accettazione finale. Inglese: _Evolutive model_.
 * __Modello incrementale / incremento__: Procedere per incrementi significa aggiungere a un impianto base.
 Possono produrre "valore" ad ogni incremento; ogni incremento riduce il rischio di fallimento; funzionalità essenziali sviluppate nei primi incrementi.
 Prevede rilasci multipli & successivi: ognuno realizza un incremento di funzionalità. Requisiti utente classificati e trattati in base alla loro importanza strategica (primi rilasci->req. + importanti; requisiti strategici stabiliti all'inizio) (req. principali identificati e fissati; architettura del sistema identificata e fissata completamente).
@@ -115,6 +122,12 @@ Fase definita in termini d'attività previste & prodotti attesi, contenuti e str
 Fasi = durate temporali con dipendenze causali tra loro.
 Difetti: eccessivamente rigido (stretta sequenzialità + non modifiche in corso d'op. + molta manutenzione + molto burocratico e poco realistico).
 Correttivi: 1. Prototipazione (usa&getta); 2. Cascata con ritorni Inglese: _Waterfall model_.
+* __Modello a spirale__: Miglior controllo dei rischi di progetto; cicli interni rapidi e ripetuti (dedicati ad analisi e sviluppi prototipali), cicli esterni che aderiscono ad un qualunque altro modello standard di ciclo di vita.
+Grande attenzione sugli aspetti gestionali (pianificazione delle fasi, analisi dei rischi (risk-driven).
+1.Definizione degli obiettivi (requisiti, rischi, strategia di gestione)
+2.Analisi dei rischi (studio delle conseguenze, valutazione alternative)
+3.Sviluppo e validazione (realizzazione del prodotto)
+4.Pianificazione (decisione circa il proseguimento, pianificazione del proseguimento) Inglese: _Spiral model_.
 * __modulo__: L'elemento atomico dell'architettura di un software; tipicamente una classe o un interfaccia. Inglese: _module_.
 * __organizzazione__: Aggregato di persone [?] che agiscono in modo sistematico, disciplinato e quantificabile; contrario di caos. Inglese: _organization_.
 * __People__: Business management; Project management; Development team; Customers; End users

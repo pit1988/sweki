@@ -976,5 +976,23 @@
         "voce": "Modello iterativo \/ iterazione",
         "def": "Procedere per iterazioni significa operare raffinamenti o rivisitazioni.\r\nApplicabili a qualunque modello di ciclo di vita; consentono maggior capacit\u00e0 d'adattamento; comportano il rischio di non convergenza.\r\nSoluzione generale:\r\n 1.decomporre la realizzazione del sys\r\n 2.identificare&trattare prima le componenti pi\u00f9 critiche\r\n 3.limitare superiormente il numero d'iterazioni.\r\nRischi: ogni iterazione comporta un ritorno all'indietro, nella direzione opporsta all'avanzamento del tempo).",
         "eng": "Iterative model \/ iteration"
+    },
+    "176": {
+        "id": "modello_evolutivo",
+        "voce": "Modello evolutivo",
+        "def": "Aiuta a riposndere a bisogni non preventivabili inizialmente; pu\u00f2 richiedere rilascio e mantenimento di pi\u00f9 versioni esterne in parallelo; comporta il riattraversamento di pi\u00f9 fasi del ciclo di vita.\r\n1.Analisi preliminare (identificare req. di massima; definire architattura di massima; pianificare i passi d'analisi e realizzazione evolutiva)\r\n2. Analisi&realizzazione d'una evoluzione (come raffinamento + estensione dell'analisi o per progettazione, codifica, prove ed integrazione)\r\n3. Rilascio di prototipi, poi accettazione finale.",
+        "eng": "Evolutive model"
+    },
+    "177": {
+        "id": "modello_spirale",
+        "voce": "Modello a spirale",
+        "def": "Miglior controllo dei rischi di progetto; cicli interni rapidi e ripetuti (dedicati ad analisi e sviluppi prototipali), cicli esterni che aderiscono ad un qualunque altro modello standard di ciclo di vita.\r\nGrande attenzione sugli aspetti gestionali (pianificazione delle fasi, analisi dei rischi (risk-driven).\r\n1.Definizione degli obiettivi (requisiti, rischi, strategia di gestione)\r\n2.Analisi dei rischi (studio delle conseguenze, valutazione alternative)\r\n3.Sviluppo e validazione (realizzazione del prodotto)\r\n4.Pianificazione (decisione circa il proseguimento, pianificazione del proseguimento)",
+        "eng": "Spiral model"
+    },
+    "178": {
+        "id": "modello_componenti",
+        "voce": "Modello a componenti",
+        "def": "Molto di quello che serve \u00e8 gi\u00e0 stato fatto & molto di quello che faremo potr\u00e0 ancora servire.\r\nMassima attenzione al riuso sistematico di componenti preesistenti\/off-the-shelf.\r\nAnalisi requisiti -> Analisi componenti -> Adattamento requisiti -> Progettazione con riuso -> Sviluppo ed integrazione -> Validazione di sistema",
+        "eng": "Model at component"
     }
 }
