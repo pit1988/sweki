@@ -4,10 +4,12 @@
 <head>
 	<title>Glossario - sweki</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="author" content="Giorgio Giuffrè" />
+	<meta name="author" content="" />
 	<meta name="keywords" content="sweki, ingegneria, software, glossario" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="../main.css" />
+	<link rel="stylesheet" href="main.css" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>

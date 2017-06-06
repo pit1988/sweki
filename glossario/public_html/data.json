@@ -1,0 +1,980 @@
+{
+    "0": {
+        "id": "ingegneria",
+        "voce": "ingegneria",
+        "def": "L'applicazione di princ\u00ecpi scientifici e matematici per scopi pratici.",
+        "eng": "engineering"
+    },
+    "1": {
+        "id": "ingegneria_del_software",
+        "voce": "ingegneria del software",
+        "def": "Applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, al funzionamento e al mantenimento del software.",
+        "eng": "software engineering"
+    },
+    "2": {
+        "id": "sistematico",
+        "voce": "sistematico",
+        "def": "Che abbraccia un metodo.",
+        "eng": "systematic"
+    },
+    "3": {
+        "id": "disciplinato",
+        "voce": "disciplinato",
+        "def": "Che segue le norme (anzi, la best practice).",
+        "eng": "disciplined"
+    },
+    "4": {
+        "id": "quantificabile",
+        "voce": "quantificabile",
+        "def": "Esprimibile in modo quantitativo.",
+        "eng": "quantifiable"
+    },
+    "7": {
+        "id": "best_practice",
+        "voce": "best practice",
+        "def": "La prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche.",
+        "eng": "best practice"
+    },
+    "8": {
+        "id": "prassi",
+        "voce": "prassi",
+        "def": "Modo di fare.",
+        "eng": "practice"
+    },
+    "9": {
+        "id": "stakeholder",
+        "voce": "stakeholder",
+        "def": "Persona a vario titolo coinvolta nel ciclo di vita di un software che ha influenza sul prodotto o sul processo.",
+        "eng": "stakeholder"
+    },
+    "11": {
+        "id": "processo_software",
+        "voce": "processo software",
+        "def": "Processo che porta ad un prodotto software.",
+        "eng": "software process"
+    },
+    "12": {
+        "id": "attivit\u00e0",
+        "voce": "attivit\u00e0",
+        "def": "Parte di un processo che dev'essere compiuta entro un determinato periodo di tempo.",
+        "eng": "activity"
+    },
+    "13": {
+        "id": "compito",
+        "voce": "compito",
+        "def": "Parte di un'attivit\u00e0. Si pu\u00f2 svolgere usando qualche tecnica: ricetta applicata agli strumenti disponibili",
+        "eng": "task"
+    },
+    "14": {
+        "id": "tecnica",
+        "voce": "tecnica",
+        "def": "Ricetta applicata agli strumenti disponibili; modo con cui si usa uno strumento.",
+        "eng": "technique"
+    },
+    "15": {
+        "id": "strumento",
+        "voce": "strumento",
+        "def": "Insieme di concetti e di metodi, con delle tecnologie di supporto.",
+        "eng": "tool"
+    },
+    "16": {
+        "id": "tecnologia",
+        "voce": "tecnologia",
+        "def": "Strumento sul quale si opera.",
+        "eng": "technology"
+    },
+    "17": {
+        "id": "standard_di_processo",
+        "voce": "standard di processo",
+        "def": "Riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettivit\u00e0 di casi afferenti ad un certo dominio applicativo.",
+        "eng": "process standard"
+    },
+    "20": {
+        "id": "configurazione",
+        "voce": "configurazione",
+        "def": "Di quali parti si compone un prodotto e il modo in cui esse stanno assieme.",
+        "eng": "configuration"
+    },
+    "21": {
+        "id": "ciclo_PDCA",
+        "voce": "ciclo PDCA (o ciclo di Deming)",
+        "def": "Schema iterativo di auto-miglioramento che consiste di quattro punti: Plan (individuare obiettivi di miglioramento), Do (eseguire ci\u00f2 che si \u00e8 pianificato), Check (verificare se ha funzionato) e Act (agire per correggersi).",
+        "eng": "PDCA cycle"
+    },
+    "22": {
+        "id": "ciclo_di_vita_prodotto",
+        "voce": "ciclo di vita (di un prodotto)",
+        "def": "Insieme degli stati che il prodotto assume, dal concepimento al ritiro.",
+        "eng": "software product life cycle"
+    },
+    "23": {
+        "id": "ciclo_di_vita_sviluppo",
+        "voce": "ciclo di vita dello sviluppo (di un prodotto)",
+        "def": "Parte del ciclo di vita di un prodotto che riguarda il suo sviluppo.",
+        "eng": "software development life cycle"
+    },
+    "24": {
+        "id": "ritiro",
+        "voce": "ritiro (di un prodotto)",
+        "def": "Momento in cui il prodotto cessa di essere seguito dai suoi creatori.",
+        "eng": "retirement"
+    },
+    "25": {
+        "id": "fase_di_ciclo_di_vita",
+        "voce": "fase (di un ciclo di vita)",
+        "def": "Durata temporale (che non si ripete) entro uno stato del ciclo di vita e un altro.",
+        "eng": "phase"
+    },
+    "27": {
+        "id": "incarico",
+        "voce": "incarico",
+        "def": "null",
+        "eng": "assignment"
+    },
+    "28": {
+        "id": "impegno",
+        "voce": "impegno",
+        "def": "null",
+        "eng": "commitment"
+    },
+    "29": {
+        "id": "ruolo",
+        "voce": "ruolo",
+        "def": "Funzione aziendale assegnata a progetto; identifica capacit\u00e0 e compiti.",
+        "eng": "role"
+    },
+    "30": {
+        "id": "allocazione_di_risorse",
+        "voce": "allocazione di risorse (per un progetto)",
+        "def": "Assegnare attivit\u00e0 a ruoli e, poi, ruoli a persone.",
+        "eng": "null"
+    },
+    "31": {
+        "id": "profilo_professionale",
+        "voce": "profilo professionale",
+        "def": "Insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto.",
+        "eng": "professional profile"
+    },
+    "32": {
+        "id": "analista",
+        "voce": "analista (profilo professionale)",
+        "def": "Chi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista; fa l'analisi dei requisiti.",
+        "eng": "analyst"
+    },
+    "33": {
+        "id": "progettista",
+        "voce": "progettista (profilo professionale)",
+        "def": "Chi sintetizza una soluzione a partire dalle specifiche di un problema gi\u00e0 analizzato.",
+        "eng": "designer"
+    },
+    "34": {
+        "id": "programmatore",
+        "voce": "programmatore (profilo professionale)",
+        "def": "Chi implementa una parte della soluzione dei progettisti.",
+        "eng": "programmer"
+    },
+    "35": {
+        "id": "verificatore",
+        "voce": "verificatore (profilo professionale)",
+        "def": "Chi verifica il lavoro dei programmatori.",
+        "eng": "null"
+    },
+    "36": {
+        "id": "responsabile_di_progetto",
+        "voce": "responsabile di progetto (profilo professionale)",
+        "def": "Chi pianifica il progetto, assegna le persone ai ruoli giusti e rappresenta il progetto presso il fornitore e il committente.",
+        "eng": "project manager"
+    },
+    "37": {
+        "id": "amministratore_di_progetto",
+        "voce": "amministratore di progetto (profilo professionale)",
+        "def": "Chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione.",
+        "eng": "project administrator"
+    },
+    "38": {
+        "id": "controllore_della_qualit\u00e0",
+        "voce": "controllore della qualit\u00e0 (profilo professionale)",
+        "def": "Funzione aziendale (e non ruolo di progetto) che accerta la qualit\u00e0 dei prodotti.",
+        "eng": "null"
+    },
+    "39": {
+        "id": "pianificazione",
+        "voce": "pianificazione",
+        "def": "Organizzare e controllare tempo, risorse e risultati.",
+        "eng": "planning"
+    },
+    "40": {
+        "id": "analisi_dei_requisiti",
+        "voce": "analisi dei requisiti",
+        "def": "Definire cosa bisogna fare.",
+        "eng": "requirements analysis"
+    },
+    "41": {
+        "id": "progettazione",
+        "voce": "progettazione",
+        "def": "Definizione dell'architettura, delle componenti, delle interfacce e delle altre caratteristiche di un sistema o componente.",
+        "eng": "design"
+    },
+    "42": {
+        "id": "progettazione_architetturale",
+        "voce": "progettazione architetturale",
+        "def": "Definizione delle componenti e di come esse sono organizzate in un sistema.",
+        "eng": "architectural design"
+    },
+    "43": {
+        "id": "progettazione_di_dettaglio",
+        "voce": "progettazione di dettaglio",
+        "def": "Definizione del comportamento delle componenti di un sistema, con un livello di dettaglio tale per cui le componenti possano essere implementate.",
+        "eng": "detailed design"
+    },
+    "44": {
+        "id": "diagramma_WBS",
+        "voce": "diagramma WBS (Work Breakdown Structure)",
+        "def": "Diagramma che decompone in modo gerarchico le attivit\u00e0 di un progetto in sotto-attivit\u00e0 (coese ma non necessariamente sequenziali).",
+        "eng": "WBS diagram"
+    },
+    "45": {
+        "id": "diagramma_di_Gantt",
+        "voce": "diagramma di Gantt",
+        "def": "Diagramma che rappresenta la durata, la sequenzialit\u00e0 e il parallelismo delle attivit\u00e0 di un progetto.",
+        "eng": "Gantt diagram"
+    },
+    "46": {
+        "id": "diagramma_PERT",
+        "voce": "diagramma PERT (Project Evaluation and Review Technique)",
+        "def": "Rete che rappresenta le dipendenze temporali (e le criticit\u00e0) tra attivit\u00e0 di un progetto.",
+        "eng": "PERT diagram"
+    },
+    "47": {
+        "id": "revisione_esterna",
+        "voce": "revisione esterna",
+        "def": "Ispezione ufficiale di un prodotto condotta da un'organizzazione indipendente da chi ha sviluppato il prodotto.",
+        "eng": "audit"
+    },
+    "48": {
+        "id": "revisione_interna",
+        "voce": "revisione interna",
+        "def": "Ispezione di un prodotto interna all'organizzazione che lo sviluppa.",
+        "eng": "joint review"
+    },
+    "49": {
+        "id": "rete",
+        "voce": "rete",
+        "def": "Grafo orientato.",
+        "eng": "network"
+    },
+    "50": {
+        "id": "slack_time",
+        "voce": "slack time",
+        "def": "Quantit\u00e0 di tempo tra la data minima a partire da cui un evento pu\u00f2 accadere e la data massima oltre la quale esso ritarda gli eventi successivi.",
+        "eng": "slack time"
+    },
+    "51": {
+        "id": "criticit\u00e0",
+        "voce": "criticit\u00e0",
+        "def": "Distanza troppo breve tra attivit\u00e0 dipendenti.",
+        "eng": "null"
+    },
+    "52": {
+        "id": "legge_di_Parkinson",
+        "voce": "legge di Parkinson",
+        "def": "Work expands to fill the time available.",
+        "eng": "Parkinson's law"
+    },
+    "53": {
+        "id": "CoCoMo",
+        "voce": "CoCoMo (Constructive Cost Model)",
+        "def": "Modello per la stima dei costi di un progetto, in tempo\/persona.",
+        "eng": "CoCoMo"
+    },
+    "54": {
+        "id": "qualifica",
+        "voce": "qualifica",
+        "def": "Verifica e validazione ('V&V'), cio\u00e8 quei processi che assicurano la qualit\u00e0 di un prodotto durante il suo ciclo di vita.",
+        "eng": "null"
+    },
+    "55": {
+        "id": "verifica",
+        "voce": "verifica",
+        "def": "Valutare se un prodotto soddisfa requisiti, regole o altre condizioni necessarie.",
+        "eng": "verification"
+    },
+    "56": {
+        "id": "validazione",
+        "voce": "validazione",
+        "def": "La garanzia che un prodotto soddisfi i requisiti da cui \u00e8 nato.",
+        "eng": "validation"
+    },
+    "57": {
+        "id": "rischio",
+        "voce": "rischio",
+        "def": "Opposto di opportunit\u00e0.",
+        "eng": "risk"
+    },
+    "58": {
+        "id": "organizzazione",
+        "voce": "organizzazione",
+        "def": "Aggregato di persone [?] che agiscono in modo sistematico, disciplinato e quantificabile; contrario di caos.",
+        "eng": "organization"
+    },
+    "59": {
+        "id": "caos",
+        "voce": "caos",
+        "def": "Contrario di organizzazione.",
+        "eng": "chaos"
+    },
+    "60": {
+        "id": "budget",
+        "voce": "budget",
+        "def": "Tempo e denaro a disposizione.",
+        "eng": "budget"
+    },
+    "61": {
+        "id": "UML",
+        "voce": "UML (Unified Modelling Language)",
+        "def": "Famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software.",
+        "eng": "UML"
+    },
+    "62": {
+        "id": "SQL",
+        "voce": "SQL (Structured Query Language",
+        "def": "Linguaggio di programmazione dichiarativo basato sull'algebra relazionale che serve a creare, manipolare e interrogare basi di dati relazionali.",
+        "eng": "SQL"
+    },
+    "63": {
+        "id": "scenario",
+        "voce": "scenario",
+        "def": "Sequenza di passi che descrive un esempio di interazione con un sistema.",
+        "eng": "scenario"
+    },
+    "64": {
+        "id": "caso_d_uso",
+        "voce": "caso d'uso",
+        "def": "Insieme di scenari che hanno in comune un obiettivo per un utente.",
+        "eng": "use case"
+    },
+    "65": {
+        "id": "diagramma_dei_casi_d_uso",
+        "voce": "diagramma dei casi d'uso",
+        "def": "Grafo orientato che mostra gli attori, i casi d'uso e le relazioni tra essi: ogni nodo \u00e8 un attore o un caso d'uso; ogni arco \u00e8 una comunicazione tra un attore e un caso d'uso oppure una relazione (di estensione, inclusione o generalizzazione) tra due casi d'uso o tra due attori.",
+        "eng": "use case diagram"
+    },
+    "66": {
+        "id": "documentazione",
+        "voce": "documentazione",
+        "def": "Tutto ci\u00f2 che documenta le attivit\u00e0 di un progetto.",
+        "eng": "documentation"
+    },
+    "67": {
+        "id": "marcatore",
+        "voce": "marcatore",
+        "def": "Istruzione che un programma deve eseguire per trattare nel modo specificato dall'utente una porzione di testo specificata.",
+        "eng": "mark-up"
+    },
+    "68": {
+        "id": "sommario",
+        "voce": "sommario",
+        "def": "Breve riassunto del contenuto di un documento.",
+        "eng": "abstract"
+    },
+    "69": {
+        "id": "indice_generale",
+        "voce": "indice generale",
+        "def": "Elenco delle parti di un documento.",
+        "eng": "table of contents"
+    },
+    "70": {
+        "id": "indice_analitico",
+        "voce": "indice analitico",
+        "def": "Elenco ordinato delle corrispondenze tra particolari termini importanti di un documento e la loro ubicazione in esso.",
+        "eng": "index"
+    },
+    "71": {
+        "id": "glossario",
+        "voce": "glossario",
+        "def": "Elenco dei significati dei termini pi\u00f9 rilevanti di un documento.",
+        "eng": "glossary"
+    },
+    "72": {
+        "id": "bibliografia",
+        "voce": "bibliografia",
+        "def": "Elenco delle fonti di un documento.",
+        "eng": "bibliografy"
+    },
+    "73": {
+        "id": "infrastruttura_di_progetto",
+        "voce": "infrastruttura (di un progetto)",
+        "def": "Tutte le risorse hardware e software del progetto.",
+        "eng": "null"
+    },
+    "74": {
+        "id": "modello",
+        "voce": "modello",
+        "def": "Astrazione della realt\u00e0.",
+        "eng": "model"
+    },
+    "75": {
+        "id": "framework",
+        "voce": "framework",
+        "def": "Struttura di supporto su cui un software pu\u00f2 essere organizzato e progettato.",
+        "eng": "framework"
+    },
+    "76": {
+        "id": "ambiente_di_lavoro",
+        "voce": "ambiente di lavoro",
+        "def": "L'insieme di persone, di ruoli, di procedure e l'infrastruttura la cui qualit\u00e0 determina la produttivit\u00e0 del progetto.",
+        "eng": "work environment"
+    },
+    "77": {
+        "id": "produttivit\u00e0",
+        "voce": "produttivit\u00e0",
+        "def": "Rapporto tra valore e costo.",
+        "eng": "productivity"
+    },
+    "78": {
+        "id": "metodo_di_lavoro",
+        "voce": "metodo di lavoro",
+        "def": "Metodo di lavoro.",
+        "eng": "way of working"
+    },
+    "79": {
+        "id": "configuration_item",
+        "voce": "configuration item (CI)",
+        "def": "Parte della configurazione di un software.",
+        "eng": "configuration item"
+    },
+    "80": {
+        "id": "baseline",
+        "voce": "baseline",
+        "def": "Nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede.",
+        "eng": "baseline"
+    },
+    "81": {
+        "id": "milestone",
+        "voce": "milestone",
+        "def": "Punto nel tempo associato ad un valore strategico.",
+        "eng": "milestone"
+    },
+    "82": {
+        "id": "repository",
+        "voce": "repository",
+        "def": "Base di dati centralizzata nella quale risiedono, individualmente, tutti i CI di ogni baseline nella loro storia completa.",
+        "eng": "repository"
+    },
+    "83": {
+        "id": "ramo_di_repository",
+        "voce": "ramo (di un repository)",
+        "def": "Insieme di versioni di file sorgente in evoluzione.",
+        "eng": "branch"
+    },
+    "84": {
+        "id": "versione_di_CI",
+        "voce": "versione (di un CI)",
+        "def": "Istanza identificata di un CI nel tempo.",
+        "eng": "version"
+    },
+    "85": {
+        "id": "integrazione_continua",
+        "voce": "integrazione continua",
+        "def": "Pratica di sviluppo in cui i membri di un progetto integrano il loro lavoro frequentemente (quotidianamente) in modo automatizzato.",
+        "eng": "continuous integration"
+    },
+    "86": {
+        "id": "regola",
+        "voce": "regola",
+        "def": "Norma di progetto sottoposta a verifica.",
+        "eng": "rule"
+    },
+    "87": {
+        "id": "raccomandazione",
+        "voce": "raccomandazione",
+        "def": "Norma di progetto suggerita, non sottoposta a verifica.",
+        "eng": "recommendation"
+    },
+    "88": {
+        "id": "protocollo",
+        "voce": "protocollo",
+        "def": "Accordo di interfacce.",
+        "eng": "protocol"
+    },
+    "89": {
+        "id": "algoritmo",
+        "voce": "algoritmo",
+        "def": "Sequenza finita di passi per la risoluzione di un problema.",
+        "eng": "algorithm"
+    },
+    "90": {
+        "id": "design_pattern",
+        "voce": "design pattern",
+        "def": "Soluzione progettuale generale ad un problema ricorrente.",
+        "eng": "design pattern"
+    },
+    "91": {
+        "id": "sistema",
+        "voce": "sistema",
+        "def": "Insieme di componenti organizzati per compiere una o pi\u00f9 funzioni.",
+        "eng": "system"
+    },
+    "92": {
+        "id": "componente",
+        "voce": "componente",
+        "def": "Insieme di unit\u00e0 funzionalmente coese; parte di un sistema. (In Java, rappresentabile da uno o pi\u00f9 package.)",
+        "eng": "component"
+    },
+    "93": {
+        "id": "unit\u00e0",
+        "voce": "unit\u00e0",
+        "def": "Insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. \u00c8 anche la pi\u00f9 piccola quantit\u00e0 di software che conviene verificare da sola.",
+        "eng": "unit"
+    },
+    "94": {
+        "id": "modulo",
+        "voce": "modulo",
+        "def": "L'elemento atomico dell'architettura di un software; tipicamente una classe o un interfaccia.",
+        "eng": "module"
+    },
+    "95": {
+        "id": "requisito",
+        "voce": "requisito",
+        "def": "Bisogno da soddisfare o vincolo da rispettare.",
+        "eng": "requirement"
+    },
+    "96": {
+        "id": "requisito_utente",
+        "voce": "requisito utente",
+        "def": "Richiesta generale, ad alto livello.",
+        "eng": "user requirement"
+    },
+    "97": {
+        "id": "requisito_di_sistema",
+        "voce": "requisito di sistema",
+        "def": "Definizione formale e dettagliata di una funzione del sistema.",
+        "eng": "system requirement"
+    },
+    "98": {
+        "id": "requisito_di_prodotto",
+        "voce": "requisito di prodotto",
+        "def": "Bisogno o vincolo sul prodotto da sviluppare.",
+        "eng": "null"
+    },
+    "99": {
+        "id": "requisito_di_processo",
+        "voce": "requisito di processo",
+        "def": "Vincolo sullo sviluppo del prodotto.",
+        "eng": "null"
+    },
+    "100": {
+        "id": "requisito_funzionale",
+        "voce": "requisito funzionale",
+        "def": "(di un prodotto software) servizio che il prodotto deve fornire.",
+        "eng": "functional requirement"
+    },
+    "101": {
+        "id": "requisito_non_funzionale",
+        "voce": "requisito non funzionale",
+        "def": "(di un prodotto software) vincolo su uno o pi\u00f9 servizi che il prodotto fornisce.",
+        "eng": "non-functional requirement"
+    },
+    "102": {
+        "id": "architettura",
+        "voce": "architettura",
+        "def": "La struttura organizzativa di un sistema o componente.",
+        "eng": "architecture"
+    },
+    "103": {
+        "id": "coesione",
+        "voce": "coesione",
+        "def": "Grado di relazione tra parti associate di un sistema che concorrono agli stessi obiettivi.",
+        "eng": "cohesion"
+    },
+    "104": {
+        "id": "accoppiamento",
+        "voce": "accoppiamento",
+        "def": "Grado di dipendenza tra le varie componenti di un sistema.",
+        "eng": "coupling"
+    },
+    "105": {
+        "id": "coerenza",
+        "voce": "coerenza",
+        "def": "L'esser composto da parti che non sono in disaccordo tra loro, cio\u00e8 non affermano cose che si contraddicano.",
+        "eng": "consistency"
+    },
+    "106": {
+        "id": "qualit\u00e0",
+        "voce": "qualit\u00e0",
+        "def": "L'insieme delle caratteristiche di un'entit\u00e0 che ne determinano la capacit\u00e0 di soddisfare esigenze espresse e implicite.",
+        "eng": "quality"
+    },
+    "107": {
+        "id": "gestione_della_qualit\u00e0",
+        "voce": "gestione della qualit\u00e0",
+        "def": "L'insieme dei processi che assicurano che prodotti e implementazioni di processi rispettino gli obiettivi di qualit\u00e0 (di un'organizzazione) e soddisfino gli stakeholder.",
+        "eng": "quality management"
+    },
+    "108": {
+        "id": "valutazione",
+        "voce": "valutazione",
+        "def": "Verifica quantificata.",
+        "eng": "evaluation"
+    },
+    "109": {
+        "id": "metrica",
+        "voce": "metrica",
+        "def": "L'interpretazione di un sistema di unit\u00e0 di misura.",
+        "eng": "metric"
+    },
+    "110": {
+        "id": "misurazione_quantitativa",
+        "voce": "misurazione quantitativa",
+        "def": "L'uso di una metrica per assegnare un valore su una scala predefinita.",
+        "eng": "quantitative measurement"
+    },
+    "111": {
+        "id": "misura",
+        "voce": "misura",
+        "def": "Risultato di una misurazione.",
+        "eng": "measurement"
+    },
+    "112": {
+        "id": "business_logic",
+        "voce": "business logic",
+        "def": "La parte di un software che ha a che fare con il dominio applicativo del software; questa parte \u00e8 tipicamente riusabile e quindi condivisa tra diversi software che operano nello stesso dominio.",
+        "eng": "business logic"
+    },
+    "113": {
+        "id": "application_logic",
+        "voce": "application logic",
+        "def": "La parte di un software che \u00e8 specifica di quel software e non \u00e8 intesa per essere riusata in altri software.",
+        "eng": "application logic"
+    },
+    "114": {
+        "id": "quality_assurance",
+        "voce": "quality assurance",
+        "def": "Insieme di attivit\u00e0 che valutano i processi con i quali un prodotto viene sviluppato.",
+        "eng": "quality assurance"
+    },
+    "115": {
+        "id": "inspection",
+        "voce": "inspection",
+        "def": "Tecnica di analisi statica che consiste nell'eseguire una lettura mirata, alla ricerca di errori noti.",
+        "eng": "inspection"
+    },
+    "116": {
+        "id": "walkthrough",
+        "voce": "walkthrough",
+        "def": "Tecnica di analisi statica che consiste nell'eseguire una lettura critica, ad ampio spettro, senza l'assunzione di presupposti.",
+        "eng": "walkthrough"
+    },
+    "117": {
+        "id": "test",
+        "voce": "test",
+        "def": "Attivit\u00e0 di analisi dinamica che osserva i risultati dell'esecuzione di un sistema (o parte di esso) sotto determinate condizioni.",
+        "eng": "test"
+    },
+    "118": {
+        "id": "test_di_unit\u00e0",
+        "voce": "test di unit\u00e0",
+        "def": "Test che verifica la correttezza di una singola unit\u00e0 del sistema in esame.",
+        "eng": "unit test"
+    },
+    "119": {
+        "id": "test_di_integrazione",
+        "voce": "test di integrazione",
+        "def": "Test che verifica la correttezza dell'integrazione di un insieme di unit\u00e0 in una componente del sistema in esame.",
+        "eng": "integration test"
+    },
+    "120": {
+        "id": "test_di_sistema",
+        "voce": "test di sistema",
+        "def": "Test che verifica la copertura dei requisiti da parte del sistema in esame.",
+        "eng": "system test"
+    },
+    "121": {
+        "id": "test_di_validazione",
+        "voce": "test di validazione",
+        "def": "Test che verifica il soddisfacimento del capitolato d'appalto da parte del sistema in esame.",
+        "eng": "validation test"
+    },
+    "122": {
+        "id": "test_strutturale",
+        "voce": "test strutturale",
+        "def": "Test di unit\u00e0 che analizza soltanto il comportamento dell'unit\u00e0 e non la sua logica interna.",
+        "eng": "structural test"
+    },
+    "123": {
+        "id": "test_funzionale",
+        "voce": "test funzionale",
+        "def": "Test di unit\u00e0 che analizza la logica interna del codice di un'unit\u00e0.",
+        "eng": "functional test"
+    },
+    "124": {
+        "id": "guasto",
+        "voce": "guasto",
+        "def": "Causa di un errore.",
+        "eng": "fault"
+    },
+    "125": {
+        "id": "errore",
+        "voce": "errore",
+        "def": "Stato del sistema che, se attivato, produce un malfunzionamento.",
+        "eng": "error"
+    },
+    "126": {
+        "id": "malfunzionamento",
+        "voce": "malfunzionamento",
+        "def": "Esecuzione di un software difforme dalle attese.",
+        "eng": "failure"
+    },
+    "127": {
+        "id": "analisi_statica",
+        "voce": "analisi statica",
+        "def": "Valutazione di un sistema (o di una sua componente) basata sulla sua forma, struttura, contenuto o documentazione.",
+        "eng": "static analysis"
+    },
+    "128": {
+        "id": "analisi_dinamica",
+        "voce": "analisi dinamica",
+        "def": "Valutazione di un sistema (o di una sua componente) basata sul suo comportamento durante l'esecuzione.",
+        "eng": "dynamic analysis"
+    },
+    "129": {
+        "id": "caso_di_prova",
+        "voce": "caso di prova",
+        "def": "Terna di valori (input, output, ambiente) che specifica il comportamento che un sistema (o parte di esso) deve avere in un caso specifico.",
+        "eng": "test case"
+    },
+    "130": {
+        "id": "batteria_di_prove",
+        "voce": "batteria di prove",
+        "def": "Insieme di casi di prova.",
+        "eng": "test suite"
+    },
+    "131": {
+        "id": "rendimento_decrescente",
+        "voce": "rendimento decrescente, legge del",
+        "def": "Man mano che si aumenta lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre pi\u00f9.",
+        "eng": "diminishing returns"
+    },
+    "132": {
+        "id": "copertura_del_codice",
+        "voce": "copertura del codice",
+        "def": "Percentuale di codice sorgente eseguito durante un caso di prova.",
+        "eng": "code coverage"
+    },
+    "133": {
+        "id": "complessit\u00e0_ciclomatica",
+        "voce": "complessit\u00e0 ciclomatica",
+        "def": "Misura quantitativa del numero di cammini linearmente indipendenti che il codice sorgente di un programma pu\u00f2 percorrere.",
+        "eng": "cyclomatic complexity"
+    },
+    "135": {
+        "id": "ISO 9000",
+        "voce": "ISO 9000",
+        "def": "Famiglia di standard internazionali per la gestione della qualit\u00e0 nei sistemi produttivi.",
+        "eng": "ISO 9000"
+    },
+    "136": {
+        "id": "SPY",
+        "voce": "SPY",
+        "def": "Software Process Assessment and Improvement, standard per il miglioramento e la valutazione della qualit\u00e0 di processo.",
+        "eng": "SPY"
+    },
+    "137": {
+        "id": "CMMI",
+        "voce": "CMMI",
+        "def": "Standard per il miglioramento e la valutazione della qualit\u00e0 di processo.",
+        "eng": "CMMI"
+    },
+    "138": {
+        "id": "ISO_IEC 15504",
+        "voce": "ISO\/IEC 15504",
+        "def": "Standard internazionale per il miglioramento e la valutazione della qualit\u00e0 di processo.",
+        "eng": "ISO\/IEC 15504"
+    },
+    "139": {
+        "id": "SPICE",
+        "voce": "SPICE",
+        "def": "Software Process Improvement Capability dEtermination, vedi ISO\/IEC 15504.",
+        "eng": "SPICE"
+    },
+    "140": {
+        "id": "ISO_IEC 9126",
+        "voce": "ISO\/IEC 9126",
+        "def": "Standard internazionale che fornisce un modello per la qualit\u00e0 del software.",
+        "eng": "ISO\/IEC 9126"
+    },
+    "141": {
+        "id": "ISO_IEC 14598",
+        "voce": "ISO\/IEC 14598",
+        "def": "Standard internazionale che fornisce un processo per la valutazione della qualit\u00e0 del software; integra ISO\/IEC 9216.",
+        "eng": "ISO\/IEC 14598"
+    },
+    "142": {
+        "id": "ISO_IEC 25000",
+        "voce": "ISO\/IEC 25000",
+        "def": "Famiglia di standard internazionali che vogliono fornire un framework per la valutazione della qualit\u00e0 del software; discende da ISO\/IEC 9126 e ISO\/IEC 14598.",
+        "eng": "ISO\/IEC 25000"
+    },
+    "143": {
+        "id": "ISO_IEC 15939",
+        "voce": "ISO\/IEC 15939",
+        "def": "Standard internazionale per la misurazione del software.",
+        "eng": "ISO\/IEC 15939"
+    },
+    "144": {
+        "id": "prodotto_software",
+        "voce": "prodotto software",
+        "def": "Su commessa: forma, contenuto e funzione fissate dal cliente;\r\nPacchetto: forma, contenuto e funzione idonee alla replicazione;\r\nComponente: forma, contenuto e funzione adatte alla composizione;\r\nServizio: forma, contenuto e funzione fissate dal problema.",
+        "eng": "software product"
+    },
+    "145": {
+        "id": "manutenzione",
+        "voce": "manutenzione",
+        "def": "Correttiva: per correggere difetti eventualmente rilevati\r\nAdattativa: per adattare il sistema alla variazione dei requisiti;\r\nEvolutiva: per aggiungere funzionalit\u00e0 al sistema",
+        "eng": "maintenance, upkeep"
+    },
+    "146": {
+        "id": "efficienza",
+        "voce": "efficienza",
+        "def": "Contenimento dei consumi per raggiungere un obiettivo. Inversamente proporzionale alla quantit\u00e0 di risorse impiegate nell\u2019esecuzione delle attivit\u00e0 richieste.",
+        "eng": "efficiency"
+    },
+    "147": {
+        "id": "efficacia",
+        "voce": "efficacia",
+        "def": "Conformit\u00e0 alle attese. Determinata dal grado di conformit\u00e0 del prodotto rispetto alle norme vigenti e agli obiettivi prefissati.",
+        "eng": "effectiveness"
+    },
+    "148": {
+        "id": "people",
+        "voce": "People",
+        "def": "Business management; Project management; Development team; Customers; End users",
+        "eng": "People"
+    },
+    "149": {
+        "id": "business_management",
+        "voce": "Business management",
+        "def": "Chi fissa gli obiettivi in termini di costi, profitto, priorit\u00e0 strategiche",
+        "eng": "Business management"
+    },
+    "150": {
+        "id": "Project_management",
+        "voce": "Project management",
+        "def": "Chi gestisce le risorse di progetto e riferisce all\u2019organizzazione e al\r\ncliente",
+        "eng": "Project management"
+    },
+    "151": {
+        "id": "development_team",
+        "voce": "Development team",
+        "def": "Chi realizza il prodotto: il luogo di appartenenza dei software engineer",
+        "eng": "Development team"
+    },
+    "152": {
+        "id": "Customers",
+        "voce": "Customers",
+        "def": "Chi compra il prodotto",
+        "eng": "Customers"
+    },
+    "153": {
+        "id": "end users",
+        "voce": "",
+        "def": "",
+        "eng": ""
+    },
+    "154": {
+        "id": "end_users",
+        "voce": "End users",
+        "def": "Chi usa il prodotto software",
+        "eng": "End users"
+    },
+    "155": {
+        "id": "software_engineer",
+        "voce": "Software engineer",
+        "def": "Realizza parte di un sistema complesso con la consapevolezza che potr\u00e0 essere usato, completato e modificato da altri. Deve guardare e comprendere il quadro generale nel quale il sistema cui contribuisce si colloca.\r\nDeve operare compromessi intelligenti e lungimiranti tra visioni e spinte contrapposte.",
+        "eng": "Software engineer"
+    },
+    "156": {
+        "id": "progetto",
+        "voce": "progetto",
+        "def": "Nasce da una richiesta (e\/o pagamento) che diventa poi un impegno se accettato. Porta dei vincoli : di costo, di risorse, di tempo. Spesso insieme di attivit\u00e0 da svolgere in modo collaborativo.\r\nPianificazione; Analisi dei requisiti; Progettazione; Realizzazione; Verifica e validazione; Manutenzione.",
+        "eng": "project"
+    },
+    "157": {
+        "id": "processo",
+        "voce": "processo (ingegneristico)",
+        "def": "Insieme di attivit\u00e0 correlate e coese che trasformano ingressi in uscite, consumando risorse nel farlo.\r\nIl quadro metodologico, normativo e strategico delle attivit\u00e0 di progetto (insieme delle attivit\u00e0 raggruppate per obiettivi) per alimentare svariati modelli di ciclo di vita del SW.",
+        "eng": "process"
+    },
+    "158": {
+        "id": "processo_definito",
+        "voce": "processo definito",
+        "def": "Specializzazione del processo standard necessaria per adattarlo ad esigenze specifiche di progetto.",
+        "eng": ""
+    },
+    "159": {
+        "id": "processo_di_progetto",
+        "voce": "processo di progetto",
+        "def": "Istanza di un processo definito che utilizza risorse aziendali per raggiungere obiettivi prefissati (processo calato nella realt\u00e0 aziendale).",
+        "eng": ""
+    },
+    "160": {
+        "id": "modelli_di_ciclo_di_vita",
+        "voce": "Modelli di ciclo di vita",
+        "def": "Descrivono come i processi si relazionano tra loro nel tempo rispetto agli stati di ciclo di vita.\r\nBase concettuale intorno alla quale pianificare, organizzare, eseguire e controllare lo svolgimento delle attivit\u00e0 necessarie.",
+        "eng": "Life cycle models"
+    },
+    "163": {
+        "id": "prototipo",
+        "voce": "Prototipo",
+        "def": "Serve per provare e scegliere soluzioni.\r\nPu\u00f2 essere \u201cusa e getta\u201d (nel caso delle iterazioni) oppure fornire stati\r\ndi incremento (baseline).",
+        "eng": "Prototype"
+    },
+    "164": {
+        "id": "riuso",
+        "voce": "Riuso",
+        "def": "Occasionale (opportunistico) \u2013 \u00abcopia-incolla\u00bb a basso costo e scarso\r\nimpatto.\r\nSistematico (per progetto, per prodotto, per azienda) a maggior costo\r\nma maggior impatto.",
+        "eng": "Reuse"
+    },
+    "165": {
+        "id": "ISO_IEC 12207",
+        "voce": "ISO\/IEC 12207",
+        "def": "Standard internazionale per il ciclo di vita del software.\r\nModello ad alto livello.\r\n - identifica i processi dello sviluppo SW; \r\n - struttura modulare che richiede specializzazione\r\n - specifica le responsabilit\u00e0 sui processi\r\n - identifica i prodotti dei processi",
+        "eng": "ISO\/IEC 12207"
+    },
+    "166": {
+        "id": "processi_primari",
+        "voce": "Processi Primari (ISO 12207)",
+        "def": "Acquisizione (gestione dei propri sotto-fornitori);\r\nFornitura (gestione rapporti con cliente); \r\nSviluppo;\r\nGestione Operativa (utilizzo);\r\nManutenzione (correttiva\/adattativa\/evolutiva)",
+        "eng": "Primary processes"
+    },
+    "167": {
+        "id": "processi_di_sviluppo",
+        "voce": "Processi di Sviluppo (ISO 12207)",
+        "def": "Documentazione;\r\nAccertamento della qualit\u00e0;\r\nGestione delle versioni e delle configurazioni;\r\nVerifica;\r\nQualifica;\r\nValidazione;\r\nRevisioni congiunte con il cliente;\r\nVerifiche ispettive interne;\r\nRisoluzione dei problemi.",
+        "eng": "Development processes"
+    },
+    "168": {
+        "id": "processi_organizzativi",
+        "voce": "Processi organizzativi (ISO 12207)",
+        "def": "Gestione dei processi;\r\nGestione delle infrastrutture;\r\nMiglioramento del processo;\r\nFormazione del personale.",
+        "eng": ""
+    },
+    "170": {
+        "id": "modello_sequenziale",
+        "voce": "Modello sequenziale (a cascata)",
+        "def": "Centrato sull'idea di processi ripetibili; Successione di fasi rigidamente sequenziali: non ammette ritorni a fasi precedenti ed eventi eccezionali fanno ripartire dall'inizio. I prodotti sono principamente documenti, fino ad includere il SW (Document driven development). Ogni stato di vita ha pre- e post-condizioni.\r\nFasi distinte e non sovrapposte nel tempo. Sviluppo di sistemi complessi sul piano organizzativo (iterazioni troppo costose per mitigare i rischi con approssimazioni successive).\r\nFase definita in termini d'attivit\u00e0 previste & prodotti attesi, contenuti e struttura documenti, responsabilit\u00e0 e ruoli coinvolti + scadenze consegne docs.\r\nFasi = durate temporali con dipendenze causali tra loro.\r\nDifetti: eccessivamente rigido (stretta sequenzialit\u00e0 + non modifiche in corso d'op. + molta manutenzione + molto burocratico e poco realistico).\r\nCorrettivi: 1. Prototipazione (usa&getta); 2. Cascata con ritorni",
+        "eng": "Waterfall model"
+    },
+    "174": {
+        "id": "modello_incrementale",
+        "voce": "Modello incrementale \/ incremento",
+        "def": "Procedere per incrementi significa aggiungere a un impianto base.\r\nPossono produrre \"valore\" ad ogni incremento; ogni incremento riduce il rischio di fallimento; funzionalit\u00e0 essenziali sviluppate nei primi incrementi.\r\nPrevede rilasci multipli & successivi: ognuno realizza un incremento di funzionalit\u00e0. Requisiti utente classificati e trattati in base alla loro importanza strategica (primi rilasci->req. + importanti; requisiti strategici stabiliti all'inizio) (req. principali identificati e fissati; architettura del sistema identificata e fissata completamente).\r\nAnalisi e progettazione architetturale non ripetute. Realizzazione incrementale (prj dettaglio, codifica e prove; prima req. essenziale e poi i desiderabili; integrazione->collaudo->rilascio)",
+        "eng": "Incremental model \/ Increment"
+    },
+    "175": {
+        "id": "modello_iterativo",
+        "voce": "Modello iterativo \/ iterazione",
+        "def": "Procedere per iterazioni significa operare raffinamenti o rivisitazioni.\r\nApplicabili a qualunque modello di ciclo di vita; consentono maggior capacit\u00e0 d'adattamento; comportano il rischio di non convergenza.\r\nSoluzione generale:\r\n 1.decomporre la realizzazione del sys\r\n 2.identificare&trattare prima le componenti pi\u00f9 critiche\r\n 3.limitare superiormente il numero d'iterazioni.\r\nRischi: ogni iterazione comporta un ritorno all'indietro, nella direzione opporsta all'avanzamento del tempo).",
+        "eng": "Iterative model \/ iteration"
+    }
+}
