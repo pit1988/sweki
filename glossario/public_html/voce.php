@@ -120,7 +120,7 @@ else{
 	    <input type="text" name="eng">
 	    </p><p>
 	    <input type="submit" value="Submit" name="submit">
-	    <a href="glossario.php">Annulla</a>
+	    <a href="index.php">Annulla</a>
 	    </p>
 	  </fieldset>
 	</form>
