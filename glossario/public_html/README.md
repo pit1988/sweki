@@ -7,512 +7,249 @@ Directory contenente un glossario di termini, nei seguenti formati:
 * Markdown (il file che stai leggendo).
 
 Di seguito i termini del glossario:
-* __accoppiamento__: Grado di dipendenza tra le varie componenti di un sistema.
-C'è interdipendenza cattiva tra parti diverse se:
--si fanno assunzioni dall'esterno su come le parti facciano il loro mestiere all'interno (variabili, locazioni, tipi)
--s'impongono vincoli dall'esterno sull'interno di una parte (ordine d'azioni, uso di dati/formati/valori)
--si condividono frammenti delle stesse risorse (strutture dati)
-Un sistema è un insieme organizzato, ha quindi bisogno d'un po' d'accoppiamento e la buona progettazione lo tiene basso.
-È una proprietà esterna delle componenti: dato U il grado d'utilizzo reciproco di M componenti, il massimo accoppiamento si ha per U=M*M; nullo quando U=0;
-Le metriche sono il Fan-in e Fan-out strutturale.
-Una buona progettazione produce componenti con Fan-in elevato. Inglese: _coupling_.
-* __algoritmo__: Sequenza finita di passi per la risoluzione di un problema. Inglese: _algorithm_.
-* __allocazione di risorse (per un progetto)__: Assegnare attività a ruoli e, poi, ruoli a persone.
-* __ambiente di lavoro__: L'insieme di persone, di ruoli, di procedure e l'infrastruttura la cui qualità determina la produttività del progetto.
-Deve essere: completo, ordinato, aggiornato. Inglese: _work environment_.
-* __Amministrare un progetto__: Equipaggiare, organizzare e gestire l’ambiente di lavoro e di produzione (regole+procedure+strumenti&servizi; supporto di tutti i processi istanziati nel prj).
-Le attivtà sono: la redazione e la manutenzione di regole e procedure di lavoro, il reperimento, l'organizzazione, la gestione e la manutenzione di risorse informatiche per l'erogazione dei servizi di supporto. Inglese: _Project administration_.
-* __amministratore di progetto (profilo professionale)__: Chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione.
-Non compie scelte gestionali ma attua le scelte tecnologiche concordate coi responsabili aziendali e del progetto Inglese: _project administrator_.
-* __analisi dei requisiti__: Definire cosa bisogna fare. Inglese: _requirements analysis_.
-* __analisi dinamica__: Valutazione di un sistema (o di una sua componente) basata sul suo comportamento durante l'esecuzione.
-Richiede l'esecuzione del programma, viene effettuata tramite prove (test) ed è usata sia nella verifica che nella validazione.
-La ripetibilità è un requisito essenziale: AMBIENTE(hw, stato iniziale), SPECIFICHE (ingressi rich., comportamenti attesi), PROCEDURE (esecuzione ed analisi dei risultati).
-Strumenti usati: Driver, Stub e Logger. Inglese: _dynamic analysis_.
-* __analisi statica__: Valutazione di un sistema (o di una sua componente) basata sulla sua forma, struttura, contenuto o documentazione. Non richiede l'esecuzione del software in alcuna sua parte, è essenziale quando il sistema non è ancora completamente disponibile. Studia le caratteristiche del codice sorgente e talvolta del codice oggetto e della documentazione associata, alla ricerca della conformità a regole date, l'assenza da difetti e la presenza di proprietà positive.
-Applicano ad ogni prodotto di processo (non solo sw: per tutti i processi attivati nel prj).
-Metodi di lettura (desk check) sono applicati solo per prodotti semplici).
-Metodi formali, si basano sulla prova assistita di proprità, la cui dimostrazione dinamica può essere troppo onerosa; verifica di equivalenza o generazione automatica. Inglese: _static analysis_.
-* __analista (profilo professionale)__: Chi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista; fa l'analisi dei requisiti. Inglese: _analyst_.
-* __application logic__: La parte di un software che è specifica di quel software e non è intesa per essere riusata in altri software.
-* __architettura__: Decomposizione di un sistema in componenti; l'organizzazione di tali componenti, le interfacce necessarie all'interazione tra queste e l'ambiente ed i paradigmi di composizione delle componenti.
-La struttura organizzativa di un sistema o componente. Inglese: _architecture_.
-* __Architettura: qualità possedute__: >Sufficienza: è capace di soddisfare tutti i req.
->Comprensibilità: può essere capita dai portatori d'interesse
->Modularità: è suddivisa in parti chiare e ben distinte
->Robustezza: sopporta ingressi diversi dall'utente e dall'ambiente
->Flessibilità: permette modifiche a costo contenuto, al variare dei req.
->Riusabilità: le sue parti possono essere utilmente impiegate in altre applicazioni
->Efficienza: nel tempo, nello spazio, nelle comunicazioni
->Affidabilità: altamente probabile che svolga bene il suo compito quando utilizzata.
->Disponibilità: necessita di poco o nullo tempo di manutenzione fuori linea
->Sicurezza rispetto a malfunzionamenti: è senete da malfunzionamenti gravi
->Sicurezza rispetto ad intrusioni: i sui dati e le sue funzioni non sono vulnerabili a intrusioni
->Semplicità: ogni parte contiene solo il necessario e niente di superfluo
->Incapsulazione (information hiding): l'interno delle componenti non è visibile dall'esterno
->Coesione: le parti che stanno insieme hanno gli stessi obiettivi
->Basso accoppiamento: parti distinte dipendono poco o niente le une dalle altre.
-* __attività__: Parte di un processo che dev'essere compiuta entro un determinato periodo di tempo. Inglese: _activity_.
-* __Attributi di processo (requisiti)__: Pongono vincoli sui processi impiegati nel prodotto (come devo farlo?).
-Requisiti di vincolo (realizzativo, normativo, contrattuale).
-* __Attributi di prodotto (requisiti)__: Definiscono le caratteristiche richieste al sistema (cosa devo fare?).
-Requisiti funzionali, prestazionali, di qualità (di prodotto).
-* __baseline__: Nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede.
-* __batteria di prove__: Insieme di casi di prova. Inglese: _test suite_.
-* __best practice__: La prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche.
-* __bibliografia__: Elenco delle fonti di un documento. Inglese: _bibliografy_.
-* __budget__: Tempo e denaro a disposizione.
-* __business logic__: La parte di un software che ha a che fare con il dominio applicativo del software; questa parte è tipicamente riusabile e quindi condivisa tra diversi software che operano nello stesso dominio.
-* __Business management__: Chi fissa gli obiettivi in termini di costi, profitto, priorità strategiche
-* __caos__: Contrario di organizzazione. Inglese: _chaos_.
-* __caso d'uso__: Insieme di scenari che hanno in comune un obiettivo per un utente. Inglese: _use case_.
-* __caso di prova__: Terna di valori (input, output, ambiente) che specifica il comportamento che un sistema (o parte di esso) deve avere in un caso specifico. Inglese: _test case_.
-* __ciclo di vita (di un prodotto)__: Insieme degli stati che il prodotto assume, dal concepimento al ritiro. Inglese: _software product life cycle_.
-* __ciclo di vita dello sviluppo (di un prodotto)__: Parte del ciclo di vita di un prodotto che riguarda il suo sviluppo. Inglese: _software development life cycle_.
-* __ciclo PDCA (o ciclo di Deming)__: Schema iterativo di auto-miglioramento che consiste di quattro punti: Plan (individuare obiettivi di miglioramento), Do (eseguire ciò che si è pianificato), Check (verificare se ha funzionato) e Act (agire per correggersi). Inglese: _PDCA cycle_.
-* __Classificazione dei requisiti__: Requisiti di progetto, processo e sistema-> funzionali, di performance, di qualità.
-I requisiti devono essere verificabili; chi ne fissa uno deve avere idea di come accertarne il soddisfacimento.
->Requisiti formali prevedono test, dimostrazione formale e revisione;
->Requisiti prestazionali, una misurazione
->Requisiti qualitativi, una verifica ad hoc
->Requisiti dichiarativi, una revisione.
-I requisiti hanno una diversa utilità strategica:
->Obbligatori: irrinunciabili per qualsiasi stakeholder;
->Desiderabili, non sono strettamente necessari ma hanno un valore aggiunto riconoscibile;
->Opzionali, sono relativamente utili oppure contrattabili in seguito.
-* __CMMI__: Capability Maturity Model + Integration
-Standard per il miglioramento e la valutazione della qualità di processo.
-Definito su commessa del DoD al SEI di CMU. È un modello per la valutazione uniforme dei fornitori.
-Capability: misura quant'è adeguato un processo per gli scopi per cui  è stato definito. Caratteristica di un processo misurato singolarmente; determina l'intorno del risultato (di efficienza ed efficacia) raggiungibile usando quel processo. Un processo che ne ha tanta è seguito da tutti in modo disciplinato, sistematico e quantificabile, in caso contrario dipenderebbe da chi lo attua, sarebbe definito e seguito in modo opportunistico, sarebbe difficicle prevederne l'esito, avanzamento e qualità.
-Maturity: misura di quando è governato il sistema dei processi dell'azienda. Caratteristica d'un insieme di processi (quelli significativi rispondono alle esigenze di miglioramento continuo dell'organizzazione); risulta dall'effetto combinato delle capability dei processi coinvolti. 5 livelli: Optimizing, Qualitatively managed, Defined, Managed, Initial)
-Model: insieme di requisiti via via più stringenti per valutare il percorso di miglioramento dei processi dell'azienda (utile per confrontarne di diverse).
-Integration: architettura di integrazione delle diverse discipline (sys, HW, SW) e tipologie di attività delle aziende
-* __CoCoMo (Constructive Cost Model)__: Modello per la stima dei costi di un progetto, in tempo/persona. Inglese: _CoCoMo_.
-* __coerenza__: L'esser composto da parti che non sono in disaccordo tra loro, cioè non affermano cose che si contraddicano. Inglese: _consistency_.
-* __coesione__: Grado di relazione tra parti associate di un sistema che concorrono agli stessi obiettivi. Proprietà interna di singole componenti: funzionalità "vicine" devono stare nella stessa componente (la modularità spinge a decomporre il grande in piccolo; aiuta a decomporre ed a porre un limite inferiore alla decomposizione).
-Porta ad una maggiore manutenibilità e riusabilità, minore dipendenza fra i componenti ed una maggiore comprensione dell'architettura del sistema.
->Funzionale, quando parti specifiche concorrono al medesimo compito
->Sequenziale, quando alcune azioni sono vicine ad altre per ordine di esecuzione, così conviene metterle insieme
->Informativa, quando le parti agiscono sulla stessa unità d'informazione. Inglese: _cohesion_.
-* __collaudo__: Durante la validazione, è un'attività supervisionata dal committente, come dimostrazione di conformità del prodotto sulla base di casi di prova specificati nel o implicati dal contratto.
-È un'attività formale per il contratto.
-Segue il rilascio del prodotto (con eventuale garanzia) e la fine della commessa (con eventuale manutenzione).
-* __compito__: Parte di un'attività. Si può svolgere usando qualche tecnica: ricetta applicata agli strumenti disponibili Inglese: _task_.
-* __complessità ciclomatica__: Misura quantitativa del numero di cammini linearmente indipendenti che il codice sorgente di un programma può percorrere. Inglese: _cyclomatic complexity_.
-* __componente__: Insieme di unità funzionalmente coese; parte di un sistema. (In Java, rappresentabile da uno o più package.)
-Integra più unità. Inglese: _component_.
-* __configuration item (CI)__: Parte della configurazione di un software. Inglese: _configuration item_.
-* __configurazione__: Di quali parti si compone un prodotto e il modo in cui esse stanno assieme.
-Un prodotto sw è l'unione di parti distine unite insieme secondo regole rigorose. Le regole di configurazione vanno pianificate e la gestione di configurazione va automatizzata. Inglese: _configuration_.
-* __Controllo di qualità__: Le attività del sistema qualità pianificate ed attuate al fine che il prodotto soddisfi i requisti attesi.
-Modalità ed ambiti di controllo sono: 
--comprensione ed analisi del dominio;
--verifica (di attività di processo)
--validazione (di prodotto)
--quality assurance (preventiva invece che correttiva)
-* __controllore della qualità (profilo professionale)__: Funzione aziendale (e non ruolo di progetto) che accerta la qualità dei prodotti. Inglese: _null_.
-* __copertura del codice__: Percentuale di codice sorgente eseguito durante un caso di prova. Inglese: _code coverage_.
-* __criticità__: Distanza troppo breve tra attività dipendenti. Inglese: _null_.
-* __Customers__: Chi compra il prodotto
-* __Definizione di Prodotto__: L'architettura di dettaglio porta alla definizione di prodotto
->Procede dall'architettura logica
->Consente lo sviluppo parallelo dei componenti terminali
->Consente di stimare costo e tempi di realizzazione
->Conforme alle qualità perseguite nell'architettura logica (alta coesione ed utilità=fan-in; bassa dipendenza=fan.out, comlessità ed accoppiamento).
->Decompone i componenti architetturali in moduli a grana più fine finchè ogni modulo ha dimensione, coesione, complessità ed accoppiamento appropriati per la codifica in parallelo>
->Deve fornire tutti i dettagli necesari alla codifica e verfica di ciascun modulo (la natura specifica di modulo è determinata dal linguaggio in uso).
-* __design pattern__: Soluzione progettuale generale ad un problema ricorrente.
-* __Development team__: Chi realizza il prodotto: il luogo di appartenenza dei software engineer
-* __diagramma dei casi d'uso__: Grafo orientato che mostra gli attori, i casi d'uso e le relazioni tra essi: ogni nodo è un attore o un caso d'uso; ogni arco è una comunicazione tra un attore e un caso d'uso oppure una relazione (di estensione, inclusione o generalizzazione) tra due casi d'uso o tra due attori. Inglese: _use case diagram_.
-* __diagramma di Gantt__: Diagramma che rappresenta la durata, la sequenzialità e il parallelismo delle attività di un progetto.
-Si basa sulla dislocazione temporale delle attività, per rappresentarne la durata, la sequenzialità ed il parallelismo e confrontare stime e progressi. Inglese: _Gantt diagram_.
-* __diagramma PERT (Project Evaluation and Review Technique)__: Rete che rappresenta le dipendenze temporali (e le criticità) tra attività di un progetto. Inglese: _PERT diagram_.
-* __diagramma WBS (Work Breakdown Structure)__: Diagramma che decompone in modo gerarchico le attività di un progetto in sotto-attività (coese ma non necessariamente sequenziali ed univocamente identificate). Inglese: _WBS diagram_.
-* __disciplinato__: Che segue le norme (anzi, la best practice). Inglese: _disciplined_.
-* __documentazione__: Tutto ciò che descrive gli ingressi e le uscite delle attività di un progetto (riguardo al prodotto e processo). Documenti di sviluppo e di gestione del progetto. Inglese: _documentation_.
-* __efficacia__: Conformità alle attese. Determinata dal grado di conformità del prodotto rispetto alle norme vigenti e agli obiettivi prefissati. Inglese: _effectiveness_.
-* __efficienza__: Contenimento dei consumi per raggiungere un obiettivo. Inversamente proporzionale alla quantità di risorse impiegate nell’esecuzione delle attività richieste. Inglese: _efficiency_.
+* __accoppiamento__: <p>Grado di dipendenza tra le varie componenti di un sistema.</p><p>C'è interdipendenza cattiva tra parti diverse se:</p><p>-si fanno assunzioni dall'esterno su come le parti facciano il loro mestiere all'interno (variabili, locazioni, tipi)</p><p>-s'impongono vincoli dall'esterno sull'interno di una parte (ordine d'azioni, uso di dati/formati/valori)</p><p>-si condividono frammenti delle stesse risorse (strutture dati)</p><p>Un sistema è un insieme organizzato, ha quindi bisogno d'un po' d'accoppiamento e la buona progettazione lo tiene basso.</p><p>È una proprietà esterna delle componenti: dato U il grado d'utilizzo reciproco di M componenti, il massimo accoppiamento si ha per U=M*M; nullo quando U=0;</p><p>Le metriche sono il Fan-in e Fan-out strutturale.</p><p>Una buona progettazione produce componenti con Fan-in elevato.</p>Inglese: _coupling_.
+* __algoritmo__: <p>Sequenza finita di passi per la risoluzione di un problema.</p>Inglese: _algorithm_.
+* __allocazione di risorse (per un progetto)__: <p>Assegnare attività a ruoli e, poi, ruoli a persone.</p>
+* __ambiente di lavoro__: <p>L'insieme di persone, di ruoli, di procedure e l'infrastruttura la cui qualità determina la produttività del progetto.</p><p>Deve essere: completo, ordinato, aggiornato.</p>Inglese: _work environment_.
+* __Amministrare un progetto__: <p>Equipaggiare, organizzare e gestire l’ambiente di lavoro e di produzione (regole+procedure+strumenti&servizi; supporto di tutti i processi istanziati nel prj).</p><p>Le attivtà sono: la redazione e la manutenzione di regole e procedure di lavoro, il reperimento, l'organizzazione, la gestione e la manutenzione di risorse informatiche per l'erogazione dei servizi di supporto.</p>Inglese: _Project administration_.
+* __amministratore di progetto (profilo professionale)__: <p>Chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione.</p><p>Non compie scelte gestionali ma attua le scelte tecnologiche concordate coi responsabili aziendali e del progetto</p>Inglese: _project administrator_.
+* __analisi dei requisiti__: <p>Definire cosa bisogna fare.</p>Inglese: _requirements analysis_.
+* __analisi dinamica__: <p>Valutazione di un sistema (o di una sua componente) basata sul suo comportamento durante l'esecuzione.</p><p>Richiede l'esecuzione del programma, viene effettuata tramite prove (test) ed è usata sia nella verifica che nella validazione.</p><p>La ripetibilità è un requisito essenziale: AMBIENTE(hw, stato iniziale), SPECIFICHE (ingressi rich., comportamenti attesi), PROCEDURE (esecuzione ed analisi dei risultati).</p><p>Strumenti usati: Driver, Stub e Logger.</p><p>Si compone di test (prove): attività che comportano l'esecuzione dell'oggetto di verifica.</p><p>Viene fatta sul comportamento del programma su un inseme finito di casi, selezionati nel dominio (infinto, in generale) di tutte le esecuzioni possibili; ciascun caso di prova specifica i valori di ingresso e lo stato iniziale del sistema: ciascun caso di prova deve produrre un esito decidibile (oracolo) verificato in base ad un comportmento atteso.</p><p>Oggetto delle prove: unità (TU), aggregati (parti del sistema, in relazione funzionale/d'uso/di comportamento/di struttura. TI), sistema completo.</p><p>Obiettivo delle prove: accertazione, qualifica, conformità, regressione; installazione nell'ambiente di prova, controllo prestazioni; viene specificato per ogni caso, in termini pratici e quantitativi, varia al variare dell'oggetto di prova; il PdQ dice quali e quante prove.</p><p>Vincoli di progetto: processi, prodotti, risorse, competenze; stima e controllo dei costi, criteri di terminazione.</p><p>Attività di prova: pianificazione, specifica e sviluppo dei casi di prova; esecuzione, valutazione, trattamento dei problemi.</p><p>La provabilità va assicurata a monte dello sviluppo, non a valle della codifica: progettazione architetturale e di dettaglio raffinate per assicurare la provabilità.</p><p>Una singola prova non basta: i risultati valgono solo per quell'esecuzione, non possono essere generalizzati; dev'essere ripetibile; rileva malfunzionamenti indicando la presenza di guasti: generalmente non può provarne l'assenza.</p><p>In più le prove sono costose: richiedono risorse (in termini di tempo+persone+infrastrutture), hanno bisogno di un processo definito e richiedono attività di ricerca, analisi e correzione.</p>Inglese: _dynamic analysis_.
+* __analisi statica__: <p>Valutazione di un sistema (o di una sua componente) basata sulla sua forma, struttura, contenuto o documentazione. Non richiede l'esecuzione del software in alcuna sua parte, è essenziale quando il sistema non è ancora completamente disponibile. Studia le caratteristiche del codice sorgente e talvolta del codice oggetto e della documentazione associata, alla ricerca della conformità a regole date, l'assenza da difetti e la presenza di proprietà positive.</p><p>Applicano ad ogni prodotto di processo (non solo sw: per tutti i processi attivati nel prj).</p><p>Metodi di lettura (desk check) sono applicati solo per prodotti semplici).</p><p>Metodi formali, si basano sulla prova assistita di proprità, la cui dimostrazione dinamica può essere troppo onerosa; verifica di equivalenza o generazione automatica.</p><p>L'efficacia dei metodi di analisi è funzione della qualità di strutturazione del codice.</p><p></p><p>Costruisce modelli astratti del sw in esame: questi modelli rappresentano ogni programma come un grafo e ne studiano i cammini possibili; le variazioni tra stati (archi) hanno etichette che descrivono proprietà sintattiche o semantiche dell'istruzione corrispondente. Ciascun flusso di controllo (thread) viene rappresentato ed analizzato separatamente (assumendo la non-interferenza).</p>Inglese: _static analysis_.
+* __Analisi statica: tipi__: <p>1. Flusso di controllo;</p><p>2. Flusso dei dati; </p><p>3. Flusso dell'informazione; </p><p>4. Esecuzione simbolica;</p><p>5. Verifica formale del codice;</p><p>6. Verifica del limite;</p><p>7. Uso dello stack;</p><p>8. Comportamento temporale;</p><p>9. Interferenza.</p><p>Sono tute tecniche in aggiunta all'analisi dinamica!</p>
+* __analista (profilo professionale)__: <p>Chi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista; fa l'analisi dei requisiti.</p>Inglese: _analyst_.
+* __application logic__: <p>La parte di un software che è specifica di quel software e non è intesa per essere riusata in altri software.</p>
+* __architettura__: <p>Decomposizione di un sistema in componenti; l'organizzazione di tali componenti, le interfacce necessarie all'interazione tra queste e l'ambiente ed i paradigmi di composizione delle componenti.</p><p>La struttura organizzativa di un sistema o componente.</p>Inglese: _architecture_.
+* __Architettura: qualità possedute__: <p>>Sufficienza: è capace di soddisfare tutti i req.</p><p>>Comprensibilità: può essere capita dai portatori d'interesse</p><p>>Modularità: è suddivisa in parti chiare e ben distinte</p><p>>Robustezza: sopporta ingressi diversi dall'utente e dall'ambiente</p><p>>Flessibilità: permette modifiche a costo contenuto, al variare dei req.</p><p>>Riusabilità: le sue parti possono essere utilmente impiegate in altre applicazioni</p><p>>Efficienza: nel tempo, nello spazio, nelle comunicazioni</p><p>>Affidabilità: altamente probabile che svolga bene il suo compito quando utilizzata.</p><p>>Disponibilità: necessita di poco o nullo tempo di manutenzione fuori linea</p><p>>Sicurezza rispetto a malfunzionamenti: è senete da malfunzionamenti gravi</p><p>>Sicurezza rispetto ad intrusioni: i sui dati e le sue funzioni non sono vulnerabili a intrusioni</p><p>>Semplicità: ogni parte contiene solo il necessario e niente di superfluo</p><p>>Incapsulazione (information hiding): l'interno delle componenti non è visibile dall'esterno</p><p>>Coesione: le parti che stanno insieme hanno gli stessi obiettivi</p><p>>Basso accoppiamento: parti distinte dipendono poco o niente le une dalle altre.</p>
+* __attività__: <p>Parte di un processo che dev'essere compiuta entro un determinato periodo di tempo.</p>Inglese: _activity_.
+* __Attributi di processo (requisiti)__: <p>Pongono vincoli sui processi impiegati nel prodotto (come devo farlo?).</p><p>Requisiti di vincolo (realizzativo, normativo, contrattuale).</p>
+* __Attributi di prodotto (requisiti)__: <p>Definiscono le caratteristiche richieste al sistema (cosa devo fare?).</p><p>Requisiti funzionali, prestazionali, di qualità (di prodotto).</p>
+* __baseline__: <p>Nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede.</p>
+* __batteria di prove__: <p>Insieme (sequenza) di casi di prova.</p>Inglese: _test suite_.
+* __best practice__: <p>La prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche.</p>
+* __bibliografia__: <p>Elenco delle fonti di un documento.</p>Inglese: _bibliografy_.
+* __Branch coverage__: <p>metodo di testing che mira ad assicurare che ognuno dei possibili rami che scendono da ogni percorso di decisione (flusso di controllo) siano eseguiti almeno una volta, assicurando che tutto il codice che è possibile raggiungere sia stato eseguito.</p><p>100% se li attraversa tutti - complessivamente - almeno una volta.</p><p>È funzionale, per cammino, quindi è più potente della statement coverage.</p><p>Può però non comprendere appieno la logica del programma!</p>Inglese: _branch coverage_.
+* __budget__: <p>Tempo e denaro a disposizione.</p>
+* __business logic__: <p>La parte di un software che ha a che fare con il dominio applicativo del software; questa parte è tipicamente riusabile e quindi condivisa tra diversi software che operano nello stesso dominio.</p>
+* __Business management__: <p>Chi fissa gli obiettivi in termini di costi, profitto, priorità strategiche</p>
+* __caos__: <p>Contrario di organizzazione.</p>Inglese: _chaos_.
+* __caratterizzazione__: <p>È una parte essenziale del processo di verifica.</p><p>Produce una misura della qualità del sistema: aumenta il valore di qualità del sistema, identificandone e rimuovendone i difetti.</p><p>Il suo inizio non dev'essere differito al termine delle attività di codifica.</p><p>Le sue esigenze devono essere tenute in conto nella progettazione del sistema.</p>
+* __caso d'uso__: <p>Insieme di scenari che hanno in comune un obiettivo per un utente.</p>Inglese: _use case_.
+* __caso di prova__: <p>Terna di valori (input, output, ambiente) che specifica il comportamento che un sistema (o parte di esso) deve avere in un caso specifico; l'ambiente include l'oggetto della prova.</p>Inglese: _test case_.
+* __ciclo di vita (di un prodotto)__: <p>Insieme degli stati che il prodotto assume, dal concepimento al ritiro.</p>Inglese: _software product life cycle_.
+* __ciclo di vita dello sviluppo (di un prodotto)__: <p>Parte del ciclo di vita di un prodotto che riguarda il suo sviluppo.</p>Inglese: _software development life cycle_.
+* __ciclo PDCA (o ciclo di Deming)__: <p>Schema iterativo di auto-miglioramento che consiste di quattro punti: Plan (individuare obiettivi di miglioramento), Do (eseguire ciò che si è pianificato), Check (verificare se ha funzionato) e Act (agire per correggersi).</p>Inglese: _PDCA cycle_.
+* __Classificazione dei requisiti__: <p>Requisiti di progetto, processo e sistema-> funzionali, di performance, di qualità.</p><p>I requisiti devono essere verificabili; chi ne fissa uno deve avere idea di come accertarne il soddisfacimento.</p><p>>Requisiti formali prevedono test, dimostrazione formale e revisione;</p><p>>Requisiti prestazionali, una misurazione</p><p>>Requisiti qualitativi, una verifica ad hoc</p><p>>Requisiti dichiarativi, una revisione.</p><p>I requisiti hanno una diversa utilità strategica:</p><p>>Obbligatori: irrinunciabili per qualsiasi stakeholder;</p><p>>Desiderabili, non sono strettamente necessari ma hanno un valore aggiunto riconoscibile;</p><p>>Opzionali, sono relativamente utili oppure contrattabili in seguito.</p>
+* __CMMI__: <p>Capability Maturity Model + Integration</p><p>Standard per il miglioramento e la valutazione della qualità di processo.</p><p>Definito su commessa del DoD al SEI di CMU. È un modello per la valutazione uniforme dei fornitori.</p><p>Capability: misura quant'è adeguato un processo per gli scopi per cui  è stato definito. Caratteristica di un processo misurato singolarmente; determina l'intorno del risultato (di efficienza ed efficacia) raggiungibile usando quel processo. Un processo che ne ha tanta è seguito da tutti in modo disciplinato, sistematico e quantificabile, in caso contrario dipenderebbe da chi lo attua, sarebbe definito e seguito in modo opportunistico, sarebbe difficicle prevederne l'esito, avanzamento e qualità.</p><p>Maturity: misura di quando è governato il sistema dei processi dell'azienda. Caratteristica d'un insieme di processi (quelli significativi rispondono alle esigenze di miglioramento continuo dell'organizzazione); risulta dall'effetto combinato delle capability dei processi coinvolti. 5 livelli: Optimizing, Qualitatively managed, Defined, Managed, Initial)</p><p>Model: insieme di requisiti via via più stringenti per valutare il percorso di miglioramento dei processi dell'azienda (utile per confrontarne di diverse).</p><p>Integration: architettura di integrazione delle diverse discipline (sys, HW, SW) e tipologie di attività delle aziende</p>
+* __CoCoMo (Constructive Cost Model)__: <p>Modello per la stima dei costi di un progetto, in tempo/persona.</p>Inglese: _CoCoMo_.
+* __coerenza__: <p>L'esser composto da parti che non sono in disaccordo tra loro, cioè non affermano cose che si contraddicano.</p>Inglese: _consistency_.
+* __coesione__: <p>Grado di relazione tra parti associate di un sistema che concorrono agli stessi obiettivi. Proprietà interna di singole componenti: funzionalità "vicine" devono stare nella stessa componente (la modularità spinge a decomporre il grande in piccolo; aiuta a decomporre ed a porre un limite inferiore alla decomposizione).</p><p>Porta ad una maggiore manutenibilità e riusabilità, minore dipendenza fra i componenti ed una maggiore comprensione dell'architettura del sistema.</p><p>>Funzionale, quando parti specifiche concorrono al medesimo compito</p><p>>Sequenziale, quando alcune azioni sono vicine ad altre per ordine di esecuzione, così conviene metterle insieme</p><p>>Informativa, quando le parti agiscono sulla stessa unità d'informazione.</p>Inglese: _cohesion_.
+* __collaudo__: <p>Durante la validazione, è un'attività supervisionata dal committente, come dimostrazione di conformità del prodotto sulla base di casi di prova specificati nel o implicati dal contratto.</p><p>È un'attività formale per il contratto.</p><p>Segue il rilascio del prodotto (con eventuale garanzia) e la fine della commessa (con eventuale manutenzione).</p><p>Test di accettazione (collaudo): accerta il soddisfacimento dei requisiti utente.</p>
+* __compito__: <p>Parte di un'attività. Si può svolgere usando qualche tecnica: ricetta applicata agli strumenti disponibili</p>Inglese: _task_.
+* __complessità ciclomatica di McCabe__: <p>Misura la complessità del flusso di controllo: è funzione del numero di cammini linearmente indipendenti che il codice sorgente di un programma può percorrere.</p><p>È una misurazione astratta d'un attributo significativo del codice.</p><p>Come limiti, presenta una fallibilità dimostrata, ma viene ancora largamente usata, in più è una metrica costosa da applicare prima di progettare il codice in dettaglio.</p><p>Il valore rilevato va confrontato con soglie prefissate:</p><p>-[1, 10] = c. bassa</p><p>-[21, 50] = c. elevata</p><p>-[51, ..) = e. inaccettabile.</p><p>Corrisponde al numero di casi prova necessari per verificare ogni possibile esito d'ogni ramo di decisione della procedura:</p><p>->misura la complessità del flusso di controllo, ma non quella del flusso dati; il grado di fan-in applicato ai dati può aiutare a stimare la complessità del flusso dati; è meglio calcolarlo usando strumenti automatici.</p><p>Definizione algebrica costruita sopra il grafo di controllo G che descrive una procedura: v(G) = e-n+p</p><p>il numero di percorsi lineari di G è pari al numero degli archi (flusso) meno il numero dei nodi (espressioni o comandi) più il numero delle componenti connesse da ogni arco</p>Inglese: _cyclomatic complexity_.
+* __componente__: <p>Insieme di unità funzionalmente coese; parte di un sistema. (In Java, rappresentabile da uno o più package.)</p><p>Integra più unità.</p>Inglese: _component_.
+* __comportamento predicibile__: <p>Si ha se il codice sorgente è senza ambiguità: </p><p>-niente effetti laterali (es. di funzioni)->diverse invocazioni dela stessa funzione non producono risultati diversi</p><p>-l'ordine di elaborazione ed inizializzazione non influisce: l'esitito d'un programma dipende dall'ordine di laborazione entro e tra unità</p><p>-modalità di passaggio di parametri, poichè la scelta d'una modalità di passaggio (valore, riferimento) può influenzare parte dell'esecuzione.</p>
+* __condizione__: <p>Espressione booleana semplice non contenente al suo interno ulteriori condizioni combinate da operatori booleani.</p>Inglese: _condition_.
+* __configuration item (CI)__: <p>Parte della configurazione di un software.</p>Inglese: _configuration item_.
+* __configurazione__: <p>Di quali parti si compone un prodotto e il modo in cui esse stanno assieme.</p><p>Un prodotto sw è l'unione di parti distine unite insieme secondo regole rigorose. Le regole di configurazione vanno pianificate e la gestione di configurazione va automatizzata.</p>Inglese: _configuration_.
+* __Controllo di qualità__: <p>Le attività del sistema qualità pianificate ed attuate al fine che il prodotto soddisfi i requisti attesi.</p><p>Modalità ed ambiti di controllo sono: </p><p>-comprensione ed analisi del dominio;</p><p>-verifica (di attività di processo)</p><p>-validazione (di prodotto)</p><p>-quality assurance (preventiva invece che correttiva)</p>
+* __controllore della qualità (profilo professionale)__: <p>Funzione aziendale (e non ruolo di progetto) che accerta la qualità dei prodotti.</p>Inglese: _null_.
+* __Copertura__: <p>Per ogni test d'unità si definiscono l'oggetto, la strategia, le risorse necessarrie ed il piano d'esecuzione. </p><p>Vedi: Statement coverage; branch coverage.</p><p>Fattore di copertura: quanto la prova esercita il prodotto.</p><p>-Copertura funzionale: rispetto alla percentuale di funzionalità esercitate, come sono viste dall'esterno</p><p>-copertura strutturale (branch, condition): rispetto alla percentuale di logica interna del codice esercitata.</p><p>La copertura del 100% non provoca l'assenza di difetti, e può essere irraggiungibile.</p>Inglese: _coverage_.
+* __copertura del codice__: <p>Percentuale di codice sorgente eseguito durante un caso di prova.</p>Inglese: _code coverage_.
+* __criticità__: <p>Distanza troppo breve tra attività dipendenti.</p>Inglese: _null_.
+* __Customers__: <p>Chi compra il prodotto</p>
+* __decisione__: <p>Espressione composta contenente condizioni combinate da operatori boolenai</p>Inglese: _decision_.
+* __Definizione di Prodotto__: <p>L'architettura di dettaglio porta alla definizione di prodotto</p><p>>Procede dall'architettura logica</p><p>>Consente lo sviluppo parallelo dei componenti terminali</p><p>>Consente di stimare costo e tempi di realizzazione</p><p>>Conforme alle qualità perseguite nell'architettura logica (alta coesione ed utilità=fan-in; bassa dipendenza=fan.out, comlessità ed accoppiamento).</p><p>>Decompone i componenti architetturali in moduli a grana più fine finchè ogni modulo ha dimensione, coesione, complessità ed accoppiamento appropriati per la codifica in parallelo></p><p>>Deve fornire tutti i dettagli necesari alla codifica e verfica di ciascun modulo (la natura specifica di modulo è determinata dal linguaggio in uso).</p>
+* __design pattern__: <p>Soluzione progettuale generale ad un problema ricorrente.</p>
+* __Development team__: <p>Chi realizza il prodotto: il luogo di appartenenza dei software engineer</p>
+* __diagramma dei casi d'uso__: <p>Grafo orientato che mostra gli attori, i casi d'uso e le relazioni tra essi: ogni nodo è un attore o un caso d'uso; ogni arco è una comunicazione tra un attore e un caso d'uso oppure una relazione (di estensione, inclusione o generalizzazione) tra due casi d'uso o tra due attori.</p>Inglese: _use case diagram_.
+* __diagramma di Gantt__: <p>Diagramma che rappresenta la durata, la sequenzialità e il parallelismo delle attività di un progetto.</p><p>Si basa sulla dislocazione temporale delle attività, per rappresentarne la durata, la sequenzialità ed il parallelismo e confrontare stime e progressi.</p>Inglese: _Gantt diagram_.
+* __diagramma PERT (Project Evaluation and Review Technique)__: <p>Rete che rappresenta le dipendenze temporali (e le criticità) tra attività di un progetto.</p>Inglese: _PERT diagram_.
+* __diagramma WBS (Work Breakdown Structure)__: <p>Diagramma che decompone in modo gerarchico le attività di un progetto in sotto-attività (coese ma non necessariamente sequenziali ed univocamente identificate).</p>Inglese: _WBS diagram_.
+* __disciplinato__: <p>Che segue le norme (anzi, la best practice).</p>Inglese: _disciplined_.
+* __documentazione__: <p>Tutto ciò che descrive gli ingressi e le uscite delle attività di un progetto (riguardo al prodotto e processo). Documenti di sviluppo e di gestione del progetto.</p>Inglese: _documentation_.
+* __efficacia__: <p>Conformità alle attese. Determinata dal grado di conformità del prodotto rispetto alle norme vigenti e agli obiettivi prefissati.</p>Inglese: _effectiveness_.
+* __efficienza__: <p>Contenimento dei consumi per raggiungere un obiettivo. Inversamente proporzionale alla quantità di risorse impiegate nell’esecuzione delle attività richieste.</p>Inglese: _efficiency_.
 * ____: 
-* __End users__: Chi usa il prodotto software
-* __errore__: Stato del sistema che, se attivato, produce un malfunzionamento. Inglese: _error_.
-* __Fan-in__: È l'indice di utilità di una componente. Rappresenta il numero dei moduli immediatamente superiori (parenti o boss).
-Il designer dovrebbe mirare ad un lato fan-in ai livelli inferiori della gerarchia. Normalmente ci sono funzioni low-level che devono essere identificate e trasformate in moduli comuni per redurre la ridondanza del codice e aumentare la manutenibilità. Un alto fan-in aumenta la portabilità se tutta la gestione dell'I/O viene fatta da moduli comuni. Aumenta la ridondanza, semplifica la manutenzione. Moduli sviluppati per il fan-in devon'avere buona coesione, preferibilmente funzionale.
-Ogni intergavvia per un modulo fan-in deve avere lo stesso numero e tipo di parametri.
-* __Fan-out__: Rappresenta il numero di dipendenze di un modulo (il numero di moduli immediatamente subordinati).
-Il fan-out ottimale è tra 5 e 9. 
-Il designer dovrebbe mirare ad un fan-out moderato ai livelli alti della gerarchia, usando la fattorizzazione per risolvere problemi dovuti ad un'eccessivo fan.out, creando moduli intermedi per fattorizzare al di fuori i moduli con un'alta coesione ed un basso accoppiamento.
-* __fase (di un ciclo di vita)__: Durata temporale (che non si ripete) entro uno stato del ciclo di vita e un altro. Inglese: _phase_.
-* __framework__: Struttura di supporto su cui un software può essere organizzato e progettato.
-Insieme integrato di componenti software prefabbricate.
-Sono bottom-up perchè fatti di codice già sviluppato, ma anche top-down se impongono uno stile architetturale.
-Utilissimi come base facilmente risuabile di diverse applicazioni entro un dato dominio.
-* __Gestione di configurazione__: Ha come obiettivi quello di mettere in sicurezza le baseline che consolidano gli stati d'avanzamento del processo di sviluppo.
-Le attività sono: l'identificazione di configurazione (quali configuration item compongono il prodotto->oguno ha un'identità unica) , il controllo di baseline (insieme di CI consolidato ad una specifica milestone; l'esistenza di baseline ben identificate permette riproducibilità, tracciabilità, analisi e confronto), la gestione delle modifiche ed il controllo di versione. 
- Inglese: _Configuration management_.
-* __Gestione della qualità__: L'insieme dei processi che assicurano che prodotti e implementazioni di processi rispettino gli obiettivi di qualità (di un'organizzazione) e soddisfino gli stakeholder. Inglese: _quality management_.
-* __Gestione delle modifiche__: Le richieste hanno origine da: utenti(difetti/mancanze), sviluppatori (idem), competizione (per avere valore aggiunto).
-Le richieste vanno sottoposte ad un processo d'analisi, decisione, realizzazione e verifica.
-Ogni richiesta va inoltrata in modo formale: change request. 
-Va tenuta traccia d'ogni richiesta: issue tracking o ticketing, stato corrente + eventuale chiusura.
-* __Gestione dei rischi__: Durante la pianificazione del progetto:
->Identificazione (nel progetto, prodotto, mercato)
->Analisi (prob. d'occorrenza, conseguenze)
->Pianificazione (valutare come evitarli/mitigarli, conseguenze?)
-Durante il progetto:
->Controllo e mitigazione (attenzione continua del livello, tramite rilevazione d'indicatori; riconosciemnto, trattamento ad aggiornamento strategie).
-Fonti: tecnologie, rapporti int.pers., org. lavoro, requisiti+rapporti stakeholders, tempi e costi
-Verifica livello di rischio: 
->da effettuare regolarmente per determinare il livello corrente di rischio (non sempre è costante)
->valutare se gli effetti dei rischi possono essere cambiati (non sono sempre costati nel tempo)
->riportare sempre ogni rischio serio all'attenzione del mgmt Inglese: _Risk management_.
-* __glossario__: Elenco dei significati dei termini più rilevanti di un documento. Inglese: _glossary_.
-* __guasto__: Causa di un errore. Inglese: _fault_.
-* __IEEE 830-1998__: Reccomended Practice for Software Requirements Specifications.
-La specifica dei requisiti dev'avere 8 qualità essenziali:
-1. Privia d'ambiguità (UNAMBIGUOS);
-2. Corretta
-3. Completa
-4. Verificabile
-5. Consistente
-6. Modificabile
-7. Tracciabile
-8. Ordinata per rilevanza
-* __impegno__: null Inglese: _commitment_.
-* __Incapsulazione (information hiding)__: Le componenti sono "black box" ed i clienti ne conoscono solo l'interfaccia; la specifica nasconde gli algoritmi e le strutture dati usate al loro interno. I benefici sono che l'esterno non può fare assunzioni sull'interno, cresce la manutenibilità, diminuendo le dipendenze aumentano le opportunità di riuso. Inglese: _Information hiding_.
-* __incarico__: null Inglese: _assignment_.
-* __indice analitico__: Elenco ordinato delle corrispondenze tra particolari termini importanti di un documento e la loro ubicazione in esso. Inglese: _index_.
-* __indice generale__: Elenco delle parti di un documento. Inglese: _table of contents_.
-* __infrastruttura (di un progetto)__: Tutte le risorse hardware e software del progetto. Inglese: _null_.
-* __ingegneria__: L'applicazione di princìpi scientifici e matematici per scopi pratici. Inglese: _engineering_.
-* __ingegneria del software__: Applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, al funzionamento e al mantenimento del software. Inglese: _software engineering_.
-* __inspection__: Tecnica di analisi statica che consiste nell'eseguire una lettura mirata, alla ricerca di errori noti.
-Punta a rilevare la presenza di difetti, svolta da verificatori distinti e separati dai programmatori. Si focalizza sulla ricerca di presupposti (error guessing).
-Viene svolta in 4 fasi: la pianificazione, la definizione della lista di controllo, la lettura vera e propria e la correzione dei difetti; in ogni fase la documentazione serve a tenere traccia delle attività svolte.
-* __integrazione continua__: Pratica di sviluppo in cui i membri di un progetto integrano il loro lavoro frequentemente (quotidianamente) in modo automatizzato. Inglese: _continuous integration_.
-* __ISO 9000__: Famiglia di standard internazionali per la gestione della qualità nei sistemi produttivi.
-* __ISO/IEC 12207__: Standard internazionale per il ciclo di vita del software.
-Modello ad alto livello.
- - identifica i processi dello sviluppo SW; 
- - struttura modulare che richiede specializzazione
- - specifica le responsabilità sui processi
- - identifica i prodotti dei processi
-* __ISO/IEC 14598__: Standard internazionale che fornisce un processo per la valutazione della qualità del software; integra ISO/IEC 9216.
-Definizione di metriche per la valutazione delle caratteristiche rilevanti.
-Misurazione della qualità software.
-Misurazione quantitativa: l'uso di una metrica per assegnare un valore (numero o categoria) su una scala predefinita.
-Il processo attraverso cui, secondo regole definite, simboli o numeri sono assegnate ad attributi di una entità.
-* __ISO/IEC 15504:1998__: Standard internazionale per il miglioramento e la valutazione della qualità di processo.
-Nato per armonizzare SPY con ISO/IEC 12207 ed ISO 9001. Inglese: _ISO/IEC 15504_.
-* __ISO/IEC 15939__: Standard internazionale per la misurazione del software.
-* __ISO/IEC 25000__: Famiglia di standard internazionali che vogliono fornire un framework per la valutazione della qualità del software; ha inglobato ISO/IEC 9126 e ISO/IEC 14598.
-SQuaRE: Software product Requirements And Evaluation:
-* __ISO/IEC 9126__: Standard internazionale che fornisce un modello per la qualità del software.
-Propone un approccio alla qualità in modo che le aziende possano migliorare l'organizzazione ed i processi, e come conseguenza concreta, il prodotto sviluppato.
-Catalogazione sistematica delle caratteristiche rilevanti.
->Visione esterna: relativa all'esecuzione del prodotto (product requirements)
->Visone interna: relativa al prodotto non in esecuzione (product-component requirements)
->Visione in uso: relativa alla percezione dell'utente/operatore (customer requirements).
-Il modello di qualità stabilito nella prima parte dello standard,  è classificato da sei caratteristiche generali (funzionalità, affidabilità, efficienza, usabilità, manutenibilità, portabilità).
-La funzionalità è un "requisito funzionale" a differenza delle ultime cinque caratteristiche chiamate invece " requisiti non funzionali" o "requisiti di qualità".
-* __legge di Parkinson__: Work expands to fill the time available. Inglese: _Parkinson's law_.
-* __malfunzionamento__: Esecuzione di un software difforme dalle attese. Inglese: _failure_.
-* __Manuale della qualità__: Documento che definisce il sistema di gestione della qualità di un'organizzazione.
-È una visione ad alto livello, che si integra con le procedure aziendali, fissa gli obiettivi di qualità e le strategie attuative (esprime la politica aziendale rispetto alla qualità); specifica le modalità per la sua evoluzione.
-* __Manuale Utente__: Adatto alle caratteristiche dell'utente e dell'interfaccia utente.
-Si caratterizza per l'evoluzione e per la forma: nasce presto e cresce con il prodotto, può essere un documento cartaceo tradizionale/un ipertesto/essere on-line con il prodotto/un aiuto contestuale.
-Al suo interno si predilige la forma attiva alla passiva, la correttezza grammaticale e tipografica, frasi brevi ed introno ad un solo fatto, le liste alle frasi, dei paragrafi brevi e fatti di poche frasi, uno stile non verboso ed una terminologia precisa, l'uso di più punti di vista per descrizioni complesse ed infine sezioni e sottosezioni titolate. Inglese: _User manual_.
-* __manutenzione__: Correttiva: per correggere difetti eventualmente rilevati
-Adattativa: per adattare il sistema alla variazione dei requisiti;
-Evolutiva: per aggiungere funzionalità al sistema Inglese: _maintenance, upkeep_.
-* __marcatore__: Istruzione che un programma deve eseguire per trattare nel modo specificato dall'utente una porzione di testo specificata. Inglese: _mark-up_.
-* __Metodi agili__: > 4 principi fondamentali:
-1.Individuals and interactions over processes and tools (L’eccessiva rigidità ostacola l’emergere del valore)
-2. Working sofware over comprehensive documentation 
-3. Customer collaboration over contract negotiation
-4. Responding to change over following a plan
-L'idea di base è il concetto di "user story" (compito significativo che l'utente vuole svolgere con il sw richiesto; definita da: documento di descrizione, minuta di converszioni con il cliente per fissare la comprensione comune, strategia da utilizzare per confermare che il sw soddisfi gli obiettivi).
-Scrum (caos organizzato), Kanban (just-in-time), Scrumban
- Inglese: _Agile methods_.
-* __metodi di lettura__: Svolti durante l'analisi statica durante le fasi di verifica e validazione. 
-Inspection e walkthrough.
-Sono metodi pratici, basati sulla lettura della documentazione sul prodotto. La loro efficacia dipende dall'esperienza dei verificatori (nell'organizzare le attività di verifica e nel documentare le attività svolte ed i risultati ottenuti).
-Sono modalità relativamente complementari!
-Le affinità sono: hanno controlli basati su desk check, hanno programmatori e verificatori su fronti opposti, compilano documentazione formale.
-Differenze: l'inspection è basato su errori presupposti, ed è più rapido, il walkthough richiede maggiore attenzione però è più collaborativo.
-* __metodo di lavoro__: Metodo di lavoro. Inglese: _way of working_.
-* __metrica__: L'interpretazione di un sistema di unità di misura. Inglese: _metric_.
-* __Metrica software__: Ogni tipo di misura riferita ad un sistema, processo o documento  software.
-Es. Programma (SLOC), testo (Gunning fog index). Effort (person-days).
-Permetta al prodotto ed al processo d'essere quantificati.
-Può essere usato per predire attributi del prodotto oppure per controllare il processo software.
-Le matriche di prodotto possono esere usa per fare predizioni generali o per identificare componenti anomale. Inglese: _Software metrics_.
-* __Metriche: asserzioni__: La proprietà o l'attributo del software può essere misurato.
-Esiste una relazione tra quanto possiamo misurare e quanto vogliamo sapere (conosciamo solo come misurare attributi interni, ma spesso siamo interessati agli attributi esterni).
-La relazione è stata formalizzata e validata.
-Può essere difficile collegare quanto può essere misurato, agli attributi esterni di qualità che si desidera. Inglese: _Metrics assumptions_.
-* __milestone__: Punto nel tempo associato ad un valore strategico.
-Devono essere: specifiche per obiettivi, delimitate per ampiezza ed ambizioni, incrementali per contenuti, coerenti con e rilevante per la strategia di prodotto, misurabili epr quantità di impegno necessario, traducibili in compiti assegnabili, raggiungibili, puntuali rispetto alle esigenze di calendario e dimostrabili agli stakeholders
-* __misura__: Risultato di una misurazione. Inglese: _measurement_.
-* __misurazione quantitativa__: L'uso di una metrica per assegnare un valore su una scala predefinita. Inglese: _quantitative measurement_.
-* __Modelli di ciclo di vita__: Descrivono come i processi si relazionano tra loro nel tempo rispetto agli stati di ciclo di vita.
-Base concettuale intorno alla quale pianificare, organizzare, eseguire e controllare lo svolgimento delle attività necessarie. Inglese: _Life cycle models_.
-* __modello__: Astrazione della realtà. Inglese: _model_.
-* __Modello a componenti__: Molto di quello che serve è già stato fatto & molto di quello che faremo potrà ancora servire.
-Massima attenzione al riuso sistematico di componenti preesistenti/off-the-shelf.
-Analisi requisiti -> Analisi componenti -> Adattamento requisiti -> Progettazione con riuso -> Sviluppo ed integrazione -> Validazione di sistema Inglese: _Model at component_.
-* __Modello evolutivo__: Aiuta a riposndere a bisogni non preventivabili inizialmente; può richiedere rilascio e mantenimento di più versioni esterne in parallelo; comporta il riattraversamento di più fasi del ciclo di vita.
-1.Analisi preliminare (identificare req. di massima; definire architattura di massima; pianificare i passi d'analisi e realizzazione evolutiva)
-2. Analisi&realizzazione d'una evoluzione (come raffinamento + estensione dell'analisi o per progettazione, codifica, prove ed integrazione)
-3. Rilascio di prototipi, poi accettazione finale. Inglese: _Evolutive model_.
-* __Modello incrementale / incremento__: Procedere per incrementi significa aggiungere a un impianto base.
-Possono produrre "valore" ad ogni incremento; ogni incremento riduce il rischio di fallimento; funzionalità essenziali sviluppate nei primi incrementi.
-Prevede rilasci multipli & successivi: ognuno realizza un incremento di funzionalità. Requisiti utente classificati e trattati in base alla loro importanza strategica (primi rilasci->req. + importanti; requisiti strategici stabiliti all'inizio) (req. principali identificati e fissati; architettura del sistema identificata e fissata completamente).
-Analisi e progettazione architetturale non ripetute. Realizzazione incrementale (prj dettaglio, codifica e prove; prima req. essenziale e poi i desiderabili; integrazione->collaudo->rilascio) Inglese: _Incremental model / Increment_.
-* __Modello iterativo / iterazione__: Procedere per iterazioni significa operare raffinamenti o rivisitazioni.
-Applicabili a qualunque modello di ciclo di vita; consentono maggior capacità d'adattamento; comportano il rischio di non convergenza.
-Soluzione generale:
- 1.decomporre la realizzazione del sys
- 2.identificare&trattare prima le componenti più critiche
- 3.limitare superiormente il numero d'iterazioni.
-Rischi: ogni iterazione comporta un ritorno all'indietro, nella direzione opporsta all'avanzamento del tempo). Inglese: _Iterative model / iteration_.
-* __Modello sequenziale (a cascata)__: Centrato sull'idea di processi ripetibili; Successione di fasi rigidamente sequenziali: non ammette ritorni a fasi precedenti ed eventi eccezionali fanno ripartire dall'inizio. I prodotti sono principamente documenti, fino ad includere il SW (Document driven development). Ogni stato di vita ha pre- e post-condizioni.
-Fasi distinte e non sovrapposte nel tempo. Sviluppo di sistemi complessi sul piano organizzativo (iterazioni troppo costose per mitigare i rischi con approssimazioni successive).
-Fase definita in termini d'attività previste & prodotti attesi, contenuti e struttura documenti, responsabilità e ruoli coinvolti + scadenze consegne docs.
-Fasi = durate temporali con dipendenze causali tra loro.
-Difetti: eccessivamente rigido (stretta sequenzialità + non modifiche in corso d'op. + molta manutenzione + molto burocratico e poco realistico).
-Correttivi: 1. Prototipazione (usa&getta); 2. Cascata con ritorni Inglese: _Waterfall model_.
-* __Modello a spirale__: Miglior controllo dei rischi di progetto; cicli interni rapidi e ripetuti (dedicati ad analisi e sviluppi prototipali), cicli esterni che aderiscono ad un qualunque altro modello standard di ciclo di vita.
-Grande attenzione sugli aspetti gestionali (pianificazione delle fasi, analisi dei rischi (risk-driven).
-1.Definizione degli obiettivi (requisiti, rischi, strategia di gestione)
-2.Analisi dei rischi (studio delle conseguenze, valutazione alternative)
-3.Sviluppo e validazione (realizzazione del prodotto)
-4.Pianificazione (decisione circa il proseguimento, pianificazione del proseguimento) Inglese: _Spiral model_.
-* __modulo__: L'elemento atomico dell'architettura di un software; tipicamente una classe o un interfaccia.
-Parte dell'unità. Inglese: _module_.
-* __Norme di progetto__: Linee guida per le attività di sviluppo: strumento operativo di complemento alle procedure.
-Contenuti: organizzazione ed uso delle risorse di sviluppo, convenzioni sull'uso degli strumenti di sviluppo, organizzazione delle comunicazioni e della cooperazione, norme di codifica e gestione dei cambiamenti
-* __organizzazione__: Aggregato di persone [?] che agiscono in modo sistematico, disciplinato e quantificabile; contrario di caos. Inglese: _organization_.
-* __People__: Business management; Project management; Development team; Customers; End users
-* __pianificazione__: Organizzare e controllare tempo, risorse e risultati. Inglese: _planning_.
-* __Pianificazione di progetto__: >Definizione delle attività
-  [pianificarne lo svolgimento + controllarne l'attuzione; avere una base su cui gestire l'allocazione delle risorse; stimare e controllare scadenze e costi]
-> Strumenti di pianificazione: diagr. Gantt, Programme Evaluation and Review Technique (PERT), Work Breakdown Structure (WBS) Inglese: _Project pianification_.
-* __Pianificazione di qualità__: Le attività del sistema qualità mirate a fissare gli obiettivi di qualità, i processi e le risorse necessarie per conseguirli.
-Vedi: piano di qualità
-* __Piano di progetto__: Fissa: risorse disponibili, suddivisione attività, calendario attività.
-Obiettivi: org. att. in modo da produrre ris. utili per valutare con efficacia il piano d'avanzamento del lavoro + fissare milestone come punti critici/finali delle attività.
-Struttura: Introduzione, org. prj, analisi dei rischi, risorse necessarie e disponibili (hw, sw), suddivisione del lavoro (work breakdown structure). calendario delle attività (prj schedule), meccanismi di controllo e rendicontazione)
-* __Piano di progetto__: Fissa: risorse disponibili, suddivisione attività, calendario attività.
-Obiettivi: org. att. in modo da produrre ris. utili per valutare con efficacia il piano d'avanzamento del lavoro + fissare milestone come punti critici/finali delle attività.
-Struttura: Introduzione, org. prj, analisi dei rischi, risorse necessarie e disponibili (hw, sw), suddivisione del lavoro (work breakdown structure). calendario delle attività (prj schedule), meccanismi di controllo e rendicontazione)
-* __Piano di qualità__: Fissa le politiche aziendali per il perseguimento della qualità (visione orizzontale: trasversale sull'intera organizzazione).
-Determina gli obiettivi di qualità del singolo progetto (visione verticale: specificatamente per un prodotto/servizio).
-Assume l'uso di opportuni strumenti e modalità di controllo.
-
-Documento che definisce gli elementi del SGQ e le risorse che devono essere applicate in uno specifico caso (prodotto, processo, progetto).
-Operativamente, concretizza il Manuale della Qualità a livello di progetto (sotto specifici vincoli di tempo e risorse); può avere valenza contrattuale.
-In pratica si deve accertare la disponbilitià dell'analisi dei requisiti, di architettura e soluzioni tecniche, la pianificazione delle verifiche e dei risultati delle verifiche; inoltre della conformità ai modelli fissati nelle norme, la tracciabilità tra soluzioni e requisiti, ed assicurare la buona pianificazione delle attività (per uso di risorse).
-* __Piano di qualifica__: Definizione delle strategie di verifica; scelta dei metodi, tecniche e procedure da usare per la validazione
-* __prassi__: Modo di fare. Inglese: _practice_.
-* __Processi di Sviluppo (ISO 12207)__: Documentazione;
-Accertamento della qualità;
-Gestione delle versioni e delle configurazioni;
-Verifica;
-Qualifica;
-Validazione;
-Revisioni congiunte con il cliente;
-Verifiche ispettive interne;
-Risoluzione dei problemi. Inglese: _Development processes_.
-* __Processi organizzativi (ISO 12207)__: Gestione dei processi;
-Gestione delle infrastrutture;
-Miglioramento del processo;
-Formazione del personale.
-* __Processi Primari (ISO 12207)__: Acquisizione (gestione dei propri sotto-fornitori);
-Fornitura (gestione rapporti con cliente); 
-Sviluppo;
-Gestione Operativa (utilizzo);
-Manutenzione (correttiva/adattativa/evolutiva) Inglese: _Primary processes_.
-* __processo (ingegneristico)__: Insieme di attività correlate e coese che trasformano ingressi in uscite, consumando risorse nel farlo.
-Il quadro metodologico, normativo e strategico delle attività di progetto (insieme delle attività raggruppate per obiettivi) per alimentare svariati modelli di ciclo di vita del SW. Inglese: _process_.
-* __processo definito__: Specializzazione del processo standard necessaria per adattarlo ad esigenze specifiche di progetto.
-* __processo di progetto__: Istanza di un processo definito che utilizza risorse aziendali per raggiungere obiettivi prefissati (processo calato nella realtà aziendale).
-* __processo software__: Processo che porta ad un prodotto software. Inglese: _software process_.
-* __prodotto software__: Su commessa: forma, contenuto e funzione fissate dal cliente;
-Pacchetto: forma, contenuto e funzione idonee alla replicazione;
-Componente: forma, contenuto e funzione adatte alla composizione;
-Servizio: forma, contenuto e funzione fissate dal problema. Inglese: _software product_.
-* __produttività__: Rapporto tra valore e costo. Inglese: _productivity_.
-* __profilo professionale__: Requisiti per l'assunzione di un ruolo in un progetto; insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto. Inglese: _professional profile_.
-* __progettazione__: Definizione dell'architettura, delle componenti, delle interfacce e delle altre caratteristiche di un sistema o componente.
-Precede la produzione; costruizione a priori, perseguendo la correttezza per costruzione (non per correzione).
-->Fare una cosa che è garantito abbia le proprietà dichiarate.
-Scopo:
->soddisfare i requisiti con un sistema di qualità;
->definire l'architettura logica del prodotto;
->dominare la complessità del prodotto (divide-et-impera, facilita la comprensione ed assegnare la codifica ad un solo individuo)
->organizzare e ripartire le responsabilità di realizzazione
->produrre in economia (efficienza)
->garantire la qualità (efficacia).
-Risponde alla domanda: "come dare la giusta risposta (al problema)?"
-Descrive una soluzione soddisfacente per tutti gli stakeholders; approccio sintetico, il codice non esiste ancora; produce l'architettura scelta ed i suoi modelli logici. Inglese: _design_.
-* __progettazione architetturale__: Definizione delle componenti e di come esse sono organizzate in un sistema. Inglese: _architectural design_.
-* __progettazione di dettaglio__: Definizione del comportamento delle componenti di un sistema, con un livello di dettaglio tale per cui le componenti possano essere implementate.
-Definizione delle unità realizzative (moduli), specifica delle unità come insieme di moduli (definizione delle caratteristiche significative; fatta dal nulla o tramite specializazione di componenti esistenti).
-Ha come obiettici di:
->Assegnare unità a componenti
->Produrre la documentazione necessaria
->Definire gli strumenti per le prove di unità Inglese: _detailed design_.
-* __progettista (profilo professionale)__: Chi sintetizza una soluzione a partire dalle specifiche di un problema già analizzato. Inglese: _designer_.
-* __progetto__: Nasce da una richiesta (e/o pagamento) che diventa poi un impegno se accettato. Porta dei vincoli : di costo, di risorse, di tempo. Spesso insieme di attività da svolgere in modo collaborativo.
-Pianificazione; Analisi dei requisiti; Progettazione; Realizzazione; Verifica e validazione; Manutenzione. Inglese: _project_.
-* __programmatore (profilo professionale)__: Chi implementa una parte della soluzione dei progettisti. Inglese: _programmer_.
-* __Project management__: Chi gestisce le risorse di progetto e riferisce all’organizzazione e al
-cliente
-* __protocollo__: Accordo di interfacce. Inglese: _protocol_.
-* __Prototipo__: Serve per provare e scegliere soluzioni.
-Può essere “usa e getta” (nel caso delle iterazioni) oppure fornire stati
-di incremento (baseline). Inglese: _Prototype_.
-* __qualifica__: Verifica e validazione ('V&V'), cioè quei processi che assicurano la qualità di un prodotto durante il suo ciclo di vita. Inglese: _null_.
-* __quality assurance__: Insieme di attività che valutano i processi con i quali un prodotto viene sviluppato.
-Serve a raccogliere tempestivamente evidenza oggettiva e di qualità, a fronte di specifiche metriche ed obiettivi definiti, per dare evidenza oggettiva, per controllo (interno) ed accertamento (esterno).
-Usa ISO/IEC 9126 come riferimento; la qualità è valutata a posteriori.
-* __Qualità__: L'insieme delle caratteristiche di un'entità che ne determinano la capacità di soddisfare esigenze espresse e implicite.
-Aree nelle quali interviene il sistema qualità:
--Qualità intrinseca (conformità ai requisiti ed idoneità nell'uso)
--Qualità relativa (soddisfazione del cliente)
--qualità quantitativa (misura del livello di qualità per confronto) Inglese: _quality_.
-* __Qualità di processo__: Esigenze:
->organizzazione e diffusione interna sistematica
->Identificazione di prodotti intermedi e di momenti di verifica
->Riproducibilità dei risultati
->Quality assurance (proattiva, preventiva)
-Obietivi:
->Definire il processo, per controllarlo e renderlo più facilmente controllabile e raccontarlo in maniera più convincente
->Controllare il processo per migliorarlo (efficacia: prodotti conformi alle attese; efficienza: minori costi a pari qualità di prodotto; esperienza: apprenderne, anche da altri)
->Usare buoni strumenti di valutazione.
-* __quantificabile__: Esprimibile in modo quantitativo. Inglese: _quantifiable_.
-* __raccomandazione__: Norma di progetto suggerita, non sottoposta a verifica. Inglese: _recommendation_.
-* __ramo (di un repository)__: Insieme di versioni di file sorgente in evoluzione. Inglese: _branch_.
-* __regola__: Norma di progetto sottoposta a verifica. Inglese: _rule_.
-* __rendimento decrescente, legge del__: Man mano che si aumenta lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre più. Inglese: _diminishing returns_.
-* __repository__: Base di dati centralizzata nella quale risiedono, individualmente, tutti i CI di ogni baseline nella loro storia completa.
-* __requisito__: Bisogno da soddisfare o vincolo da rispettare.
-Secondo IEEE:
-1. Condizione (capability) necessaria ad un utente per risolvere un problema o raggiungere un obiettivo (visione dal lato del bisogno)
-2. Condizione (capability) che dev'essere soddisfatta o posseduta da un sistema per adempiere ad un obbligo (visione lato soluzione)
-3. Descrizione documentata di una condizione (capability) come in 1 o 2. Inglese: _requirement_.
-* __requisito di processo__: Vincolo sullo sviluppo del prodotto. Inglese: _null_.
-* __requisito di prodotto__: Bisogno o vincolo sul prodotto da sviluppare. Inglese: _null_.
-* __requisito di sistema__: Definizione formale e dettagliata di una funzione del sistema. Inglese: _system requirement_.
-* __requisito funzionale__: (di un prodotto software) servizio che il prodotto deve fornire. Inglese: _functional requirement_.
-* __requisito non funzionale__: (di un prodotto software) vincolo su uno o più servizi che il prodotto fornisce. Inglese: _non-functional requirement_.
-* __requisito utente__: Richiesta generale, ad alto livello. Inglese: _user requirement_.
-* __responsabile di progetto (profilo professionale)__: Chi pianifica il progetto, assegna le persone ai ruoli giusti e rappresenta il progetto presso il fornitore e il committente. Inglese: _project manager_.
-* __rete__: Grafo orientato. Inglese: _network_.
-* __revisione esterna__: Ispezione ufficiale di un prodotto condotta da un'organizzazione indipendente da chi ha sviluppato il prodotto. Inglese: _audit_.
-* __revisione interna__: Ispezione di un prodotto interna all'organizzazione che lo sviluppa. Inglese: _joint review_.
-* __rischio__: Opposto di opportunità. Inglese: _risk_.
-* __ritiro (di un prodotto)__: Momento in cui il prodotto cessa di essere seguito dai suoi creatori. Inglese: _retirement_.
-* __Riuso__: Occasionale (opportunistico) – «copia-incolla» a basso costo e scarso
-impatto.
-Sistematico (per progetto, per prodotto, per azienda) a maggior costo
-ma maggior impatto.
-Mira a capitalizzare sottoinsiemi già esistenti, impiegandoli più volte per più prodotti, ottenendo un minor costo realizzativo e di verifica. Ma progettare per riuso è più difficile, visto che si deve anticipare i bisogni futuri; in più non è immediato, visto che si devono minimizzare le modifiche alle componenti riusate per non perderne il valore.
-Costituisce -nel breve periodo- un puro costo. Diventa risparmio nel medio termine (è quindi un investimento). Inglese: _Reuse_.
-* __Ruolo__: Funzione aziendale assegnata a progetto; identifica capacità e compiti.
-Es. Sviluppo -> responsabilità tecnica e realizzativa. Inglese: _role_.
-* __scenario__: Sequenza di passi che descrive un esempio di interazione con un sistema.
-* __SEMAT__: SEMAT (Software Engineering Method and Theory) drives a process to refound software engineering based on a solid theory, proven principles and best practices.
-Is a community of people, companies and some universities, supporting an initiative to create a common ground, a kernel or a foundation for software engineering.
-* __Servizio (amministrazione di progetto)__: Mezzo per aiutare l'utente a raggiungere i suoi obiettivi riducendo costi e rischi. Inglese: _Service_.
-* __SGQ__: Sistema di Gestione Qualità. Ha come responsabilità di garantire la qualità in maniera trasversale a settori e reparti.
-Riferisce direttamente alla Direzione
-* __sistema__: Insieme di componenti organizzati per compiere una o più funzioni. Inglese: _system_.
-* __Sistema qualità__: La struttura organizzativa, le responsabilità, le procedure, i procedimenti e le risorse messe in atto per il perseguimento della qualità.
-Ambiti:
--pianificazione (definizione di politica ed obiettivi)
--controllo
--miglioramento continuo
-* __sistematico__: Che abbraccia un metodo. Inglese: _systematic_.
-* __slack time__: Quantità di tempo tra la data minima a partire da cui un evento può accadere e la data massima oltre la quale esso ritarda gli eventi successivi.
-* __Software engineer__: Realizza parte di un sistema complesso con la consapevolezza che potrà essere usato, completato e modificato da altri. Deve guardare e comprendere il quadro generale nel quale il sistema cui contribuisce si colloca.
-Deve operare compromessi intelligenti e lungimiranti tra visioni e spinte contrapposte.
-* __sommario__: Breve riassunto del contenuto di un documento. Inglese: _abstract_.
-* __Specifica Tecnica__: È prodotta a valle dell'Analisi dei Requisiti; fissa linee e strategie di realizzazione, avvia la fase realizzativa, ma non fissa i dettagli implementativi.
->Mostra ciò che deve fare il sistema. 
->Organizzata gerarcicamente attraverso più livelli di decomposizione (o tramite generalizzazione, specializzazione, aggregazione)
->Stabilisce le relazioni tra cause ed effetti
->Porta una visione d'insieme della soluzione proposta
->Per ogni componente:
- - funzione svolta 
- - tipo dati in ingresso
- - tipo dati in uscita
- - risorse logiche e fisiche necessarie al funzionamento
-* __SPICE__: Software Process Improvement Capability dEtermination, vedi ISO/IEC 15504.
-* __SPY__: Software Process Assessment and Improvement, standard per il miglioramento e la valutazione della qualità di processo.
-COnsite nella valutazione oggettiva dei processi di una organizzazione, per darne un giudizio di maturità ed individuare azioni migliorative.
-* __SQL (Structured Query Language__: Linguaggio di programmazione dichiarativo basato sull'algebra relazionale che serve a creare, manipolare e interrogare basi di dati relazionali. Inglese: _SQL_.
-* __stakeholder__: Persona a vario titolo coinvolta nel ciclo di vita di un software che ha influenza sul prodotto o sul processo.
-* __standard di processo__: Riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettività di casi afferenti ad un certo dominio applicativo. Inglese: _process standard_.
-* __Stati di processo per SEMAT__: >Conceived (committente identificato; gli stakeholders vedono sufficienti opportunità per il progetto)
->Bounded (i macro bisogni sono chiari, i meccanismi di gestione dei requisiti sono fissati)
->Coherent (requisiti classificati e quelli essenziali/obbligatori sono chiari e ben definiti)
->Acceptable (requisiti fissati definiscono un sys sufficiente agli stakeholders)
->Addressed (il prodotto soddisfa i principali requisiti al punto da poter meritare rilascio ed uso)
->Fullfilled (il prodotto soddifa abbastanza requisiti da meritare la piena approvazione degli stakeholders).
-
-* __Strumenti di valutazione della qualità__: SPY, CMM->CMMI, Spice ed ISO/IEC 15504
-* __strumento__: Insieme di concetti e di metodi, con delle tecnologie di supporto. Inglese: _tool_.
-* __Studio di fattibilità__: Valuta rischi, costi, benefici, nell'ottica del cliente e del fornitore; decidere se procedere (obiettivo=restare entro un costo massimo prefissato); gatto con le conoscenze immediatamente disponibili, non richiede ricerche impegnative.
-Fattibilità tecnico-organizzativa (strumenti per la realiz., sol. alg. e arch., piattaforme idonee per l'esecuzione).
-Rapporto costi-benefici; individuazione dei rischi (complessità, incertezze).
-Valutazione scadenze temporali; valutazione delle alternative (scelte architetturali, strategie relizzative:make-or-buy, strategie operative).
-* __tecnica__: Ricetta applicata agli strumenti disponibili; modo con cui si usa uno strumento. Inglese: _technique_.
-* __tecnologia__: Strumento sul quale si opera. Inglese: _technology_.
-* __test__: Attività di analisi dinamica che osserva i risultati dell'esecuzione di un sistema (o parte di esso) sotto determinate condizioni.
-* __test di integrazione__: Test che verifica la correttezza dell'integrazione di un insieme di unità in una componente del sistema in esame.
-Fatto per la costruzione e la verifica incrementale del sistema, su componenti sviluppate in parallelo e verificate incrementalmente. In cond. ottimanli, l'inegrazione è priva di problemi. 
-Rileva: errori residui nella realizzazione dei componenti, la modifica delle interfacce o cambiamenti nei requisiti, riuso di componenti dal comportamento oscuro o inadatto, l'integrazione con altre applicazioni non ben conosciute. Inglese: _integration test_.
-* __test di sistema__: Test che verifica la copertura dei requisiti da parte del sistema in esame.
-Durante la validazione è un'attività interna del fornitore (per accertare la copertura dei requisiti sw). Inglese: _system test_.
-* __test di unità__: Test che verifica la correttezza di una singola unità del sistema in esame.
-È un'attività di analisi dinamica fatta con il supporto di attività dell'analisi statica, ha lo scopo di determinare limiti di iterazioni, flusso del programma oppure valori di variabili. Viene svolta con il massimo grado di parallelismo.
-La responsabilità è del singolo programmatore per le unità più semplici, altrimenti di un verificatore indipendente, meglio un automa.
-L'obiettivo è di verificare la correttezza del codice "as implemented". Inglese: _unit test_.
-* __test di validazione__: Test che verifica il soddisfacimento del capitolato d'appalto da parte del sistema in esame. Inglese: _validation test_.
-* __test funzionale__: Test di unità che analizza la logica interna del codice di un'unità. Inglese: _functional test_.
-* __test di regressione__: È l'insieme di test (test di unità e di integrazione) necessari ad accertare che la modifica di una parte P di S non causi errori in P o nelle altre parti di S che hanno relazioni con P.
-->ripetizione di test già previsti ed effettuati per ogni parte coinvolta.
-Modifiche effettuate per aggiunta, correzione o rimozione non devono pregiudicare le funzionalità già verificate (rischio aumenta all'aumentare dell'accoppiamento ed al diminuire dell'incapsulazione)
-* __test strutturale__: Test di unità che analizza soltanto il comportamento dell'unità e non la sua logica interna. Inglese: _structural test_.
-* __Tracciamento dei requisiti__: >Fissa la relazione tra i prodotti del processo di sviluppo, usando matrici di tracciabilità.
->In avanti (forward) -> completezza. Ciascun ingresso ad una fase deve essere messo in relazione con una specifica uscita da quella fase. Fatta con le matrici di tracciabilità.
->All'indietro (backward) -> necessità. Ciascuna uscita dalla fase dev'essere messa in relazione con uno specifico ingresso a quella fase.
-* __UML (Unified Modelling Language)__: Famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software. Inglese: _UML_.
-* __unità__: Insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. È anche la più piccola quantità di software che conviene verificare da sola; tipicamente è prodotta da un singolo programmatore.
-La sua natura specifica dipende dal lignuaggio di programmazione in uso.
-Non linee di codice ma entità di strutturazione (procedura, classe, package). Inglese: _unit_.
-* __validazione__: S'occupa di accertare che il prodotto realizzato corrisponda alle attese.
-La garanzia che un prodotto soddisfi i requisiti da cui è nato.
-È rivolta ai prodotti finali. Inglese: _validation_.
-* __validazione del software__: Conferma tramite esami e fornendo evidenze obiettive che le specifiche del sofware sono conformi ai bisogni degli utenti e degli usi che ne sono intesi, e che i requisiti particolari implementati tramite software sono consistentemente soddisfatti
-* __valutazione__: Verifica quantificata. Inglese: _evaluation_.
-* __verifica__: Valutare se un prodotto soddisfa requisiti, regole o altre condizioni necessarie.
-Accertare che l'esecuzione delle attività di processo non abbia introdotto errori. Rivolta ai processi: viene svolta per accertare il rispetto di regole, convezioni o procedure.
-Si occupa di accertare che l'esecuzione delle attività di processi svolti nella fase in esame non abbia introdotto errori nel prodotto Inglese: _verification_.
-* __Verifica dei requisiti__: Viene eseguita su un documento organizzato, tramite Walkthrough od Ispezione (lettura mirata e strutturata).
-Viene creata una matrice delle dipendenze al fine del tracciamento.
->La chiarezza espressiva è importante: l'uso naturale del linguaggio rende difficile coniugare chiarezza con facilità di lettura.
->La chiarezza strutturale è utile a separare requisiti funzionali e non funzionali, occorre una classificazione precisa, uniforme ed accurata.
->Atomicità ed aggregazione significa avere requisiti elementari e correlazioni chiare ed esplicite.
-
-* __verifica del software__: Fornisce evidenza obiettica che le le usciete del design di una particolare fase del ciclo di vita del software soddisfano tutti gli specifici requisiti di quella fase.
-La verifica del software guarda alla consistenza, completezza e correttezza del software e della sua documentazione di supporto, durante la sua produzione, fornisce inoltre supporto a poter dire -
-di conseguenza - che il software è stato validaato.
-* __verificatore (profilo professionale)__: Chi verifica il lavoro dei programmatori. Inglese: _verifier_.
-* __versione (di un CI)__: Istanza identificata di un CI nel tempo. Inglese: _version_.
-* __walkthrough__: Tecnica di analisi statica che consiste nell'eseguire una lettura critica, ad ampio spettro, senza l'assunzione di presupposti.
-Punta a rilevare la presenza di difetti, viene svolta da gruppi misti d ispettori/sviluppatori ma con ruoli ben distinti.
-La strategia con cui si svolge è di percorrere il codice simulandone possibili esecuzioni.
-Si svolge anch'essa in 4 fasi: la pianificazione, la lettura, la discussione ed infine la correzione dei difetti. Anche qui, la documentazione viene compilata per avere un rapporto delle attività svolte.
+* __End users__: <p>Chi usa il prodotto software</p>
+* __errore__: <p>Stato del sistema che, se attivato, produce un malfunzionamento.</p>Inglese: _error_.
+* __Fan-in__: <p>È l'indice di utilità di una componente. Rappresenta il numero dei moduli immediatamente superiori (parenti o boss).</p><p>Il designer dovrebbe mirare ad un lato fan-in ai livelli inferiori della gerarchia. Normalmente ci sono funzioni low-level che devono essere identificate e trasformate in moduli comuni per redurre la ridondanza del codice e aumentare la manutenibilità. Un alto fan-in aumenta la portabilità se tutta la gestione dell'I/O viene fatta da moduli comuni. Aumenta la ridondanza, semplifica la manutenzione. Moduli sviluppati per il fan-in devon'avere buona coesione, preferibilmente funzionale.</p><p>Ogni intergavvia per un modulo fan-in deve avere lo stesso numero e tipo di parametri.</p>
+* __failure__: <p>Vedi: malfunzionamento</p>
+* __Fan-out__: <p>Rappresenta il numero di dipendenze di un modulo (il numero di moduli immediatamente subordinati).</p><p>Il fan-out ottimale è tra 5 e 9. </p><p>Il designer dovrebbe mirare ad un fan-out moderato ai livelli alti della gerarchia, usando la fattorizzazione per risolvere problemi dovuti ad un'eccessivo fan.out, creando moduli intermedi per fattorizzare al di fuori i moduli con un'alta coesione ed un basso accoppiamento.</p>
+* __fase (di un ciclo di vita)__: <p>Durata temporale (che non si ripete) entro uno stato del ciclo di vita e un altro.</p>Inglese: _phase_.
+* __framework__: <p>Struttura di supporto su cui un software può essere organizzato e progettato.</p><p>Insieme integrato di componenti software prefabbricate.</p><p>Sono bottom-up perchè fatti di codice già sviluppato, ma anche top-down se impongono uno stile architetturale.</p><p>Utilissimi come base facilmente risuabile di diverse applicazioni entro un dato dominio.</p>
+* __ function point__: <p>Non misura il sw, ma le sue entità logico-funzionali [dim. progetto e di produttività in  relazione ai requisiti funzionali, è indipendente dal linguaggio di programmazione].</p><p>Conta le funzionalità differenziate per categoria e pesate in base ad attributi del prodotto.</p><p>Misurazioni diverse possono dare risultati diversi.</p><p>Componenti misurate:</p><p>-External Input (EI) Processo elementare a seguito del quale dati entrano nella componente misurata</p><p>-External Output (EO) Processo elementare a seguito del quale dati escono dalla componente</p><p>-External Inquiry (EQ) Processo elementare per il quale specifici</p><p>dati interni sono richiesti alla componente e da essa emessi</p><p>-Internal Logical File (ILF) Gruppo di dati correlati interni alla</p><p>componente e alimentati tramite EI</p><p>-External Interface File (EIF) Gruppo di dati correlati esterni alla componente e usati come riferimento</p><p></p><p></p>
+* __Gestione di configurazione__: <p>Ha come obiettivi quello di mettere in sicurezza le baseline che consolidano gli stati d'avanzamento del processo di sviluppo.</p><p>Le attività sono: l'identificazione di configurazione (quali configuration item compongono il prodotto->oguno ha un'identità unica) , il controllo di baseline (insieme di CI consolidato ad una specifica milestone; l'esistenza di baseline ben identificate permette riproducibilità, tracciabilità, analisi e confronto), la gestione delle modifiche ed il controllo di versione. </p><p></p>Inglese: _Configuration management_.
+* __Gestione della qualità__: <p>L'insieme dei processi che assicurano che prodotti e implementazioni di processi rispettino gli obiettivi di qualità (di un'organizzazione) e soddisfino gli stakeholder.</p>Inglese: _quality management_.
+* __Gestione delle modifiche__: <p>Le richieste hanno origine da: utenti(difetti/mancanze), sviluppatori (idem), competizione (per avere valore aggiunto).</p><p>Le richieste vanno sottoposte ad un processo d'analisi, decisione, realizzazione e verifica.</p><p>Ogni richiesta va inoltrata in modo formale: change request. </p><p>Va tenuta traccia d'ogni richiesta: issue tracking o ticketing, stato corrente + eventuale chiusura.</p>
+* __Gestione dei rischi__: <p>Durante la pianificazione del progetto:</p><p>>Identificazione (nel progetto, prodotto, mercato)</p><p>>Analisi (prob. d'occorrenza, conseguenze)</p><p>>Pianificazione (valutare come evitarli/mitigarli, conseguenze?)</p><p>Durante il progetto:</p><p>>Controllo e mitigazione (attenzione continua del livello, tramite rilevazione d'indicatori; riconosciemnto, trattamento ad aggiornamento strategie).</p><p>Fonti: tecnologie, rapporti int.pers., org. lavoro, requisiti+rapporti stakeholders, tempi e costi</p><p>Verifica livello di rischio: </p><p>>da effettuare regolarmente per determinare il livello corrente di rischio (non sempre è costante)</p><p>>valutare se gli effetti dei rischi possono essere cambiati (non sono sempre costati nel tempo)</p><p>>riportare sempre ogni rischio serio all'attenzione del mgmt</p>Inglese: _Risk management_.
+* __glossario__: <p>Elenco dei significati dei termini più rilevanti di un documento.</p>Inglese: _glossary_.
+* __guasto__: <p>Meccanica/algoritmica causa di un errore.</p>Inglese: _fault_.
+* __Gunning fog index__: <p>Misura la facilità di lettura e di comprensione di un testo. Il numero risultante è un indicatore del numero di anni di educazione formale della quale una persona necessita al fine di leggere il testo con facilità. Vale a dire che, se un dato testo ha un indice Fog pari a 12, per comprenderlo sono necessari dodici anni educazione formale, equivalenti a un diploma di scuola superiore. L'indice venne sviluppato nel 1952 da Robert Gunning, uomo d'affari statunitense.</p><p>L'indice fog di Gunning viene usato generalmente per testi non particolarmente lunghi e di scrittura in ambito professionale. I testi che sono concepiti per avere un vasto pubblico generalmente richiedono un indice fog minore di 12 punti. I testi che richiedono una comprensione pressoché universale generalmente richiedono un indice minore di 8 punti.</p>
+* __IEEE 830-1998__: <p>Reccomended Practice for Software Requirements Specifications.</p><p>La specifica dei requisiti dev'avere 8 qualità essenziali:</p><p>1. Privia d'ambiguità (UNAMBIGUOS);</p><p>2. Corretta</p><p>3. Completa</p><p>4. Verificabile</p><p>5. Consistente</p><p>6. Modificabile</p><p>7. Tracciabile</p><p>8. Ordinata per rilevanza</p>
+* __impegno__: <p>null</p>Inglese: _commitment_.
+* __Incapsulazione (information hiding)__: <p>Le componenti sono "black box" ed i clienti ne conoscono solo l'interfaccia; la specifica nasconde gli algoritmi e le strutture dati usate al loro interno. I benefici sono che l'esterno non può fare assunzioni sull'interno, cresce la manutenibilità, diminuendo le dipendenze aumentano le opportunità di riuso.</p>Inglese: _Information hiding_.
+* __incarico__: <p>null</p>Inglese: _assignment_.
+* __indicatori__: <p>Nel conteso della misurazione SW, nel caso di caratteristiche difficilmente misurabili, la misura desiderata può essere ottenuta indirettamente a partire da altre misure, ottenute tramite stime o predizioni.</p><p>Visto che sono necessarie delle metriche per stimare le caratteristiche, si identificano gli attributi misurabili, determinando gli indicatori per le caratteristiche non misurabili.</p>
+* __indice analitico__: <p>Elenco ordinato delle corrispondenze tra particolari termini importanti di un documento e la loro ubicazione in esso.</p>Inglese: _index_.
+* __indice generale__: <p>Elenco delle parti di un documento.</p>Inglese: _table of contents_.
+* __infrastruttura (di un progetto)__: <p>Tutte le risorse hardware e software del progetto.</p>Inglese: _null_.
+* __ingegneria__: <p>L'applicazione di princìpi scientifici e matematici per scopi pratici.</p>Inglese: _engineering_.
+* __ingegneria del software__: <p>Applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, al funzionamento e al mantenimento del software.</p>Inglese: _software engineering_.
+* __inspection__: <p>Tecnica di analisi statica che consiste nell'eseguire una lettura mirata, alla ricerca di errori noti.</p><p>Punta a rilevare la presenza di difetti, svolta da verificatori distinti e separati dai programmatori. Si focalizza sulla ricerca di presupposti (error guessing).</p><p>Viene svolta in 4 fasi: la pianificazione, la definizione della lista di controllo, la lettura vera e propria e la correzione dei difetti; in ogni fase la documentazione serve a tenere traccia delle attività svolte.</p>
+* __integrazione bottom-up__: <p>Strategia incrementale secondo cui vengono sviluppate ed integrate prima le parti con minore dipendenza funzionale e maggiore utilità, poi si risale l'albero delle dipendenze.</p><p>Riduce il numero di stub necessari al test ma porta più tardi alla disponibilità di funzionalità ad alto livello.</p>
+* __integrazione continua__: <p>Pratica di sviluppo in cui i membri di un progetto integrano il loro lavoro frequentemente (quotidianamente) in modo automatizzato.</p>Inglese: _continuous integration_.
+* __integrazione top-down__: <p>Strategia d'integrazione per cui si sviluppano prima le parti più esterne, quelle poste sulle foglie dell'albero delle dipendenze, poi si scende.</p><p>Comporta l'uso di molti stub ma integra a partire dalle funzionalità di più alto livello</p>
+* __ISO 9000__: <p>Famiglia di standard internazionali per la gestione della qualità nei sistemi produttivi.</p>
+* __ISO/IEC 14143__: <p>Fornisce un sommario per le FSM (Functional Size Measurement) e gli standard collegati.</p><p>Una FSM (misura di dimensione funzionale è una dimensione conforme ai requisiti  mandatori all'interno dello standard. </p><p>-definire la terminologia del settore</p><p>-chiarire i criteri per valutare le metriche funzionali</p><p>-definire i criteri per accreditare i professionisti che le usano.</p><p>Concetti:</p><p>>accuratezza d'una misura funzioanle</p><p>>accuratezza di una metrica funzionale</p><p>>ripetibilità e riproducibilità d'una metrica f.</p><p>>soglia di sensibilità d'una metrica funzionale</p><p>>applicabilità ad un dominio funzionale</p><p>LO standard aiuta ad orientarsi verso metriche funzionali, che possono fornire valori di misura più significativi, utili anche come vista esterna per stimare il prezzo di vendita; la misura è resa indipendente dalle fasi del progetto, a meno di richieste esplicite di cambiamento.</p><p>Misure interne: numero requisiti e la loro volatilità, function points ed UC points, coesione/accoppiamento/fan-in e fan-out, SLoC e complessità ciclomatica, grado di copertura delle prove.</p><p>Misure esterne: ISO/IEC 9126-1: valutazione delle 6 caratteristiche di qualità del prodotto</p>
+* __ISO/IEC 12207__: <p>Standard internazionale per il ciclo di vita del software.</p><p>Modello ad alto livello.</p><p> - identifica i processi dello sviluppo SW; </p><p> - struttura modulare che richiede specializzazione</p><p> - specifica le responsabilità sui processi</p><p> - identifica i prodotti dei processi</p>
+* __ISO/IEC 14598__: <p>Standard internazionale che fornisce un processo per la valutazione della qualità del software; integra ISO/IEC 9216.</p><p>Definizione di metriche per la valutazione delle caratteristiche rilevanti.</p><p>Misurazione della qualità software.</p><p>Misurazione quantitativa: l'uso di una metrica per assegnare un valore (numero o categoria) su una scala predefinita.</p><p>Il processo attraverso cui, secondo regole definite, simboli o numeri sono assegnate ad attributi di una entità.</p>
+* __ISO/IEC 15504:1998__: <p>Standard internazionale per il miglioramento e la valutazione della qualità di processo.</p><p>Nato per armonizzare SPY con ISO/IEC 12207 ed ISO 9001.</p>Inglese: _ISO/IEC 15504_.
+* __ISO/IEC 15939__: <p>Standard internazionale per la misurazione del software.</p><p>Originato in seguito a inconsistenze negli standard per le misurazioni e dal bisogno di una terminologia ed un framework per comunicarrre informazioni, internamente tra produttori, ed esternamente, agli acquirenti.</p><p>I bisogni informativi sono basati su obiettivi, vincoli, rischi e problemi che originano dai processi tecnici e manageriali.</p><p>Si possono determinare grazie a CMMI.</p><p>Attività:</p><p>– Establish and Maintain Measurement Capability</p><p>– Plan Measurement</p><p>– Perform Measurement</p><p>– Evaluate Measurement</p><p>– Improve Measurement</p><p></p>
+* __ISO/IEC 25000__: <p>Famiglia di standard internazionali che vogliono fornire un framework per la valutazione della qualità del software; ha inglobato ISO/IEC 9126 e ISO/IEC 14598.</p><p>SQuaRE: Software product Requirements And Evaluation:</p>
+* __ISO/IEC 9126__: <p>Standard internazionale che fornisce un modello per la qualità del software.</p><p>Propone un approccio alla qualità in modo che le aziende possano migliorare l'organizzazione ed i processi, e come conseguenza concreta, il prodotto sviluppato.</p><p>Catalogazione sistematica delle caratteristiche rilevanti.</p><p>>Visione esterna: relativa all'esecuzione del prodotto (product requirements)</p><p>>Visone interna: relativa al prodotto non in esecuzione (product-component requirements)</p><p>>Visione in uso: relativa alla percezione dell'utente/operatore (customer requirements).</p><p>Il modello di qualità stabilito nella prima parte dello standard,  è classificato da sei caratteristiche generali (funzionalità, affidabilità, efficienza, usabilità, manutenibilità, portabilità).</p><p>La funzionalità è un "requisito funzionale" a differenza delle ultime cinque caratteristiche chiamate invece " requisiti non funzionali" o "requisiti di qualità".</p>
+* __lead time__: <p>metrica di project management, misura il tempo di calendario che intercorre tra un ordine di sviluppo (ticket) e la relativa consegna.</p>
+* __legge di Parkinson__: <p>Work expands to fill the time available.</p>Inglese: _Parkinson's law_.
+* __malfunzionamento__: <p>Esecuzione di un software difforme dalle attese; avviene per problemi interni al sistema che eventualmente si manifestano nel comportamento esterno dei sistema.</p>Inglese: _failure_.
+* __Manuale della qualità__: <p>Documento che definisce il sistema di gestione della qualità di un'organizzazione.</p><p>È una visione ad alto livello, che si integra con le procedure aziendali, fissa gli obiettivi di qualità e le strategie attuative (esprime la politica aziendale rispetto alla qualità); specifica le modalità per la sua evoluzione.</p>
+* __Manuale Utente__: <p>Adatto alle caratteristiche dell'utente e dell'interfaccia utente.</p><p>Si caratterizza per l'evoluzione e per la forma: nasce presto e cresce con il prodotto, può essere un documento cartaceo tradizionale/un ipertesto/essere on-line con il prodotto/un aiuto contestuale.</p><p>Al suo interno si predilige la forma attiva alla passiva, la correttezza grammaticale e tipografica, frasi brevi ed introno ad un solo fatto, le liste alle frasi, dei paragrafi brevi e fatti di poche frasi, uno stile non verboso ed una terminologia precisa, l'uso di più punti di vista per descrizioni complesse ed infine sezioni e sottosezioni titolate.</p>Inglese: _User manual_.
+* __manutenzione__: <p>Correttiva: per correggere difetti eventualmente rilevati</p><p>Adattativa: per adattare il sistema alla variazione dei requisiti;</p><p>Evolutiva: per aggiungere funzionalità al sistema</p>Inglese: _maintenance, upkeep_.
+* __marcatore__: <p>Istruzione che un programma deve eseguire per trattare nel modo specificato dall'utente una porzione di testo specificata.</p>Inglese: _mark-up_.
+* __Maturità di prodotto__: <p>Occorre valutare il grado di evoluzione del prodotto:</p><p>-quanto migliora in seguito alle prove</p><p>-quanto diminuisce la densità di difetti</p><p>-quanto può costare la scoperta del prossimo difetto</p><p>Le tecniche correnti sono spesso empiriche. </p><p>Occorre definire un modello ideale:</p><p>-modello base: il numero di difetti del SW è una costante iniziale</p><p>-modello logaritmico: le modifiche introducono difetti</p><p>Punto di maggior vantaggio: minimo tra la densità difetti residui ed costo delle prove, entrambi funzioni del tempo.</p>
+* __Metodi agili__: <p>> 4 principi fondamentali:</p><p>1.Individuals and interactions over processes and tools (L’eccessiva rigidità ostacola l’emergere del valore)</p><p>2. Working sofware over comprehensive documentation </p><p>3. Customer collaboration over contract negotiation</p><p>4. Responding to change over following a plan</p><p>L'idea di base è il concetto di "user story" (compito significativo che l'utente vuole svolgere con il sw richiesto; definita da: documento di descrizione, minuta di converszioni con il cliente per fissare la comprensione comune, strategia da utilizzare per confermare che il sw soddisfi gli obiettivi).</p><p>Scrum (caos organizzato), Kanban (just-in-time), Scrumban</p><p></p>Inglese: _Agile methods_.
+* __metodi di lettura__: <p>Svolti durante l'analisi statica durante le fasi di verifica e validazione. </p><p>Inspection e walkthrough.</p><p>Sono metodi pratici, basati sulla lettura della documentazione sul prodotto. La loro efficacia dipende dall'esperienza dei verificatori (nell'organizzare le attività di verifica e nel documentare le attività svolte ed i risultati ottenuti).</p><p>Sono modalità relativamente complementari!</p><p>Le affinità sono: hanno controlli basati su desk check, hanno programmatori e verificatori su fronti opposti, compilano documentazione formale.</p><p>Differenze: l'inspection è basato su errori presupposti, ed è più rapido, il walkthough richiede maggiore attenzione però è più collaborativo.</p>
+* __metodo di lavoro__: <p>Metodo di lavoro.</p>Inglese: _way of working_.
+* __metrica__: <p>Costituisce l'insieme di regole su cui si basa la misurazione.</p><p>Contribuisce a fissare le entità da misurare, gli attributi rilevanti, l'unità di misura e la procedura per assegnare ed interpretare i valori.</p><p>L'interpretazione di un sistema di unità di misura.</p><p>Secondo il dizionario SWE di IEEE: è la misura quantitativa del gradi di possesso di uno specifico attributo da parte di un sistema, componente, processo.</p>Inglese: _metric_.
+* __Metrica software__: <p>Ogni tipo di misura riferita ad un sistema, processo o documento  software.</p><p>Es. Programma (SLOC), testo (Gunning fog index). Effort (person-days).</p><p>Permetta al prodotto ed al processo d'essere quantificati.</p><p>Può essere usato per predire attributi del prodotto oppure per controllare il processo software.</p><p>Le matriche di prodotto possono essere usate per fare predizioni generali o per identificare componenti anomale.</p><p>In produzione, costituiscono strumenti di valutazione e controllo.</p><p>Le entità che da misurare sono: processi (per insiemi collegati di procedur astratte), progetti (attività concrete legate a tempo e risorse), prodotti (beni o servizi in uscita dai progetti) e risorse (elementi impiegati e consumati dal progetto).</p><p>Gli attributi possono essere interni (misurabili rispetto alle entità) oppure esterni (misurabili rispetto all'ambiente).</p><p>Sono un problema aperto, dato che il software è difficile da misurare, ha caratteristiche multiformi, le tecnologie cambiano velocemente e l'ambiente d'esecuzione ha una grande influenza.</p><p>I tipi di etriche riguardano:</p><p>-il prodotto in sè (quan'è grande)</p><p>-le sue funzionalità (cosa fa e come)</p><p>-il suo comportamento (cosa succede e quando)</p><p></p>Inglese: _Software metrics_.
+* __Metriche: asserzioni__: <p>La proprietà o l'attributo del software può essere misurato.</p><p>Esiste una relazione tra quanto possiamo misurare e quanto vogliamo sapere (conosciamo solo come misurare attributi interni, ma spesso siamo interessati agli attributi esterni).</p><p>La relazione è stata formalizzata e validata.</p><p>Può essere difficile collegare quanto può essere misurato, agli attributi esterni di qualità che si desidera misurare.</p>Inglese: _Metrics assumptions_.
+* __metriche progettuali__: <p>vedi: Software Metrics , Norman Fenton</p><p>-Grado di coesione</p><p>-Grado di accoppiamento</p><p>-complessità strutturale (funzione del fan-in)</p><p>-complessità del flusso dati (funzione del numero di parametri in ingresso ed uscita e della complessità strutturale)</p><p>-complessità del sistema (funzione della complessità strutturale e della complessità del flusso dati)</p>
+* __metriche di programmazione__: <p>-SLOC, è la metrica più intuitiva e più usata</p><p>-conteggio di costrutti/comandi, è semplificato ed adattato alle funzionalità degli editor, viene usato per derivare informazioni di costo e produttività, è rapportata alla densità di commenti.</p><p>I limiti che hanno sono che dipendono dalla sintassi e dalla potenza espressiva del linguaggio dallo stile di codifica.</p>
+* __metriche per software OO__: <p>Occorrono metriche dedicate: quelle tradizionali non sono accurate, c'è complessità sia funzionale che strutturale, il codice non è lineare (SLOC non funziona), vengono usate strutture e funzioni complesse (McCabe non funziona come misura assoluta).</p><p>Queste sono: metriche per i metodi, per le classi e per i sistemi.</p>
+* __milestone__: <p>Punto nel tempo associato ad un valore strategico.</p><p>Devono essere: specifiche per obiettivi, delimitate per ampiezza ed ambizioni, incrementali per contenuti, coerenti con e rilevante per la strategia di prodotto, misurabili epr quantità di impegno necessario, traducibili in compiti assegnabili, raggiungibili, puntuali rispetto alle esigenze di calendario e dimostrabili agli stakeholders</p>
+* __misura__: <p>Risultato di una misurazione. </p><p>Ha come fine quello di rendere oggettivi i risultati  degli esperimenti effettuati ed avere dei dati affidabili su cui basare modelli matematici. </p><p>L'affidabilità implica ripetibilità, confrontabilità e confidenza; ogni misura ha limiti intrinseci: la misura è un'approssimazione di realtà fisiche ed è un'astrazione di valutazione o misura dei concetti.</p><p>È un'assegnazione empirica ed oggettiva di un valore (numerico o simbolo) ad un'entità per caratterizzarne un'attributo specifico.</p>Inglese: _measurement_.
+* __misurazione__: <p>Processo che assegna numeri o simboli di entità del mondo reale per descriverle secondo regole (vedi: metrica).</p><p>Se non lo puoi misurare, non lo puoi migliorare, non puoi controllare ciò che non puoi misurare!</p>
+* __misurazione quantitativa__: <p>L'uso di una metrica per assegnare un valore su una scala predefinita.</p>Inglese: _quantitative measurement_.
+* __misurazione nel software__: <p>Obiettivi:</p><p>-valutare lo stato di progetti (stime, preventivi e consuntivi di tempo e costi), prodotti (qualità), processi (qualità, miglioramenti) e risorse (consumo);</p><p>-interpretare e cogliere tendenze, in modo proattivo piuttosto che reattivo</p><p>-decidere azioni correttive, magari privilegiando il maggiore effetto per il minore costo</p><p>Strategia e discipilina:</p><p>-cosa misurare -> ISO/IEC 15939 Software Measurement Process</p><p>-come misurare: linee guida (Practical SW Measurements)</p><p>-cosa e perché: CMMI</p>
+* __misure funzionali: standard__: 
+* __Modelli di ciclo di vita__: <p>Descrivono come i processi si relazionano tra loro nel tempo rispetto agli stati di ciclo di vita.</p><p>Base concettuale intorno alla quale pianificare, organizzare, eseguire e controllare lo svolgimento delle attività necessarie.</p>Inglese: _Life cycle models_.
+* __modello__: <p>Astrazione della realtà.</p>Inglese: _model_.
+* __Modello a componenti__: <p>Molto di quello che serve è già stato fatto & molto di quello che faremo potrà ancora servire.</p><p>Massima attenzione al riuso sistematico di componenti preesistenti/off-the-shelf.</p><p>Analisi requisiti -> Analisi componenti -> Adattamento requisiti -> Progettazione con riuso -> Sviluppo ed integrazione -> Validazione di sistema</p>Inglese: _Model at component_.
+* __Modello evolutivo__: <p>Aiuta a riposndere a bisogni non preventivabili inizialmente; può richiedere rilascio e mantenimento di più versioni esterne in parallelo; comporta il riattraversamento di più fasi del ciclo di vita.</p><p>1.Analisi preliminare (identificare req. di massima; definire architattura di massima; pianificare i passi d'analisi e realizzazione evolutiva)</p><p>2. Analisi&realizzazione d'una evoluzione (come raffinamento + estensione dell'analisi o per progettazione, codifica, prove ed integrazione)</p><p>3. Rilascio di prototipi, poi accettazione finale.</p>Inglese: _Evolutive model_.
+* __Modello incrementale / incremento__: <p>Procedere per incrementi significa aggiungere a un impianto base.</p><p>Possono produrre "valore" ad ogni incremento; ogni incremento riduce il rischio di fallimento; funzionalità essenziali sviluppate nei primi incrementi.</p><p>Prevede rilasci multipli & successivi: ognuno realizza un incremento di funzionalità. Requisiti utente classificati e trattati in base alla loro importanza strategica (primi rilasci->req. + importanti; requisiti strategici stabiliti all'inizio) (req. principali identificati e fissati; architettura del sistema identificata e fissata completamente).</p><p>Analisi e progettazione architetturale non ripetute. Realizzazione incrementale (prj dettaglio, codifica e prove; prima req. essenziale e poi i desiderabili; integrazione->collaudo->rilascio)</p>Inglese: _Incremental model / Increment_.
+* __Modello iterativo / iterazione__: <p>Procedere per iterazioni significa operare raffinamenti o rivisitazioni.</p><p>Applicabili a qualunque modello di ciclo di vita; consentono maggior capacità d'adattamento; comportano il rischio di non convergenza.</p><p>Soluzione generale:</p><p> 1.decomporre la realizzazione del sys</p><p> 2.identificare&trattare prima le componenti più critiche</p><p> 3.limitare superiormente il numero d'iterazioni.</p><p>Rischi: ogni iterazione comporta un ritorno all'indietro, nella direzione opporsta all'avanzamento del tempo).</p>Inglese: _Iterative model / iteration_.
+* __Modello sequenziale (a cascata)__: <p>Centrato sull'idea di processi ripetibili; Successione di fasi rigidamente sequenziali: non ammette ritorni a fasi precedenti ed eventi eccezionali fanno ripartire dall'inizio. I prodotti sono principamente documenti, fino ad includere il SW (Document driven development). Ogni stato di vita ha pre- e post-condizioni.</p><p>Fasi distinte e non sovrapposte nel tempo. Sviluppo di sistemi complessi sul piano organizzativo (iterazioni troppo costose per mitigare i rischi con approssimazioni successive).</p><p>Fase definita in termini d'attività previste & prodotti attesi, contenuti e struttura documenti, responsabilità e ruoli coinvolti + scadenze consegne docs.</p><p>Fasi = durate temporali con dipendenze causali tra loro.</p><p>Difetti: eccessivamente rigido (stretta sequenzialità + non modifiche in corso d'op. + molta manutenzione + molto burocratico e poco realistico).</p><p>Correttivi: 1. Prototipazione (usa&getta); 2. Cascata con ritorni</p>Inglese: _Waterfall model_.
+* __Modello a spirale__: <p>Miglior controllo dei rischi di progetto; cicli interni rapidi e ripetuti (dedicati ad analisi e sviluppi prototipali), cicli esterni che aderiscono ad un qualunque altro modello standard di ciclo di vita.</p><p>Grande attenzione sugli aspetti gestionali (pianificazione delle fasi, analisi dei rischi (risk-driven).</p><p>1.Definizione degli obiettivi (requisiti, rischi, strategia di gestione)</p><p>2.Analisi dei rischi (studio delle conseguenze, valutazione alternative)</p><p>3.Sviluppo e validazione (realizzazione del prodotto)</p><p>4.Pianificazione (decisione circa il proseguimento, pianificazione del proseguimento)</p>Inglese: _Spiral model_.
+* __Modified condition/decision coverage__: <p>Maggiore il numero di condizioni all'interno d'una decisione, diventa proibitivo il numero di test necessario a massimizzare il condition coverage.</p><p>Implica il branch coverage.</p><p>Strategia di copertura del codice che richiede che: </p><p>-Che tutte le decisioni siano soggette a test e tutti i loro possibili esiti siano effettivamente prodotti</p><p>-Che ciascuna condizione all’interno di una decisione assuma</p><p>entrambi gli esiti (vero/falso) almeno una volta.</p><p>Occorre verificare se e come ogni condizione possa da sola determinare tutti i possibili esiti della condizione.</p>
+* __modulo__: <p>L'elemento atomico dell'architettura di un software; tipicamente una classe o un interfaccia.</p><p>Parte dell'unità.</p><p>Componente elementare di progetto di dettaglio, tipicamente non necessita di test di unità.</p>Inglese: _module_.
+* __Norme di progetto__: <p>Linee guida per le attività di sviluppo: strumento operativo di complemento alle procedure.</p><p>Contenuti: organizzazione ed uso delle risorse di sviluppo, convenzioni sull'uso degli strumenti di sviluppo, organizzazione delle comunicazioni e della cooperazione, norme di codifica e gestione dei cambiamenti</p>
+* __oracolo__: <p>UN metodo per generare a priori i risultati ttesi e per convalidare i risultati ottenuti. È generalmente applicato da agenti automatici, per velocizzare la convalida e renderla "oggettiva".</p><p>Li si può produrre sulla base delle specifiche funzionali, semplificando delle prove, oppure sull'uso di componenti terze indipendenti.</p>
+* __organizzazione__: <p>Aggregato di persone [?] che agiscono in modo sistematico, disciplinato e quantificabile; contrario di caos.</p>Inglese: _organization_.
+* __People__: <p>Business management; Project management; Development team; Customers; End users</p>
+* __pianificazione__: <p>Organizzare e controllare tempo, risorse e risultati.</p>Inglese: _planning_.
+* __Pianificazione di progetto__: <p>>Definizione delle attività</p><p>  [pianificarne lo svolgimento + controllarne l'attuzione; avere una base su cui gestire l'allocazione delle risorse; stimare e controllare scadenze e costi]</p><p>> Strumenti di pianificazione: diagr. Gantt, Programme Evaluation and Review Technique (PERT), Work Breakdown Structure (WBS)</p>Inglese: _Project pianification_.
+* __Pianificazione di qualità__: <p>Le attività del sistema qualità mirate a fissare gli obiettivi di qualità, i processi e le risorse necessarie per conseguirli.</p><p>Vedi: piano di qualità</p>
+* __Piano di progetto__: <p>Fissa: risorse disponibili, suddivisione attività, calendario attività.</p><p>Obiettivi: org. att. in modo da produrre ris. utili per valutare con efficacia il piano d'avanzamento del lavoro + fissare milestone come punti critici/finali delle attività.</p><p>Struttura: Introduzione, org. prj, analisi dei rischi, risorse necessarie e disponibili (hw, sw), suddivisione del lavoro (work breakdown structure). calendario delle attività (prj schedule), meccanismi di controllo e rendicontazione)</p>
+* __Piano di progetto__: <p>Fissa: risorse disponibili, suddivisione attività, calendario attività.</p><p>Obiettivi: org. att. in modo da produrre ris. utili per valutare con efficacia il piano d'avanzamento del lavoro + fissare milestone come punti critici/finali delle attività.</p><p>Struttura: Introduzione, org. prj, analisi dei rischi, risorse necessarie e disponibili (hw, sw), suddivisione del lavoro (work breakdown structure). calendario delle attività (prj schedule), meccanismi di controllo e rendicontazione)</p>
+* __Piano di qualità__: <p>Fissa le politiche aziendali per il perseguimento della qualità (visione orizzontale: trasversale sull'intera organizzazione).</p><p>Determina gli obiettivi di qualità del singolo progetto (visione verticale: specificatamente per un prodotto/servizio).</p><p>Assume l'uso di opportuni strumenti e modalità di controllo.</p><p></p><p>Documento che definisce gli elementi del SGQ e le risorse che devono essere applicate in uno specifico caso (prodotto, processo, progetto).</p><p>Operativamente, concretizza il Manuale della Qualità a livello di progetto (sotto specifici vincoli di tempo e risorse); può avere valenza contrattuale.</p><p>In pratica si deve accertare la disponbilitià dell'analisi dei requisiti, di architettura e soluzioni tecniche, la pianificazione delle verifiche e dei risultati delle verifiche; inoltre della conformità ai modelli fissati nelle norme, la tracciabilità tra soluzioni e requisiti, ed assicurare la buona pianificazione delle attività (per uso di risorse).</p>
+* __Piano di qualifica__: <p>Definizione delle strategie di verifica; scelta dei metodi, tecniche e procedure da usare per la validazione</p>
+* __prassi__: <p>Modo di fare.</p>Inglese: _practice_.
+* __Principi del testing software__: <p>(secondo Bertrand Meyer)</p><p>-testare un programma significa tentare di farlo fallire</p><p>-non ci sono sostituti alle specifiche</p><p>ogni esecuzione fallita deve condurre ad un test case, per essere inclusa permanentemente nella suite di test del progetto</p><p>-gli oracoli dovrebbero essere parrte del testo del programma, come contrati</p><p>-ogni strategia di testing dovrebbe includere un processo di testing riproducibile ed essere valutato obiettivamente tramite espliciti criteri</p><p>-la qualità più importante di una strategia di testing è il numero di fault che trova in funzione del tempo.</p>Inglese: _Software testing principles_.
+* __Procedura di prova__: <p>È il procedimento (automatico o manuale) per eseguire, registrare, analizzare e valutare i risultati di prove.</p>
+* __Processi di Sviluppo (ISO 12207)__: <p>Documentazione;</p><p>Accertamento della qualità;</p><p>Gestione delle versioni e delle configurazioni;</p><p>Verifica;</p><p>Qualifica;</p><p>Validazione;</p><p>Revisioni congiunte con il cliente;</p><p>Verifiche ispettive interne;</p><p>Risoluzione dei problemi.</p>Inglese: _Development processes_.
+* __Processi organizzativi (ISO 12207)__: <p>Gestione dei processi;</p><p>Gestione delle infrastrutture;</p><p>Miglioramento del processo;</p><p>Formazione del personale.</p>
+* __Processi Primari (ISO 12207)__: <p>Acquisizione (gestione dei propri sotto-fornitori);</p><p>Fornitura (gestione rapporti con cliente); </p><p>Sviluppo;</p><p>Gestione Operativa (utilizzo);</p><p>Manutenzione (correttiva/adattativa/evolutiva)</p>Inglese: _Primary processes_.
+* __processo (ingegneristico)__: <p>Insieme di attività correlate e coese che trasformano ingressi in uscite, consumando risorse nel farlo.</p><p>Il quadro metodologico, normativo e strategico delle attività di progetto (insieme delle attività raggruppate per obiettivi) per alimentare svariati modelli di ciclo di vita del SW.</p>Inglese: _process_.
+* __processo definito__: <p>Specializzazione del processo standard necessaria per adattarlo ad esigenze specifiche di progetto.</p>
+* __processo di progetto__: <p>Istanza di un processo definito che utilizza risorse aziendali per raggiungere obiettivi prefissati (processo calato nella realtà aziendale).</p>
+* __processo software__: <p>Processo che porta ad un prodotto software.</p>Inglese: _software process_.
+* __prodotto software__: <p>Su commessa: forma, contenuto e funzione fissate dal cliente;</p><p>Pacchetto: forma, contenuto e funzione idonee alla replicazione;</p><p>Componente: forma, contenuto e funzione adatte alla composizione;</p><p>Servizio: forma, contenuto e funzione fissate dal problema.</p>Inglese: _software product_.
+* __produttività__: <p>Rapporto tra valore e costo.</p>Inglese: _productivity_.
+* __profilo professionale__: <p>Requisiti per l'assunzione di un ruolo in un progetto; insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto.</p>Inglese: _professional profile_.
+* __progettazione__: <p>Definizione dell'architettura, delle componenti, delle interfacce e delle altre caratteristiche di un sistema o componente.</p><p>Precede la produzione; costruizione a priori, perseguendo la correttezza per costruzione (non per correzione).</p><p>->Fare una cosa che è garantito abbia le proprietà dichiarate.</p><p>Scopo:</p><p>>soddisfare i requisiti con un sistema di qualità;</p><p>>definire l'architettura logica del prodotto;</p><p>>dominare la complessità del prodotto (divide-et-impera, facilita la comprensione ed assegnare la codifica ad un solo individuo)</p><p>>organizzare e ripartire le responsabilità di realizzazione</p><p>>produrre in economia (efficienza)</p><p>>garantire la qualità (efficacia).</p><p>Risponde alla domanda: "come dare la giusta risposta (al problema)?"</p><p>Descrive una soluzione soddisfacente per tutti gli stakeholders; approccio sintetico, il codice non esiste ancora; produce l'architettura scelta ed i suoi modelli logici.</p>Inglese: _design_.
+* __progettazione architetturale__: <p>Definizione delle componenti e di come esse sono organizzate in un sistema.</p>Inglese: _architectural design_.
+* __progettazione di dettaglio__: <p>Definizione del comportamento delle componenti di un sistema, con un livello di dettaglio tale per cui le componenti possano essere implementate.</p><p>Definizione delle unità realizzative (moduli), specifica delle unità come insieme di moduli (definizione delle caratteristiche significative; fatta dal nulla o tramite specializazione di componenti esistenti).</p><p>Ha come obiettici di:</p><p>>Assegnare unità a componenti</p><p>>Produrre la documentazione necessaria</p><p>>Definire gli strumenti per le prove di unità</p>Inglese: _detailed design_.
+* __progettista (profilo professionale)__: <p>Chi sintetizza una soluzione a partire dalle specifiche di un problema già analizzato.</p>Inglese: _designer_.
+* __progetto__: <p>Nasce da una richiesta (e/o pagamento) che diventa poi un impegno se accettato. Porta dei vincoli : di costo, di risorse, di tempo. Spesso insieme di attività da svolgere in modo collaborativo.</p><p>Pianificazione; Analisi dei requisiti; Progettazione; Realizzazione; Verifica e validazione; Manutenzione.</p>Inglese: _project_.
+* __Programma verificabile__: <p>Serve adottare uno standard di codifica ed un sottoinsieme di lunguaggio consapevoli delle eisgenze di verifica: l'uso di costrutti del linguaggio inadatti può infatti compremettere la verificabilità del programma.</p><p>La verifica solo retrospettiva (a valle dello sviluppo è sovente inadeguata: visto che il costo di rilevazione e correzione è tanto maggiore all'avanzare dello sviluppo.</p><p>Quindi: invece che posticipare la verifica in modalità as-late-as-possibile, si deve accompagnare la produzione con la verifica, usando un approccio costruttivo: correctness by construction.</p><p>Bisogna regolamentare l'uso del linguaghgio di programmazione tramite regole da riflettere nelle Norme di Progetto, allo scopo d'assicurare comportamento predicibile, per usare solidi e collaudati criteri di programmazione e per ragioni pragmatiche</p>
+* __programmatore (profilo professionale)__: <p>Chi implementa una parte della soluzione dei progettisti.</p>Inglese: _programmer_.
+* __Project management__: <p>Chi gestisce le risorse di progetto e riferisce all’organizzazione e al</p><p>cliente</p>
+* __protocollo__: <p>Accordo di interfacce.</p>Inglese: _protocol_.
+* __Prototipo__: <p>Serve per provare e scegliere soluzioni.</p><p>Può essere “usa e getta” (nel caso delle iterazioni) oppure fornire stati</p><p>di incremento (baseline).</p>Inglese: _Prototype_.
+* __Prova__: <p>Coppia (Procedura, Batteria di prove)</p>Inglese: _test_.
+* __qualifica__: <p>Verifica e validazione ('V&V'), cioè quei processi che assicurano la qualità di un prodotto durante il suo ciclo di vita.</p>Inglese: _null_.
+* __quality assurance__: <p>Insieme di attività che valutano i processi con i quali un prodotto viene sviluppato.</p><p>Serve a raccogliere tempestivamente evidenza oggettiva e di qualità, a fronte di specifiche metriche ed obiettivi definiti, per dare evidenza oggettiva, per controllo (interno) ed accertamento (esterno).</p><p>Usa ISO/IEC 9126 come riferimento; la qualità è valutata a posteriori.</p>
+* __Qualità__: <p>L'insieme delle caratteristiche di un'entità che ne determinano la capacità di soddisfare esigenze espresse e implicite.</p><p>Aree nelle quali interviene il sistema qualità:</p><p>-Qualità intrinseca (conformità ai requisiti ed idoneità nell'uso)</p><p>-Qualità relativa (soddisfazione del cliente)</p><p>-qualità quantitativa (misura del livello di qualità per confronto)</p>Inglese: _quality_.
+* __Qualità di processo__: <p>Esigenze:</p><p>>organizzazione e diffusione interna sistematica</p><p>>Identificazione di prodotti intermedi e di momenti di verifica</p><p>>Riproducibilità dei risultati</p><p>>Quality assurance (proattiva, preventiva)</p><p>Obietivi:</p><p>>Definire il processo, per controllarlo e renderlo più facilmente controllabile e raccontarlo in maniera più convincente</p><p>>Controllare il processo per migliorarlo (efficacia: prodotti conformi alle attese; efficienza: minori costi a pari qualità di prodotto; esperienza: apprenderne, anche da altri)</p><p>>Usare buoni strumenti di valutazione.</p>
+* __quantificabile__: <p>Esprimibile in modo quantitativo.</p>Inglese: _quantifiable_.
+* __raccomandazione__: <p>Norma di progetto suggerita, non sottoposta a verifica.</p>Inglese: _recommendation_.
+* __ramo (di un repository)__: <p>Insieme di versioni di file sorgente in evoluzione.</p>Inglese: _branch_.
+* __regola__: <p>Norma di progetto sottoposta a verifica.</p>Inglese: _rule_.
+* __rendimento decrescente, legge del__: <p>Man mano che si aumenta lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre più.</p>Inglese: _diminishing returns_.
+* __repository__: <p>Base di dati centralizzata nella quale risiedono, individualmente, tutti i CI di ogni baseline nella loro storia completa.</p>
+* __requisito__: <p>Bisogno da soddisfare o vincolo da rispettare.</p><p>Secondo IEEE:</p><p>1. Condizione (capability) necessaria ad un utente per risolvere un problema o raggiungere un obiettivo (visione dal lato del bisogno)</p><p>2. Condizione (capability) che dev'essere soddisfatta o posseduta da un sistema per adempiere ad un obbligo (visione lato soluzione)</p><p>3. Descrizione documentata di una condizione (capability) come in 1 o 2.</p>Inglese: _requirement_.
+* __requisito di processo__: <p>Vincolo sullo sviluppo del prodotto.</p>Inglese: _null_.
+* __requisito di prodotto__: <p>Bisogno o vincolo sul prodotto da sviluppare.</p>Inglese: _null_.
+* __requisito di sistema__: <p>Definizione formale e dettagliata di una funzione del sistema.</p>Inglese: _system requirement_.
+* __requisito funzionale__: <p>(di un prodotto software) servizio che il prodotto deve fornire.</p>Inglese: _functional requirement_.
+* __requisito non funzionale__: <p>(di un prodotto software) vincolo su uno o più servizi che il prodotto fornisce.</p>Inglese: _non-functional requirement_.
+* __requisito utente__: <p>Richiesta generale, ad alto livello.</p>Inglese: _user requirement_.
+* __responsabile di progetto (profilo professionale)__: <p>Chi pianifica il progetto, assegna le persone ai ruoli giusti e rappresenta il progetto presso il fornitore e il committente.</p>Inglese: _project manager_.
+* __rete__: <p>Grafo orientato.</p>Inglese: _network_.
+* __revisione esterna__: <p>Ispezione ufficiale di un prodotto condotta da un'organizzazione indipendente da chi ha sviluppato il prodotto.</p>Inglese: _audit_.
+* __revisione interna__: <p>Ispezione di un prodotto interna all'organizzazione che lo sviluppa.</p>Inglese: _joint review_.
+* __rischio__: <p>Opposto di opportunità.</p>Inglese: _risk_.
+* __ritiro (di un prodotto)__: <p>Momento in cui il prodotto cessa di essere seguito dai suoi creatori.</p>Inglese: _retirement_.
+* __Riuso__: <p>Occasionale (opportunistico) – «copia-incolla» a basso costo e scarso</p><p>impatto.</p><p>Sistematico (per progetto, per prodotto, per azienda) a maggior costo</p><p>ma maggior impatto.</p><p>Mira a capitalizzare sottoinsiemi già esistenti, impiegandoli più volte per più prodotti, ottenendo un minor costo realizzativo e di verifica. Ma progettare per riuso è più difficile, visto che si deve anticipare i bisogni futuri; in più non è immediato, visto che si devono minimizzare le modifiche alle componenti riusate per non perderne il valore.</p><p>Costituisce -nel breve periodo- un puro costo. Diventa risparmio nel medio termine (è quindi un investimento).</p>Inglese: _Reuse_.
+* __Ruolo__: <p>Funzione aziendale assegnata a progetto; identifica capacità e compiti.</p><p>Es. Sviluppo -> responsabilità tecnica e realizzativa.</p>Inglese: _role_.
+* __scenario__: <p>Sequenza di passi che descrive un esempio di interazione con un sistema.</p>
+* __SEMAT__: <p>SEMAT (Software Engineering Method and Theory) drives a process to refound software engineering based on a solid theory, proven principles and best practices.</p><p>Is a community of people, companies and some universities, supporting an initiative to create a common ground, a kernel or a foundation for software engineering.</p>
+* __Servizio (amministrazione di progetto)__: <p>Mezzo per aiutare l'utente a raggiungere i suoi obiettivi riducendo costi e rischi.</p>Inglese: _Service_.
+* __SGQ__: <p>Sistema di Gestione Qualità. Ha come responsabilità di garantire la qualità in maniera trasversale a settori e reparti.</p><p>Riferisce direttamente alla Direzione</p>
+* __sistema__: <p>Insieme di componenti organizzati per compiere una o più funzioni.</p>Inglese: _system_.
+* __Sistema qualità__: <p>La struttura organizzativa, le responsabilità, le procedure, i procedimenti e le risorse messe in atto per il perseguimento della qualità.</p><p>Ambiti:</p><p>-pianificazione (definizione di politica ed obiettivi)</p><p>-controllo</p><p>-miglioramento continuo</p>
+* __sistematico__: <p>Che abbraccia un metodo.</p>Inglese: _systematic_.
+* __slack time__: <p>Quantità di tempo tra la data minima a partire da cui un evento può accadere e la data massima oltre la quale esso ritarda gli eventi successivi.</p>
+* __Software engineer__: <p>Realizza parte di un sistema complesso con la consapevolezza che potrà essere usato, completato e modificato da altri. Deve guardare e comprendere il quadro generale nel quale il sistema cui contribuisce si colloca.</p><p>Deve operare compromessi intelligenti e lungimiranti tra visioni e spinte contrapposte.</p>
+* __sommario__: <p>Breve riassunto del contenuto di un documento.</p>Inglese: _abstract_.
+* __Specifica Tecnica__: <p>È prodotta a valle dell'Analisi dei Requisiti; fissa linee e strategie di realizzazione, avvia la fase realizzativa, ma non fissa i dettagli implementativi.</p><p>>Mostra ciò che deve fare il sistema. </p><p>>Organizzata gerarcicamente attraverso più livelli di decomposizione (o tramite generalizzazione, specializzazione, aggregazione)</p><p>>Stabilisce le relazioni tra cause ed effetti</p><p>>Porta una visione d'insieme della soluzione proposta</p><p>>Per ogni componente:</p><p> - funzione svolta </p><p> - tipo dati in ingresso</p><p> - tipo dati in uscita</p><p> - risorse logiche e fisiche necessarie al funzionamento</p>
+* __SPICE__: <p>Software Process Improvement Capability dEtermination, vedi ISO/IEC 15504.</p>
+* __SPY__: <p>Software Process Assessment and Improvement, standard per il miglioramento e la valutazione della qualità di processo.</p><p>Consite nella valutazione oggettiva dei processi di una organizzazione, per darne un giudizio di maturità ed individuare azioni migliorative.</p>
+* __SQL (Structured Query Language__: <p>Linguaggio di programmazione dichiarativo basato sull'algebra relazionale che serve a creare, manipolare e interrogare basi di dati relazionali.</p>Inglese: _SQL_.
+* __stakeholder__: <p>Persona a vario titolo coinvolta nel ciclo di vita di un software che ha influenza sul prodotto o sul processo.</p>
+* __standard di processo__: <p>Riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettività di casi afferenti ad un certo dominio applicativo.</p>Inglese: _process standard_.
+* __statement__: <p>istruzione</p>
+* __statement coverage__: <p>Strategia di testing white-box che mira ad eseguire tutti gli statement (righe di comando) del codice all'interno dell'unità almeno una volta. </p><p>100% quando le ha percorse tutte almeno una volta.</p><p>Meno potente del branch coverage: non può rilevare errori dovuti a failure funzionali (es. parte di un'istruzione da eseguire sempre che però esegue solo in alcuni casi) perché è interessata ad attraverare quante più linee di comando possibile</p>
+* __Stati di processo per SEMAT__: <p>>Conceived (committente identificato; gli stakeholders vedono sufficienti opportunità per il progetto)</p><p>>Bounded (i macro bisogni sono chiari, i meccanismi di gestione dei requisiti sono fissati)</p><p>>Coherent (requisiti classificati e quelli essenziali/obbligatori sono chiari e ben definiti)</p><p>>Acceptable (requisiti fissati definiscono un sys sufficiente agli stakeholders)</p><p>>Addressed (il prodotto soddisfa i principali requisiti al punto da poter meritare rilascio ed uso)</p><p>>Fullfilled (il prodotto soddifa abbastanza requisiti da meritare la piena approvazione degli stakeholders).</p><p></p>
+* __strategie di integrazione__: <p>-assemblare le parti in modo incrementale (aggiungendo solo ad insiemi ben verificati, i difetti che sono rilevati in un test di integrazione è più probabile che siano dovuti all'ultima parte aggiunta)</p><p>-assemblare i produttori prima dei consumatori (la verifica dei primi fornisce ai secondi un flusso di controllo=chiamate e flusso di dati corretti.</p><p>-assemblare in modo che ogni passo di integrazione sia reversibile (permette di retrocedere in uno stato noto e sicuro).</p>
+* __Strumenti di valutazione della qualità__: <p>SPY, CMM->CMMI, Spice ed ISO/IEC 15504</p>
+* __strumento__: <p>Insieme di concetti e di metodi, con delle tecnologie di supporto.</p>Inglese: _tool_.
+* __Studio di fattibilità__: <p>Valuta rischi, costi, benefici, nell'ottica del cliente e del fornitore; decidere se procedere (obiettivo=restare entro un costo massimo prefissato); gatto con le conoscenze immediatamente disponibili, non richiede ricerche impegnative.</p><p>Fattibilità tecnico-organizzativa (strumenti per la realiz., sol. alg. e arch., piattaforme idonee per l'esecuzione).</p><p>Rapporto costi-benefici; individuazione dei rischi (complessità, incertezze).</p><p>Valutazione scadenze temporali; valutazione delle alternative (scelte architetturali, strategie relizzative:make-or-buy, strategie operative).</p>
+* __tecnica__: <p>Ricetta applicata agli strumenti disponibili; modo con cui si usa uno strumento.</p>Inglese: _technique_.
+* __tecnologia__: <p>Strumento sul quale si opera.</p>Inglese: _technology_.
+* __Teorema di howden__: <p>Non esiste un algoritmo che, dato un programma P, generi per esso un test finito ideale (definito da criteri affidabili e validi)</p>
+* __Teorema di Weyuker__: <p>Dato un programma P, i seguenti problemi sono indecidibili:</p><p>∃ un dato di ingresso che causi l'esecuzione di un particolare comando di P?</p><p>∃ un dato di ingresso che causi l'esecuzione di una particolare condizione di P?</p><p>È possibile trovare un dato di ingresso che causi l'esecuzione di ogni comando/condizione/cammino di P?</p>
+* __Tesi di Dijkstra__: <p>Il test di un programma può rilevare la presenza di malfunzionamenti, ma non può dimostrarne l'assenza</p>
+* __test__: <p>Attività di analisi dinamica che osserva i risultati dell'esecuzione di un sistema (o parte di esso) sotto determinate condizioni.</p>
+* __test di integrazione__: <p>Test che verifica la correttezza dell'integrazione di un insieme di unità in una componente del sistema in esame.</p><p>Fatto per la costruzione e la verifica incrementale del sistema, su componenti sviluppate in parallelo e verificate incrementalmente. </p><p>In cond. ottimali, l'integrazione è priva di problemi. </p><p>Si applica alle componenti specificate nella progettazione architetturale, la loro integrazione costituisce il sistema completo.</p><p>Logica di integrazione funzionale: seleziona le funzionalità da integrare ->identifica le componenti che svolgono quelle funzionalità -> ordina le componenti per numero di dipendenze crescente (nel flusso di controllo e nel flusso dati) -> esegue l'integrazione in quell'ordine.</p><p>Rileva: errori residui nella realizzazione dei componenti, la modifica delle interfacce o cambiamenti nei requisiti, riuso di componenti dal comportamento oscuro o inadatto, l'integrazione con altre applicazioni non ben conosciute. Manifestano difetti di progettazione o insufficiente qualità nei test di unità.</p><p>Tanti test quanti ne servono per accertare che tutti i dati scambiati attraverso ciascuna interfaccia siano conformi alla loro specifica e ad accertare che tutti i flussi di controllo previsti in specifica siano stati effettivamente realizzati e provati</p><p></p>Inglese: _integration test_.
+* __test di sistema__: <p>Test che verifica la copertura dei requisiti da parte del sistema in esame.</p><p>Durante la validazione è un'attività interna del fornitore (per accertare la copertura dei requisiti sw).</p><p>Verifica il comportamento dinamico del sistema completo rispetto ai requisiti SW; inizia con il completamento del test di integrazione; è inerentemente funzionale (black-box) e non dovrebbe richiedere conoscenza della logica interna del software.</p>Inglese: _system test_.
+* __test di unità__: <p>Test che verifica la correttezza di una singola unità del sistema in esame.</p><p>È un'attività di analisi dinamica fatta con il supporto di attività dell'analisi statica, ha lo scopo di determinare limiti di iterazioni, flusso del programma oppure valori di variabili. Viene svolta con il massimo grado di parallelismo.</p><p>La responsabilità è del singolo programmatore per le unità più semplici, altrimenti di un verificatore indipendente, meglio un automa.</p><p>L'obiettivo è di verificare la correttezza del codice "as implemented".</p><p>Unità e moduli sw sono determinati durante la progettazione di dettaglio, quindi anche il piano di TU. La TU completa quando ha verificato tutte le unità.</p>Inglese: _unit test_.
+* __test di validazione__: <p>Test che verifica il soddisfacimento del capitolato d'appalto da parte del sistema in esame.</p>Inglese: _validation test_.
+* __test funzionale__: <p>Test di unità che fa riferimento alla specifica dell'unità ed utilizza dati di ingresso capaci di provocare l'esito atteso; ciascun insieme di dati di ingresso che producono un dato comportamento funzionale costituisce un caso di prova.</p><p>Classi di equivalenza invece che infiniti valori di ingresso: valori nella medesima classe producono lo stesso comportamento.</p><p>Da solo non può accertare la correttezza e completezza della logica interna dell'unità, va quindi integrato da test strutturale.</p>Inglese: _functional test / black box_.
+* __test di regressione__: <p>È l'insieme di test (test di unità e di integrazione) necessari ad accertare che la modifica di una parte P di S non causi errori in P o nelle altre parti di S che hanno relazioni con P.</p><p>->ripetizione di test già previsti ed effettuati per ogni parte coinvolta.</p><p>Vengono integrate solo parti che abbiano precedentemente superato TU. Servono ad accertare che modifiche intervenute per correzione od estensione di parti con comportino errori nel sistema.</p><p>I contenuti del test vanno decisi nel momento in cui s'approvamo modifiche al software.</p><p>Modifiche effettuate per aggiunta, correzione o rimozione non devono pregiudicare le funzionalità già verificate (rischio aumenta all'aumentare dell'accoppiamento ed al diminuire dell'incapsulazione).</p><p></p>
+* __test strutturale__: <p>Test di unità che verifica la logica interna del codice cercando la massima copertura.</p><p>Ciascuna prova del'essere progettata per attivare ogni cammino di esecuzione all'interno del modulo; ciascun insieme di dati di ingresso che attivano un percorso costituisce un caso di prova.</p><p>L'uso di debugger può agevolarne l'esecuzione ma non esonera dalla progettazione dei casi di prova.</p>Inglese: _structural test / white box_.
+* __tracciamento__: <p>Mira a dimostrare la completezza e l'economicità della soluzione (soddisfacimento di tutti i requisiti, nessuna funzionalità superflua, nessun componente ingiustificato).</p><p>La luogo su ogni passaggio dello sviluppo (ramo discendente) e su ogni ramo della verifica (ramo ascendente).</p><p>Può essere altamente automatizzato!</p><p>Particolari stili di programmazione facilitano il tracciamento: l'assegnare singoli requisiti elementari a singoli moduli del programma richiede una sola procedura di prova e rende più chiara e semplice la corrispondenza tra essi.</p><p>Maggiore è l'astrazione (potenza espressiva) di un costrutto del linguaggio, maggiore è la qualità di codice oggetto eseguito per esso e maggiore è anche l'onere di dimostrazione di corrispondenza.</p>
+* __Tracciamento dei requisiti__: <p>>Fissa la relazione tra i prodotti del processo di sviluppo, usando matrici di tracciabilità.</p><p>>In avanti (forward) = completezza. Ciascun ingresso ad una fase deve essere messo in relazione con una specifica uscita da quella fase. Fatta con le matrici di tracciabilità.</p><p>>All'indietro (backward) = necessità. Ciascuna uscita dalla fase dev'essere messa in relazione con uno specifico ingresso a quella fase.</p>
+* __UML (Unified Modelling Language)__: <p>Famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software.</p>Inglese: _UML_.
+* __unità__: <p>Insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. È anche la più piccola quantità di software che conviene verificare da sola; tipicamente è prodotta da un singolo programmatore.</p><p>La sua natura specifica dipende dal lignuaggio di programmazione in uso.</p><p>Non linee di codice ma entità di strutturazione (procedura, classe, package).</p>Inglese: _unit_.
+* __Use case points__: <p>Use case points is a measurement of how much effort is required to write software – based on how much work the software is intended to do. The use case point method was created by Gustav Karner of Rational Software Corporation in the mid 1990’s. This method was based on a study of about 200 projects with an average size of 5 man-years of effort. The use case point method of estimation was found to be within 10% of the actual results for over 95% of the projects. This method has since been incorporated into the RUP methodology.</p><p></p><p>The cost estimation technique of use case points evaluates the following factors to determine an estimate of cost:</p><p>1. Technical Factors of the Implementation. Primarily non-functional requirements of the system.</p><p>2. Environmental Factors. Mostly characterizing the implementation team, but touching on process as well.</p><p>3. Use Case Quantity and Complexity. The number of use cases and the number of steps within the use cases.</p><p>4. Actor Quantity and Complexity. The number and type of actors and interface.</p><p>5. Effort Estimation. The previously collected data is converted into man-hours.</p>
+* __validazione__: <p>S'occupa di accertare che il prodotto realizzato corrisponda alle attese.</p><p>La garanzia che un prodotto soddisfi i requisiti da cui è nato.</p><p>È rivolta ai prodotti finali.</p>Inglese: _validation_.
+* __validazione del software__: <p>Conferma tramite esami e fornendo evidenze obiettive che le specifiche del sofware sono conformi ai bisogni degli utenti e degli usi che ne sono intesi, e che i requisiti particolari implementati tramite software sono consistentemente soddisfatti</p>
+* __valutazione__: <p>Verifica quantificata.</p>Inglese: _evaluation_.
+* __verifica__: <p>Valutare se un prodotto soddisfa requisiti, regole o altre condizioni necessarie.</p><p>Accertare che l'esecuzione delle attività di processo non abbia introdotto errori. Rivolta ai processi: viene svolta per accertare il rispetto di regole, convezioni o procedure.</p><p>Si occupa di accertare che l'esecuzione delle attività di processi svolti nella fase in esame non abbia introdotto errori nel prodotto</p>Inglese: _verification_.
+* __Verifica dei requisiti__: <p>Viene eseguita su un documento organizzato, tramite Walkthrough od Ispezione (lettura mirata e strutturata).</p><p>Viene creata una matrice delle dipendenze al fine del tracciamento.</p><p>>La chiarezza espressiva è importante: l'uso naturale del linguaggio rende difficile coniugare chiarezza con facilità di lettura.</p><p>>La chiarezza strutturale è utile a separare requisiti funzionali e non funzionali, occorre una classificazione precisa, uniforme ed accurata.</p><p>>Atomicità ed aggregazione significa avere requisiti elementari e correlazioni chiare ed esplicite.</p><p></p>
+* __verifica del software__: <p>Fornisce evidenza obiettiva che le le uscite del design di una particolare fase del ciclo di vita del software soddisfano tutti gli specifici requisiti di quella fase.</p><p>La verifica del software guarda alla consistenza, completezza e correttezza del software e della sua documentazione di supporto, durante la sua produzione, fornisce inoltre supporto a poter dire -</p><p>di conseguenza - che il software è stato validato.</p><p>La verifica di un programma relaziona frammenti di codice con frammenti della specifica (la verificabilità è funzione inversa della dimensione del contesto: conviene confinare gli ambiti (scope) e la visibilità; una buna architettura semplifica la verifica.</p>
+* __verificatore (profilo professionale)__: <p>Chi verifica il lavoro dei programmatori.</p>Inglese: _verifier_.
+* __versione (di un CI)__: <p>Istanza identificata di un CI nel tempo.</p>Inglese: _version_.
+* __walkthrough__: <p>Tecnica di analisi statica che consiste nell'eseguire una lettura critica, ad ampio spettro, senza l'assunzione di presupposti.</p><p>Punta a rilevare la presenza di difetti, viene svolta da gruppi misti d ispettori/sviluppatori ma con ruoli ben distinti.</p><p>La strategia con cui si svolge è di percorrere il codice simulandone possibili esecuzioni.</p><p>Si svolge anch'essa in 4 fasi: la pianificazione, la lettura, la discussione ed infine la correzione dei difetti. Anche qui, la documentazione viene compilata per avere un rapporto delle attività svolte.</p>
+* __White box test__: <p>Prova strutturale</p>Inglese: _white box_.
 

@@ -467,23 +467,11 @@
         "def": "Verifica quantificata.",
         "eng": "evaluation"
     },
-    "109": {
-        "id": "metrica",
-        "voce": "metrica",
-        "def": "L'interpretazione di un sistema di unit\u00e0 di misura.",
-        "eng": "metric"
-    },
     "110": {
         "id": "misurazione_quantitativa",
         "voce": "misurazione quantitativa",
         "def": "L'uso di una metrica per assegnare un valore su una scala predefinita.",
         "eng": "quantitative measurement"
-    },
-    "111": {
-        "id": "misura",
-        "voce": "misura",
-        "def": "Risultato di una misurazione.",
-        "eng": "measurement"
     },
     "112": {
         "id": "business_logic",
@@ -509,47 +497,11 @@
         "def": "Test che verifica il soddisfacimento del capitolato d'appalto da parte del sistema in esame.",
         "eng": "validation test"
     },
-    "122": {
-        "id": "test_strutturale",
-        "voce": "test strutturale",
-        "def": "Test di unit\u00e0 che analizza soltanto il comportamento dell'unit\u00e0 e non la sua logica interna.",
-        "eng": "structural test"
-    },
-    "123": {
-        "id": "test_funzionale",
-        "voce": "test funzionale",
-        "def": "Test di unit\u00e0 che analizza la logica interna del codice di un'unit\u00e0.",
-        "eng": "functional test"
-    },
-    "124": {
-        "id": "guasto",
-        "voce": "guasto",
-        "def": "Causa di un errore.",
-        "eng": "fault"
-    },
     "125": {
         "id": "errore",
         "voce": "errore",
         "def": "Stato del sistema che, se attivato, produce un malfunzionamento.",
         "eng": "error"
-    },
-    "126": {
-        "id": "malfunzionamento",
-        "voce": "malfunzionamento",
-        "def": "Esecuzione di un software difforme dalle attese.",
-        "eng": "failure"
-    },
-    "129": {
-        "id": "caso_di_prova",
-        "voce": "caso di prova",
-        "def": "Terna di valori (input, output, ambiente) che specifica il comportamento che un sistema (o parte di esso) deve avere in un caso specifico.",
-        "eng": "test case"
-    },
-    "130": {
-        "id": "batteria_di_prove",
-        "voce": "batteria di prove",
-        "def": "Insieme di casi di prova.",
-        "eng": "test suite"
     },
     "131": {
         "id": "rendimento_decrescente",
@@ -563,12 +515,6 @@
         "def": "Percentuale di codice sorgente eseguito durante un caso di prova.",
         "eng": "code coverage"
     },
-    "133": {
-        "id": "complessit\u00e0_ciclomatica",
-        "voce": "complessit\u00e0 ciclomatica",
-        "def": "Misura quantitativa del numero di cammini linearmente indipendenti che il codice sorgente di un programma pu\u00f2 percorrere.",
-        "eng": "cyclomatic complexity"
-    },
     "135": {
         "id": "ISO 9000",
         "voce": "ISO 9000",
@@ -580,12 +526,6 @@
         "voce": "SPICE",
         "def": "Software Process Improvement Capability dEtermination, vedi ISO\/IEC 15504.",
         "eng": "SPICE"
-    },
-    "143": {
-        "id": "ISO_IEC 15939",
-        "voce": "ISO\/IEC 15939",
-        "def": "Standard internazionale per la misurazione del software.",
-        "eng": "ISO\/IEC 15939"
     },
     "144": {
         "id": "prodotto_software",
@@ -1013,12 +953,6 @@
         "def": "L'architettura di dettaglio porta alla definizione di prodotto\r\n>Procede dall'architettura logica\r\n>Consente lo sviluppo parallelo dei componenti terminali\r\n>Consente di stimare costo e tempi di realizzazione\r\n>Conforme alle qualit\u00e0 perseguite nell'architettura logica (alta coesione ed utilit\u00e0=fan-in; bassa dipendenza=fan.out, comlessit\u00e0 ed accoppiamento).\r\n>Decompone i componenti architetturali in moduli a grana pi\u00f9 fine finch\u00e8 ogni modulo ha dimensione, coesione, complessit\u00e0 ed accoppiamento appropriati per la codifica in parallelo>\r\n>Deve fornire tutti i dettagli necesari alla codifica e verfica di ciascun modulo (la natura specifica di modulo \u00e8 determinata dal linguaggio in uso).",
         "eng": ""
     },
-    "231": {
-        "id": "tracciamento_requisiti",
-        "voce": "Tracciamento dei requisiti",
-        "def": ">Fissa la relazione tra i prodotti del processo di sviluppo, usando matrici di tracciabilit\u00e0.\r\n>In avanti (forward) -> completezza. Ciascun ingresso ad una fase deve essere messo in relazione con una specifica uscita da quella fase. Fatta con le matrici di tracciabilit\u00e0.\r\n>All'indietro (backward) -> necessit\u00e0. Ciascuna uscita dalla fase dev'essere messa in relazione con uno specifico ingresso a quella fase.",
-        "eng": ""
-    },
     "232": {
         "id": "manuale_utente",
         "voce": "Manuale Utente",
@@ -1061,18 +995,6 @@
         "def": "Famiglia di standard internazionali che vogliono fornire un framework per la valutazione della qualit\u00e0 del software; ha inglobato ISO\/IEC 9126 e ISO\/IEC 14598.\r\nSQuaRE: Software product Requirements And Evaluation:",
         "eng": "ISO\/IEC 25000"
     },
-    "242": {
-        "id": "metrica_software",
-        "voce": "Metrica software",
-        "def": "Ogni tipo di misura riferita ad un sistema, processo o documento  software.\r\nEs. Programma (SLOC), testo (Gunning fog index). Effort (person-days).\r\nPermetta al prodotto ed al processo d'essere quantificati.\r\nPu\u00f2 essere usato per predire attributi del prodotto oppure per controllare il processo software.\r\nLe matriche di prodotto possono esere usa per fare predizioni generali o per identificare componenti anomale.",
-        "eng": "Software metrics"
-    },
-    "243": {
-        "id": "metriche_asserzioni",
-        "voce": "Metriche: asserzioni",
-        "def": "La propriet\u00e0 o l'attributo del software pu\u00f2 essere misurato.\r\nEsiste una relazione tra quanto possiamo misurare e quanto vogliamo sapere (conosciamo solo come misurare attributi interni, ma spesso siamo interessati agli attributi esterni).\r\nLa relazione \u00e8 stata formalizzata e validata.\r\nPu\u00f2 essere difficile collegare quanto pu\u00f2 essere misurato, agli attributi esterni di qualit\u00e0 che si desidera.",
-        "eng": "Metrics assumptions"
-    },
     "244": {
         "id": "qualit\u00e0_processo",
         "voce": "Qualit\u00e0 di processo",
@@ -1103,12 +1025,6 @@
         "def": "SPY, CMM->CMMI, Spice ed ISO\/IEC 15504",
         "eng": ""
     },
-    "249": {
-        "id": "SPY",
-        "voce": "SPY",
-        "def": "Software Process Assessment and Improvement, standard per il miglioramento e la valutazione della qualit\u00e0 di processo.\r\nCOnsite nella valutazione oggettiva dei processi di una organizzazione, per darne un giudizio di maturit\u00e0 ed individuare azioni migliorative.",
-        "eng": "SPY"
-    },
     "251": {
         "id": "ISO_IEC 15504",
         "voce": "ISO\/IEC 15504:1998",
@@ -1133,12 +1049,6 @@
         "def": ">Sufficienza: \u00e8 capace di soddisfare tutti i req.\r\n>Comprensibilit\u00e0: pu\u00f2 essere capita dai portatori d'interesse\r\n>Modularit\u00e0: \u00e8 suddivisa in parti chiare e ben distinte\r\n>Robustezza: sopporta ingressi diversi dall'utente e dall'ambiente\r\n>Flessibilit\u00e0: permette modifiche a costo contenuto, al variare dei req.\r\n>Riusabilit\u00e0: le sue parti possono essere utilmente impiegate in altre applicazioni\r\n>Efficienza: nel tempo, nello spazio, nelle comunicazioni\r\n>Affidabilit\u00e0: altamente probabile che svolga bene il suo compito quando utilizzata.\r\n>Disponibilit\u00e0: necessita di poco o nullo tempo di manutenzione fuori linea\r\n>Sicurezza rispetto a malfunzionamenti: \u00e8 senete da malfunzionamenti gravi\r\n>Sicurezza rispetto ad intrusioni: i sui dati e le sue funzioni non sono vulnerabili a intrusioni\r\n>Semplicit\u00e0: ogni parte contiene solo il necessario e niente di superfluo\r\n>Incapsulazione (information hiding): l'interno delle componenti non \u00e8 visibile dall'esterno\r\n>Coesione: le parti che stanno insieme hanno gli stessi obiettivi\r\n>Basso accoppiamento: parti distinte dipendono poco o niente le une dalle altre.",
         "eng": ""
     },
-    "255": {
-        "id": "verifica_software",
-        "voce": "verifica del software",
-        "def": "Fornisce evidenza obiettica che le le usciete del design di una particolare fase del ciclo di vita del software soddisfano tutti gli specifici requisiti di quella fase.\r\nLa verifica del software guarda alla consistenza, completezza e correttezza del software e della sua documentazione di supporto, durante la sua produzione, fornisce inoltre supporto a poter dire -\r\ndi conseguenza - che il software \u00e8 stato validaato.",
-        "eng": ""
-    },
     "256": {
         "id": "validazione_software",
         "voce": "validazione del software",
@@ -1157,65 +1067,17 @@
         "def": "S'occupa di accertare che il prodotto realizzato corrisponda alle attese.\r\nLa garanzia che un prodotto soddisfi i requisiti da cui \u00e8 nato.\r\n\u00c8 rivolta ai prodotti finali.",
         "eng": "validation"
     },
-    "260": {
-        "id": "analisi_dinamica",
-        "voce": "analisi dinamica",
-        "def": "Valutazione di un sistema (o di una sua componente) basata sul suo comportamento durante l'esecuzione.\r\nRichiede l'esecuzione del programma, viene effettuata tramite prove (test) ed \u00e8 usata sia nella verifica che nella validazione.\r\nLa ripetibilit\u00e0 \u00e8 un requisito essenziale: AMBIENTE(hw, stato iniziale), SPECIFICHE (ingressi rich., comportamenti attesi), PROCEDURE (esecuzione ed analisi dei risultati).\r\nStrumenti usati: Driver, Stub e Logger.",
-        "eng": "dynamic analysis"
-    },
     "261": {
         "id": "unit\u00e0",
         "voce": "unit\u00e0",
         "def": "Insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. \u00c8 anche la pi\u00f9 piccola quantit\u00e0 di software che conviene verificare da sola; tipicamente \u00e8 prodotta da un singolo programmatore.\r\nLa sua natura specifica dipende dal lignuaggio di programmazione in uso.\r\nNon linee di codice ma entit\u00e0 di strutturazione (procedura, classe, package).",
         "eng": "unit"
     },
-    "262": {
-        "id": "modulo",
-        "voce": "modulo",
-        "def": "L'elemento atomico dell'architettura di un software; tipicamente una classe o un interfaccia.\r\nParte dell'unit\u00e0.",
-        "eng": "module"
-    },
     "263": {
         "id": "componente",
         "voce": "componente",
         "def": "Insieme di unit\u00e0 funzionalmente coese; parte di un sistema. (In Java, rappresentabile da uno o pi\u00f9 package.)\r\nIntegra pi\u00f9 unit\u00e0.",
         "eng": "component"
-    },
-    "264": {
-        "id": "test_di_unit\u00e0",
-        "voce": "test di unit\u00e0",
-        "def": "Test che verifica la correttezza di una singola unit\u00e0 del sistema in esame.\r\n\u00c8 un'attivit\u00e0 di analisi dinamica fatta con il supporto di attivit\u00e0 dell'analisi statica, ha lo scopo di determinare limiti di iterazioni, flusso del programma oppure valori di variabili. Viene svolta con il massimo grado di parallelismo.\r\nLa responsabilit\u00e0 \u00e8 del singolo programmatore per le unit\u00e0 pi\u00f9 semplici, altrimenti di un verificatore indipendente, meglio un automa.\r\nL'obiettivo \u00e8 di verificare la correttezza del codice \"as implemented\".",
-        "eng": "unit test"
-    },
-    "265": {
-        "id": "test_di_integrazione",
-        "voce": "test di integrazione",
-        "def": "Test che verifica la correttezza dell'integrazione di un insieme di unit\u00e0 in una componente del sistema in esame.\r\nFatto per la costruzione e la verifica incrementale del sistema, su componenti sviluppate in parallelo e verificate incrementalmente. In cond. ottimanli, l'inegrazione \u00e8 priva di problemi. \r\nRileva: errori residui nella realizzazione dei componenti, la modifica delle interfacce o cambiamenti nei requisiti, riuso di componenti dal comportamento oscuro o inadatto, l'integrazione con altre applicazioni non ben conosciute.",
-        "eng": "integration test"
-    },
-    "266": {
-        "id": "test_di_sistema",
-        "voce": "test di sistema",
-        "def": "Test che verifica la copertura dei requisiti da parte del sistema in esame.\r\nDurante la validazione \u00e8 un'attivit\u00e0 interna del fornitore (per accertare la copertura dei requisiti sw).",
-        "eng": "system test"
-    },
-    "267": {
-        "id": "collaudo",
-        "voce": "collaudo",
-        "def": "Durante la validazione, \u00e8 un'attivit\u00e0 supervisionata dal committente, come dimostrazione di conformit\u00e0 del prodotto sulla base di casi di prova specificati nel o implicati dal contratto.\r\n\u00c8 un'attivit\u00e0 formale per il contratto.\r\nSegue il rilascio del prodotto (con eventuale garanzia) e la fine della commessa (con eventuale manutenzione).",
-        "eng": ""
-    },
-    "268": {
-        "id": "test_regressione",
-        "voce": "test di regressione",
-        "def": "\u00c8 l'insieme di test (test di unit\u00e0 e di integrazione) necessari ad accertare che la modifica di una parte P di S non causi errori in P o nelle altre parti di S che hanno relazioni con P.\r\n->ripetizione di test gi\u00e0 previsti ed effettuati per ogni parte coinvolta.\r\nModifiche effettuate per aggiunta, correzione o rimozione non devono pregiudicare le funzionalit\u00e0 gi\u00e0 verificate (rischio aumenta all'aumentare dell'accoppiamento ed al diminuire dell'incapsulazione)",
-        "eng": ""
-    },
-    "269": {
-        "id": "analisi_statica",
-        "voce": "analisi statica",
-        "def": "Valutazione di un sistema (o di una sua componente) basata sulla sua forma, struttura, contenuto o documentazione. Non richiede l'esecuzione del software in alcuna sua parte, \u00e8 essenziale quando il sistema non \u00e8 ancora completamente disponibile. Studia le caratteristiche del codice sorgente e talvolta del codice oggetto e della documentazione associata, alla ricerca della conformit\u00e0 a regole date, l'assenza da difetti e la presenza di propriet\u00e0 positive.\r\nApplicano ad ogni prodotto di processo (non solo sw: per tutti i processi attivati nel prj).\r\nMetodi di lettura (desk check) sono applicati solo per prodotti semplici).\r\nMetodi formali, si basano sulla prova assistita di proprit\u00e0, la cui dimostrazione dinamica pu\u00f2 essere troppo onerosa; verifica di equivalenza o generazione automatica.",
-        "eng": "static analysis"
     },
     "272": {
         "id": "inspection",
@@ -1246,5 +1108,365 @@
         "voce": "ISO\/IEC 9126",
         "def": "Standard internazionale che fornisce un modello per la qualit\u00e0 del software.\r\nPropone un approccio alla qualit\u00e0 in modo che le aziende possano migliorare l'organizzazione ed i processi, e come conseguenza concreta, il prodotto sviluppato.\r\nCatalogazione sistematica delle caratteristiche rilevanti.\r\n>Visione esterna: relativa all'esecuzione del prodotto (product requirements)\r\n>Visone interna: relativa al prodotto non in esecuzione (product-component requirements)\r\n>Visione in uso: relativa alla percezione dell'utente\/operatore (customer requirements).\r\nIl modello di qualit\u00e0 stabilito nella prima parte dello standard,  \u00e8 classificato da sei caratteristiche generali (funzionalit\u00e0, affidabilit\u00e0, efficienza, usabilit\u00e0, manutenibilit\u00e0, portabilit\u00e0).\r\nLa funzionalit\u00e0 \u00e8 un \"requisito funzionale\" a differenza delle ultime cinque caratteristiche chiamate invece \" requisiti non funzionali\" o \"requisiti di qualit\u00e0\".",
         "eng": "ISO\/IEC 9126"
+    },
+    "277": {
+        "id": "programma_verificabile",
+        "voce": "Programma verificabile",
+        "def": "Serve adottare uno standard di codifica ed un sottoinsieme di lunguaggio consapevoli delle eisgenze di verifica: l'uso di costrutti del linguaggio inadatti pu\u00f2 infatti compremettere la verificabilit\u00e0 del programma.\r\nLa verifica solo retrospettiva (a valle dello sviluppo \u00e8 sovente inadeguata: visto che il costo di rilevazione e correzione \u00e8 tanto maggiore all'avanzare dello sviluppo.\r\nQuindi: invece che posticipare la verifica in modalit\u00e0 as-late-as-possibile, si deve accompagnare la produzione con la verifica, usando un approccio costruttivo: correctness by construction.\r\nBisogna regolamentare l'uso del linguaghgio di programmazione tramite regole da riflettere nelle Norme di Progetto, allo scopo d'assicurare comportamento predicibile, per usare solidi e collaudati criteri di programmazione e per ragioni pragmatiche",
+        "eng": ""
+    },
+    "278": {
+        "id": "comportmanto_predicibile",
+        "voce": "comportamento predicibile",
+        "def": "Si ha se il codice sorgente \u00e8 senza ambiguit\u00e0: \r\n-niente effetti laterali (es. di funzioni)->diverse invocazioni dela stessa funzione non producono risultati diversi\r\n-l'ordine di elaborazione ed inizializzazione non influisce: l'esitito d'un programma dipende dall'ordine di laborazione entro e tra unit\u00e0\r\n-modalit\u00e0 di passaggio di parametri, poich\u00e8 la scelta d'una modalit\u00e0 di passaggio (valore, riferimento) pu\u00f2 influenzare parte dell'esecuzione.",
+        "eng": ""
+    },
+    "280": {
+        "id": "verifica_software",
+        "voce": "verifica del software",
+        "def": "Fornisce evidenza obiettiva che le le uscite del design di una particolare fase del ciclo di vita del software soddisfano tutti gli specifici requisiti di quella fase.\r\nLa verifica del software guarda alla consistenza, completezza e correttezza del software e della sua documentazione di supporto, durante la sua produzione, fornisce inoltre supporto a poter dire -\r\ndi conseguenza - che il software \u00e8 stato validato.\r\nLa verifica di un programma relaziona frammenti di codice con frammenti della specifica (la verificabilit\u00e0 \u00e8 funzione inversa della dimensione del contesto: conviene confinare gli ambiti (scope) e la visibilit\u00e0; una buna architettura semplifica la verifica.",
+        "eng": ""
+    },
+    "281": {
+        "id": "tracciamento_requisiti",
+        "voce": "Tracciamento dei requisiti",
+        "def": ">Fissa la relazione tra i prodotti del processo di sviluppo, usando matrici di tracciabilit\u00e0.\r\n>In avanti (forward) = completezza. Ciascun ingresso ad una fase deve essere messo in relazione con una specifica uscita da quella fase. Fatta con le matrici di tracciabilit\u00e0.\r\n>All'indietro (backward) = necessit\u00e0. Ciascuna uscita dalla fase dev'essere messa in relazione con uno specifico ingresso a quella fase.",
+        "eng": ""
+    },
+    "282": {
+        "id": "tracciamento",
+        "voce": "tracciamento",
+        "def": "Mira a dimostrare la completezza e l'economicit\u00e0 della soluzione (soddisfacimento di tutti i requisiti, nessuna funzionalit\u00e0 superflua, nessun componente ingiustificato).\r\nLa luogo su ogni passaggio dello sviluppo (ramo discendente) e su ogni ramo della verifica (ramo ascendente).\r\nPu\u00f2 essere altamente automatizzato!\r\nParticolari stili di programmazione facilitano il tracciamento: l'assegnare singoli requisiti elementari a singoli moduli del programma richiede una sola procedura di prova e rende pi\u00f9 chiara e semplice la corrispondenza tra essi.\r\nMaggiore \u00e8 l'astrazione (potenza espressiva) di un costrutto del linguaggio, maggiore \u00e8 la qualit\u00e0 di codice oggetto eseguito per esso e maggiore \u00e8 anche l'onere di dimostrazione di corrispondenza.",
+        "eng": ""
+    },
+    "283": {
+        "id": "analisi_statica",
+        "voce": "analisi statica",
+        "def": "Valutazione di un sistema (o di una sua componente) basata sulla sua forma, struttura, contenuto o documentazione. Non richiede l'esecuzione del software in alcuna sua parte, \u00e8 essenziale quando il sistema non \u00e8 ancora completamente disponibile. Studia le caratteristiche del codice sorgente e talvolta del codice oggetto e della documentazione associata, alla ricerca della conformit\u00e0 a regole date, l'assenza da difetti e la presenza di propriet\u00e0 positive.\r\nApplicano ad ogni prodotto di processo (non solo sw: per tutti i processi attivati nel prj).\r\nMetodi di lettura (desk check) sono applicati solo per prodotti semplici).\r\nMetodi formali, si basano sulla prova assistita di proprit\u00e0, la cui dimostrazione dinamica pu\u00f2 essere troppo onerosa; verifica di equivalenza o generazione automatica.\r\nL'efficacia dei metodi di analisi \u00e8 funzione della qualit\u00e0 di strutturazione del codice.\r\n\r\nCostruisce modelli astratti del sw in esame: questi modelli rappresentano ogni programma come un grafo e ne studiano i cammini possibili; le variazioni tra stati (archi) hanno etichette che descrivono propriet\u00e0 sintattiche o semantiche dell'istruzione corrispondente. Ciascun flusso di controllo (thread) viene rappresentato ed analizzato separatamente (assumendo la non-interferenza).",
+        "eng": "static analysis"
+    },
+    "284": {
+        "id": "analisi_statica_tipi",
+        "voce": "Analisi statica: tipi",
+        "def": "1. Flusso di controllo;\r\n2. Flusso dei dati; \r\n3. Flusso dell'informazione; \r\n4. Esecuzione simbolica;\r\n5. Verifica formale del codice;\r\n6. Verifica del limite;\r\n7. Uso dello stack;\r\n8. Comportamento temporale;\r\n9. Interferenza.\r\nSono tute tecniche in aggiunta all'analisi dinamica!",
+        "eng": ""
+    },
+    "287": {
+        "id": "caratterizzazione",
+        "voce": "caratterizzazione",
+        "def": "\u00c8 una parte essenziale del processo di verifica.\r\nProduce una misura della qualit\u00e0 del sistema: aumenta il valore di qualit\u00e0 del sistema, identificandone e rimuovendone i difetti.\r\nIl suo inizio non dev'essere differito al termine delle attivit\u00e0 di codifica.\r\nLe sue esigenze devono essere tenute in conto nella progettazione del sistema.",
+        "eng": ""
+    },
+    "289": {
+        "id": "failure",
+        "voce": "failure",
+        "def": "Vedi: malfunzionamento",
+        "eng": ""
+    },
+    "290": {
+        "id": "malfunzionamento",
+        "voce": "malfunzionamento",
+        "def": "Esecuzione di un software difforme dalle attese; avviene per problemi interni al sistema che eventualmente si manifestano nel comportamento esterno dei sistema.",
+        "eng": "failure"
+    },
+    "291": {
+        "id": "guasto",
+        "voce": "guasto",
+        "def": "Meccanica\/algoritmica causa di un errore.",
+        "eng": "fault"
+    },
+    "292": {
+        "id": "analisi_dinamica",
+        "voce": "analisi dinamica",
+        "def": "Valutazione di un sistema (o di una sua componente) basata sul suo comportamento durante l'esecuzione.\r\nRichiede l'esecuzione del programma, viene effettuata tramite prove (test) ed \u00e8 usata sia nella verifica che nella validazione.\r\nLa ripetibilit\u00e0 \u00e8 un requisito essenziale: AMBIENTE(hw, stato iniziale), SPECIFICHE (ingressi rich., comportamenti attesi), PROCEDURE (esecuzione ed analisi dei risultati).\r\nStrumenti usati: Driver, Stub e Logger.\r\nSi compone di test (prove): attivit\u00e0 che comportano l'esecuzione dell'oggetto di verifica.\r\nViene fatta sul comportamento del programma su un inseme finito di casi, selezionati nel dominio (infinto, in generale) di tutte le esecuzioni possibili; ciascun caso di prova specifica i valori di ingresso e lo stato iniziale del sistema: ciascun caso di prova deve produrre un esito decidibile (oracolo) verificato in base ad un comportmento atteso.\r\nOggetto delle prove: unit\u00e0 (TU), aggregati (parti del sistema, in relazione funzionale\/d'uso\/di comportamento\/di struttura. TI), sistema completo.\r\nObiettivo delle prove: accertazione, qualifica, conformit\u00e0, regressione; installazione nell'ambiente di prova, controllo prestazioni; viene specificato per ogni caso, in termini pratici e quantitativi, varia al variare dell'oggetto di prova; il PdQ dice quali e quante prove.\r\nVincoli di progetto: processi, prodotti, risorse, competenze; stima e controllo dei costi, criteri di terminazione.\r\nAttivit\u00e0 di prova: pianificazione, specifica e sviluppo dei casi di prova; esecuzione, valutazione, trattamento dei problemi.\r\nLa provabilit\u00e0 va assicurata a monte dello sviluppo, non a valle della codifica: progettazione architetturale e di dettaglio raffinate per assicurare la provabilit\u00e0.\r\nUna singola prova non basta: i risultati valgono solo per quell'esecuzione, non possono essere generalizzati; dev'essere ripetibile; rileva malfunzionamenti indicando la presenza di guasti: generalmente non pu\u00f2 provarne l'assenza.\r\nIn pi\u00f9 le prove sono costose: richiedono risorse (in termini di tempo+persone+infrastrutture), hanno bisogno di un processo definito e richiedono attivit\u00e0 di ricerca, analisi e correzione.",
+        "eng": "dynamic analysis"
+    },
+    "294": {
+        "id": "tes_dijkstra",
+        "voce": "Tesi di Dijkstra",
+        "def": "Il test di un programma pu\u00f2 rilevare la presenza di malfunzionamenti, ma non pu\u00f2 dimostrarne l'assenza",
+        "eng": ""
+    },
+    "295": {
+        "id": "teorema_howden",
+        "voce": "Teorema di howden",
+        "def": "Non esiste un algoritmo che, dato un programma P, generi per esso un test finito ideale (definito da criteri affidabili e validi)",
+        "eng": ""
+    },
+    "296": {
+        "id": "teorema_weyuker",
+        "voce": "Teorema di Weyuker",
+        "def": "Dato un programma P, i seguenti problemi sono indecidibili:\r\n\u2203 un dato di ingresso che causi l'esecuzione di un particolare comando di P?\r\n\u2203 un dato di ingresso che causi l'esecuzione di una particolare condizione di P?\r\n\u00c8 possibile trovare un dato di ingresso che causi l'esecuzione di ogni comando\/condizione\/cammino di P?",
+        "eng": ""
+    },
+    "297": {
+        "id": "principi_testing_sw",
+        "voce": "Principi del testing software",
+        "def": "(secondo Bertrand Meyer)\r\n-testare un programma significa tentare di farlo fallire\r\n-non ci sono sostituti alle specifiche\r\nogni esecuzione fallita deve condurre ad un test case, per essere inclusa permanentemente nella suite di test del progetto\r\n-gli oracoli dovrebbero essere parrte del testo del programma, come contrati\r\n-ogni strategia di testing dovrebbe includere un processo di testing riproducibile ed essere valutato obiettivamente tramite espliciti criteri\r\n-la qualit\u00e0 pi\u00f9 importante di una strategia di testing \u00e8 il numero di fault che trova in funzione del tempo.",
+        "eng": "Software testing principles"
+    },
+    "298": {
+        "id": "oracolo",
+        "voce": "oracolo",
+        "def": "UN metodo per generare a priori i risultati ttesi e per convalidare i risultati ottenuti. \u00c8 generalmente applicato da agenti automatici, per velocizzare la convalida e renderla \"oggettiva\".\r\nLi si pu\u00f2 produrre sulla base delle specifiche funzionali, semplificando delle prove, oppure sull'uso di componenti terze indipendenti.",
+        "eng": ""
+    },
+    "299": {
+        "id": "caso_di_prova",
+        "voce": "caso di prova",
+        "def": "Terna di valori (input, output, ambiente) che specifica il comportamento che un sistema (o parte di esso) deve avere in un caso specifico; l'ambiente include l'oggetto della prova.",
+        "eng": "test case"
+    },
+    "300": {
+        "id": "batteria_di_prove",
+        "voce": "batteria di prove",
+        "def": "Insieme (sequenza) di casi di prova.",
+        "eng": "test suite"
+    },
+    "301": {
+        "id": "procedura_di_prova",
+        "voce": "Procedura di prova",
+        "def": "\u00c8 il procedimento (automatico o manuale) per eseguire, registrare, analizzare e valutare i risultati di prove.",
+        "eng": ""
+    },
+    "302": {
+        "id": "prova",
+        "voce": "Prova",
+        "def": "Coppia (Procedura, Batteria di prove)",
+        "eng": "test"
+    },
+    "303": {
+        "id": "modulo",
+        "voce": "modulo",
+        "def": "L'elemento atomico dell'architettura di un software; tipicamente una classe o un interfaccia.\r\nParte dell'unit\u00e0.\r\nComponente elementare di progetto di dettaglio, tipicamente non necessita di test di unit\u00e0.",
+        "eng": "module"
+    },
+    "304": {
+        "id": "test_di_unit\u00e0",
+        "voce": "test di unit\u00e0",
+        "def": "Test che verifica la correttezza di una singola unit\u00e0 del sistema in esame.\r\n\u00c8 un'attivit\u00e0 di analisi dinamica fatta con il supporto di attivit\u00e0 dell'analisi statica, ha lo scopo di determinare limiti di iterazioni, flusso del programma oppure valori di variabili. Viene svolta con il massimo grado di parallelismo.\r\nLa responsabilit\u00e0 \u00e8 del singolo programmatore per le unit\u00e0 pi\u00f9 semplici, altrimenti di un verificatore indipendente, meglio un automa.\r\nL'obiettivo \u00e8 di verificare la correttezza del codice \"as implemented\".\r\nUnit\u00e0 e moduli sw sono determinati durante la progettazione di dettaglio, quindi anche il piano di TU. La TU completa quando ha verificato tutte le unit\u00e0.",
+        "eng": "unit test"
+    },
+    "305": {
+        "id": "white_box",
+        "voce": "White box test",
+        "def": "Prova strutturale",
+        "eng": "white box"
+    },
+    "308": {
+        "id": "statement",
+        "voce": "statement",
+        "def": "istruzione",
+        "eng": "statement"
+    },
+    "311": {
+        "id": "statement_coverage",
+        "voce": "statement coverage",
+        "def": "Strategia di testing white-box che mira ad eseguire tutti gli statement (righe di comando) del codice all'interno dell'unit\u00e0 almeno una volta. \r\n100% quando le ha percorse tutte almeno una volta.\r\nMeno potente del branch coverage: non pu\u00f2 rilevare errori dovuti a failure funzionali (es. parte di un'istruzione da eseguire sempre che per\u00f2 esegue solo in alcuni casi) perch\u00e9 \u00e8 interessata ad attraverare quante pi\u00f9 linee di comando possibile",
+        "eng": "statement coverage"
+    },
+    "314": {
+        "id": "decisione",
+        "voce": "decisione",
+        "def": "Espressione composta contenente condizioni combinate da operatori boolenai",
+        "eng": "decision"
+    },
+    "315": {
+        "id": "branch_coverage",
+        "voce": "Branch coverage",
+        "def": "metodo di testing che mira ad assicurare che ognuno dei possibili rami che scendono da ogni percorso di decisione (flusso di controllo) siano eseguiti almeno una volta, assicurando che tutto il codice che \u00e8 possibile raggiungere sia stato eseguito.\r\n100% se li attraversa tutti - complessivamente - almeno una volta.\r\n\u00c8 funzionale, per cammino, quindi \u00e8 pi\u00f9 potente della statement coverage.\r\nPu\u00f2 per\u00f2 non comprendere appieno la logica del programma!",
+        "eng": "branch coverage"
+    },
+    "316": {
+        "id": "condizione",
+        "voce": "condizione",
+        "def": "Espressione booleana semplice non contenente al suo interno ulteriori condizioni combinate da operatori booleani.",
+        "eng": "condition"
+    },
+    "319": {
+        "id": "test_funzionale",
+        "voce": "test funzionale",
+        "def": "Test di unit\u00e0 che fa riferimento alla specifica dell'unit\u00e0 ed utilizza dati di ingresso capaci di provocare l'esito atteso; ciascun insieme di dati di ingresso che producono un dato comportamento funzionale costituisce un caso di prova.\r\nClassi di equivalenza invece che infiniti valori di ingresso: valori nella medesima classe producono lo stesso comportamento.\r\nDa solo non pu\u00f2 accertare la correttezza e completezza della logica interna dell'unit\u00e0, va quindi integrato da test strutturale.",
+        "eng": "functional test \/ black box"
+    },
+    "320": {
+        "id": "test_strutturale",
+        "voce": "test strutturale",
+        "def": "Test di unit\u00e0 che verifica la logica interna del codice cercando la massima copertura.\r\nCiascuna prova del'essere progettata per attivare ogni cammino di esecuzione all'interno del modulo; ciascun insieme di dati di ingresso che attivano un percorso costituisce un caso di prova.\r\nL'uso di debugger pu\u00f2 agevolarne l'esecuzione ma non esonera dalla progettazione dei casi di prova.",
+        "eng": "structural test \/ white box"
+    },
+    "321": {
+        "id": "strategie_integrazione",
+        "voce": "strategie di integrazione",
+        "def": "-assemblare le parti in modo incrementale (aggiungendo solo ad insiemi ben verificati, i difetti che sono rilevati in un test di integrazione \u00e8 pi\u00f9 probabile che siano dovuti all'ultima parte aggiunta)\r\n-assemblare i produttori prima dei consumatori (la verifica dei primi fornisce ai secondi un flusso di controllo=chiamate e flusso di dati corretti.\r\n-assemblare in modo che ogni passo di integrazione sia reversibile (permette di retrocedere in uno stato noto e sicuro).",
+        "eng": ""
+    },
+    "322": {
+        "id": "integrazione_bottomup",
+        "voce": "integrazione bottom-up",
+        "def": "Strategia incrementale secondo cui vengono sviluppate ed integrate prima le parti con minore dipendenza funzionale e maggiore utilit\u00e0, poi si risale l'albero delle dipendenze.\r\nRiduce il numero di stub necessari al test ma porta pi\u00f9 tardi alla disponibilit\u00e0 di funzionalit\u00e0 ad alto livello.",
+        "eng": ""
+    },
+    "323": {
+        "id": "integrazione_topdown",
+        "voce": "integrazione top-down",
+        "def": "Strategia d'integrazione per cui si sviluppano prima le parti pi\u00f9 esterne, quelle poste sulle foglie dell'albero delle dipendenze, poi si scende.\r\nComporta l'uso di molti stub ma integra a partire dalle funzionalit\u00e0 di pi\u00f9 alto livello",
+        "eng": ""
+    },
+    "325": {
+        "id": "test_di_integrazione",
+        "voce": "test di integrazione",
+        "def": "Test che verifica la correttezza dell'integrazione di un insieme di unit\u00e0 in una componente del sistema in esame.\r\nFatto per la costruzione e la verifica incrementale del sistema, su componenti sviluppate in parallelo e verificate incrementalmente. \r\nIn cond. ottimali, l'integrazione \u00e8 priva di problemi. \r\nSi applica alle componenti specificate nella progettazione architetturale, la loro integrazione costituisce il sistema completo.\r\nLogica di integrazione funzionale: seleziona le funzionalit\u00e0 da integrare ->identifica le componenti che svolgono quelle funzionalit\u00e0 -> ordina le componenti per numero di dipendenze crescente (nel flusso di controllo e nel flusso dati) -> esegue l'integrazione in quell'ordine.\r\nRileva: errori residui nella realizzazione dei componenti, la modifica delle interfacce o cambiamenti nei requisiti, riuso di componenti dal comportamento oscuro o inadatto, l'integrazione con altre applicazioni non ben conosciute. Manifestano difetti di progettazione o insufficiente qualit\u00e0 nei test di unit\u00e0.\r\nTanti test quanti ne servono per accertare che tutti i dati scambiati attraverso ciascuna interfaccia siano conformi alla loro specifica e ad accertare che tutti i flussi di controllo previsti in specifica siano stati effettivamente realizzati e provati\r\n",
+        "eng": "integration test"
+    },
+    "326": {
+        "id": "test_di_sistema",
+        "voce": "test di sistema",
+        "def": "Test che verifica la copertura dei requisiti da parte del sistema in esame.\r\nDurante la validazione \u00e8 un'attivit\u00e0 interna del fornitore (per accertare la copertura dei requisiti sw).\r\nVerifica il comportamento dinamico del sistema completo rispetto ai requisiti SW; inizia con il completamento del test di integrazione; \u00e8 inerentemente funzionale (black-box) e non dovrebbe richiedere conoscenza della logica interna del software.",
+        "eng": "system test"
+    },
+    "327": {
+        "id": "test_regressione",
+        "voce": "test di regressione",
+        "def": "\u00c8 l'insieme di test (test di unit\u00e0 e di integrazione) necessari ad accertare che la modifica di una parte P di S non causi errori in P o nelle altre parti di S che hanno relazioni con P.\r\n->ripetizione di test gi\u00e0 previsti ed effettuati per ogni parte coinvolta.\r\nVengono integrate solo parti che abbiano precedentemente superato TU. Servono ad accertare che modifiche intervenute per correzione od estensione di parti con comportino errori nel sistema.\r\nI contenuti del test vanno decisi nel momento in cui s'approvamo modifiche al software.\r\nModifiche effettuate per aggiunta, correzione o rimozione non devono pregiudicare le funzionalit\u00e0 gi\u00e0 verificate (rischio aumenta all'aumentare dell'accoppiamento ed al diminuire dell'incapsulazione).\r\n",
+        "eng": ""
+    },
+    "328": {
+        "id": "collaudo",
+        "voce": "collaudo",
+        "def": "Durante la validazione, \u00e8 un'attivit\u00e0 supervisionata dal committente, come dimostrazione di conformit\u00e0 del prodotto sulla base di casi di prova specificati nel o implicati dal contratto.\r\n\u00c8 un'attivit\u00e0 formale per il contratto.\r\nSegue il rilascio del prodotto (con eventuale garanzia) e la fine della commessa (con eventuale manutenzione).\r\nTest di accettazione (collaudo): accerta il soddisfacimento dei requisiti utente.",
+        "eng": ""
+    },
+    "329": {
+        "id": "modified_condition_decision_coverage",
+        "voce": "Modified condition\/decision coverage",
+        "def": "Maggiore il numero di condizioni all'interno d'una decisione, diventa proibitivo il numero di test necessario a massimizzare il condition coverage.\r\nImplica il branch coverage.\r\nStrategia di copertura del codice che richiede che: \r\n-Che tutte le decisioni siano soggette a test e tutti i loro possibili esiti siano effettivamente prodotti\r\n-Che ciascuna condizione all\u2019interno di una decisione assuma\r\nentrambi gli esiti (vero\/falso) almeno una volta.\r\nOccorre verificare se e come ogni condizione possa da sola determinare tutti i possibili esiti della condizione.",
+        "eng": ""
+    },
+    "330": {
+        "id": "copertura",
+        "voce": "Copertura",
+        "def": "Per ogni test d'unit\u00e0 si definiscono l'oggetto, la strategia, le risorse necessarrie ed il piano d'esecuzione. \r\nVedi: Statement coverage; branch coverage.\r\nFattore di copertura: quanto la prova esercita il prodotto.\r\n-Copertura funzionale: rispetto alla percentuale di funzionalit\u00e0 esercitate, come sono viste dall'esterno\r\n-copertura strutturale (branch, condition): rispetto alla percentuale di logica interna del codice esercitata.\r\nLa copertura del 100% non provoca l'assenza di difetti, e pu\u00f2 essere irraggiungibile.",
+        "eng": "coverage"
+    },
+    "331": {
+        "id": "SPY",
+        "voce": "SPY",
+        "def": "Software Process Assessment and Improvement, standard per il miglioramento e la valutazione della qualit\u00e0 di processo.\r\nConsite nella valutazione oggettiva dei processi di una organizzazione, per darne un giudizio di maturit\u00e0 ed individuare azioni migliorative.",
+        "eng": "SPY"
+    },
+    "332": {
+        "id": "maturit\u00e0_prodotto",
+        "voce": "Maturit\u00e0 di prodotto",
+        "def": "Occorre valutare il grado di evoluzione del prodotto:\r\n-quanto migliora in seguito alle prove\r\n-quanto diminuisce la densit\u00e0 di difetti\r\n-quanto pu\u00f2 costare la scoperta del prossimo difetto\r\nLe tecniche correnti sono spesso empiriche. \r\nOccorre definire un modello ideale:\r\n-modello base: il numero di difetti del SW \u00e8 una costante iniziale\r\n-modello logaritmico: le modifiche introducono difetti\r\nPunto di maggior vantaggio: minimo tra la densit\u00e0 difetti residui ed costo delle prove, entrambi funzioni del tempo.",
+        "eng": ""
+    },
+    "333": {
+        "id": "misura",
+        "voce": "misura",
+        "def": "Risultato di una misurazione. \r\nHa come fine quello di rendere oggettivi i risultati  degli esperimenti effettuati ed avere dei dati affidabili su cui basare modelli matematici. \r\nL'affidabilit\u00e0 implica ripetibilit\u00e0, confrontabilit\u00e0 e confidenza; ogni misura ha limiti intrinseci: la misura \u00e8 un'approssimazione di realt\u00e0 fisiche ed \u00e8 un'astrazione di valutazione o misura dei concetti.\r\n\u00c8 un'assegnazione empirica ed oggettiva di un valore (numerico o simbolo) ad un'entit\u00e0 per caratterizzarne un'attributo specifico.",
+        "eng": "measurement"
+    },
+    "337": {
+        "id": "indicatori",
+        "voce": "indicatori",
+        "def": "Nel conteso della misurazione SW, nel caso di caratteristiche difficilmente misurabili, la misura desiderata pu\u00f2 essere ottenuta indirettamente a partire da altre misure, ottenute tramite stime o predizioni.\r\nVisto che sono necessarie delle metriche per stimare le caratteristiche, si identificano gli attributi misurabili, determinando gli indicatori per le caratteristiche non misurabili.",
+        "eng": ""
+    },
+    "338": {
+        "id": "metrica",
+        "voce": "metrica",
+        "def": "Costituisce l'insieme di regole su cui si basa la misurazione.\r\nContribuisce a fissare le entit\u00e0 da misurare, gli attributi rilevanti, l'unit\u00e0 di misura e la procedura per assegnare ed interpretare i valori.\r\nL'interpretazione di un sistema di unit\u00e0 di misura.\r\nSecondo il dizionario SWE di IEEE: \u00e8 la misura quantitativa del gradi di possesso di uno specifico attributo da parte di un sistema, componente, processo.",
+        "eng": "metric"
+    },
+    "340": {
+        "id": "gunning_fog_index",
+        "voce": "Gunning fog index",
+        "def": "Misura la facilit\u00e0 di lettura e di comprensione di un testo. Il numero risultante \u00e8 un indicatore del numero di anni di educazione formale della quale una persona necessita al fine di leggere il testo con facilit\u00e0. Vale a dire che, se un dato testo ha un indice Fog pari a 12, per comprenderlo sono necessari dodici anni educazione formale, equivalenti a un diploma di scuola superiore. L'indice venne sviluppato nel 1952 da Robert Gunning, uomo d'affari statunitense.\r\nL'indice fog di Gunning viene usato generalmente per testi non particolarmente lunghi e di scrittura in ambito professionale. I testi che sono concepiti per avere un vasto pubblico generalmente richiedono un indice fog minore di 12 punti. I testi che richiedono una comprensione pressoch\u00e9 universale generalmente richiedono un indice minore di 8 punti.",
+        "eng": "Gunning fog index"
+    },
+    "342": {
+        "id": "misurazione_software",
+        "voce": "misurazione nel software",
+        "def": "Obiettivi:\r\n-valutare lo stato di progetti (stime, preventivi e consuntivi di tempo e costi), prodotti (qualit\u00e0), processi (qualit\u00e0, miglioramenti) e risorse (consumo);\r\n-interpretare e cogliere tendenze, in modo proattivo piuttosto che reattivo\r\n-decidere azioni correttive, magari privilegiando il maggiore effetto per il minore costo\r\nStrategia e discipilina:\r\n-cosa misurare -> ISO\/IEC 15939 Software Measurement Process\r\n-come misurare: linee guida (Practical SW Measurements)\r\n-cosa e perch\u00e9: CMMI",
+        "eng": ""
+    },
+    "343": {
+        "id": "misurazione",
+        "voce": "misurazione",
+        "def": "Processo che assegna numeri o simboli di entit\u00e0 del mondo reale per descriverle secondo regole (vedi: metrica).\r\nSe non lo puoi misurare, non lo puoi migliorare, non puoi controllare ci\u00f2 che non puoi misurare!",
+        "eng": ""
+    },
+    "344": {
+        "id": "ISO_IEC 15939",
+        "voce": "ISO\/IEC 15939",
+        "def": "Standard internazionale per la misurazione del software.\r\nOriginato in seguito a inconsistenze negli standard per le misurazioni e dal bisogno di una terminologia ed un framework per comunicarrre informazioni, internamente tra produttori, ed esternamente, agli acquirenti.\r\nI bisogni informativi sono basati su obiettivi, vincoli, rischi e problemi che originano dai processi tecnici e manageriali.\r\nSi possono determinare grazie a CMMI.\r\nAttivit\u00e0:\r\n\u2013 Establish and Maintain Measurement Capability\r\n\u2013 Plan Measurement\r\n\u2013 Perform Measurement\r\n\u2013 Evaluate Measurement\r\n\u2013 Improve Measurement\r\n",
+        "eng": "ISO\/IEC 15939"
+    },
+    "345": {
+        "id": "metrica_software",
+        "voce": "Metrica software",
+        "def": "Ogni tipo di misura riferita ad un sistema, processo o documento  software.\r\nEs. Programma (SLOC), testo (Gunning fog index). Effort (person-days).\r\nPermetta al prodotto ed al processo d'essere quantificati.\r\nPu\u00f2 essere usato per predire attributi del prodotto oppure per controllare il processo software.\r\nLe matriche di prodotto possono essere usate per fare predizioni generali o per identificare componenti anomale.\r\nIn produzione, costituiscono strumenti di valutazione e controllo.\r\nLe entit\u00e0 che da misurare sono: processi (per insiemi collegati di procedur astratte), progetti (attivit\u00e0 concrete legate a tempo e risorse), prodotti (beni o servizi in uscita dai progetti) e risorse (elementi impiegati e consumati dal progetto).\r\nGli attributi possono essere interni (misurabili rispetto alle entit\u00e0) oppure esterni (misurabili rispetto all'ambiente).\r\nSono un problema aperto, dato che il software \u00e8 difficile da misurare, ha caratteristiche multiformi, le tecnologie cambiano velocemente e l'ambiente d'esecuzione ha una grande influenza.\r\nI tipi di etriche riguardano:\r\n-il prodotto in s\u00e8 (quan'\u00e8 grande)\r\n-le sue funzionalit\u00e0 (cosa fa e come)\r\n-il suo comportamento (cosa succede e quando)\r\n",
+        "eng": "Software metrics"
+    },
+    "346": {
+        "id": "metriche_progettuali",
+        "voce": "metriche progettuali",
+        "def": "vedi: Software Metrics , Norman Fenton\r\n-Grado di coesione\r\n-Grado di accoppiamento\r\n-complessit\u00e0 strutturale (funzione del fan-in)\r\n-complessit\u00e0 del flusso dati (funzione del numero di parametri in ingresso ed uscita e della complessit\u00e0 strutturale)\r\n-complessit\u00e0 del sistema (funzione della complessit\u00e0 strutturale e della complessit\u00e0 del flusso dati)",
+        "eng": ""
+    },
+    "347": {
+        "id": "lead_time",
+        "voce": "lead time",
+        "def": "metrica di project management, misura il tempo di calendario che intercorre tra un ordine di sviluppo (ticket) e la relativa consegna.",
+        "eng": ""
+    },
+    "348": {
+        "id": "metriche_programmazione",
+        "voce": "metriche di programmazione",
+        "def": "-SLOC, \u00e8 la metrica pi\u00f9 intuitiva e pi\u00f9 usata\r\n-conteggio di costrutti\/comandi, \u00e8 semplificato ed adattato alle funzionalit\u00e0 degli editor, viene usato per derivare informazioni di costo e produttivit\u00e0, \u00e8 rapportata alla densit\u00e0 di commenti.\r\nI limiti che hanno sono che dipendono dalla sintassi e dalla potenza espressiva del linguaggio dallo stile di codifica.",
+        "eng": ""
+    },
+    "349": {
+        "id": "complessit\u00e0_ciclomatica",
+        "voce": "complessit\u00e0 ciclomatica di McCabe",
+        "def": "Misura la complessit\u00e0 del flusso di controllo: \u00e8 funzione del numero di cammini linearmente indipendenti che il codice sorgente di un programma pu\u00f2 percorrere.\r\n\u00c8 una misurazione astratta d'un attributo significativo del codice.\r\nCome limiti, presenta una fallibilit\u00e0 dimostrata, ma viene ancora largamente usata, in pi\u00f9 \u00e8 una metrica costosa da applicare prima di progettare il codice in dettaglio.\r\nIl valore rilevato va confrontato con soglie prefissate:\r\n-[1, 10] = c. bassa\r\n-[21, 50] = c. elevata\r\n-[51, ..) = e. inaccettabile.\r\nCorrisponde al numero di casi prova necessari per verificare ogni possibile esito d'ogni ramo di decisione della procedura:\r\n->misura la complessit\u00e0 del flusso di controllo, ma non quella del flusso dati; il grado di fan-in applicato ai dati pu\u00f2 aiutare a stimare la complessit\u00e0 del flusso dati; \u00e8 meglio calcolarlo usando strumenti automatici.\r\nDefinizione algebrica costruita sopra il grafo di controllo G che descrive una procedura: v(G) = e-n+p\r\nil numero di percorsi lineari di G \u00e8 pari al numero degli archi (flusso) meno il numero dei nodi (espressioni o comandi) pi\u00f9 il numero delle componenti connesse da ogni arco",
+        "eng": "cyclomatic complexity"
+    },
+    "350": {
+        "id": "misure_funzionali_stadard",
+        "voce": "misure funzionali: standard",
+        "def": "",
+        "eng": ""
+    },
+    "351": {
+        "id": "metriche_asserzioni",
+        "voce": "Metriche: asserzioni",
+        "def": "La propriet\u00e0 o l'attributo del software pu\u00f2 essere misurato.\r\nEsiste una relazione tra quanto possiamo misurare e quanto vogliamo sapere (conosciamo solo come misurare attributi interni, ma spesso siamo interessati agli attributi esterni).\r\nLa relazione \u00e8 stata formalizzata e validata.\r\nPu\u00f2 essere difficile collegare quanto pu\u00f2 essere misurato, agli attributi esterni di qualit\u00e0 che si desidera misurare.",
+        "eng": "Metrics assumptions"
+    },
+    "352": {
+        "id": "ISO_14143",
+        "voce": "ISO\/IEC 14143",
+        "def": "Fornisce un sommario per le FSM (Functional Size Measurement) e gli standard collegati.\r\nUna FSM (misura di dimensione funzionale \u00e8 una dimensione conforme ai requisiti  mandatori all'interno dello standard. \r\n-definire la terminologia del settore\r\n-chiarire i criteri per valutare le metriche funzionali\r\n-definire i criteri per accreditare i professionisti che le usano.\r\nConcetti:\r\n>accuratezza d'una misura funzioanle\r\n>accuratezza di una metrica funzionale\r\n>ripetibilit\u00e0 e riproducibilit\u00e0 d'una metrica f.\r\n>soglia di sensibilit\u00e0 d'una metrica funzionale\r\n>applicabilit\u00e0 ad un dominio funzionale\r\nLO standard aiuta ad orientarsi verso metriche funzionali, che possono fornire valori di misura pi\u00f9 significativi, utili anche come vista esterna per stimare il prezzo di vendita; la misura \u00e8 resa indipendente dalle fasi del progetto, a meno di richieste esplicite di cambiamento.\r\nMisure interne: numero requisiti e la loro volatilit\u00e0, function points ed UC points, coesione\/accoppiamento\/fan-in e fan-out, SLoC e complessit\u00e0 ciclomatica, grado di copertura delle prove.\r\nMisure esterne: ISO\/IEC 9126-1: valutazione delle 6 caratteristiche di qualit\u00e0 del prodotto",
+        "eng": ""
+    },
+    "353": {
+        "id": "use_case_points",
+        "voce": "Use case points",
+        "def": "Use case points is a measurement of how much effort is required to write software \u2013 based on how much work the software is intended to do. The use case point method was created by Gustav Karner of Rational Software Corporation in the mid 1990\u2019s. This method was based on a study of about 200 projects with an average size of 5 man-years of effort. The use case point method of estimation was found to be within 10% of the actual results for over 95% of the projects. This method has since been incorporated into the RUP methodology.\r\n\r\nThe cost estimation technique of use case points evaluates the following factors to determine an estimate of cost:\r\n1. Technical Factors of the Implementation. Primarily non-functional requirements of the system.\r\n2. Environmental Factors. Mostly characterizing the implementation team, but touching on process as well.\r\n3. Use Case Quantity and Complexity. The number of use cases and the number of steps within the use cases.\r\n4. Actor Quantity and Complexity. The number and type of actors and interface.\r\n5. Effort Estimation. The previously collected data is converted into man-hours.",
+        "eng": ""
+    },
+    "354": {
+        "id": "function_point",
+        "voce": " function point",
+        "def": "Non misura il sw, ma le sue entit\u00e0 logico-funzionali [dim. progetto e di produttivit\u00e0 in  relazione ai requisiti funzionali, \u00e8 indipendente dal linguaggio di programmazione].\r\nConta le funzionalit\u00e0 differenziate per categoria e pesate in base ad attributi del prodotto.\r\nMisurazioni diverse possono dare risultati diversi.\r\nComponenti misurate:\r\n-External Input (EI) Processo elementare a seguito del quale dati entrano nella componente misurata\r\n-External Output (EO) Processo elementare a seguito del quale dati escono dalla componente\r\n-External Inquiry (EQ) Processo elementare per il quale specifici\r\ndati interni sono richiesti alla componente e da essa emessi\r\n-Internal Logical File (ILF) Gruppo di dati correlati interni alla\r\ncomponente e alimentati tramite EI\r\n-External Interface File (EIF) Gruppo di dati correlati esterni alla componente e usati come riferimento\r\n\r\n",
+        "eng": ""
+    },
+    "355": {
+        "id": "metriche_sw_OO",
+        "voce": "metriche per software OO",
+        "def": "Occorrono metriche dedicate: quelle tradizionali non sono accurate, c'\u00e8 complessit\u00e0 sia funzionale che strutturale, il codice non \u00e8 lineare (SLOC non funziona), vengono usate strutture e funzioni complesse (McCabe non funziona come misura assoluta).\r\nQueste sono: metriche per i metodi, per le classi e per i sistemi.",
+        "eng": ""
     }
 }
