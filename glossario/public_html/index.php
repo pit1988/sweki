@@ -41,7 +41,7 @@ $string=str_replace('\r\n', "</p><p>", $string);
 $termini = json_decode($string, true);
 // array_sort($termini, 'id', SORT_ASC);
 uasort($termini, function($item1, $item2){
-    return (strcasecmp ($item1[id], $item2[id]));
+    return (strcasecmp ($item1['id'], $item2['id']));
 });
 
 if (isset($_GET['id'])) {

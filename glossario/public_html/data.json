@@ -5,12 +5,6 @@
         "def": "L'applicazione di princ\u00ecpi scientifici e matematici per scopi pratici.",
         "eng": "engineering"
     },
-    "1": {
-        "id": "ingegneria_del_software",
-        "voce": "ingegneria del software",
-        "def": "Applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, al funzionamento e al mantenimento del software.",
-        "eng": "software engineering"
-    },
     "2": {
         "id": "sistematico",
         "voce": "sistematico",
@@ -95,12 +89,6 @@
         "def": "Schema iterativo di auto-miglioramento che consiste di quattro punti: Plan (individuare obiettivi di miglioramento), Do (eseguire ci\u00f2 che si \u00e8 pianificato), Check (verificare se ha funzionato) e Act (agire per correggersi).",
         "eng": "PDCA cycle"
     },
-    "22": {
-        "id": "ciclo_di_vita_prodotto",
-        "voce": "ciclo di vita (di un prodotto)",
-        "def": "Insieme degli stati che il prodotto assume, dal concepimento al ritiro.",
-        "eng": "software product life cycle"
-    },
     "23": {
         "id": "ciclo_di_vita_sviluppo",
         "voce": "ciclo di vita dello sviluppo (di un prodotto)",
@@ -131,30 +119,6 @@
         "def": "null",
         "eng": "commitment"
     },
-    "32": {
-        "id": "analista",
-        "voce": "analista (profilo professionale)",
-        "def": "Chi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista; fa l'analisi dei requisiti.",
-        "eng": "analyst"
-    },
-    "33": {
-        "id": "progettista",
-        "voce": "progettista (profilo professionale)",
-        "def": "Chi sintetizza una soluzione a partire dalle specifiche di un problema gi\u00e0 analizzato.",
-        "eng": "designer"
-    },
-    "34": {
-        "id": "programmatore",
-        "voce": "programmatore (profilo professionale)",
-        "def": "Chi implementa una parte della soluzione dei progettisti.",
-        "eng": "programmer"
-    },
-    "36": {
-        "id": "responsabile_di_progetto",
-        "voce": "responsabile di progetto (profilo professionale)",
-        "def": "Chi pianifica il progetto, assegna le persone ai ruoli giusti e rappresenta il progetto presso il fornitore e il committente.",
-        "eng": "project manager"
-    },
     "38": {
         "id": "controllore_della_qualit\u00e0",
         "voce": "controllore della qualit\u00e0 (profilo professionale)",
@@ -178,12 +142,6 @@
         "voce": "progettazione architetturale",
         "def": "Definizione delle componenti e di come esse sono organizzate in un sistema.",
         "eng": "architectural design"
-    },
-    "46": {
-        "id": "diagramma_PERT",
-        "voce": "diagramma PERT (Project Evaluation and Review Technique)",
-        "def": "Rete che rappresenta le dipendenze temporali (e le criticit\u00e0) tra attivit\u00e0 di un progetto.",
-        "eng": "PERT diagram"
     },
     "47": {
         "id": "revisione_esterna",
@@ -353,12 +311,6 @@
         "def": "Parte della configurazione di un software.",
         "eng": "configuration item"
     },
-    "80": {
-        "id": "baseline",
-        "voce": "baseline",
-        "def": "Nel ciclo di vita di un progetto, punto d'arrivo tecnico dal quale non si retrocede.",
-        "eng": "baseline"
-    },
     "82": {
         "id": "repository",
         "voce": "repository",
@@ -485,12 +437,6 @@
         "def": "La parte di un software che \u00e8 specifica di quel software e non \u00e8 intesa per essere riusata in altri software.",
         "eng": "application logic"
     },
-    "117": {
-        "id": "test",
-        "voce": "test",
-        "def": "Attivit\u00e0 di analisi dinamica che osserva i risultati dell'esecuzione di un sistema (o parte di esso) sotto determinate condizioni.",
-        "eng": "test"
-    },
     "121": {
         "id": "test_di_validazione",
         "voce": "test di validazione",
@@ -514,18 +460,6 @@
         "voce": "copertura del codice",
         "def": "Percentuale di codice sorgente eseguito durante un caso di prova.",
         "eng": "code coverage"
-    },
-    "135": {
-        "id": "ISO 9000",
-        "voce": "ISO 9000",
-        "def": "Famiglia di standard internazionali per la gestione della qualit\u00e0 nei sistemi produttivi.",
-        "eng": "ISO 9000"
-    },
-    "139": {
-        "id": "SPICE",
-        "voce": "SPICE",
-        "def": "Software Process Improvement Capability dEtermination, vedi ISO\/IEC 15504.",
-        "eng": "SPICE"
     },
     "144": {
         "id": "prodotto_software",
@@ -599,18 +533,6 @@
         "def": "Realizza parte di un sistema complesso con la consapevolezza che potr\u00e0 essere usato, completato e modificato da altri. Deve guardare e comprendere il quadro generale nel quale il sistema cui contribuisce si colloca.\r\nDeve operare compromessi intelligenti e lungimiranti tra visioni e spinte contrapposte.",
         "eng": "Software engineer"
     },
-    "156": {
-        "id": "progetto",
-        "voce": "progetto",
-        "def": "Nasce da una richiesta (e\/o pagamento) che diventa poi un impegno se accettato. Porta dei vincoli : di costo, di risorse, di tempo. Spesso insieme di attivit\u00e0 da svolgere in modo collaborativo.\r\nPianificazione; Analisi dei requisiti; Progettazione; Realizzazione; Verifica e validazione; Manutenzione.",
-        "eng": "project"
-    },
-    "157": {
-        "id": "processo",
-        "voce": "processo (ingegneristico)",
-        "def": "Insieme di attivit\u00e0 correlate e coese che trasformano ingressi in uscite, consumando risorse nel farlo.\r\nIl quadro metodologico, normativo e strategico delle attivit\u00e0 di progetto (insieme delle attivit\u00e0 raggruppate per obiettivi) per alimentare svariati modelli di ciclo di vita del SW.",
-        "eng": "process"
-    },
     "158": {
         "id": "processo_definito",
         "voce": "processo definito",
@@ -634,12 +556,6 @@
         "voce": "Prototipo",
         "def": "Serve per provare e scegliere soluzioni.\r\nPu\u00f2 essere \u201cusa e getta\u201d (nel caso delle iterazioni) oppure fornire stati\r\ndi incremento (baseline).",
         "eng": "Prototype"
-    },
-    "165": {
-        "id": "ISO_IEC 12207",
-        "voce": "ISO\/IEC 12207",
-        "def": "Standard internazionale per il ciclo di vita del software.\r\nModello ad alto livello.\r\n - identifica i processi dello sviluppo SW; \r\n - struttura modulare che richiede specializzazione\r\n - specifica le responsabilit\u00e0 sui processi\r\n - identifica i prodotti dei processi",
-        "eng": "ISO\/IEC 12207"
     },
     "166": {
         "id": "processi_primari",
@@ -683,23 +599,11 @@
         "def": "Aiuta a riposndere a bisogni non preventivabili inizialmente; pu\u00f2 richiedere rilascio e mantenimento di pi\u00f9 versioni esterne in parallelo; comporta il riattraversamento di pi\u00f9 fasi del ciclo di vita.\r\n1.Analisi preliminare (identificare req. di massima; definire architattura di massima; pianificare i passi d'analisi e realizzazione evolutiva)\r\n2. Analisi&realizzazione d'una evoluzione (come raffinamento + estensione dell'analisi o per progettazione, codifica, prove ed integrazione)\r\n3. Rilascio di prototipi, poi accettazione finale.",
         "eng": "Evolutive model"
     },
-    "177": {
-        "id": "modello_spirale",
-        "voce": "Modello a spirale",
-        "def": "Miglior controllo dei rischi di progetto; cicli interni rapidi e ripetuti (dedicati ad analisi e sviluppi prototipali), cicli esterni che aderiscono ad un qualunque altro modello standard di ciclo di vita.\r\nGrande attenzione sugli aspetti gestionali (pianificazione delle fasi, analisi dei rischi (risk-driven).\r\n1.Definizione degli obiettivi (requisiti, rischi, strategia di gestione)\r\n2.Analisi dei rischi (studio delle conseguenze, valutazione alternative)\r\n3.Sviluppo e validazione (realizzazione del prodotto)\r\n4.Pianificazione (decisione circa il proseguimento, pianificazione del proseguimento)",
-        "eng": "Spiral model"
-    },
     "178": {
         "id": "modello_componenti",
         "voce": "Modello a componenti",
         "def": "Molto di quello che serve \u00e8 gi\u00e0 stato fatto & molto di quello che faremo potr\u00e0 ancora servire.\r\nMassima attenzione al riuso sistematico di componenti preesistenti\/off-the-shelf.\r\nAnalisi requisiti -> Analisi componenti -> Adattamento requisiti -> Progettazione con riuso -> Sviluppo ed integrazione -> Validazione di sistema",
         "eng": "Model at component"
-    },
-    "179": {
-        "id": "metodi_agili",
-        "voce": "Metodi agili",
-        "def": "> 4 principi fondamentali:\r\n1.Individuals and interactions over processes and tools (L\u2019eccessiva rigidit\u00e0 ostacola l\u2019emergere del valore)\r\n2. Working sofware over comprehensive documentation \r\n3. Customer collaboration over contract negotiation\r\n4. Responding to change over following a plan\r\nL'idea di base \u00e8 il concetto di \"user story\" (compito significativo che l'utente vuole svolgere con il sw richiesto; definita da: documento di descrizione, minuta di converszioni con il cliente per fissare la comprensione comune, strategia da utilizzare per confermare che il sw soddisfi gli obiettivi).\r\nScrum (caos organizzato), Kanban (just-in-time), Scrumban\r\n",
-        "eng": "Agile methods"
     },
     "180": {
         "id": "ruolo",
@@ -712,24 +616,6 @@
         "voce": "profilo professionale",
         "def": "Requisiti per l'assunzione di un ruolo in un progetto; insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto.",
         "eng": "professional profile"
-    },
-    "182": {
-        "id": "diagramma_di_Gantt",
-        "voce": "diagramma di Gantt",
-        "def": "Diagramma che rappresenta la durata, la sequenzialit\u00e0 e il parallelismo delle attivit\u00e0 di un progetto.\r\nSi basa sulla dislocazione temporale delle attivit\u00e0, per rappresentarne la durata, la sequenzialit\u00e0 ed il parallelismo e confrontare stime e progressi.",
-        "eng": "Gantt diagram"
-    },
-    "183": {
-        "id": "pianificazione_progetto",
-        "voce": "Pianificazione di progetto",
-        "def": ">Definizione delle attivit\u00e0\r\n  [pianificarne lo svolgimento + controllarne l'attuzione; avere una base su cui gestire l'allocazione delle risorse; stimare e controllare scadenze e costi]\r\n> Strumenti di pianificazione: diagr. Gantt, Programme Evaluation and Review Technique (PERT), Work Breakdown Structure (WBS)",
-        "eng": "Project pianification"
-    },
-    "184": {
-        "id": "diagramma_WBS",
-        "voce": "diagramma WBS (Work Breakdown Structure)",
-        "def": "Diagramma che decompone in modo gerarchico le attivit\u00e0 di un progetto in sotto-attivit\u00e0 (coese ma non necessariamente sequenziali ed univocamente identificate).",
-        "eng": "WBS diagram"
     },
     "185": {
         "id": "piano_di_progetto",
@@ -755,23 +641,11 @@
         "def": "Mezzo per aiutare l'utente a raggiungere i suoi obiettivi riducendo costi e rischi.",
         "eng": "Service"
     },
-    "192": {
-        "id": "amministratore_di_progetto",
-        "voce": "amministratore di progetto (profilo professionale)",
-        "def": "Chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione.\r\nNon compie scelte gestionali ma attua le scelte tecnologiche concordate coi responsabili aziendali e del progetto",
-        "eng": "project administrator"
-    },
     "193": {
         "id": "documentazione",
         "voce": "documentazione",
         "def": "Tutto ci\u00f2 che descrive gli ingressi e le uscite delle attivit\u00e0 di un progetto (riguardo al prodotto e processo). Documenti di sviluppo e di gestione del progetto.",
         "eng": "documentation"
-    },
-    "194": {
-        "id": "amministrare_progetto",
-        "voce": "Amministrare un progetto",
-        "def": "Equipaggiare, organizzare e gestire l\u2019ambiente di lavoro e di produzione (regole+procedure+strumenti&servizi; supporto di tutti i processi istanziati nel prj).\r\nLe attivt\u00e0 sono: la redazione e la manutenzione di regole e procedure di lavoro, il reperimento, l'organizzazione, la gestione e la manutenzione di risorse informatiche per l'erogazione dei servizi di supporto.",
-        "eng": "Project administration"
     },
     "195": {
         "id": "ambiente_di_lavoro",
@@ -785,34 +659,16 @@
         "def": "Di quali parti si compone un prodotto e il modo in cui esse stanno assieme.\r\nUn prodotto sw \u00e8 l'unione di parti distine unite insieme secondo regole rigorose. Le regole di configurazione vanno pianificate e la gestione di configurazione va automatizzata.",
         "eng": "configuration"
     },
-    "197": {
-        "id": "gestione_configurazione",
-        "voce": "Gestione di configurazione",
-        "def": "Ha come obiettivi quello di mettere in sicurezza le baseline che consolidano gli stati d'avanzamento del processo di sviluppo.\r\nLe attivit\u00e0 sono: l'identificazione di configurazione (quali configuration item compongono il prodotto->oguno ha un'identit\u00e0 unica) , il controllo di baseline (insieme di CI consolidato ad una specifica milestone; l'esistenza di baseline ben identificate permette riproducibilit\u00e0, tracciabilit\u00e0, analisi e confronto), la gestione delle modifiche ed il controllo di versione. \r\n",
-        "eng": "Configuration management"
-    },
     "198": {
         "id": "milestone",
         "voce": "milestone",
         "def": "Punto nel tempo associato ad un valore strategico.\r\nDevono essere: specifiche per obiettivi, delimitate per ampiezza ed ambizioni, incrementali per contenuti, coerenti con e rilevante per la strategia di prodotto, misurabili epr quantit\u00e0 di impegno necessario, traducibili in compiti assegnabili, raggiungibili, puntuali rispetto alle esigenze di calendario e dimostrabili agli stakeholders",
         "eng": "milestone"
     },
-    "199": {
-        "id": "gestione_della_qualit\u00e0",
-        "voce": "Gestione della qualit\u00e0",
-        "def": "L'insieme dei processi che assicurano che prodotti e implementazioni di processi rispettino gli obiettivi di qualit\u00e0 (di un'organizzazione) e soddisfino gli stakeholder.",
-        "eng": "quality management"
-    },
     "200": {
         "id": "gestione_modifiche",
         "voce": "Gestione delle modifiche",
         "def": "Le richieste hanno origine da: utenti(difetti\/mancanze), sviluppatori (idem), competizione (per avere valore aggiunto).\r\nLe richieste vanno sottoposte ad un processo d'analisi, decisione, realizzazione e verifica.\r\nOgni richiesta va inoltrata in modo formale: change request. \r\nVa tenuta traccia d'ogni richiesta: issue tracking o ticketing, stato corrente + eventuale chiusura.",
-        "eng": ""
-    },
-    "201": {
-        "id": "norme_progetto",
-        "voce": "Norme di progetto",
-        "def": "Linee guida per le attivit\u00e0 di sviluppo: strumento operativo di complemento alle procedure.\r\nContenuti: organizzazione ed uso delle risorse di sviluppo, convenzioni sull'uso degli strumenti di sviluppo, organizzazione delle comunicazioni e della cooperazione, norme di codifica e gestione dei cambiamenti",
         "eng": ""
     },
     "202": {
@@ -850,12 +706,6 @@
         "voce": "Classificazione dei requisiti",
         "def": "Requisiti di progetto, processo e sistema-> funzionali, di performance, di qualit\u00e0.\r\nI requisiti devono essere verificabili; chi ne fissa uno deve avere idea di come accertarne il soddisfacimento.\r\n>Requisiti formali prevedono test, dimostrazione formale e revisione;\r\n>Requisiti prestazionali, una misurazione\r\n>Requisiti qualitativi, una verifica ad hoc\r\n>Requisiti dichiarativi, una revisione.\r\nI requisiti hanno una diversa utilit\u00e0 strategica:\r\n>Obbligatori: irrinunciabili per qualsiasi stakeholder;\r\n>Desiderabili, non sono strettamente necessari ma hanno un valore aggiunto riconoscibile;\r\n>Opzionali, sono relativamente utili oppure contrattabili in seguito.",
         "eng": ""
-    },
-    "210": {
-        "id": "IEEE_830-1998",
-        "voce": "IEEE 830-1998",
-        "def": "Reccomended Practice for Software Requirements Specifications.\r\nLa specifica dei requisiti dev'avere 8 qualit\u00e0 essenziali:\r\n1. Privia d'ambiguit\u00e0 (UNAMBIGUOS);\r\n2. Corretta\r\n3. Completa\r\n4. Verificabile\r\n5. Consistente\r\n6. Modificabile\r\n7. Tracciabile\r\n8. Ordinata per rilevanza",
-        "eng": "IEEE 830-1998"
     },
     "211": {
         "id": "verifica_requisiti",
@@ -917,12 +767,6 @@
         "def": "Rappresenta il numero di dipendenze di un modulo (il numero di moduli immediatamente subordinati).\r\nIl fan-out ottimale \u00e8 tra 5 e 9. \r\nIl designer dovrebbe mirare ad un fan-out moderato ai livelli alti della gerarchia, usando la fattorizzazione per risolvere problemi dovuti ad un'eccessivo fan.out, creando moduli intermedi per fattorizzare al di fuori i moduli con un'alta coesione ed un basso accoppiamento.",
         "eng": "Fan-out"
     },
-    "224": {
-        "id": "riuso",
-        "voce": "Riuso",
-        "def": "Occasionale (opportunistico) \u2013 \u00abcopia-incolla\u00bb a basso costo e scarso\r\nimpatto.\r\nSistematico (per progetto, per prodotto, per azienda) a maggior costo\r\nma maggior impatto.\r\nMira a capitalizzare sottoinsiemi gi\u00e0 esistenti, impiegandoli pi\u00f9 volte per pi\u00f9 prodotti, ottenendo un minor costo realizzativo e di verifica. Ma progettare per riuso \u00e8 pi\u00f9 difficile, visto che si deve anticipare i bisogni futuri; in pi\u00f9 non \u00e8 immediato, visto che si devono minimizzare le modifiche alle componenti riusate per non perderne il valore.\r\nCostituisce -nel breve periodo- un puro costo. Diventa risparmio nel medio termine (\u00e8 quindi un investimento).",
-        "eng": "Reuse"
-    },
     "225": {
         "id": "framework",
         "voce": "framework",
@@ -934,12 +778,6 @@
         "voce": "progettazione di dettaglio",
         "def": "Definizione del comportamento delle componenti di un sistema, con un livello di dettaglio tale per cui le componenti possano essere implementate.\r\nDefinizione delle unit\u00e0 realizzative (moduli), specifica delle unit\u00e0 come insieme di moduli (definizione delle caratteristiche significative; fatta dal nulla o tramite specializazione di componenti esistenti).\r\nHa come obiettici di:\r\n>Assegnare unit\u00e0 a componenti\r\n>Produrre la documentazione necessaria\r\n>Definire gli strumenti per le prove di unit\u00e0",
         "eng": "detailed design"
-    },
-    "227": {
-        "id": "stati_progresso_SEMAT",
-        "voce": "Stati di processo per SEMAT",
-        "def": ">Conceived (committente identificato; gli stakeholders vedono sufficienti opportunit\u00e0 per il progetto)\r\n>Bounded (i macro bisogni sono chiari, i meccanismi di gestione dei requisiti sono fissati)\r\n>Coherent (requisiti classificati e quelli essenziali\/obbligatori sono chiari e ben definiti)\r\n>Acceptable (requisiti fissati definiscono un sys sufficiente agli stakeholders)\r\n>Addressed (il prodotto soddisfa i principali requisiti al punto da poter meritare rilascio ed uso)\r\n>Fullfilled (il prodotto soddifa abbastanza requisiti da meritare la piena approvazione degli stakeholders).\r\n",
-        "eng": ""
     },
     "228": {
         "id": "specifica_tecnica",
@@ -965,12 +803,6 @@
         "def": "L'insieme delle caratteristiche di un'entit\u00e0 che ne determinano la capacit\u00e0 di soddisfare esigenze espresse e implicite.\r\nAree nelle quali interviene il sistema qualit\u00e0:\r\n-Qualit\u00e0 intrinseca (conformit\u00e0 ai requisiti ed idoneit\u00e0 nell'uso)\r\n-Qualit\u00e0 relativa (soddisfazione del cliente)\r\n-qualit\u00e0 quantitativa (misura del livello di qualit\u00e0 per confronto)",
         "eng": "quality"
     },
-    "235": {
-        "id": "sistema_qualit\u00e0",
-        "voce": "Sistema qualit\u00e0",
-        "def": "La struttura organizzativa, le responsabilit\u00e0, le procedure, i procedimenti e le risorse messe in atto per il perseguimento della qualit\u00e0.\r\nAmbiti:\r\n-pianificazione (definizione di politica ed obiettivi)\r\n-controllo\r\n-miglioramento continuo",
-        "eng": ""
-    },
     "236": {
         "id": "pianificazione_qualit\u00e0",
         "voce": "Pianificazione di qualit\u00e0",
@@ -982,18 +814,6 @@
         "voce": "Controllo di qualit\u00e0",
         "def": "Le attivit\u00e0 del sistema qualit\u00e0 pianificate ed attuate al fine che il prodotto soddisfi i requisti attesi.\r\nModalit\u00e0 ed ambiti di controllo sono: \r\n-comprensione ed analisi del dominio;\r\n-verifica (di attivit\u00e0 di processo)\r\n-validazione (di prodotto)\r\n-quality assurance (preventiva invece che correttiva)",
         "eng": ""
-    },
-    "240": {
-        "id": "ISO_IEC 14598",
-        "voce": "ISO\/IEC 14598",
-        "def": "Standard internazionale che fornisce un processo per la valutazione della qualit\u00e0 del software; integra ISO\/IEC 9216.\r\nDefinizione di metriche per la valutazione delle caratteristiche rilevanti.\r\nMisurazione della qualit\u00e0 software.\r\nMisurazione quantitativa: l'uso di una metrica per assegnare un valore (numero o categoria) su una scala predefinita.\r\nIl processo attraverso cui, secondo regole definite, simboli o numeri sono assegnate ad attributi di una entit\u00e0.",
-        "eng": "ISO\/IEC 14598"
-    },
-    "241": {
-        "id": "ISO_IEC 25000",
-        "voce": "ISO\/IEC 25000",
-        "def": "Famiglia di standard internazionali che vogliono fornire un framework per la valutazione della qualit\u00e0 del software; ha inglobato ISO\/IEC 9126 e ISO\/IEC 14598.\r\nSQuaRE: Software product Requirements And Evaluation:",
-        "eng": "ISO\/IEC 25000"
     },
     "244": {
         "id": "qualit\u00e0_processo",
@@ -1025,24 +845,6 @@
         "def": "SPY, CMM->CMMI, Spice ed ISO\/IEC 15504",
         "eng": ""
     },
-    "251": {
-        "id": "ISO_IEC 15504",
-        "voce": "ISO\/IEC 15504:1998",
-        "def": "Standard internazionale per il miglioramento e la valutazione della qualit\u00e0 di processo.\r\nNato per armonizzare SPY con ISO\/IEC 12207 ed ISO 9001.",
-        "eng": "ISO\/IEC 15504"
-    },
-    "252": {
-        "id": "CMMI",
-        "voce": "CMMI",
-        "def": "Capability Maturity Model + Integration\r\nStandard per il miglioramento e la valutazione della qualit\u00e0 di processo.\r\nDefinito su commessa del DoD al SEI di CMU. \u00c8 un modello per la valutazione uniforme dei fornitori.\r\nCapability: misura quant'\u00e8 adeguato un processo per gli scopi per cui  \u00e8 stato definito. Caratteristica di un processo misurato singolarmente; determina l'intorno del risultato (di efficienza ed efficacia) raggiungibile usando quel processo. Un processo che ne ha tanta \u00e8 seguito da tutti in modo disciplinato, sistematico e quantificabile, in caso contrario dipenderebbe da chi lo attua, sarebbe definito e seguito in modo opportunistico, sarebbe difficicle prevederne l'esito, avanzamento e qualit\u00e0.\r\nMaturity: misura di quando \u00e8 governato il sistema dei processi dell'azienda. Caratteristica d'un insieme di processi (quelli significativi rispondono alle esigenze di miglioramento continuo dell'organizzazione); risulta dall'effetto combinato delle capability dei processi coinvolti. 5 livelli: Optimizing, Qualitatively managed, Defined, Managed, Initial)\r\nModel: insieme di requisiti via via pi\u00f9 stringenti per valutare il percorso di miglioramento dei processi dell'azienda (utile per confrontarne di diverse).\r\nIntegration: architettura di integrazione delle diverse discipline (sys, HW, SW) e tipologie di attivit\u00e0 delle aziende",
-        "eng": "CMMI"
-    },
-    "253": {
-        "id": "verificatore",
-        "voce": "verificatore (profilo professionale)",
-        "def": "Chi verifica il lavoro dei programmatori.",
-        "eng": "verifier"
-    },
     "254": {
         "id": "architettura_qualita",
         "voce": "Architettura: qualit\u00e0 possedute",
@@ -1054,18 +856,6 @@
         "voce": "validazione del software",
         "def": "Conferma tramite esami e fornendo evidenze obiettive che le specifiche del sofware sono conformi ai bisogni degli utenti e degli usi che ne sono intesi, e che i requisiti particolari implementati tramite software sono consistentemente soddisfatti",
         "eng": ""
-    },
-    "257": {
-        "id": "verifica",
-        "voce": "verifica",
-        "def": "Valutare se un prodotto soddisfa requisiti, regole o altre condizioni necessarie.\r\nAccertare che l'esecuzione delle attivit\u00e0 di processo non abbia introdotto errori. Rivolta ai processi: viene svolta per accertare il rispetto di regole, convezioni o procedure.\r\nSi occupa di accertare che l'esecuzione delle attivit\u00e0 di processi svolti nella fase in esame non abbia introdotto errori nel prodotto",
-        "eng": "verification"
-    },
-    "258": {
-        "id": "validazione",
-        "voce": "validazione",
-        "def": "S'occupa di accertare che il prodotto realizzato corrisponda alle attese.\r\nLa garanzia che un prodotto soddisfi i requisiti da cui \u00e8 nato.\r\n\u00c8 rivolta ai prodotti finali.",
-        "eng": "validation"
     },
     "261": {
         "id": "unit\u00e0",
@@ -1103,12 +893,6 @@
         "def": "Insieme di attivit\u00e0 che valutano i processi con i quali un prodotto viene sviluppato.\r\nServe a raccogliere tempestivamente evidenza oggettiva e di qualit\u00e0, a fronte di specifiche metriche ed obiettivi definiti, per dare evidenza oggettiva, per controllo (interno) ed accertamento (esterno).\r\nUsa ISO\/IEC 9126 come riferimento; la qualit\u00e0 \u00e8 valutata a posteriori.",
         "eng": "quality assurance"
     },
-    "276": {
-        "id": "ISO_IEC 9126",
-        "voce": "ISO\/IEC 9126",
-        "def": "Standard internazionale che fornisce un modello per la qualit\u00e0 del software.\r\nPropone un approccio alla qualit\u00e0 in modo che le aziende possano migliorare l'organizzazione ed i processi, e come conseguenza concreta, il prodotto sviluppato.\r\nCatalogazione sistematica delle caratteristiche rilevanti.\r\n>Visione esterna: relativa all'esecuzione del prodotto (product requirements)\r\n>Visone interna: relativa al prodotto non in esecuzione (product-component requirements)\r\n>Visione in uso: relativa alla percezione dell'utente\/operatore (customer requirements).\r\nIl modello di qualit\u00e0 stabilito nella prima parte dello standard,  \u00e8 classificato da sei caratteristiche generali (funzionalit\u00e0, affidabilit\u00e0, efficienza, usabilit\u00e0, manutenibilit\u00e0, portabilit\u00e0).\r\nLa funzionalit\u00e0 \u00e8 un \"requisito funzionale\" a differenza delle ultime cinque caratteristiche chiamate invece \" requisiti non funzionali\" o \"requisiti di qualit\u00e0\".",
-        "eng": "ISO\/IEC 9126"
-    },
     "277": {
         "id": "programma_verificabile",
         "voce": "Programma verificabile",
@@ -1133,23 +917,11 @@
         "def": ">Fissa la relazione tra i prodotti del processo di sviluppo, usando matrici di tracciabilit\u00e0.\r\n>In avanti (forward) = completezza. Ciascun ingresso ad una fase deve essere messo in relazione con una specifica uscita da quella fase. Fatta con le matrici di tracciabilit\u00e0.\r\n>All'indietro (backward) = necessit\u00e0. Ciascuna uscita dalla fase dev'essere messa in relazione con uno specifico ingresso a quella fase.",
         "eng": ""
     },
-    "282": {
-        "id": "tracciamento",
-        "voce": "tracciamento",
-        "def": "Mira a dimostrare la completezza e l'economicit\u00e0 della soluzione (soddisfacimento di tutti i requisiti, nessuna funzionalit\u00e0 superflua, nessun componente ingiustificato).\r\nLa luogo su ogni passaggio dello sviluppo (ramo discendente) e su ogni ramo della verifica (ramo ascendente).\r\nPu\u00f2 essere altamente automatizzato!\r\nParticolari stili di programmazione facilitano il tracciamento: l'assegnare singoli requisiti elementari a singoli moduli del programma richiede una sola procedura di prova e rende pi\u00f9 chiara e semplice la corrispondenza tra essi.\r\nMaggiore \u00e8 l'astrazione (potenza espressiva) di un costrutto del linguaggio, maggiore \u00e8 la qualit\u00e0 di codice oggetto eseguito per esso e maggiore \u00e8 anche l'onere di dimostrazione di corrispondenza.",
-        "eng": ""
-    },
     "283": {
         "id": "analisi_statica",
         "voce": "analisi statica",
         "def": "Valutazione di un sistema (o di una sua componente) basata sulla sua forma, struttura, contenuto o documentazione. Non richiede l'esecuzione del software in alcuna sua parte, \u00e8 essenziale quando il sistema non \u00e8 ancora completamente disponibile. Studia le caratteristiche del codice sorgente e talvolta del codice oggetto e della documentazione associata, alla ricerca della conformit\u00e0 a regole date, l'assenza da difetti e la presenza di propriet\u00e0 positive.\r\nApplicano ad ogni prodotto di processo (non solo sw: per tutti i processi attivati nel prj).\r\nMetodi di lettura (desk check) sono applicati solo per prodotti semplici).\r\nMetodi formali, si basano sulla prova assistita di proprit\u00e0, la cui dimostrazione dinamica pu\u00f2 essere troppo onerosa; verifica di equivalenza o generazione automatica.\r\nL'efficacia dei metodi di analisi \u00e8 funzione della qualit\u00e0 di strutturazione del codice.\r\n\r\nCostruisce modelli astratti del sw in esame: questi modelli rappresentano ogni programma come un grafo e ne studiano i cammini possibili; le variazioni tra stati (archi) hanno etichette che descrivono propriet\u00e0 sintattiche o semantiche dell'istruzione corrispondente. Ciascun flusso di controllo (thread) viene rappresentato ed analizzato separatamente (assumendo la non-interferenza).",
         "eng": "static analysis"
-    },
-    "284": {
-        "id": "analisi_statica_tipi",
-        "voce": "Analisi statica: tipi",
-        "def": "1. Flusso di controllo;\r\n2. Flusso dei dati; \r\n3. Flusso dell'informazione; \r\n4. Esecuzione simbolica;\r\n5. Verifica formale del codice;\r\n6. Verifica del limite;\r\n7. Uso dello stack;\r\n8. Comportamento temporale;\r\n9. Interferenza.\r\nSono tute tecniche in aggiunta all'analisi dinamica!",
-        "eng": ""
     },
     "287": {
         "id": "caratterizzazione",
@@ -1349,12 +1121,6 @@
         "def": "Per ogni test d'unit\u00e0 si definiscono l'oggetto, la strategia, le risorse necessarrie ed il piano d'esecuzione. \r\nVedi: Statement coverage; branch coverage.\r\nFattore di copertura: quanto la prova esercita il prodotto.\r\n-Copertura funzionale: rispetto alla percentuale di funzionalit\u00e0 esercitate, come sono viste dall'esterno\r\n-copertura strutturale (branch, condition): rispetto alla percentuale di logica interna del codice esercitata.\r\nLa copertura del 100% non provoca l'assenza di difetti, e pu\u00f2 essere irraggiungibile.",
         "eng": "coverage"
     },
-    "331": {
-        "id": "SPY",
-        "voce": "SPY",
-        "def": "Software Process Assessment and Improvement, standard per il miglioramento e la valutazione della qualit\u00e0 di processo.\r\nConsite nella valutazione oggettiva dei processi di una organizzazione, per darne un giudizio di maturit\u00e0 ed individuare azioni migliorative.",
-        "eng": "SPY"
-    },
     "332": {
         "id": "maturit\u00e0_prodotto",
         "voce": "Maturit\u00e0 di prodotto",
@@ -1468,5 +1234,341 @@
         "voce": "metriche per software OO",
         "def": "Occorrono metriche dedicate: quelle tradizionali non sono accurate, c'\u00e8 complessit\u00e0 sia funzionale che strutturale, il codice non \u00e8 lineare (SLOC non funziona), vengono usate strutture e funzioni complesse (McCabe non funziona come misura assoluta).\r\nQueste sono: metriche per i metodi, per le classi e per i sistemi.",
         "eng": ""
+    },
+    "357": {
+        "id": "stati_progresso_SEMAT_2",
+        "voce": "Stati di progresso per SEMAT",
+        "def": "\u2022 Architecture selected, dobbiamo scegliere l\u2019architettura e dobbiamo spiegare perch\u00e9 essa \u00e8 adatta al sistema. Selezione delle tecnologie necessarie, posso quindi fare stime di costo sensate. Decisione su buy, build, make. In questo stadio di avanzamento non c\u2019\u00e8 nemmeno una linea di codice, niente di realizzato;\r\n\u2022 Demonstrable, dimostrazione delle principalei caratteristiche del sistema agli stakeholder, i quali concordano. Decisioni su interfacce e configurazioni di sistema. Ho fatto e ho completato la progettazione ad alto livello ed eventualmente ho dei prototipi, ma non ho ancora implementato nulla;\r\n\u2022 Usable, il sistema \u00e8 usabile e ha le caratteristiche desiderate. Non \u00e8 completamente finito, ho ancora difetti, ma essi sono accettabili. Quindi possiamo sperare di iniziare a fare la revisione di collaudo;\r\n\u2022 Ready, il prodotto \u00e8 cos\u0131\u0300 maturo che posso iniziare a scrivere il manuale utente. Si \u00e8 infatti professionali se si fornisce all\u2019utente un manuale con una struttura. E in quest\u2019epoca non sono pi\u00f9 solo documenti cartacei, ma anche e soprattutto con altri mezzi.",
+        "eng": ""
+    },
+    "359": {
+        "id": "ISO\/IEC_42010",
+        "voce": "ISO\/IEC 42010",
+        "def": "International standard for architecture descriptions of systems and software.\r\n\u2022 L\u2019architettura \u00e8 un modo per distinguere le parti (divide);\r\n\u2022 Quelle parti sono organizzate (impera);\r\n\u2022 Per poter avere un\u2019organizzazione di parti bisogna avere delle interfacce che facilitino l\u2019organizzazione;\r\n\u2022 Paradigma di composizione, il criterio con cui metto insieme queste parti, regole, criteri, vincoli che hanno impatto sulla manutenzione futura.",
+        "eng": "i"
+    },
+    "360": {
+        "id": "riuso",
+        "voce": "Riuso",
+        "def": "Occasionale (opportunistico) \u2013 \u00abcopia-incolla\u00bb a basso costo e scarso impatto.\r\nSistematico (per progetto, per prodotto, per azienda) a maggior costo ma maggior impatto.\r\nMira a capitalizzare sottoinsiemi gi\u00e0 esistenti, impiegandoli pi\u00f9 volte per pi\u00f9 prodotti, ottenendo un minor costo realizzativo e di verifica. Ma progettare per riuso \u00e8 pi\u00f9 difficile, visto che si deve anticipare i bisogni futuri; in pi\u00f9 non \u00e8 immediato, visto che si devono minimizzare le modifiche alle componenti riusate per non perderne il valore.\r\nCostituisce -nel breve periodo- un puro costo. Diventa risparmio nel medio termine (\u00e8 quindi un investimento).\r\nHa due forme:\r\n\u2022 Riuso interno, uso cose che ho fatto io;\r\n\u2022 Riuso esterno, uso cose gi\u00e0 fatte da altri.\r\nIl primo atteggiamento \u00e8 guardare fuori se ci sono cose utili e abbastanza solide",
+        "eng": "Reuse"
+    },
+    "361": {
+        "id": "SPY",
+        "voce": "SPY",
+        "def": "Software Process Assessment and Improvement, standard per il miglioramento e la valutazione della qualit\u00e0 di processo.\r\nConsite nella valutazione oggettiva dei processi di una organizzazione, per darne un giudizio di maturit\u00e0 ed individuare azioni migliorative.\r\nDice che posto sotto ogni processo ci dev\u2019essere un meccanismo capace di misurare come sta andando il processo rispetto a obiettivi di qualit\u00e0 misurabili.",
+        "eng": "SPY"
+    },
+    "363": {
+        "id": "governance",
+        "voce": "governance",
+        "def": "Sinonimo di efficacia, efficienza, mantenibilit\u00e0 e visione.",
+        "eng": ""
+    },
+    "367": {
+        "id": "ISO_IEC 15504",
+        "voce": "ISO\/IEC 15504:1998",
+        "def": "Standard internazionale per il miglioramento e la valutazione della qualit\u00e0 di processo.\r\nNato per armonizzare SPY con ISO\/IEC 12207 ed ISO 9001.\r\nDisarticola ogni processo in caratteristiche rilevanti su quel processo e su ogni attributo di processo attacca un\u2019etichetta che dice a che punto siamo su quel processo.",
+        "eng": "ISO\/IEC 15504"
+    },
+    "368": {
+        "id": "ISO_IEC 9126",
+        "voce": "ISO\/IEC 9126",
+        "def": "Standard internazionale che fornisce un modello per la qualit\u00e0 del software.\r\nPropone un approccio alla qualit\u00e0 in modo che le aziende possano migliorare l'organizzazione ed i processi, e come conseguenza concreta, il prodotto sviluppato.\r\nCatalogazione sistematica delle caratteristiche rilevanti.\r\n>Visione esterna: relativa all'esecuzione del prodotto (product requirements)\r\n>Visone interna: relativa al prodotto non in esecuzione (product-component requirements)\r\n>Visione in uso: relativa alla percezione dell'utente\/operatore (customer requirements).\r\nIl modello di qualit\u00e0 stabilito nella prima parte dello standard,  \u00e8 classificato da sei caratteristiche generali (funzionalit\u00e0, affidabilit\u00e0, efficienza, usabilit\u00e0, manutenibilit\u00e0, portabilit\u00e0).\r\nLa funzionalit\u00e0 \u00e8 un \"requisito funzionale\" a differenza delle ultime cinque caratteristiche chiamate invece \" requisiti non funzionali\" o \"requisiti di qualit\u00e0\".\r\nPer la qualit\u00e0 ho bisogno della metrica per avere un sistema di valutazione. Principi:\r\n1. Funzionalit\u00e0, avere le funzionalit\u00e0 attive \u00e8 qualit\u00e0;\r\n2. Affidabilit\u00e0;\r\n3. Efficienza, devo metterci poco tempo, quante risorse uso per fare una determinata cosa;\r\n4. Usabilit\u00e0, non vanno bene cose troppo complesse per gli utilizzatori;\r\n5. Mantenibilit\u00e0;\r\n6. Portabilit\u00e0.",
+        "eng": "ISO\/IEC 9126"
+    },
+    "369": {
+        "id": "prestazioni_requisiti",
+        "voce": "Prestazioni (requisiti)",
+        "def": "Usabilit\u00e0 significa che il sistema si presta alle mie abilit\u00e0 ed \u00e8 facile da usare.\r\nSicurezza significa che vanno garantiti alcuni vincoli sui dati e la loro accessibilit\u00e0.\r\nAvailability significa che il sistema \u00e8 sempre disponibile 24h\/24 e deve sempre funzionare.\r\nPortabilit\u00e0, se sviluppo un sistema per un certo protocollo voglio poterlo riusare per protocolli differenti.\r\nMantenibilit\u00e0, quando rilascio un sistema ad un utente devo garantire di poter correggere i difetti e ag-\r\ngiungere ulteriori funzionalit\u00e0 in futuro.",
+        "eng": ""
+    },
+    "370": {
+        "id": "IEEE_830-1998",
+        "voce": "IEEE 830-1998",
+        "def": "Reccomended Practice for Software Requirements Specifications.\r\nocumento che descrive le pratiche raccomandate per scrivere un\u2019analisi dei requisiti.\r\nCi sono 8 propriet\u00e0 fondamentali:\r\n1. Non ambigui, mai alcuna incertezza su che cosa significano;\r\n2. Correcti, non deve nascere sbagliato perch\u00e8 fa danni;\r\n3. Completi;\r\n4. Verificabili a basso costo;\r\n5. Consistenti non posso chiedere una cosa e il suo contrario;\r\n6. Modificabili, serve una tecnica che renda modificabile l\u2019insieme dei requisiti. Sui requisiti devo poter aggiungere, togliere, cercare, aggiornare: operazioni tipiche da basi di dati;\r\n7. Tracciabili, deve essere univocamente identificabile;\r\n8. Ordinati (ranked) per rilevanza.",
+        "eng": "IEEE 830-1998"
+    },
+    "372": {
+        "id": "stati_progresso_req_SEMAT",
+        "voce": "Stati di processo  dei requisiti per SEMAT",
+        "def": "I requisiti hanno un ciclo di vita proprio che passa attraverso 6 stati, ciascuno con delle dipendenze:\r\n>Conceived (committente identificato; gli stakeholders vedono sufficienti opportunit\u00e0 per il progetto)\r\n>Bounded (i macro bisogni sono chiari, i meccanismi di gestione dei requisiti sono fissati)\r\n>Coherent (requisiti classificati e quelli essenziali\/obbligatori sono chiari e ben definiti)\r\n>Acceptable (requisiti fissati definiscono un sys sufficiente agli stakeholders)\r\n>Addressed (il prodotto soddisfa i principali requisiti al punto da poter meritare rilascio ed uso)\r\n>Fullfilled (il prodotto soddifa abbastanza requisiti da meritare la piena approvazione degli stakeholders).\r\n",
+        "eng": ""
+    },
+    "374": {
+        "id": "gestione_della_qualit\u00e0",
+        "voce": "Gestione della qualit\u00e0",
+        "def": "L'insieme dei processi che assicurano che prodotti e implementazioni di processi rispettino gli obiettivi di qualit\u00e0 (di un'organizzazione) e soddisfino gli stakeholder.\r\nLa struttura organizzativa, le responsabilit\u00e0, le procedure, i procedimenti e le risorse messe in atto per il perseguimento della qualit\u00e0.\r\n\u2022 Pianificazione, voglio che le attivit\u00e0 siano sistematiche nel modo richiesto; la pianificazione \u00e8 alla\r\nbase di ogni sistema di qualit\u00e0. Senza pianificazione \u00e8 molto pi\u00f9 facile fallire; \u00e8 relativa a obiettivi specifici di qualit\u00e0. Per raggiungere quegli obiettivi serve fare cose specifiche e aggiuntive, ma devo anche avere le risorse per poterlo fare. \u201cCosa mi serve per fare meglio\u201d, inteso come competenze e infrastrutture.\r\n\u2022 Controllo, ogni attivit\u00e0 svolta pu\u00f2 introdurre errori e devo cercare di intercettarli; un sistema di\r\nqualit\u00e0 ha bisogno di verifica; dev\u2019essere intelligente, rapido, mirato e oggettivo. Devo avere chiaro quale attivit\u00e0 svolgere. Cerco di farlo in modo incrementale.\r\n\u2022 Miglioramento continuo.",
+        "eng": "quality management"
+    },
+    "376": {
+        "id": "controllo_configurazione",
+        "voce": "Controllo di configurazione",
+        "def": "Ho bisogno di uno strumento che mi dica da quali CI \u00e8 costituita una baseline. Conseguentemente, una baseline va documentata. Esiste dunque un\u2019attivit\u00e0 aggiuntiva che si chiama controllo di configurazione. Questa attivit\u00e0 \u00e8 molto delicata perch\u00e8 mi dice lo stato di avanzamento del prodotto. La modifica \u00e8 un atto che deve essere formalmente approvato, perch\u00e8 \u00e8 un processo sui cui vogliamo iterare. Occorre introdurre un sistema rigido di gestione delle modifiche che vengano fatte a fronte di una richiesta. Si cambia la baseline cambiando una o pi\u00f9 CI che cambiano la loro versione. Chi vuole cambiare deve avere un motivo per cui valga la pena, quindi serve un documento che va ad un\u2019autorit\u00e0 delegata, per capire se il cambiamento \u00e8 accettabile o no (autorit\u00e0 che si chiama \u201dgruppo di decisione\u201d, Change Management Board, CMB). Questo gruppo valuta se il cambiamento \u00e8 accettabile e lancia un ticket per il cambiamento. Chi fa queste azioni reimmette nel sistema il dato modificato. Fare un cambiamento produce un flusso di lavoro, e quindi comporta un costo. Normalmente il responsabile di progetto \u00e8 parte di questo gruppo. La  configurazione evolve attraverso il change management.",
+        "eng": ""
+    },
+    "379": {
+        "id": "pianificazione_progetto",
+        "voce": "Pianificazione di progetto",
+        "def": "serve a sapere cosa dobbiamo fare nell\u2019assicurarci che le nostre attivit\u00e0 producano esiti che aiutino la nostra collaborazione; regolare l\u2019avanzamento. Cominciamo ad identificare\r\n\u201ccosa c\u2019\u00e8 da fare\u201d, pianifichiamo le attivit\u00e0, flussi di attivit\u00e0 e flussi di azione. Chi lo pu\u00f2 fare? Quanto mi costa? Le attivit\u00e0 hanno un flusso, hanno un inizio ed un\u2019uscita. Si dipanano su un asse temporale. Capite le attivit\u00e0 mi devo chiedere chi posso mettere l\u0131\u0300, come ruoli (non come persone). Attivit\u00e0 che hanno dei vincoli sugli estremi ed eventualmente in mezzo. Devo capire quanto mi servir\u00e0 per svolgere un\u2019attivit\u00e0 data,\r\ntempo, persone, denaro. Le ore vanno intese come ore di calendario: tempo\/persona, quanto tempo uso tali persone sapendo che ciascuna percepisce un costo orario preciso. In base a questo posso capire quanto mi coster\u00e0 un progetto.\r\n>Definizione delle attivit\u00e0\r\n  [pianificarne lo svolgimento + controllarne l'attuzione; avere una base su cui gestire l'allocazione delle risorse; stimare e controllare scadenze e costi]\r\n> Strumenti di pianificazione: diagr. Gantt, Programme Evaluation and Review Technique (PERT), Work Breakdown Structure (WBS)",
+        "eng": "Project pianification"
+    },
+    "380": {
+        "id": "diagramma_di_Gantt",
+        "voce": "diagramma di Gantt",
+        "def": "Diagramma che rappresenta la durata, la sequenzialit\u00e0 e il parallelismo delle attivit\u00e0 di un progetto.\r\nSi basa sulla dislocazione temporale delle attivit\u00e0, per rappresentarne la durata, la sequenzialit\u00e0 ed il parallelismo e confrontare stime e progressi.\r\nPrima cosa da fare: determino le attivit\u00e0 da svolgere su tutta la durata o su periodi pi\u00f9 piccoli. L\u2019orizzonte \u00e8 dato in parte dal modello di ciclo di vita che adotto. Poi determinare le dipendenze, che consumano tempo e non producono, devo identificarle. Terza cosa, dire quanto tempo e persone mi serviranno per una certa attivit\u00e0; una volta decise le risorse, alloco persone alle attivit\u00e0. Poi mettiamo a diagramma le cose e vediamo se tornano, altrimenti si torna indietro (ciclo). I diagrammi mi aiutano a capire se riesco a gestire il tutto.\r\nCreati oltre 100 anni fa; sull\u2019asse orizzontale c\u2019\u00e8 il tempo segmentato per unit\u00e0 di lavoro (es. 1gg, una settimana, un mese..). Una buona scelta \u00e8 utilizzare come unit\u00e0 di misura un giorno (8 ore lavorative); ma ho un calendario (es. sabato e domenica non si lavora). Sull\u2019asse orizzontale ci sono tutte le attivit\u00e0 che devo svolgere e archi che rappresentano le transizioni tra una e l\u2019altra. Le dipendenze logiche tra attivit\u00e0: quelle che non hanno dipendenze partono subito, la seconda \u00e8 la durata minima di tempo\/persone che posso usare per una determinata attivit\u00e0. Work allocation, in questa fase non sto allocando persone ma ruoli.",
+        "eng": "Gantt diagram"
+    },
+    "381": {
+        "id": "diagramma_PERT",
+        "voce": "diagramma PERT (Project Evaluation and Review Technique)",
+        "def": "Rete che rappresenta le dipendenze temporali (e le criticit\u00e0) tra attivit\u00e0 di un progetto.\r\nserve a calcolare il rischio di calendario che\r\nconsiste nell\u2019avere un realistico margine tra un input e un output (slack). Se misuro lo slack e mi accorgo che \u00e8 0 o negativo ho una criticit\u00e0. E\u2019 bene sapere che non ci sia questo rischio. Non si pu\u00f2 avere nemmeno slack troppo grande. Diagrammi specifici che collocano gli slack e rappresentano il rischio. Indica l\u2019ordine delle attivit\u00e0 e la loro durata e indica la prima data in cui posso iniziare un\u2019attivit\u00e0 che abbia tutti gli input necessari. Calcolando il cammino pi\u00f9 lungo tra l\u2019inizio e la fine del progetto posso calcolare l\u2019attivit\u00e0 che finisce prima. Questo diagramma legge il Gantt rispetto allo slack e calcola i cammini critici.",
+        "eng": "PERT diagram"
+    },
+    "382": {
+        "id": "diagramma_WBS",
+        "voce": "diagramma WBS (Work Breakdown Structure)",
+        "def": "Diagramma che decompone in modo gerarchico le attivit\u00e0 di un progetto in sotto-attivit\u00e0 (coese ma non necessariamente sequenziali ed univocamente identificate).\r\nstrumento per capire quali sono le attivit\u00e0 utili\/fondamentali tramite decomposizione (struttura di decomposizione del lavoro). L\u2019attivit\u00e0 viene scomposta e numerata con numerazione gerarchica. Ogni componente deve essere univocamente identificabile.\r\nUn\u2019attivit\u00e0 decomposta permette di agevolare il parallelismo. Se non frammento ammasso un grosso rischio su una persona. Attenzione moto acuta sulla dimensione di attivit\u00e0. Il WBS serve ad avere una percezione delle attivit\u00e0 fini (foglie) da svolgere.",
+        "eng": "WBS diagram"
+    },
+    "383": {
+        "id": "legge_domanda",
+        "voce": "Legge della domanda",
+        "def": "Wuanto pi\u00f9 \u00e8 basso il prezzo di una cosa tanto pi\u00f9 grande sar\u00e0 la domanda per quella cosa l\u0131\u0300. Uso in abbondanza le cose che costano poco",
+        "eng": ""
+    },
+    "384": {
+        "id": "rischi_progetto",
+        "voce": "rischi nel progetto",
+        "def": "I rischi latenti provocano problemi alla gestione di progetto:\r\n\u2022 Variante nel personale, nella disponibilit\u00e0 e nella composizione del team. Le persone possono \u201dsparire\u201d. A quel punto bisogna trovare un rimpiazzo. Questa cosa va gestita, devo fare un piano;\r\n\u2022 Tecnologia, non sta mai ferma; due tecniche: chi usa solo tecnologie consolidate (esempio uso di cobol nelle banche) perch\u00e9 cambiare produce rischio, e chi usa tecnologia innovativa (per motivi di competizione) ma fortemente instabile. Questa variabilit\u00e0 \u00e8 un grande rischio.\r\nAlcuni rischi sono evitabili:\r\n\u2022 Cambio di requisiti;\r\n\u2022 Ritardo nelle specifiche.",
+        "eng": ""
+    },
+    "385": {
+        "id": "ruoli",
+        "voce": "Ruoli aziendali",
+        "def": "Il team necessita di ruoli, che identificano capacit\u00e0 e compiti. Dentro un\u2019organizzazione produttiva ci sono raggruppamenti di ruoli. Un ruolo \u00e8 attivo su un progetto, la competenza di istanza di chiama funzione aziendale.\r\n\u2022 Qualit\u00e0, ci\u00f2 che ci consente di puntare al miglioramento continuo di efficienza ed efficacia. Qualit\u00e0 di prodotto \u00e8 diverso da qualit\u00e0 di processo. E\u2019 pi\u00f9 importante la qualit\u00e0 di processo;\r\n\u2022 Sviluppo, insieme delle competenze per la parte di attivit\u00e0 tecnica e realizzativa del prodotto;\r\n\u2022 Direzione, fa s\u0131\u0300 che l\u2019organizzazione possa stare in piedi;\r\n\u2022 Amministrazione, (\u201dservice manager \u201d) erogano\/gestiscono l\u2019infrastruttura che aiuta a fare il proprio lavoro (es. manutenzione e sicurezza). Se esiste una buona infrastruttura si lavora meglio.",
+        "eng": ""
+    },
+    "386": {
+        "id": "analista",
+        "voce": "analista (profilo professionale)",
+        "def": "Aiuta l\u2019avanzamento di maturit\u00e0 dei requisiti; \u00e8 molto importante e occorre avere competenze su molti fronti, sapere ascoltare gli stakeholder, scrivere requisiti bounded e coherent, ragionevoli, utili, realizzabili e verificabili. E\u2019 un compito molto delicato, deve sapere se un requisito si pu\u00f2 fare. Non pu\u00f2 promettere cose insensate. Sono competenze cos\u0131\u0300 decisive che ci sono pochi analisti. L\u2019analista pensa al problema, non alla soluzione;fa l'analisi dei requisiti.\r\nChi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista;",
+        "eng": "analyst"
+    },
+    "387": {
+        "id": "progettista",
+        "voce": "progettista (profilo professionale)",
+        "def": "Chi sintetizza una soluzione a partire dalle specifiche di un problema gi\u00e0 analizzato. \r\nDeve avere competenze tecnologiche e tecniche. Ricevuto il problema tira fuori la migliore soluzione possibile nel rispetto dei vincoli finanziari e temporali. Competenze tecnologiche senza pregiudizi, ma in relazione alle necessit\u00e0. Deve sapere di architettura, mettere insieme le parti della soluzione (divide et impera). Rende il problema piccolo affinch\u00e9 sia dominabile. Le parti devono essere organizzate in modo da essere governabili. Queste parti devono funzionare in un\r\naggregato coerente. Un solo progettista in un team;",
+        "eng": "designer"
+    },
+    "388": {
+        "id": "programmatore",
+        "voce": "programmatore (profilo professionale)",
+        "def": "Chi implementa una parte della soluzione dei progettisti.\r\nNon inventa niente, deve fare ci\u00f2 che ha detto il progettista. Deve scrivere in modo non ambiguo. Il passaggio di consegna tra progettista e programmatore deve essere chiaro. Permette il massimo parallelismo. Ho tanti programmatori quanti posso averne;",
+        "eng": "programmer"
+    },
+    "389": {
+        "id": "verificatore",
+        "voce": "verificatore (profilo professionale)",
+        "def": "Chi verifica il lavoro dei programmatori.\r\nLa validazione si fa sul prodotto finito. Impiega almeno 1\/3 del tempo. E\u2019 un ruolo attivo da subito. Serve per creare l\u2019ambiente giusto, a rendere puliti i requisiti. E\u2019 presente sempre, su tutto l\u2019arco del progetto. Include anche la verifica del codice: \r\n1) impone al programmatore stesso di verificare il suo codice, \r\n2) lo fa verificare ad una terza persona indipendente;",
+        "eng": "verifier"
+    },
+    "390": {
+        "id": "responsabile_di_progetto",
+        "voce": "responsabile di progetto (profilo professionale)",
+        "def": "Chi pianifica il progetto, assegna le persone ai ruoli giusti e rappresenta il progetto presso il fornitore e il committente.\r\nCe ne sar\u00e0 1. Fa da intermediario, che dice \u201dcome siamo messi \u201d; pianifica, gestisce risorse e rischi, coordina. Responsabilit\u00e0 su relazioni esterne. Deve sapere ci\u00f2 di cui parla. Diventa responsabile dopo avere acquisito esperienza su altri ruoli;",
+        "eng": "project manager"
+    },
+    "392": {
+        "id": "amministrare_progetto",
+        "voce": "Amministrare un progetto (profilo professionale)",
+        "def": "Equipaggiare, organizzare e gestire l\u2019ambiente di lavoro e di produzione (regole+procedure+strumenti&servizi; supporto di tutti i processi istanziati nel prj).\r\nLe attivt\u00e0 sono: la redazione e la manutenzione di regole e procedure di lavoro, il reperimento, l'organizzazione, la gestione e la manutenzione di risorse informatiche per l'erogazione dei servizi di supporto.",
+        "eng": "Project administration"
+    },
+    "393": {
+        "id": "amministratore_di_progetto",
+        "voce": "amministratore di progetto (profilo professionale)",
+        "def": "Chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione.\r\nNon compie scelte gestionali ma attua le scelte tecnologiche concordate coi responsabili aziendali e del progetto.\r\nRuolo molto utile, prepara l\u2019ambiente di lavoro, strumento di collaborazione e controllo di avanzamento. Gestione della documentazione di progetto. Risoluzione di problemi legati alla gestione di processi. Assegnazione di tickets, un incarico con scadenza assegnato ed accettato.",
+        "eng": "project administrator"
+    },
+    "394": {
+        "id": "ciclo_di_vita_prodotto",
+        "voce": "ciclo di vita (di un prodotto)",
+        "def": "Insieme degli stati che il prodotto assume, dal concepimento al ritiro. Conoscere il ciclo di vita ci aiuta a capire la swe. Il sw va inteso in un senso molto pi\u00f9 ampio di \u201dprogramma\u201d, serve per soddisfare i requisiti di qualcuno. Queste cose evolvono nel tempo e raggiungono stati tramite transizioni scatenate da attivit\u00e0 che hanno il fine di far avanzare il sw. Si divide in 4 fasi:\r\n\u2022 Concezione, quando qualcuno pensa che ci sia (o abbia) bisogno di qualcosa;\r\n\u2022 Sviluppo;\r\n\u2022 Utilizzo;\r\n\u2022 Ritiro.\r\nQuesti stati cambiano attraverso attivit\u00e0 specifiche, derivanti da processi di cicli di vita.\r\nFase, \u00e8 un periodo di tempo contiguo con un inizio ed una fine. Un prodotto sw si spalma nel tempo.\r\nImmaginare il ciclo di vita su un asse temporale, le fasi sono segmenti tra uno stato e l\u2019altro.\r\nE\u2019 importante avere un ciclo di vita chiaro in testa, perch\u00e9 averlo ci fa capire quello che dobbiamo fare e se\r\nsiamo in grado di farlo. Il compito fondamentale \u00e8 utilizzare un approccio quantificabile, in modo da poter\r\nmisurare gli obiettivi e le aspettative. Cosa devo fare? Perch\u00e9? Sono capace in questo modo di puntare a\r\nuna qualit\u00e0 misurabile.\r\nConformit\u00e0, un grado di corrispondenza ad aspettative (efficacia). Misurare quanto soddisfiamo (siamo\r\nconformi) le aspettative.\r\nMaturit\u00e0, \u00e8 il grado di stabilit\u00e0 con il quale siamo in grado di fare le cose. Siamo maturi quando abbiamo\r\nacquisito il \u201dmodus operandi \u201d. Essere sistematici attraverso un processo di maturit\u00e0.\r\nModello di ciclo, astrazione del modo nel quale vediamo gli stati e il loro avanzamento.\r\nNon modello, \u201dcode and fix \u201d, raggiungere la correttezza \u201dby correction\u201d. Non so perch\u00e9 ce l\u2019ho fatta.\r\nPrima faccio, poi penso, insieme negativo delle cose da fare. La programmazione \u00e8 una delle attivit\u00e0 meno\r\nimportanti, deve essere la conseguenza.",
+        "eng": "software product life cycle"
+    },
+    "395": {
+        "id": "metodi_agili",
+        "voce": "Metodi agili",
+        "def": "Opposizione al modello sequenziale. 4 principi su cui si basa:\r\n1. Mettere in primo piano persone e iterazioni piuttosto che processi e strumenti. Gli individui sono importanti ed \u00e8 importante il modo in cui interagiscono tra loro;\r\n2. \u201dDei documenti me ne frego, basta che funzioni \u201d. La documentazione non sempre corrisponde a sw funzionante. E\u2019 importante che funzioni. Ma nel lungo periodo far\u00e0 soffrire chi dovr\u00e0 prendere in mano il sw;\r\n3. Avere un buon rapporto con il customer, coinvolgerlo, non ingessare il rapporto;\r\n4. Reattivit\u00e0 piuttosto che pianificazione. Capacit\u00e0 di adattamento a cambiamenti delle situazioni.\r\nL'idea di base \u00e8 il concetto di \"user story\" (compito significativo che l'utente vuole svolgere con il sw richiesto; definita da: documento di descrizione, minuta di converszioni con il cliente per fissare la comprensione comune, strategia da utilizzare per confermare che il sw soddisfi gli obiettivi).\r\nScrum (caos organizzato), Kanban (just-in-time), Scrumban\r\n",
+        "eng": "Agile methods"
+    },
+    "396": {
+        "id": "progetto",
+        "voce": "progetto",
+        "def": "Nasce da una richiesta (e\/o pagamento) che diventa poi un impegno se accettato. Porta dei vincoli : di costo, di risorse, di tempo. Spesso insieme di attivit\u00e0 da svolgere in modo collaborativo.\r\n\u2022 Pianificazione, pianifica chi sa cosa vuole fare, \u00e8 l\u2019essenza per controllarsi, per sapere se stiamo convergendo o divergendo. Ogni attivit\u00e0 inizia con la pianificazione;\r\n\u2022 Analisi dei requisiti, si analizza ci\u00f2 di cui si ha bisogno. L\u2019analisi ha un\u2019importanza decisiva, bisogna capire il problema;\r\n\u2022 Progettazione, si decide la forma della soluzione. Solo dopo si passa ad alla...\r\n\u2022 Realizzazione, dove sta anche la programmazione, che deve aderire al 100% alla progettazione. Nella realizzazione attuo, ma non sono ancora sicuro che il risultato soddisfi il cliente. Per cui...\r\n\u2022 Verifica e validazione;\r\n\u2022 Manutenzione, per la maggior parte della sua vita il prodotto resta in manutenzione. Non esiste vita operativa senza manutenzione, non esiste sw perfetto quindi esso deve essere mantenuto.\r\n\u2022 Qualit\u00e0, uno dei principi su cui punteremo, perch\u00e9 la qualit\u00e0 \u00e8 possibile. Vorremmo quantificare la qualit\u00e0 in modo oggettivo.",
+        "eng": "project"
+    },
+    "397": {
+        "id": "ingegneria_del_software",
+        "voce": "ingegneria del software",
+        "def": "Applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, al funzionamento e al mantenimento del software. Sistematico nel senso che abbraccia un metodo; disciplinato poich\u00e9 segue delle norme, anzi la best practice; quantificabile poich\u00e9 si deve sapere a priori quanto si consumer\u00e0 (in risorse).",
+        "eng": "software engineering"
+    },
+    "398": {
+        "id": "software",
+        "voce": "software",
+        "def": "Per software s'intende il programma con la sua documentazione. A causa dell'assenza di vincoli fisici, il software ha un potenziale illimitato; tuttavia, per lo stesso motivo, esso pu\u00f2 velocemente diventare complesso, difficile da capire e costoso da cambiare. \r\nDifatti, l'IS si confronta con progetti cos\u00ec impegnativi da richiedere necessariamente un lavoro di gruppo.",
+        "eng": ""
+    },
+    "399": {
+        "id": "processo",
+        "voce": "processo (ingegneristico)",
+        "def": "Insieme di attivit\u00e0 correlate e coese che trasformano ingressi in uscite, consumando risorse nel farlo.\r\nIl quadro metodologico, normativo e strategico delle attivit\u00e0 di progetto (insieme delle attivit\u00e0 raggruppate per obiettivi) per alimentare svariati modelli di ciclo di vita del SW.\r\nOgni processo si divide in pi\u00f9 attivit\u00e0. Ogni attivit\u00e0 si divide in compiti. Ogni compito si pu\u00f2 svolgere usando qualche tecnica, cio\u00e8 una sorta di ricetta applicata agli strumenti disponibili. Per strumento s'intende un insieme di concetti e di metodi, con delle tecnologie di supporto.",
+        "eng": "process"
+    },
+    "401": {
+        "id": "modello_spirale",
+        "voce": "Modello a spirale",
+        "def": "Miglior controllo dei rischi di progetto; cicli interni rapidi e ripetuti (dedicati ad analisi e sviluppi prototipali), cicli esterni che aderiscono ad un qualunque altro modello standard di ciclo di vita.\r\nNel 1988 Barry Boehm propose il modello a spirale, che introduce il concetto di \"rischio di progetto\" (cercando di contenere tali rischi). Lo sviluppo procede a cicli inizialmente rapidi ma via via sempre pi\u00f9 lenti; difatti i cicli esterni della spirale sono cos\u00ec lenti che possono aderire, ognuno, ad un diverso modello di ciclo di vita. Ad ogni ciclo si analizzano i rischi e si compiono simulazioni. Misura del successo di un progetto \u00e8 il diametro della spirale. Questo modello viene usato solo da chi intraprende progetti sperimentali, che nessuno ha mai realizzato, e richiede forte interazione tra committente e fornitore. \r\nGrande attenzione sugli aspetti gestionali (pianificazione delle fasi, analisi dei rischi (risk-driven).\r\nUn ciclo si articola generalmente in quattro momenti:\r\n1.Definizione degli obiettivi (requisiti, rischi, strategia di gestione)\r\n2.Analisi dei rischi (studio delle conseguenze, valutazione alternative)\r\n3.Sviluppo e validazione (realizzazione del prodotto)\r\n4.Pianificazione (decisione circa il proseguimento, pianificazione del proseguimento)",
+        "eng": "Spiral model"
+    },
+    "402": {
+        "id": "baseline",
+        "voce": "baseline",
+        "def": "Nel ciclo di vita di un progetto, indica un punto d'arrivo tecnico dal quale non si retrocede; la baseline \u00e8 fatta di elementi della configurazione e, poich\u00e9 ogni parte \u00e8 versionata, possiamo conoscere la differenza tra una baseline e l'altra. Una baseline \u00e8 qualcosa di stabile \u2014 non usa e getta! \u2014 e sta in un repository; serve da base per gli avanzamenti futuri e pu\u00f2 essere cambiata solo tramite procedure di controllo di cambiamento.",
+        "eng": "baseline"
+    },
+    "403": {
+        "id": "norme_progetto",
+        "voce": "Norme di progetto",
+        "def": "Linee guida per le attivit\u00e0 di sviluppo: strumento operativo di complemento alle procedure.\r\nContenuti: organizzazione ed uso delle risorse di sviluppo, convenzioni sull'uso degli strumenti di sviluppo, organizzazione delle comunicazioni e della cooperazione, norme di codifica e gestione dei cambiamenti.\r\nLe norme di progetto descrivono come dovr\u00e0 essere il way of working. Individuiamo due categorie di norme: regole (sottoposte a verifica) e raccomandazioni (suggerimenti, senza verifica). Tra le norme di progetto, particolare rilevanza hanno le norme di codifica; queste hanno l'obiettivo di far s\u00ec che il codice sorgente sia leggibile (anche a distanza di tempo) e costituiscono una misura preventiva che garantisce verificabilit\u00e0, manutenibilit\u00e0 e portabilit\u00e0.",
+        "eng": ""
+    },
+    "404": {
+        "id": "ingegneria_requisiti",
+        "voce": "ingegneria dei requisiti",
+        "def": "Il processo di ingegneria dei requisiti raggruppa quattro attivit\u00e0:\r\n1. studio di fattibilit\u00e0 (stabilire se il sistema in questione \u00e8 redditizio);\r\n2. acquisizione[1] e analisi dei requisiti;\r\n3.specifica dei requisiti (cio\u00e8 formalizzare i requisiti e riportarli in un documento);\r\n4.validazione dei requisiti.\r\nTale processo riguarda tutti gli stakeholder. In genere non \u00e8 possibile soddisfare i requisiti di ognuno di essi, quindi bisogna trovare un buon compromesso; questo presuppone che gli stakeholder vengano identificati, \"pesati\" e interpellati.",
+        "eng": ""
+    },
+    "405": {
+        "id": "tracciamento",
+        "voce": "tracciamento",
+        "def": "Mira a dimostrare la completezza e l'economicit\u00e0 della soluzione (soddisfacimento di tutti i requisiti, nessuna funzionalit\u00e0 superflua, nessun componente ingiustificato).\r\nLa luogo su ogni passaggio dello sviluppo (ramo discendente) e su ogni ramo della verifica (ramo ascendente).\r\nPu\u00f2 essere altamente automatizzato!\r\nParticolari stili di programmazione facilitano il tracciamento: l'assegnare singoli requisiti elementari a singoli moduli del programma richiede una sola procedura di prova e rende pi\u00f9 chiara e semplice la corrispondenza tra essi.\r\nMaggiore \u00e8 l'astrazione (potenza espressiva) di un costrutto del linguaggio, maggiore \u00e8 la qualit\u00e0 di codice oggetto eseguito per esso e maggiore \u00e8 anche l'onere di dimostrazione di corrispondenza.\r\nIn generale, i principali tracciamenti all'interno di un prodotto sono:\r\n> tra requisiti utente (capitolato) e requisiti software (AR);\r\n> tra requisiti software (AR) e descrizione dei componenti (ST);\r\n> tra test di unit\u00e0 e moduli della progettazione di dettaglio (DP);\r\n> tra test di integrazione e componenti architetturali (ST);\r\n> tra test di sistema e requisiti software (AR);\r\n> tra test di accettazione e requisiti utente (capitolato).",
+        "eng": ""
+    },
+    "407": {
+        "id": "fornitore",
+        "voce": "fornitore",
+        "def": "cio\u00e8 chi si impegna a fornire il prodotto richiesto dal proponente; \u00e8 un gruppo di sei o sette studenti che scelgono di rispondere ad un particolare capitolato d'appalto. Il gruppo \u00e8 un'entit\u00e0 coesa provvista di nome, logo e e-mail per le comunicazioni ufficiali.",
+        "eng": ""
+    },
+    "408": {
+        "id": "cliente_proponente",
+        "voce": "cliente o proponente",
+        "def": "Chi ha commissionato il prodotto. Generalmente \u00e8 un'azienda o una startup; propone un capitolato d'appalto in cui viene richiesta la realizzazione di un prodotto specifico.",
+        "eng": ""
+    },
+    "410": {
+        "id": "committente",
+        "voce": "committente",
+        "def": "verifica e valuta l'andamento dei vari progetti",
+        "eng": ""
+    },
+    "411": {
+        "id": "sistema_qualit\u00e0",
+        "voce": "Sistema qualit\u00e0",
+        "def": "La struttura organizzativa, le responsabilit\u00e0, le procedure, i procedimenti e le risorse messe in atto per il perseguimento della qualit\u00e0. Questo sistema gestisce la qualit\u00e0 in tre ambiti:\r\n> La pianificazione, cio\u00e8 le attivit\u00e0 del sistema qualit\u00e0 mirate a fissare gli obiettivi di qualit\u00e0, con i processi e le risorse necessari per conseguire tali obiettivi; \u00e8 una premessa al controllo della qualit\u00e0.\r\n> Il controllo, cio\u00e8 le attivit\u00e0 del sistema qualit\u00e0 pianificate e attuate affinch\u00e9 il prodotto soddisfi i requisiti attesi.\r\n> Il miglioramento continuo, secondo lo schema PDCA.\r\n> Il sistema qualit\u00e0 \u00e8 fissato nelle Norme di Progetto (il Piano di Qualifica fissa invece gli obiettivi di qualit\u00e0: i piani fissano solo obiettivi e strategie per raggiungerli).",
+        "eng": ""
+    },
+    "412": {
+        "id": "ISO_IEC 14598",
+        "voce": "ISO\/IEC 14598",
+        "def": "Standard internazionale che fornisce un processo per la valutazione della qualit\u00e0 del software; integra ISO\/IEC 9216.\r\nDefinizione di metriche per la valutazione delle caratteristiche rilevanti.\r\nMisurazione della qualit\u00e0 software.\r\nMisurazione quantitativa: l'uso di una metrica per assegnare un valore (numero o categoria) su una scala predefinita.\r\nIl processo attraverso cui, secondo regole definite, simboli o numeri sono assegnate ad attributi di una entit\u00e0.\r\n\r\n(Information Technology \u2014 Software Product Evaluation): se ISO\/IEC 9126 definiva un modello della qualit\u00e0 del software, lo standard 14598 descriveva il processo di valutazione della qualit\u00e0 del software; questo si componeva di sei parti:\r\nparte inroduttiva;\r\npianificare e gestire una valutazione;\r\nvalutazione durante lo sviluppo;\r\nvalutazione nella fase di acquisizione;\r\nin fase di assessment di terza parte;\r\ninfine, un esempio di documentazione da produrre in fase di valutazione.",
+        "eng": "ISO\/IEC 14598"
+    },
+    "413": {
+        "id": "ISO_IEC 25000",
+        "voce": "ISO\/IEC 25000",
+        "def": "Famiglia di standard internazionali che vogliono fornire un framework per la valutazione della qualit\u00e0 del software; ha inglobato ISO\/IEC 9126 e ISO\/IEC 14598.\r\nSQuaRE: Software product Requirements And Evaluation.\r\nQuesta famiglia di standard ha lo scopo di creare un framework per la valutazione della qualit\u00e0 del software.",
+        "eng": "ISO\/IEC 25000"
+    },
+    "414": {
+        "id": "ISO 9000",
+        "voce": "ISO 9000",
+        "def": "Famiglia di standard internazionali per la gestione della qualit\u00e0 nei sistemi produttivi.\r\nISO 9000, come documento, introduce i fondamenti e un glossario; invece, ISO 9001 si occupa di calare la visione di ISO 9000 nei sistemi produttivi, introducendo dei requisiti ben specifici. Esistono enti che si occupano di certificare il rispetto di tali requisiti (ISO 9001 \u00e8 quindi anche una certificazione). Infine, ISO 9004 \u00e8 una guida al miglioramento dei risultati.\r\nQuesta famiglia di standard si basa su 7 princ\u00ecpi di gestione della qualit\u00e0 (QMP):\r\n- QMP 1 \u2014 customer focus\r\n- QMP 2 \u2014 leadership\r\n- QMP 3 \u2014 engagement of people\r\n- QMP 4 \u2014 process approach\r\n- QMP 5 \u2014 improvement\r\n- QMP 6 \u2014 evidence-based decision making\r\n- QMP 7 \u2014 relationship management",
+        "eng": "ISO 9000"
+    },
+    "415": {
+        "id": "CMMI",
+        "voce": "CMMI",
+        "def": "Capability Maturity Model + Integration\r\nStandard per il miglioramento e la valutazione della qualit\u00e0 di processo.\r\nDefinito su commessa del DoD al SEI di CMU. \u00c8 un modello per la valutazione uniforme dei fornitori.\r\n>Capability: misura quant'\u00e8 adeguato un processo per gli scopi per cui  \u00e8 stato definito. Caratteristica di un processo misurato singolarmente; determina l'intorno del risultato (di efficienza ed efficacia) raggiungibile usando quel processo. Un processo che ne ha tanta \u00e8 seguito da tutti in modo disciplinato, sistematico e quantificabile, in caso contrario dipenderebbe da chi lo attua, sarebbe definito e seguito in modo opportunistico, sarebbe difficicle prevederne l'esito, avanzamento e qualit\u00e0.\r\n>Maturity: misura di quando \u00e8 governato il sistema dei processi dell'azienda. Caratteristica d'un insieme di processi (quelli significativi rispondono alle esigenze di miglioramento continuo dell'organizzazione); risulta dall'effetto combinato delle capability dei processi coinvolti. 5 livelli: Optimizing, Qualitatively managed, Defined, Managed, Initial)\r\n>Model: insieme di requisiti via via pi\u00f9 stringenti per valutare il percorso di miglioramento dei processi dell'azienda (utile per confrontarne di diverse).\r\n>Integration: architettura di integrazione delle diverse discipline (sys, HW, SW) e tipologie di attivit\u00e0 delle aziende.\r\nHa il concetto di scala: Si parte da osservare che al piano terra c\u2019\u00e8 uno strato iniziale in cui tutti all\u2019inizio si collocano. I processi, se ci sono, sono a questo stadio unpredictable, impredicibili, poorly controlled e reacted. Il livello 2 \u00e8 managed, cio\u00e8 gestito. I processi esistono nei progetti e rimangono prevalentemente reattivi. Il livello 3 \u00e8 definito, i processi sono proattivi, esistono trasversalmente, manca ancora il miglioramento. Il livello 4 introduce misurazione rispetto al controllo e si chiama quantitatively managed. Al livello 5 non soltanto misuriamo ma miglioriamo, optimizing.\r\nAdottando il CMMI aumento del 35% la produttivit\u00e0, riduco del 19% il time to market e riduco del 39% il post-release defect reports (proporzione di difetti residui, ovvero costi di manutenzione).\r\nLimitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzialmente frustrante per le organizzazioni); un'eccessiva concentrazione sulle pratiche (cosa si fa e come); un'insufficiente attenzione agli obiettivi (perch\u00e9 lo si fa).",
+        "eng": "CMMI"
+    },
+    "416": {
+        "id": "SPICE",
+        "voce": "SPICE",
+        "def": "Software Process Improvement Capability dEtermination, vedi ISO\/IEC 15504.\r\nNato nel 1992 per armonizzare SPY con ISO\/IEC 12207 e ISO 9001; nel 1998 \u00e8 confluito in ISO\/IEC 15504 (creato da ISO a partire da CMMI. Qui scompare il concetto di maturity e, al posto dei cinque gradini di maturit\u00e0, si usa una scala pi\u00f9 fine. Le aziende vengono misurate secondo il fatturato e il personale. La sua metodologia di valutazione \u00e8 la seguente:\r\n1. identificazione dei portatori d'interesse (stakeholders: utenti, sviluppatori, valutatori...);\r\n2. scelta tra valutazione e miglioramento;\r\n3. definizione della portata (quali processi vanno inclusi nella valutazione?).\r\nSPICE individua, per ogni processo, i seguenti livelli di capability: incomplete, performed, managed, established, predictable, optimizing. A differenza di CMMI, che individua livelli di maturity (per un insieme di processi), questi sono livelli di capability (per un singolo processo).",
+        "eng": "SPICE"
+    },
+    "418": {
+        "id": "validazione",
+        "voce": "validazione",
+        "def": "S'occupa di accertare che il prodotto realizzato corrisponda alle attese. Va ad accertarsi che i requisiti siano soddisfatti (did I build the right system?).\r\nLa garanzia che un prodotto soddisfi i requisiti da cui \u00e8 nato.\r\n\u00c8 rivolta ai prodotti finali.\r\nLa validazione, non si applica ad un particolare segmento temporale ma \u00e8 una conferma finale, una self-fulfilling prophecy che accerta la conformit\u00e0 di un prodotto alle attese; essa fornisce una prova oggettiva di come le specifiche del prodotto siano conformi al suo scopo e alle esigenze degli utenti. La validazione, a differenza della verifica, coinvolge sempre il committente.",
+        "eng": "validation"
+    },
+    "419": {
+        "id": "verifica",
+        "voce": "verifica",
+        "def": "Valutare se un prodotto soddisfa requisiti, regole o altre condizioni necessarie.\r\nAccertare che l'esecuzione delle attivit\u00e0 di processo non abbia introdotto errori (did I build the system right?). Rivolta ai processi: viene svolta per accertare il rispetto di regole, convezioni o procedure.\r\nAttiene alla coerenza, completezza e correttezza del prodotto. \u00c8 un processo che si applica ad ogni \"segmento\" temporale di un progetto (ad ogni prodotto intermedio) per accertare che le attivit\u00e0 svolte in tale segmento non abbiano introdotto errori nel prodotto.\r\nLa verifica \u00e8 un processo analitico. Si pu\u00f2 fare in due forme:\r\n- analisi statica (senza eseguire il software);\r\n- analisi dinamica (eseguendo il software o una sua parte).",
+        "eng": "verification"
+    },
+    "421": {
+        "id": "test",
+        "voce": "test",
+        "def": "L'analisi dinamica viene effettuata tramite prove (test) che osservano i risultati dell'esecuzione di un sistema (o parte di esso) sotto determinate condizioni.\r\nUn test, per essere utile, dev'essere facilmente ripetibile; per questo, bisogna sempre:\r\n- tener conto dell'ambiente (non solo dell'input);\r\n- specificare le pre-condizioni e i comportamenti attesi;\r\n- descrivere le procedure per eseguire il test e per analizzarne i risultati.\r\nPer far questo sevono logger, stub e driver",
+        "eng": "test"
+    },
+    "422": {
+        "id": "logger",
+        "voce": "logger",
+        "def": "scrive l'esito della prova (test) in un file.",
+        "eng": ""
+    },
+    "423": {
+        "id": "driver",
+        "voce": "driver",
+        "def": "Un \"pilota\" che guidi l'esecuzione del test. Ogni test di unit\u00e0 dev'essere chiamato da qualcuno: costui \u00e8 il driver.",
+        "eng": ""
+    },
+    "424": {
+        "id": "stub",
+        "voce": "stub",
+        "def": "Un \"calco\" che sostituisca del codice non ancora scritto: una componente passiva fittizia che simula una parte del sistema. \r\n\u00c8 il duale del driver: mentre il primo simula le dipendenze della procedura testata (quelle che ne accrescono il fan-out, per capirci), il secondo simula un chiamante di tale procedura (che contribuisce al fan-in).",
+        "eng": ""
+    },
+    "425": {
+        "id": "analisi_statica_tipi",
+        "voce": "Analisi statica: tipi",
+        "def": "1. Flusso di controllo;\r\n2. Flusso dei dati; \r\n3. Flusso dell'informazione; \r\n4. Esecuzione simbolica;\r\n5. Verifica formale del codice;\r\n6. Verifica del limite;\r\n7. Uso dello stack;\r\n8. Comportamento temporale;\r\n9. Interferenza.\r\nSono tutte tecniche in aggiunta all'analisi dinamica!",
+        "eng": ""
+    },
+    "426": {
+        "id": "legge_del_rendimento_decrescente",
+        "voce": "legge del rendimento decrescente",
+        "def": "Riguarda il testing e dice: \"man mano che aumento lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre pi\u00f9. Questo avviene, ad esempio, quando un produttore aumenta la produzione e, a un certo punto, oltrepassa la domanda: i profitti iniziano ad essere negativi. Cos\u00ec, arriva un tempo in cui fare altri test non aggiunge nulla, cio\u00e8 non trova errori (e la funzione primaria dei test \u00e8 trovare errori).\"",
+        "eng": ""
+    },
+    "428": {
+        "id": "ISO_IEC 12207",
+        "voce": "ISO\/IEC 12207",
+        "def": "Standard internazionale per il ciclo di vita del software.\r\nCatalogazione in un quadro di riferimento (framework) di termini e loro significati. Si parla di processi, non di procedure e di processi del ciclo di vita, non di modelli di ciclo di vita.\r\nFornisce gli elementi astratti per i quali una singola parte degli aderenti al progetto aderisce alle attese (2 parti coinvolte in un progetto) e pu\u00f2 avere legami con altri standard utili a raggiungere gli obbiettivi.\r\nLo standard \u00e8 pensato per essere adottato da realt\u00e0 aziendali, non per progetto singolo, ed \u00e8 stato pensato affinch\u00e8 ci sia un\u2019attuazione volontaria di esso.\r\nModello ad alto livello che definisce i processi del ciclo di vita del software identificando i processi dello sviluppo, la struttura modulare, le entit\u00e0 responsabili. Esso richiede una definizione istanziata alla realt\u00e0 che decide di adottarlo. Secondo questo standard i processi sono relazionati tra loro in modo chiaro e distinto (modularit\u00e0) e i rispettivi compiti sono ben definiti e delineati (coesione).\r\n - identifica i processi dello sviluppo SW; \r\n - struttura modulare che richiede specializzazione\r\n - specifica le responsabilit\u00e0 sui processi\r\n - identifica i prodotti dei processi\r\nDivide i processi in tre famiglie.\r\n1.Processi primari:\r\n -acquisizione (gestione dei propri sotto-fornitori[1], cio\u00e8 di chi ci fornisce una componente del nostro prodotto);\r\n -fornitura (gestione dei rapporti con il cliente \u2014 controparte dell'acquisizione);\r\n -sviluppo \u2014 affrontato con approccio costruttivo, non correttivo; svolto anche tramite appalto esterno; non solo programmazione (che tra l'altro va affiancata dal testing)!\r\n -gestione operativa (installazione ed erogazione dei prodotti);\r\n -manutenzione (correzione, adattamento, evoluzione).\r\n2.Processi di supporto (delle specie di \"sottoprocedure\"):\r\n -documentazione;\r\n -gestione delle versioni e della configurazione;\r\n -accertamento della qualit\u00e0;\r\n -qualifica: verifica e validazione (\"V&V\"), due processi distinti ma collegati;\r\n -revisioni congiunte con il cliente;\r\n -verifiche ispettive esterne;\r\n -risoluzione dei problemi.\r\n3.Processi organizzativi (l'\"ambiente\" del sistema):\r\n -gestione dei processi;\r\n -gestione delle infrastrutture;\r\n -miglioramento del processo;\r\n -formazione del personale.",
+        "eng": "ISO\/IEC 12207"
+    },
+    "429": {
+        "id": "gestione_configurazione",
+        "voce": "Gestione di configurazione",
+        "def": "Ha come obiettivi quello di mettere in sicurezza le baseline che consolidano gli stati d'avanzamento del processo di sviluppo.\r\nLe attivit\u00e0 sono: l'identificazione di configurazione (quali configuration item compongono il prodotto->oguno ha un'identit\u00e0 unica) , il controllo di baseline (insieme di CI consolidato ad una specifica milestone; l'esistenza di baseline ben identificate permette riproducibilit\u00e0, tracciabilit\u00e0, analisi e confronto), la gestione delle modifiche ed il controllo di versione. \r\n",
+        "eng": "Configuration management"
     }
 }

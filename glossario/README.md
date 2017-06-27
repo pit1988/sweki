@@ -1,4 +1,4 @@
-# Listing-Crawler
+# Swe - glossario
 A simple PHP-based crawler for web classified advertising; it runs on a Docker containerized server.
 
 
