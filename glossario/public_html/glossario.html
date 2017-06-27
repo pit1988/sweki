@@ -1,61 +1,1866 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
-<head>
+<!-- saved from url=(0022)http://localhost:8080/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it" class="cye-disabled cye-nm"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Glossario - sweki</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="author" content="" />
-	<meta name="keywords" content="sweki, ingegneria, software, glossario" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="main.css" />
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	
+	<meta name="author" content="">
+	<meta name="keywords" content="sweki, ingegneria, software, glossario">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<link rel="shortcut icon" href="http://localhost:8080/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
+<style id="nightModeStyle">
+html.cye-enabled.cye-nm:not(*:-webkit-full-screen) body,
+ html.cye-enabled.cye-nm:not(*:-webkit-full-screen) #cye-workaround-body {-webkit-filter:contrast(91%) brightness(84%) invert(1);}</style><style id="cyebody">html.cye-enabled.cye-lm body{background-color:#c1ddc4 !important;border-color:rgb(48, 55, 49) !important;}</style><style id="cyediv">html.cye-enabled.cye-lm div{background-color:#c1ddc4 !important;border-color:rgb(48, 55, 49) !important;}</style><style id="cyetable">html.cye-enabled.cye-lm th{background-color:#c1ddc4 !important;border-color:rgb(48, 55, 49) !important;}html.cye-enabled.cye-lm td{background-color:#c1ddc4 !important;border-color:rgb(48, 55, 49) !important;}</style><style id="cyetextInput">html.cye-enabled.cye-lm input[type=text]{background-color:#c1ddc4 !important;border-color:rgb(48, 55, 49) !important;}html.cye-enabled.cye-lm textarea{background-color:#c1ddc4 !important;border-color:rgb(48, 55, 49) !important;}</style><style id="cyeselect">html.cye-enabled.cye-lm select{background-color:#c1ddc4 !important;border-color:rgb(48, 55, 49) !important;}</style><style id="cyeul">html.cye-enabled.cye-lm ul{background-color:#c1ddc4 !important;border-color:rgb(48, 55, 49) !important;}</style><style id="cyeChangeByClick">html.cye-enabled.cye-lm .cye-lm-tag,html.cye-enabled.cye-lm.cye-lm-tag{background-color:#c1ddc4 !important;border-color:rgb(48, 55, 49) !important;}</style><style>@media print {#ghostery-purple-box {display:none !important}}</style><link rel="stylesheet" type="text/css" href="chrome-extension://pkehgijcmpdhfbdbbnkijodmdjhbjlgp/skin/socialwidgets/socialwidgets.css"></head>
 
 <body>
 
 	<div id="header">
-		<h1><a href="../index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a></h1>
+		<h1><a href="http://localhost:8080/index.html"><acronym title="SoftWare Engineering wiKI">sweki</acronym></a></h1>
 		<h2>la <span xml:lang="en">wiki</span> di Ingegneria del <span xml:lang="en">Software</span></h2>
 	</div>
 
 	<div id="content" class="appendix">
 		<h1>Glossario</h1>
 
-		<dl class="gloss">
-			<form method="post" action="voce.php">
-			  <fieldset>
-			    <legend>Modifica voce nel glossario:</legend>
-			    <p>Id univoco:
-			    <input type="text" name="id" value="accoppiamento">
-			    </p><p>
-			    Voce:
-			    <input type="text" name="voce" value="accoppiamento">
-			    </p><p>
-			    Definizione:
-			    </p><p>
-			    <textarea name="def" rows="10" cols="70">Grado di dipendenza tra le varie componenti di un sistema.
-C'è interdipendenza cattiva tra parti diverse se:
--si fanno assunzioni dall'esterno su come le parti facciano il loro mestiere all'interno (variabili, locazioni, tipi)
--s'impongono vincoli dall'esterno sull'interno di una parte (ordine d'azioni, uso di dati/formati/valori)
--si condividono frammenti delle stesse risorse (strutture dati)
-Un sistema è un insieme organizzato, ha quindi bisogno d'un po' d'accoppiamento e la buona progettazione lo tiene basso.
-È una proprietà esterna delle componenti: dato U il grado d'utilizzo reciproco di M componenti, il massimo accoppiamento si ha per U=M*M; nullo quando U=0;
-Le metriche sono il Fan-in e Fan-out strutturale.
-Una buona progettazione produce componenti con Fan-in elevato.</textarea>
-			    </p><p>
-			    Definizione inglese:
-			    <input type="text" name="eng" value="coupling">
-			    </p><p>
-			    <input type="hidden" name="modify" value="true">
-			    <input type="hidden" name="id_old" value="accoppiamento">
-			    <input type="submit" value="Submit" name="submit">
-			    <a href="index.php">Annulla</a>
-			    </p>
-			  </fieldset>
-			</form>
-			</dl>
+		<dl class="gloss"><p><a href="http://localhost:8080/voce.php">Inserisci nuova voce</a>; <a href="http://localhost:8080/glossario.html">Consulta il glossario</a></p>
+			<dt id="accoppiamento">accoppiamento</dt>
+
+					<dd>Grado di dipendenza tra le varie componenti di un sistema.<p></p><p>C'è interdipendenza cattiva tra parti diverse se:</p><p>-si fanno assunzioni dall'esterno su come le parti facciano il loro mestiere all'interno (variabili, locazioni, tipi)</p><p>-s'impongono vincoli dall'esterno sull'interno di una parte (ordine d'azioni, uso di dati/formati/valori)</p><p>-si condividono frammenti delle stesse risorse (strutture dati)</p><p>Un sistema è un insieme organizzato, ha quindi bisogno d'un po' d'accoppiamento e la buona progettazione lo tiene basso.</p><p>È una proprietà esterna delle componenti: dato U il grado d'utilizzo reciproco di M componenti, il massimo accoppiamento si ha per U=M*M; nullo quando U=0;</p><p>Le metriche sono il Fan-in e Fan-out strutturale.</p><p>Una buona progettazione produce componenti con Fan-in elevato.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">coupling</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=accoppiamento">modifica</a>; <a href="http://localhost:8080/glossario.php?id=accoppiamento">rimuovi</a></dd>
+			<dt id="algoritmo">algoritmo</dt>
+
+					<dd>Sequenza finita di passi per la risoluzione di un problema.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">algorithm</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=algoritmo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=algoritmo">rimuovi</a></dd>
+			<dt id="allocazione_di_risorse">allocazione di risorse (per un progetto)</dt>
+
+					<dd>Assegnare attività a ruoli e, poi, ruoli a persone.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=allocazione_di_risorse">modifica</a>; <a href="http://localhost:8080/glossario.php?id=allocazione_di_risorse">rimuovi</a></dd>
+			<dt id="ambiente_di_lavoro">ambiente di lavoro</dt>
+
+					<dd>L'insieme di persone, di ruoli, di procedure e l'infrastruttura la cui qualità determina la produttività del progetto.<p></p><p>Deve essere: completo, ordinato, aggiornato.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">work environment</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ambiente_di_lavoro">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ambiente_di_lavoro">rimuovi</a></dd>
+			<dt id="amministrare_progetto">Amministrare un progetto (profilo professionale)</dt>
+
+					<dd>Equipaggiare, organizzare e gestire l’ambiente di lavoro e di produzione (regole+procedure+strumenti&amp;servizi; supporto di tutti i processi istanziati nel prj).<p></p><p>Le attivtà sono: la redazione e la manutenzione di regole e procedure di lavoro, il reperimento, l'organizzazione, la gestione e la manutenzione di risorse informatiche per l'erogazione dei servizi di supporto.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Project administration</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=amministrare_progetto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=amministrare_progetto">rimuovi</a></dd>
+			<dt id="amministratore_di_progetto">amministratore di progetto (profilo professionale)</dt>
+
+					<dd>Chi controlla che ad ogni istante della vita del progetto le risorse (umane, materiali, economiche e strutturali) siano presenti e operanti; inoltre, gestisce la documentazione e controlla il versionamento e la configurazione.<p></p><p>Non compie scelte gestionali ma attua le scelte tecnologiche concordate coi responsabili aziendali e del progetto.</p><p>Ruolo molto utile, prepara l’ambiente di lavoro, strumento di collaborazione e controllo di avanzamento. Gestione della documentazione di progetto. Risoluzione di problemi legati alla gestione di processi. Assegnazione di tickets, un incarico con scadenza assegnato ed accettato.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">project administrator</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=amministratore_di_progetto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=amministratore_di_progetto">rimuovi</a></dd>
+			<dt id="analisi_dei_requisiti">analisi dei requisiti</dt>
+
+					<dd>Definire cosa bisogna fare.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">requirements analysis</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=analisi_dei_requisiti">modifica</a>; <a href="http://localhost:8080/glossario.php?id=analisi_dei_requisiti">rimuovi</a></dd>
+			<dt id="analisi_dinamica">analisi dinamica</dt>
+
+					<dd>Valutazione di un sistema (o di una sua componente) basata sul suo comportamento durante l'esecuzione.<p></p><p>Richiede l'esecuzione del programma, viene effettuata tramite prove (test) ed è usata sia nella verifica che nella validazione.</p><p>La ripetibilità è un requisito essenziale: AMBIENTE(hw, stato iniziale), SPECIFICHE (ingressi rich., comportamenti attesi), PROCEDURE (esecuzione ed analisi dei risultati).</p><p>Strumenti usati: Driver, Stub e Logger.</p><p>Si compone di test (prove): attività che comportano l'esecuzione dell'oggetto di verifica.</p><p>Viene fatta sul comportamento del programma su un inseme finito di casi, selezionati nel dominio (infinto, in generale) di tutte le esecuzioni possibili; ciascun caso di prova specifica i valori di ingresso e lo stato iniziale del sistema: ciascun caso di prova deve produrre un esito decidibile (oracolo) verificato in base ad un comportmento atteso.</p><p>Oggetto delle prove: unità (TU), aggregati (parti del sistema, in relazione funzionale/d'uso/di comportamento/di struttura. TI), sistema completo.</p><p>Obiettivo delle prove: accertazione, qualifica, conformità, regressione; installazione nell'ambiente di prova, controllo prestazioni; viene specificato per ogni caso, in termini pratici e quantitativi, varia al variare dell'oggetto di prova; il PdQ dice quali e quante prove.</p><p>Vincoli di progetto: processi, prodotti, risorse, competenze; stima e controllo dei costi, criteri di terminazione.</p><p>Attività di prova: pianificazione, specifica e sviluppo dei casi di prova; esecuzione, valutazione, trattamento dei problemi.</p><p>La provabilità va assicurata a monte dello sviluppo, non a valle della codifica: progettazione architetturale e di dettaglio raffinate per assicurare la provabilità.</p><p>Una singola prova non basta: i risultati valgono solo per quell'esecuzione, non possono essere generalizzati; dev'essere ripetibile; rileva malfunzionamenti indicando la presenza di guasti: generalmente non può provarne l'assenza.</p><p>In più le prove sono costose: richiedono risorse (in termini di tempo+persone+infrastrutture), hanno bisogno di un processo definito e richiedono attività di ricerca, analisi e correzione.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">dynamic analysis</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=analisi_dinamica">modifica</a>; <a href="http://localhost:8080/glossario.php?id=analisi_dinamica">rimuovi</a></dd>
+			<dt id="analisi_statica">analisi statica</dt>
+
+					<dd>Valutazione di un sistema (o di una sua componente) basata sulla sua forma, struttura, contenuto o documentazione. Non richiede l'esecuzione del software in alcuna sua parte, è essenziale quando il sistema non è ancora completamente disponibile. Studia le caratteristiche del codice sorgente e talvolta del codice oggetto e della documentazione associata, alla ricerca della conformità a regole date, l'assenza da difetti e la presenza di proprietà positive.<p></p><p>Applicano ad ogni prodotto di processo (non solo sw: per tutti i processi attivati nel prj).</p><p>Metodi di lettura (desk check) sono applicati solo per prodotti semplici).</p><p>Metodi formali, si basano sulla prova assistita di proprità, la cui dimostrazione dinamica può essere troppo onerosa; verifica di equivalenza o generazione automatica.</p><p>L'efficacia dei metodi di analisi è funzione della qualità di strutturazione del codice.</p><p></p><p>Costruisce modelli astratti del sw in esame: questi modelli rappresentano ogni programma come un grafo e ne studiano i cammini possibili; le variazioni tra stati (archi) hanno etichette che descrivono proprietà sintattiche o semantiche dell'istruzione corrispondente. Ciascun flusso di controllo (thread) viene rappresentato ed analizzato separatamente (assumendo la non-interferenza).</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">static analysis</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=analisi_statica">modifica</a>; <a href="http://localhost:8080/glossario.php?id=analisi_statica">rimuovi</a></dd>
+			<dt id="analisi_statica_tipi">Analisi statica: tipi</dt>
+
+					<dd>1. Flusso di controllo;<p></p><p>2. Flusso dei dati; </p><p>3. Flusso dell'informazione; </p><p>4. Esecuzione simbolica;</p><p>5. Verifica formale del codice;</p><p>6. Verifica del limite;</p><p>7. Uso dello stack;</p><p>8. Comportamento temporale;</p><p>9. Interferenza.</p><p>Sono tutte tecniche in aggiunta all'analisi dinamica!</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=analisi_statica_tipi">modifica</a>; <a href="http://localhost:8080/glossario.php?id=analisi_statica_tipi">rimuovi</a></dd>
+			<dt id="analista">analista (profilo professionale)</dt>
+
+					<dd>Aiuta l’avanzamento di maturità dei requisiti; è molto importante e occorre avere competenze su molti fronti, sapere ascoltare gli stakeholder, scrivere requisiti bounded e coherent, ragionevoli, utili, realizzabili e verificabili. E’ un compito molto delicato, deve sapere se un requisito si può fare. Non può promettere cose insensate. Sono competenze cosı̀ decisive che ci sono pochi analisti. L’analista pensa al problema, non alla soluzione;fa l'analisi dei requisiti.<p></p><p>Chi ha il compito di individuare, a partire dai bisogni del cliente, il problema da fornire ad un progettista;</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">analyst</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=analista">modifica</a>; <a href="http://localhost:8080/glossario.php?id=analista">rimuovi</a></dd>
+			<dt id="application_logic">application logic</dt>
+
+					<dd>La parte di un software che è specifica di quel software e non è intesa per essere riusata in altri software.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=application_logic">modifica</a>; <a href="http://localhost:8080/glossario.php?id=application_logic">rimuovi</a></dd>
+			<dt id="architettura">architettura</dt>
+
+					<dd>Decomposizione di un sistema in componenti; l'organizzazione di tali componenti, le interfacce necessarie all'interazione tra queste e l'ambiente ed i paradigmi di composizione delle componenti.<p></p><p>La struttura organizzativa di un sistema o componente.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">architecture</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=architettura">modifica</a>; <a href="http://localhost:8080/glossario.php?id=architettura">rimuovi</a></dd>
+			<dt id="architettura_qualita">Architettura: qualità possedute</dt>
+
+					<dd>&gt;Sufficienza: è capace di soddisfare tutti i req.<p></p><p>&gt;Comprensibilità: può essere capita dai portatori d'interesse</p><p>&gt;Modularità: è suddivisa in parti chiare e ben distinte</p><p>&gt;Robustezza: sopporta ingressi diversi dall'utente e dall'ambiente</p><p>&gt;Flessibilità: permette modifiche a costo contenuto, al variare dei req.</p><p>&gt;Riusabilità: le sue parti possono essere utilmente impiegate in altre applicazioni</p><p>&gt;Efficienza: nel tempo, nello spazio, nelle comunicazioni</p><p>&gt;Affidabilità: altamente probabile che svolga bene il suo compito quando utilizzata.</p><p>&gt;Disponibilità: necessita di poco o nullo tempo di manutenzione fuori linea</p><p>&gt;Sicurezza rispetto a malfunzionamenti: è senete da malfunzionamenti gravi</p><p>&gt;Sicurezza rispetto ad intrusioni: i sui dati e le sue funzioni non sono vulnerabili a intrusioni</p><p>&gt;Semplicità: ogni parte contiene solo il necessario e niente di superfluo</p><p>&gt;Incapsulazione (information hiding): l'interno delle componenti non è visibile dall'esterno</p><p>&gt;Coesione: le parti che stanno insieme hanno gli stessi obiettivi</p><p>&gt;Basso accoppiamento: parti distinte dipendono poco o niente le une dalle altre.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=architettura_qualita">modifica</a>; <a href="http://localhost:8080/glossario.php?id=architettura_qualita">rimuovi</a></dd>
+			<dt id="attività">attività</dt>
+
+					<dd>Parte di un processo che dev'essere compiuta entro un determinato periodo di tempo.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">activity</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=attivit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=attivit%C3%A0">rimuovi</a></dd>
+			<dt id="attributi_processo">Attributi di processo (requisiti)</dt>
+
+					<dd>Pongono vincoli sui processi impiegati nel prodotto (come devo farlo?).<p></p><p>Requisiti di vincolo (realizzativo, normativo, contrattuale).</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=attributi_processo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=attributi_processo">rimuovi</a></dd>
+			<dt id="attributi_prodotto">Attributi di prodotto (requisiti)</dt>
+
+					<dd>Definiscono le caratteristiche richieste al sistema (cosa devo fare?).<p></p><p>Requisiti funzionali, prestazionali, di qualità (di prodotto).</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=attributi_prodotto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=attributi_prodotto">rimuovi</a></dd>
+			<dt id="baseline">baseline</dt>
+
+					<dd>Nel ciclo di vita di un progetto, indica un punto d'arrivo tecnico dal quale non si retrocede; la baseline è fatta di elementi della configurazione e, poiché ogni parte è versionata, possiamo conoscere la differenza tra una baseline e l'altra. Una baseline è qualcosa di stabile — non usa e getta! — e sta in un repository; serve da base per gli avanzamenti futuri e può essere cambiata solo tramite procedure di controllo di cambiamento.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=baseline">modifica</a>; <a href="http://localhost:8080/glossario.php?id=baseline">rimuovi</a></dd>
+			<dt id="batteria_di_prove">batteria di prove</dt>
+
+					<dd>Insieme (sequenza) di casi di prova.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">test suite</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=batteria_di_prove">modifica</a>; <a href="http://localhost:8080/glossario.php?id=batteria_di_prove">rimuovi</a></dd>
+			<dt id="best_practice">best practice</dt>
+
+					<dd>La prassi che, per esperienza e per studio, abbia mostrato di garantire i migliori risultati in circostanze note e specifiche.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=best_practice">modifica</a>; <a href="http://localhost:8080/glossario.php?id=best_practice">rimuovi</a></dd>
+			<dt id="bibliografia">bibliografia</dt>
+
+					<dd>Elenco delle fonti di un documento.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">bibliografy</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=bibliografia">modifica</a>; <a href="http://localhost:8080/glossario.php?id=bibliografia">rimuovi</a></dd>
+			<dt id="branch_coverage">Branch coverage</dt>
+
+					<dd>metodo di testing che mira ad assicurare che ognuno dei possibili rami che scendono da ogni percorso di decisione (flusso di controllo) siano eseguiti almeno una volta, assicurando che tutto il codice che è possibile raggiungere sia stato eseguito.<p></p><p>100% se li attraversa tutti - complessivamente - almeno una volta.</p><p>È funzionale, per cammino, quindi è più potente della statement coverage.</p><p>Può però non comprendere appieno la logica del programma!</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">branch coverage</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=branch_coverage">modifica</a>; <a href="http://localhost:8080/glossario.php?id=branch_coverage">rimuovi</a></dd>
+			<dt id="budget">budget</dt>
+
+					<dd>Tempo e denaro a disposizione.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=budget">modifica</a>; <a href="http://localhost:8080/glossario.php?id=budget">rimuovi</a></dd>
+			<dt id="business_logic">business logic</dt>
+
+					<dd>La parte di un software che ha a che fare con il dominio applicativo del software; questa parte è tipicamente riusabile e quindi condivisa tra diversi software che operano nello stesso dominio.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=business_logic">modifica</a>; <a href="http://localhost:8080/glossario.php?id=business_logic">rimuovi</a></dd>
+			<dt id="business_management">Business management</dt>
+
+					<dd>Chi fissa gli obiettivi in termini di costi, profitto, priorità strategiche</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=business_management">modifica</a>; <a href="http://localhost:8080/glossario.php?id=business_management">rimuovi</a></dd>
+			<dt id="caos">caos</dt>
+
+					<dd>Contrario di organizzazione.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">chaos</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=caos">modifica</a>; <a href="http://localhost:8080/glossario.php?id=caos">rimuovi</a></dd>
+			<dt id="caratterizzazione">caratterizzazione</dt>
+
+					<dd>È una parte essenziale del processo di verifica.<p></p><p>Produce una misura della qualità del sistema: aumenta il valore di qualità del sistema, identificandone e rimuovendone i difetti.</p><p>Il suo inizio non dev'essere differito al termine delle attività di codifica.</p><p>Le sue esigenze devono essere tenute in conto nella progettazione del sistema.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=caratterizzazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=caratterizzazione">rimuovi</a></dd>
+			<dt id="caso_d_uso">caso d'uso</dt>
+
+					<dd>Insieme di scenari che hanno in comune un obiettivo per un utente.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">use case</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=caso_d_uso">modifica</a>; <a href="http://localhost:8080/glossario.php?id=caso_d_uso">rimuovi</a></dd>
+			<dt id="caso_di_prova">caso di prova</dt>
+
+					<dd>Terna di valori (input, output, ambiente) che specifica il comportamento che un sistema (o parte di esso) deve avere in un caso specifico; l'ambiente include l'oggetto della prova.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">test case</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=caso_di_prova">modifica</a>; <a href="http://localhost:8080/glossario.php?id=caso_di_prova">rimuovi</a></dd>
+			<dt id="ciclo_di_vita_prodotto">ciclo di vita (di un prodotto)</dt>
+
+					<dd>Insieme degli stati che il prodotto assume, dal concepimento al ritiro. Conoscere il ciclo di vita ci aiuta a capire la swe. Il sw va inteso in un senso molto più ampio di ”programma”, serve per soddisfare i requisiti di qualcuno. Queste cose evolvono nel tempo e raggiungono stati tramite transizioni scatenate da attività che hanno il fine di far avanzare il sw. Si divide in 4 fasi:<p></p><p>• Concezione, quando qualcuno pensa che ci sia (o abbia) bisogno di qualcosa;</p><p>• Sviluppo;</p><p>• Utilizzo;</p><p>• Ritiro.</p><p>Questi stati cambiano attraverso attività specifiche, derivanti da processi di cicli di vita.</p><p>Fase, è un periodo di tempo contiguo con un inizio ed una fine. Un prodotto sw si spalma nel tempo.</p><p>Immaginare il ciclo di vita su un asse temporale, le fasi sono segmenti tra uno stato e l’altro.</p><p>E’ importante avere un ciclo di vita chiaro in testa, perché averlo ci fa capire quello che dobbiamo fare e se</p><p>siamo in grado di farlo. Il compito fondamentale è utilizzare un approccio quantificabile, in modo da poter</p><p>misurare gli obiettivi e le aspettative. Cosa devo fare? Perché? Sono capace in questo modo di puntare a</p><p>una qualità misurabile.</p><p>Conformità, un grado di corrispondenza ad aspettative (efficacia). Misurare quanto soddisfiamo (siamo</p><p>conformi) le aspettative.</p><p>Maturità, è il grado di stabilità con il quale siamo in grado di fare le cose. Siamo maturi quando abbiamo</p><p>acquisito il ”modus operandi ”. Essere sistematici attraverso un processo di maturità.</p><p>Modello di ciclo, astrazione del modo nel quale vediamo gli stati e il loro avanzamento.</p><p>Non modello, ”code and fix ”, raggiungere la correttezza ”by correction”. Non so perché ce l’ho fatta.</p><p>Prima faccio, poi penso, insieme negativo delle cose da fare. La programmazione è una delle attività meno</p><p>importanti, deve essere la conseguenza.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">software product life cycle</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ciclo_di_vita_prodotto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ciclo_di_vita_prodotto">rimuovi</a></dd>
+			<dt id="ciclo_di_vita_sviluppo">ciclo di vita dello sviluppo (di un prodotto)</dt>
+
+					<dd>Parte del ciclo di vita di un prodotto che riguarda il suo sviluppo.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">software development life cycle</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ciclo_di_vita_sviluppo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ciclo_di_vita_sviluppo">rimuovi</a></dd>
+			<dt id="ciclo_PDCA">ciclo PDCA (o ciclo di Deming)</dt>
+
+					<dd>Schema iterativo di auto-miglioramento che consiste di quattro punti: Plan (individuare obiettivi di miglioramento), Do (eseguire ciò che si è pianificato), Check (verificare se ha funzionato) e Act (agire per correggersi).</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">PDCA cycle</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ciclo_PDCA">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ciclo_PDCA">rimuovi</a></dd>
+			<dt id="classificazione_requisiti">Classificazione dei requisiti</dt>
+
+					<dd>Requisiti di progetto, processo e sistema-&gt; funzionali, di performance, di qualità.<p></p><p>I requisiti devono essere verificabili; chi ne fissa uno deve avere idea di come accertarne il soddisfacimento.</p><p>&gt;Requisiti formali prevedono test, dimostrazione formale e revisione;</p><p>&gt;Requisiti prestazionali, una misurazione</p><p>&gt;Requisiti qualitativi, una verifica ad hoc</p><p>&gt;Requisiti dichiarativi, una revisione.</p><p>I requisiti hanno una diversa utilità strategica:</p><p>&gt;Obbligatori: irrinunciabili per qualsiasi stakeholder;</p><p>&gt;Desiderabili, non sono strettamente necessari ma hanno un valore aggiunto riconoscibile;</p><p>&gt;Opzionali, sono relativamente utili oppure contrattabili in seguito.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=classificazione_requisiti">modifica</a>; <a href="http://localhost:8080/glossario.php?id=classificazione_requisiti">rimuovi</a></dd>
+			<dt id="cliente_proponente">cliente o proponente</dt>
+
+					<dd>Chi ha commissionato il prodotto. Generalmente è un'azienda o una startup; propone un capitolato d'appalto in cui viene richiesta la realizzazione di un prodotto specifico.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=cliente_proponente">modifica</a>; <a href="http://localhost:8080/glossario.php?id=cliente_proponente">rimuovi</a></dd>
+			<dt id="CMMI">CMMI</dt>
+
+					<dd>Capability Maturity Model + Integration<p></p><p>Standard per il miglioramento e la valutazione della qualità di processo.</p><p>Definito su commessa del DoD al SEI di CMU. È un modello per la valutazione uniforme dei fornitori.</p><p>&gt;Capability: misura quant'è adeguato un processo per gli scopi per cui  è stato definito. Caratteristica di un processo misurato singolarmente; determina l'intorno del risultato (di efficienza ed efficacia) raggiungibile usando quel processo. Un processo che ne ha tanta è seguito da tutti in modo disciplinato, sistematico e quantificabile, in caso contrario dipenderebbe da chi lo attua, sarebbe definito e seguito in modo opportunistico, sarebbe difficicle prevederne l'esito, avanzamento e qualità.</p><p>&gt;Maturity: misura di quando è governato il sistema dei processi dell'azienda. Caratteristica d'un insieme di processi (quelli significativi rispondono alle esigenze di miglioramento continuo dell'organizzazione); risulta dall'effetto combinato delle capability dei processi coinvolti. 5 livelli: Optimizing, Qualitatively managed, Defined, Managed, Initial)</p><p>&gt;Model: insieme di requisiti via via più stringenti per valutare il percorso di miglioramento dei processi dell'azienda (utile per confrontarne di diverse).</p><p>&gt;Integration: architettura di integrazione delle diverse discipline (sys, HW, SW) e tipologie di attività delle aziende.</p><p>Ha il concetto di scala: Si parte da osservare che al piano terra c’è uno strato iniziale in cui tutti all’inizio si collocano. I processi, se ci sono, sono a questo stadio unpredictable, impredicibili, poorly controlled e reacted. Il livello 2 è managed, cioè gestito. I processi esistono nei progetti e rimangono prevalentemente reattivi. Il livello 3 è definito, i processi sono proattivi, esistono trasversalmente, manca ancora il miglioramento. Il livello 4 introduce misurazione rispetto al controllo e si chiama quantitatively managed. Al livello 5 non soltanto misuriamo ma miglioriamo, optimizing.</p><p>Adottando il CMMI aumento del 35% la produttività, riduco del 19% il time to market e riduco del 39% il post-release defect reports (proporzione di difetti residui, ovvero costi di manutenzione).</p><p>Limitazioni di CMMI sono: la sua natura discreta (non continua: quindi potenzialmente frustrante per le organizzazioni); un'eccessiva concentrazione sulle pratiche (cosa si fa e come); un'insufficiente attenzione agli obiettivi (perché lo si fa).</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=CMMI">modifica</a>; <a href="http://localhost:8080/glossario.php?id=CMMI">rimuovi</a></dd>
+			<dt id="CoCoMo">CoCoMo (Constructive Cost Model)</dt>
+
+					<dd>Modello per la stima dei costi di un progetto, in tempo/persona.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">CoCoMo</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=CoCoMo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=CoCoMo">rimuovi</a></dd>
+			<dt id="coerenza">coerenza</dt>
+
+					<dd>L'esser composto da parti che non sono in disaccordo tra loro, cioè non affermano cose che si contraddicano.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">consistency</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=coerenza">modifica</a>; <a href="http://localhost:8080/glossario.php?id=coerenza">rimuovi</a></dd>
+			<dt id="coesione">coesione</dt>
+
+					<dd>Grado di relazione tra parti associate di un sistema che concorrono agli stessi obiettivi. Proprietà interna di singole componenti: funzionalità "vicine" devono stare nella stessa componente (la modularità spinge a decomporre il grande in piccolo; aiuta a decomporre ed a porre un limite inferiore alla decomposizione).<p></p><p>Porta ad una maggiore manutenibilità e riusabilità, minore dipendenza fra i componenti ed una maggiore comprensione dell'architettura del sistema.</p><p>&gt;Funzionale, quando parti specifiche concorrono al medesimo compito</p><p>&gt;Sequenziale, quando alcune azioni sono vicine ad altre per ordine di esecuzione, così conviene metterle insieme</p><p>&gt;Informativa, quando le parti agiscono sulla stessa unità d'informazione.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">cohesion</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=coesione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=coesione">rimuovi</a></dd>
+			<dt id="collaudo">collaudo</dt>
+
+					<dd>Durante la validazione, è un'attività supervisionata dal committente, come dimostrazione di conformità del prodotto sulla base di casi di prova specificati nel o implicati dal contratto.<p></p><p>È un'attività formale per il contratto.</p><p>Segue il rilascio del prodotto (con eventuale garanzia) e la fine della commessa (con eventuale manutenzione).</p><p>Test di accettazione (collaudo): accerta il soddisfacimento dei requisiti utente.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=collaudo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=collaudo">rimuovi</a></dd>
+			<dt id="committente">committente</dt>
+
+					<dd>verifica e valuta l'andamento dei vari progetti</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=committente">modifica</a>; <a href="http://localhost:8080/glossario.php?id=committente">rimuovi</a></dd>
+			<dt id="compito">compito</dt>
+
+					<dd>Parte di un'attività. Si può svolgere usando qualche tecnica: ricetta applicata agli strumenti disponibili</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">task</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=compito">modifica</a>; <a href="http://localhost:8080/glossario.php?id=compito">rimuovi</a></dd>
+			<dt id="complessità_ciclomatica">complessità ciclomatica di McCabe</dt>
+
+					<dd>Misura la complessità del flusso di controllo: è funzione del numero di cammini linearmente indipendenti che il codice sorgente di un programma può percorrere.<p></p><p>È una misurazione astratta d'un attributo significativo del codice.</p><p>Come limiti, presenta una fallibilità dimostrata, ma viene ancora largamente usata, in più è una metrica costosa da applicare prima di progettare il codice in dettaglio.</p><p>Il valore rilevato va confrontato con soglie prefissate:</p><p>-[1, 10] = c. bassa</p><p>-[21, 50] = c. elevata</p><p>-[51, ..) = e. inaccettabile.</p><p>Corrisponde al numero di casi prova necessari per verificare ogni possibile esito d'ogni ramo di decisione della procedura:</p><p>-&gt;misura la complessità del flusso di controllo, ma non quella del flusso dati; il grado di fan-in applicato ai dati può aiutare a stimare la complessità del flusso dati; è meglio calcolarlo usando strumenti automatici.</p><p>Definizione algebrica costruita sopra il grafo di controllo G che descrive una procedura: v(G) = e-n+p</p><p>il numero di percorsi lineari di G è pari al numero degli archi (flusso) meno il numero dei nodi (espressioni o comandi) più il numero delle componenti connesse da ogni arco</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">cyclomatic complexity</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=complessit%C3%A0_ciclomatica">modifica</a>; <a href="http://localhost:8080/glossario.php?id=complessit%C3%A0_ciclomatica">rimuovi</a></dd>
+			<dt id="componente">componente</dt>
+
+					<dd>Insieme di unità funzionalmente coese; parte di un sistema. (In Java, rappresentabile da uno o più package.)<p></p><p>Integra più unità.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">component</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=componente">modifica</a>; <a href="http://localhost:8080/glossario.php?id=componente">rimuovi</a></dd>
+			<dt id="comportmanto_predicibile">comportamento predicibile</dt>
+
+					<dd>Si ha se il codice sorgente è senza ambiguità: <p></p><p>-niente effetti laterali (es. di funzioni)-&gt;diverse invocazioni dela stessa funzione non producono risultati diversi</p><p>-l'ordine di elaborazione ed inizializzazione non influisce: l'esitito d'un programma dipende dall'ordine di laborazione entro e tra unità</p><p>-modalità di passaggio di parametri, poichè la scelta d'una modalità di passaggio (valore, riferimento) può influenzare parte dell'esecuzione.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=comportmanto_predicibile">modifica</a>; <a href="http://localhost:8080/glossario.php?id=comportmanto_predicibile">rimuovi</a></dd>
+			<dt id="condizione">condizione</dt>
+
+					<dd>Espressione booleana semplice non contenente al suo interno ulteriori condizioni combinate da operatori booleani.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">condition</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=condizione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=condizione">rimuovi</a></dd>
+			<dt id="configuration_item">configuration item (CI)</dt>
+
+					<dd>Parte della configurazione di un software.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">configuration item</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=configuration_item">modifica</a>; <a href="http://localhost:8080/glossario.php?id=configuration_item">rimuovi</a></dd>
+			<dt id="configurazione">configurazione</dt>
+
+					<dd>Di quali parti si compone un prodotto e il modo in cui esse stanno assieme.<p></p><p>Un prodotto sw è l'unione di parti distine unite insieme secondo regole rigorose. Le regole di configurazione vanno pianificate e la gestione di configurazione va automatizzata.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">configuration</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=configurazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=configurazione">rimuovi</a></dd>
+			<dt id="controllo_configurazione">Controllo di configurazione</dt>
+
+					<dd>Ho bisogno di uno strumento che mi dica da quali CI è costituita una baseline. Conseguentemente, una baseline va documentata. Esiste dunque un’attività aggiuntiva che si chiama controllo di configurazione. Questa attività è molto delicata perchè mi dice lo stato di avanzamento del prodotto. La modifica è un atto che deve essere formalmente approvato, perchè è un processo sui cui vogliamo iterare. Occorre introdurre un sistema rigido di gestione delle modifiche che vengano fatte a fronte di una richiesta. Si cambia la baseline cambiando una o più CI che cambiano la loro versione. Chi vuole cambiare deve avere un motivo per cui valga la pena, quindi serve un documento che va ad un’autorità delegata, per capire se il cambiamento è accettabile o no (autorità che si chiama ”gruppo di decisione”, Change Management Board, CMB). Questo gruppo valuta se il cambiamento è accettabile e lancia un ticket per il cambiamento. Chi fa queste azioni reimmette nel sistema il dato modificato. Fare un cambiamento produce un flusso di lavoro, e quindi comporta un costo. Normalmente il responsabile di progetto è parte di questo gruppo. La  configurazione evolve attraverso il change management.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=controllo_configurazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=controllo_configurazione">rimuovi</a></dd>
+			<dt id="controllo_qualità">Controllo di qualità</dt>
+
+					<dd>Le attività del sistema qualità pianificate ed attuate al fine che il prodotto soddisfi i requisti attesi.<p></p><p>Modalità ed ambiti di controllo sono: </p><p>-comprensione ed analisi del dominio;</p><p>-verifica (di attività di processo)</p><p>-validazione (di prodotto)</p><p>-quality assurance (preventiva invece che correttiva)</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=controllo_qualit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=controllo_qualit%C3%A0">rimuovi</a></dd>
+			<dt id="controllore_della_qualità">controllore della qualità (profilo professionale)</dt>
+
+					<dd>Funzione aziendale (e non ruolo di progetto) che accerta la qualità dei prodotti.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">null</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=controllore_della_qualit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=controllore_della_qualit%C3%A0">rimuovi</a></dd>
+			<dt id="copertura">Copertura</dt>
+
+					<dd>Per ogni test d'unità si definiscono l'oggetto, la strategia, le risorse necessarrie ed il piano d'esecuzione. <p></p><p>Vedi: Statement coverage; branch coverage.</p><p>Fattore di copertura: quanto la prova esercita il prodotto.</p><p>-Copertura funzionale: rispetto alla percentuale di funzionalità esercitate, come sono viste dall'esterno</p><p>-copertura strutturale (branch, condition): rispetto alla percentuale di logica interna del codice esercitata.</p><p>La copertura del 100% non provoca l'assenza di difetti, e può essere irraggiungibile.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">coverage</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=copertura">modifica</a>; <a href="http://localhost:8080/glossario.php?id=copertura">rimuovi</a></dd>
+			<dt id="copertura_del_codice">copertura del codice</dt>
+
+					<dd>Percentuale di codice sorgente eseguito durante un caso di prova.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">code coverage</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=copertura_del_codice">modifica</a>; <a href="http://localhost:8080/glossario.php?id=copertura_del_codice">rimuovi</a></dd>
+			<dt id="criticità">criticità</dt>
+
+					<dd>Distanza troppo breve tra attività dipendenti.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">null</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=criticit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=criticit%C3%A0">rimuovi</a></dd>
+			<dt id="Customers">Customers</dt>
+
+					<dd>Chi compra il prodotto</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=Customers">modifica</a>; <a href="http://localhost:8080/glossario.php?id=Customers">rimuovi</a></dd>
+			<dt id="decisione">decisione</dt>
+
+					<dd>Espressione composta contenente condizioni combinate da operatori boolenai</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">decision</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=decisione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=decisione">rimuovi</a></dd>
+			<dt id="definizione_prodotto">Definizione di Prodotto</dt>
+
+					<dd>L'architettura di dettaglio porta alla definizione di prodotto<p></p><p>&gt;Procede dall'architettura logica</p><p>&gt;Consente lo sviluppo parallelo dei componenti terminali</p><p>&gt;Consente di stimare costo e tempi di realizzazione</p><p>&gt;Conforme alle qualità perseguite nell'architettura logica (alta coesione ed utilità=fan-in; bassa dipendenza=fan.out, comlessità ed accoppiamento).</p><p>&gt;Decompone i componenti architetturali in moduli a grana più fine finchè ogni modulo ha dimensione, coesione, complessità ed accoppiamento appropriati per la codifica in parallelo&gt;</p><p>&gt;Deve fornire tutti i dettagli necesari alla codifica e verfica di ciascun modulo (la natura specifica di modulo è determinata dal linguaggio in uso).</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=definizione_prodotto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=definizione_prodotto">rimuovi</a></dd>
+			<dt id="design_pattern">design pattern</dt>
+
+					<dd>Soluzione progettuale generale ad un problema ricorrente.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=design_pattern">modifica</a>; <a href="http://localhost:8080/glossario.php?id=design_pattern">rimuovi</a></dd>
+			<dt id="development_team">Development team</dt>
+
+					<dd>Chi realizza il prodotto: il luogo di appartenenza dei software engineer</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=development_team">modifica</a>; <a href="http://localhost:8080/glossario.php?id=development_team">rimuovi</a></dd>
+			<dt id="diagramma_dei_casi_d_uso">diagramma dei casi d'uso</dt>
+
+					<dd>Grafo orientato che mostra gli attori, i casi d'uso e le relazioni tra essi: ogni nodo è un attore o un caso d'uso; ogni arco è una comunicazione tra un attore e un caso d'uso oppure una relazione (di estensione, inclusione o generalizzazione) tra due casi d'uso o tra due attori.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">use case diagram</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=diagramma_dei_casi_d_uso">modifica</a>; <a href="http://localhost:8080/glossario.php?id=diagramma_dei_casi_d_uso">rimuovi</a></dd>
+			<dt id="diagramma_di_Gantt">diagramma di Gantt</dt>
+
+					<dd>Diagramma che rappresenta la durata, la sequenzialità e il parallelismo delle attività di un progetto.<p></p><p>Si basa sulla dislocazione temporale delle attività, per rappresentarne la durata, la sequenzialità ed il parallelismo e confrontare stime e progressi.</p><p>Prima cosa da fare: determino le attività da svolgere su tutta la durata o su periodi più piccoli. L’orizzonte è dato in parte dal modello di ciclo di vita che adotto. Poi determinare le dipendenze, che consumano tempo e non producono, devo identificarle. Terza cosa, dire quanto tempo e persone mi serviranno per una certa attività; una volta decise le risorse, alloco persone alle attività. Poi mettiamo a diagramma le cose e vediamo se tornano, altrimenti si torna indietro (ciclo). I diagrammi mi aiutano a capire se riesco a gestire il tutto.</p><p>Creati oltre 100 anni fa; sull’asse orizzontale c’è il tempo segmentato per unità di lavoro (es. 1gg, una settimana, un mese..). Una buona scelta è utilizzare come unità di misura un giorno (8 ore lavorative); ma ho un calendario (es. sabato e domenica non si lavora). Sull’asse orizzontale ci sono tutte le attività che devo svolgere e archi che rappresentano le transizioni tra una e l’altra. Le dipendenze logiche tra attività: quelle che non hanno dipendenze partono subito, la seconda è la durata minima di tempo/persone che posso usare per una determinata attività. Work allocation, in questa fase non sto allocando persone ma ruoli.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Gantt diagram</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=diagramma_di_Gantt">modifica</a>; <a href="http://localhost:8080/glossario.php?id=diagramma_di_Gantt">rimuovi</a></dd>
+			<dt id="diagramma_PERT">diagramma PERT (Project Evaluation and Review Technique)</dt>
+
+					<dd>Rete che rappresenta le dipendenze temporali (e le criticità) tra attività di un progetto.<p></p><p>serve a calcolare il rischio di calendario che</p><p>consiste nell’avere un realistico margine tra un input e un output (slack). Se misuro lo slack e mi accorgo che è 0 o negativo ho una criticità. E’ bene sapere che non ci sia questo rischio. Non si può avere nemmeno slack troppo grande. Diagrammi specifici che collocano gli slack e rappresentano il rischio. Indica l’ordine delle attività e la loro durata e indica la prima data in cui posso iniziare un’attività che abbia tutti gli input necessari. Calcolando il cammino più lungo tra l’inizio e la fine del progetto posso calcolare l’attività che finisce prima. Questo diagramma legge il Gantt rispetto allo slack e calcola i cammini critici.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">PERT diagram</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=diagramma_PERT">modifica</a>; <a href="http://localhost:8080/glossario.php?id=diagramma_PERT">rimuovi</a></dd>
+			<dt id="diagramma_WBS">diagramma WBS (Work Breakdown Structure)</dt>
+
+					<dd>Diagramma che decompone in modo gerarchico le attività di un progetto in sotto-attività (coese ma non necessariamente sequenziali ed univocamente identificate).<p></p><p>strumento per capire quali sono le attività utili/fondamentali tramite decomposizione (struttura di decomposizione del lavoro). L’attività viene scomposta e numerata con numerazione gerarchica. Ogni componente deve essere univocamente identificabile.</p><p>Un’attività decomposta permette di agevolare il parallelismo. Se non frammento ammasso un grosso rischio su una persona. Attenzione moto acuta sulla dimensione di attività. Il WBS serve ad avere una percezione delle attività fini (foglie) da svolgere.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">WBS diagram</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=diagramma_WBS">modifica</a>; <a href="http://localhost:8080/glossario.php?id=diagramma_WBS">rimuovi</a></dd>
+			<dt id="disciplinato">disciplinato</dt>
+
+					<dd>Che segue le norme (anzi, la best practice).</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">disciplined</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=disciplinato">modifica</a>; <a href="http://localhost:8080/glossario.php?id=disciplinato">rimuovi</a></dd>
+			<dt id="documentazione">documentazione</dt>
+
+					<dd>Tutto ciò che descrive gli ingressi e le uscite delle attività di un progetto (riguardo al prodotto e processo). Documenti di sviluppo e di gestione del progetto.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">documentation</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=documentazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=documentazione">rimuovi</a></dd>
+			<dt id="driver">driver</dt>
+
+					<dd>Un "pilota" che guidi l'esecuzione del test. Ogni test di unità dev'essere chiamato da qualcuno: costui è il driver.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=driver">modifica</a>; <a href="http://localhost:8080/glossario.php?id=driver">rimuovi</a></dd>
+			<dt id="efficacia">efficacia</dt>
+
+					<dd>Conformità alle attese. Determinata dal grado di conformità del prodotto rispetto alle norme vigenti e agli obiettivi prefissati.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">effectiveness</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=efficacia">modifica</a>; <a href="http://localhost:8080/glossario.php?id=efficacia">rimuovi</a></dd>
+			<dt id="efficienza">efficienza</dt>
+
+					<dd>Contenimento dei consumi per raggiungere un obiettivo. Inversamente proporzionale alla quantità di risorse impiegate nell’esecuzione delle attività richieste.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">efficiency</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=efficienza">modifica</a>; <a href="http://localhost:8080/glossario.php?id=efficienza">rimuovi</a></dd>
+			<dt id="end users"></dt>
+
+					<dd></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=end%20users">modifica</a>; <a href="http://localhost:8080/glossario.php?id=end%20users">rimuovi</a></dd>
+			<dt id="end_users">End users</dt>
+
+					<dd>Chi usa il prodotto software</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=end_users">modifica</a>; <a href="http://localhost:8080/glossario.php?id=end_users">rimuovi</a></dd>
+			<dt id="errore">errore</dt>
+
+					<dd>Stato del sistema che, se attivato, produce un malfunzionamento.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">error</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=errore">modifica</a>; <a href="http://localhost:8080/glossario.php?id=errore">rimuovi</a></dd>
+			<dt id="faf-in">Fan-in</dt>
+
+					<dd>È l'indice di utilità di una componente. Rappresenta il numero dei moduli immediatamente superiori (parenti o boss).<p></p><p>Il designer dovrebbe mirare ad un lato fan-in ai livelli inferiori della gerarchia. Normalmente ci sono funzioni low-level che devono essere identificate e trasformate in moduli comuni per redurre la ridondanza del codice e aumentare la manutenibilità. Un alto fan-in aumenta la portabilità se tutta la gestione dell'I/O viene fatta da moduli comuni. Aumenta la ridondanza, semplifica la manutenzione. Moduli sviluppati per il fan-in devon'avere buona coesione, preferibilmente funzionale.</p><p>Ogni intergavvia per un modulo fan-in deve avere lo stesso numero e tipo di parametri.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=faf-in">modifica</a>; <a href="http://localhost:8080/glossario.php?id=faf-in">rimuovi</a></dd>
+			<dt id="failure">failure</dt>
+
+					<dd>Vedi: malfunzionamento</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=failure">modifica</a>; <a href="http://localhost:8080/glossario.php?id=failure">rimuovi</a></dd>
+			<dt id="fan-out">Fan-out</dt>
+
+					<dd>Rappresenta il numero di dipendenze di un modulo (il numero di moduli immediatamente subordinati).<p></p><p>Il fan-out ottimale è tra 5 e 9. </p><p>Il designer dovrebbe mirare ad un fan-out moderato ai livelli alti della gerarchia, usando la fattorizzazione per risolvere problemi dovuti ad un'eccessivo fan.out, creando moduli intermedi per fattorizzare al di fuori i moduli con un'alta coesione ed un basso accoppiamento.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=fan-out">modifica</a>; <a href="http://localhost:8080/glossario.php?id=fan-out">rimuovi</a></dd>
+			<dt id="fase_di_ciclo_di_vita">fase (di un ciclo di vita)</dt>
+
+					<dd>Durata temporale (che non si ripete) entro uno stato del ciclo di vita e un altro.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">phase</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=fase_di_ciclo_di_vita">modifica</a>; <a href="http://localhost:8080/glossario.php?id=fase_di_ciclo_di_vita">rimuovi</a></dd>
+			<dt id="fornitore">fornitore</dt>
+
+					<dd>cioè chi si impegna a fornire il prodotto richiesto dal proponente; è un gruppo di sei o sette studenti che scelgono di rispondere ad un particolare capitolato d'appalto. Il gruppo è un'entità coesa provvista di nome, logo e e-mail per le comunicazioni ufficiali.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=fornitore">modifica</a>; <a href="http://localhost:8080/glossario.php?id=fornitore">rimuovi</a></dd>
+			<dt id="framework">framework</dt>
+
+					<dd>Struttura di supporto su cui un software può essere organizzato e progettato.<p></p><p>Insieme integrato di componenti software prefabbricate.</p><p>Sono bottom-up perchè fatti di codice già sviluppato, ma anche top-down se impongono uno stile architetturale.</p><p>Utilissimi come base facilmente risuabile di diverse applicazioni entro un dato dominio.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=framework">modifica</a>; <a href="http://localhost:8080/glossario.php?id=framework">rimuovi</a></dd>
+			<dt id="function_point"> function point</dt>
+
+					<dd>Non misura il sw, ma le sue entità logico-funzionali [dim. progetto e di produttività in  relazione ai requisiti funzionali, è indipendente dal linguaggio di programmazione].<p></p><p>Conta le funzionalità differenziate per categoria e pesate in base ad attributi del prodotto.</p><p>Misurazioni diverse possono dare risultati diversi.</p><p>Componenti misurate:</p><p>-External Input (EI) Processo elementare a seguito del quale dati entrano nella componente misurata</p><p>-External Output (EO) Processo elementare a seguito del quale dati escono dalla componente</p><p>-External Inquiry (EQ) Processo elementare per il quale specifici</p><p>dati interni sono richiesti alla componente e da essa emessi</p><p>-Internal Logical File (ILF) Gruppo di dati correlati interni alla</p><p>componente e alimentati tramite EI</p><p>-External Interface File (EIF) Gruppo di dati correlati esterni alla componente e usati come riferimento</p><p></p><p></p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=function_point">modifica</a>; <a href="http://localhost:8080/glossario.php?id=function_point">rimuovi</a></dd>
+			<dt id="gestione_configurazione">Gestione di configurazione</dt>
+
+					<dd>Ha come obiettivi quello di mettere in sicurezza le baseline che consolidano gli stati d'avanzamento del processo di sviluppo.<p></p><p>Le attività sono: l'identificazione di configurazione (quali configuration item compongono il prodotto-&gt;oguno ha un'identità unica) , il controllo di baseline (insieme di CI consolidato ad una specifica milestone; l'esistenza di baseline ben identificate permette riproducibilità, tracciabilità, analisi e confronto), la gestione delle modifiche ed il controllo di versione. </p><p></p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Configuration management</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=gestione_configurazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=gestione_configurazione">rimuovi</a></dd>
+			<dt id="gestione_della_qualità">Gestione della qualità</dt>
+
+					<dd>L'insieme dei processi che assicurano che prodotti e implementazioni di processi rispettino gli obiettivi di qualità (di un'organizzazione) e soddisfino gli stakeholder.<p></p><p>La struttura organizzativa, le responsabilità, le procedure, i procedimenti e le risorse messe in atto per il perseguimento della qualità.</p><p>• Pianificazione, voglio che le attività siano sistematiche nel modo richiesto; la pianificazione è alla</p><p>base di ogni sistema di qualità. Senza pianificazione è molto più facile fallire; è relativa a obiettivi specifici di qualità. Per raggiungere quegli obiettivi serve fare cose specifiche e aggiuntive, ma devo anche avere le risorse per poterlo fare. “Cosa mi serve per fare meglio”, inteso come competenze e infrastrutture.</p><p>• Controllo, ogni attività svolta può introdurre errori e devo cercare di intercettarli; un sistema di</p><p>qualità ha bisogno di verifica; dev’essere intelligente, rapido, mirato e oggettivo. Devo avere chiaro quale attività svolgere. Cerco di farlo in modo incrementale.</p><p>• Miglioramento continuo.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">quality management</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=gestione_della_qualit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=gestione_della_qualit%C3%A0">rimuovi</a></dd>
+			<dt id="gestione_modifiche">Gestione delle modifiche</dt>
+
+					<dd>Le richieste hanno origine da: utenti(difetti/mancanze), sviluppatori (idem), competizione (per avere valore aggiunto).<p></p><p>Le richieste vanno sottoposte ad un processo d'analisi, decisione, realizzazione e verifica.</p><p>Ogni richiesta va inoltrata in modo formale: change request. </p><p>Va tenuta traccia d'ogni richiesta: issue tracking o ticketing, stato corrente + eventuale chiusura.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=gestione_modifiche">modifica</a>; <a href="http://localhost:8080/glossario.php?id=gestione_modifiche">rimuovi</a></dd>
+			<dt id="gestione_rischi">Gestione dei rischi</dt>
+
+					<dd>Durante la pianificazione del progetto:<p></p><p>&gt;Identificazione (nel progetto, prodotto, mercato)</p><p>&gt;Analisi (prob. d'occorrenza, conseguenze)</p><p>&gt;Pianificazione (valutare come evitarli/mitigarli, conseguenze?)</p><p>Durante il progetto:</p><p>&gt;Controllo e mitigazione (attenzione continua del livello, tramite rilevazione d'indicatori; riconosciemnto, trattamento ad aggiornamento strategie).</p><p>Fonti: tecnologie, rapporti int.pers., org. lavoro, requisiti+rapporti stakeholders, tempi e costi</p><p>Verifica livello di rischio: </p><p>&gt;da effettuare regolarmente per determinare il livello corrente di rischio (non sempre è costante)</p><p>&gt;valutare se gli effetti dei rischi possono essere cambiati (non sono sempre costati nel tempo)</p><p>&gt;riportare sempre ogni rischio serio all'attenzione del mgmt</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Risk management</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=gestione_rischi">modifica</a>; <a href="http://localhost:8080/glossario.php?id=gestione_rischi">rimuovi</a></dd>
+			<dt id="glossario">glossario</dt>
+
+					<dd>Elenco dei significati dei termini più rilevanti di un documento.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">glossary</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=glossario">modifica</a>; <a href="http://localhost:8080/glossario.php?id=glossario">rimuovi</a></dd>
+			<dt id="governance">governance</dt>
+
+					<dd>Sinonimo di efficacia, efficienza, mantenibilità e visione.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=governance">modifica</a>; <a href="http://localhost:8080/glossario.php?id=governance">rimuovi</a></dd>
+			<dt id="guasto">guasto</dt>
+
+					<dd>Meccanica/algoritmica causa di un errore.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">fault</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=guasto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=guasto">rimuovi</a></dd>
+			<dt id="gunning_fog_index">Gunning fog index</dt>
+
+					<dd>Misura la facilità di lettura e di comprensione di un testo. Il numero risultante è un indicatore del numero di anni di educazione formale della quale una persona necessita al fine di leggere il testo con facilità. Vale a dire che, se un dato testo ha un indice Fog pari a 12, per comprenderlo sono necessari dodici anni educazione formale, equivalenti a un diploma di scuola superiore. L'indice venne sviluppato nel 1952 da Robert Gunning, uomo d'affari statunitense.<p></p><p>L'indice fog di Gunning viene usato generalmente per testi non particolarmente lunghi e di scrittura in ambito professionale. I testi che sono concepiti per avere un vasto pubblico generalmente richiedono un indice fog minore di 12 punti. I testi che richiedono una comprensione pressoché universale generalmente richiedono un indice minore di 8 punti.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=gunning_fog_index">modifica</a>; <a href="http://localhost:8080/glossario.php?id=gunning_fog_index">rimuovi</a></dd>
+			<dt id="IEEE_830-1998">IEEE 830-1998</dt>
+
+					<dd>Reccomended Practice for Software Requirements Specifications.<p></p><p>ocumento che descrive le pratiche raccomandate per scrivere un’analisi dei requisiti.</p><p>Ci sono 8 proprietà fondamentali:</p><p>1. Non ambigui, mai alcuna incertezza su che cosa significano;</p><p>2. Correcti, non deve nascere sbagliato perchè fa danni;</p><p>3. Completi;</p><p>4. Verificabili a basso costo;</p><p>5. Consistenti non posso chiedere una cosa e il suo contrario;</p><p>6. Modificabili, serve una tecnica che renda modificabile l’insieme dei requisiti. Sui requisiti devo poter aggiungere, togliere, cercare, aggiornare: operazioni tipiche da basi di dati;</p><p>7. Tracciabili, deve essere univocamente identificabile;</p><p>8. Ordinati (ranked) per rilevanza.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=IEEE_830-1998">modifica</a>; <a href="http://localhost:8080/glossario.php?id=IEEE_830-1998">rimuovi</a></dd>
+			<dt id="impegno">impegno</dt>
+
+					<dd>null</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">commitment</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=impegno">modifica</a>; <a href="http://localhost:8080/glossario.php?id=impegno">rimuovi</a></dd>
+			<dt id="incapsulazione">Incapsulazione (information hiding)</dt>
+
+					<dd>Le componenti sono "black box" ed i clienti ne conoscono solo l'interfaccia; la specifica nasconde gli algoritmi e le strutture dati usate al loro interno. I benefici sono che l'esterno non può fare assunzioni sull'interno, cresce la manutenibilità, diminuendo le dipendenze aumentano le opportunità di riuso.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Information hiding</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=incapsulazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=incapsulazione">rimuovi</a></dd>
+			<dt id="incarico">incarico</dt>
+
+					<dd>null</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">assignment</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=incarico">modifica</a>; <a href="http://localhost:8080/glossario.php?id=incarico">rimuovi</a></dd>
+			<dt id="indicatori">indicatori</dt>
+
+					<dd>Nel conteso della misurazione SW, nel caso di caratteristiche difficilmente misurabili, la misura desiderata può essere ottenuta indirettamente a partire da altre misure, ottenute tramite stime o predizioni.<p></p><p>Visto che sono necessarie delle metriche per stimare le caratteristiche, si identificano gli attributi misurabili, determinando gli indicatori per le caratteristiche non misurabili.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=indicatori">modifica</a>; <a href="http://localhost:8080/glossario.php?id=indicatori">rimuovi</a></dd>
+			<dt id="indice_analitico">indice analitico</dt>
+
+					<dd>Elenco ordinato delle corrispondenze tra particolari termini importanti di un documento e la loro ubicazione in esso.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">index</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=indice_analitico">modifica</a>; <a href="http://localhost:8080/glossario.php?id=indice_analitico">rimuovi</a></dd>
+			<dt id="indice_generale">indice generale</dt>
+
+					<dd>Elenco delle parti di un documento.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">table of contents</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=indice_generale">modifica</a>; <a href="http://localhost:8080/glossario.php?id=indice_generale">rimuovi</a></dd>
+			<dt id="infrastruttura_di_progetto">infrastruttura (di un progetto)</dt>
+
+					<dd>Tutte le risorse hardware e software del progetto.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">null</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=infrastruttura_di_progetto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=infrastruttura_di_progetto">rimuovi</a></dd>
+			<dt id="ingegneria">ingegneria</dt>
+
+					<dd>L'applicazione di princìpi scientifici e matematici per scopi pratici.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">engineering</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ingegneria">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ingegneria">rimuovi</a></dd>
+			<dt id="ingegneria_del_software">ingegneria del software</dt>
+
+					<dd>Applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, al funzionamento e al mantenimento del software. Sistematico nel senso che abbraccia un metodo; disciplinato poiché segue delle norme, anzi la best practice; quantificabile poiché si deve sapere a priori quanto si consumerà (in risorse).</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">software engineering</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ingegneria_del_software">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ingegneria_del_software">rimuovi</a></dd>
+			<dt id="ingegneria_requisiti">ingegneria dei requisiti</dt>
+
+					<dd>Il processo di ingegneria dei requisiti raggruppa quattro attività:<p></p><p>1. studio di fattibilità (stabilire se il sistema in questione è redditizio);</p><p>2. acquisizione[1] e analisi dei requisiti;</p><p>3.specifica dei requisiti (cioè formalizzare i requisiti e riportarli in un documento);</p><p>4.validazione dei requisiti.</p><p>Tale processo riguarda tutti gli stakeholder. In genere non è possibile soddisfare i requisiti di ognuno di essi, quindi bisogna trovare un buon compromesso; questo presuppone che gli stakeholder vengano identificati, "pesati" e interpellati.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ingegneria_requisiti">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ingegneria_requisiti">rimuovi</a></dd>
+			<dt id="inspection">inspection</dt>
+
+					<dd>Tecnica di analisi statica che consiste nell'eseguire una lettura mirata, alla ricerca di errori noti.<p></p><p>Punta a rilevare la presenza di difetti, svolta da verificatori distinti e separati dai programmatori. Si focalizza sulla ricerca di presupposti (error guessing).</p><p>Viene svolta in 4 fasi: la pianificazione, la definizione della lista di controllo, la lettura vera e propria e la correzione dei difetti; in ogni fase la documentazione serve a tenere traccia delle attività svolte.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=inspection">modifica</a>; <a href="http://localhost:8080/glossario.php?id=inspection">rimuovi</a></dd>
+			<dt id="integrazione_bottomup">integrazione bottom-up</dt>
+
+					<dd>Strategia incrementale secondo cui vengono sviluppate ed integrate prima le parti con minore dipendenza funzionale e maggiore utilità, poi si risale l'albero delle dipendenze.<p></p><p>Riduce il numero di stub necessari al test ma porta più tardi alla disponibilità di funzionalità ad alto livello.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=integrazione_bottomup">modifica</a>; <a href="http://localhost:8080/glossario.php?id=integrazione_bottomup">rimuovi</a></dd>
+			<dt id="integrazione_continua">integrazione continua</dt>
+
+					<dd>Pratica di sviluppo in cui i membri di un progetto integrano il loro lavoro frequentemente (quotidianamente) in modo automatizzato.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">continuous integration</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=integrazione_continua">modifica</a>; <a href="http://localhost:8080/glossario.php?id=integrazione_continua">rimuovi</a></dd>
+			<dt id="integrazione_topdown">integrazione top-down</dt>
+
+					<dd>Strategia d'integrazione per cui si sviluppano prima le parti più esterne, quelle poste sulle foglie dell'albero delle dipendenze, poi si scende.<p></p><p>Comporta l'uso di molti stub ma integra a partire dalle funzionalità di più alto livello</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=integrazione_topdown">modifica</a>; <a href="http://localhost:8080/glossario.php?id=integrazione_topdown">rimuovi</a></dd>
+			<dt id="ISO 9000">ISO 9000</dt>
+
+					<dd>Famiglia di standard internazionali per la gestione della qualità nei sistemi produttivi.<p></p><p>ISO 9000, come documento, introduce i fondamenti e un glossario; invece, ISO 9001 si occupa di calare la visione di ISO 9000 nei sistemi produttivi, introducendo dei requisiti ben specifici. Esistono enti che si occupano di certificare il rispetto di tali requisiti (ISO 9001 è quindi anche una certificazione). Infine, ISO 9004 è una guida al miglioramento dei risultati.</p><p>Questa famiglia di standard si basa su 7 princìpi di gestione della qualità (QMP):</p><p>- QMP 1 — customer focus</p><p>- QMP 2 — leadership</p><p>- QMP 3 — engagement of people</p><p>- QMP 4 — process approach</p><p>- QMP 5 — improvement</p><p>- QMP 6 — evidence-based decision making</p><p>- QMP 7 — relationship management</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ISO%209000">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ISO%209000">rimuovi</a></dd>
+			<dt id="ISO/IEC_42010">ISO/IEC 42010</dt>
+
+					<dd>International standard for architecture descriptions of systems and software.<p></p><p>• L’architettura è un modo per distinguere le parti (divide);</p><p>• Quelle parti sono organizzate (impera);</p><p>• Per poter avere un’organizzazione di parti bisogna avere delle interfacce che facilitino l’organizzazione;</p><p>• Paradigma di composizione, il criterio con cui metto insieme queste parti, regole, criteri, vincoli che hanno impatto sulla manutenzione futura.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">i</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ISO/IEC_42010">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ISO/IEC_42010">rimuovi</a></dd>
+			<dt id="ISO_14143">ISO/IEC 14143</dt>
+
+					<dd>Fornisce un sommario per le FSM (Functional Size Measurement) e gli standard collegati.<p></p><p>Una FSM (misura di dimensione funzionale è una dimensione conforme ai requisiti  mandatori all'interno dello standard. </p><p>-definire la terminologia del settore</p><p>-chiarire i criteri per valutare le metriche funzionali</p><p>-definire i criteri per accreditare i professionisti che le usano.</p><p>Concetti:</p><p>&gt;accuratezza d'una misura funzioanle</p><p>&gt;accuratezza di una metrica funzionale</p><p>&gt;ripetibilità e riproducibilità d'una metrica f.</p><p>&gt;soglia di sensibilità d'una metrica funzionale</p><p>&gt;applicabilità ad un dominio funzionale</p><p>LO standard aiuta ad orientarsi verso metriche funzionali, che possono fornire valori di misura più significativi, utili anche come vista esterna per stimare il prezzo di vendita; la misura è resa indipendente dalle fasi del progetto, a meno di richieste esplicite di cambiamento.</p><p>Misure interne: numero requisiti e la loro volatilità, function points ed UC points, coesione/accoppiamento/fan-in e fan-out, SLoC e complessità ciclomatica, grado di copertura delle prove.</p><p>Misure esterne: ISO/IEC 9126-1: valutazione delle 6 caratteristiche di qualità del prodotto</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ISO_14143">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ISO_14143">rimuovi</a></dd>
+			<dt id="ISO_IEC 12207">ISO/IEC 12207</dt>
+
+					<dd>Standard internazionale per il ciclo di vita del software.<p></p><p>Catalogazione in un quadro di riferimento (framework) di termini e loro significati. Si parla di processi, non di procedure e di processi del ciclo di vita, non di modelli di ciclo di vita.</p><p>Fornisce gli elementi astratti per i quali una singola parte degli aderenti al progetto aderisce alle attese (2 parti coinvolte in un progetto) e può avere legami con altri standard utili a raggiungere gli obbiettivi.</p><p>Lo standard è pensato per essere adottato da realtà aziendali, non per progetto singolo, ed è stato pensato affinchè ci sia un’attuazione volontaria di esso.</p><p>Modello ad alto livello che definisce i processi del ciclo di vita del software identificando i processi dello sviluppo, la struttura modulare, le entità responsabili. Esso richiede una definizione istanziata alla realtà che decide di adottarlo. Secondo questo standard i processi sono relazionati tra loro in modo chiaro e distinto (modularità) e i rispettivi compiti sono ben definiti e delineati (coesione).</p><p> - identifica i processi dello sviluppo SW; </p><p> - struttura modulare che richiede specializzazione</p><p> - specifica le responsabilità sui processi</p><p> - identifica i prodotti dei processi</p><p>Divide i processi in tre famiglie.</p><p>1.Processi primari:</p><p> -acquisizione (gestione dei propri sotto-fornitori[1], cioè di chi ci fornisce una componente del nostro prodotto);</p><p> -fornitura (gestione dei rapporti con il cliente — controparte dell'acquisizione);</p><p> -sviluppo — affrontato con approccio costruttivo, non correttivo; svolto anche tramite appalto esterno; non solo programmazione (che tra l'altro va affiancata dal testing)!</p><p> -gestione operativa (installazione ed erogazione dei prodotti);</p><p> -manutenzione (correzione, adattamento, evoluzione).</p><p>2.Processi di supporto (delle specie di "sottoprocedure"):</p><p> -documentazione;</p><p> -gestione delle versioni e della configurazione;</p><p> -accertamento della qualità;</p><p> -qualifica: verifica e validazione ("V&amp;V"), due processi distinti ma collegati;</p><p> -revisioni congiunte con il cliente;</p><p> -verifiche ispettive esterne;</p><p> -risoluzione dei problemi.</p><p>3.Processi organizzativi (l'"ambiente" del sistema):</p><p> -gestione dei processi;</p><p> -gestione delle infrastrutture;</p><p> -miglioramento del processo;</p><p> -formazione del personale.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ISO_IEC%2012207">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ISO_IEC%2012207">rimuovi</a></dd>
+			<dt id="ISO_IEC 14598">ISO/IEC 14598</dt>
+
+					<dd>Standard internazionale che fornisce un processo per la valutazione della qualità del software; integra ISO/IEC 9216.<p></p><p>Definizione di metriche per la valutazione delle caratteristiche rilevanti.</p><p>Misurazione della qualità software.</p><p>Misurazione quantitativa: l'uso di una metrica per assegnare un valore (numero o categoria) su una scala predefinita.</p><p>Il processo attraverso cui, secondo regole definite, simboli o numeri sono assegnate ad attributi di una entità.</p><p></p><p>(Information Technology — Software Product Evaluation): se ISO/IEC 9126 definiva un modello della qualità del software, lo standard 14598 descriveva il processo di valutazione della qualità del software; questo si componeva di sei parti:</p><p>parte inroduttiva;</p><p>pianificare e gestire una valutazione;</p><p>valutazione durante lo sviluppo;</p><p>valutazione nella fase di acquisizione;</p><p>in fase di assessment di terza parte;</p><p>infine, un esempio di documentazione da produrre in fase di valutazione.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ISO_IEC%2014598">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ISO_IEC%2014598">rimuovi</a></dd>
+			<dt id="ISO_IEC 15504">ISO/IEC 15504:1998</dt>
+
+					<dd>Standard internazionale per il miglioramento e la valutazione della qualità di processo.<p></p><p>Nato per armonizzare SPY con ISO/IEC 12207 ed ISO 9001.</p><p>Disarticola ogni processo in caratteristiche rilevanti su quel processo e su ogni attributo di processo attacca un’etichetta che dice a che punto siamo su quel processo.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">ISO/IEC 15504</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ISO_IEC%2015504">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ISO_IEC%2015504">rimuovi</a></dd>
+			<dt id="ISO_IEC 15939">ISO/IEC 15939</dt>
+
+					<dd>Standard internazionale per la misurazione del software.<p></p><p>Originato in seguito a inconsistenze negli standard per le misurazioni e dal bisogno di una terminologia ed un framework per comunicarrre informazioni, internamente tra produttori, ed esternamente, agli acquirenti.</p><p>I bisogni informativi sono basati su obiettivi, vincoli, rischi e problemi che originano dai processi tecnici e manageriali.</p><p>Si possono determinare grazie a CMMI.</p><p>Attività:</p><p>– Establish and Maintain Measurement Capability</p><p>– Plan Measurement</p><p>– Perform Measurement</p><p>– Evaluate Measurement</p><p>– Improve Measurement</p><p></p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ISO_IEC%2015939">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ISO_IEC%2015939">rimuovi</a></dd>
+			<dt id="ISO_IEC 25000">ISO/IEC 25000</dt>
+
+					<dd>Famiglia di standard internazionali che vogliono fornire un framework per la valutazione della qualità del software; ha inglobato ISO/IEC 9126 e ISO/IEC 14598.<p></p><p>SQuaRE: Software product Requirements And Evaluation.</p><p>Questa famiglia di standard ha lo scopo di creare un framework per la valutazione della qualità del software.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ISO_IEC%2025000">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ISO_IEC%2025000">rimuovi</a></dd>
+			<dt id="ISO_IEC 9126">ISO/IEC 9126</dt>
+
+					<dd>Standard internazionale che fornisce un modello per la qualità del software.<p></p><p>Propone un approccio alla qualità in modo che le aziende possano migliorare l'organizzazione ed i processi, e come conseguenza concreta, il prodotto sviluppato.</p><p>Catalogazione sistematica delle caratteristiche rilevanti.</p><p>&gt;Visione esterna: relativa all'esecuzione del prodotto (product requirements)</p><p>&gt;Visone interna: relativa al prodotto non in esecuzione (product-component requirements)</p><p>&gt;Visione in uso: relativa alla percezione dell'utente/operatore (customer requirements).</p><p>Il modello di qualità stabilito nella prima parte dello standard,  è classificato da sei caratteristiche generali (funzionalità, affidabilità, efficienza, usabilità, manutenibilità, portabilità).</p><p>La funzionalità è un "requisito funzionale" a differenza delle ultime cinque caratteristiche chiamate invece " requisiti non funzionali" o "requisiti di qualità".</p><p>Per la qualità ho bisogno della metrica per avere un sistema di valutazione. Principi:</p><p>1. Funzionalità, avere le funzionalità attive è qualità;</p><p>2. Affidabilità;</p><p>3. Efficienza, devo metterci poco tempo, quante risorse uso per fare una determinata cosa;</p><p>4. Usabilità, non vanno bene cose troppo complesse per gli utilizzatori;</p><p>5. Mantenibilità;</p><p>6. Portabilità.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ISO_IEC%209126">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ISO_IEC%209126">rimuovi</a></dd>
+			<dt id="lead_time">lead time</dt>
+
+					<dd>metrica di project management, misura il tempo di calendario che intercorre tra un ordine di sviluppo (ticket) e la relativa consegna.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=lead_time">modifica</a>; <a href="http://localhost:8080/glossario.php?id=lead_time">rimuovi</a></dd>
+			<dt id="legge_del_rendimento_decrescente">legge del rendimento decrescente</dt>
+
+					<dd>Riguarda il testing e dice: "man mano che aumento lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre più. Questo avviene, ad esempio, quando un produttore aumenta la produzione e, a un certo punto, oltrepassa la domanda: i profitti iniziano ad essere negativi. Così, arriva un tempo in cui fare altri test non aggiunge nulla, cioè non trova errori (e la funzione primaria dei test è trovare errori)."</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=legge_del_rendimento_decrescente">modifica</a>; <a href="http://localhost:8080/glossario.php?id=legge_del_rendimento_decrescente">rimuovi</a></dd>
+			<dt id="legge_di_Parkinson">legge di Parkinson</dt>
+
+					<dd>Work expands to fill the time available.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Parkinson's law</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=legge_di_Parkinson">modifica</a>; <a href="http://localhost:8080/glossario.php?id=legge_di_Parkinson">rimuovi</a></dd>
+			<dt id="legge_domanda">Legge della domanda</dt>
+
+					<dd>Wuanto più è basso il prezzo di una cosa tanto più grande sarà la domanda per quella cosa lı̀. Uso in abbondanza le cose che costano poco</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=legge_domanda">modifica</a>; <a href="http://localhost:8080/glossario.php?id=legge_domanda">rimuovi</a></dd>
+			<dt id="logger">logger</dt>
+
+					<dd>scrive l'esito della prova (test) in un file.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=logger">modifica</a>; <a href="http://localhost:8080/glossario.php?id=logger">rimuovi</a></dd>
+			<dt id="malfunzionamento">malfunzionamento</dt>
+
+					<dd>Esecuzione di un software difforme dalle attese; avviene per problemi interni al sistema che eventualmente si manifestano nel comportamento esterno dei sistema.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">failure</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=malfunzionamento">modifica</a>; <a href="http://localhost:8080/glossario.php?id=malfunzionamento">rimuovi</a></dd>
+			<dt id="manuale_qualità">Manuale della qualità</dt>
+
+					<dd>Documento che definisce il sistema di gestione della qualità di un'organizzazione.<p></p><p>È una visione ad alto livello, che si integra con le procedure aziendali, fissa gli obiettivi di qualità e le strategie attuative (esprime la politica aziendale rispetto alla qualità); specifica le modalità per la sua evoluzione.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=manuale_qualit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=manuale_qualit%C3%A0">rimuovi</a></dd>
+			<dt id="manuale_utente">Manuale Utente</dt>
+
+					<dd>Adatto alle caratteristiche dell'utente e dell'interfaccia utente.<p></p><p>Si caratterizza per l'evoluzione e per la forma: nasce presto e cresce con il prodotto, può essere un documento cartaceo tradizionale/un ipertesto/essere on-line con il prodotto/un aiuto contestuale.</p><p>Al suo interno si predilige la forma attiva alla passiva, la correttezza grammaticale e tipografica, frasi brevi ed introno ad un solo fatto, le liste alle frasi, dei paragrafi brevi e fatti di poche frasi, uno stile non verboso ed una terminologia precisa, l'uso di più punti di vista per descrizioni complesse ed infine sezioni e sottosezioni titolate.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">User manual</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=manuale_utente">modifica</a>; <a href="http://localhost:8080/glossario.php?id=manuale_utente">rimuovi</a></dd>
+			<dt id="manutenzione">manutenzione</dt>
+
+					<dd>Correttiva: per correggere difetti eventualmente rilevati<p></p><p>Adattativa: per adattare il sistema alla variazione dei requisiti;</p><p>Evolutiva: per aggiungere funzionalità al sistema</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">maintenance, upkeep</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=manutenzione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=manutenzione">rimuovi</a></dd>
+			<dt id="marcatore">marcatore</dt>
+
+					<dd>Istruzione che un programma deve eseguire per trattare nel modo specificato dall'utente una porzione di testo specificata.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">mark-up</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=marcatore">modifica</a>; <a href="http://localhost:8080/glossario.php?id=marcatore">rimuovi</a></dd>
+			<dt id="maturità_prodotto">Maturità di prodotto</dt>
+
+					<dd>Occorre valutare il grado di evoluzione del prodotto:<p></p><p>-quanto migliora in seguito alle prove</p><p>-quanto diminuisce la densità di difetti</p><p>-quanto può costare la scoperta del prossimo difetto</p><p>Le tecniche correnti sono spesso empiriche. </p><p>Occorre definire un modello ideale:</p><p>-modello base: il numero di difetti del SW è una costante iniziale</p><p>-modello logaritmico: le modifiche introducono difetti</p><p>Punto di maggior vantaggio: minimo tra la densità difetti residui ed costo delle prove, entrambi funzioni del tempo.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=maturit%C3%A0_prodotto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=maturit%C3%A0_prodotto">rimuovi</a></dd>
+			<dt id="metodi_agili">Metodi agili</dt>
+
+					<dd>Opposizione al modello sequenziale. 4 principi su cui si basa:<p></p><p>1. Mettere in primo piano persone e iterazioni piuttosto che processi e strumenti. Gli individui sono importanti ed è importante il modo in cui interagiscono tra loro;</p><p>2. ”Dei documenti me ne frego, basta che funzioni ”. La documentazione non sempre corrisponde a sw funzionante. E’ importante che funzioni. Ma nel lungo periodo farà soffrire chi dovrà prendere in mano il sw;</p><p>3. Avere un buon rapporto con il customer, coinvolgerlo, non ingessare il rapporto;</p><p>4. Reattività piuttosto che pianificazione. Capacità di adattamento a cambiamenti delle situazioni.</p><p>L'idea di base è il concetto di "user story" (compito significativo che l'utente vuole svolgere con il sw richiesto; definita da: documento di descrizione, minuta di converszioni con il cliente per fissare la comprensione comune, strategia da utilizzare per confermare che il sw soddisfi gli obiettivi).</p><p>Scrum (caos organizzato), Kanban (just-in-time), Scrumban</p><p></p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Agile methods</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=metodi_agili">modifica</a>; <a href="http://localhost:8080/glossario.php?id=metodi_agili">rimuovi</a></dd>
+			<dt id="metodi_di_lettura">metodi di lettura</dt>
+
+					<dd>Svolti durante l'analisi statica durante le fasi di verifica e validazione. <p></p><p>Inspection e walkthrough.</p><p>Sono metodi pratici, basati sulla lettura della documentazione sul prodotto. La loro efficacia dipende dall'esperienza dei verificatori (nell'organizzare le attività di verifica e nel documentare le attività svolte ed i risultati ottenuti).</p><p>Sono modalità relativamente complementari!</p><p>Le affinità sono: hanno controlli basati su desk check, hanno programmatori e verificatori su fronti opposti, compilano documentazione formale.</p><p>Differenze: l'inspection è basato su errori presupposti, ed è più rapido, il walkthough richiede maggiore attenzione però è più collaborativo.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=metodi_di_lettura">modifica</a>; <a href="http://localhost:8080/glossario.php?id=metodi_di_lettura">rimuovi</a></dd>
+			<dt id="metodo_di_lavoro">metodo di lavoro</dt>
+
+					<dd>Metodo di lavoro.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">way of working</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=metodo_di_lavoro">modifica</a>; <a href="http://localhost:8080/glossario.php?id=metodo_di_lavoro">rimuovi</a></dd>
+			<dt id="metrica">metrica</dt>
+
+					<dd>Costituisce l'insieme di regole su cui si basa la misurazione.<p></p><p>Contribuisce a fissare le entità da misurare, gli attributi rilevanti, l'unità di misura e la procedura per assegnare ed interpretare i valori.</p><p>L'interpretazione di un sistema di unità di misura.</p><p>Secondo il dizionario SWE di IEEE: è la misura quantitativa del gradi di possesso di uno specifico attributo da parte di un sistema, componente, processo.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">metric</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=metrica">modifica</a>; <a href="http://localhost:8080/glossario.php?id=metrica">rimuovi</a></dd>
+			<dt id="metrica_software">Metrica software</dt>
+
+					<dd>Ogni tipo di misura riferita ad un sistema, processo o documento  software.<p></p><p>Es. Programma (SLOC), testo (Gunning fog index). Effort (person-days).</p><p>Permetta al prodotto ed al processo d'essere quantificati.</p><p>Può essere usato per predire attributi del prodotto oppure per controllare il processo software.</p><p>Le matriche di prodotto possono essere usate per fare predizioni generali o per identificare componenti anomale.</p><p>In produzione, costituiscono strumenti di valutazione e controllo.</p><p>Le entità che da misurare sono: processi (per insiemi collegati di procedur astratte), progetti (attività concrete legate a tempo e risorse), prodotti (beni o servizi in uscita dai progetti) e risorse (elementi impiegati e consumati dal progetto).</p><p>Gli attributi possono essere interni (misurabili rispetto alle entità) oppure esterni (misurabili rispetto all'ambiente).</p><p>Sono un problema aperto, dato che il software è difficile da misurare, ha caratteristiche multiformi, le tecnologie cambiano velocemente e l'ambiente d'esecuzione ha una grande influenza.</p><p>I tipi di etriche riguardano:</p><p>-il prodotto in sè (quan'è grande)</p><p>-le sue funzionalità (cosa fa e come)</p><p>-il suo comportamento (cosa succede e quando)</p><p></p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Software metrics</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=metrica_software">modifica</a>; <a href="http://localhost:8080/glossario.php?id=metrica_software">rimuovi</a></dd>
+			<dt id="metriche_asserzioni">Metriche: asserzioni</dt>
+
+					<dd>La proprietà o l'attributo del software può essere misurato.<p></p><p>Esiste una relazione tra quanto possiamo misurare e quanto vogliamo sapere (conosciamo solo come misurare attributi interni, ma spesso siamo interessati agli attributi esterni).</p><p>La relazione è stata formalizzata e validata.</p><p>Può essere difficile collegare quanto può essere misurato, agli attributi esterni di qualità che si desidera misurare.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Metrics assumptions</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=metriche_asserzioni">modifica</a>; <a href="http://localhost:8080/glossario.php?id=metriche_asserzioni">rimuovi</a></dd>
+			<dt id="metriche_progettuali">metriche progettuali</dt>
+
+					<dd>vedi: Software Metrics , Norman Fenton<p></p><p>-Grado di coesione</p><p>-Grado di accoppiamento</p><p>-complessità strutturale (funzione del fan-in)</p><p>-complessità del flusso dati (funzione del numero di parametri in ingresso ed uscita e della complessità strutturale)</p><p>-complessità del sistema (funzione della complessità strutturale e della complessità del flusso dati)</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=metriche_progettuali">modifica</a>; <a href="http://localhost:8080/glossario.php?id=metriche_progettuali">rimuovi</a></dd>
+			<dt id="metriche_programmazione">metriche di programmazione</dt>
+
+					<dd>-SLOC, è la metrica più intuitiva e più usata<p></p><p>-conteggio di costrutti/comandi, è semplificato ed adattato alle funzionalità degli editor, viene usato per derivare informazioni di costo e produttività, è rapportata alla densità di commenti.</p><p>I limiti che hanno sono che dipendono dalla sintassi e dalla potenza espressiva del linguaggio dallo stile di codifica.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=metriche_programmazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=metriche_programmazione">rimuovi</a></dd>
+			<dt id="metriche_sw_OO">metriche per software OO</dt>
+
+					<dd>Occorrono metriche dedicate: quelle tradizionali non sono accurate, c'è complessità sia funzionale che strutturale, il codice non è lineare (SLOC non funziona), vengono usate strutture e funzioni complesse (McCabe non funziona come misura assoluta).<p></p><p>Queste sono: metriche per i metodi, per le classi e per i sistemi.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=metriche_sw_OO">modifica</a>; <a href="http://localhost:8080/glossario.php?id=metriche_sw_OO">rimuovi</a></dd>
+			<dt id="milestone">milestone</dt>
+
+					<dd>Punto nel tempo associato ad un valore strategico.<p></p><p>Devono essere: specifiche per obiettivi, delimitate per ampiezza ed ambizioni, incrementali per contenuti, coerenti con e rilevante per la strategia di prodotto, misurabili epr quantità di impegno necessario, traducibili in compiti assegnabili, raggiungibili, puntuali rispetto alle esigenze di calendario e dimostrabili agli stakeholders</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=milestone">modifica</a>; <a href="http://localhost:8080/glossario.php?id=milestone">rimuovi</a></dd>
+			<dt id="misura">misura</dt>
+
+					<dd>Risultato di una misurazione. <p></p><p>Ha come fine quello di rendere oggettivi i risultati  degli esperimenti effettuati ed avere dei dati affidabili su cui basare modelli matematici. </p><p>L'affidabilità implica ripetibilità, confrontabilità e confidenza; ogni misura ha limiti intrinseci: la misura è un'approssimazione di realtà fisiche ed è un'astrazione di valutazione o misura dei concetti.</p><p>È un'assegnazione empirica ed oggettiva di un valore (numerico o simbolo) ad un'entità per caratterizzarne un'attributo specifico.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">measurement</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=misura">modifica</a>; <a href="http://localhost:8080/glossario.php?id=misura">rimuovi</a></dd>
+			<dt id="misurazione">misurazione</dt>
+
+					<dd>Processo che assegna numeri o simboli di entità del mondo reale per descriverle secondo regole (vedi: metrica).<p></p><p>Se non lo puoi misurare, non lo puoi migliorare, non puoi controllare ciò che non puoi misurare!</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=misurazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=misurazione">rimuovi</a></dd>
+			<dt id="misurazione_quantitativa">misurazione quantitativa</dt>
+
+					<dd>L'uso di una metrica per assegnare un valore su una scala predefinita.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">quantitative measurement</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=misurazione_quantitativa">modifica</a>; <a href="http://localhost:8080/glossario.php?id=misurazione_quantitativa">rimuovi</a></dd>
+			<dt id="misurazione_software">misurazione nel software</dt>
+
+					<dd>Obiettivi:<p></p><p>-valutare lo stato di progetti (stime, preventivi e consuntivi di tempo e costi), prodotti (qualità), processi (qualità, miglioramenti) e risorse (consumo);</p><p>-interpretare e cogliere tendenze, in modo proattivo piuttosto che reattivo</p><p>-decidere azioni correttive, magari privilegiando il maggiore effetto per il minore costo</p><p>Strategia e discipilina:</p><p>-cosa misurare -&gt; ISO/IEC 15939 Software Measurement Process</p><p>-come misurare: linee guida (Practical SW Measurements)</p><p>-cosa e perché: CMMI</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=misurazione_software">modifica</a>; <a href="http://localhost:8080/glossario.php?id=misurazione_software">rimuovi</a></dd>
+			<dt id="misure_funzionali_stadard">misure funzionali: standard</dt>
+
+					<dd></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=misure_funzionali_stadard">modifica</a>; <a href="http://localhost:8080/glossario.php?id=misure_funzionali_stadard">rimuovi</a></dd>
+			<dt id="modelli_di_ciclo_di_vita">Modelli di ciclo di vita</dt>
+
+					<dd>Descrivono come i processi si relazionano tra loro nel tempo rispetto agli stati di ciclo di vita.<p></p><p>Base concettuale intorno alla quale pianificare, organizzare, eseguire e controllare lo svolgimento delle attività necessarie.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Life cycle models</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=modelli_di_ciclo_di_vita">modifica</a>; <a href="http://localhost:8080/glossario.php?id=modelli_di_ciclo_di_vita">rimuovi</a></dd>
+			<dt id="modello">modello</dt>
+
+					<dd>Astrazione della realtà.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">model</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=modello">modifica</a>; <a href="http://localhost:8080/glossario.php?id=modello">rimuovi</a></dd>
+			<dt id="modello_componenti">Modello a componenti</dt>
+
+					<dd>Molto di quello che serve è già stato fatto &amp; molto di quello che faremo potrà ancora servire.<p></p><p>Massima attenzione al riuso sistematico di componenti preesistenti/off-the-shelf.</p><p>Analisi requisiti -&gt; Analisi componenti -&gt; Adattamento requisiti -&gt; Progettazione con riuso -&gt; Sviluppo ed integrazione -&gt; Validazione di sistema</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Model at component</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=modello_componenti">modifica</a>; <a href="http://localhost:8080/glossario.php?id=modello_componenti">rimuovi</a></dd>
+			<dt id="modello_evolutivo">Modello evolutivo</dt>
+
+					<dd>Aiuta a riposndere a bisogni non preventivabili inizialmente; può richiedere rilascio e mantenimento di più versioni esterne in parallelo; comporta il riattraversamento di più fasi del ciclo di vita.<p></p><p>1.Analisi preliminare (identificare req. di massima; definire architattura di massima; pianificare i passi d'analisi e realizzazione evolutiva)</p><p>2. Analisi&amp;realizzazione d'una evoluzione (come raffinamento + estensione dell'analisi o per progettazione, codifica, prove ed integrazione)</p><p>3. Rilascio di prototipi, poi accettazione finale.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Evolutive model</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=modello_evolutivo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=modello_evolutivo">rimuovi</a></dd>
+			<dt id="modello_incrementale">Modello incrementale / incremento</dt>
+
+					<dd>Procedere per incrementi significa aggiungere a un impianto base.<p></p><p>Possono produrre "valore" ad ogni incremento; ogni incremento riduce il rischio di fallimento; funzionalità essenziali sviluppate nei primi incrementi.</p><p>Prevede rilasci multipli &amp; successivi: ognuno realizza un incremento di funzionalità. Requisiti utente classificati e trattati in base alla loro importanza strategica (primi rilasci-&gt;req. + importanti; requisiti strategici stabiliti all'inizio) (req. principali identificati e fissati; architettura del sistema identificata e fissata completamente).</p><p>Analisi e progettazione architetturale non ripetute. Realizzazione incrementale (prj dettaglio, codifica e prove; prima req. essenziale e poi i desiderabili; integrazione-&gt;collaudo-&gt;rilascio)</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Incremental model / Increment</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=modello_incrementale">modifica</a>; <a href="http://localhost:8080/glossario.php?id=modello_incrementale">rimuovi</a></dd>
+			<dt id="modello_iterativo">Modello iterativo / iterazione</dt>
+
+					<dd>Procedere per iterazioni significa operare raffinamenti o rivisitazioni.<p></p><p>Applicabili a qualunque modello di ciclo di vita; consentono maggior capacità d'adattamento; comportano il rischio di non convergenza.</p><p>Soluzione generale:</p><p> 1.decomporre la realizzazione del sys</p><p> 2.identificare&amp;trattare prima le componenti più critiche</p><p> 3.limitare superiormente il numero d'iterazioni.</p><p>Rischi: ogni iterazione comporta un ritorno all'indietro, nella direzione opporsta all'avanzamento del tempo).</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Iterative model / iteration</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=modello_iterativo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=modello_iterativo">rimuovi</a></dd>
+			<dt id="modello_sequenziale">Modello sequenziale (a cascata)</dt>
+
+					<dd>Centrato sull'idea di processi ripetibili; Successione di fasi rigidamente sequenziali: non ammette ritorni a fasi precedenti ed eventi eccezionali fanno ripartire dall'inizio. I prodotti sono principamente documenti, fino ad includere il SW (Document driven development). Ogni stato di vita ha pre- e post-condizioni.<p></p><p>Fasi distinte e non sovrapposte nel tempo. Sviluppo di sistemi complessi sul piano organizzativo (iterazioni troppo costose per mitigare i rischi con approssimazioni successive).</p><p>Fase definita in termini d'attività previste &amp; prodotti attesi, contenuti e struttura documenti, responsabilità e ruoli coinvolti + scadenze consegne docs.</p><p>Fasi = durate temporali con dipendenze causali tra loro.</p><p>Difetti: eccessivamente rigido (stretta sequenzialità + non modifiche in corso d'op. + molta manutenzione + molto burocratico e poco realistico).</p><p>Correttivi: 1. Prototipazione (usa&amp;getta); 2. Cascata con ritorni</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Waterfall model</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=modello_sequenziale">modifica</a>; <a href="http://localhost:8080/glossario.php?id=modello_sequenziale">rimuovi</a></dd>
+			<dt id="modello_spirale">Modello a spirale</dt>
+
+					<dd>Miglior controllo dei rischi di progetto; cicli interni rapidi e ripetuti (dedicati ad analisi e sviluppi prototipali), cicli esterni che aderiscono ad un qualunque altro modello standard di ciclo di vita.<p></p><p>Nel 1988 Barry Boehm propose il modello a spirale, che introduce il concetto di "rischio di progetto" (cercando di contenere tali rischi). Lo sviluppo procede a cicli inizialmente rapidi ma via via sempre più lenti; difatti i cicli esterni della spirale sono così lenti che possono aderire, ognuno, ad un diverso modello di ciclo di vita. Ad ogni ciclo si analizzano i rischi e si compiono simulazioni. Misura del successo di un progetto è il diametro della spirale. Questo modello viene usato solo da chi intraprende progetti sperimentali, che nessuno ha mai realizzato, e richiede forte interazione tra committente e fornitore. </p><p>Grande attenzione sugli aspetti gestionali (pianificazione delle fasi, analisi dei rischi (risk-driven).</p><p>Un ciclo si articola generalmente in quattro momenti:</p><p>1.Definizione degli obiettivi (requisiti, rischi, strategia di gestione)</p><p>2.Analisi dei rischi (studio delle conseguenze, valutazione alternative)</p><p>3.Sviluppo e validazione (realizzazione del prodotto)</p><p>4.Pianificazione (decisione circa il proseguimento, pianificazione del proseguimento)</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Spiral model</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=modello_spirale">modifica</a>; <a href="http://localhost:8080/glossario.php?id=modello_spirale">rimuovi</a></dd>
+			<dt id="modified_condition_decision_coverage">Modified condition/decision coverage</dt>
+
+					<dd>Maggiore il numero di condizioni all'interno d'una decisione, diventa proibitivo il numero di test necessario a massimizzare il condition coverage.<p></p><p>Implica il branch coverage.</p><p>Strategia di copertura del codice che richiede che: </p><p>-Che tutte le decisioni siano soggette a test e tutti i loro possibili esiti siano effettivamente prodotti</p><p>-Che ciascuna condizione all’interno di una decisione assuma</p><p>entrambi gli esiti (vero/falso) almeno una volta.</p><p>Occorre verificare se e come ogni condizione possa da sola determinare tutti i possibili esiti della condizione.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=modified_condition_decision_coverage">modifica</a>; <a href="http://localhost:8080/glossario.php?id=modified_condition_decision_coverage">rimuovi</a></dd>
+			<dt id="modulo">modulo</dt>
+
+					<dd>L'elemento atomico dell'architettura di un software; tipicamente una classe o un interfaccia.<p></p><p>Parte dell'unità.</p><p>Componente elementare di progetto di dettaglio, tipicamente non necessita di test di unità.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">module</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=modulo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=modulo">rimuovi</a></dd>
+			<dt id="norme_progetto">Norme di progetto</dt>
+
+					<dd>Linee guida per le attività di sviluppo: strumento operativo di complemento alle procedure.<p></p><p>Contenuti: organizzazione ed uso delle risorse di sviluppo, convenzioni sull'uso degli strumenti di sviluppo, organizzazione delle comunicazioni e della cooperazione, norme di codifica e gestione dei cambiamenti.</p><p>Le norme di progetto descrivono come dovrà essere il way of working. Individuiamo due categorie di norme: regole (sottoposte a verifica) e raccomandazioni (suggerimenti, senza verifica). Tra le norme di progetto, particolare rilevanza hanno le norme di codifica; queste hanno l'obiettivo di far sì che il codice sorgente sia leggibile (anche a distanza di tempo) e costituiscono una misura preventiva che garantisce verificabilità, manutenibilità e portabilità.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=norme_progetto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=norme_progetto">rimuovi</a></dd>
+			<dt id="oracolo">oracolo</dt>
+
+					<dd>UN metodo per generare a priori i risultati ttesi e per convalidare i risultati ottenuti. È generalmente applicato da agenti automatici, per velocizzare la convalida e renderla "oggettiva".<p></p><p>Li si può produrre sulla base delle specifiche funzionali, semplificando delle prove, oppure sull'uso di componenti terze indipendenti.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=oracolo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=oracolo">rimuovi</a></dd>
+			<dt id="organizzazione">organizzazione</dt>
+
+					<dd>Aggregato di persone [?] che agiscono in modo sistematico, disciplinato e quantificabile; contrario di caos.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">organization</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=organizzazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=organizzazione">rimuovi</a></dd>
+			<dt id="people">People</dt>
+
+					<dd>Business management; Project management; Development team; Customers; End users</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=people">modifica</a>; <a href="http://localhost:8080/glossario.php?id=people">rimuovi</a></dd>
+			<dt id="pianificazione">pianificazione</dt>
+
+					<dd>Organizzare e controllare tempo, risorse e risultati.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">planning</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=pianificazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=pianificazione">rimuovi</a></dd>
+			<dt id="pianificazione_progetto">Pianificazione di progetto</dt>
+
+					<dd>serve a sapere cosa dobbiamo fare nell’assicurarci che le nostre attività producano esiti che aiutino la nostra collaborazione; regolare l’avanzamento. Cominciamo ad identificare<p></p><p>“cosa c’è da fare”, pianifichiamo le attività, flussi di attività e flussi di azione. Chi lo può fare? Quanto mi costa? Le attività hanno un flusso, hanno un inizio ed un’uscita. Si dipanano su un asse temporale. Capite le attività mi devo chiedere chi posso mettere lı̀, come ruoli (non come persone). Attività che hanno dei vincoli sugli estremi ed eventualmente in mezzo. Devo capire quanto mi servirà per svolgere un’attività data,</p><p>tempo, persone, denaro. Le ore vanno intese come ore di calendario: tempo/persona, quanto tempo uso tali persone sapendo che ciascuna percepisce un costo orario preciso. In base a questo posso capire quanto mi costerà un progetto.</p><p>&gt;Definizione delle attività</p><p>  [pianificarne lo svolgimento + controllarne l'attuzione; avere una base su cui gestire l'allocazione delle risorse; stimare e controllare scadenze e costi]</p><p>&gt; Strumenti di pianificazione: diagr. Gantt, Programme Evaluation and Review Technique (PERT), Work Breakdown Structure (WBS)</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Project pianification</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=pianificazione_progetto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=pianificazione_progetto">rimuovi</a></dd>
+			<dt id="pianificazione_qualità">Pianificazione di qualità</dt>
+
+					<dd>Le attività del sistema qualità mirate a fissare gli obiettivi di qualità, i processi e le risorse necessarie per conseguirli.<p></p><p>Vedi: piano di qualità</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=pianificazione_qualit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=pianificazione_qualit%C3%A0">rimuovi</a></dd>
+			<dt id="piano_di_progetto">Piano di progetto</dt>
+
+					<dd>Fissa: risorse disponibili, suddivisione attività, calendario attività.<p></p><p>Obiettivi: org. att. in modo da produrre ris. utili per valutare con efficacia il piano d'avanzamento del lavoro + fissare milestone come punti critici/finali delle attività.</p><p>Struttura: Introduzione, org. prj, analisi dei rischi, risorse necessarie e disponibili (hw, sw), suddivisione del lavoro (work breakdown structure). calendario delle attività (prj schedule), meccanismi di controllo e rendicontazione)</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=piano_di_progetto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=piano_di_progetto">rimuovi</a></dd>
+			<dt id="piano_di_progetto">Piano di progetto</dt>
+
+					<dd>Fissa: risorse disponibili, suddivisione attività, calendario attività.<p></p><p>Obiettivi: org. att. in modo da produrre ris. utili per valutare con efficacia il piano d'avanzamento del lavoro + fissare milestone come punti critici/finali delle attività.</p><p>Struttura: Introduzione, org. prj, analisi dei rischi, risorse necessarie e disponibili (hw, sw), suddivisione del lavoro (work breakdown structure). calendario delle attività (prj schedule), meccanismi di controllo e rendicontazione)</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=piano_di_progetto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=piano_di_progetto">rimuovi</a></dd>
+			<dt id="piano_di_qualità">Piano di qualità</dt>
+
+					<dd>Fissa le politiche aziendali per il perseguimento della qualità (visione orizzontale: trasversale sull'intera organizzazione).<p></p><p>Determina gli obiettivi di qualità del singolo progetto (visione verticale: specificatamente per un prodotto/servizio).</p><p>Assume l'uso di opportuni strumenti e modalità di controllo.</p><p></p><p>Documento che definisce gli elementi del SGQ e le risorse che devono essere applicate in uno specifico caso (prodotto, processo, progetto).</p><p>Operativamente, concretizza il Manuale della Qualità a livello di progetto (sotto specifici vincoli di tempo e risorse); può avere valenza contrattuale.</p><p>In pratica si deve accertare la disponbilitià dell'analisi dei requisiti, di architettura e soluzioni tecniche, la pianificazione delle verifiche e dei risultati delle verifiche; inoltre della conformità ai modelli fissati nelle norme, la tracciabilità tra soluzioni e requisiti, ed assicurare la buona pianificazione delle attività (per uso di risorse).</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=piano_di_qualit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=piano_di_qualit%C3%A0">rimuovi</a></dd>
+			<dt id="piano_qualifica">Piano di qualifica</dt>
+
+					<dd>Definizione delle strategie di verifica; scelta dei metodi, tecniche e procedure da usare per la validazione</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=piano_qualifica">modifica</a>; <a href="http://localhost:8080/glossario.php?id=piano_qualifica">rimuovi</a></dd>
+			<dt id="prassi">prassi</dt>
+
+					<dd>Modo di fare.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">practice</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=prassi">modifica</a>; <a href="http://localhost:8080/glossario.php?id=prassi">rimuovi</a></dd>
+			<dt id="prestazioni_requisiti">Prestazioni (requisiti)</dt>
+
+					<dd>Usabilità significa che il sistema si presta alle mie abilità ed è facile da usare.<p></p><p>Sicurezza significa che vanno garantiti alcuni vincoli sui dati e la loro accessibilità.</p><p>Availability significa che il sistema è sempre disponibile 24h/24 e deve sempre funzionare.</p><p>Portabilità, se sviluppo un sistema per un certo protocollo voglio poterlo riusare per protocolli differenti.</p><p>Mantenibilità, quando rilascio un sistema ad un utente devo garantire di poter correggere i difetti e ag-</p><p>giungere ulteriori funzionalità in futuro.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=prestazioni_requisiti">modifica</a>; <a href="http://localhost:8080/glossario.php?id=prestazioni_requisiti">rimuovi</a></dd>
+			<dt id="principi_testing_sw">Principi del testing software</dt>
+
+					<dd>(secondo Bertrand Meyer)<p></p><p>-testare un programma significa tentare di farlo fallire</p><p>-non ci sono sostituti alle specifiche</p><p>ogni esecuzione fallita deve condurre ad un test case, per essere inclusa permanentemente nella suite di test del progetto</p><p>-gli oracoli dovrebbero essere parrte del testo del programma, come contrati</p><p>-ogni strategia di testing dovrebbe includere un processo di testing riproducibile ed essere valutato obiettivamente tramite espliciti criteri</p><p>-la qualità più importante di una strategia di testing è il numero di fault che trova in funzione del tempo.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Software testing principles</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=principi_testing_sw">modifica</a>; <a href="http://localhost:8080/glossario.php?id=principi_testing_sw">rimuovi</a></dd>
+			<dt id="procedura_di_prova">Procedura di prova</dt>
+
+					<dd>È il procedimento (automatico o manuale) per eseguire, registrare, analizzare e valutare i risultati di prove.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=procedura_di_prova">modifica</a>; <a href="http://localhost:8080/glossario.php?id=procedura_di_prova">rimuovi</a></dd>
+			<dt id="processi_di_sviluppo">Processi di Sviluppo (ISO 12207)</dt>
+
+					<dd>Documentazione;<p></p><p>Accertamento della qualità;</p><p>Gestione delle versioni e delle configurazioni;</p><p>Verifica;</p><p>Qualifica;</p><p>Validazione;</p><p>Revisioni congiunte con il cliente;</p><p>Verifiche ispettive interne;</p><p>Risoluzione dei problemi.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Development processes</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=processi_di_sviluppo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=processi_di_sviluppo">rimuovi</a></dd>
+			<dt id="processi_organizzativi">Processi organizzativi (ISO 12207)</dt>
+
+					<dd>Gestione dei processi;<p></p><p>Gestione delle infrastrutture;</p><p>Miglioramento del processo;</p><p>Formazione del personale.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=processi_organizzativi">modifica</a>; <a href="http://localhost:8080/glossario.php?id=processi_organizzativi">rimuovi</a></dd>
+			<dt id="processi_primari">Processi Primari (ISO 12207)</dt>
+
+					<dd>Acquisizione (gestione dei propri sotto-fornitori);<p></p><p>Fornitura (gestione rapporti con cliente); </p><p>Sviluppo;</p><p>Gestione Operativa (utilizzo);</p><p>Manutenzione (correttiva/adattativa/evolutiva)</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Primary processes</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=processi_primari">modifica</a>; <a href="http://localhost:8080/glossario.php?id=processi_primari">rimuovi</a></dd>
+			<dt id="processo">processo (ingegneristico)</dt>
+
+					<dd>Insieme di attività correlate e coese che trasformano ingressi in uscite, consumando risorse nel farlo.<p></p><p>Il quadro metodologico, normativo e strategico delle attività di progetto (insieme delle attività raggruppate per obiettivi) per alimentare svariati modelli di ciclo di vita del SW.</p><p>Ogni processo si divide in più attività. Ogni attività si divide in compiti. Ogni compito si può svolgere usando qualche tecnica, cioè una sorta di ricetta applicata agli strumenti disponibili. Per strumento s'intende un insieme di concetti e di metodi, con delle tecnologie di supporto.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">process</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=processo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=processo">rimuovi</a></dd>
+			<dt id="processo_definito">processo definito</dt>
+
+					<dd>Specializzazione del processo standard necessaria per adattarlo ad esigenze specifiche di progetto.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=processo_definito">modifica</a>; <a href="http://localhost:8080/glossario.php?id=processo_definito">rimuovi</a></dd>
+			<dt id="processo_di_progetto">processo di progetto</dt>
+
+					<dd>Istanza di un processo definito che utilizza risorse aziendali per raggiungere obiettivi prefissati (processo calato nella realtà aziendale).</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=processo_di_progetto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=processo_di_progetto">rimuovi</a></dd>
+			<dt id="processo_software">processo software</dt>
+
+					<dd>Processo che porta ad un prodotto software.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">software process</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=processo_software">modifica</a>; <a href="http://localhost:8080/glossario.php?id=processo_software">rimuovi</a></dd>
+			<dt id="prodotto_software">prodotto software</dt>
+
+					<dd>Su commessa: forma, contenuto e funzione fissate dal cliente;<p></p><p>Pacchetto: forma, contenuto e funzione idonee alla replicazione;</p><p>Componente: forma, contenuto e funzione adatte alla composizione;</p><p>Servizio: forma, contenuto e funzione fissate dal problema.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">software product</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=prodotto_software">modifica</a>; <a href="http://localhost:8080/glossario.php?id=prodotto_software">rimuovi</a></dd>
+			<dt id="produttività">produttività</dt>
+
+					<dd>Rapporto tra valore e costo.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">productivity</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=produttivit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=produttivit%C3%A0">rimuovi</a></dd>
+			<dt id="profilo_professionale">profilo professionale</dt>
+
+					<dd>Requisiti per l'assunzione di un ruolo in un progetto; insieme di competenze (tecnologiche e metodologiche) e un'esperienza (espressa in anni e partecipazione a progetti) che fanno da requisiti per l'assunzione di un ruolo in un progetto.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">professional profile</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=profilo_professionale">modifica</a>; <a href="http://localhost:8080/glossario.php?id=profilo_professionale">rimuovi</a></dd>
+			<dt id="progettazione">progettazione</dt>
+
+					<dd>Definizione dell'architettura, delle componenti, delle interfacce e delle altre caratteristiche di un sistema o componente.<p></p><p>Precede la produzione; costruizione a priori, perseguendo la correttezza per costruzione (non per correzione).</p><p>-&gt;Fare una cosa che è garantito abbia le proprietà dichiarate.</p><p>Scopo:</p><p>&gt;soddisfare i requisiti con un sistema di qualità;</p><p>&gt;definire l'architettura logica del prodotto;</p><p>&gt;dominare la complessità del prodotto (divide-et-impera, facilita la comprensione ed assegnare la codifica ad un solo individuo)</p><p>&gt;organizzare e ripartire le responsabilità di realizzazione</p><p>&gt;produrre in economia (efficienza)</p><p>&gt;garantire la qualità (efficacia).</p><p>Risponde alla domanda: "come dare la giusta risposta (al problema)?"</p><p>Descrive una soluzione soddisfacente per tutti gli stakeholders; approccio sintetico, il codice non esiste ancora; produce l'architettura scelta ed i suoi modelli logici.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">design</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=progettazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=progettazione">rimuovi</a></dd>
+			<dt id="progettazione_architetturale">progettazione architetturale</dt>
+
+					<dd>Definizione delle componenti e di come esse sono organizzate in un sistema.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">architectural design</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=progettazione_architetturale">modifica</a>; <a href="http://localhost:8080/glossario.php?id=progettazione_architetturale">rimuovi</a></dd>
+			<dt id="progettazione_di_dettaglio">progettazione di dettaglio</dt>
+
+					<dd>Definizione del comportamento delle componenti di un sistema, con un livello di dettaglio tale per cui le componenti possano essere implementate.<p></p><p>Definizione delle unità realizzative (moduli), specifica delle unità come insieme di moduli (definizione delle caratteristiche significative; fatta dal nulla o tramite specializazione di componenti esistenti).</p><p>Ha come obiettici di:</p><p>&gt;Assegnare unità a componenti</p><p>&gt;Produrre la documentazione necessaria</p><p>&gt;Definire gli strumenti per le prove di unità</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">detailed design</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=progettazione_di_dettaglio">modifica</a>; <a href="http://localhost:8080/glossario.php?id=progettazione_di_dettaglio">rimuovi</a></dd>
+			<dt id="progettista">progettista (profilo professionale)</dt>
+
+					<dd>Chi sintetizza una soluzione a partire dalle specifiche di un problema già analizzato. <p></p><p>Deve avere competenze tecnologiche e tecniche. Ricevuto il problema tira fuori la migliore soluzione possibile nel rispetto dei vincoli finanziari e temporali. Competenze tecnologiche senza pregiudizi, ma in relazione alle necessità. Deve sapere di architettura, mettere insieme le parti della soluzione (divide et impera). Rende il problema piccolo affinché sia dominabile. Le parti devono essere organizzate in modo da essere governabili. Queste parti devono funzionare in un</p><p>aggregato coerente. Un solo progettista in un team;</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">designer</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=progettista">modifica</a>; <a href="http://localhost:8080/glossario.php?id=progettista">rimuovi</a></dd>
+			<dt id="progetto">progetto</dt>
+
+					<dd>Nasce da una richiesta (e/o pagamento) che diventa poi un impegno se accettato. Porta dei vincoli : di costo, di risorse, di tempo. Spesso insieme di attività da svolgere in modo collaborativo.<p></p><p>• Pianificazione, pianifica chi sa cosa vuole fare, è l’essenza per controllarsi, per sapere se stiamo convergendo o divergendo. Ogni attività inizia con la pianificazione;</p><p>• Analisi dei requisiti, si analizza ciò di cui si ha bisogno. L’analisi ha un’importanza decisiva, bisogna capire il problema;</p><p>• Progettazione, si decide la forma della soluzione. Solo dopo si passa ad alla...</p><p>• Realizzazione, dove sta anche la programmazione, che deve aderire al 100% alla progettazione. Nella realizzazione attuo, ma non sono ancora sicuro che il risultato soddisfi il cliente. Per cui...</p><p>• Verifica e validazione;</p><p>• Manutenzione, per la maggior parte della sua vita il prodotto resta in manutenzione. Non esiste vita operativa senza manutenzione, non esiste sw perfetto quindi esso deve essere mantenuto.</p><p>• Qualità, uno dei principi su cui punteremo, perché la qualità è possibile. Vorremmo quantificare la qualità in modo oggettivo.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">project</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=progetto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=progetto">rimuovi</a></dd>
+			<dt id="programma_verificabile">Programma verificabile</dt>
+
+					<dd>Serve adottare uno standard di codifica ed un sottoinsieme di lunguaggio consapevoli delle eisgenze di verifica: l'uso di costrutti del linguaggio inadatti può infatti compremettere la verificabilità del programma.<p></p><p>La verifica solo retrospettiva (a valle dello sviluppo è sovente inadeguata: visto che il costo di rilevazione e correzione è tanto maggiore all'avanzare dello sviluppo.</p><p>Quindi: invece che posticipare la verifica in modalità as-late-as-possibile, si deve accompagnare la produzione con la verifica, usando un approccio costruttivo: correctness by construction.</p><p>Bisogna regolamentare l'uso del linguaghgio di programmazione tramite regole da riflettere nelle Norme di Progetto, allo scopo d'assicurare comportamento predicibile, per usare solidi e collaudati criteri di programmazione e per ragioni pragmatiche</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=programma_verificabile">modifica</a>; <a href="http://localhost:8080/glossario.php?id=programma_verificabile">rimuovi</a></dd>
+			<dt id="programmatore">programmatore (profilo professionale)</dt>
+
+					<dd>Chi implementa una parte della soluzione dei progettisti.<p></p><p>Non inventa niente, deve fare ciò che ha detto il progettista. Deve scrivere in modo non ambiguo. Il passaggio di consegna tra progettista e programmatore deve essere chiaro. Permette il massimo parallelismo. Ho tanti programmatori quanti posso averne;</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">programmer</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=programmatore">modifica</a>; <a href="http://localhost:8080/glossario.php?id=programmatore">rimuovi</a></dd>
+			<dt id="Project_management">Project management</dt>
+
+					<dd>Chi gestisce le risorse di progetto e riferisce all’organizzazione e al<p></p><p>cliente</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=Project_management">modifica</a>; <a href="http://localhost:8080/glossario.php?id=Project_management">rimuovi</a></dd>
+			<dt id="protocollo">protocollo</dt>
+
+					<dd>Accordo di interfacce.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">protocol</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=protocollo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=protocollo">rimuovi</a></dd>
+			<dt id="prototipo">Prototipo</dt>
+
+					<dd>Serve per provare e scegliere soluzioni.<p></p><p>Può essere “usa e getta” (nel caso delle iterazioni) oppure fornire stati</p><p>di incremento (baseline).</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Prototype</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=prototipo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=prototipo">rimuovi</a></dd>
+			<dt id="prova">Prova</dt>
+
+					<dd>Coppia (Procedura, Batteria di prove)</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">test</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=prova">modifica</a>; <a href="http://localhost:8080/glossario.php?id=prova">rimuovi</a></dd>
+			<dt id="qualifica">qualifica</dt>
+
+					<dd>Verifica e validazione ('V&amp;V'), cioè quei processi che assicurano la qualità di un prodotto durante il suo ciclo di vita.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">null</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=qualifica">modifica</a>; <a href="http://localhost:8080/glossario.php?id=qualifica">rimuovi</a></dd>
+			<dt id="quality_assurance">quality assurance</dt>
+
+					<dd>Insieme di attività che valutano i processi con i quali un prodotto viene sviluppato.<p></p><p>Serve a raccogliere tempestivamente evidenza oggettiva e di qualità, a fronte di specifiche metriche ed obiettivi definiti, per dare evidenza oggettiva, per controllo (interno) ed accertamento (esterno).</p><p>Usa ISO/IEC 9126 come riferimento; la qualità è valutata a posteriori.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=quality_assurance">modifica</a>; <a href="http://localhost:8080/glossario.php?id=quality_assurance">rimuovi</a></dd>
+			<dt id="qualità">Qualità</dt>
+
+					<dd>L'insieme delle caratteristiche di un'entità che ne determinano la capacità di soddisfare esigenze espresse e implicite.<p></p><p>Aree nelle quali interviene il sistema qualità:</p><p>-Qualità intrinseca (conformità ai requisiti ed idoneità nell'uso)</p><p>-Qualità relativa (soddisfazione del cliente)</p><p>-qualità quantitativa (misura del livello di qualità per confronto)</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">quality</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=qualit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=qualit%C3%A0">rimuovi</a></dd>
+			<dt id="qualità_processo">Qualità di processo</dt>
+
+					<dd>Esigenze:<p></p><p>&gt;organizzazione e diffusione interna sistematica</p><p>&gt;Identificazione di prodotti intermedi e di momenti di verifica</p><p>&gt;Riproducibilità dei risultati</p><p>&gt;Quality assurance (proattiva, preventiva)</p><p>Obietivi:</p><p>&gt;Definire il processo, per controllarlo e renderlo più facilmente controllabile e raccontarlo in maniera più convincente</p><p>&gt;Controllare il processo per migliorarlo (efficacia: prodotti conformi alle attese; efficienza: minori costi a pari qualità di prodotto; esperienza: apprenderne, anche da altri)</p><p>&gt;Usare buoni strumenti di valutazione.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=qualit%C3%A0_processo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=qualit%C3%A0_processo">rimuovi</a></dd>
+			<dt id="quantificabile">quantificabile</dt>
+
+					<dd>Esprimibile in modo quantitativo.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">quantifiable</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=quantificabile">modifica</a>; <a href="http://localhost:8080/glossario.php?id=quantificabile">rimuovi</a></dd>
+			<dt id="raccomandazione">raccomandazione</dt>
+
+					<dd>Norma di progetto suggerita, non sottoposta a verifica.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">recommendation</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=raccomandazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=raccomandazione">rimuovi</a></dd>
+			<dt id="ramo_di_repository">ramo (di un repository)</dt>
+
+					<dd>Insieme di versioni di file sorgente in evoluzione.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">branch</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ramo_di_repository">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ramo_di_repository">rimuovi</a></dd>
+			<dt id="regola">regola</dt>
+
+					<dd>Norma di progetto sottoposta a verifica.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">rule</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=regola">modifica</a>; <a href="http://localhost:8080/glossario.php?id=regola">rimuovi</a></dd>
+			<dt id="rendimento_decrescente">rendimento decrescente, legge del</dt>
+
+					<dd>Man mano che si aumenta lo sforzo, il rendimento cresce inizialmente ma poi diminuisce sempre più.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">diminishing returns</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=rendimento_decrescente">modifica</a>; <a href="http://localhost:8080/glossario.php?id=rendimento_decrescente">rimuovi</a></dd>
+			<dt id="repository">repository</dt>
+
+					<dd>Base di dati centralizzata nella quale risiedono, individualmente, tutti i CI di ogni baseline nella loro storia completa.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=repository">modifica</a>; <a href="http://localhost:8080/glossario.php?id=repository">rimuovi</a></dd>
+			<dt id="requisito">requisito</dt>
+
+					<dd>Bisogno da soddisfare o vincolo da rispettare.<p></p><p>Secondo IEEE:</p><p>1. Condizione (capability) necessaria ad un utente per risolvere un problema o raggiungere un obiettivo (visione dal lato del bisogno)</p><p>2. Condizione (capability) che dev'essere soddisfatta o posseduta da un sistema per adempiere ad un obbligo (visione lato soluzione)</p><p>3. Descrizione documentata di una condizione (capability) come in 1 o 2.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">requirement</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=requisito">modifica</a>; <a href="http://localhost:8080/glossario.php?id=requisito">rimuovi</a></dd>
+			<dt id="requisito_di_processo">requisito di processo</dt>
+
+					<dd>Vincolo sullo sviluppo del prodotto.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">null</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=requisito_di_processo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=requisito_di_processo">rimuovi</a></dd>
+			<dt id="requisito_di_prodotto">requisito di prodotto</dt>
+
+					<dd>Bisogno o vincolo sul prodotto da sviluppare.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">null</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=requisito_di_prodotto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=requisito_di_prodotto">rimuovi</a></dd>
+			<dt id="requisito_di_sistema">requisito di sistema</dt>
+
+					<dd>Definizione formale e dettagliata di una funzione del sistema.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">system requirement</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=requisito_di_sistema">modifica</a>; <a href="http://localhost:8080/glossario.php?id=requisito_di_sistema">rimuovi</a></dd>
+			<dt id="requisito_funzionale">requisito funzionale</dt>
+
+					<dd>(di un prodotto software) servizio che il prodotto deve fornire.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">functional requirement</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=requisito_funzionale">modifica</a>; <a href="http://localhost:8080/glossario.php?id=requisito_funzionale">rimuovi</a></dd>
+			<dt id="requisito_non_funzionale">requisito non funzionale</dt>
+
+					<dd>(di un prodotto software) vincolo su uno o più servizi che il prodotto fornisce.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">non-functional requirement</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=requisito_non_funzionale">modifica</a>; <a href="http://localhost:8080/glossario.php?id=requisito_non_funzionale">rimuovi</a></dd>
+			<dt id="requisito_utente">requisito utente</dt>
+
+					<dd>Richiesta generale, ad alto livello.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">user requirement</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=requisito_utente">modifica</a>; <a href="http://localhost:8080/glossario.php?id=requisito_utente">rimuovi</a></dd>
+			<dt id="responsabile_di_progetto">responsabile di progetto (profilo professionale)</dt>
+
+					<dd>Chi pianifica il progetto, assegna le persone ai ruoli giusti e rappresenta il progetto presso il fornitore e il committente.<p></p><p>Ce ne sarà 1. Fa da intermediario, che dice ”come siamo messi ”; pianifica, gestisce risorse e rischi, coordina. Responsabilità su relazioni esterne. Deve sapere ciò di cui parla. Diventa responsabile dopo avere acquisito esperienza su altri ruoli;</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">project manager</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=responsabile_di_progetto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=responsabile_di_progetto">rimuovi</a></dd>
+			<dt id="rete">rete</dt>
+
+					<dd>Grafo orientato.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">network</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=rete">modifica</a>; <a href="http://localhost:8080/glossario.php?id=rete">rimuovi</a></dd>
+			<dt id="revisione_esterna">revisione esterna</dt>
+
+					<dd>Ispezione ufficiale di un prodotto condotta da un'organizzazione indipendente da chi ha sviluppato il prodotto.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">audit</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=revisione_esterna">modifica</a>; <a href="http://localhost:8080/glossario.php?id=revisione_esterna">rimuovi</a></dd>
+			<dt id="revisione_interna">revisione interna</dt>
+
+					<dd>Ispezione di un prodotto interna all'organizzazione che lo sviluppa.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">joint review</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=revisione_interna">modifica</a>; <a href="http://localhost:8080/glossario.php?id=revisione_interna">rimuovi</a></dd>
+			<dt id="rischi_progetto">rischi nel progetto</dt>
+
+					<dd>I rischi latenti provocano problemi alla gestione di progetto:<p></p><p>• Variante nel personale, nella disponibilità e nella composizione del team. Le persone possono ”sparire”. A quel punto bisogna trovare un rimpiazzo. Questa cosa va gestita, devo fare un piano;</p><p>• Tecnologia, non sta mai ferma; due tecniche: chi usa solo tecnologie consolidate (esempio uso di cobol nelle banche) perché cambiare produce rischio, e chi usa tecnologia innovativa (per motivi di competizione) ma fortemente instabile. Questa variabilità è un grande rischio.</p><p>Alcuni rischi sono evitabili:</p><p>• Cambio di requisiti;</p><p>• Ritardo nelle specifiche.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=rischi_progetto">modifica</a>; <a href="http://localhost:8080/glossario.php?id=rischi_progetto">rimuovi</a></dd>
+			<dt id="rischio">rischio</dt>
+
+					<dd>Opposto di opportunità.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">risk</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=rischio">modifica</a>; <a href="http://localhost:8080/glossario.php?id=rischio">rimuovi</a></dd>
+			<dt id="ritiro">ritiro (di un prodotto)</dt>
+
+					<dd>Momento in cui il prodotto cessa di essere seguito dai suoi creatori.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">retirement</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ritiro">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ritiro">rimuovi</a></dd>
+			<dt id="riuso">Riuso</dt>
+
+					<dd>Occasionale (opportunistico) – «copia-incolla» a basso costo e scarso impatto.<p></p><p>Sistematico (per progetto, per prodotto, per azienda) a maggior costo ma maggior impatto.</p><p>Mira a capitalizzare sottoinsiemi già esistenti, impiegandoli più volte per più prodotti, ottenendo un minor costo realizzativo e di verifica. Ma progettare per riuso è più difficile, visto che si deve anticipare i bisogni futuri; in più non è immediato, visto che si devono minimizzare le modifiche alle componenti riusate per non perderne il valore.</p><p>Costituisce -nel breve periodo- un puro costo. Diventa risparmio nel medio termine (è quindi un investimento).</p><p>Ha due forme:</p><p>• Riuso interno, uso cose che ho fatto io;</p><p>• Riuso esterno, uso cose già fatte da altri.</p><p>Il primo atteggiamento è guardare fuori se ci sono cose utili e abbastanza solide</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Reuse</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=riuso">modifica</a>; <a href="http://localhost:8080/glossario.php?id=riuso">rimuovi</a></dd>
+			<dt id="ruoli">Ruoli aziendali</dt>
+
+					<dd>Il team necessita di ruoli, che identificano capacità e compiti. Dentro un’organizzazione produttiva ci sono raggruppamenti di ruoli. Un ruolo è attivo su un progetto, la competenza di istanza di chiama funzione aziendale.<p></p><p>• Qualità, ciò che ci consente di puntare al miglioramento continuo di efficienza ed efficacia. Qualità di prodotto è diverso da qualità di processo. E’ più importante la qualità di processo;</p><p>• Sviluppo, insieme delle competenze per la parte di attività tecnica e realizzativa del prodotto;</p><p>• Direzione, fa sı̀ che l’organizzazione possa stare in piedi;</p><p>• Amministrazione, (”service manager ”) erogano/gestiscono l’infrastruttura che aiuta a fare il proprio lavoro (es. manutenzione e sicurezza). Se esiste una buona infrastruttura si lavora meglio.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ruoli">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ruoli">rimuovi</a></dd>
+			<dt id="ruolo">Ruolo</dt>
+
+					<dd>Funzione aziendale assegnata a progetto; identifica capacità e compiti.<p></p><p>Es. Sviluppo -&gt; responsabilità tecnica e realizzativa.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">role</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=ruolo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=ruolo">rimuovi</a></dd>
+			<dt id="scenario">scenario</dt>
+
+					<dd>Sequenza di passi che descrive un esempio di interazione con un sistema.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=scenario">modifica</a>; <a href="http://localhost:8080/glossario.php?id=scenario">rimuovi</a></dd>
+			<dt id="SEMAT">SEMAT</dt>
+
+					<dd>SEMAT (Software Engineering Method and Theory) drives a process to refound software engineering based on a solid theory, proven principles and best practices.<p></p><p>Is a community of people, companies and some universities, supporting an initiative to create a common ground, a kernel or a foundation for software engineering.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=SEMAT">modifica</a>; <a href="http://localhost:8080/glossario.php?id=SEMAT">rimuovi</a></dd>
+			<dt id="servizio">Servizio (amministrazione di progetto)</dt>
+
+					<dd>Mezzo per aiutare l'utente a raggiungere i suoi obiettivi riducendo costi e rischi.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">Service</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=servizio">modifica</a>; <a href="http://localhost:8080/glossario.php?id=servizio">rimuovi</a></dd>
+			<dt id="sgq">SGQ</dt>
+
+					<dd>Sistema di Gestione Qualità. Ha come responsabilità di garantire la qualità in maniera trasversale a settori e reparti.<p></p><p>Riferisce direttamente alla Direzione</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=sgq">modifica</a>; <a href="http://localhost:8080/glossario.php?id=sgq">rimuovi</a></dd>
+			<dt id="sistema">sistema</dt>
+
+					<dd>Insieme di componenti organizzati per compiere una o più funzioni.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">system</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=sistema">modifica</a>; <a href="http://localhost:8080/glossario.php?id=sistema">rimuovi</a></dd>
+			<dt id="sistema_qualità">Sistema qualità</dt>
+
+					<dd>La struttura organizzativa, le responsabilità, le procedure, i procedimenti e le risorse messe in atto per il perseguimento della qualità. Questo sistema gestisce la qualità in tre ambiti:<p></p><p>&gt; La pianificazione, cioè le attività del sistema qualità mirate a fissare gli obiettivi di qualità, con i processi e le risorse necessari per conseguire tali obiettivi; è una premessa al controllo della qualità.</p><p>&gt; Il controllo, cioè le attività del sistema qualità pianificate e attuate affinché il prodotto soddisfi i requisiti attesi.</p><p>&gt; Il miglioramento continuo, secondo lo schema PDCA.</p><p>&gt; Il sistema qualità è fissato nelle Norme di Progetto (il Piano di Qualifica fissa invece gli obiettivi di qualità: i piani fissano solo obiettivi e strategie per raggiungerli).</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=sistema_qualit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=sistema_qualit%C3%A0">rimuovi</a></dd>
+			<dt id="sistematico">sistematico</dt>
+
+					<dd>Che abbraccia un metodo.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">systematic</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=sistematico">modifica</a>; <a href="http://localhost:8080/glossario.php?id=sistematico">rimuovi</a></dd>
+			<dt id="slack_time">slack time</dt>
+
+					<dd>Quantità di tempo tra la data minima a partire da cui un evento può accadere e la data massima oltre la quale esso ritarda gli eventi successivi.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=slack_time">modifica</a>; <a href="http://localhost:8080/glossario.php?id=slack_time">rimuovi</a></dd>
+			<dt id="software">software</dt>
+
+					<dd>Per software s'intende il programma con la sua documentazione. A causa dell'assenza di vincoli fisici, il software ha un potenziale illimitato; tuttavia, per lo stesso motivo, esso può velocemente diventare complesso, difficile da capire e costoso da cambiare. <p></p><p>Difatti, l'IS si confronta con progetti così impegnativi da richiedere necessariamente un lavoro di gruppo.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=software">modifica</a>; <a href="http://localhost:8080/glossario.php?id=software">rimuovi</a></dd>
+			<dt id="software_engineer">Software engineer</dt>
+
+					<dd>Realizza parte di un sistema complesso con la consapevolezza che potrà essere usato, completato e modificato da altri. Deve guardare e comprendere il quadro generale nel quale il sistema cui contribuisce si colloca.<p></p><p>Deve operare compromessi intelligenti e lungimiranti tra visioni e spinte contrapposte.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=software_engineer">modifica</a>; <a href="http://localhost:8080/glossario.php?id=software_engineer">rimuovi</a></dd>
+			<dt id="sommario">sommario</dt>
+
+					<dd>Breve riassunto del contenuto di un documento.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">abstract</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=sommario">modifica</a>; <a href="http://localhost:8080/glossario.php?id=sommario">rimuovi</a></dd>
+			<dt id="specifica_tecnica">Specifica Tecnica</dt>
+
+					<dd>È prodotta a valle dell'Analisi dei Requisiti; fissa linee e strategie di realizzazione, avvia la fase realizzativa, ma non fissa i dettagli implementativi.<p></p><p>&gt;Mostra ciò che deve fare il sistema. </p><p>&gt;Organizzata gerarcicamente attraverso più livelli di decomposizione (o tramite generalizzazione, specializzazione, aggregazione)</p><p>&gt;Stabilisce le relazioni tra cause ed effetti</p><p>&gt;Porta una visione d'insieme della soluzione proposta</p><p>&gt;Per ogni componente:</p><p> - funzione svolta </p><p> - tipo dati in ingresso</p><p> - tipo dati in uscita</p><p> - risorse logiche e fisiche necessarie al funzionamento</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=specifica_tecnica">modifica</a>; <a href="http://localhost:8080/glossario.php?id=specifica_tecnica">rimuovi</a></dd>
+			<dt id="SPICE">SPICE</dt>
+
+					<dd>Software Process Improvement Capability dEtermination, vedi ISO/IEC 15504.<p></p><p>Nato nel 1992 per armonizzare SPY con ISO/IEC 12207 e ISO 9001; nel 1998 è confluito in ISO/IEC 15504 (creato da ISO a partire da CMMI. Qui scompare il concetto di maturity e, al posto dei cinque gradini di maturità, si usa una scala più fine. Le aziende vengono misurate secondo il fatturato e il personale. La sua metodologia di valutazione è la seguente:</p><p>1. identificazione dei portatori d'interesse (stakeholders: utenti, sviluppatori, valutatori...);</p><p>2. scelta tra valutazione e miglioramento;</p><p>3. definizione della portata (quali processi vanno inclusi nella valutazione?).</p><p>SPICE individua, per ogni processo, i seguenti livelli di capability: incomplete, performed, managed, established, predictable, optimizing. A differenza di CMMI, che individua livelli di maturity (per un insieme di processi), questi sono livelli di capability (per un singolo processo).</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=SPICE">modifica</a>; <a href="http://localhost:8080/glossario.php?id=SPICE">rimuovi</a></dd>
+			<dt id="SPY">SPY</dt>
+
+					<dd>Software Process Assessment and Improvement, standard per il miglioramento e la valutazione della qualità di processo.<p></p><p>Consite nella valutazione oggettiva dei processi di una organizzazione, per darne un giudizio di maturità ed individuare azioni migliorative.</p><p>Dice che posto sotto ogni processo ci dev’essere un meccanismo capace di misurare come sta andando il processo rispetto a obiettivi di qualità misurabili.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=SPY">modifica</a>; <a href="http://localhost:8080/glossario.php?id=SPY">rimuovi</a></dd>
+			<dt id="SQL">SQL (Structured Query Language</dt>
+
+					<dd>Linguaggio di programmazione dichiarativo basato sull'algebra relazionale che serve a creare, manipolare e interrogare basi di dati relazionali.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">SQL</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=SQL">modifica</a>; <a href="http://localhost:8080/glossario.php?id=SQL">rimuovi</a></dd>
+			<dt id="stakeholder">stakeholder</dt>
+
+					<dd>Persona a vario titolo coinvolta nel ciclo di vita di un software che ha influenza sul prodotto o sul processo.</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=stakeholder">modifica</a>; <a href="http://localhost:8080/glossario.php?id=stakeholder">rimuovi</a></dd>
+			<dt id="standard_di_processo">standard di processo</dt>
+
+					<dd>Riferimento di base generico usato come stile comune per lo svolgimento delle funzioni aziendali, pensato per una collettività di casi afferenti ad un certo dominio applicativo.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">process standard</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=standard_di_processo">modifica</a>; <a href="http://localhost:8080/glossario.php?id=standard_di_processo">rimuovi</a></dd>
+			<dt id="statement">statement</dt>
+
+					<dd>istruzione</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=statement">modifica</a>; <a href="http://localhost:8080/glossario.php?id=statement">rimuovi</a></dd>
+			<dt id="statement_coverage">statement coverage</dt>
+
+					<dd>Strategia di testing white-box che mira ad eseguire tutti gli statement (righe di comando) del codice all'interno dell'unità almeno una volta. <p></p><p>100% quando le ha percorse tutte almeno una volta.</p><p>Meno potente del branch coverage: non può rilevare errori dovuti a failure funzionali (es. parte di un'istruzione da eseguire sempre che però esegue solo in alcuni casi) perché è interessata ad attraverare quante più linee di comando possibile</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=statement_coverage">modifica</a>; <a href="http://localhost:8080/glossario.php?id=statement_coverage">rimuovi</a></dd>
+			<dt id="stati_progresso_req_SEMAT">Stati di processo  dei requisiti per SEMAT</dt>
+
+					<dd>I requisiti hanno un ciclo di vita proprio che passa attraverso 6 stati, ciascuno con delle dipendenze:<p></p><p>&gt;Conceived (committente identificato; gli stakeholders vedono sufficienti opportunità per il progetto)</p><p>&gt;Bounded (i macro bisogni sono chiari, i meccanismi di gestione dei requisiti sono fissati)</p><p>&gt;Coherent (requisiti classificati e quelli essenziali/obbligatori sono chiari e ben definiti)</p><p>&gt;Acceptable (requisiti fissati definiscono un sys sufficiente agli stakeholders)</p><p>&gt;Addressed (il prodotto soddisfa i principali requisiti al punto da poter meritare rilascio ed uso)</p><p>&gt;Fullfilled (il prodotto soddifa abbastanza requisiti da meritare la piena approvazione degli stakeholders).</p><p></p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=stati_progresso_req_SEMAT">modifica</a>; <a href="http://localhost:8080/glossario.php?id=stati_progresso_req_SEMAT">rimuovi</a></dd>
+			<dt id="stati_progresso_SEMAT_2">Stati di progresso per SEMAT</dt>
+
+					<dd>• Architecture selected, dobbiamo scegliere l’architettura e dobbiamo spiegare perché essa è adatta al sistema. Selezione delle tecnologie necessarie, posso quindi fare stime di costo sensate. Decisione su buy, build, make. In questo stadio di avanzamento non c’è nemmeno una linea di codice, niente di realizzato;<p></p><p>• Demonstrable, dimostrazione delle principalei caratteristiche del sistema agli stakeholder, i quali concordano. Decisioni su interfacce e configurazioni di sistema. Ho fatto e ho completato la progettazione ad alto livello ed eventualmente ho dei prototipi, ma non ho ancora implementato nulla;</p><p>• Usable, il sistema è usabile e ha le caratteristiche desiderate. Non è completamente finito, ho ancora difetti, ma essi sono accettabili. Quindi possiamo sperare di iniziare a fare la revisione di collaudo;</p><p>• Ready, il prodotto è cosı̀ maturo che posso iniziare a scrivere il manuale utente. Si è infatti professionali se si fornisce all’utente un manuale con una struttura. E in quest’epoca non sono più solo documenti cartacei, ma anche e soprattutto con altri mezzi.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=stati_progresso_SEMAT_2">modifica</a>; <a href="http://localhost:8080/glossario.php?id=stati_progresso_SEMAT_2">rimuovi</a></dd>
+			<dt id="strategie_integrazione">strategie di integrazione</dt>
+
+					<dd>-assemblare le parti in modo incrementale (aggiungendo solo ad insiemi ben verificati, i difetti che sono rilevati in un test di integrazione è più probabile che siano dovuti all'ultima parte aggiunta)<p></p><p>-assemblare i produttori prima dei consumatori (la verifica dei primi fornisce ai secondi un flusso di controllo=chiamate e flusso di dati corretti.</p><p>-assemblare in modo che ogni passo di integrazione sia reversibile (permette di retrocedere in uno stato noto e sicuro).</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=strategie_integrazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=strategie_integrazione">rimuovi</a></dd>
+			<dt id="strumenti_valutazione_qualità">Strumenti di valutazione della qualità</dt>
+
+					<dd>SPY, CMM-&gt;CMMI, Spice ed ISO/IEC 15504</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=strumenti_valutazione_qualit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=strumenti_valutazione_qualit%C3%A0">rimuovi</a></dd>
+			<dt id="strumento">strumento</dt>
+
+					<dd>Insieme di concetti e di metodi, con delle tecnologie di supporto.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">tool</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=strumento">modifica</a>; <a href="http://localhost:8080/glossario.php?id=strumento">rimuovi</a></dd>
+			<dt id="stub">stub</dt>
+
+					<dd>Un "calco" che sostituisca del codice non ancora scritto: una componente passiva fittizia che simula una parte del sistema. <p></p><p>È il duale del driver: mentre il primo simula le dipendenze della procedura testata (quelle che ne accrescono il fan-out, per capirci), il secondo simula un chiamante di tale procedura (che contribuisce al fan-in).</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=stub">modifica</a>; <a href="http://localhost:8080/glossario.php?id=stub">rimuovi</a></dd>
+			<dt id="studio_fattibilità">Studio di fattibilità</dt>
+
+					<dd>Valuta rischi, costi, benefici, nell'ottica del cliente e del fornitore; decidere se procedere (obiettivo=restare entro un costo massimo prefissato); gatto con le conoscenze immediatamente disponibili, non richiede ricerche impegnative.<p></p><p>Fattibilità tecnico-organizzativa (strumenti per la realiz., sol. alg. e arch., piattaforme idonee per l'esecuzione).</p><p>Rapporto costi-benefici; individuazione dei rischi (complessità, incertezze).</p><p>Valutazione scadenze temporali; valutazione delle alternative (scelte architetturali, strategie relizzative:make-or-buy, strategie operative).</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=studio_fattibilit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=studio_fattibilit%C3%A0">rimuovi</a></dd>
+			<dt id="tecnica">tecnica</dt>
+
+					<dd>Ricetta applicata agli strumenti disponibili; modo con cui si usa uno strumento.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">technique</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=tecnica">modifica</a>; <a href="http://localhost:8080/glossario.php?id=tecnica">rimuovi</a></dd>
+			<dt id="tecnologia">tecnologia</dt>
+
+					<dd>Strumento sul quale si opera.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">technology</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=tecnologia">modifica</a>; <a href="http://localhost:8080/glossario.php?id=tecnologia">rimuovi</a></dd>
+			<dt id="teorema_howden">Teorema di howden</dt>
+
+					<dd>Non esiste un algoritmo che, dato un programma P, generi per esso un test finito ideale (definito da criteri affidabili e validi)</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=teorema_howden">modifica</a>; <a href="http://localhost:8080/glossario.php?id=teorema_howden">rimuovi</a></dd>
+			<dt id="teorema_weyuker">Teorema di Weyuker</dt>
+
+					<dd>Dato un programma P, i seguenti problemi sono indecidibili:<p></p><p>∃ un dato di ingresso che causi l'esecuzione di un particolare comando di P?</p><p>∃ un dato di ingresso che causi l'esecuzione di una particolare condizione di P?</p><p>È possibile trovare un dato di ingresso che causi l'esecuzione di ogni comando/condizione/cammino di P?</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=teorema_weyuker">modifica</a>; <a href="http://localhost:8080/glossario.php?id=teorema_weyuker">rimuovi</a></dd>
+			<dt id="tes_dijkstra">Tesi di Dijkstra</dt>
+
+					<dd>Il test di un programma può rilevare la presenza di malfunzionamenti, ma non può dimostrarne l'assenza</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=tes_dijkstra">modifica</a>; <a href="http://localhost:8080/glossario.php?id=tes_dijkstra">rimuovi</a></dd>
+			<dt id="test">test</dt>
+
+					<dd>L'analisi dinamica viene effettuata tramite prove (test) che osservano i risultati dell'esecuzione di un sistema (o parte di esso) sotto determinate condizioni.<p></p><p>Un test, per essere utile, dev'essere facilmente ripetibile; per questo, bisogna sempre:</p><p>- tener conto dell'ambiente (non solo dell'input);</p><p>- specificare le pre-condizioni e i comportamenti attesi;</p><p>- descrivere le procedure per eseguire il test e per analizzarne i risultati.</p><p>Per far questo sevono logger, stub e driver</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=test">modifica</a>; <a href="http://localhost:8080/glossario.php?id=test">rimuovi</a></dd>
+			<dt id="test_di_integrazione">test di integrazione</dt>
+
+					<dd>Test che verifica la correttezza dell'integrazione di un insieme di unità in una componente del sistema in esame.<p></p><p>Fatto per la costruzione e la verifica incrementale del sistema, su componenti sviluppate in parallelo e verificate incrementalmente. </p><p>In cond. ottimali, l'integrazione è priva di problemi. </p><p>Si applica alle componenti specificate nella progettazione architetturale, la loro integrazione costituisce il sistema completo.</p><p>Logica di integrazione funzionale: seleziona le funzionalità da integrare -&gt;identifica le componenti che svolgono quelle funzionalità -&gt; ordina le componenti per numero di dipendenze crescente (nel flusso di controllo e nel flusso dati) -&gt; esegue l'integrazione in quell'ordine.</p><p>Rileva: errori residui nella realizzazione dei componenti, la modifica delle interfacce o cambiamenti nei requisiti, riuso di componenti dal comportamento oscuro o inadatto, l'integrazione con altre applicazioni non ben conosciute. Manifestano difetti di progettazione o insufficiente qualità nei test di unità.</p><p>Tanti test quanti ne servono per accertare che tutti i dati scambiati attraverso ciascuna interfaccia siano conformi alla loro specifica e ad accertare che tutti i flussi di controllo previsti in specifica siano stati effettivamente realizzati e provati</p><p></p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">integration test</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=test_di_integrazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=test_di_integrazione">rimuovi</a></dd>
+			<dt id="test_di_sistema">test di sistema</dt>
+
+					<dd>Test che verifica la copertura dei requisiti da parte del sistema in esame.<p></p><p>Durante la validazione è un'attività interna del fornitore (per accertare la copertura dei requisiti sw).</p><p>Verifica il comportamento dinamico del sistema completo rispetto ai requisiti SW; inizia con il completamento del test di integrazione; è inerentemente funzionale (black-box) e non dovrebbe richiedere conoscenza della logica interna del software.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">system test</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=test_di_sistema">modifica</a>; <a href="http://localhost:8080/glossario.php?id=test_di_sistema">rimuovi</a></dd>
+			<dt id="test_di_unità">test di unità</dt>
+
+					<dd>Test che verifica la correttezza di una singola unità del sistema in esame.<p></p><p>È un'attività di analisi dinamica fatta con il supporto di attività dell'analisi statica, ha lo scopo di determinare limiti di iterazioni, flusso del programma oppure valori di variabili. Viene svolta con il massimo grado di parallelismo.</p><p>La responsabilità è del singolo programmatore per le unità più semplici, altrimenti di un verificatore indipendente, meglio un automa.</p><p>L'obiettivo è di verificare la correttezza del codice "as implemented".</p><p>Unità e moduli sw sono determinati durante la progettazione di dettaglio, quindi anche il piano di TU. La TU completa quando ha verificato tutte le unità.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">unit test</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=test_di_unit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=test_di_unit%C3%A0">rimuovi</a></dd>
+			<dt id="test_di_validazione">test di validazione</dt>
+
+					<dd>Test che verifica il soddisfacimento del capitolato d'appalto da parte del sistema in esame.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">validation test</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=test_di_validazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=test_di_validazione">rimuovi</a></dd>
+			<dt id="test_funzionale">test funzionale</dt>
+
+					<dd>Test di unità che fa riferimento alla specifica dell'unità ed utilizza dati di ingresso capaci di provocare l'esito atteso; ciascun insieme di dati di ingresso che producono un dato comportamento funzionale costituisce un caso di prova.<p></p><p>Classi di equivalenza invece che infiniti valori di ingresso: valori nella medesima classe producono lo stesso comportamento.</p><p>Da solo non può accertare la correttezza e completezza della logica interna dell'unità, va quindi integrato da test strutturale.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">functional test / black box</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=test_funzionale">modifica</a>; <a href="http://localhost:8080/glossario.php?id=test_funzionale">rimuovi</a></dd>
+			<dt id="test_regressione">test di regressione</dt>
+
+					<dd>È l'insieme di test (test di unità e di integrazione) necessari ad accertare che la modifica di una parte P di S non causi errori in P o nelle altre parti di S che hanno relazioni con P.<p></p><p>-&gt;ripetizione di test già previsti ed effettuati per ogni parte coinvolta.</p><p>Vengono integrate solo parti che abbiano precedentemente superato TU. Servono ad accertare che modifiche intervenute per correzione od estensione di parti con comportino errori nel sistema.</p><p>I contenuti del test vanno decisi nel momento in cui s'approvamo modifiche al software.</p><p>Modifiche effettuate per aggiunta, correzione o rimozione non devono pregiudicare le funzionalità già verificate (rischio aumenta all'aumentare dell'accoppiamento ed al diminuire dell'incapsulazione).</p><p></p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=test_regressione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=test_regressione">rimuovi</a></dd>
+			<dt id="test_strutturale">test strutturale</dt>
+
+					<dd>Test di unità che verifica la logica interna del codice cercando la massima copertura.<p></p><p>Ciascuna prova del'essere progettata per attivare ogni cammino di esecuzione all'interno del modulo; ciascun insieme di dati di ingresso che attivano un percorso costituisce un caso di prova.</p><p>L'uso di debugger può agevolarne l'esecuzione ma non esonera dalla progettazione dei casi di prova.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">structural test / white box</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=test_strutturale">modifica</a>; <a href="http://localhost:8080/glossario.php?id=test_strutturale">rimuovi</a></dd>
+			<dt id="tracciamento">tracciamento</dt>
+
+					<dd>Mira a dimostrare la completezza e l'economicità della soluzione (soddisfacimento di tutti i requisiti, nessuna funzionalità superflua, nessun componente ingiustificato).<p></p><p>La luogo su ogni passaggio dello sviluppo (ramo discendente) e su ogni ramo della verifica (ramo ascendente).</p><p>Può essere altamente automatizzato!</p><p>Particolari stili di programmazione facilitano il tracciamento: l'assegnare singoli requisiti elementari a singoli moduli del programma richiede una sola procedura di prova e rende più chiara e semplice la corrispondenza tra essi.</p><p>Maggiore è l'astrazione (potenza espressiva) di un costrutto del linguaggio, maggiore è la qualità di codice oggetto eseguito per esso e maggiore è anche l'onere di dimostrazione di corrispondenza.</p><p>In generale, i principali tracciamenti all'interno di un prodotto sono:</p><p>&gt; tra requisiti utente (capitolato) e requisiti software (AR);</p><p>&gt; tra requisiti software (AR) e descrizione dei componenti (ST);</p><p>&gt; tra test di unità e moduli della progettazione di dettaglio (DP);</p><p>&gt; tra test di integrazione e componenti architetturali (ST);</p><p>&gt; tra test di sistema e requisiti software (AR);</p><p>&gt; tra test di accettazione e requisiti utente (capitolato).</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=tracciamento">modifica</a>; <a href="http://localhost:8080/glossario.php?id=tracciamento">rimuovi</a></dd>
+			<dt id="tracciamento_requisiti">Tracciamento dei requisiti</dt>
+
+					<dd>&gt;Fissa la relazione tra i prodotti del processo di sviluppo, usando matrici di tracciabilità.<p></p><p>&gt;In avanti (forward) = completezza. Ciascun ingresso ad una fase deve essere messo in relazione con una specifica uscita da quella fase. Fatta con le matrici di tracciabilità.</p><p>&gt;All'indietro (backward) = necessità. Ciascuna uscita dalla fase dev'essere messa in relazione con uno specifico ingresso a quella fase.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=tracciamento_requisiti">modifica</a>; <a href="http://localhost:8080/glossario.php?id=tracciamento_requisiti">rimuovi</a></dd>
+			<dt id="UML">UML (Unified Modelling Language)</dt>
+
+					<dd>Famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">UML</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=UML">modifica</a>; <a href="http://localhost:8080/glossario.php?id=UML">rimuovi</a></dd>
+			<dt id="unità">unità</dt>
+
+					<dd>Insieme coeso di moduli, appaltabili in realizzazione a un singolo programmatore; non ha sempre un corrispondente diretto in un linguaggio di programmazione. È anche la più piccola quantità di software che conviene verificare da sola; tipicamente è prodotta da un singolo programmatore.<p></p><p>La sua natura specifica dipende dal lignuaggio di programmazione in uso.</p><p>Non linee di codice ma entità di strutturazione (procedura, classe, package).</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">unit</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=unit%C3%A0">modifica</a>; <a href="http://localhost:8080/glossario.php?id=unit%C3%A0">rimuovi</a></dd>
+			<dt id="use_case_points">Use case points</dt>
+
+					<dd>Use case points is a measurement of how much effort is required to write software – based on how much work the software is intended to do. The use case point method was created by Gustav Karner of Rational Software Corporation in the mid 1990’s. This method was based on a study of about 200 projects with an average size of 5 man-years of effort. The use case point method of estimation was found to be within 10% of the actual results for over 95% of the projects. This method has since been incorporated into the RUP methodology.<p></p><p></p><p>The cost estimation technique of use case points evaluates the following factors to determine an estimate of cost:</p><p>1. Technical Factors of the Implementation. Primarily non-functional requirements of the system.</p><p>2. Environmental Factors. Mostly characterizing the implementation team, but touching on process as well.</p><p>3. Use Case Quantity and Complexity. The number of use cases and the number of steps within the use cases.</p><p>4. Actor Quantity and Complexity. The number and type of actors and interface.</p><p>5. Effort Estimation. The previously collected data is converted into man-hours.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=use_case_points">modifica</a>; <a href="http://localhost:8080/glossario.php?id=use_case_points">rimuovi</a></dd>
+			<dt id="validazione">validazione</dt>
+
+					<dd>S'occupa di accertare che il prodotto realizzato corrisponda alle attese. Va ad accertarsi che i requisiti siano soddisfatti (did I build the right system?).<p></p><p>La garanzia che un prodotto soddisfi i requisiti da cui è nato.</p><p>È rivolta ai prodotti finali.</p><p>La validazione, non si applica ad un particolare segmento temporale ma è una conferma finale, una self-fulfilling prophecy che accerta la conformità di un prodotto alle attese; essa fornisce una prova oggettiva di come le specifiche del prodotto siano conformi al suo scopo e alle esigenze degli utenti. La validazione, a differenza della verifica, coinvolge sempre il committente.</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">validation</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=validazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=validazione">rimuovi</a></dd>
+			<dt id="validazione_software">validazione del software</dt>
+
+					<dd>Conferma tramite esami e fornendo evidenze obiettive che le specifiche del sofware sono conformi ai bisogni degli utenti e degli usi che ne sono intesi, e che i requisiti particolari implementati tramite software sono consistentemente soddisfatti</dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=validazione_software">modifica</a>; <a href="http://localhost:8080/glossario.php?id=validazione_software">rimuovi</a></dd>
+			<dt id="valutazione">valutazione</dt>
+
+					<dd>Verifica quantificata.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">evaluation</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=valutazione">modifica</a>; <a href="http://localhost:8080/glossario.php?id=valutazione">rimuovi</a></dd>
+			<dt id="verifica">verifica</dt>
+
+					<dd>Valutare se un prodotto soddisfa requisiti, regole o altre condizioni necessarie.<p></p><p>Accertare che l'esecuzione delle attività di processo non abbia introdotto errori (did I build the system right?). Rivolta ai processi: viene svolta per accertare il rispetto di regole, convezioni o procedure.</p><p>Attiene alla coerenza, completezza e correttezza del prodotto. È un processo che si applica ad ogni "segmento" temporale di un progetto (ad ogni prodotto intermedio) per accertare che le attività svolte in tale segmento non abbiano introdotto errori nel prodotto.</p><p>La verifica è un processo analitico. Si può fare in due forme:</p><p>- analisi statica (senza eseguire il software);</p><p>- analisi dinamica (eseguendo il software o una sua parte).</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">verification</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=verifica">modifica</a>; <a href="http://localhost:8080/glossario.php?id=verifica">rimuovi</a></dd>
+			<dt id="verifica_requisiti">Verifica dei requisiti</dt>
+
+					<dd>Viene eseguita su un documento organizzato, tramite Walkthrough od Ispezione (lettura mirata e strutturata).<p></p><p>Viene creata una matrice delle dipendenze al fine del tracciamento.</p><p>&gt;La chiarezza espressiva è importante: l'uso naturale del linguaggio rende difficile coniugare chiarezza con facilità di lettura.</p><p>&gt;La chiarezza strutturale è utile a separare requisiti funzionali e non funzionali, occorre una classificazione precisa, uniforme ed accurata.</p><p>&gt;Atomicità ed aggregazione significa avere requisiti elementari e correlazioni chiare ed esplicite.</p><p></p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=verifica_requisiti">modifica</a>; <a href="http://localhost:8080/glossario.php?id=verifica_requisiti">rimuovi</a></dd>
+			<dt id="verifica_software">verifica del software</dt>
+
+					<dd>Fornisce evidenza obiettiva che le le uscite del design di una particolare fase del ciclo di vita del software soddisfano tutti gli specifici requisiti di quella fase.<p></p><p>La verifica del software guarda alla consistenza, completezza e correttezza del software e della sua documentazione di supporto, durante la sua produzione, fornisce inoltre supporto a poter dire -</p><p>di conseguenza - che il software è stato validato.</p><p>La verifica di un programma relaziona frammenti di codice con frammenti della specifica (la verificabilità è funzione inversa della dimensione del contesto: conviene confinare gli ambiti (scope) e la visibilità; una buna architettura semplifica la verifica.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=verifica_software">modifica</a>; <a href="http://localhost:8080/glossario.php?id=verifica_software">rimuovi</a></dd>
+			<dt id="verificatore">verificatore (profilo professionale)</dt>
+
+					<dd>Chi verifica il lavoro dei programmatori.<p></p><p>La validazione si fa sul prodotto finito. Impiega almeno 1/3 del tempo. E’ un ruolo attivo da subito. Serve per creare l’ambiente giusto, a rendere puliti i requisiti. E’ presente sempre, su tutto l’arco del progetto. Include anche la verifica del codice: </p><p>1) impone al programmatore stesso di verificare il suo codice, </p><p>2) lo fa verificare ad una terza persona indipendente;</p></dd>
+
+					<dd><p> Inglese: <em xml:lang="en">verifier</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=verificatore">modifica</a>; <a href="http://localhost:8080/glossario.php?id=verificatore">rimuovi</a></dd>
+			<dt id="versione_di_CI">versione (di un CI)</dt>
+
+					<dd>Istanza identificata di un CI nel tempo.</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">version</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=versione_di_CI">modifica</a>; <a href="http://localhost:8080/glossario.php?id=versione_di_CI">rimuovi</a></dd>
+			<dt id="walkthrough">walkthrough</dt>
+
+					<dd>Tecnica di analisi statica che consiste nell'eseguire una lettura critica, ad ampio spettro, senza l'assunzione di presupposti.<p></p><p>Punta a rilevare la presenza di difetti, viene svolta da gruppi misti d ispettori/sviluppatori ma con ruoli ben distinti.</p><p>La strategia con cui si svolge è di percorrere il codice simulandone possibili esecuzioni.</p><p>Si svolge anch'essa in 4 fasi: la pianificazione, la lettura, la discussione ed infine la correzione dei difetti. Anche qui, la documentazione viene compilata per avere un rapporto delle attività svolte.</p></dd>
+
+					<dd></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=walkthrough">modifica</a>; <a href="http://localhost:8080/glossario.php?id=walkthrough">rimuovi</a></dd>
+			<dt id="white_box">White box test</dt>
+
+					<dd>Prova strutturale</dd>
+
+					<dd><p> Inglese: <em xml:lang="en">white box</em></p></dd>
+
+					<dd><a href="http://localhost:8080/voce.php?id=white_box">modifica</a>; <a href="http://localhost:8080/glossario.php?id=white_box">rimuovi</a></dd>
+		</dl>
 	</div>
 
-</body>
-</html>
+
+
+</body><div id="cyeBlackMaskLayer" style="background-color: rgb(19, 19, 19); position: fixed; width: 1980px; height: 1080px; z-index: -2147483648;"></div><div id="cye-workaround-body" style="position: absolute; left: 0px; top: 0px; z-index: -2147483646; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(241, 241, 239); height: 39177px; width: 1583px;"></div><div id="cye-workaround-body-image" style="position: absolute; left: 0px; top: 0px; z-index: -2147483645; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); height: 39177px; width: 1583px;"></div></html>
